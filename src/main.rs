@@ -3,6 +3,7 @@ use clap::{Parser, Subcommand};
 use serde::{Deserialize, Serialize};
 use serde_json::Value;
 use sha2::{Digest, Sha256};
+use sotarena::{decrypt_directory, encrypt_directory, generate_keypair};
 use std::collections::{BTreeMap, BTreeSet};
 use std::env;
 use std::ffi::OsStr;
@@ -10,6 +11,11 @@ use std::fmt::Write as _;
 use std::fs;
 use std::io::{Read, Write};
 use std::path::{Component, Path, PathBuf};
+use tempfile::NamedTempFile;
+use zeroize::Zeroizing;
+
+#[cfg(unix)]
+use std::os::unix::fs::PermissionsExt;
 
 #[derive(Parser)]
 #[command(
@@ -40,6 +46,31 @@ enum Command {
     Report {
         #[arg(long)]
         out: Option<PathBuf>,
+    },
+    /// Generate a new age X25519 identity and public recipient.
+    Keygen {
+        #[arg(long)]
+        identity: PathBuf,
+        #[arg(long)]
+        recipient: PathBuf,
+    },
+    /// Stream a directory into a compressed, encrypted age archive.
+    Encrypt {
+        #[arg(long)]
+        input: PathBuf,
+        #[arg(long)]
+        output: PathBuf,
+        #[arg(long, required = true)]
+        recipient: Vec<String>,
+    },
+    /// Decrypt an archive into a new or empty directory.
+    Decrypt {
+        #[arg(long)]
+        input: PathBuf,
+        #[arg(long)]
+        output: PathBuf,
+        #[arg(long)]
+        identity: PathBuf,
     },
 }
 
@@ -152,6 +183,21 @@ struct LoadedResults {
     result_jsons: BTreeMap<String, usize>,
     result_jsons_total: usize,
 }
+
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
+struct CorpusSummary {
+    datasets: usize,
+    downloadable_datasets: usize,
+    metadata_only_datasets: usize,
+    files: usize,
+    bytes: u64,
+}
+
+const EXPECTED_DATASETS: usize = 1_790;
+const EXPECTED_DOWNLOADABLE_DATASETS: usize = 1_695;
+const EXPECTED_METADATA_ONLY_DATASETS: usize = 95;
+const EXPECTED_DOWNLOAD_FILES: usize = 3_390;
+const EXPECTED_DOWNLOAD_BYTES: u64 = 592_077_600;
 
 #[derive(Serialize)]
 struct Report {
@@ -285,9 +331,15 @@ fn main() -> Result<()> {
         Command::Fetch {
             task,
             dataset,
-            all: _,
+            all,
             cache_dir,
-        } => fetch(&cli.root, task.as_deref(), dataset.as_deref(), cache_dir),
+        } => fetch(
+            &cli.root,
+            task.as_deref(),
+            dataset.as_deref(),
+            all,
+            cache_dir,
+        ),
         Command::Report { out } => {
             if let Some(path) = &out {
                 ensure!(
@@ -305,7 +357,87 @@ fn main() -> Result<()> {
             }
             Ok(())
         }
+        Command::Keygen {
+            identity,
+            recipient,
+        } => write_keypair(&identity, &recipient),
+        Command::Encrypt {
+            input,
+            output,
+            recipient,
+        } => encrypt_directory(input, output, &recipient),
+        Command::Decrypt {
+            input,
+            output,
+            identity,
+        } => {
+            let identity = Zeroizing::new(
+                fs::read_to_string(&identity)
+                    .with_context(|| format!("cannot read identity {}", identity.display()))?,
+            );
+            decrypt_directory(input, output, identity.as_str())
+        }
     }
+}
+
+fn path_is_absent(path: &Path) -> Result<()> {
+    match fs::symlink_metadata(path) {
+        Ok(_) => anyhow::bail!("output already exists: {}", path.display()),
+        Err(error) if error.kind() == std::io::ErrorKind::NotFound => Ok(()),
+        Err(error) => Err(error).with_context(|| format!("cannot inspect {}", path.display())),
+    }
+}
+
+fn atomic_write_new(path: &Path, contents: &[u8], private: bool) -> Result<()> {
+    path_is_absent(path)?;
+    let parent = path
+        .parent()
+        .filter(|parent| !parent.as_os_str().is_empty())
+        .unwrap_or_else(|| Path::new("."));
+    let mut temporary = NamedTempFile::new_in(parent)
+        .with_context(|| format!("cannot create temporary file in {}", parent.display()))?;
+    #[cfg(unix)]
+    temporary
+        .as_file()
+        .set_permissions(fs::Permissions::from_mode(if private {
+            0o600
+        } else {
+            0o644
+        }))?;
+    #[cfg(not(unix))]
+    let _ = private;
+    temporary.write_all(contents)?;
+    temporary.as_file().sync_all()?;
+    temporary
+        .persist_noclobber(path)
+        .map_err(|error| error.error)
+        .with_context(|| format!("cannot publish {}", path.display()))?;
+    Ok(())
+}
+
+fn write_keypair(identity_path: &Path, recipient_path: &Path) -> Result<()> {
+    ensure!(
+        lexical_absolute(identity_path)? != lexical_absolute(recipient_path)?,
+        "identity and recipient paths must differ"
+    );
+    path_is_absent(identity_path)?;
+    path_is_absent(recipient_path)?;
+    let keypair = generate_keypair();
+    let identity = Zeroizing::new(format!("{}\n", keypair.identity()));
+    let recipient = format!("{}\n", keypair.recipient());
+    atomic_write_new(identity_path, identity.as_bytes(), true)?;
+    if let Err(error) = atomic_write_new(recipient_path, recipient.as_bytes(), false) {
+        fs::remove_file(identity_path).with_context(|| {
+            format!(
+                "cannot clean up identity after recipient write failed: {}",
+                identity_path.display()
+            )
+        })?;
+        return Err(error);
+    }
+    println!("wrote identity {}", identity_path.display());
+    println!("wrote recipient {}", recipient_path.display());
+    Ok(())
 }
 
 fn read_json<T: for<'de> Deserialize<'de>>(path: &Path) -> Result<T> {
@@ -484,10 +616,27 @@ fn valid_https_csv_url(url: &str) -> bool {
 }
 
 fn check_data_file(file: &DataFile) -> Result<()> {
-    let Some(url) = &file.url else { return Ok(()) };
-    ensure!(valid_https_csv_url(url), "invalid CSV URL {url}");
-    ensure!(valid_hash(&file.sha256), "invalid data SHA-256");
-    ensure!(file.bytes > 0 && file.rows > 0, "invalid data dimensions");
+    if let Some(url) = &file.url {
+        ensure!(valid_https_csv_url(url), "invalid CSV URL {url}");
+        ensure!(file.bytes > 0, "invalid downloadable file size");
+    }
+    ensure!(
+        file.sha256.len() == 64 && valid_hash(&file.sha256),
+        "invalid data SHA-256"
+    );
+    ensure!(file.rows > 0, "invalid data row count");
+    Ok(())
+}
+
+fn check_dataset_rows(train: &DataFile, test: &DataFile) -> Result<()> {
+    let rows = train
+        .rows
+        .checked_add(test.rows)
+        .context("dataset row count overflow")?;
+    ensure!(
+        rows >= 300,
+        "dataset has {rows} combined train/test rows; minimum is 300"
+    );
     Ok(())
 }
 
@@ -498,7 +647,7 @@ fn load_datasets(root: &Path, config: &Config) -> Result<DatasetCatalog> {
         .map(|task| (task.id.clone(), BTreeMap::new()))
         .collect();
     for task in &config.tasks {
-        let directory = root.join(&task.id);
+        let directory = root.join("data").join(&task.id);
         let entries = fs::read_dir(&directory)
             .with_context(|| format!("cannot read task directory {}", directory.display()))?;
         for entry in entries {
@@ -523,6 +672,11 @@ fn load_datasets(root: &Path, config: &Config) -> Result<DatasetCatalog> {
             );
             check_data_file(&dataset.train)?;
             check_data_file(&dataset.test)?;
+            ensure!(
+                dataset.train.url.is_some() == dataset.test.url.is_some(),
+                "dataset train/test download availability mismatch"
+            );
+            check_dataset_rows(&dataset.train, &dataset.test)?;
             ensure!(
                 catalog
                     .get_mut(&task.id)
@@ -607,7 +761,7 @@ fn result_paths(
 ) -> Result<Vec<PathBuf>> {
     let mut paths = Vec::new();
     for hash in datasets.keys() {
-        let directory = root.join(task).join(hash).join("results");
+        let directory = root.join("data").join(task).join(hash).join("results");
         if !directory.is_dir() {
             continue;
         }
@@ -734,6 +888,71 @@ fn add_result_record(
     Ok(())
 }
 
+fn collect_dataset_references(value: &Value, references: &mut BTreeSet<String>) -> Result<()> {
+    match value {
+        Value::Object(object) => {
+            for (key, child) in object {
+                if key == "dataset_hash" {
+                    let hash = child
+                        .as_str()
+                        .context("dataset_hash reference must be a string")?;
+                    references.insert(hash.to_owned());
+                }
+                collect_dataset_references(child, references)?;
+            }
+        }
+        Value::Array(values) => {
+            for child in values {
+                collect_dataset_references(child, references)?;
+            }
+        }
+        _ => {}
+    }
+    Ok(())
+}
+
+fn validate_dataset_references(
+    path: &Path,
+    value: &Value,
+    datasets: &DatasetCatalog,
+) -> Result<()> {
+    let mut references = BTreeSet::new();
+    collect_dataset_references(value, &mut references)
+        .with_context(|| format!("invalid dataset reference in {}", path.display()))?;
+    if references.is_empty() {
+        return Ok(());
+    }
+    let task = value
+        .get("task")
+        .or_else(|| value.get("task_type"))
+        .and_then(Value::as_str);
+    if let Some(task) = task {
+        let task_datasets = datasets
+            .get(task)
+            .with_context(|| format!("unknown task {task} in {}", path.display()))?;
+        for hash in references {
+            ensure!(
+                task_datasets.contains_key(&hash),
+                "unknown dataset {hash} referenced by {}",
+                path.display()
+            );
+        }
+    } else {
+        for hash in references {
+            let matches = datasets
+                .values()
+                .filter(|task_datasets| task_datasets.contains_key(&hash))
+                .count();
+            ensure!(
+                matches == 1,
+                "dataset {hash} referenced by {} resolves to {matches} tasks",
+                path.display()
+            );
+        }
+    }
+    Ok(())
+}
+
 fn load_results(root: &Path, config: &Config, datasets: &DatasetCatalog) -> Result<LoadedResults> {
     let mut catalog = empty_result_catalog(config);
     let mut result_jsons: BTreeMap<_, _> = config
@@ -754,6 +973,7 @@ fn load_results(root: &Path, config: &Config, datasets: &DatasetCatalog) -> Resu
 
     for path in paths {
         let value: Value = read_json(&path)?;
+        validate_dataset_references(&path, &value, datasets)?;
         match value["schema"].as_str() {
             Some("sotarena.scores") => {
                 let document: ScoreDocument = serde_json::from_value(value)?;
@@ -1164,9 +1384,11 @@ fn render_report(root: &Path) -> Result<(Vec<u8>, Report)> {
 }
 
 fn global_result_paths(root: &Path, config: &Config) -> Result<Vec<PathBuf>> {
-    let mut paths = json_files(&root.join("global/results"))?;
+    let mut paths = json_files(&root.join("data/global/results"))?;
     for task in &config.tasks {
-        paths.extend(json_files(&root.join(&task.id).join("global/results"))?);
+        paths.extend(json_files(
+            &root.join("data").join(&task.id).join("global/results"),
+        )?);
     }
     paths.sort();
     Ok(paths)
@@ -1578,7 +1800,8 @@ fn render_readme(report: &Report) -> Vec<u8> {
         "SOTArena is a JSON-backed benchmark with deterministic Elo rankings. ",
         "Every manifest and result is loaded and validated. Elo uses each task's analysis cohort: ",
         "the datasets with a valid canonical score from every automatically Global-eligible family. ",
-        "The referenced blacklists record the auditable complement without removing corpus data.\n\n",
+        "The referenced blacklists record the auditable complement without removing corpus data. ",
+        "All benchmark content lives under `data/`.\n\n",
         "## Getting Started\n\n",
         "Clone and build the reporter:\n\n",
         "```sh\n",
@@ -1598,7 +1821,25 @@ fn render_readme(report: &Report) -> Vec<u8> {
         "Generate the JSON report, leaderboard SVGs, and refresh this README:\n\n",
         "```sh\n",
         "cargo run --release -- report --out report.json\n",
-        "```\n\n"
+        "```\n\n",
+        "The retained corpus has 1,790 manifests. Of those, 1,695 datasets are downloadable ",
+        "(3,390 files and 592,077,600 expected bytes); 95 metadata-only datasets are reported ",
+        "and skipped by bulk fetches. Manifests with fewer than 300 combined train/test rows ",
+        "are rejected.\n\n",
+        "## Secure Solution Archives\n\n",
+        "Solution directories can be streamed through `tar`, zstd, and authenticated age v1 ",
+        "X25519 encryption without writing a plaintext archive:\n\n",
+        "```sh\n",
+        "cargo run --release -- keygen --identity /secure/sotarena.identity --recipient sotarena.recipient\n",
+        "cargo run --release -- encrypt --input solutions --output solutions.tar.zst.age --recipient age1...\n",
+        "cargo run --release -- decrypt --input solutions.tar.zst.age --output decrypted-solutions --identity /secure/sotarena.identity\n",
+        "```\n\n",
+        "Repeat `--recipient age1...` to encrypt for multiple recipients. Keep private identities ",
+        "outside this repository; only public recipients and binary `.age` archives are safe to ",
+        "track. Lost identities are unrecoverable, and changing recipients requires re-encryption. ",
+        "A private identity sent by email is only as secure as that email channel. X25519 age is ",
+        "not post-quantum encryption and no encryption scheme provides absolute security. Decryption ",
+        "only extracts files: inspect demos before running them manually.\n\n"
     ));
     let tables = leaderboards(report);
     for (index, table) in tables.iter().enumerate() {
@@ -1691,6 +1932,40 @@ fn verify_bytes(bytes: &[u8], expected: &DataFile) -> Result<()> {
     Ok(())
 }
 
+fn corpus_summary(datasets: &DatasetCatalog) -> CorpusSummary {
+    let datasets_count = datasets.values().map(BTreeMap::len).sum();
+    let downloadable = datasets
+        .values()
+        .flat_map(BTreeMap::values)
+        .filter(|dataset| dataset.train.url.is_some() && dataset.test.url.is_some())
+        .collect::<Vec<_>>();
+    CorpusSummary {
+        datasets: datasets_count,
+        downloadable_datasets: downloadable.len(),
+        metadata_only_datasets: datasets_count - downloadable.len(),
+        files: downloadable.len() * 2,
+        bytes: downloadable
+            .iter()
+            .map(|dataset| dataset.train.bytes + dataset.test.bytes)
+            .sum(),
+    }
+}
+
+fn validate_release_corpus(summary: CorpusSummary) -> Result<()> {
+    ensure!(
+        summary
+            == (CorpusSummary {
+                datasets: EXPECTED_DATASETS,
+                downloadable_datasets: EXPECTED_DOWNLOADABLE_DATASETS,
+                metadata_only_datasets: EXPECTED_METADATA_ONLY_DATASETS,
+                files: EXPECTED_DOWNLOAD_FILES,
+                bytes: EXPECTED_DOWNLOAD_BYTES,
+            }),
+        "unexpected release corpus summary: {summary:?}"
+    );
+    Ok(())
+}
+
 fn fetch_targets<'a>(
     config: &Config,
     datasets: &'a DatasetCatalog,
@@ -1740,13 +2015,34 @@ fn fetch(
     root: &Path,
     task_id: Option<&str>,
     wanted: Option<&str>,
+    all: bool,
     requested_cache: Option<PathBuf>,
 ) -> Result<()> {
     let config = load_config(root)?;
     let datasets = load_datasets(root, &config)?;
     let selected = fetch_targets(&config, &datasets, task_id, wanted)?;
+    let selected_bytes: u64 = selected
+        .iter()
+        .map(|(_, dataset)| dataset.train.bytes + dataset.test.bytes)
+        .sum();
+    let selected_files = selected.len() * 2;
+    let scope_datasets = match task_id {
+        Some(task) => datasets[task].len(),
+        None => datasets.values().map(BTreeMap::len).sum(),
+    };
+    let metadata_only = if wanted.is_some() {
+        0
+    } else {
+        scope_datasets - selected.len()
+    };
+    if all {
+        validate_release_corpus(corpus_summary(&datasets))?;
+    }
+    if metadata_only > 0 {
+        println!("skipping {metadata_only} metadata-only datasets");
+    }
     let cache = external_cache(root, requested_cache)?;
-    for (task_id, dataset) in selected {
+    for (task_id, dataset) in &selected {
         for (split, source) in [("train", &dataset.train), ("test", &dataset.test)] {
             let url = source.url.as_ref().expect("selected downloadable dataset");
             let destination = cache
@@ -1771,6 +2067,10 @@ fn fetch(
             println!("verified {} {split}", dataset.dataset_hash);
         }
     }
+    println!(
+        "verified {} datasets ({selected_files} files, {selected_bytes} bytes); skipped {metadata_only} metadata-only datasets",
+        selected.len()
+    );
     Ok(())
 }
 
@@ -1786,7 +2086,7 @@ mod tests {
                 metric: "roc_auc".to_owned(),
                 direction,
                 weight: 1.0,
-                analysis_blacklist: "binary/analysis-blacklist.json".into(),
+                analysis_blacklist: "data/binary/analysis-blacklist.json".into(),
             }],
             elo: EloConfig {
                 initial_rating: 1500.0,
@@ -2443,11 +2743,44 @@ mod tests {
         let root = Path::new(env!("CARGO_MANIFEST_DIR"));
         let config = load_config(root).unwrap();
         let datasets = load_datasets(root, &config).unwrap();
-        assert_eq!(datasets["binary"].len(), 799);
-        assert_eq!(datasets["regression"].len(), 1_564);
-        assert_eq!(datasets["multiclass"].len(), 272);
-        assert_eq!(datasets["timeseries"].len(), 42);
-        assert_eq!(datasets.values().map(BTreeMap::len).sum::<usize>(), 2_677);
+        assert_eq!(datasets["binary"].len(), 564);
+        assert_eq!(datasets["regression"].len(), 987);
+        assert_eq!(datasets["multiclass"].len(), 210);
+        assert_eq!(datasets["timeseries"].len(), 29);
+        assert_eq!(datasets.values().map(BTreeMap::len).sum::<usize>(), 1_790);
+        let summary = corpus_summary(&datasets);
+        validate_release_corpus(summary).unwrap();
+        assert_eq!(
+            summary,
+            CorpusSummary {
+                datasets: 1_790,
+                downloadable_datasets: 1_695,
+                metadata_only_datasets: 95,
+                files: 3_390,
+                bytes: 592_077_600,
+            }
+        );
+        assert!(config
+            .tasks
+            .iter()
+            .all(|task| task.analysis_blacklist.starts_with(Path::new("data"))));
+        assert!(!root.join("binary").exists());
+        assert!(!root.join("regression").exists());
+        assert!(!root.join("data/binary/00d5bbbe6dc15c19").exists());
+        load_results(root, &config, &datasets).unwrap();
+    }
+
+    #[test]
+    fn combined_row_threshold_accepts_300_and_rejects_299() {
+        let file = |rows| DataFile {
+            url: None,
+            sha256: "a".repeat(64),
+            bytes: 1,
+            rows,
+        };
+        assert!(check_dataset_rows(&file(149), &file(150)).is_err());
+        check_dataset_rows(&file(150), &file(150)).unwrap();
+        check_dataset_rows(&file(150), &file(151)).unwrap();
     }
 
     #[test]
@@ -2720,14 +3053,14 @@ mod tests {
                 metric: "roc_auc".to_owned(),
                 direction: Direction::Maximize,
                 weight: 0.5,
-                analysis_blacklist: "binary/analysis-blacklist.json".into(),
+                analysis_blacklist: "data/binary/analysis-blacklist.json".into(),
             },
             TaskConfig {
                 id: "regression".to_owned(),
                 metric: "rmse".to_owned(),
                 direction: Direction::Minimize,
                 weight: 0.5,
-                analysis_blacklist: "regression/analysis-blacklist.json".into(),
+                analysis_blacklist: "data/regression/analysis-blacklist.json".into(),
             },
         ];
         config.families.push(FamilyConfig {
@@ -2832,10 +3165,10 @@ mod tests {
             .unwrap();
 
         let expected_counts = BTreeMap::from([
-            ("binary", (799, 799, 0)),
-            ("regression", (1_564, 1_564, 0)),
-            ("multiclass", (272, 272, 0)),
-            ("timeseries", (42, 42, 0)),
+            ("binary", (564, 564, 0)),
+            ("regression", (987, 987, 0)),
+            ("multiclass", (210, 210, 0)),
+            ("timeseries", (29, 29, 0)),
         ]);
         for task in &config.tasks {
             let (corpus, active, blacklisted) = expected_counts[task.id.as_str()];
@@ -2922,6 +3255,84 @@ mod tests {
     }
 
     #[test]
+    fn encryption_cli_requires_key_files_and_public_recipients() {
+        for arguments in [
+            vec![
+                "sotarena",
+                "keygen",
+                "--identity",
+                "private.identity",
+                "--recipient",
+                "public.recipient",
+            ],
+            vec![
+                "sotarena",
+                "encrypt",
+                "--input",
+                "solutions",
+                "--output",
+                "solutions.tar.zst.age",
+                "--recipient",
+                "age1first",
+                "--recipient",
+                "age1second",
+            ],
+            vec![
+                "sotarena",
+                "decrypt",
+                "--input",
+                "solutions.tar.zst.age",
+                "--output",
+                "decrypted",
+                "--identity",
+                "private.identity",
+            ],
+        ] {
+            assert!(Cli::try_parse_from(arguments).is_ok());
+        }
+        assert!(Cli::try_parse_from([
+            "sotarena",
+            "encrypt",
+            "--input",
+            "solutions",
+            "--output",
+            "archive.age",
+        ])
+        .is_err());
+        assert!(Cli::try_parse_from([
+            "sotarena",
+            "decrypt",
+            "--input",
+            "archive.age",
+            "--output",
+            "decrypted",
+            "--identity-key",
+            "AGE-SECRET-KEY-1...",
+        ])
+        .is_err());
+    }
+
+    #[cfg(unix)]
+    #[test]
+    fn keygen_writes_a_private_0600_identity_and_refuses_overwrite() {
+        let workspace = tempfile::tempdir().unwrap();
+        let identity = workspace.path().join("private.identity");
+        let recipient = workspace.path().join("public.recipient");
+        write_keypair(&identity, &recipient).unwrap();
+        assert_eq!(
+            fs::metadata(&identity).unwrap().permissions().mode() & 0o777,
+            0o600
+        );
+        assert_eq!(
+            fs::metadata(&recipient).unwrap().permissions().mode() & 0o777,
+            0o644
+        );
+        let original_identity = fs::read(&identity).unwrap();
+        assert!(write_keypair(&identity, &recipient).is_err());
+        assert_eq!(fs::read(&identity).unwrap(), original_identity);
+    }
+
+    #[test]
     fn bulk_fetch_skips_metadata_only_datasets_but_explicit_fetch_errors() {
         let config = test_config(Direction::Maximize);
         let mut datasets = test_datasets(&["aaaaaaaaaaaaaaaa", "bbbbbbbbbbbbbbbb"]);
@@ -2938,6 +3349,16 @@ mod tests {
         assert_eq!(task[0].1.dataset_hash, "aaaaaaaaaaaaaaaa");
         let all = fetch_targets(&config, &datasets, None, None).unwrap();
         assert_eq!(all.len(), 1);
+        assert_eq!(
+            corpus_summary(&datasets),
+            CorpusSummary {
+                datasets: 2,
+                downloadable_datasets: 1,
+                metadata_only_datasets: 1,
+                files: 2,
+                bytes: 2,
+            }
+        );
 
         let error = fetch_targets(&config, &datasets, Some("binary"), Some("bbbbbbbbbbbbbbbb"))
             .err()
@@ -2992,6 +3413,9 @@ mod tests {
             "cargo run --release -- fetch --task binary",
             "cargo run --release -- fetch --all",
             "cargo run --release -- report --out report.json",
+            "cargo run --release -- keygen --identity /secure/sotarena.identity --recipient sotarena.recipient",
+            "cargo run --release -- encrypt --input solutions --output solutions.tar.zst.age --recipient age1...",
+            "cargo run --release -- decrypt --input solutions.tar.zst.age --output decrypted-solutions --identity /secure/sotarena.identity",
         ] {
             assert!(readme.contains(command));
         }
@@ -3011,8 +3435,11 @@ mod tests {
             5
         );
         let lowercase = readme.to_ascii_lowercase();
-        assert!(!lowercase.contains("track"));
         assert!(lowercase.contains("analysis cohort"));
+        assert!(lowercase.contains("lost identities are unrecoverable"));
+        assert!(lowercase.contains("not post-quantum"));
+        assert!(lowercase.contains("inspect demos before running them manually"));
+        assert!(lowercase.contains("1,695 datasets are downloadable"));
         assert!(readme.contains("Datasets: 4. Download all: `cargo run --release -- fetch --all`."));
         for task in ["binary", "regression", "multiclass", "timeseries"] {
             assert!(readme.contains(&format!(

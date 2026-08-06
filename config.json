@@ -6,28 +6,28 @@
       "metric": "roc_auc",
       "direction": "maximize",
       "weight": 0.25,
-      "analysis_blacklist": "binary/analysis-blacklist.json"
+      "analysis_blacklist": "data/binary/analysis-blacklist.json"
     },
     {
       "id": "regression",
       "metric": "rmse",
       "direction": "minimize",
       "weight": 0.25,
-      "analysis_blacklist": "regression/analysis-blacklist.json"
+      "analysis_blacklist": "data/regression/analysis-blacklist.json"
     },
     {
       "id": "multiclass",
       "metric": "macro_f1",
       "direction": "maximize",
       "weight": 0.25,
-      "analysis_blacklist": "multiclass/analysis-blacklist.json"
+      "analysis_blacklist": "data/multiclass/analysis-blacklist.json"
     },
     {
       "id": "timeseries",
       "metric": "mase",
       "direction": "minimize",
       "weight": 0.25,
-      "analysis_blacklist": "timeseries/analysis-blacklist.json"
+      "analysis_blacklist": "data/timeseries/analysis-blacklist.json"
     }
   ],
   "elo": {

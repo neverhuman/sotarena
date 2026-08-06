@@ -1,0 +1,39 @@
+name: Download verification
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sotarena-download-verification
+  cancel-in-progress: false
+
+jobs:
+  verify-downloads:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: dtolnay/rust-toolchain@1.88.0
+      - name: Fetch and verify the complete downloadable corpus
+        shell: bash
+        run: |
+          attempt=1
+          benchmark_cache="${RUNNER_TEMP}/sotarena-benchmark-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          while true; do
+            echo "download verification attempt ${attempt} of 3"
+            if cargo run --release -- fetch --all --cache-dir "${benchmark_cache}"; then
+              break
+            fi
+            if [[ "${attempt}" -eq 3 ]]; then
+              echo "download verification failed after 3 attempts" >&2
+              exit 1
+            fi
+            attempt=$((attempt + 1))
+          done

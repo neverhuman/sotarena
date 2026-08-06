@@ -1,145 +1,145 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="516" viewBox="0 0 600 516" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" width="632" height="516" viewBox="0 0 632 516" role="img" aria-labelledby="title">
   <title id="title">Timeseries Elo leaderboard</title>
   <defs>
-    <clipPath id="frame-clip"><rect width="600" height="516" rx="6"/></clipPath>
+    <clipPath id="frame-clip"><rect width="632" height="516" rx="6"/></clipPath>
     <linearGradient id="elo-gradient-0" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#15662c"/>
       <stop offset="100%" stop-color="#1a7f37"/>
     </linearGradient>
     <linearGradient id="elo-gradient-1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7f4e03"/>
-      <stop offset="100%" stop-color="#9f6104"/>
+      <stop offset="0%" stop-color="#7e5002"/>
+      <stop offset="100%" stop-color="#9d6402"/>
     </linearGradient>
     <linearGradient id="elo-gradient-2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7f4d04"/>
-      <stop offset="100%" stop-color="#9f6005"/>
+      <stop offset="0%" stop-color="#814b05"/>
+      <stop offset="100%" stop-color="#a15e06"/>
     </linearGradient>
     <linearGradient id="elo-gradient-3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#804c05"/>
-      <stop offset="100%" stop-color="#a05f06"/>
+      <stop offset="0%" stop-color="#844707"/>
+      <stop offset="100%" stop-color="#a55909"/>
     </linearGradient>
     <linearGradient id="elo-gradient-4" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#844608"/>
-      <stop offset="100%" stop-color="#a5580a"/>
+      <stop offset="0%" stop-color="#88420b"/>
+      <stop offset="100%" stop-color="#aa530e"/>
     </linearGradient>
     <linearGradient id="elo-gradient-5" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#854609"/>
-      <stop offset="100%" stop-color="#a6570b"/>
+      <stop offset="0%" stop-color="#8a3f0d"/>
+      <stop offset="100%" stop-color="#ac4f10"/>
     </linearGradient>
     <linearGradient id="elo-gradient-6" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#913613"/>
-      <stop offset="100%" stop-color="#b54318"/>
+      <stop offset="0%" stop-color="#923514"/>
+      <stop offset="100%" stop-color="#b74219"/>
     </linearGradient>
     <linearGradient id="elo-gradient-7" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#963017"/>
-      <stop offset="100%" stop-color="#bb3c1d"/>
+      <stop offset="0%" stop-color="#943216"/>
+      <stop offset="100%" stop-color="#b93f1b"/>
     </linearGradient>
     <linearGradient id="elo-gradient-8" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#992c1a"/>
-      <stop offset="100%" stop-color="#bf3720"/>
+      <stop offset="0%" stop-color="#9d261d"/>
+      <stop offset="100%" stop-color="#c43024"/>
     </linearGradient>
     <linearGradient id="elo-gradient-9" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#992b1a"/>
-      <stop offset="100%" stop-color="#bf3620"/>
+      <stop offset="0%" stop-color="#9d261e"/>
+      <stop offset="100%" stop-color="#c43025"/>
     </linearGradient>
     <linearGradient id="elo-gradient-10" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#9e251e"/>
-      <stop offset="100%" stop-color="#c62e26"/>
+      <stop offset="0%" stop-color="#a12121"/>
+      <stop offset="100%" stop-color="#c92929"/>
     </linearGradient>
     <linearGradient id="elo-gradient-11" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a12221"/>
-      <stop offset="100%" stop-color="#c92a29"/>
+      <stop offset="0%" stop-color="#a21f22"/>
+      <stop offset="100%" stop-color="#cb272a"/>
     </linearGradient>
     <linearGradient id="elo-gradient-12" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a51d24"/>
-      <stop offset="100%" stop-color="#ce242d"/>
+      <stop offset="0%" stop-color="#a31e23"/>
+      <stop offset="100%" stop-color="#cc252c"/>
     </linearGradient>
     <linearGradient id="elo-gradient-13" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#a61b25"/>
       <stop offset="100%" stop-color="#cf222e"/>
     </linearGradient>
   </defs>
-  <rect width="600" height="516" rx="6" fill="#ffffff"/>
+  <rect width="632" height="516" rx="6" fill="#ffffff"/>
   <g clip-path="url(#frame-clip)">
-    <rect class="elo-bar" x="360" y="40" width="240.000" height="34" fill="url(#elo-gradient-0)"/>
-    <rect class="elo-bar" x="360" y="74" width="122.646" height="34" fill="url(#elo-gradient-1)"/>
-    <rect class="elo-bar" x="360" y="108" width="120.868" height="34" fill="url(#elo-gradient-2)"/>
-    <rect class="elo-bar" x="360" y="142" width="118.758" height="34" fill="url(#elo-gradient-3)"/>
-    <rect class="elo-bar" x="360" y="176" width="108.543" height="34" fill="url(#elo-gradient-4)"/>
-    <rect class="elo-bar" x="360" y="210" width="107.218" height="34" fill="url(#elo-gradient-5)"/>
-    <rect class="elo-bar" x="360" y="244" width="76.280" height="34" fill="url(#elo-gradient-6)"/>
-    <rect class="elo-bar" x="360" y="278" width="63.891" height="34" fill="url(#elo-gradient-7)"/>
-    <rect class="elo-bar" x="360" y="312" width="56.459" height="34" fill="url(#elo-gradient-8)"/>
-    <rect class="elo-bar" x="360" y="346" width="56.012" height="34" fill="url(#elo-gradient-9)"/>
-    <rect class="elo-bar" x="360" y="380" width="42.828" height="34" fill="url(#elo-gradient-10)"/>
-    <rect class="elo-bar" x="360" y="414" width="36.737" height="34" fill="url(#elo-gradient-11)"/>
-    <rect class="elo-bar" x="360" y="448" width="26.776" height="34" fill="url(#elo-gradient-12)"/>
-    <rect class="elo-bar" x="360" y="482" width="23.913" height="34" fill="url(#elo-gradient-13)"/>
+    <rect class="elo-bar" x="392" y="40" width="240.000" height="34" fill="url(#elo-gradient-0)"/>
+    <rect class="elo-bar" x="392" y="74" width="126.853" height="34" fill="url(#elo-gradient-1)"/>
+    <rect class="elo-bar" x="392" y="108" width="117.329" height="34" fill="url(#elo-gradient-2)"/>
+    <rect class="elo-bar" x="392" y="142" width="110.274" height="34" fill="url(#elo-gradient-3)"/>
+    <rect class="elo-bar" x="392" y="176" width="100.151" height="34" fill="url(#elo-gradient-4)"/>
+    <rect class="elo-bar" x="392" y="210" width="94.568" height="34" fill="url(#elo-gradient-5)"/>
+    <rect class="elo-bar" x="392" y="244" width="73.671" height="34" fill="url(#elo-gradient-6)"/>
+    <rect class="elo-bar" x="392" y="278" width="68.929" height="34" fill="url(#elo-gradient-7)"/>
+    <rect class="elo-bar" x="392" y="312" width="46.549" height="34" fill="url(#elo-gradient-8)"/>
+    <rect class="elo-bar" x="392" y="346" width="46.336" height="34" fill="url(#elo-gradient-9)"/>
+    <rect class="elo-bar" x="392" y="380" width="35.591" height="34" fill="url(#elo-gradient-10)"/>
+    <rect class="elo-bar" x="392" y="414" width="32.546" height="34" fill="url(#elo-gradient-11)"/>
+    <rect class="elo-bar" x="392" y="448" width="29.479" height="34" fill="url(#elo-gradient-12)"/>
+    <rect class="elo-bar" x="392" y="482" width="24.160" height="34" fill="url(#elo-gradient-13)"/>
   </g>
-  <path d="M 1 6 Q 1 1 6 1 H 594 Q 599 1 599 6 V 40 H 1 Z" fill="#f6f8fa"/>
+  <path d="M 1 6 Q 1 1 6 1 H 626 Q 631 1 631 6 V 40 H 1 Z" fill="#f6f8fa"/>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14">
     <g fill="#57606a" font-weight="600">
       <text x="48" y="25" text-anchor="end">Rank</text>
       <text x="80" y="25">Method</text>
-      <text x="344" y="25" text-anchor="end">Elo</text>
-      <text x="376" y="25">Relative Elo (95% min)</text>
+      <text x="376" y="25" text-anchor="end">Elo</text>
+      <text x="408" y="25">Relative Elo (95% min)</text>
     </g>
     <text x="48" y="62" text-anchor="end" fill="#57606a">1</text>
     <text x="80" y="62" fill="#1a7f37" font-weight="700">ASPFM</text>
-    <text x="344" y="62" text-anchor="end" fill="#1a7f37" font-weight="700">2005.5</text>
+    <text x="376" y="62" text-anchor="end" fill="#1a7f37" font-weight="700">2020.5</text>
     <text x="48" y="96" text-anchor="end" fill="#57606a">2</text>
-    <text x="80" y="96" fill="#9f6104" font-weight="700">chronos_2_small</text>
-    <text x="344" y="96" text-anchor="end" fill="#9f6104" font-weight="700">1666.5</text>
+    <text x="80" y="96" fill="#9d6402" font-weight="700">TimesFM</text>
+    <text x="376" y="96" text-anchor="end" fill="#9d6402" font-weight="700">1693.5</text>
     <text x="48" y="130" text-anchor="end" fill="#57606a">3</text>
-    <text x="80" y="130" fill="#9f6005" font-weight="700">TabPFN v3</text>
-    <text x="344" y="130" text-anchor="end" fill="#9f6005" font-weight="700">1661.4</text>
+    <text x="80" y="130" fill="#a15e06" font-weight="700">chronos_2_small</text>
+    <text x="376" y="130" text-anchor="end" fill="#a15e06" font-weight="700">1666.0</text>
     <text x="48" y="164" text-anchor="end" fill="#57606a">4</text>
-    <text x="80" y="164" fill="#a05f06" font-weight="700">TimesFM</text>
-    <text x="344" y="164" text-anchor="end" fill="#a05f06" font-weight="700">1655.3</text>
+    <text x="80" y="164" fill="#a55909" font-weight="700">TabPFN v3</text>
+    <text x="376" y="164" text-anchor="end" fill="#a55909" font-weight="700">1645.6</text>
     <text x="48" y="198" text-anchor="end" fill="#57606a">5</text>
-    <text x="80" y="198" fill="#a5580a" font-weight="700">TabICL</text>
-    <text x="344" y="198" text-anchor="end" fill="#a5580a" font-weight="700">1625.8</text>
+    <text x="80" y="198" fill="#aa530e" font-weight="700">TabICL</text>
+    <text x="376" y="198" text-anchor="end" fill="#aa530e" font-weight="700">1616.3</text>
     <text x="48" y="232" text-anchor="end" fill="#57606a">6</text>
-    <text x="80" y="232" fill="#a6570b" font-weight="700">moirai_2_small</text>
-    <text x="344" y="232" text-anchor="end" fill="#a6570b" font-weight="700">1622.0</text>
+    <text x="80" y="232" fill="#ac4f10" font-weight="700">moirai_2_small</text>
+    <text x="376" y="232" text-anchor="end" fill="#ac4f10" font-weight="700">1600.2</text>
     <text x="48" y="266" text-anchor="end" fill="#57606a">7</text>
-    <text x="80" y="266" fill="#b54318" font-weight="700">TabFM Ensemble</text>
-    <text x="344" y="266" text-anchor="end" fill="#b54318" font-weight="700">1532.6</text>
+    <text x="80" y="266" fill="#b74219" font-weight="700">TabFM Ensemble</text>
+    <text x="376" y="266" text-anchor="end" fill="#b74219" font-weight="700">1539.8</text>
     <text x="48" y="300" text-anchor="end" fill="#57606a">8</text>
-    <text x="80" y="300" fill="#bb3c1d" font-weight="700">seasonal_naive</text>
-    <text x="344" y="300" text-anchor="end" fill="#bb3c1d" font-weight="700">1496.8</text>
+    <text x="80" y="300" fill="#b93f1b" font-weight="700">sktime_reduction_lightgbm</text>
+    <text x="376" y="300" text-anchor="end" fill="#b93f1b" font-weight="700">1526.1</text>
     <text x="48" y="334" text-anchor="end" fill="#57606a">9</text>
-    <text x="80" y="334" fill="#bf3720" font-weight="700">auto_arima</text>
-    <text x="344" y="334" text-anchor="end" fill="#bf3720" font-weight="700">1475.4</text>
+    <text x="80" y="334" fill="#c43024" font-weight="700">auto_arima</text>
+    <text x="376" y="334" text-anchor="end" fill="#c43024" font-weight="700">1461.4</text>
     <text x="48" y="368" text-anchor="end" fill="#57606a">10</text>
-    <text x="80" y="368" fill="#bf3620" font-weight="700">neuralforecast_nbeats</text>
-    <text x="344" y="368" text-anchor="end" fill="#bf3620" font-weight="700">1474.1</text>
-    <text x="48" y="402" text-anchor="end" fill="#57606a">12</text>
-    <text x="80" y="402" fill="#c62e26" font-weight="700">OpenAI *sol</text>
-    <text x="344" y="402" text-anchor="end" fill="#c62e26" font-weight="700">1436.0</text>
-    <text x="48" y="436" text-anchor="end" fill="#57606a">14</text>
-    <text x="80" y="436" fill="#c92a29" font-weight="700">Fable 5</text>
-    <text x="344" y="436" text-anchor="end" fill="#c92a29" font-weight="700">1418.4</text>
-    <text x="48" y="470" text-anchor="end" fill="#57606a">18</text>
-    <text x="80" y="470" fill="#ce242d" font-weight="700">Grok 4.5</text>
-    <text x="344" y="470" text-anchor="end" fill="#ce242d" font-weight="700">1389.6</text>
-    <text x="48" y="504" text-anchor="end" fill="#57606a">19</text>
+    <text x="80" y="368" fill="#c43025" font-weight="700">seasonal_naive</text>
+    <text x="376" y="368" text-anchor="end" fill="#c43025" font-weight="700">1460.8</text>
+    <text x="48" y="402" text-anchor="end" fill="#57606a">15</text>
+    <text x="80" y="402" fill="#c92929" font-weight="700">OpenAI *sol</text>
+    <text x="376" y="402" text-anchor="end" fill="#c92929" font-weight="700">1429.7</text>
+    <text x="48" y="436" text-anchor="end" fill="#57606a">16</text>
+    <text x="80" y="436" fill="#cb272a" font-weight="700">Grok 4.5</text>
+    <text x="376" y="436" text-anchor="end" fill="#cb272a" font-weight="700">1420.9</text>
+    <text x="48" y="470" text-anchor="end" fill="#57606a">17</text>
+    <text x="80" y="470" fill="#cc252c" font-weight="700">Fable 5</text>
+    <text x="376" y="470" text-anchor="end" fill="#cc252c" font-weight="700">1412.0</text>
+    <text x="48" y="504" text-anchor="end" fill="#57606a">18</text>
     <text x="80" y="504" fill="#cf222e" font-weight="700">Kimi K3</text>
-    <text x="344" y="504" text-anchor="end" fill="#cf222e" font-weight="700">1381.4</text>
+    <text x="376" y="504" text-anchor="end" fill="#cf222e" font-weight="700">1396.7</text>
   </g>
-  <path d="M 1 40 H 599" stroke="#d0d7de"/>
-  <path d="M 1 74 H 599" stroke="#d0d7de"/>
-  <path d="M 1 108 H 599" stroke="#d0d7de"/>
-  <path d="M 1 142 H 599" stroke="#d0d7de"/>
-  <path d="M 1 176 H 599" stroke="#d0d7de"/>
-  <path d="M 1 210 H 599" stroke="#d0d7de"/>
-  <path d="M 1 244 H 599" stroke="#d0d7de"/>
-  <path d="M 1 278 H 599" stroke="#d0d7de"/>
-  <path d="M 1 312 H 599" stroke="#d0d7de"/>
-  <path d="M 1 346 H 599" stroke="#d0d7de"/>
-  <path d="M 1 380 H 599" stroke="#d0d7de"/>
-  <path d="M 1 414 H 599" stroke="#d0d7de"/>
-  <path d="M 1 448 H 599" stroke="#d0d7de"/>
-  <path d="M 1 482 H 599" stroke="#d0d7de"/>
-  <rect width="600" height="516" rx="6" fill="none" stroke="#d0d7de"/>
+  <path d="M 1 40 H 631" stroke="#d0d7de"/>
+  <path d="M 1 74 H 631" stroke="#d0d7de"/>
+  <path d="M 1 108 H 631" stroke="#d0d7de"/>
+  <path d="M 1 142 H 631" stroke="#d0d7de"/>
+  <path d="M 1 176 H 631" stroke="#d0d7de"/>
+  <path d="M 1 210 H 631" stroke="#d0d7de"/>
+  <path d="M 1 244 H 631" stroke="#d0d7de"/>
+  <path d="M 1 278 H 631" stroke="#d0d7de"/>
+  <path d="M 1 312 H 631" stroke="#d0d7de"/>
+  <path d="M 1 346 H 631" stroke="#d0d7de"/>
+  <path d="M 1 380 H 631" stroke="#d0d7de"/>
+  <path d="M 1 414 H 631" stroke="#d0d7de"/>
+  <path d="M 1 448 H 631" stroke="#d0d7de"/>
+  <path d="M 1 482 H 631" stroke="#d0d7de"/>
+  <rect width="632" height="516" rx="6" fill="none" stroke="#d0d7de"/>
 </svg>

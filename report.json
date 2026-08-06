@@ -1,56 +1,56 @@
 {
   "schema": "sotarena.report",
-  "datasets_total": 2677,
-  "result_jsons_total": 26731,
-  "score_rows": 217359,
+  "datasets_total": 1790,
+  "result_jsons_total": 20514,
+  "score_rows": 146016,
   "global": [
     {
       "rank": 1,
       "family_id": "aspfm",
       "display_name": "ASPFM",
-      "elo": 1904.2095633615404
+      "elo": 1894.1907799059613
     },
     {
       "rank": 2,
       "family_id": "tabfm-ensemble",
       "display_name": "TabFM Ensemble",
-      "elo": 1590.5702072367112
+      "elo": 1632.9861073840284
     },
     {
       "rank": 3,
       "family_id": "tabicl",
       "display_name": "TabICL",
-      "elo": 1583.8084263727596
+      "elo": 1600.0994860475907
     },
     {
       "rank": 4,
       "family_id": "tabpfn-v3",
       "display_name": "TabPFN v3",
-      "elo": 1571.24934872079
+      "elo": 1582.7414670667679
     },
     {
       "rank": 5,
       "family_id": "fable-5",
       "display_name": "Fable 5",
-      "elo": 1429.5161382741271
+      "elo": 1438.1397612770236
     },
     {
       "rank": 6,
       "family_id": "openai-sol",
       "display_name": "OpenAI *sol",
-      "elo": 1350.9887453238757
+      "elo": 1332.7980560245142
     },
     {
       "rank": 7,
       "family_id": "grok-4-5",
       "display_name": "Grok 4.5",
-      "elo": 1318.6206612575054
+      "elo": 1312.3345591655664
     },
     {
       "rank": 8,
       "family_id": "kimi-k3",
       "display_name": "Kimi K3",
-      "elo": 1251.0369094526898
+      "elo": 1206.7097831285469
     }
   ],
   "tasks": [
@@ -59,90 +59,90 @@
       "metric": "roc_auc",
       "metric_direction": "maximize",
       "weight": 0.25,
-      "datasets": 799,
-      "analysis_datasets": 799,
+      "datasets": 564,
+      "analysis_datasets": 564,
       "blacklisted_datasets": 0,
-      "result_jsons": 15924,
-      "score_rows": 86585,
+      "result_jsons": 14235,
+      "score_rows": 63083,
       "methods": 1053,
       "rows": [
         {
           "rank": 1,
           "method_id": "ASPFM",
-          "elo": 2062.9090489985365,
-          "datasets_scored": 799
+          "elo": 2095.754466888726,
+          "datasets_scored": 564
         },
         {
           "rank": 2,
           "method_id": "TabFM Ensemble",
-          "elo": 1718.0275233616137,
-          "datasets_scored": 799
+          "elo": 1788.238508140016,
+          "datasets_scored": 564
         },
         {
           "rank": 3,
           "method_id": "TabICL",
-          "elo": 1715.9434188929865,
-          "datasets_scored": 799
+          "elo": 1763.650213995132,
+          "datasets_scored": 564
         },
         {
           "rank": 4,
           "method_id": "TabPFN v3",
-          "elo": 1681.9085963395983,
-          "datasets_scored": 799
+          "elo": 1723.938596304447,
+          "datasets_scored": 564
         },
         {
           "rank": 5,
           "method_id": "catboost",
-          "elo": 1681.3270516766217,
-          "datasets_scored": 799
+          "elo": 1689.8492701648915,
+          "datasets_scored": 564
         },
         {
           "rank": 6,
           "method_id": "ebm",
-          "elo": 1647.8241873120244,
-          "datasets_scored": 799
+          "elo": 1665.043256986321,
+          "datasets_scored": 564
         },
         {
           "rank": 7,
           "method_id": "Fable 5",
-          "elo": 1631.3554942986,
-          "datasets_scored": 799
+          "elo": 1648.5633905663442,
+          "datasets_scored": 564
         },
         {
           "rank": 8,
           "method_id": "ada_boost",
-          "elo": 1616.7255124500562,
-          "datasets_scored": 799
+          "elo": 1622.5074819243262,
+          "datasets_scored": 564
         },
         {
           "rank": 9,
           "method_id": "gradient_boosting",
-          "elo": 1597.8539416733552,
-          "datasets_scored": 799
+          "elo": 1599.797685919994,
+          "datasets_scored": 564
         },
         {
           "rank": 10,
           "method_id": "voting_soft",
-          "elo": 1582.2960570842702,
-          "datasets_scored": 799
+          "elo": 1584.9103313263931,
+          "datasets_scored": 564
+        },
+        {
+          "rank": 16,
+          "method_id": "Grok 4.5",
+          "elo": 1528.8512209465298,
+          "datasets_scored": 564
         },
         {
           "rank": 17,
           "method_id": "OpenAI *sol",
-          "elo": 1526.999509045372,
-          "datasets_scored": 799
-        },
-        {
-          "rank": 18,
-          "method_id": "Grok 4.5",
-          "elo": 1519.266309221379,
-          "datasets_scored": 799
+          "elo": 1526.5158184090644,
+          "datasets_scored": 564
         },
         {
           "rank": 26,
           "method_id": "Kimi K3",
-          "elo": 1459.2916110623335,
-          "datasets_scored": 799
+          "elo": 1445.7315478150251,
+          "datasets_scored": 564
         }
       ]
     },
@@ -151,84 +151,84 @@
       "metric": "rmse",
       "metric_direction": "minimize",
       "weight": 0.25,
-      "datasets": 1564,
-      "analysis_datasets": 1564,
+      "datasets": 987,
+      "analysis_datasets": 987,
       "blacklisted_datasets": 0,
-      "result_jsons": 2216,
-      "score_rows": 119247,
-      "methods": 1071,
+      "result_jsons": 1390,
+      "score_rows": 74106,
+      "methods": 295,
       "rows": [
         {
           "rank": 1,
           "method_id": "ASPFM",
-          "elo": 2385.3873921431214,
-          "datasets_scored": 1564
+          "elo": 2334.463274556698,
+          "datasets_scored": 987
         },
         {
           "rank": 2,
           "method_id": "TabFM Ensemble",
-          "elo": 1897.8677687084569,
-          "datasets_scored": 1564
+          "elo": 1932.8138704498454,
+          "datasets_scored": 987
         },
         {
           "rank": 3,
           "method_id": "TabPFN v3",
-          "elo": 1883.3007525075343,
-          "datasets_scored": 1564
+          "elo": 1877.613455097235,
+          "datasets_scored": 987
         },
         {
           "rank": 4,
           "method_id": "TabICL",
-          "elo": 1866.5275180602466,
-          "datasets_scored": 1564
+          "elo": 1877.269254777036,
+          "datasets_scored": 987
         },
         {
           "rank": 5,
           "method_id": "catboost",
-          "elo": 1793.1072317182525,
-          "datasets_scored": 1564
+          "elo": 1761.3543597629644,
+          "datasets_scored": 987
         },
         {
           "rank": 6,
           "method_id": "Fable 5",
-          "elo": 1757.8948277050692,
-          "datasets_scored": 1564
+          "elo": 1760.3986624951947,
+          "datasets_scored": 987
         },
         {
           "rank": 7,
           "method_id": "stacking_trees_meta",
-          "elo": 1721.1170711388781,
-          "datasets_scored": 1564
+          "elo": 1723.066940598378,
+          "datasets_scored": 987
         },
         {
           "rank": 8,
           "method_id": "gaussian_process",
-          "elo": 1688.1692498452185,
-          "datasets_scored": 1564
+          "elo": 1683.3964416569236,
+          "datasets_scored": 987
         },
         {
           "rank": 9,
-          "method_id": "gradient_boosting",
-          "elo": 1677.3759534997246,
-          "datasets_scored": 1564
+          "method_id": "Grok 4.5",
+          "elo": 1646.2714296251918,
+          "datasets_scored": 987
         },
         {
           "rank": 10,
-          "method_id": "Grok 4.5",
-          "elo": 1655.8407960032646,
-          "datasets_scored": 1564
+          "method_id": "gradient_boosting",
+          "elo": 1641.5869724688496,
+          "datasets_scored": 987
         },
         {
           "rank": 15,
           "method_id": "OpenAI *sol",
-          "elo": 1614.594606910106,
-          "datasets_scored": 1564
+          "elo": 1575.595146066787,
+          "datasets_scored": 987
         },
         {
-          "rank": 42,
+          "rank": 45,
           "method_id": "Kimi K3",
-          "elo": 1410.3239451694537,
-          "datasets_scored": 1564
+          "elo": 1349.9626415195412,
+          "datasets_scored": 987
         }
       ]
     },
@@ -237,96 +237,96 @@
       "metric": "macro_f1",
       "metric_direction": "maximize",
       "weight": 0.25,
-      "datasets": 272,
-      "analysis_datasets": 272,
+      "datasets": 210,
+      "analysis_datasets": 210,
       "blacklisted_datasets": 0,
-      "result_jsons": 280,
-      "score_rows": 10608,
+      "result_jsons": 218,
+      "score_rows": 8190,
       "methods": 39,
       "rows": [
         {
           "rank": 1,
-          "method_id": "ASPFM",
-          "elo": 1753.0455602421712,
-          "datasets_scored": 272
+          "method_id": "TabFM Ensemble",
+          "elo": 1763.599808104567,
+          "datasets_scored": 210
         },
         {
           "rank": 2,
-          "method_id": "TabFM Ensemble",
-          "elo": 1713.688129256646,
-          "datasets_scored": 272
+          "method_id": "ASPFM",
+          "elo": 1725.4167759437803,
+          "datasets_scored": 210
         },
         {
           "rank": 3,
           "method_id": "TabICL",
-          "elo": 1686.0552472609747,
-          "datasets_scored": 272
+          "elo": 1715.630704603145,
+          "datasets_scored": 210
         },
         {
           "rank": 4,
           "method_id": "TabPFN v3",
-          "elo": 1642.6151996294866,
-          "datasets_scored": 272
+          "elo": 1675.035964729682,
+          "datasets_scored": 210
         },
         {
           "rank": 5,
           "method_id": "CatBoost",
-          "elo": 1635.8188180151478,
-          "datasets_scored": 272
+          "elo": 1651.020840643602,
+          "datasets_scored": 210
         },
         {
           "rank": 6,
-          "method_id": "mc20_tabdpt",
-          "elo": 1602.4367360907142,
-          "datasets_scored": 272
+          "method_id": "mitra_classifier_default",
+          "elo": 1628.5658695629654,
+          "datasets_scored": 210
         },
         {
           "rank": 7,
-          "method_id": "mitra_classifier_default",
-          "elo": 1601.0272201733533,
-          "datasets_scored": 272
+          "method_id": "mc20_tabdpt",
+          "elo": 1623.2088667896148,
+          "datasets_scored": 210
         },
         {
           "rank": 8,
           "method_id": "limix_2m_classifier_default",
-          "elo": 1598.8604407277473,
-          "datasets_scored": 272
+          "elo": 1612.3556066987278,
+          "datasets_scored": 210
         },
         {
           "rank": 9,
           "method_id": "mc20_xgboost_tuned",
-          "elo": 1572.171037228193,
-          "datasets_scored": 272
+          "elo": 1577.106158509848,
+          "datasets_scored": 210
         },
         {
           "rank": 10,
           "method_id": "mc20_xgboost_hist_240",
-          "elo": 1560.3223987894503,
-          "datasets_scored": 272
+          "elo": 1558.909939104556,
+          "datasets_scored": 210
         },
         {
-          "rank": 20,
+          "rank": 18,
           "method_id": "Fable 5",
-          "elo": 1515.2991863460065,
-          "datasets_scored": 272
+          "elo": 1523.6581697012052,
+          "datasets_scored": 210
         },
         {
           "rank": 31,
           "method_id": "OpenAI *sol",
-          "elo": 1430.508641810208,
-          "datasets_scored": 272
+          "elo": 1420.294834364386,
+          "datasets_scored": 210
         },
         {
           "rank": 36,
-          "method_id": "Kimi K3",
-          "elo": 1333.6853371210104,
-          "datasets_scored": 272
+          "method_id": "Grok 4.5",
+          "elo": 1291.2480168187003,
+          "datasets_scored": 210
         },
         {
           "rank": 37,
-          "method_id": "Grok 4.5",
-          "elo": 1324.7201380971,
-          "datasets_scored": 272
+          "method_id": "Kimi K3",
+          "elo": 1270.0753528932357,
+          "datasets_scored": 210
         }
       ]
     },
@@ -335,96 +335,96 @@
       "metric": "mase",
       "metric_direction": "minimize",
       "weight": 0.25,
-      "datasets": 42,
-      "analysis_datasets": 42,
+      "datasets": 29,
+      "analysis_datasets": 29,
       "blacklisted_datasets": 0,
-      "result_jsons": 50,
-      "score_rows": 919,
+      "result_jsons": 29,
+      "score_rows": 637,
       "methods": 22,
       "rows": [
         {
           "rank": 1,
           "method_id": "ASPFM",
-          "elo": 2005.4596276953023,
-          "datasets_scored": 42
+          "elo": 2020.5467176906586,
+          "datasets_scored": 29
         },
         {
           "rank": 2,
-          "method_id": "chronos_2_small",
-          "elo": 1666.5140504173203,
-          "datasets_scored": 42
+          "method_id": "TimesFM",
+          "elo": 1693.5022772406178,
+          "datasets_scored": 29
         },
         {
           "rank": 3,
-          "method_id": "TabPFN v3",
-          "elo": 1661.3791217032249,
-          "datasets_scored": 42
+          "method_id": "chronos_2_small",
+          "elo": 1665.9746454730055,
+          "datasets_scored": 29
         },
         {
           "rank": 4,
-          "method_id": "TimesFM",
-          "elo": 1655.2842836299737,
-          "datasets_scored": 42
+          "method_id": "TabPFN v3",
+          "elo": 1645.582055745851,
+          "datasets_scored": 29
         },
         {
           "rank": 5,
           "method_id": "TabICL",
-          "elo": 1625.7811857198124,
-          "datasets_scored": 42
+          "elo": 1616.3222552655823,
+          "datasets_scored": 29
         },
         {
           "rank": 6,
           "method_id": "moirai_2_small",
-          "elo": 1621.9555752211738,
-          "datasets_scored": 42
+          "elo": 1600.18443063225,
+          "datasets_scored": 29
         },
         {
           "rank": 7,
           "method_id": "TabFM Ensemble",
-          "elo": 1532.5969386980867,
-          "datasets_scored": 42
+          "elo": 1539.7813398088645,
+          "datasets_scored": 29
         },
         {
           "rank": 8,
-          "method_id": "seasonal_naive",
-          "elo": 1496.8147209502076,
-          "datasets_scored": 42
+          "method_id": "sktime_reduction_lightgbm",
+          "elo": 1526.0751926976973,
+          "datasets_scored": 29
         },
         {
           "rank": 9,
           "method_id": "auto_arima",
-          "elo": 1475.3500543581529,
-          "datasets_scored": 42
+          "elo": 1461.388916928884,
+          "datasets_scored": 29
         },
         {
           "rank": 10,
-          "method_id": "neuralforecast_nbeats",
-          "elo": 1474.0607844388173,
-          "datasets_scored": 42
+          "method_id": "seasonal_naive",
+          "elo": 1460.7720778865025,
+          "datasets_scored": 29
         },
         {
-          "rank": 12,
+          "rank": 15,
           "method_id": "OpenAI *sol",
-          "elo": 1435.9818476430494,
-          "datasets_scored": 42
+          "elo": 1429.7150576899176,
+          "datasets_scored": 29
         },
         {
-          "rank": 14,
+          "rank": 16,
+          "method_id": "Grok 4.5",
+          "elo": 1420.9129555860766,
+          "datasets_scored": 29
+        },
+        {
+          "rank": 17,
           "method_id": "Fable 5",
-          "elo": 1418.3877982725683,
-          "datasets_scored": 42
+          "elo": 1412.0475797763825,
+          "datasets_scored": 29
         },
         {
           "rank": 18,
-          "method_id": "Grok 4.5",
-          "elo": 1389.6189746901503,
-          "datasets_scored": 42
-        },
-        {
-          "rank": 19,
           "method_id": "Kimi K3",
-          "elo": 1381.351338278744,
-          "datasets_scored": 42
+          "elo": 1396.6744253281367,
+          "datasets_scored": 29
         }
       ]
     }

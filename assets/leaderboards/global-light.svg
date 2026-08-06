@@ -7,28 +7,28 @@
       <stop offset="100%" stop-color="#1a7f37"/>
     </linearGradient>
     <linearGradient id="elo-gradient-1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#775302"/>
-      <stop offset="100%" stop-color="#956802"/>
+      <stop offset="0%" stop-color="#62570a"/>
+      <stop offset="100%" stop-color="#7b6d0d"/>
     </linearGradient>
     <linearGradient id="elo-gradient-2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7a5201"/>
-      <stop offset="100%" stop-color="#986701"/>
+      <stop offset="0%" stop-color="#6d5506"/>
+      <stop offset="100%" stop-color="#886a08"/>
     </linearGradient>
     <linearGradient id="elo-gradient-3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7c5201"/>
-      <stop offset="100%" stop-color="#9b6601"/>
+      <stop offset="0%" stop-color="#725404"/>
+      <stop offset="100%" stop-color="#8e6905"/>
     </linearGradient>
     <linearGradient id="elo-gradient-4" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8e3a11"/>
-      <stop offset="100%" stop-color="#b24815"/>
+      <stop offset="0%" stop-color="#89400c"/>
+      <stop offset="100%" stop-color="#ab500f"/>
     </linearGradient>
     <linearGradient id="elo-gradient-5" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#992c1a"/>
-      <stop offset="100%" stop-color="#bf3720"/>
+      <stop offset="0%" stop-color="#962f17"/>
+      <stop offset="100%" stop-color="#bc3b1d"/>
     </linearGradient>
     <linearGradient id="elo-gradient-6" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#9d261d"/>
-      <stop offset="100%" stop-color="#c43024"/>
+      <stop offset="0%" stop-color="#992c1a"/>
+      <stop offset="100%" stop-color="#bf3720"/>
     </linearGradient>
     <linearGradient id="elo-gradient-7" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#a61b25"/>
@@ -38,13 +38,13 @@
   <rect width="560" height="312" rx="6" fill="#ffffff"/>
   <g clip-path="url(#frame-clip)">
     <rect class="elo-bar" x="320" y="40" width="240.000" height="34" fill="url(#elo-gradient-0)"/>
-    <rect class="elo-bar" x="320" y="74" width="134.829" height="34" fill="url(#elo-gradient-1)"/>
-    <rect class="elo-bar" x="320" y="108" width="132.562" height="34" fill="url(#elo-gradient-2)"/>
-    <rect class="elo-bar" x="320" y="142" width="128.350" height="34" fill="url(#elo-gradient-3)"/>
-    <rect class="elo-bar" x="320" y="176" width="80.824" height="34" fill="url(#elo-gradient-4)"/>
-    <rect class="elo-bar" x="320" y="210" width="54.491" height="34" fill="url(#elo-gradient-5)"/>
-    <rect class="elo-bar" x="320" y="244" width="43.638" height="34" fill="url(#elo-gradient-6)"/>
-    <rect class="elo-bar" x="320" y="278" width="20.975" height="34" fill="url(#elo-gradient-7)"/>
+    <rect class="elo-bar" x="320" y="74" width="156.170" height="34" fill="url(#elo-gradient-1)"/>
+    <rect class="elo-bar" x="320" y="108" width="145.616" height="34" fill="url(#elo-gradient-2)"/>
+    <rect class="elo-bar" x="320" y="142" width="140.045" height="34" fill="url(#elo-gradient-3)"/>
+    <rect class="elo-bar" x="320" y="176" width="93.638" height="34" fill="url(#elo-gradient-4)"/>
+    <rect class="elo-bar" x="320" y="210" width="59.830" height="34" fill="url(#elo-gradient-5)"/>
+    <rect class="elo-bar" x="320" y="244" width="53.262" height="34" fill="url(#elo-gradient-6)"/>
+    <rect class="elo-bar" x="320" y="278" width="19.364" height="34" fill="url(#elo-gradient-7)"/>
   </g>
   <path d="M 1 6 Q 1 1 6 1 H 554 Q 559 1 559 6 V 40 H 1 Z" fill="#f6f8fa"/>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14">
@@ -56,28 +56,28 @@
     </g>
     <text x="48" y="62" text-anchor="end" fill="#57606a">1</text>
     <text x="80" y="62" fill="#1a7f37" font-weight="700">ASPFM</text>
-    <text x="304" y="62" text-anchor="end" fill="#1a7f37" font-weight="700">1904.2</text>
+    <text x="304" y="62" text-anchor="end" fill="#1a7f37" font-weight="700">1894.2</text>
     <text x="48" y="96" text-anchor="end" fill="#57606a">2</text>
-    <text x="80" y="96" fill="#956802" font-weight="700">TabFM Ensemble</text>
-    <text x="304" y="96" text-anchor="end" fill="#956802" font-weight="700">1590.6</text>
+    <text x="80" y="96" fill="#7b6d0d" font-weight="700">TabFM Ensemble</text>
+    <text x="304" y="96" text-anchor="end" fill="#7b6d0d" font-weight="700">1633.0</text>
     <text x="48" y="130" text-anchor="end" fill="#57606a">3</text>
-    <text x="80" y="130" fill="#986701" font-weight="700">TabICL</text>
-    <text x="304" y="130" text-anchor="end" fill="#986701" font-weight="700">1583.8</text>
+    <text x="80" y="130" fill="#886a08" font-weight="700">TabICL</text>
+    <text x="304" y="130" text-anchor="end" fill="#886a08" font-weight="700">1600.1</text>
     <text x="48" y="164" text-anchor="end" fill="#57606a">4</text>
-    <text x="80" y="164" fill="#9b6601" font-weight="700">TabPFN v3</text>
-    <text x="304" y="164" text-anchor="end" fill="#9b6601" font-weight="700">1571.2</text>
+    <text x="80" y="164" fill="#8e6905" font-weight="700">TabPFN v3</text>
+    <text x="304" y="164" text-anchor="end" fill="#8e6905" font-weight="700">1582.7</text>
     <text x="48" y="198" text-anchor="end" fill="#57606a">5</text>
-    <text x="80" y="198" fill="#b24815" font-weight="700">Fable 5</text>
-    <text x="304" y="198" text-anchor="end" fill="#b24815" font-weight="700">1429.5</text>
+    <text x="80" y="198" fill="#ab500f" font-weight="700">Fable 5</text>
+    <text x="304" y="198" text-anchor="end" fill="#ab500f" font-weight="700">1438.1</text>
     <text x="48" y="232" text-anchor="end" fill="#57606a">6</text>
-    <text x="80" y="232" fill="#bf3720" font-weight="700">OpenAI *sol</text>
-    <text x="304" y="232" text-anchor="end" fill="#bf3720" font-weight="700">1351.0</text>
+    <text x="80" y="232" fill="#bc3b1d" font-weight="700">OpenAI *sol</text>
+    <text x="304" y="232" text-anchor="end" fill="#bc3b1d" font-weight="700">1332.8</text>
     <text x="48" y="266" text-anchor="end" fill="#57606a">7</text>
-    <text x="80" y="266" fill="#c43024" font-weight="700">Grok 4.5</text>
-    <text x="304" y="266" text-anchor="end" fill="#c43024" font-weight="700">1318.6</text>
+    <text x="80" y="266" fill="#bf3720" font-weight="700">Grok 4.5</text>
+    <text x="304" y="266" text-anchor="end" fill="#bf3720" font-weight="700">1312.3</text>
     <text x="48" y="300" text-anchor="end" fill="#57606a">8</text>
     <text x="80" y="300" fill="#cf222e" font-weight="700">Kimi K3</text>
-    <text x="304" y="300" text-anchor="end" fill="#cf222e" font-weight="700">1251.0</text>
+    <text x="304" y="300" text-anchor="end" fill="#cf222e" font-weight="700">1206.7</text>
   </g>
   <path d="M 1 40 H 559" stroke="#d0d7de"/>
   <path d="M 1 74 H 559" stroke="#d0d7de"/>

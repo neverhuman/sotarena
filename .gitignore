@@ -1,0 +1,9 @@
+target/
+gh.env
+
+# Private age identities and decrypted solution worktrees must stay local.
+*.identity
+*.agekey
+decrypted/
+decrypted-*/
+

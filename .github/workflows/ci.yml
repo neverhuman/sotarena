@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: dtolnay/rust-toolchain@1.88.0
+        with:
+          components: rustfmt
+      - name: Check formatting
+        run: cargo fmt --check
+      - name: Run release tests
+        run: cargo test --release
+      - name: Regenerate reports and leaderboards
+        run: cargo run --release -- report --out report.json
+      - name: Require deterministic generated files
+        run: git diff --exit-code -- README.md report.json assets/leaderboards
+

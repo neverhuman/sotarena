@@ -1,6 +1,6 @@
 # SOTArena
 
-SOTArena is a JSON-backed benchmark with deterministic Elo rankings. Every manifest and result is loaded and validated. Elo uses each task's analysis cohort: the datasets with a valid canonical score from every automatically Global-eligible family. The referenced blacklists record the auditable complement without removing corpus data.
+SOTArena is a JSON-backed benchmark with deterministic Elo rankings. Every manifest and result is loaded and validated. Elo uses each task's analysis cohort: the datasets with a valid canonical score from every automatically Global-eligible family. The referenced blacklists record the auditable complement without removing corpus data. All benchmark content lives under `data/`.
 
 ## Getting Started
 
@@ -28,9 +28,23 @@ Generate the JSON report, leaderboard SVGs, and refresh this README:
 cargo run --release -- report --out report.json
 ```
 
+The retained corpus has 1,790 manifests. Of those, 1,695 datasets are downloadable (3,390 files and 592,077,600 expected bytes); 95 metadata-only datasets are reported and skipped by bulk fetches. Manifests with fewer than 300 combined train/test rows are rejected.
+
+## Secure Solution Archives
+
+Solution directories can be streamed through `tar`, zstd, and authenticated age v1 X25519 encryption without writing a plaintext archive:
+
+```sh
+cargo run --release -- keygen --identity /secure/sotarena.identity --recipient sotarena.recipient
+cargo run --release -- encrypt --input solutions --output solutions.tar.zst.age --recipient age1...
+cargo run --release -- decrypt --input solutions.tar.zst.age --output decrypted-solutions --identity /secure/sotarena.identity
+```
+
+Repeat `--recipient age1...` to encrypt for multiple recipients. Keep private identities outside this repository; only public recipients and binary `.age` archives are safe to track. Lost identities are unrecoverable, and changing recipients requires re-encryption. A private identity sent by email is only as secure as that email channel. X25519 age is not post-quantum encryption and no encryption scheme provides absolute security. Decryption only extracts files: inspect demos before running them manually.
+
 ## Global Elo
 
-Datasets: 2677. Download all: `cargo run --release -- fetch --all`.
+Datasets: 1790. Download all: `cargo run --release -- fetch --all`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/leaderboards/global-dark.svg">
@@ -43,20 +57,20 @@ Datasets: 2677. Download all: `cargo run --release -- fetch --all`.
 
 | Rank | Family | Elo |
 | ---: | --- | ---: |
-| 1 | **ASPFM** | **1904.2** |
-| 2 | **TabFM Ensemble** | **1590.6** |
-| 3 | **TabICL** | **1583.8** |
-| 4 | **TabPFN v3** | **1571.2** |
-| 5 | **Fable 5** | **1429.5** |
-| 6 | **OpenAI \*sol** | **1351.0** |
-| 7 | **Grok 4.5** | **1318.6** |
-| 8 | **Kimi K3** | **1251.0** |
+| 1 | **ASPFM** | **1894.2** |
+| 2 | **TabFM Ensemble** | **1633.0** |
+| 3 | **TabICL** | **1600.1** |
+| 4 | **TabPFN v3** | **1582.7** |
+| 5 | **Fable 5** | **1438.1** |
+| 6 | **OpenAI \*sol** | **1332.8** |
+| 7 | **Grok 4.5** | **1312.3** |
+| 8 | **Kimi K3** | **1206.7** |
 
 </details>
 
 ## Binary Elo
 
-Datasets: 799. Download all: `cargo run --release -- fetch --task binary`.
+Datasets: 564. Download all: `cargo run --release -- fetch --task binary`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/leaderboards/binary-dark.svg">
@@ -69,25 +83,25 @@ Datasets: 799. Download all: `cargo run --release -- fetch --task binary`.
 
 | Rank | Method | Elo |
 | ---: | --- | ---: |
-| 1 | **ASPFM** | **2062.9** |
-| 2 | **TabFM Ensemble** | **1718.0** |
-| 3 | **TabICL** | **1715.9** |
-| 4 | **TabPFN v3** | **1681.9** |
-| 5 | **catboost** | **1681.3** |
-| 6 | **ebm** | **1647.8** |
-| 7 | **Fable 5** | **1631.4** |
-| 8 | **ada\_boost** | **1616.7** |
-| 9 | **gradient\_boosting** | **1597.9** |
-| 10 | **voting\_soft** | **1582.3** |
-| 17 | **OpenAI \*sol** | **1527.0** |
-| 18 | **Grok 4.5** | **1519.3** |
-| 26 | **Kimi K3** | **1459.3** |
+| 1 | **ASPFM** | **2095.8** |
+| 2 | **TabFM Ensemble** | **1788.2** |
+| 3 | **TabICL** | **1763.7** |
+| 4 | **TabPFN v3** | **1723.9** |
+| 5 | **catboost** | **1689.8** |
+| 6 | **ebm** | **1665.0** |
+| 7 | **Fable 5** | **1648.6** |
+| 8 | **ada\_boost** | **1622.5** |
+| 9 | **gradient\_boosting** | **1599.8** |
+| 10 | **voting\_soft** | **1584.9** |
+| 16 | **Grok 4.5** | **1528.9** |
+| 17 | **OpenAI \*sol** | **1526.5** |
+| 26 | **Kimi K3** | **1445.7** |
 
 </details>
 
 ## Regression Elo
 
-Datasets: 1564. Download all: `cargo run --release -- fetch --task regression`.
+Datasets: 987. Download all: `cargo run --release -- fetch --task regression`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/leaderboards/regression-dark.svg">
@@ -100,24 +114,24 @@ Datasets: 1564. Download all: `cargo run --release -- fetch --task regression`.
 
 | Rank | Method | Elo |
 | ---: | --- | ---: |
-| 1 | **ASPFM** | **2385.4** |
-| 2 | **TabFM Ensemble** | **1897.9** |
-| 3 | **TabPFN v3** | **1883.3** |
-| 4 | **TabICL** | **1866.5** |
-| 5 | **catboost** | **1793.1** |
-| 6 | **Fable 5** | **1757.9** |
-| 7 | **stacking\_trees\_meta** | **1721.1** |
-| 8 | **gaussian\_process** | **1688.2** |
-| 9 | **gradient\_boosting** | **1677.4** |
-| 10 | **Grok 4.5** | **1655.8** |
-| 15 | **OpenAI \*sol** | **1614.6** |
-| 42 | **Kimi K3** | **1410.3** |
+| 1 | **ASPFM** | **2334.5** |
+| 2 | **TabFM Ensemble** | **1932.8** |
+| 3 | **TabPFN v3** | **1877.6** |
+| 4 | **TabICL** | **1877.3** |
+| 5 | **catboost** | **1761.4** |
+| 6 | **Fable 5** | **1760.4** |
+| 7 | **stacking\_trees\_meta** | **1723.1** |
+| 8 | **gaussian\_process** | **1683.4** |
+| 9 | **Grok 4.5** | **1646.3** |
+| 10 | **gradient\_boosting** | **1641.6** |
+| 15 | **OpenAI \*sol** | **1575.6** |
+| 45 | **Kimi K3** | **1350.0** |
 
 </details>
 
 ## Multiclass Elo
 
-Datasets: 272. Download all: `cargo run --release -- fetch --task multiclass`.
+Datasets: 210. Download all: `cargo run --release -- fetch --task multiclass`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/leaderboards/multiclass-dark.svg">
@@ -130,26 +144,26 @@ Datasets: 272. Download all: `cargo run --release -- fetch --task multiclass`.
 
 | Rank | Method | Elo |
 | ---: | --- | ---: |
-| 1 | **ASPFM** | **1753.0** |
-| 2 | **TabFM Ensemble** | **1713.7** |
-| 3 | **TabICL** | **1686.1** |
-| 4 | **TabPFN v3** | **1642.6** |
-| 5 | **CatBoost** | **1635.8** |
-| 6 | **mc20\_tabdpt** | **1602.4** |
-| 7 | **mitra\_classifier\_default** | **1601.0** |
-| 8 | **limix\_2m\_classifier\_default** | **1598.9** |
-| 9 | **mc20\_xgboost\_tuned** | **1572.2** |
-| 10 | **mc20\_xgboost\_hist\_240** | **1560.3** |
-| 20 | **Fable 5** | **1515.3** |
-| 31 | **OpenAI \*sol** | **1430.5** |
-| 36 | **Kimi K3** | **1333.7** |
-| 37 | **Grok 4.5** | **1324.7** |
+| 1 | **TabFM Ensemble** | **1763.6** |
+| 2 | **ASPFM** | **1725.4** |
+| 3 | **TabICL** | **1715.6** |
+| 4 | **TabPFN v3** | **1675.0** |
+| 5 | **CatBoost** | **1651.0** |
+| 6 | **mitra\_classifier\_default** | **1628.6** |
+| 7 | **mc20\_tabdpt** | **1623.2** |
+| 8 | **limix\_2m\_classifier\_default** | **1612.4** |
+| 9 | **mc20\_xgboost\_tuned** | **1577.1** |
+| 10 | **mc20\_xgboost\_hist\_240** | **1558.9** |
+| 18 | **Fable 5** | **1523.7** |
+| 31 | **OpenAI \*sol** | **1420.3** |
+| 36 | **Grok 4.5** | **1291.2** |
+| 37 | **Kimi K3** | **1270.1** |
 
 </details>
 
 ## Timeseries Elo
 
-Datasets: 42. Download all: `cargo run --release -- fetch --task timeseries`.
+Datasets: 29. Download all: `cargo run --release -- fetch --task timeseries`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/leaderboards/timeseries-dark.svg">
@@ -162,19 +176,19 @@ Datasets: 42. Download all: `cargo run --release -- fetch --task timeseries`.
 
 | Rank | Method | Elo |
 | ---: | --- | ---: |
-| 1 | **ASPFM** | **2005.5** |
-| 2 | **chronos\_2\_small** | **1666.5** |
-| 3 | **TabPFN v3** | **1661.4** |
-| 4 | **TimesFM** | **1655.3** |
-| 5 | **TabICL** | **1625.8** |
-| 6 | **moirai\_2\_small** | **1622.0** |
-| 7 | **TabFM Ensemble** | **1532.6** |
-| 8 | **seasonal\_naive** | **1496.8** |
-| 9 | **auto\_arima** | **1475.4** |
-| 10 | **neuralforecast\_nbeats** | **1474.1** |
-| 12 | **OpenAI \*sol** | **1436.0** |
-| 14 | **Fable 5** | **1418.4** |
-| 18 | **Grok 4.5** | **1389.6** |
-| 19 | **Kimi K3** | **1381.4** |
+| 1 | **ASPFM** | **2020.5** |
+| 2 | **TimesFM** | **1693.5** |
+| 3 | **chronos\_2\_small** | **1666.0** |
+| 4 | **TabPFN v3** | **1645.6** |
+| 5 | **TabICL** | **1616.3** |
+| 6 | **moirai\_2\_small** | **1600.2** |
+| 7 | **TabFM Ensemble** | **1539.8** |
+| 8 | **sktime\_reduction\_lightgbm** | **1526.1** |
+| 9 | **auto\_arima** | **1461.4** |
+| 10 | **seasonal\_naive** | **1460.8** |
+| 15 | **OpenAI \*sol** | **1429.7** |
+| 16 | **Grok 4.5** | **1420.9** |
+| 17 | **Fable 5** | **1412.0** |
+| 18 | **Kimi K3** | **1396.7** |
 
 </details>
