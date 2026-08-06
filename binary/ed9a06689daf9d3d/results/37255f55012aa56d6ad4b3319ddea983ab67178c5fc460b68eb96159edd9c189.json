@@ -1,0 +1,73 @@
+{
+  "algorithm": "catboost",
+  "dataset_hash": "ed9a06689daf9d3d",
+  "ended_at": "2026-06-26T12:09:17Z",
+  "environment": {
+    "affinity": [
+      81
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "catboost",
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super1",
+    "pid": 1055477,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 198259.67656713896,
+  "inference_time_seconds": 0.005043889999797102,
+  "metrics": {
+    "accuracy": 0.724,
+    "average_precision": 0.8195423246923821,
+    "balanced_accuracy": 0.7241235859773756,
+    "brier_score": 0.18138959158213416,
+    "cohen_kappa": 0.44813244821242904,
+    "f1": 0.7160493827160495,
+    "false_negatives": 154,
+    "false_positives": 122,
+    "log_loss": 0.5487723314281229,
+    "matthews_corrcoef": 0.44905260943763775,
+    "positive_rate": 0.502,
+    "precision": 0.7404255319148936,
+    "predicted_positive_rate": 0.47,
+    "recall": 0.6932270916334662,
+    "roc_auc": 0.8092949487191795,
+    "sensitivity": 0.6932270916334662,
+    "specificity": 0.7550200803212851,
+    "top_decile_lift": 1.892430278884462,
+    "top_decile_positive_rate": 0.95,
+    "true_negatives": 376,
+    "true_positives": 348
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 11,
+  "run_date": "2026-06-26T12:09:17Z",
+  "started_at": "2026-06-26T12:09:12Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 1.4935902860006536
+}

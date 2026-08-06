@@ -1,0 +1,198 @@
+{
+ "report_schema_version": 2,
+ "algorithm": "jain_prime",
+ "dataset_hash": "c32fa09b48fb2f27",
+ "task_type": "regression",
+ "status": "completed",
+ "started_at_unix_ms": 1783791996673,
+ "finished_at_unix_ms": 1783792726095,
+ "rows": {
+  "train": 1000,
+  "test": 473
+ },
+ "features": 9,
+ "timings": {
+  "load_secs": 0.020183,
+  "search_secs": 546.26,
+  "gpu_kernel_secs": 483.841176,
+  "finalist_cv_secs": 2.130054,
+  "fit_predict_secs": 0.909572,
+  "total_secs": 729.422091
+ },
+ "model_class": "jope_pipeline_ensemble",
+ "model_params": {
+  "engine": "featmath",
+  "fitness": "v2",
+  "pop": 192,
+  "top_k": 16,
+  "gpu_kernel_configs": 131072,
+  "seed_battery": {
+   "model_proposals": [
+    {
+     "temperature": 0.7,
+     "samples_per_engine": 48
+    },
+    {
+     "temperature": 1.0,
+     "samples_per_engine": 24
+    }
+   ],
+   "own_train_oof_top_k": 10,
+   "z_neighbors": 5,
+   "z_neighbor_champion": true,
+   "z_neighbor_ledger_top_k": 2,
+   "global_greatest_hits_k": 10,
+   "ywarp_kinds": [
+    "rank_gauss",
+    "log1p"
+   ],
+   "fixed": [
+    "(pipe X (blom) (ridge_gcv))",
+    "(pipe X (cheb degree=3 append=true) (pair_prod topk=12 append=true) (ridge_gcv))",
+    "(pipe X (histgbm2 leaves=31 lr=0.05 rounds=500 loss=huber))",
+    "(pipe X (portfolio preset=core))"
+   ],
+   "fairness_rule": "seeds + all selection decisions use only (a) other datasets' data and (b) X's own TRAIN-side signals (OOF/robust). X's test results and the incumbent identity for X are never read."
+  },
+  "pick_kind": "single",
+  "oof_partitions": "k=3,5,7 seed=20260710",
+  "robust_formula": "min(oof_r2_f3, oof_r2_f5, oof_r2_f7) - 0.25*min(std(fold_r2_f3+f5+f7 pooled), 1.0)",
+  "robust_score": 0.435327090101197,
+  "oof_r2": {
+   "f3": 0.44673699785910737,
+   "f5": 0.44879209106755236,
+   "f7": 0.4499163417015791
+  },
+  "min_fold_r2": 0.33971812855253136,
+  "selection_rule": "sort by (robust desc [ties within 1e-9], prior_submission first, higher min fold score, fewer genome stages); new blends need +0.005 robust over best single; prior blends exempt",
+  "final_selection": "triple-partition train-side robust CV (never test)",
+  "budget_profile": {
+   "name": "full",
+   "stage_a_secs": 120,
+   "main_secs": 1800,
+   "round_secs": 900,
+   "max_rounds": 3
+  },
+  "genome": "(pipe X (sigmoid append=false) (sigmoid append=false) (winsor_clip append=true q=0.20631307353901143) (rand_proj append=true k=64 seed=5617) (rand_proj k=35 seed=689) (winsor_clip append=true q=0.08291772479138534) (ridge_gcv))",
+  "gpu": {
+   "kernel_configs": 131072,
+   "backend": "fused",
+   "kernel_used": true,
+   "kernel_used_any": true,
+   "kernel_message": "battle-gpu composite GPR kernel search over 5 specs",
+   "kernel_secs": 483.8412,
+   "kernel_secs_by_stage": [
+    112.3818,
+    106.5547,
+    120.9197,
+    143.9849
+   ],
+   "kernel_abi_version": 2,
+   "host": "xbabe3"
+  },
+  "provenance": {
+   "mode": "fresh",
+   "run_dir": "/home/ubuntu/remote_super/quant/models/jain_prime/runs/c32fa09b48fb2f27",
+   "seed_sources": {
+    "model_proposal_t0.7": 8,
+    "model_proposal_t1.0": 6,
+    "own_oof": 8,
+    "z_neighbor_champion": 4,
+    "z_neighbor_ledger": 10,
+    "global_top10": 10,
+    "battery_ywarp_rank_gauss": 3,
+    "battery_ywarp_log1p": 3,
+    "battery_fixed_blom_ridge_gcv": 1,
+    "battery_fixed_cheb_pairprod_ridge_gcv": 1,
+    "battery_fixed_histgbm2_huber": 1,
+    "battery_fixed_portfolio_core": 1
+   },
+   "rounds_used": 3,
+   "rounds": [
+    {
+     "round": 1,
+     "budget_s": 1800,
+     "best_robust": 0.4448175829361312,
+     "bar": 0.4607625703246108,
+     "target_beaten_flag": null,
+     "bar_cleared": false,
+     "best_genome": "(pipe X (winsor_clip append=true q=0.20631307353901143) (sigmoid append=false) (sigmoid append=false) (rand_proj append=true k=64 seed=5617) (rand_proj k=35 seed=689) (winsor_clip append=true q=0.08291772479138534) (ridge_gcv))"
+    },
+    {
+     "round": 2,
+     "budget_s": 900,
+     "best_robust": 0.4281291530712705,
+     "bar": 0.4607625703246108,
+     "target_beaten_flag": false,
+     "bar_cleared": false,
+     "best_genome": "(pipe X (standardize append=false) (robust_scale) (standardize append=false) (target_bin_encode append=true bins=16) (target_bin_encode append=true bins=16) (target_bin_encode append=true bins=16) (elasticnet alpha=0.01099400749276514 l1_ratio=0.7824302837081905))"
+    },
+    {
+     "round": 3,
+     "budget_s": 900,
+     "best_robust": 0.4278771130077086,
+     "bar": 0.4607625703246108,
+     "target_beaten_flag": false,
+     "bar_cleared": false,
+     "best_genome": "(pipe X (standardize append=false) (robust_scale) (standardize append=false) (target_bin_encode append=true bins=16) (target_bin_encode append=true bins=16) (target_bin_encode append=true bins=16) (elasticnet alpha=0.026510373350807956 l1_ratio=0.315998589174082))"
+    }
+   ],
+   "champion_bar_robust": 0.4607625703246108,
+   "fitness": "v2",
+   "checkpoint": "gen36",
+   "checkpoint_path": "/home/ubuntu/jope/runs/self_play_v33/gen36.pt",
+   "degenerate_fallback": {
+    "triggered": false
+   },
+   "blend_available": true,
+   "artifact_member_modes": [
+    "rust"
+   ],
+   "crosscheck": {
+    "bridge_test_rmse_diag": 0.1822141009049145,
+    "artifact_test_rmse": 0.1822141009049145
+   }
+  }
+ },
+ "metrics": {
+  "r2": 0.46499512626397865,
+  "rmse": 0.1822141009049145,
+  "mse": 0.033201978568586366,
+  "mae": 0.1422066798297263,
+  "explained_variance": 0.46585331593553936,
+  "prediction_min": 0.16213106007620992,
+  "prediction_max": 0.9471420325733315,
+  "target_min": 0.0303030312,
+  "target_max": 1.0,
+  "n": 473,
+  "target_mean": 0.5038759762164905,
+  "target_std": 0.24911685546994702,
+  "prediction_mean": 0.4965781292014072,
+  "prediction_std": 0.1557799061969668,
+  "residual_mean": 0.007297847015083306,
+  "residual_std": 0.18206789941538515,
+  "residual_min": -0.4495683946287217,
+  "residual_max": 0.6386144550657802,
+  "pearson_corr": 0.6851511095766892
+ },
+ "gene": "(pipe X (sigmoid append=false) (sigmoid append=false) (winsor_clip append=true q=0.20631307353901143) (rand_proj append=true k=64 seed=5617) (rand_proj k=35 seed=689) (winsor_clip append=true q=0.08291772479138534) (ridge_gcv))",
+ "genome": "(pipe X (sigmoid append=false) (sigmoid append=false) (winsor_clip append=true q=0.20631307353901143) (rand_proj append=true k=64 seed=5617) (rand_proj k=35 seed=689) (winsor_clip append=true q=0.08291772479138534) (ridge_gcv))",
+ "genome_hash": "81bc9760d5fded5cb06152b969689b44267ee32bf39f0b8001ecf617acedf2ce",
+ "cv": {
+  "folds": [
+   3,
+   5,
+   7
+  ],
+  "partition_seed": 20260710,
+  "oof_r2": {
+   "f3": 0.44673699785910737,
+   "f5": 0.44879209106755236,
+   "f7": 0.4499163417015791
+  },
+  "robust": 0.435327090101197,
+  "min_fold_r2": 0.33971812855253136,
+  "robust_formula": "min(oof_r2_f3, oof_r2_f5, oof_r2_f7) - 0.25*min(std(fold_r2_f3+f5+f7 pooled), 1.0)"
+ },
+ "predictions_path": "/home/ubuntu/remote_super/quant/regression/c32fa09b48fb2f27/predictions/jain_prime.csv"
+}

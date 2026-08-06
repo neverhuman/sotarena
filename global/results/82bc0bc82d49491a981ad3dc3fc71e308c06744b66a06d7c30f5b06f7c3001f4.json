@@ -1,0 +1,52 @@
+{
+  "algorithm": "tabfm_ensemble_regressor",
+  "dataset_hash": "13b5df533e59a626",
+  "ended_at": "2026-07-03T08:13:33+00:00",
+  "environment": {
+    "cuda_visible_devices": "6",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 3.1849678278790012,
+  "inference_time_seconds": 6.593473194981925,
+  "metrics": {
+    "explained_variance": 0.24517363568168948,
+    "mae": 0.10913352313348215,
+    "max_error": 0.3913012019502568,
+    "mean_absolute_percentage_error_eps": 0.5809056819008876,
+    "median_absolute_error": 0.08166724363429118,
+    "mse": 0.02158235061473376,
+    "prediction_max": 0.42297884341531555,
+    "prediction_min": 0.1376636185302062,
+    "r2": 0.24093240827225793,
+    "rmse": 0.14690932786836158,
+    "target_max": 0.7583643198013306,
+    "target_min": 0.06691449880599976
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMRegressor",
+  "n_features": 19,
+  "run_date": "2026-07-03T08:13:33+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/openml-hepatitis-55-target-alk-phosphate.csv",
+  "started_at": "2026-07-03T08:12:58+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": true,
+  "tabfm_model_type": "regression",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 21,
+  "train_rows": 105,
+  "training_time_seconds": 28.63884537492413
+}

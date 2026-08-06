@@ -1,0 +1,19 @@
+{
+  "dataset_hash": "156a7a8e3c3a7332",
+  "dataset_id": "156a7a8e3c3a7332",
+  "metric": "mase",
+  "schema": "sotarena.dataset",
+  "task": "timeseries",
+  "test": {
+    "bytes": 659,
+    "rows": 48,
+    "sha256": "245f4df551f6b37cde5950478ca31f701c6ea76b573b1029e45ee542175f4a1c",
+    "url": "https://data.neverhuman.org/timeseries/156a7a8e3c3a7332/test.csv"
+  },
+  "train": {
+    "bytes": 12254,
+    "rows": 894,
+    "sha256": "7ebbf4145c535b3329c57c9a435f37c8a9426cbfa8d0aaae16643d9734e30eb5",
+    "url": "https://data.neverhuman.org/timeseries/156a7a8e3c3a7332/train.csv"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "algorithm": "NM_Recon_b96ba3966c39697f_geodesic_angle_quantile",
+  "dataset_hash": "c816093e547343b5",
+  "dsl_expr": "(pipe X (robust_scale) (geodesic_angle_quantile) (gbm depth=3 lr=0.1 rounds=150))",
+  "ended_at": "2026-06-30T01:09:28Z",
+  "environment": {
+    "created_by_binary_sha": "7ba20b75c9fbd93da7633ba649038b48eb6824052827752f8c31e2635307ea43",
+    "host": "xbabe2",
+    "newmath_binary": "/home/ubuntu/jmath/target/release/newmath",
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "runner": "complete-new-math-reports-v1",
+    "source_root": "/home/ubuntu/jmath",
+    "thread_limits": {}
+  },
+  "inference_rows_per_second": 5000.0,
+  "inference_time_seconds": 0.016,
+  "metrics": {
+    "accuracy": 0.9375,
+    "average_precision": 0.9919667576999754,
+    "balanced_accuracy": 0.7727272727272727,
+    "brier_score": 0.034975360678405405,
+    "cohen_kappa": 0.6742671009771988,
+    "f1": 0.965034965034965,
+    "false_negatives": 0,
+    "false_positives": 5,
+    "log_loss": 0.13285334172315844,
+    "matthews_corrcoef": 0.7131616286645747,
+    "positive_rate": 0.8625,
+    "precision": 0.9324324324324325,
+    "predicted_positive_rate": 0.925,
+    "recall": 1.0,
+    "roc_auc": 0.9604743083003953,
+    "sensitivity": 1.0,
+    "specificity": 0.5454545454545454,
+    "top_decile_capture_rate": 0.11594202898550725,
+    "top_decile_lift": 1.1594202898550725,
+    "top_decile_positive_rate": 1.0,
+    "top_decile_precision": 1.0,
+    "true_negatives": 6,
+    "true_positives": 69
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "n_features": 3,
+  "new_math": {
+    "created_by_binary_sha": "7ba20b75c9fbd93da7633ba649038b48eb6824052827752f8c31e2635307ea43",
+    "dsl_expr": "(pipe X (robust_scale) (geodesic_angle_quantile) (gbm depth=3 lr=0.1 rounds=150))",
+    "receipt_schema": "BinaryClassifierReceipt v1",
+    "reconstruction_provenance": {
+      "algorithm": "NM_Recon_b96ba3966c39697f_geodesic_angle_quantile",
+      "kind": "reconstructed_current_jmath",
+      "operator_name": "geodesic_angle_quantile",
+      "original_hash": "b96ba3966c39697f",
+      "source_root": "/home/ubuntu/jmath"
+    },
+    "runner_version": "complete-new-math-reports-v1",
+    "source_kind": "reconstructed_current_jmath",
+    "source_root": "/home/ubuntu/jmath"
+  },
+  "newmath_receipt_path": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_b96ba3966c39697f_geodesic_angle_quantile/c816093e547343b5/receipt.json",
+  "predictions_path": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_b96ba3966c39697f_geodesic_angle_quantile/c816093e547343b5/predictions.csv",
+  "run_date": "2026-06-30T01:09:28Z",
+  "schema": "QuantBinaryReport v1",
+  "source_path": "/home/ubuntu/hyper/data/tabular/analcatdata-apnea1.csv",
+  "source_run_dir": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_b96ba3966c39697f_geodesic_angle_quantile/c816093e547343b5",
+  "started_at": "2026-06-30T01:09:28Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 80,
+  "timings": {
+    "classify_csv_ms": {
+      "head_fit_predict": 16,
+      "parse": 0,
+      "read": 0,
+      "total": 30,
+      "transform_fit_predict": 1
+    },
+    "elapsed_seconds": 0.3384673595428467
+  },
+  "train_rows": 395,
+  "training_time_seconds": 0.001
+}

@@ -1,0 +1,72 @@
+{
+  "algorithm": "logistic_l1",
+  "dataset_hash": "bde2040d63cb1d9b",
+  "ended_at": "2026-06-26T12:09:32Z",
+  "environment": {
+    "affinity": [
+      52
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super10",
+    "pid": 2111814,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 420653.586893069,
+  "inference_time_seconds": 0.002377252996666357,
+  "metrics": {
+    "accuracy": 0.953,
+    "average_precision": 0.8911555752559376,
+    "balanced_accuracy": 0.9384250321750321,
+    "brier_score": 0.037630256456525825,
+    "cohen_kappa": 0.7877298840192217,
+    "f1": 0.8142292490118577,
+    "false_negatives": 9,
+    "false_positives": 38,
+    "log_loss": 0.15611588162258752,
+    "matthews_corrcoef": 0.7945746296891576,
+    "positive_rate": 0.112,
+    "precision": 0.7304964539007093,
+    "predicted_positive_rate": 0.141,
+    "recall": 0.9196428571428571,
+    "roc_auc": 0.989663770913771,
+    "sensitivity": 0.9196428571428571,
+    "specificity": 0.9572072072072072,
+    "top_decile_lift": 8.125,
+    "top_decile_positive_rate": 0.91,
+    "true_negatives": 850,
+    "true_positives": 103
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 21,
+  "run_date": "2026-06-26T12:09:32Z",
+  "started_at": "2026-06-26T12:09:28Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 0.07454968101228587
+}

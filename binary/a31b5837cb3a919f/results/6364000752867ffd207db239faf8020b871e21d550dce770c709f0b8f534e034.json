@@ -1,0 +1,61 @@
+{
+  "algorithm": "NM_Concept_60df48efed5c_36d05cb9bb83",
+  "benchmark_pool": {
+    "normalized_elo": 0.39387802788378706,
+    "pool_best": 0.8929857397504457,
+    "pool_best_algorithm": "tabpfn_v3_classifier",
+    "pool_median": 0.8643783422459894,
+    "pool_percentile": 83.58208955223881,
+    "pool_size": 134
+  },
+  "core_hash": "1318fd0b9ae47c039b8496fc70c46f9f337765ed27bb953c15d70df3b2520588",
+  "dataset_hash": "a31b5837cb3a919f",
+  "dsl_expr": "(pipe X (sigmoid) (phase_interference n=30 n_paths=3 seed=42) (gbm rounds=150 depth=3 lr=0.1))",
+  "ended_at": "2026-06-29T22:24:22Z",
+  "environment": {
+    "created_by_binary_sha": "b24ddd5e331834fb6b3c90dd823c0200d5b306c2993d745a51534b519e4db6d0",
+    "host": "xbabe3",
+    "runner": "newmath classify-csv"
+  },
+  "inference_rows_per_second": null,
+  "inference_time_seconds": null,
+  "metrics": {
+    "accuracy": 0.805,
+    "average_precision": 0.8014106845442798,
+    "balanced_accuracy": 0.7795454545454545,
+    "brier_score": 0.13222970897208655,
+    "f1": 0.7093889716840537,
+    "false_negatives": 102,
+    "false_positives": 93,
+    "log_loss": 0.41909715552188304,
+    "positive_rate": 0.34,
+    "precision": 0.7190332326283988,
+    "predicted_positive_rate": 0.331,
+    "recall": 0.7,
+    "roc_auc": 0.8756461675579322,
+    "sensitivity": 0.7,
+    "specificity": 0.8590909090909091,
+    "top_decile_lift": 2.7647058823529407,
+    "top_decile_positive_rate": 0.94,
+    "true_negatives": 567,
+    "true_positives": 238
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "model_hash": "36d05cb9bb83cddb512d127b8ac6a8db4fc76708a2056e9a17b6b7eb97d0696f",
+  "n_features": 30,
+  "newmath_receipt_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_60df48efed5c_36d05cb9bb83/20260629T222405Z/runs/a31b5837cb3a919f/receipt.json",
+  "predictions_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_60df48efed5c_36d05cb9bb83/20260629T222405Z/runs/a31b5837cb3a919f/predictions.csv",
+  "run_date": "2026-06-29T22:24:22Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/atlas-higgs-boson-machine-learning-challenge-2014.csv",
+  "source_run_dir": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_60df48efed5c_36d05cb9bb83/20260629T222405Z",
+  "started_at": "2026-06-29T22:24:22Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": null,
+  "wall_time_seconds": 0.445042
+}

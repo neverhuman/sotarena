@@ -1,0 +1,61 @@
+{
+  "algorithm": "NM_Concept_06e945570d70_f3db7467c234",
+  "benchmark_pool": {
+    "normalized_elo": 0.0,
+    "pool_best": 0.9466666666666668,
+    "pool_best_algorithm": "xgboost_gblinear",
+    "pool_median": 0.84,
+    "pool_percentile": 22.302158273381295,
+    "pool_size": 139
+  },
+  "core_hash": "5590403447cf67d7d6de3ccf2f57ad9c5bbc4cde485c53323ce8f0a559304a5f",
+  "dataset_hash": "a1c2b79cde5c2f7c",
+  "dsl_expr": "(pipe X (rank) (gate_mix) (gbm rounds=150 depth=3 lr=0.1))",
+  "ended_at": "2026-06-29T22:16:21Z",
+  "environment": {
+    "created_by_binary_sha": "b24ddd5e331834fb6b3c90dd823c0200d5b306c2993d745a51534b519e4db6d0",
+    "host": "xbabe3",
+    "runner": "newmath classify-csv"
+  },
+  "inference_rows_per_second": null,
+  "inference_time_seconds": null,
+  "metrics": {
+    "accuracy": 0.68,
+    "average_precision": 0.7554670329670329,
+    "balanced_accuracy": 0.6666666666666666,
+    "brier_score": 0.17038402534086117,
+    "f1": 0.6,
+    "false_negatives": 4,
+    "false_positives": 4,
+    "log_loss": 0.48457709692490897,
+    "positive_rate": 0.4,
+    "precision": 0.6,
+    "predicted_positive_rate": 0.4,
+    "recall": 0.6,
+    "roc_auc": 0.8133333333333334,
+    "sensitivity": 0.6,
+    "specificity": 0.7333333333333333,
+    "top_decile_lift": 2.5,
+    "top_decile_positive_rate": 1.0,
+    "true_negatives": 11,
+    "true_positives": 6
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "model_hash": "f3db7467c234db38a2fe18a2c037a48f6b1908836b8696c01cdd5e538854195b",
+  "n_features": 86,
+  "newmath_receipt_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_06e945570d70_f3db7467c234/20260629T221603Z/runs/a1c2b79cde5c2f7c/receipt.json",
+  "predictions_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_06e945570d70_f3db7467c234/20260629T221603Z/runs/a1c2b79cde5c2f7c/predictions.csv",
+  "run_date": "2026-06-29T22:16:21Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/kc1-binary.csv",
+  "source_run_dir": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_06e945570d70_f3db7467c234/20260629T221603Z",
+  "started_at": "2026-06-29T22:16:21Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 25,
+  "train_rows": 120,
+  "training_time_seconds": null,
+  "wall_time_seconds": 0.448204
+}

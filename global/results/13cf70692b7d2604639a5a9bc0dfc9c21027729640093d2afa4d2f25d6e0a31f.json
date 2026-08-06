@@ -1,0 +1,65 @@
+{
+  "algorithm": "gpt5p6sol_regressor",
+  "dataset_hash": "e1c1db5260d0894e",
+  "ended_at": "2026-07-10T22:39:49Z",
+  "environment": {
+    "affinity": [
+      36
+    ],
+    "cuda_visible_devices": null,
+    "deps": [],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "xbabe3",
+    "java": "/usr/bin/java",
+    "pid": 2474913,
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "cpu_light",
+    "sklearn": "1.9.0",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 138.93148321629448,
+  "inference_time_seconds": 0.12236247397959232,
+  "metrics": {
+    "explained_variance": 0.6653881767225287,
+    "mae": 0.11166095366592808,
+    "max_error": 0.23083641215573514,
+    "mean_absolute_percentage_error_eps": 0.3325058748119142,
+    "median_absolute_error": 0.12006563522214919,
+    "mse": 0.016694990252860357,
+    "prediction_max": 0.8169307438842618,
+    "prediction_min": 0.16521430169747914,
+    "r2": 0.6385275277916638,
+    "rmse": 0.12920909508568024,
+    "target_max": 0.820532322,
+    "target_min": 0.118347868
+  },
+  "model_class": "models.gpt5p6sol_regression.Gpt5p6solRegressor",
+  "model_name": "gpt5p6sol_regressor",
+  "model_params": {},
+  "n_features": 10,
+  "run_date": "2026-07-10T22:39:49Z",
+  "started_at": "2026-07-10T22:39:45Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 17,
+  "train_rows": 83,
+  "training_time_seconds": 0.0004551997408270836
+}

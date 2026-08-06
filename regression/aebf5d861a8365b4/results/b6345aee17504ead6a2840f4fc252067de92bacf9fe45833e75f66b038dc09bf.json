@@ -1,0 +1,41 @@
+{
+  "best_rmse": 0.13120168317629657,
+  "campaign_evaluation_counts": {
+    "all-regression-evolution-20260723-v21": 48
+  },
+  "cohort": "golden42",
+  "dataset": "aebf5d861a8365b4",
+  "evaluation_csv": "datasets/golden42/aebf5d861a8365b4/evaluations.csv",
+  "evaluation_ledger": "datasets/golden42/aebf5d861a8365b4/evaluations.jsonl",
+  "evaluation_ledger_sha256": "9aa3ef26529ee95c50fa68c4fce947fe9382a35117d913e99f3188b815bed57e",
+  "first_evolutionary_human_best_beat": {
+    "ancestry": {
+      "operation": "mutation",
+      "parents": [
+        "bb5517f56b8d14997207ab76acc0065faa842f7061243b755712e7a056209d89"
+      ]
+    },
+    "combined_process_evaluation": 41,
+    "fresh_evaluation": 41,
+    "generation": 1,
+    "logical_evaluation": 41,
+    "rmse": 0.13531682274170387,
+    "semantic_sha256": "cc293aa8127b8f207a6d390ab0c6255a1f7ae3f2826792e3d393cd5d71ab4139",
+    "slot": 16,
+    "source_campaign_id": "all-regression-evolution-20260723-v21"
+  },
+  "first_human_best_beat": {
+    "combined_process_evaluation": 16,
+    "fresh_evaluation": 16,
+    "generation": 0,
+    "logical_evaluation": 16,
+    "rmse": 0.1355348070315906,
+    "semantic_sha256": "bb5517f56b8d14997207ab76acc0065faa842f7061243b755712e7a056209d89",
+    "slot": 15,
+    "source_campaign_id": "all-regression-evolution-20260723-v21"
+  },
+  "human_best_rmse": 0.13568121771253946,
+  "schema": "jope-dime.combined-regression-dataset-index.v1",
+  "total_process_evaluations": 48,
+  "valid_evaluations": 42
+}

@@ -1,0 +1,122 @@
+{
+  "aspfm": {
+    "elites_per_island": 2,
+    "exclude_target_provenance_group": true,
+    "full_zts_arms": {
+      "primary": {
+        "exclude_provenance_groups": [
+          "ZTS"
+        ],
+        "label": "leak-safe new-data discovery",
+        "leaderboard_default": true
+      },
+      "transfer": {
+        "include_confirmed_zts_small_winner": true,
+        "label": "target-family-informed",
+        "leaderboard_default": false
+      }
+    },
+    "generation_zero_can_terminate": false,
+    "generation_zero_seed_mix": {
+      "behaviorally_diverse": 18,
+      "strongest_transferable": 18
+    },
+    "islands": 4,
+    "members_per_island": 9,
+    "winner_minimum_generation": 1,
+    "winner_must_be_fresh_mutation_or_crossover": true
+  },
+  "authoritative_data_root": "/home/ubuntu/remote_super/quant/regression",
+  "campaign_id": "golden46-full42-20260723-v1",
+  "cluster": {
+    "cpu_workers": {
+      "adjustment": 8,
+      "adjustment_interval_seconds": 120,
+      "initial_per_node": 96,
+      "maximum_per_node": 112,
+      "target_cpu_percent": [
+        70,
+        85
+      ]
+    },
+    "nodes": {
+      "xbabe1": {
+        "gpu_after_external_workload_clears": true,
+        "ram_reserve_gib": 16
+      },
+      "xbabe2": {
+        "authoritative_data": true,
+        "gpu": true,
+        "ram_reserve_gib": 24
+      },
+      "xbabe3": {
+        "gpu": true,
+        "ram_reserve_gib": 24
+      }
+    },
+    "one_heavy_model_per_gpu": true,
+    "pressure_policy": {
+      "kill_unrelated_processes": false,
+      "pause_new_launches_on": [
+        "memory reserve",
+        "swap activity",
+        "sustained I/O pressure"
+      ],
+      "swapoff": false
+    },
+    "reuse_loaded_tabular_foundation_models": true,
+    "timeouts_seconds": {
+      "aspfm": null,
+      "gpu": 7200,
+      "special": 14400,
+      "standard": 7200
+    },
+    "transient_retry": {
+      "count": 1,
+      "different_node": true
+    }
+  },
+  "cohort_sha256": "d8a833c5e2cca4736545a979317159e340328e0b02fec771d7c3cdbc2a773770",
+  "content_sha256": "27c34b166eb23ba6d0efb5b15c67e5ed28bfeeca27295095c95655b6fde6f067",
+  "controller_isolation": {
+    "controller_only": [
+      "canonical test targets",
+      "RMSE computation",
+      "report finalization"
+    ],
+    "legacy_test_target": "dummy final column",
+    "reject": [
+      "altered checkpoints",
+      "row mismatches",
+      "non-finite predictions",
+      "changed method identities",
+      "score/report disagreement"
+    ],
+    "worker_inputs": [
+      "training features",
+      "training targets",
+      "test features"
+    ]
+  },
+  "dataset_priority": [
+    "ZTS_small",
+    "a3bd0a400ec4d7f9",
+    "6054656956182296",
+    "ZTS"
+  ],
+  "launch_gates": {
+    "nomad_after": "ZTS_small compatibility wave",
+    "publication_after": "all 500 new leaderboard cells are validated scores or terminal receipts",
+    "zts_after": "confirmed ZTS_small baseline matrix and ASPFM result"
+  },
+  "panel_sha256": "10e4a13f6d41ea3c6cd34f13ef7fc84f835a9085b5037064529918c045750901",
+  "publication": {
+    "golden42_track": "tabular-regression-v1",
+    "golden46_atomic_commit": true,
+    "golden46_track": "tabular-regression-v2",
+    "raw_new_dataset_bytes": "withheld-pending-redistribution-rights"
+  },
+  "receipts_root": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1",
+  "schema": "golden46.campaign-policy.v1",
+  "scratch_data_root": "/home/ubuntu/quant/regression"
+}

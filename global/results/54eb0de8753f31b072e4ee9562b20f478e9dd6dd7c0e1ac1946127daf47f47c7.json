@@ -1,0 +1,67 @@
+{
+  "algorithm": "pytorch_tabular_fttransformer_regressor_epochs40",
+  "dataset_hash": "43b4cc3ab0ebbd97",
+  "ended_at": "2026-06-30T14:29:48Z",
+  "environment": {
+    "affinity": [
+      50
+    ],
+    "cuda_visible_devices": "3",
+    "deps": [
+      "pytorch_tabular",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super2",
+    "java": "/usr/bin/java",
+    "pid": 3203429,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 2078.006833789853,
+  "inference_time_seconds": 0.04667934600729495,
+  "metrics": {
+    "explained_variance": -0.02302427058534695,
+    "mae": 0.033319314213545,
+    "max_error": 0.9916757471512432,
+    "mean_absolute_percentage_error_eps": 15.908127062014,
+    "median_absolute_error": 0.019925237144531205,
+    "mse": 0.010959350378417462,
+    "prediction_max": 1.0818724632263184,
+    "prediction_min": 0.9522855281829834,
+    "r2": -0.08836365629893672,
+    "rmse": 0.10468691598484245,
+    "target_max": 0.999999225,
+    "target_min": 0.000643598323
+  },
+  "model_class": "models.tools.model_zoo._PyTorchTabularRegressor",
+  "model_params": {},
+  "n_features": 39,
+  "run_date": "2026-06-30T14:29:48Z",
+  "started_at": "2026-06-30T14:29:44Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 97,
+  "train_rows": 482,
+  "training_time_seconds": 3.2110461810370907
+}

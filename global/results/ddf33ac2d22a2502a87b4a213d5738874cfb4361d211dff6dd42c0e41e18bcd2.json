@@ -1,0 +1,48 @@
+{
+  "algorithm": "hist_gradient_boosting",
+  "dataset_hash": "e1c1db5260d0894e",
+  "ended_at": "2026-06-21T08:07:28+00:00",
+  "environment": {
+    "lightgbm_available": false,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "xgboost_available": true
+  },
+  "inference_rows_per_second": 27710.22096408128,
+  "inference_time_seconds": 0.0006134920404292643,
+  "metrics": {
+    "explained_variance": 0.3173437338806294,
+    "mae": 0.14464734146244165,
+    "max_error": 0.36940513811196773,
+    "mean_absolute_percentage_error_eps": 0.4028651447510826,
+    "median_absolute_error": 0.1277738597684151,
+    "mse": 0.03261098017933901,
+    "prediction_max": 0.7218504127034137,
+    "prediction_min": 0.19737271601382622,
+    "r2": 0.2939216229579653,
+    "rmse": 0.18058510508715553,
+    "target_max": 0.8205323219299316,
+    "target_min": 0.11834786832332611
+  },
+  "model_class": "sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor",
+  "n_features": 10,
+  "run_date": "2026-06-21T08:07:28+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/fri-c4-100-10.csv",
+  "started_at": "2026-06-21T08:07:28+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 17,
+  "train_rows": 83,
+  "training_time_seconds": 0.018218739016447216
+}

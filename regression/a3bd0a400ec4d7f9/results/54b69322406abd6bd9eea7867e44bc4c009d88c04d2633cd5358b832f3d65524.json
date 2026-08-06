@@ -1,0 +1,41 @@
+{
+  "algorithm": "catboost_huber_delta1_trees300_depth6",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "a3bd0a400ec4d7f9",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.010354385012760758,
+  "metrics": {
+    "explained_variance": 0.8987093886088174,
+    "mae": 0.22901529841698326,
+    "max_error": 1.993132379103925,
+    "median_absolute_error": 0.16495691011185065,
+    "mse": 0.11243899207441356,
+    "prediction_max": 5.440195867910921,
+    "prediction_min": 0.29349326383877095,
+    "r2": 0.8986734349251638,
+    "rmse": 0.3353192390460374,
+    "target_max": 5.8397,
+    "target_min": 0.0077
+  },
+  "model_name": "catboost_huber_delta1_trees300_depth6",
+  "n_features": 665,
+  "provenance": {
+    "canonical_test_sha256": "398556c974e2fae1eefc40d5e5ed5030eb22fafb192fadae582b9a62e0c93a89",
+    "canonical_test_target_sha256": "764d725105dae1f1d0f03aa62a05fe66b1d3ca39d5eb8592c7ac8d02155ac1da",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "a43564ef6584bdf93ce0dafa0d7fc2a3a6e85c6c4d45abca62c5957b10a23e7f",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/a3bd0a400ec4d7f9/catboost_huber_delta1_trees300_depth6/worker-receipt.json",
+    "worker_receipt_sha256": "5c1e4a848d768aeb6e96732e368f2d9a5ed100c605d44e9e7e091b0a4511f603"
+  },
+  "run_date": "2026-07-23T13:14:36Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 103.29710438696202
+}

@@ -1,0 +1,67 @@
+{
+  "algorithm": "torch_frame_fttransformer_regressor",
+  "dataset_hash": "79e600bc5fcd5da7",
+  "ended_at": "2026-06-30T14:18:45Z",
+  "environment": {
+    "affinity": [
+      88
+    ],
+    "cuda_visible_devices": "3",
+    "deps": [
+      "torch_frame",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-regression-oss-gpu/bin/python",
+    "host": "super2",
+    "java": "/usr/bin/java",
+    "pid": 3177173,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 3406.642043182943,
+  "inference_time_seconds": 0.010567591059952974,
+  "metrics": {
+    "explained_variance": 0.4919055172211908,
+    "mae": 0.0965143405815633,
+    "max_error": 0.2944720854295529,
+    "mean_absolute_percentage_error_eps": 0.3488665746247875,
+    "median_absolute_error": 0.08592231646321297,
+    "mse": 0.014978490224796573,
+    "prediction_max": 0.5334600220418988,
+    "prediction_min": 0.15351035497909038,
+    "r2": 0.4888381219830614,
+    "rmse": 0.12238664234628129,
+    "target_max": 0.698795199,
+    "target_min": 0.0642570257
+  },
+  "model_class": "models.tools.model_zoo._TorchFrameRegressorWrapper",
+  "model_params": {},
+  "n_features": 3,
+  "run_date": "2026-06-30T14:18:45Z",
+  "started_at": "2026-06-30T14:18:41Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 36,
+  "train_rows": 180,
+  "training_time_seconds": 2.6500495380023494
+}

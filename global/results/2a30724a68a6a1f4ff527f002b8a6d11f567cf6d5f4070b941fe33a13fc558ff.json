@@ -1,0 +1,67 @@
+{
+  "algorithm": "torch_frame_trompt_regressor",
+  "dataset_hash": "3baa7e37fc1f7861",
+  "ended_at": "2026-06-30T14:34:36Z",
+  "environment": {
+    "affinity": [
+      27
+    ],
+    "cuda_visible_devices": "5",
+    "deps": [
+      "torch_frame",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-regression-oss-gpu/bin/python",
+    "host": "super8",
+    "java": "/usr/bin/java",
+    "pid": 953318,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 8961.514670336872,
+  "inference_time_seconds": 0.0060257670702412724,
+  "metrics": {
+    "explained_variance": 0.9648278020833274,
+    "mae": 0.03435600485426222,
+    "max_error": 0.15067545663718296,
+    "mean_absolute_percentage_error_eps": 0.1483870820738057,
+    "median_absolute_error": 0.026742008003158985,
+    "mse": 0.002355206241749262,
+    "prediction_max": 0.9413567631096953,
+    "prediction_min": 0.07506895164198113,
+    "r2": 0.9640885669897515,
+    "rmse": 0.048530467149505804,
+    "target_max": 0.972677588,
+    "target_min": 0.0191256832
+  },
+  "model_class": "models.tools.model_zoo._TorchFrameRegressorWrapper",
+  "model_params": {},
+  "n_features": 4,
+  "run_date": "2026-06-30T14:34:36Z",
+  "started_at": "2026-06-30T14:34:32Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 54,
+  "train_rows": 269,
+  "training_time_seconds": 3.3531501669203863
+}

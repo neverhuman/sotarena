@@ -1,0 +1,74 @@
+{
+  "algorithm": "imodels_rulefit_trees50_rules1000",
+  "dataset_hash": "bbff0b7733f33315",
+  "ended_at": "2026-06-28T18:46:15Z",
+  "environment": {
+    "affinity": [
+      8
+    ],
+    "cuda_visible_devices": "",
+    "deps": [
+      "imodels",
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super9",
+    "java": "/usr/bin/java",
+    "pid": 3135195,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 42.67404861801796,
+  "inference_time_seconds": 11.084019804024138,
+  "metrics": {
+    "accuracy": 0.7357293868921776,
+    "average_precision": 0.7480141856305313,
+    "balanced_accuracy": 0.704459099046436,
+    "brier_score": 0.22268583191711794,
+    "cohen_kappa": 0.43091582848067767,
+    "f1": 0.6130030959752322,
+    "false_negatives": 103,
+    "false_positives": 22,
+    "log_loss": 0.9094471970996159,
+    "matthews_corrcoef": 0.4635886041352158,
+    "positive_rate": 0.427061310782241,
+    "precision": 0.8181818181818182,
+    "predicted_positive_rate": 0.2558139534883721,
+    "recall": 0.4900990099009901,
+    "roc_auc": 0.7662306821088013,
+    "sensitivity": 0.4900990099009901,
+    "specificity": 0.9188191881918819,
+    "top_decile_lift": 2.1464521452145213,
+    "top_decile_positive_rate": 0.9166666666666666,
+    "true_negatives": 249,
+    "true_positives": 99
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 9,
+  "run_date": "2026-06-28T18:46:15Z",
+  "started_at": "2026-06-28T18:30:23Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 473,
+  "train_rows": 1000,
+  "training_time_seconds": 864.9474062970257
+}

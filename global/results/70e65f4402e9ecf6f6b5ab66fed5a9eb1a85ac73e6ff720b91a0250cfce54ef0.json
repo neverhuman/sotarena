@@ -1,0 +1,48 @@
+{
+  "algorithm": "bayesian_ridge",
+  "dataset_hash": "dee1fc8e9afd81c9",
+  "ended_at": "2026-06-21T08:48:04+00:00",
+  "environment": {
+    "lightgbm_available": false,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "xgboost_available": true
+  },
+  "inference_rows_per_second": 178665.92273323983,
+  "inference_time_seconds": 0.0001455229939892888,
+  "metrics": {
+    "explained_variance": 0.10215990806169806,
+    "mae": 0.24927502103753676,
+    "max_error": 0.49567647780118007,
+    "mean_absolute_percentage_error_eps": 9275317.117444905,
+    "median_absolute_error": 0.22378678581141903,
+    "mse": 0.08141341742087702,
+    "prediction_max": 0.5785238969172157,
+    "prediction_min": 0.251764045805306,
+    "r2": 0.09777920476328239,
+    "rmse": 0.28533036540276785,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "sklearn.linear_model._bayes.BayesianRidge",
+  "n_features": 8,
+  "run_date": "2026-06-21T08:48:04+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/grub-damage.csv",
+  "started_at": "2026-06-21T08:48:04+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 26,
+  "train_rows": 129,
+  "training_time_seconds": 0.0025367200141772628
+}

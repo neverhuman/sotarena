@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "914c0e97beee172fbe040d9e1e8b14e85b80821554452eb7129a6b46370d4eda",
+    "hyperion3test128dim.vs": "72b8084ad1f3060e596ffc0973f73b82e61b4130e75791ad9d0f5f2cfee0e0c5",
+    "hyperion3train.vs": "f414e53d1e30b08e1c7d16e676d8d33ffa1f608d1573ce2dbd9dd97cdaa2588e",
+    "hyperion3train128dim.vs": "16ce50a4612f7576efaee4db0b4678462730b70b012655591f61c90fc9e651ef",
+    "test3.vs": "6c88e007bd1c696bc49952c77a7ac4fce53b733380afdbb93d7cdd3615a7e24e",
+    "train3.vs": "bf59f85166d75bd90a1b537f737f031fc4f959ca75c35bd736e525b9b6bf80b7"
+  },
+  "counts": {
+    "augmented_features": 182,
+    "hyperion3_features": 128,
+    "raw_features": 27,
+    "test_rows": 999,
+    "train3_features": 27,
+    "train_rows": 1000
+  },
+  "created_at": "2026-07-09T08:16:18Z",
+  "dataset_hash": "55f06d147bcc2a32",
+  "dataset_name": "sick",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.07929790957603178,
+    "delta_vs_raw_selected_model": -0.036826199510673785,
+    "prior_best_r2": 0.5871902717362985,
+    "r2": 0.5078923621602667,
+    "raw_selected_model_r2": 0.5447185616709405
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "tabicl",
+    "path": "/home/ubuntu/remote_super/quant/regression/55f06d147bcc2a32/reports/tabicl.json",
+    "r2": 0.5871902717362985
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 83.22477163607255,
+    "raw_fit_predict_seconds": 2.869674006011337
+  }
+}

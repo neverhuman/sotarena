@@ -1,0 +1,61 @@
+{
+  "algorithm": "tabfm_classifier",
+  "dataset_hash": "c98cb891d794dfcd",
+  "ended_at": "2026-07-03T05:41:48+00:00",
+  "environment": {
+    "cuda_visible_devices": "0",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 12.50227785086402,
+  "inference_time_seconds": 24.15559817198664,
+  "metrics": {
+    "accuracy": 0.7251655629139073,
+    "average_precision": 0.7992650447915994,
+    "balanced_accuracy": 0.7285802387560019,
+    "brier_score": 0.17161908745765686,
+    "cohen_kappa": 0.4529701889921872,
+    "f1": 0.7260726072607261,
+    "false_negatives": 31,
+    "false_positives": 52,
+    "log_loss": 0.5015899538993835,
+    "matthews_corrcoef": 0.457372076911213,
+    "positive_rate": 0.46688741721854304,
+    "precision": 0.6790123456790124,
+    "predicted_positive_rate": 0.5364238410596026,
+    "recall": 0.7801418439716312,
+    "roc_auc": 0.8219902206951236,
+    "sensitivity": 0.7801418439716312,
+    "specificity": 0.6770186335403726,
+    "top_decile_lift": 2.003660489590483,
+    "top_decile_positive_rate": 0.9354838709677419,
+    "true_negatives": 109,
+    "true_positives": 110
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMClassifier",
+  "n_features": 33,
+  "run_date": "2026-07-03T05:41:48+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/colleges-usnews.csv",
+  "started_at": "2026-07-03T05:41:24+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": false,
+  "tabfm_model_type": "classification",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 302,
+  "train_rows": 1000,
+  "training_time_seconds": 0.20518344000447541
+}

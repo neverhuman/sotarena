@@ -1,0 +1,61 @@
+{
+  "algorithm": "NM_QuantBinary_bfa254be76d2_5bb28ee8a876",
+  "benchmark_pool": {
+    "normalized_elo": 0.0,
+    "pool_best": 1.0,
+    "pool_best_algorithm": "nystroem_logreg",
+    "pool_median": 0.9375,
+    "pool_percentile": 90.51094890510949,
+    "pool_size": 137
+  },
+  "core_hash": "bfa254be76d275773342358d02e426c8f4a1764ad7a279963ea86f3d6966e9b6",
+  "dataset_hash": "865f829ebdf98492",
+  "dsl_expr": "(pipe X (persistence1d topk=4) (spectral_moment order=2) (proj_eigen iters=16) (reduce op=max) (radial) (rff_cos n=24 seed=11) (gbm rounds=150 depth=3 lr=0.1))",
+  "ended_at": "2026-06-29T20:10:30Z",
+  "environment": {
+    "created_by_binary_sha": "3f770f17bf4ec8384af11a841a270670fe781caf7d4e48246922cf03351b3369",
+    "host": "xbabe1",
+    "runner": "newmath classify-csv"
+  },
+  "inference_rows_per_second": null,
+  "inference_time_seconds": null,
+  "metrics": {
+    "accuracy": 0.9444444444444444,
+    "average_precision": 0.5833333333333333,
+    "balanced_accuracy": 0.96875,
+    "brier_score": 0.07965292421923569,
+    "f1": 0.8,
+    "false_negatives": 0,
+    "false_positives": 1,
+    "log_loss": 0.2932668207952333,
+    "positive_rate": 0.1111111111111111,
+    "precision": 0.6666666666666666,
+    "predicted_positive_rate": 0.16666666666666666,
+    "recall": 1.0,
+    "roc_auc": 0.9375,
+    "sensitivity": 1.0,
+    "specificity": 0.9375,
+    "top_decile_lift": 4.5,
+    "top_decile_positive_rate": 0.5,
+    "true_negatives": 15,
+    "true_positives": 2
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "model_hash": "5bb28ee8a8766a80d4a9726ba910a5ecdc51fb8d4d900a457e22bd9c8d694e5d",
+  "n_features": 7,
+  "newmath_receipt_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_QuantBinary_bfa254be76d2_5bb28ee8a876/20260629T201013Z/runs/865f829ebdf98492/receipt.json",
+  "predictions_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_QuantBinary_bfa254be76d2_5bb28ee8a876/20260629T201013Z/runs/865f829ebdf98492/predictions.csv",
+  "run_date": "2026-06-29T20:10:30Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/appendicitis-test-edsa.csv",
+  "source_run_dir": "/home/ubuntu/jmath/target/newmath/quant_full/NM_QuantBinary_bfa254be76d2_5bb28ee8a876/20260629T201013Z",
+  "started_at": "2026-06-29T20:10:30Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 18,
+  "train_rows": 88,
+  "training_time_seconds": null,
+  "wall_time_seconds": 0.143317
+}

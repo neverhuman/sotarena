@@ -1,0 +1,115 @@
+{
+  "algorithm": "jain_regressor_gen30000",
+  "dataset_hash": "3305a3ad973fb227",
+  "task_type": "regression",
+  "status": "completed",
+  "started_at_unix_ms": 1783179179605,
+  "finished_at_unix_ms": 1783180235181,
+  "rows": {
+    "train": 200,
+    "test": 40
+  },
+  "features": 2,
+  "timings": {
+    "load_secs": 0.000133583,
+    "search_secs": 1000.44510433,
+    "gpu_kernel_secs": 5.945549406,
+    "finalist_cv_secs": 55.121708356,
+    "fit_predict_secs": 0.009067319,
+    "total_secs": 1055.576168672
+  },
+  "model_class": "feat_math_genome",
+  "model_params": {
+    "gens": 30000,
+    "time_budget_secs": 1000.0,
+    "pop": 64,
+    "top_k": 2,
+    "folds": 3,
+    "search_rows": 512,
+    "actual_search_rows": 200,
+    "gpu_kernel_configs": 131072,
+    "gpu_kernel_used": true,
+    "gpu_kernel_candidates": 6,
+    "gpu_kernel_message": "battle-gpu composite GPR kernel search over 5 specs",
+    "seed_genomes_file": "/home/ubuntu/quant/regression/reports/jain_regressor_fast30_gen0_seeds.txt",
+    "seed_genomes_requested": 64,
+    "seed_genomes_valid": 64,
+    "seed_genomes_used": 63,
+    "seed": 20260616,
+    "evals": 31850,
+    "tokens_total": 314168267.0,
+    "search_engine": "feat_math_evolve_ridge_surrogate+battle_gpu_gpr_mixture_proposals",
+    "final_selection": "honest_feat_math_cv_r2"
+  },
+  "metrics": {
+    "r2": 0.6087705525152616,
+    "rmse": 0.19344364906971886,
+    "mse": 0.03742044536540855,
+    "mae": 0.1059637333928328,
+    "explained_variance": 0.6133649480896654,
+    "prediction_min": 0.000723660411783633,
+    "prediction_max": 0.6968853010751334,
+    "target_min": 0.0,
+    "target_max": 1.0
+  },
+  "gene": "(pipe X (quantile_bins append=true bins=26) (rff_sin gamma=1.028838698262572 n=39 seed=8441) (sigmoid append=true) (quantile_bins append=true bins=28) (pair_prod append=true topk=9) (quantile_bins append=true bins=24) (ksmooth gamma=4.0 k=8))",
+  "genome": "(pipe X (quantile_bins append=true bins=26) (rff_sin gamma=1.028838698262572 n=39 seed=8441) (sigmoid append=true) (quantile_bins append=true bins=28) (pair_prod append=true topk=9) (quantile_bins append=true bins=24) (ksmooth gamma=4.0 k=8))",
+  "genome_hash": "db9d97f62eea1b8480bb0a40a037e40a3d110a770922df181c23ce8a2cd46163",
+  "cv": {
+    "folds": 3,
+    "mean_r2": 0.5479653166246422,
+    "oof_r2": 0.5509961855330763,
+    "fold_r2": [
+      0.5547187240512084,
+      0.516416856257357,
+      0.5727603695653612
+    ]
+  },
+  "finalists": [
+    {
+      "rank": 1,
+      "gene": "(pipe X (quantile_bins append=true bins=26) (rff_sin gamma=1.028838698262572 n=39 seed=8441) (sigmoid append=true) (quantile_bins append=true bins=28) (pair_prod append=true topk=9) (quantile_bins append=true bins=24) (ksmooth gamma=4.0 k=8))",
+      "genome": "(pipe X (quantile_bins append=true bins=26) (rff_sin gamma=1.028838698262572 n=39 seed=8441) (sigmoid append=true) (quantile_bins append=true bins=28) (pair_prod append=true topk=9) (quantile_bins append=true bins=24) (ksmooth gamma=4.0 k=8))",
+      "genome_hash": "db9d97f62eea1b8480bb0a40a037e40a3d110a770922df181c23ce8a2cd46163",
+      "search_score": 0.5816466784737954,
+      "search_fold_scores": [
+        0.5780605944354196,
+        0.6604308756303777,
+        0.5064485653555888
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.5479653166246422,
+        "oof_r2": 0.5509961855330763,
+        "fold_r2": [
+          0.5547187240512084,
+          0.516416856257357,
+          0.5727603695653612
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "gene": "(pipe X (quantile_bins append=true bins=26) (rff_sin gamma=1.028838698262572 n=39 seed=8441) (sigmoid append=true) (quantile_bins append=true bins=28) (pair_prod append=true topk=9) (quantile_bins append=true bins=24) (ksmooth gamma=4.595253417286399 k=10))",
+      "genome": "(pipe X (quantile_bins append=true bins=26) (rff_sin gamma=1.028838698262572 n=39 seed=8441) (sigmoid append=true) (quantile_bins append=true bins=28) (pair_prod append=true topk=9) (quantile_bins append=true bins=24) (ksmooth gamma=4.595253417286399 k=10))",
+      "genome_hash": "ef9a9fb68d513510d3a2784f9da39987f9a3d691e383d778a88cc05e9ad7a26f",
+      "search_score": 0.5816466784737954,
+      "search_fold_scores": [
+        0.5780605944354196,
+        0.6604308756303777,
+        0.5064485653555888
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.5361870597191821,
+        "oof_r2": 0.5406957863195343,
+        "fold_r2": [
+          0.5271430408774912,
+          0.5090210320303088,
+          0.5723971062497464
+        ]
+      }
+    }
+  ],
+  "predictions_path": "/home/ubuntu/quant/regression/3305a3ad973fb227/predictions/jain_regressor_1000.csv"
+}

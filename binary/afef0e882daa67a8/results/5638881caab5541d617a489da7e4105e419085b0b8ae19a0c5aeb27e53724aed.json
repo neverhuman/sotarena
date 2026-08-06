@@ -1,0 +1,59 @@
+{
+  "algorithm": "tabfm_classifier",
+  "dataset_hash": "afef0e882daa67a8",
+  "ended_at": "2026-07-24T21:03:58+00:00",
+  "environment": {
+    "cuda_visible_devices": "0",
+    "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 1
+  },
+  "inference_rows_per_second": 24.8722684999291,
+  "inference_time_seconds": 40.205419944017194,
+  "metrics": {
+    "accuracy": 0.952,
+    "average_precision": 0.6004715770322357,
+    "balanced_accuracy": 0.717911877394636,
+    "brier_score": 0.04192690923810005,
+    "cohen_kappa": 0.5481927710843374,
+    "f1": 0.5714285714285714,
+    "false_negatives": 40,
+    "false_positives": 8,
+    "log_loss": 0.15846547484397888,
+    "matthews_corrcoef": 0.5748910163806684,
+    "positive_rate": 0.072,
+    "precision": 0.8,
+    "predicted_positive_rate": 0.04,
+    "recall": 0.4444444444444444,
+    "roc_auc": 0.8915080220306514,
+    "sensitivity": 0.4444444444444444,
+    "specificity": 0.9913793103448276,
+    "true_negatives": 920,
+    "true_positives": 32
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMClassifier",
+  "n_features": 198,
+  "run_date": "2026-07-24T21:03:58+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/kddcup09-upselling.csv",
+  "started_at": "2026-07-24T21:01:59+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": false,
+  "tabfm_model_type": "classification",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 2.7607559020398185
+}

@@ -1,0 +1,77 @@
+{
+  "algorithm": "jable_regressor",
+  "dataset_hash": "c32fa09b48fb2f27",
+  "ended_at": "2026-07-10T00:17:20Z",
+  "environment": {
+    "affinity": [
+      30
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/remote_super/quant/.venv-model-queue/bin/python",
+    "host": "xbabe2",
+    "java": "/usr/bin/java",
+    "pid": 2862773,
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "cpu",
+    "sklearn": "1.9.0",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "gpu_device": null,
+  "inference_rows_per_second": 4304.404935877569,
+  "inference_time_seconds": 0.10988743091002107,
+  "max_job_seconds": 1800.0,
+  "metrics": {
+    "explained_variance": 0.4730560786350143,
+    "mae": 0.13863763981514526,
+    "max_error": 0.6746682153518524,
+    "mean_absolute_percentage_error_eps": 0.40735069037764726,
+    "median_absolute_error": 0.11712260562313948,
+    "mse": 0.032736487774546005,
+    "prediction_max": 0.9268468888405803,
+    "prediction_min": 0.13442425425717835,
+    "r2": 0.4724958793584484,
+    "rmse": 0.18093227399926748,
+    "target_max": 1.0,
+    "target_min": 0.0303030312
+  },
+  "model_class": "models.tools.jable_regressor.JableRegressor",
+  "model_metadata": {
+    "seed": 17
+  },
+  "model_name": "jable_regressor",
+  "model_params": {
+    "seed": 17
+  },
+  "n_features": 9,
+  "run_date": "2026-07-10T00:17:20Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/openml-cmc-23-target-wifes-age.csv",
+  "started_at": "2026-07-10T00:16:59Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 473,
+  "train_rows": 1000,
+  "training_time_seconds": 18.359856275375932,
+  "wall_time_seconds": 18.469743706285954,
+  "xgboost_device": null
+}

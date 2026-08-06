@@ -1,0 +1,61 @@
+{
+  "algorithm": "NM_Concept_cec156877d6a_4a2f7d10c052",
+  "benchmark_pool": {
+    "normalized_elo": 0.008049419692998787,
+    "pool_best": 0.9361539535749752,
+    "pool_best_algorithm": "tabpfn_v25_classifier_default",
+    "pool_median": 0.9154318210029792,
+    "pool_percentile": 51.111111111111114,
+    "pool_size": 135
+  },
+  "core_hash": "5d5f84c8c7adda532d82bbcfe7889c8ca0863920ac0f746987e238dcfeea7ba3",
+  "dataset_hash": "de602a22ad99eec3",
+  "dsl_expr": "(pipe X (robust_scale) (poincare) (gbm rounds=150 depth=3 lr=0.1))",
+  "ended_at": "2026-06-29T22:26:45Z",
+  "environment": {
+    "created_by_binary_sha": "b24ddd5e331834fb6b3c90dd823c0200d5b306c2993d745a51534b519e4db6d0",
+    "host": "xbabe3",
+    "runner": "newmath classify-csv"
+  },
+  "inference_rows_per_second": null,
+  "inference_time_seconds": null,
+  "metrics": {
+    "accuracy": 0.876,
+    "average_precision": 0.6699303143783447,
+    "balanced_accuracy": 0.7243979642502483,
+    "brier_score": 0.08020898770616411,
+    "f1": 0.5539568345323741,
+    "false_negatives": 75,
+    "false_positives": 49,
+    "log_loss": 0.25091852136144865,
+    "positive_rate": 0.152,
+    "precision": 0.6111111111111112,
+    "predicted_positive_rate": 0.126,
+    "recall": 0.506578947368421,
+    "roc_auc": 0.9155986221449851,
+    "sensitivity": 0.506578947368421,
+    "specificity": 0.9422169811320755,
+    "top_decile_lift": 4.407894736842105,
+    "top_decile_positive_rate": 0.67,
+    "true_negatives": 799,
+    "true_positives": 77
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "model_hash": "4a2f7d10c052d91a6671b8ed1b5b586136b1682dfb6dd5e361459e33218c2fcd",
+  "n_features": 17,
+  "newmath_receipt_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_cec156877d6a_4a2f7d10c052/20260629T222628Z/runs/de602a22ad99eec3/receipt.json",
+  "predictions_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_cec156877d6a_4a2f7d10c052/20260629T222628Z/runs/de602a22ad99eec3/predictions.csv",
+  "run_date": "2026-06-29T22:26:45Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/online-shoppers-intention.csv",
+  "source_run_dir": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_cec156877d6a_4a2f7d10c052/20260629T222628Z",
+  "started_at": "2026-06-29T22:26:45Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": null,
+  "wall_time_seconds": 0.300707
+}

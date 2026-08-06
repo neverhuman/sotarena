@@ -1,0 +1,52 @@
+{
+  "algorithm": "tabfm_regressor",
+  "dataset_hash": "019de5d76a718163",
+  "ended_at": "2026-07-03T05:41:19+00:00",
+  "environment": {
+    "cuda_visible_devices": "1",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 9.455153467370302,
+  "inference_time_seconds": 2.5382983029121533,
+  "metrics": {
+    "explained_variance": 0.9941402522261378,
+    "mae": 0.013326110939184824,
+    "max_error": 0.040677666664123535,
+    "mean_absolute_percentage_error_eps": 0.06566520634358324,
+    "median_absolute_error": 0.008706413209438324,
+    "mse": 0.00029328191031959775,
+    "prediction_max": 0.8377007246017456,
+    "prediction_min": 0.025523632764816284,
+    "r2": 0.9940399924515056,
+    "rmse": 0.01712547547718304,
+    "target_max": 0.8783783912658691,
+    "target_min": 0.019305018708109856
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMRegressor",
+  "n_features": 2,
+  "run_date": "2026-07-03T05:41:19+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/seaborn-flights-passengers.csv",
+  "started_at": "2026-07-03T05:40:58+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": false,
+  "tabfm_model_type": "regression",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 24,
+  "train_rows": 120,
+  "training_time_seconds": 0.018680808949284256
+}

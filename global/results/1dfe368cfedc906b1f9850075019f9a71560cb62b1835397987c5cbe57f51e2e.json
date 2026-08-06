@@ -1,0 +1,60 @@
+{
+  "algorithm": "lasso",
+  "dataset_hash": "542e75bc0cfdd1bf",
+  "ended_at": "2026-06-21T09:34:31+00:00",
+  "environment": {
+    "catboost_available": true,
+    "interpret_available": true,
+    "lightgbm_available": true,
+    "ngboost_available": true,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "pytorch_tabnet_available": true,
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1"
+    },
+    "xgboost_available": true
+  },
+  "inference_rows_per_second": 73723.89134225815,
+  "inference_time_seconds": 0.00010851299157366157,
+  "metrics": {
+    "explained_variance": -0.8634491160530937,
+    "mae": 0.3284721961244941,
+    "max_error": 0.811185359954834,
+    "mean_absolute_percentage_error_eps": 1.6203574069554891,
+    "median_absolute_error": 0.2806088998913765,
+    "mse": 0.16170134537539602,
+    "prediction_max": 1.1069105863571167,
+    "prediction_min": 0.22704052925109863,
+    "r2": -1.175085038023639,
+    "rmse": 0.40212105810986326,
+    "target_max": 0.8859819769859314,
+    "target_min": 0.06042071431875229
+  },
+  "model_class": "sklearn.linear_model._coordinate_descent.Lasso",
+  "n_features": 17,
+  "run_date": "2026-06-21T09:34:31+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/climate-change-dataset2020-2024.csv",
+  "started_at": "2026-06-21T09:34:31+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 8,
+  "train_rows": 37,
+  "training_time_seconds": 0.0011169310309924185,
+  "xgboost_device": null
+}

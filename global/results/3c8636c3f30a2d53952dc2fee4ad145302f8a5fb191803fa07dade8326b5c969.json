@@ -1,0 +1,52 @@
+{
+  "algorithm": "tabfm_regressor",
+  "dataset_hash": "f0e7eb3d790df37d",
+  "ended_at": "2026-07-03T05:58:07+00:00",
+  "environment": {
+    "cuda_visible_devices": "0",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 22.747234051071285,
+  "inference_time_seconds": 5.6270577650284395,
+  "metrics": {
+    "explained_variance": 0.16153125136177948,
+    "mae": 0.08776046545244753,
+    "max_error": 0.6055856347084045,
+    "mean_absolute_percentage_error_eps": 2924293.635776234,
+    "median_absolute_error": 0.051009416580200195,
+    "mse": 0.02191677782421001,
+    "prediction_max": 0.6828694343566895,
+    "prediction_min": 0.4704849123954773,
+    "r2": 0.1543161537133414,
+    "rmse": 0.14804316203124684,
+    "target_max": 0.868852436542511,
+    "target_min": 0.0
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMRegressor",
+  "n_features": 8,
+  "run_date": "2026-07-03T05:58:07+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/openml-diabetes-37-target-pres.csv",
+  "started_at": "2026-07-03T05:58:01+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": false,
+  "tabfm_model_type": "regression",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 128,
+  "train_rows": 640,
+  "training_time_seconds": 0.05359993001911789
+}

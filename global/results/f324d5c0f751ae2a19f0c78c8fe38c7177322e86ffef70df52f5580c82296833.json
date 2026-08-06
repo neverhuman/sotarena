@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "6edc481e93a322879bb24db72c6dd4b4ddd132ed204f215b05504783384bd8e1",
+    "hyperion3test128dim.vs": "5e4c8c9d2b9ceef2fc1c090b91e79182f351b30933d86cc96c17717a3a6ee918",
+    "hyperion3train.vs": "779ccbc02f1ecc2f33148fa8ba1cf017c1e0a1925dcfbe32214d7fb20ef7e50b",
+    "hyperion3train128dim.vs": "6a8c4da4474ce7ac1e31e583e8792e9098537d949e8dbcb3d431dc63b5e520a5",
+    "test3.vs": "a669f0f95a943125c3ae3cf557869e6d9fe894fc7868bc02b0a2c8c0a164cda0",
+    "train3.vs": "74e36b8c04855d94eaa8f95111553d38e3b8033cfd4ddd9447d739e60eab9ccf"
+  },
+  "counts": {
+    "augmented_features": 166,
+    "hyperion3_features": 128,
+    "raw_features": 19,
+    "test_rows": 21,
+    "train3_features": 19,
+    "train_rows": 105
+  },
+  "created_at": "2026-07-10T18:52:22Z",
+  "dataset_hash": "13b5df533e59a626",
+  "dataset_name": "hepatitis",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.55384129587112,
+    "delta_vs_raw_selected_model": -0.10493272798938513,
+    "prior_best_r2": 0.6418459066880902,
+    "r2": 0.0880046108169702,
+    "raw_selected_model_r2": 0.19293733880635533
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "ransac",
+    "path": "/home/ubuntu/remote_super/quant/regression/13b5df533e59a626/reports/ransac.json",
+    "r2": 0.6418459066880902
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 34.21766355121508,
+    "raw_fit_predict_seconds": 1.725508931092918
+  }
+}

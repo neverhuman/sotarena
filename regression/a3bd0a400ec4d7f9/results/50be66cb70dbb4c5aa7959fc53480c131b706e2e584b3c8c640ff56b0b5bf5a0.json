@@ -1,0 +1,371 @@
+{
+  "campaign_id": "golden46-full42-20260723-v1",
+  "cells": [
+    {
+      "method_id": "autogluon_300s",
+      "predictions_sha256": "9d9bdd2b9811580590f24de4fa44961fe9ba1111cc5a61ce3deb1b47ab3df363",
+      "report_sha256": "3931ffdcf1e5e9fda66473083c5e05f2817dab89c06f83ce38f1fdde1639399a",
+      "rmse": 0.1880099428780528,
+      "status": "validated-score",
+      "worker_receipt_sha256": "4138606aa9c2ad5776ec1916d99504ac7826ee820069ae0f617e664378d344f5"
+    },
+    {
+      "method_id": "chimera_regression",
+      "predictions_sha256": "096319708e493afc9ed157f254a041290d51eb0160bf5ec54ff1b8e4af38d4be",
+      "report_sha256": "a3649bb588e8c4bfbc5e9070248090e7ba587d39d86f9c95b42b0a80d02ec63f",
+      "rmse": 0.1903032814181637,
+      "status": "validated-score",
+      "worker_receipt_sha256": "379911970b8e14f823a50329d1fa9533598c214cb8feac3f0de6c5943fd91653"
+    },
+    {
+      "method_id": "grok4p5_regressor",
+      "predictions_sha256": "9a645340d939391a542523437f400f9ae6e474160329ca7ac8cd180b1eea77f6",
+      "report_sha256": "64dcfa7006a25a1f3ad04ee853791e7026c5a94f8d06c08d5403b1876019a971",
+      "rmse": 0.20327641731313123,
+      "status": "validated-score",
+      "worker_receipt_sha256": "ba8ef99999de5a2cedffa30cd984aa1559894b6863f014f35a48abf7a11ac4e7"
+    },
+    {
+      "method_id": "hyp3_chimera_regression",
+      "predictions_sha256": "ac935e8fef25472b1bbd3dd673d507aee809193c553f218e2042a10758caadbb",
+      "report_sha256": "369a4c0bc265aa72b3515e94df2f049ae7cad1b4713ab2a2a31564753e6f8654",
+      "rmse": 0.22093396988513744,
+      "status": "validated-score",
+      "worker_receipt_sha256": "49c355787eb0fdc7b94c707229c951311500e148acdbd700b61f1d73e48b7c5f"
+    },
+    {
+      "method_id": "tabfm_ensemble_regressor",
+      "predictions_sha256": "ee42cfaaf73a695c2e5e953b01016e5a74f4ca625df8bc5a51464fc151525190",
+      "report_sha256": "60ae83f29798dfa0900a3f163607ab978277eb77e9475826e03ce0a125ce1959",
+      "rmse": 0.1669615446679919,
+      "status": "validated-score",
+      "worker_receipt_sha256": "aa5610bd1f6b00562ef277c27911367cd06bdf5e1d0aef7e7c3af270474d5d89"
+    },
+    {
+      "method_id": "tabpfn_v3_regressor",
+      "predictions_sha256": "972ad49a131687c24a2c8838a224d792a2127c56d32a6484aef3a6221718a8d4",
+      "report_sha256": "2da276111de1e1cc00397e563570239b60e54053b7b60bb4ed23bbccfaeefe56",
+      "rmse": 0.17738779557143086,
+      "status": "validated-score",
+      "worker_receipt_sha256": "9373364b3c69793d805cbeef7919e137bc3ba90fee3d2662c70c3de54ca36358"
+    },
+    {
+      "method_id": "xgboost_hist_trees900_depth4_lr0p02",
+      "predictions_sha256": "a5acbfc790bd4ac725a59e02922f577454146bbe5fd9244d50f65ba81e7aa07b",
+      "report_sha256": "b8744fe803a974de903659eba7b83e09569bc315a5ae7059e55d4a492f4fc8b9",
+      "rmse": 0.18979118582482177,
+      "status": "validated-score",
+      "worker_receipt_sha256": "0c622d49051a433002508e4bf956f759d7d2b9d4a307d4802d53d7c9d5b67511"
+    }
+  ],
+  "complete": true,
+  "content_sha256": "436bb46307a27a395612569da5e7b99a8d48bcbeaf02f1f32a94fed09827d4bd",
+  "counts": {
+    "blocked_missing_frozen_artifact": 0,
+    "errors": 0,
+    "expected": 7,
+    "validated_scores": 7
+  },
+  "created_at": "2026-07-23T12:54:19Z",
+  "dataset_hash": "a3bd0a400ec4d7f9",
+  "errors": [],
+  "expected_method_ids": [
+    "autogluon_300s",
+    "chimera_regression",
+    "grok4p5_regressor",
+    "hyp3_chimera_regression",
+    "tabfm_ensemble_regressor",
+    "tabpfn_v3_regressor",
+    "xgboost_hist_trees900_depth4_lr0p02"
+  ],
+  "method_identities": {
+    "autogluon_300s": {
+      "cohort_content_sha256": "d8a833c5e2cca4736545a979317159e340328e0b02fec771d7c3cdbc2a773770",
+      "execution": "frozen-special-runner",
+      "identity_sha256": "6435be65222cc1e5df00fa9d33f347933eb2a7ca31e33b38d5406cdb9c50617a",
+      "method_id": "autogluon_300s",
+      "model_class": "__main__.AutoGluonAdapter",
+      "parameters": {
+        "ag_args_fit": {
+          "num_cpus": 1,
+          "num_gpus": 0
+        },
+        "eval_metric": "rmse",
+        "presets": "medium_quality",
+        "problem_type": "regression",
+        "seed": 20260621,
+        "time_limit": 270.0
+      },
+      "resource": "cpu",
+      "sources": [
+        {
+          "path": "/home/ubuntu/remote_super/guant/benchmark_quant_models.py",
+          "sha256": "77e967d0e7024d2b46c51e1997147957720a514771b2e33cc35200454dff29fa"
+        }
+      ]
+    },
+    "chimera_regression": {
+      "cohort_content_sha256": "d8a833c5e2cca4736545a979317159e340328e0b02fec771d7c3cdbc2a773770",
+      "execution": "frozen-special-runner",
+      "identity_sha256": "52a9e2658886443e926033e7b3da8e1aaa296db0aa47225530adde03a86aaa4e",
+      "method_id": "chimera_regression",
+      "model_class": "chimera.Chimera",
+      "parameters": {
+        "converted_checkpoint": {
+          "architecture": "StackFusionReg",
+          "bytes": 4604636,
+          "conversion_receipt": {
+            "path": "/home/ubuntu/TO_DELETE/jain_small/deployment/ops/starforge-artifacts.receipt.json",
+            "sha256": "a86a63bca8148ca3238472a3daf838559a0666fa6e45b96afd34438bb5e3fb46"
+          },
+          "format": "pt_to_safetensors",
+          "path": "/home/ubuntu/jain-split/jain-starforge/artifacts/starforge/chimera_stackfusionreg.safetensors",
+          "sha256": "57cdb53ae732a705e6aee7381a6a11e7e82cf357bcd67c46ccfa47b789c7d5d2",
+          "source_sha256": "087311c6b64ecc15df3022b011b6618d8d2f1040daa42d1c7f9bb382ab2ed20b",
+          "tensor_count": 32
+        },
+        "device": "cuda",
+        "source_checkpoint": {
+          "bytes": 4612145,
+          "path": "/home/ubuntu/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_stackfusionreg.pt",
+          "sha256": "087311c6b64ecc15df3022b011b6618d8d2f1040daa42d1c7f9bb382ab2ed20b"
+        }
+      },
+      "resource": "gpu",
+      "sources": [
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/chimera_regression/python/router/run_chimera_regression_reports.py",
+          "sha256": "44ae4d81c2081a84ebf4ebe4e268910e2733bada4e7ec40d6b68042f20922938"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/chimeria_regression_shuffle/chimera.py",
+          "sha256": "babb5f922ae515ccd8a3dba1c779f3c3e5d5e3c023604fabbd785805ed579b67"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_file_inventory.json",
+          "sha256": "577bab17e9298ea3afa1450973a0f1c4be0d93da746c647bfc261fc88a97d406"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/chimeria_regression_shuffle/weights/expert_a.safetensors",
+          "sha256": "041ffd016c0a3a32aa4c2592b24a9fca8db086f7ab6844e5c7260d63aa2f3862"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/chimeria_regression_shuffle/weights/expert_b.safetensors",
+          "sha256": "544a4573398e2548dc9ac379d53bdb6a5ae58fc5646619ed029227db60528848"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/chimeria_regression_shuffle/weights/starlight_config.json",
+          "sha256": "4acacec8c148702e07147452e3e13dad586bd40f90878a3bbac8355753978acb"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/python/elo_finetune/model_io.py",
+          "sha256": "5e142384c871f4df8e59271e5998524ea1806e8a8ea2f240ea9a8190d8e28805"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/python/elo_finetune/paths.py",
+          "sha256": "3db03efb5ca67fcc5a898fc9bbc83fb1e4053fd6e98338b8836b39d3ca3c8cc7"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/provenance/regressor_source/starlight_core_regressor_train.py",
+          "sha256": "71dbbce7c0c498917f4bfb57e674177c8240ce7b428decceea20dad0e3c259e9"
+        },
+        {
+          "path": "/home/ubuntu/jain-split/jain-starforge/artifacts/starforge/chimera_stackfusionreg.safetensors",
+          "sha256": "57cdb53ae732a705e6aee7381a6a11e7e82cf357bcd67c46ccfa47b789c7d5d2"
+        },
+        {
+          "path": "/home/ubuntu/TO_DELETE/jain_small/deployment/ops/starforge-artifacts.receipt.json",
+          "sha256": "a86a63bca8148ca3238472a3daf838559a0666fa6e45b96afd34438bb5e3fb46"
+        }
+      ]
+    },
+    "grok4p5_regressor": {
+      "cohort_content_sha256": "d8a833c5e2cca4736545a979317159e340328e0b02fec771d7c3cdbc2a773770",
+      "execution": "frozen-special-runner",
+      "identity_sha256": "c0c66398c63422ffec597249649fa6b96cce06206e5ce7e1298e4d8ba81aebdd",
+      "method_id": "grok4p5_regressor",
+      "model_class": "cursor_grok4p5hf.run",
+      "parameters": {
+        "candidate_seed": 20260719
+      },
+      "resource": "cpu_light",
+      "sources": [
+        {
+          "path": "/home/ubuntu/super_cluster/grok4p5_run/cursor_grok4p5hf.py",
+          "sha256": "14ca62e456388c171b4da837ba88e6aa77df3ae6a36c9833126d0425a827dcad"
+        },
+        {
+          "path": "/home/ubuntu/super_cluster/grok4p5_run/benchmark.py",
+          "sha256": "13bdf302baaf03b7ab59fb77c040cc5711cca0981772c9a0f2488f139c1d8d79"
+        }
+      ]
+    },
+    "hyp3_chimera_regression": {
+      "cohort_content_sha256": "d8a833c5e2cca4736545a979317159e340328e0b02fec771d7c3cdbc2a773770",
+      "execution": "frozen-special-runner",
+      "identity_sha256": "52c271972ecdbfa4d271f3cbe1e93196bc6f23682ceea204437eed25d61ed7b9",
+      "method_id": "hyp3_chimera_regression",
+      "model_class": "chimera.Chimera",
+      "parameters": {
+        "converted_checkpoint": {
+          "architecture": "StackFusionReg",
+          "bytes": 4604636,
+          "conversion_receipt": {
+            "path": "/home/ubuntu/TO_DELETE/jain_small/deployment/ops/starforge-artifacts.receipt.json",
+            "sha256": "a86a63bca8148ca3238472a3daf838559a0666fa6e45b96afd34438bb5e3fb46"
+          },
+          "format": "pt_to_safetensors",
+          "path": "/home/ubuntu/jain-split/jain-starforge/artifacts/starforge/chimera_stackfusionreg.safetensors",
+          "sha256": "57cdb53ae732a705e6aee7381a6a11e7e82cf357bcd67c46ccfa47b789c7d5d2",
+          "source_sha256": "087311c6b64ecc15df3022b011b6618d8d2f1040daa42d1c7f9bb382ab2ed20b",
+          "tensor_count": 32
+        },
+        "device": "cuda",
+        "feature_order": [
+          "train3",
+          "hyperion3",
+          "original_csv_features"
+        ],
+        "source_checkpoint": {
+          "bytes": 4612145,
+          "path": "/home/ubuntu/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_stackfusionreg.pt",
+          "sha256": "087311c6b64ecc15df3022b011b6618d8d2f1040daa42d1c7f9bb382ab2ed20b"
+        }
+      },
+      "resource": "gpu",
+      "sources": [
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/chimera_regression/python/router/run_chimera_regression_reports.py",
+          "sha256": "44ae4d81c2081a84ebf4ebe4e268910e2733bada4e7ec40d6b68042f20922938"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/chimeria_regression_shuffle/chimera.py",
+          "sha256": "babb5f922ae515ccd8a3dba1c779f3c3e5d5e3c023604fabbd785805ed579b67"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_file_inventory.json",
+          "sha256": "577bab17e9298ea3afa1450973a0f1c4be0d93da746c647bfc261fc88a97d406"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/chimeria_regression_shuffle/weights/expert_a.safetensors",
+          "sha256": "041ffd016c0a3a32aa4c2592b24a9fca8db086f7ab6844e5c7260d63aa2f3862"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/chimeria_regression_shuffle/weights/expert_b.safetensors",
+          "sha256": "544a4573398e2548dc9ac379d53bdb6a5ae58fc5646619ed029227db60528848"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/chimeria_regression_shuffle/weights/starlight_config.json",
+          "sha256": "4acacec8c148702e07147452e3e13dad586bd40f90878a3bbac8355753978acb"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/python/elo_finetune/model_io.py",
+          "sha256": "5e142384c871f4df8e59271e5998524ea1806e8a8ea2f240ea9a8190d8e28805"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/python/elo_finetune/paths.py",
+          "sha256": "3db03efb5ca67fcc5a898fc9bbc83fb1e4053fd6e98338b8836b39d3ca3c8cc7"
+        },
+        {
+          "path": "/home/ubuntu/remote_super/fable_god/provenance/regressor_source/starlight_core_regressor_train.py",
+          "sha256": "71dbbce7c0c498917f4bfb57e674177c8240ce7b428decceea20dad0e3c259e9"
+        },
+        {
+          "path": "/home/ubuntu/jain-split/jain-starforge/artifacts/starforge/chimera_stackfusionreg.safetensors",
+          "sha256": "57cdb53ae732a705e6aee7381a6a11e7e82cf357bcd67c46ccfa47b789c7d5d2"
+        },
+        {
+          "path": "/home/ubuntu/TO_DELETE/jain_small/deployment/ops/starforge-artifacts.receipt.json",
+          "sha256": "a86a63bca8148ca3238472a3daf838559a0666fa6e45b96afd34438bb5e3fb46"
+        }
+      ]
+    },
+    "tabfm_ensemble_regressor": {
+      "cohort_content_sha256": "d8a833c5e2cca4736545a979317159e340328e0b02fec771d7c3cdbc2a773770",
+      "execution": "frozen-special-runner",
+      "identity_sha256": "f7c9d430b43b3b824709555010181f47a03babec5c02ab807bcf6a33eb7376a2",
+      "method_id": "tabfm_ensemble_regressor",
+      "model_class": "tabfm.src.classifier_and_regressor.TabFMRegressor",
+      "parameters": {
+        "device": "cuda",
+        "ensemble": true,
+        "model_type": "regression"
+      },
+      "resource": "gpu",
+      "sources": [
+        {
+          "path": "/home/ubuntu/remote_super/guant/benchmark_tabfm_models.py",
+          "sha256": "e5b7dcb663e5f00ba899e430abb0758928359e203cf01b54d49366e28cbafc82"
+        },
+        {
+          "path": "/home/ubuntu/.cache/huggingface/hub/models--google--tabfm-1.0.0-pytorch/snapshots/77cb9cc1b4fd3a9c77fbb9552c218200bb4dab83/regression/model.safetensors",
+          "sha256": "bd5a615b0322a8f04a895038de6df6fbd71430eca750e1d792f31048654674a9"
+        },
+        {
+          "path": "/home/ubuntu/.cache/huggingface/hub/models--google--tabfm-1.0.0-pytorch/snapshots/77cb9cc1b4fd3a9c77fbb9552c218200bb4dab83/regression/config.json",
+          "sha256": "169c7a935965b45c4ed9d981201392743e498115ceddb29931eccd37e0c8f6ad"
+        },
+        {
+          "path": "/home/ubuntu/.cache/huggingface/hub/models--google--tabfm-1.0.0-pytorch/snapshots/77cb9cc1b4fd3a9c77fbb9552c218200bb4dab83/config.json",
+          "sha256": "21c1e7704490da38026a37920d52fd8f5ba552c9f1eba9424fadb11095d7dd45"
+        }
+      ]
+    },
+    "tabpfn_v3_regressor": {
+      "cohort_content_sha256": "d8a833c5e2cca4736545a979317159e340328e0b02fec771d7c3cdbc2a773770",
+      "execution": "frozen-special-runner",
+      "identity_sha256": "938a7f39f47b64b80ebd404daa2a6e2bd59f44cd4376364101acebb24e2cb938",
+      "method_id": "tabpfn_v3_regressor",
+      "model_class": "tabpfn.regressor.TabPFNRegressor",
+      "parameters": {
+        "device": "cuda",
+        "ignore_pretraining_limits": true,
+        "model_path": "/home/ubuntu/guant/tabpfn/tabpfn-v3-regressor-v3_default.ckpt",
+        "random_state": 20260621
+      },
+      "resource": "gpu",
+      "sources": [
+        {
+          "path": "/home/ubuntu/remote_super/guant/benchmark_quant_models.py",
+          "sha256": "77e967d0e7024d2b46c51e1997147957720a514771b2e33cc35200454dff29fa"
+        },
+        {
+          "path": "/home/ubuntu/guant/tabpfn/tabpfn-v3-regressor-v3_default.ckpt",
+          "sha256": "311ce18d97e9533d8585eaadafe040fbdd8070533209ed8696641dadc97a7301"
+        }
+      ]
+    },
+    "xgboost_hist_trees900_depth4_lr0p02": {
+      "cohort_content_sha256": "d8a833c5e2cca4736545a979317159e340328e0b02fec771d7c3cdbc2a773770",
+      "execution": "frozen-special-runner",
+      "identity_sha256": "f71afa6e348e3b6dcc117e03af68c0f3ee6c4fce5d1995bebedcdde52f533a76",
+      "method_id": "xgboost_hist_trees900_depth4_lr0p02",
+      "model_class": "sklearn.pipeline.Pipeline",
+      "parameters": {
+        "colsample_bytree": 0.9,
+        "eval_metric": "rmse",
+        "learning_rate": 0.02,
+        "max_depth": 4,
+        "n_estimators": 900,
+        "n_jobs": 1,
+        "nthread": 1,
+        "objective": "reg:squarederror",
+        "preprocessing": "SimpleImputer(strategy='median')",
+        "random_state": 20260624,
+        "subsample": 0.9,
+        "tree_method": "hist",
+        "verbosity": 0
+      },
+      "resource": "cpu",
+      "sources": [
+        {
+          "path": "/home/ubuntu/remote_super/quant/models/tools/model_zoo.py",
+          "sha256": "3be356f5931021a94639bd53b5730dae9f28f94f20379deeb9b0921e67c1687e"
+        }
+      ]
+    }
+  },
+  "publication_gate_open": true,
+  "schema": "golden46.special-runner-audit.v1",
+  "special_execution_source_sha256": "ae88cac632beae82aee33c27ef04bc497c1c56a30fff380b619a578295307680"
+}

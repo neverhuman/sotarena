@@ -1,0 +1,84 @@
+{
+  "algorithm": "nm_0e6fe45ac95e6bf2_append_cepstrum_envelope_ridge",
+  "dataset_hash": "dee1fc8e9afd81c9",
+  "ended_at": "2026-06-30T20:16:49Z",
+  "environment": {
+    "affinity": [
+      94
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super1",
+    "java": "/usr/bin/java",
+    "pid": 1578568,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 4279.838929582173,
+  "inference_time_seconds": 0.006074994977097958,
+  "metrics": {
+    "explained_variance": 0.03333257248150823,
+    "mae": 0.2558093158271469,
+    "max_error": 0.717180068912575,
+    "mean_absolute_percentage_error_eps": 8597274.520139953,
+    "median_absolute_error": 0.24257531145188113,
+    "mse": 0.0928667927604306,
+    "prediction_max": 0.8845320784296327,
+    "prediction_min": 0.017760905381847103,
+    "r2": -0.029146720300369022,
+    "rmse": 0.3047405335042101,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "models.tools.new_math_regression.NewMathAppendRegressor",
+  "model_params": {
+    "append_features": true,
+    "binary_head": "ridge",
+    "candidate": "cepstrum_envelope",
+    "candidate_spec_hash": "c4c27b78b6d6f3e06aad3bca81513f84dcbd3415435002c25e5935457173be99",
+    "diagnostic_only": false,
+    "model_hash": "0e6fe45ac95e6bf2",
+    "raw_col_cap": 128,
+    "regression_head": "ridge",
+    "row_cap": 2000,
+    "seed": 20260630,
+    "source_artifact": "nm_repair_20260630T000000Z",
+    "source_mean_delta_vs_raw_best": -0.01442786957666522,
+    "source_median_delta": 0.005235112648406037,
+    "source_nm_algorithm": "NM_0e6fe45ac95e6bf2_append_cepstrum_envelope_ridge",
+    "source_win_rate": 0.6,
+    "source_wins": 3,
+    "transformed_col_cap": 512
+  },
+  "n_features": 8,
+  "run_date": "2026-06-30T20:16:49Z",
+  "started_at": "2026-06-30T20:16:47Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 26,
+  "train_rows": 129,
+  "training_time_seconds": 0.00986322300741449
+}

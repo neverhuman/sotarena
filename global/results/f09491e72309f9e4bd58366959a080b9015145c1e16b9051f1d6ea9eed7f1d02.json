@@ -1,0 +1,44 @@
+{
+  "algorithm": "pytorch_tabular_fttransformer_regressor",
+  "dataset_hash": "b253fbfae8460dc1",
+  "ended_at": "2026-06-30T16:19:20Z",
+  "environment": {
+    "affinity": [
+      29
+    ],
+    "cuda_visible_devices": "1",
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super9",
+    "java": "/usr/bin/java",
+    "pid": 470056,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "failure_message": "ValueError: dict contains fields not in fieldnames: 'train_mean_squared_error'",
+  "inference_time_seconds": null,
+  "n_features": 7,
+  "run_date": "2026-06-30T16:19:20Z",
+  "started_at": "2026-06-30T16:19:15Z",
+  "status": "failed",
+  "task_type": "regression",
+  "test_rows": 9,
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/quant/models/tools/cluster_model_queue.py\", line 888, in execute_job\n    model.fit(x_train, y_train)\n  File \"/home/ubuntu/quant/models/tools/model_zoo.py\", line 2691, in fit\n    self.model_.fit(train=data)\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_tabular/tabular_model.py\", line 807, in fit\n    return self.train(model, datamodule, callbacks, max_epochs, min_epochs, handle_oom)\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_tabular/tabular_model.py\", line 679, in train\n    self.trainer.fit(self.model, train_loader, val_loader)\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py\", line 584, in fit\n    call._call_and_handle_interrupt(\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py\", line 49, in _call_and_handle_interrupt\n    return trainer_fn(*args, **kwargs)\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py\", line 630, in _fit_impl\n    self._run(model, ckpt_path=ckpt_path, weights_only=weights_only)\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py\", line 1079, in _run\n    results = self._run_stage()\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py\", line 1123, in _run_stage\n    self.fit_loop.run()\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py\", line 217, in run\n    self.advance()\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py\", line 469, in advance\n    self.epoch_loop.run(self._data_fetcher)\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_lightning/loops/training_epoch_loop.py\", line 154, in run\n    self.on_advance_end(data_fetcher)\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_lightning/loops/training_epoch_loop.py\", line 406, in on_advance_end\n    self.val_loop.run()\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_lightning/loops/utilities.py\", line 179, in _decorator\n    return loop_run(self, *args, **kwargs)\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_lightning/loops/evaluation_loop.py\", line 153, in run\n    return self.on_run_end()\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_lightning/loops/evaluation_loop.py\", line 307, in on_run_end\n    self.trainer._logger_connector.log_eval_end_metrics(all_logged_outputs)\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/logger_connector/logger_connector.py\", line 160, in log_eval_end_metrics\n    self.log_metrics(metrics)\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/logger_connector/logger_connector.py\", line 128, in log_metrics\n    logger.save()\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/lightning_utilities/core/rank_zero.py\", line 42, in wrapped_fn\n    return fn(*args, **kwargs)\n  File \"/home/ubuntu/quant/.venv-model-queue/lib/python3.10/site-packages/lightning_fabric/loggers/csv_logs.py\", line 160, in save\n    self.experiment.save()\nValueError: dict contains fields not in fieldnames: 'train_mean_squared_error'\n",
+  "train_rows": 43,
+  "training_time_seconds": 4.965714599005878
+}

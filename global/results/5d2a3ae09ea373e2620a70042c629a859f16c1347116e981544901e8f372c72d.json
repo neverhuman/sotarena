@@ -1,0 +1,138 @@
+{
+  "algorithm": "hyp3_tabicl",
+  "dataset_hash": "860e5558f732f638",
+  "ended_at": "2026-07-05T20:27:43Z",
+  "environment": {
+    "affinity": [
+      4,
+      5
+    ],
+    "cuda_visible_devices": "GPU-44c63d19-492a-ab46-cc6a-56e12a2ef51b",
+    "deps": [
+      "tabicl"
+    ],
+    "executable": "/home/ubuntu/remote_super/quant/.venv-model-queue/bin/python",
+    "host": "xbabe2",
+    "java": "/usr/bin/java",
+    "pid": 484294,
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "gpu_heavy",
+    "sklearn": "1.9.0",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 800.1587163016449,
+  "inference_time_seconds": 1.2485023029148579,
+  "metrics": {
+    "explained_variance": 0.7636850848666004,
+    "mae": 0.0159410303099031,
+    "max_error": 0.5283642408587036,
+    "mean_absolute_percentage_error_eps": 551.4471372960289,
+    "median_absolute_error": 0.0019474341962391326,
+    "mse": 0.002612754901269895,
+    "prediction_max": 0.7461026310920715,
+    "prediction_min": -0.00013290601782500744,
+    "r2": 0.7636135258163503,
+    "rmse": 0.05111511421556148,
+    "target_max": 0.987905383,
+    "target_min": 4.28494212e-10
+  },
+  "model_class": "tabicl._sklearn.regressor.TabICLRegressor",
+  "model_metadata": {
+    "feature_augmentation": {
+      "augmented_n_features": 154,
+      "block_columns": {
+        "hyperion3": 128,
+        "train3": 13
+      },
+      "blocks": [
+        {
+          "n_columns": 13,
+          "name": "train3",
+          "test_path": "/home/ubuntu/remote_super/quant/regression/860e5558f732f638/test3.vs",
+          "train_path": "/home/ubuntu/remote_super/quant/regression/860e5558f732f638/train3.vs"
+        },
+        {
+          "n_columns": 128,
+          "name": "hyperion3",
+          "test_path": "/home/ubuntu/remote_super/quant/regression/860e5558f732f638/hyperion3test.vs",
+          "train_path": "/home/ubuntu/remote_super/quant/regression/860e5558f732f638/hyperion3train.vs"
+        }
+      ],
+      "excluded_sidecars": [
+        "train_target.vs",
+        "test_target.vs"
+      ],
+      "feature_order": [
+        "train3",
+        "hyperion3",
+        "original_csv_features"
+      ],
+      "kind": "hyp3_vs",
+      "original_n_features": 13,
+      "prepended_n_features": 141,
+      "source_paths": {
+        "hyperion3": {
+          "test": "/home/ubuntu/remote_super/quant/regression/860e5558f732f638/hyperion3test.vs",
+          "train": "/home/ubuntu/remote_super/quant/regression/860e5558f732f638/hyperion3train.vs"
+        },
+        "train3": {
+          "test": "/home/ubuntu/remote_super/quant/regression/860e5558f732f638/test3.vs",
+          "train": "/home/ubuntu/remote_super/quant/regression/860e5558f732f638/train3.vs"
+        }
+      }
+    }
+  },
+  "model_name": "hyp3_tabicl",
+  "model_params": {
+    "feature_augmentation": {
+      "blocks": [
+        {
+          "name": "train3",
+          "test": "test3.vs",
+          "train": "train3.vs"
+        },
+        {
+          "name": "hyperion3",
+          "test": "hyperion3test.vs",
+          "train": "hyperion3train.vs"
+        }
+      ],
+      "excluded_sidecars": [
+        "train_target.vs",
+        "test_target.vs"
+      ],
+      "feature_order": [
+        "train3",
+        "hyperion3",
+        "original_csv_features"
+      ],
+      "kind": "hyp3_vs"
+    }
+  },
+  "n_features": 154,
+  "run_date": "2026-07-05T20:27:43Z",
+  "started_at": "2026-07-05T20:27:38Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 1.7427968247793615
+}

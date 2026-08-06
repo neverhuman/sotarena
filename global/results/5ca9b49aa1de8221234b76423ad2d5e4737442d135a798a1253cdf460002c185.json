@@ -1,0 +1,67 @@
+{
+  "algorithm": "pytorch_tabular_fttransformer_regressor_epochs5",
+  "dataset_hash": "019de5d76a718163",
+  "ended_at": "2026-06-30T20:11:40Z",
+  "environment": {
+    "affinity": [
+      5
+    ],
+    "cuda_visible_devices": "0",
+    "deps": [
+      "pytorch_tabular",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super1",
+    "java": "/usr/bin/java",
+    "pid": 1519278,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 1010.78652267314,
+  "inference_time_seconds": 0.023743886034935713,
+  "metrics": {
+    "explained_variance": 0.2999599090790751,
+    "mae": 0.3251577686097425,
+    "max_error": 0.5667784735570496,
+    "mean_absolute_percentage_error_eps": 3.4740819436206216,
+    "median_absolute_error": 0.38754058262955626,
+    "mse": 0.13369025442834112,
+    "prediction_max": 0.6378565430641174,
+    "prediction_min": -0.5069329142570496,
+    "r2": -1.7168226122445436,
+    "rmse": 0.36563677937037614,
+    "target_max": 0.878378391,
+    "target_min": 0.0193050187
+  },
+  "model_class": "models.tools.model_zoo._PyTorchTabularRegressor",
+  "model_params": {},
+  "n_features": 2,
+  "run_date": "2026-06-30T20:11:40Z",
+  "started_at": "2026-06-30T20:11:33Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 24,
+  "train_rows": 120,
+  "training_time_seconds": 4.494581268983893
+}

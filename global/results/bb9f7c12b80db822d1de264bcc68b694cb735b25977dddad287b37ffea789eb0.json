@@ -1,0 +1,52 @@
+{
+  "algorithm": "tabfm_ensemble_regressor",
+  "dataset_hash": "c8f90fc9cc5364be",
+  "ended_at": "2026-07-03T08:43:01+00:00",
+  "environment": {
+    "cuda_visible_devices": "7",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 11.84809812469424,
+  "inference_time_seconds": 82.88250060600694,
+  "metrics": {
+    "explained_variance": 0.9934170028257199,
+    "mae": 0.005080556914982312,
+    "max_error": 0.17020107922144234,
+    "mean_absolute_percentage_error_eps": 6001.576174847828,
+    "median_absolute_error": 0.000754830427467823,
+    "mse": 0.0004602094230210986,
+    "prediction_max": 1.0007381346076727,
+    "prediction_min": -0.004967173561453819,
+    "r2": 0.9933988770422365,
+    "rmse": 0.02145249223333034,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMRegressor",
+  "n_features": 116,
+  "run_date": "2026-07-03T08:43:01+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/socrata-national-community-based-survey-of-supports-for-healthy-eating-and-active-living-cbs-heal-8hus-y5nc-data-cdc-target-nr-adj-wt.csv",
+  "started_at": "2026-07-03T08:36:58+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": true,
+  "tabfm_model_type": "regression",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 982,
+  "train_rows": 1000,
+  "training_time_seconds": 281.0218144990504
+}

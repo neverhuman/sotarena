@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "b64b266440a862b73f87397a8342bd81ac0f073b372047a430b7c3bf7b32e043",
+    "hyperion3test128dim.vs": "af3d7e9849c4372b9d6ba7b455caca70ded9beb2e4ca127048c7cea013d2dcab",
+    "hyperion3train.vs": "92a8738e70f6fef694d4d507a2eaed1a5b5c31b8237da1aa82c90eb9e0125e88",
+    "hyperion3train128dim.vs": "90ca87ed0f88807fd0e48ffba4b55beeeb3b09fece35658663ed22c34641d205",
+    "test3.vs": "d7ddf131da9eb26738e7eb77ee42bd36b60cc1c1eca2e3ead750bd4e4d951d5a",
+    "train3.vs": "54876ae049fc736567708e9e140e3c855b5fba20c25ac5ef36d329d0a0b770d9"
+  },
+  "counts": {
+    "augmented_features": 188,
+    "hyperion3_features": 128,
+    "raw_features": 30,
+    "test_rows": 22,
+    "train3_features": 30,
+    "train_rows": 109
+  },
+  "created_at": "2026-07-09T07:29:46Z",
+  "dataset_hash": "30ef3eaa6d2971a9",
+  "dataset_name": "barium",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.699299108167958,
+    "delta_vs_raw_selected_model": -0.41600971558221533,
+    "prior_best_r2": 0.9062058375240063,
+    "r2": 0.20690672935604826,
+    "raw_selected_model_r2": 0.6229164449382636
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "jain_regressor_gen30000",
+    "path": "/home/ubuntu/remote_super/quant/regression/30ef3eaa6d2971a9/reports/jain_regressor_1000.json",
+    "r2": 0.9062058375240063
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 36.62800258724019,
+    "raw_fit_predict_seconds": 1.9970736536197364
+  }
+}

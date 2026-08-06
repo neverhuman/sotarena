@@ -1,0 +1,26 @@
+{
+  "best_rmse": 0.06184244381932129,
+  "campaign_evaluation_counts": {
+    "all-regression-evolution-20260723-v21": 432,
+    "all-regression-evolution-20260723-v22": 168,
+    "all-regression-evolution-20260723-v23": 456,
+    "all-regression-evolution-20260723-v24": 912,
+    "all-regression-evolution-20260723-v25": 1260,
+    "all-regression-evolution-20260723-v26": 504,
+    "all-regression-evolution-20260723-v28": 1044,
+    "all-regression-evolution-20260723-v36": 468,
+    "all-regression-evolution-20260723-v41": 396,
+    "all-regression-evolution-20260723-v42": 864
+  },
+  "cohort": "golden42",
+  "dataset": "b1f909fcfceeef4b",
+  "evaluation_csv": "datasets/golden42/b1f909fcfceeef4b/evaluations.csv",
+  "evaluation_ledger": "datasets/golden42/b1f909fcfceeef4b/evaluations.jsonl",
+  "evaluation_ledger_sha256": "e0287d183a8b5e9d8f03694eb55fb1fba17fb237620b6dda8d492771be613a1a",
+  "first_evolutionary_human_best_beat": null,
+  "first_human_best_beat": null,
+  "human_best_rmse": 0.057276763462516346,
+  "schema": "jope-dime.combined-regression-dataset-index.v1",
+  "total_process_evaluations": 6504,
+  "valid_evaluations": 6250
+}

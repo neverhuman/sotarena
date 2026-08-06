@@ -1,0 +1,67 @@
+{
+  "algorithm": "pytorch_tabular_category_embedding_regressor",
+  "dataset_hash": "79e600bc5fcd5da7",
+  "ended_at": "2026-06-30T18:42:30Z",
+  "environment": {
+    "affinity": [
+      89
+    ],
+    "cuda_visible_devices": "2",
+    "deps": [
+      "pytorch_tabular",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super1",
+    "java": "/usr/bin/java",
+    "pid": 527387,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 1953.9117790614682,
+  "inference_time_seconds": 0.01842457801103592,
+  "metrics": {
+    "explained_variance": -0.5479315021926354,
+    "mae": 0.17057867307453342,
+    "max_error": 0.48209661255096437,
+    "mean_absolute_percentage_error_eps": 0.544913727358475,
+    "median_absolute_error": 0.13479924928324127,
+    "mse": 0.046368880560532955,
+    "prediction_max": 1.0202492475509644,
+    "prediction_min": -0.032967209815979004,
+    "r2": -0.5824027464147872,
+    "rmse": 0.2153343459844085,
+    "target_max": 0.698795199,
+    "target_min": 0.0642570257
+  },
+  "model_class": "models.tools.model_zoo._PyTorchTabularRegressor",
+  "model_params": {},
+  "n_features": 3,
+  "run_date": "2026-06-30T18:42:30Z",
+  "started_at": "2026-06-30T18:42:24Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 36,
+  "train_rows": 180,
+  "training_time_seconds": 4.321314901986625
+}

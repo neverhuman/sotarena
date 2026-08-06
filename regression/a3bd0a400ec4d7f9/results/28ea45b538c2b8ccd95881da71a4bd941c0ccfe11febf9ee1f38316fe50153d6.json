@@ -1,0 +1,41 @@
+{
+  "algorithm": "bagging",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "a3bd0a400ec4d7f9",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.031461325008422136,
+  "metrics": {
+    "explained_variance": 0.9611286387065715,
+    "mae": 0.1166794316666666,
+    "max_error": 1.958959,
+    "median_absolute_error": 0.05818500000000015,
+    "mse": 0.043147525486078336,
+    "prediction_max": 5.242223000000004,
+    "prediction_min": 0.21336000000000002,
+    "r2": 0.961116775699218,
+    "rmse": 0.20771982448981208,
+    "target_max": 5.8397,
+    "target_min": 0.0077
+  },
+  "model_name": "bagging",
+  "n_features": 665,
+  "provenance": {
+    "canonical_test_sha256": "398556c974e2fae1eefc40d5e5ed5030eb22fafb192fadae582b9a62e0c93a89",
+    "canonical_test_target_sha256": "764d725105dae1f1d0f03aa62a05fe66b1d3ca39d5eb8592c7ac8d02155ac1da",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "f6483226cfacd2cdaf02c67543a2980feb0f6dc75eade45b24d77ad97fd30435",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/a3bd0a400ec4d7f9/bagging/worker-receipt.json",
+    "worker_receipt_sha256": "8b5e2d65cafd468cf44a4e594f2b3c244a293e37dce27fab9c735a365c6dc841"
+  },
+  "run_date": "2026-07-23T13:14:34Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 64.97220426797867
+}

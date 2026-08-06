@@ -1,0 +1,61 @@
+{
+  "algorithm": "tabfm_classifier",
+  "dataset_hash": "d9553a9cc619172c",
+  "ended_at": "2026-07-03T05:42:36+00:00",
+  "environment": {
+    "cuda_visible_devices": "7",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 64.65780321860119,
+  "inference_time_seconds": 15.466037356993183,
+  "metrics": {
+    "accuracy": 0.545,
+    "average_precision": 0.5604727422052318,
+    "balanced_accuracy": 0.5450281801127205,
+    "brier_score": 0.24801842868328094,
+    "cohen_kappa": 0.09005095714639988,
+    "f1": 0.5390070921985816,
+    "false_negatives": 235,
+    "false_positives": 220,
+    "log_loss": 0.6892191767692566,
+    "matthews_corrcoef": 0.09009150290630467,
+    "positive_rate": 0.501,
+    "precision": 0.5473251028806584,
+    "predicted_positive_rate": 0.486,
+    "recall": 0.530938123752495,
+    "roc_auc": 0.5545862183448734,
+    "sensitivity": 0.530938123752495,
+    "specificity": 0.5591182364729459,
+    "top_decile_lift": 1.317365269461078,
+    "top_decile_positive_rate": 0.66,
+    "true_negatives": 279,
+    "true_positives": 266
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMClassifier",
+  "n_features": 5,
+  "run_date": "2026-07-03T05:42:36+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/sf-police-incidents.csv",
+  "started_at": "2026-07-03T05:42:20+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": false,
+  "tabfm_model_type": "classification",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 0.03444251406472176
+}

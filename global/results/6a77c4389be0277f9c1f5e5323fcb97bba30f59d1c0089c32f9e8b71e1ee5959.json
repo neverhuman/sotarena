@@ -1,0 +1,110 @@
+{
+  "algorithm": "jain_regressor_gen40",
+  "dataset_hash": "43b4cc3ab0ebbd97",
+  "task_type": "regression",
+  "status": "completed",
+  "started_at_unix_ms": 1783153538989,
+  "finished_at_unix_ms": 1783153629913,
+  "rows": {
+    "train": 482,
+    "test": 97
+  },
+  "features": 39,
+  "timings": {
+    "load_secs": 0.001155034,
+    "search_secs": 61.469496216,
+    "gpu_kernel_secs": 6.7830277500000005,
+    "finalist_cv_secs": 29.405394502,
+    "fit_predict_secs": 0.04792982,
+    "total_secs": 90.924079315
+  },
+  "model_class": "feat_math_genome",
+  "model_params": {
+    "gens": 40,
+    "pop": 64,
+    "top_k": 2,
+    "folds": 3,
+    "search_rows": 512,
+    "actual_search_rows": 482,
+    "gpu_kernel_configs": 131072,
+    "gpu_kernel_used": true,
+    "gpu_kernel_candidates": 4,
+    "gpu_kernel_message": "battle-gpu composite GPR kernel search over 5 specs",
+    "seed": 20260616,
+    "evals": 1733,
+    "tokens_total": 16734509.0,
+    "search_engine": "feat_math_evolve_ridge_surrogate+battle_gpu_gpr_mixture_proposals",
+    "final_selection": "honest_feat_math_cv_r2"
+  },
+  "metrics": {
+    "r2": -0.16942091835052375,
+    "rmse": 0.1085152610523159,
+    "mse": 0.01177556188125227,
+    "mae": 0.03352590998869137,
+    "explained_variance": -0.16054001260202533,
+    "prediction_min": 0.7623740087458322,
+    "prediction_max": 1.166617491872142,
+    "target_min": 0.000643598323,
+    "target_max": 0.999999225
+  },
+  "gene": "(pipe X (winsor_clip q=0.08782459754078129) (target_bin_encode append=true bins=5) (rand_proj k=29 seed=5521) (rand_proj k=9 seed=8582) (poly_interact) (poly_interact append=false) (ridge))",
+  "genome": "(pipe X (winsor_clip q=0.08782459754078129) (target_bin_encode append=true bins=5) (rand_proj k=29 seed=5521) (rand_proj k=9 seed=8582) (poly_interact) (poly_interact append=false) (ridge))",
+  "genome_hash": "76f1d0f0f60f7c4bf2fbebdeff67d5f75a3cc5b0d4dd55cab04d6aa432765e4f",
+  "cv": {
+    "folds": 3,
+    "mean_r2": 0.130216178596538,
+    "oof_r2": 0.17674183346018701,
+    "fold_r2": [
+      0.31508258660940225,
+      -0.059560460152917605,
+      0.13512640933312936
+    ]
+  },
+  "finalists": [
+    {
+      "rank": 1,
+      "gene": "(pipe X (winsor_clip q=0.08782459754078129) (target_bin_encode append=true bins=5) (rand_proj k=29 seed=5521) (rand_proj k=9 seed=8582) (poly_interact) (poly_interact append=false) (ridge))",
+      "genome": "(pipe X (winsor_clip q=0.08782459754078129) (target_bin_encode append=true bins=5) (rand_proj k=29 seed=5521) (rand_proj k=9 seed=8582) (poly_interact) (poly_interact append=false) (ridge))",
+      "genome_hash": "76f1d0f0f60f7c4bf2fbebdeff67d5f75a3cc5b0d4dd55cab04d6aa432765e4f",
+      "search_score": 0.20778356787207175,
+      "search_fold_scores": [
+        0.3781946507383499,
+        -0.026679126351683236,
+        0.2718351792295486
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.130216178596538,
+        "oof_r2": 0.17674183346018701,
+        "fold_r2": [
+          0.31508258660940225,
+          -0.059560460152917605,
+          0.13512640933312936
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "gene": "(pipe X (winsor_clip q=0.08782459754078129) (target_bin_encode append=true bins=5) (rand_proj k=29 seed=5521) (rand_proj k=9 seed=8582) (poly_interact) (poly_interact append=false) (histgbm2 bags=3 col_subsample=0.8 leaves=255 lr=0.08 min_leaf=20 rounds=500 row_subsample=1.0 val_pct=15 val_shuffle=true))",
+      "genome": "(pipe X (winsor_clip q=0.08782459754078129) (target_bin_encode append=true bins=5) (rand_proj k=29 seed=5521) (rand_proj k=9 seed=8582) (poly_interact) (poly_interact append=false) (histgbm2 bags=3 col_subsample=0.8 leaves=255 lr=0.08 min_leaf=20 rounds=500 row_subsample=1.0 val_pct=15 val_shuffle=true))",
+      "genome_hash": "22039ff472e6df74fdcafea5d92a9137329bc0249d323f0d2f7c0b6837ab84c6",
+      "search_score": 0.20778356787207175,
+      "search_fold_scores": [
+        0.3781946507383499,
+        -0.026679126351683236,
+        0.2718351792295486
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.00020865788299869367,
+        "oof_r2": 0.003173027167411746,
+        "fold_r2": [
+          0.00800102916000267,
+          -0.0027559743239171652,
+          -0.004619081187089424
+        ]
+      }
+    }
+  ],
+  "predictions_path": "/home/ubuntu/quant/regression/43b4cc3ab0ebbd97/predictions/jain_regressor_fast30.csv"
+}

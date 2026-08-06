@@ -1,0 +1,72 @@
+{
+  "algorithm": "logistic_l1",
+  "dataset_hash": "509117eb61621015",
+  "ended_at": "2026-06-26T12:09:18Z",
+  "environment": {
+    "affinity": [
+      96
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super7",
+    "pid": 3238173,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 153367.33191127874,
+  "inference_time_seconds": 0.0010888889955822378,
+  "metrics": {
+    "accuracy": 0.8562874251497006,
+    "average_precision": 0.9419509082821531,
+    "balanced_accuracy": 0.8580459770114943,
+    "brier_score": 0.09912781883170017,
+    "cohen_kappa": 0.7132226674298798,
+    "f1": 0.8571428571428571,
+    "false_negatives": 8,
+    "false_positives": 16,
+    "log_loss": 0.3112529160818888,
+    "matthews_corrcoef": 0.7165038562451561,
+    "positive_rate": 0.47904191616766467,
+    "precision": 0.8181818181818182,
+    "predicted_positive_rate": 0.5269461077844312,
+    "recall": 0.9,
+    "roc_auc": 0.9427442528735632,
+    "sensitivity": 0.9,
+    "specificity": 0.8160919540229885,
+    "top_decile_lift": 2.0875,
+    "top_decile_positive_rate": 1.0,
+    "true_negatives": 71,
+    "true_positives": 72
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 7,
+  "run_date": "2026-06-26T12:09:18Z",
+  "started_at": "2026-06-26T12:09:15Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 167,
+  "train_rows": 833,
+  "training_time_seconds": 0.007662384014111012
+}

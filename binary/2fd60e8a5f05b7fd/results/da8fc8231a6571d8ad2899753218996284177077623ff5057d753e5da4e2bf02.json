@@ -1,0 +1,72 @@
+{
+  "algorithm": "gradient_boosting_stochastic",
+  "dataset_hash": "2fd60e8a5f05b7fd",
+  "ended_at": "2026-06-26T12:20:19Z",
+  "environment": {
+    "affinity": [
+      52
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super3",
+    "pid": 2791767,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 56076.27047111176,
+  "inference_time_seconds": 0.01783285499550402,
+  "metrics": {
+    "accuracy": 0.917,
+    "average_precision": 0.16815325593568498,
+    "balanced_accuracy": 0.49891186071817195,
+    "brier_score": 0.07275391307977676,
+    "cohen_kappa": -0.003918912380860284,
+    "f1": 0.0,
+    "false_negatives": 81,
+    "false_positives": 2,
+    "log_loss": 0.2726889443316171,
+    "matthews_corrcoef": -0.013290290715810903,
+    "positive_rate": 0.081,
+    "precision": 0.0,
+    "predicted_positive_rate": 0.002,
+    "recall": 0.0,
+    "roc_auc": 0.6647456306505998,
+    "sensitivity": 0.0,
+    "specificity": 0.9978237214363439,
+    "top_decile_lift": 2.5925925925925926,
+    "top_decile_positive_rate": 0.21,
+    "true_negatives": 917,
+    "true_positives": 0
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 120,
+  "run_date": "2026-06-26T12:20:19Z",
+  "started_at": "2026-06-26T12:20:16Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 0.31553899397840723
+}

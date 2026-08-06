@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "713d1ccf8849111c8243cfdf327584e11c4d2643b27022bd673de06894134887",
+    "hyperion3test128dim.vs": "1e48772e4df98a47a1a1720a2f3fbc9c0d07fa6b309b72176eba60acb4aac751",
+    "hyperion3train.vs": "1bd2701e485367e95c567148858b59cf6f31d791440165e56cb17c0f7a0f29f5",
+    "hyperion3train128dim.vs": "cc9962cf24350ab4e2363e39d217a902d79c0c5bcc531d763773d2f0b6778ec9",
+    "test3.vs": "a869062423b5aa58f4c386a913c1f3247308a721559ed3698ec550a06c5b9701",
+    "train3.vs": "c91a630d260286d0855124adb41944307945fe2768ce1c759580dfa8621d6013"
+  },
+  "counts": {
+    "augmented_features": 132,
+    "hyperion3_features": 128,
+    "raw_features": 2,
+    "test_rows": 40,
+    "train3_features": 2,
+    "train_rows": 200
+  },
+  "created_at": "2026-07-09T07:30:45Z",
+  "dataset_hash": "3305a3ad973fb227",
+  "dataset_name": "Herbicide applied to Galium aparine",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.17504466104280914,
+    "delta_vs_raw_selected_model": -0.005364508976878013,
+    "prior_best_r2": 0.6278226337883899,
+    "r2": 0.45277797274558074,
+    "raw_selected_model_r2": 0.45814248172245875
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "jain_regressor_gen10000",
+    "path": "/home/ubuntu/remote_super/quant/regression/3305a3ad973fb227/reports/jain_regressor_300.json",
+    "r2": 0.6278226337883899
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 57.943166088312864,
+    "raw_fit_predict_seconds": 0.37546328781172633
+  }
+}

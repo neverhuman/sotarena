@@ -1,0 +1,66 @@
+{
+  "dataset_id": "e5a3a7b3668a1cc2",
+  "fitted_on": "train only; test targets are never an input",
+  "members": [
+    {
+      "model_id": "decision_tree_6",
+      "path": "decision_tree_6.f64le",
+      "predictions_sha256": "84bc5e323bcf0911383b9a1af7f6da9fcf233a15a30dcdd8038841490350a7a1",
+      "rows": 80
+    },
+    {
+      "model_id": "elastic_net",
+      "path": "elastic_net.f64le",
+      "predictions_sha256": "a59b437c80dac665a28c68b660125bbba55153e49d4a58b8ca1f11598d61a0c0",
+      "rows": 80
+    },
+    {
+      "model_id": "extra_trees_100",
+      "path": "extra_trees_100.f64le",
+      "predictions_sha256": "841dff57645cdfe76559467f328a909fea290df88b66607c5da342a9fc75841e",
+      "rows": 80
+    },
+    {
+      "model_id": "gradient_boosting_100",
+      "path": "gradient_boosting_100.f64le",
+      "predictions_sha256": "205d7f01192ed0076f2064675bdc4b0d10f2ba4faefff1c6830471f386894965",
+      "rows": 80
+    },
+    {
+      "model_id": "hist_gradient_boosting",
+      "path": "hist_gradient_boosting.f64le",
+      "predictions_sha256": "684c4e7244ba872e56624295d615b731dd7b0ec784bc4dd446e262a9389b02a2",
+      "rows": 80
+    },
+    {
+      "model_id": "knn_5",
+      "path": "knn_5.f64le",
+      "predictions_sha256": "65cbff542a3178713c7aad5437581ea981910c0dd33ab4fc8071811cd41718eb",
+      "rows": 80
+    },
+    {
+      "model_id": "random_forest_100",
+      "path": "random_forest_100.f64le",
+      "predictions_sha256": "135f1ed7b611200b13b2b62a78abb6ff133d806a13c0014a845c9fa3efe736ed",
+      "rows": 80
+    },
+    {
+      "model_id": "ridge",
+      "path": "ridge.f64le",
+      "predictions_sha256": "d5d3a1c934f8f51c41094c6c65063e24d9b2e2cfa2780ec67ad1101851fa5780",
+      "rows": 80
+    },
+    {
+      "model_id": "svr_rbf",
+      "path": "svr_rbf.f64le",
+      "predictions_sha256": "a35244a4fe096d324f7094b486fb32db565a2612180df41fd99b775a663a6e33",
+      "rows": 80
+    }
+  ],
+  "schema": "sotarena.reference-panel/v1",
+  "seed": 20260731,
+  "task": "regression",
+  "test_sha256": "d74ad67ccc2ea864b2fff50e5b16b8244990383c11da4a0300653747104dbffd",
+  "track_id": "tabular-regression-v1",
+  "train_sha256": "03cf920cf274800e8be16d3c345a65290431d625d705dbe9ede7e274081b1f67"
+}

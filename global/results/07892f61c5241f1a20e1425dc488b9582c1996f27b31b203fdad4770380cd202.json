@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "14e9c00c26cea46b984a7b6fbf550277a9c46ed4ce455f25a6ae0de727b34811",
+    "hyperion3test128dim.vs": "5770f0afe8c3a1830fe68742286fee4649048db88280dc4a338138a7489df7c8",
+    "hyperion3train.vs": "b1c82f19ebbca633447b5414baa0a5814c59095ea95354e78d6f9bca0bf29376",
+    "hyperion3train128dim.vs": "b3024e35bf118b4ce347de4f0371cf32efba996ff39ee24c446231d27bf9d4de",
+    "test3.vs": "0e79ef2bf50d14062220b7aff1df63646b305a0d780f60235f7fafef9073e494",
+    "train3.vs": "e2e9cd11b90565addc0919162cbc691170c536b56472d42b9dab26b7f8236ddc"
+  },
+  "counts": {
+    "augmented_features": 148,
+    "hyperion3_features": 128,
+    "raw_features": 10,
+    "test_rows": 34,
+    "train3_features": 10,
+    "train_rows": 166
+  },
+  "created_at": "2026-07-10T21:11:59Z",
+  "dataset_hash": "1cb97b1d7314d43d",
+  "dataset_name": "229_pwLinear",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.2725268651779643,
+    "delta_vs_raw_selected_model": -0.21711569574674905,
+    "prior_best_r2": 0.9004435474671573,
+    "r2": 0.627916682289193,
+    "raw_selected_model_r2": 0.845032378035942
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "tabicl",
+    "path": "/home/ubuntu/remote_super/quant/regression/1cb97b1d7314d43d/reports/tabicl.json",
+    "r2": 0.9004435474671573
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 55.485275126062334,
+    "raw_fit_predict_seconds": 0.16680967807769775
+  }
+}

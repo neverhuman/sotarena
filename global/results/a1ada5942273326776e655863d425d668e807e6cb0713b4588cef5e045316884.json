@@ -1,0 +1,67 @@
+{
+  "algorithm": "pytorch_tabular_category_embedding_regressor_epochs5",
+  "dataset_hash": "c7d815714ca52bce",
+  "ended_at": "2026-06-30T13:05:26Z",
+  "environment": {
+    "affinity": [
+      93
+    ],
+    "cuda_visible_devices": "1",
+    "deps": [
+      "pytorch_tabular",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super2",
+    "java": "/usr/bin/java",
+    "pid": 2905437,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 54854.01776922649,
+  "inference_time_seconds": 0.018211974995210767,
+  "metrics": {
+    "explained_variance": -0.3746159637994011,
+    "mae": 0.24320041137642395,
+    "max_error": 1.0608212652241058,
+    "mean_absolute_percentage_error_eps": 0.7783413942080821,
+    "median_absolute_error": 0.20322877121539307,
+    "mse": 0.09353300469927447,
+    "prediction_max": 1.3261886835098267,
+    "prediction_min": -0.41756191849708557,
+    "r2": -0.37479849248325436,
+    "rmse": 0.3058316607208522,
+    "target_max": 1.0,
+    "target_min": 0.0834899768
+  },
+  "model_class": "models.tools.model_zoo._PyTorchTabularRegressor",
+  "model_params": {},
+  "n_features": 7,
+  "run_date": "2026-06-30T13:05:26Z",
+  "started_at": "2026-06-30T13:05:21Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 3.40709125099238
+}

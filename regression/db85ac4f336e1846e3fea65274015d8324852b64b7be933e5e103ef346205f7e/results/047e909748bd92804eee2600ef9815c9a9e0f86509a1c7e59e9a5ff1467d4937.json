@@ -1,0 +1,41 @@
+{
+  "algorithm": "gpboost_regressor",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "ZTS_small",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.02765346795786172,
+  "metrics": {
+    "explained_variance": 0.5598369563195016,
+    "mae": 0.14929950820122298,
+    "max_error": 0.7276653028799632,
+    "median_absolute_error": 0.12064500673453066,
+    "mse": 0.03683693440234943,
+    "prediction_max": 1.0193887763501797,
+    "prediction_min": -0.022922008680815523,
+    "r2": 0.5582782702275224,
+    "rmse": 0.19192950373079548,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_name": "gpboost_regressor",
+  "n_features": 147,
+  "provenance": {
+    "canonical_test_sha256": "806d6838aa3dd6f0b0c21adf718de17456d42c5219af4dd0b46eee8b0624726c",
+    "canonical_test_target_sha256": "338ad2fc9525ec03da9a632fa76a9cd3fb65472f6a0ba89861e57f88be7c5434",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "acb6ef38430e3eed966c1c16a32a53688d0cd3a1b046b116616f3eb80afb66e7",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/ZTS_small/gpboost_regressor/worker-receipt.json",
+    "worker_receipt_sha256": "145ef091c5ce014c9392b6d54ebf886d3cc3b050a74607c34038d60409b0c5bc"
+  },
+  "run_date": "2026-07-23T11:19:49Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 0.265925623010844
+}

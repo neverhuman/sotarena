@@ -1,0 +1,72 @@
+{
+  "algorithm": "gradient_boosting_stochastic",
+  "dataset_hash": "9ca13534df43f24d",
+  "ended_at": "2026-06-25T19:34:58Z",
+  "environment": {
+    "affinity": [
+      10
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super1",
+    "pid": 4151269,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 82443.54025661385,
+  "inference_time_seconds": 0.012129513081163168,
+  "metrics": {
+    "accuracy": 0.703,
+    "average_precision": 0.4253586475762038,
+    "balanced_accuracy": 0.6756249999999999,
+    "brier_score": 0.19942569119211973,
+    "cohen_kappa": 0.2745481191988275,
+    "f1": 0.4590163934426229,
+    "false_negatives": 74,
+    "false_positives": 223,
+    "log_loss": 0.5858139879390272,
+    "matthews_corrcoef": 0.29476310078882717,
+    "positive_rate": 0.2,
+    "precision": 0.36103151862464183,
+    "predicted_positive_rate": 0.349,
+    "recall": 0.63,
+    "roc_auc": 0.7341375,
+    "sensitivity": 0.63,
+    "specificity": 0.72125,
+    "top_decile_lift": 2.4499999999999997,
+    "top_decile_positive_rate": 0.49,
+    "true_negatives": 577,
+    "true_positives": 126
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 147,
+  "run_date": "2026-06-25T19:34:58Z",
+  "started_at": "2026-06-25T19:34:54Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 0.2532449059654027
+}

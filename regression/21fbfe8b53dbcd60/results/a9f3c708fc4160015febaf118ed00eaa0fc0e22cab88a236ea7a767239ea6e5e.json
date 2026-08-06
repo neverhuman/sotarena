@@ -1,0 +1,66 @@
+{
+  "algorithm": "linear_regression",
+  "dataset_hash": "21fbfe8b53dbcd60",
+  "ended_at": "2026-06-30T07:41:16Z",
+  "environment": {
+    "affinity": [
+      33
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/guant/.venv-modelzoo/bin/python",
+    "host": "super8",
+    "java": "/usr/bin/java",
+    "pid": 3822511,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 349214.6143603442,
+  "inference_time_seconds": 0.0028607050189748406,
+  "metrics": {
+    "explained_variance": 0.8966597411851621,
+    "mae": 0.050694086857027414,
+    "max_error": 0.5715591612397308,
+    "mean_absolute_percentage_error_eps": 63145.83280972297,
+    "median_absolute_error": 0.035079419917205756,
+    "mse": 0.0050817725274387646,
+    "prediction_max": 0.878440797328949,
+    "prediction_min": 0.012024253606796265,
+    "r2": 0.8966592622735918,
+    "rmse": 0.07128655222016818,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 21,
+  "run_date": "2026-06-30T07:41:16Z",
+  "started_at": "2026-06-30T07:41:13Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 0.004894341982435435
+}

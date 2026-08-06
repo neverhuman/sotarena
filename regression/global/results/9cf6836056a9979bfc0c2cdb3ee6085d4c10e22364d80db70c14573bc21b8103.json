@@ -1,0 +1,2008 @@
+{
+  "accepted_aspfm_scores": 3,
+  "files": [
+    {
+      "bytes": 322851,
+      "path": "results/tabular-regression-v2/dataset-metadata/6054656956182296/meta.json",
+      "sha256": "4b63fc7867c3754bb3393735a10d3e21abee686e32bbfbc8bcda8534d58dea7b"
+    },
+    {
+      "bytes": 112868,
+      "path": "results/tabular-regression-v2/dataset-metadata/ZTS_small/meta.json",
+      "sha256": "b7312ae445f1be3e7680220f688b3e3bbb9c6228f2c82e9a7ac31a1ca2d32656"
+    },
+    {
+      "bytes": 217467,
+      "path": "results/tabular-regression-v2/dataset-metadata/a3bd0a400ec4d7f9/meta.json",
+      "sha256": "e30fd05a96b369bed957418b6fb464638a094d076c9fb2b0961d47c1b55e6cc9"
+    },
+    {
+      "bytes": 1586,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/ada_boost.json",
+      "sha256": "6fe2d41ceac5b3561d4608499d269b913fbc000f470b72a559f1d2087e26d9d5"
+    },
+    {
+      "bytes": 1597,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/ada_boost_200.json",
+      "sha256": "d0cc0815e0ebeadb001a5f665bcc120c84d35e8e9818647ef9c0fcc5e1e38ed3"
+    },
+    {
+      "bytes": 1601,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/ada_boost_deep.json",
+      "sha256": "cae3e5878f03f253b3fb15e40ec3bb7e833c6f4285f59893515c8de831b5ecd3"
+    },
+    {
+      "bytes": 1599,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/ard_regression.json",
+      "sha256": "bd647a4195449e3600d448bf7bc2713a66495e865b956399129ee0b600a0ef37"
+    },
+    {
+      "bytes": 1603,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/autogluon_300s.json",
+      "sha256": "9512a03782d4b43cb0b331edcdc007ba1464c716bc5587ffc97b3a24a9a0c81e"
+    },
+    {
+      "bytes": 1583,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/bagging.json",
+      "sha256": "78554920dcdddaeef9d279e0b14e7733bcd2411734f6974cb849ce6ef36f5950"
+    },
+    {
+      "bytes": 1598,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/bayesian_ridge.json",
+      "sha256": "cd3377750fdffcb2e704dcaef25381f9a1df6e282785c7dde32cbe56603a50fe"
+    },
+    {
+      "bytes": 1585,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/catboost.json",
+      "sha256": "359c11822fc494b53f695a84927bf4f7a7c0d85b871289b4f10b63fe27d8b4e5"
+    },
+    {
+      "bytes": 1594,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/catboost_300.json",
+      "sha256": "cddcd33f5b1e8f0226ead5a7f0e0d6e29e0efbf70723c6fa7c765791394d7a46"
+    },
+    {
+      "bytes": 1598,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/catboost_deep.json",
+      "sha256": "a29762b5388ad3274a19facb62be0b973c394c08c54ede06cbbd51dde977593a"
+    },
+    {
+      "bytes": 1674,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/catboost_huber_delta1_trees300_depth6.json",
+      "sha256": "87243c8426ed4a8cde87c3a2ca65eb592ff5600f19b41f4b518ebd4c832d6464"
+    },
+    {
+      "bytes": 1614,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/catboost_lossguide.json",
+      "sha256": "c9a636a88ba220f43280dddf5b358b4be8a104a4d318645855d4d25df75ad448"
+    },
+    {
+      "bytes": 1688,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/catboost_lossguide_trees300_leaves32_lr0p04.json",
+      "sha256": "2ea351317096e9f47020c104ca30e67838f0d5d0fb5e9a9d0012a371d003ec22"
+    },
+    {
+      "bytes": 1655,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/catboost_lq_q1p5_trees300_depth6.json",
+      "sha256": "1072d6b3ab17888429ae364fa2fa667d605b017ad8ed65cfb38f172eb28b132e"
+    },
+    {
+      "bytes": 1645,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/catboost_mae_trees300_depth6.json",
+      "sha256": "763e2797e847071e44ba6b29bacda8a60cbadb7b92eef2461675587772cfe6ce"
+    },
+    {
+      "bytes": 1677,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/catboost_ordered_trees300_depth6_lr0p04.json",
+      "sha256": "eae62b2024d554b7667738baa1fea7b3f66994d5cf50c884e9d8f4fb6eede189"
+    },
+    {
+      "bytes": 1654,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/catboost_ordered_trees500_depth6.json",
+      "sha256": "738cc94b1e6011e1a98fa90b9baedbc54f4aabad519b0724c975fb9d5a666ce6"
+    },
+    {
+      "bytes": 1670,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/catboost_plain_trees200_depth4_lr0p06.json",
+      "sha256": "7fe349f7edb0e40fd51e3d7226f66e378a050003fd2cce395bffe02028bedd70"
+    },
+    {
+      "bytes": 1687,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/catboost_quantile_alpha0p5_trees300_depth6.json",
+      "sha256": "fb693ae1e3768a4f0d3076a0870b3cea98376c37a4de0878c779df7bef3fb1a8"
+    },
+    {
+      "bytes": 1599,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/chimera_regression.json",
+      "sha256": "9193850114de678a39f4319632d7b54d7c041d2e28339068813098002ca0afd9"
+    },
+    {
+      "bytes": 1568,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/decision_tree.json",
+      "sha256": "6d47967f44e753e866ca4ab41c14441287502d8efc41673ee459fab8427db72b"
+    },
+    {
+      "bytes": 1569,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/ebm.json",
+      "sha256": "fdc9e37630f29d51bf7c1ce5173f308c0f721fb39ee86bed0c3c55192c765491"
+    },
+    {
+      "bytes": 1610,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/ebm_interactions.json",
+      "sha256": "ed4df40148904b2a7ad11dcddd0152d2a50668dfd4b0d995b798f9baadd95c2b"
+    },
+    {
+      "bytes": 1591,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/elastic_net.json",
+      "sha256": "08dd0fa1e00927cf0ae2fa237b157fbccdcd2c90f48c0b2946eac06af24ad5b7"
+    },
+    {
+      "bytes": 1604,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/elastic_net_cv.json",
+      "sha256": "64bcbcc18356becbafb404af1b670729b14435ef87503154ac22d0ddc19f61a1"
+    },
+    {
+      "bytes": 1595,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/extra_trees.json",
+      "sha256": "cdf1a10feda22dbe5fbbcfd7c52007fbf3b48b2a1cf5f32c0e795ca2b3b9aac3"
+    },
+    {
+      "bytes": 1609,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/extra_trees_1024.json",
+      "sha256": "7bc58062b4376a1ae2db8d74f695a5f0c1071956f7c7fea63c48256cc1692258"
+    },
+    {
+      "bytes": 1604,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/extra_trees_512.json",
+      "sha256": "bb44e7eab18c2bee678b70c791be10997b1c5f6da9f515ddb2c7634d71a0b289"
+    },
+    {
+      "bytes": 1608,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/fable5_regressor.json",
+      "sha256": "f6ac73c5e894b2df58f8429556bcfbdae43b02c378e99edc3a37cb5bed6f7dfd"
+    },
+    {
+      "bytes": 1604,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/gaussian_process.json",
+      "sha256": "352b34cdeed6961ea1283aa2e9b6ff0d13a90c96388e4a69ccc7d1fc393a501a"
+    },
+    {
+      "bytes": 1612,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/gpboost_regressor.json",
+      "sha256": "128d4463c25ba78a66011619a5a8003ee15a1ea8d2855ff0987bf79d29c7e40f"
+    },
+    {
+      "bytes": 1617,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/gpt5p6sol_regressor.json",
+      "sha256": "05138541e7132bf07680ea5434a3d74386fa97bf0291668de67ca509b95a2249"
+    },
+    {
+      "bytes": 1613,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/gradient_boosting.json",
+      "sha256": "7ced81a920e9e5579e53bebfba3087669930f6768297756974377cff2a5511a9"
+    },
+    {
+      "bytes": 1643,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/gradient_boosting_stochastic.json",
+      "sha256": "cdf9065a481dba5a92a911138d95e4e13c81e5df6edba26e13d581a3e46ac451"
+    },
+    {
+      "bytes": 1595,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/grok4p5_regressor.json",
+      "sha256": "3e1065effcfefc0f29d9ce7ca9211ef06fe95e97bb223ac7c5045141d9c4b1cb"
+    },
+    {
+      "bytes": 1624,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/hist_gradient_boosting.json",
+      "sha256": "196828ed5eddb8a99cd57c176c07a1a45a0d8ca079837260fb4603c1a39cdbc1"
+    },
+    {
+      "bytes": 1599,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/histgbm_large.json",
+      "sha256": "474087d14c32599f9d6c62551b96e0aeb6aefac5e4bf7f22c3bc4ae56c78b100"
+    },
+    {
+      "bytes": 1617,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/histgbm_regularized.json",
+      "sha256": "660b135ee1b6d45a514cc8e5b11a5e11af11aef6f0a9ce26d26940586c5e7c8a"
+    },
+    {
+      "bytes": 1575,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/huber.json",
+      "sha256": "94e012da2598479d19edb65339fe92c45a05eb1007eb61887cabab1a70c3f5aa"
+    },
+    {
+      "bytes": 1598,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/huber_robust.json",
+      "sha256": "01c6900b0572a300d99d069d4696e2f20eda39b80dbe7d5a60f49b06e56e8bf1"
+    },
+    {
+      "bytes": 1613,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/hyp3_chimera_regression.json",
+      "sha256": "94a13cb35e24f77b3629e14eeb3a40844048e8c48a480fc5ccd1f996828624d1"
+    },
+    {
+      "bytes": 1594,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/hyp3_tabicl.json",
+      "sha256": "a4d93aa5a5be96958431618b99c43cf2bc46c9ed534229ba2b035e1fff745c2c"
+    },
+    {
+      "bytes": 1608,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/jable_regressor.json",
+      "sha256": "f1c1173607352b1c35d959f7c2a69a70a64481ee199e46a64c3e102f3a120abc"
+    },
+    {
+      "bytes": 1590,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/jain_prime.json",
+      "sha256": "a9f757c0d39a99046094339bde960b59ff309ebc3b828bd4c81e83e506f4d491"
+    },
+    {
+      "bytes": 1575,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/kernel_ridge_rbf.json",
+      "sha256": "2fe7b9ec48303cbda679caa9a4bab1bb2a294594c270395bbd39c96dfb76c4c1"
+    },
+    {
+      "bytes": 1604,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/kimik3_regressor.json",
+      "sha256": "7670eed98d5e84596e9282e23f719d79ce55a0a2e4def0d8d404094f29a52a4f"
+    },
+    {
+      "bytes": 1568,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/knn.json",
+      "sha256": "73ad4e902b171c5671b21d9e1b2eaa5e374fd5dad936d869ff8b58fdf171a364"
+    },
+    {
+      "bytes": 1590,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/knn_cosine.json",
+      "sha256": "b4adbd3976aa7ecc21797f487b81068c6ca3b6246d88cfad74b6b12715f85239"
+    },
+    {
+      "bytes": 1596,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/knn_distance.json",
+      "sha256": "745e02ad7bf5a8abd3ea05f33c9d0ce1c3dc47fade129bd311397dbca92a40ab"
+    },
+    {
+      "bytes": 1585,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/knn_large.json",
+      "sha256": "eb171a927d647001e9a976c9b7f204b5cd73e2691ef045ae533de75fefb24ed9"
+    },
+    {
+      "bytes": 1577,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/lasso.json",
+      "sha256": "d70a97422eed270c3d728198dbc0bae6cd0ee96649edb4a4cb809e809b18d69e"
+    },
+    {
+      "bytes": 1599,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/lightgbm_dart.json",
+      "sha256": "609ac75dc24178772b8a1c6a84216e18e224caa8a3129820773dc77363a1dba1"
+    },
+    {
+      "bytes": 1599,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/lightgbm_deep.json",
+      "sha256": "132159917a3baaefc4a47b7435fd76d64c4241c90161ea3b61c15766f654402b"
+    },
+    {
+      "bytes": 1623,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/lightgbm_extra_trees.json",
+      "sha256": "ef9161eb348a5084d21f885e2039f4e468d77e5eae71589df942419cc93ec856"
+    },
+    {
+      "bytes": 1697,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/lightgbm_extra_trees_trees300_leaves63_lr0p04.json",
+      "sha256": "e49e757f0ab4f7a6cb561e3361ad7fc16d7badd27b8e20320bee259fbb673f4b"
+    },
+    {
+      "bytes": 1599,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/lightgbm_gbdt.json",
+      "sha256": "7515ae015478120520408c71165785865ea2b4e3881ceb0ffda1c7aa413584e2"
+    },
+    {
+      "bytes": 1673,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/lightgbm_gbdt_trees150_leaves15_lr0p07.json",
+      "sha256": "217ddd4a4bae575381eae49ef1d3a4f2df867e58caf7bfb2e5a51afc15800d5e"
+    },
+    {
+      "bytes": 1675,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/lightgbm_gbdt_trees300_leaves31_lr0p04.json",
+      "sha256": "626488ee89ec0ec1af2a9a71a50e279fa25022454b2d08a864785df22329b20c"
+    },
+    {
+      "bytes": 1599,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/lightgbm_goss.json",
+      "sha256": "88755e1b992357df60009fad0ffb3399da12cdf4e8e5ecfbaeac102c9dacbb46"
+    },
+    {
+      "bytes": 1674,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/lightgbm_goss_trees300_leaves31_lr0p04.json",
+      "sha256": "35dd32efccfdc817dc39d5833464d02a717f692d995cf3a5d860b9d45a3483ca"
+    },
+    {
+      "bytes": 1678,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/lightgbm_huber_trees300_leaves31_lr0p04.json",
+      "sha256": "d3e095e3228e2c4f1c8d178f7c06d7906dc80f681a67498e8851343e34a5b760"
+    },
+    {
+      "bytes": 1623,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/lightgbm_large_leaves.json",
+      "sha256": "b03a63692b1cad393360e2647f358a41d2f8362676ceee468efbc4f998596f6d"
+    },
+    {
+      "bytes": 1694,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/lightgbm_linear_tree_trees300_leaves31_lr0p04.json",
+      "sha256": "c2f9b21fcc364c11f03097623fc32bf0543a96977eb65d512cfeda778dafb421"
+    },
+    {
+      "bytes": 1710,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/lightgbm_quantile_alpha0p5_trees300_leaves31_lr0p04.json",
+      "sha256": "a50296a9b630445119c88730683420904066cc421916785e3584bc974cd33cc8"
+    },
+    {
+      "bytes": 1646,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/lightgbm_rf_trees500_leaves63.json",
+      "sha256": "b0ea1db46278c9d8ca5e1514fd53ff648b95de71cfdc1b00fd62f611314d883a"
+    },
+    {
+      "bytes": 1612,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/linear_regression.json",
+      "sha256": "7f1296f05d553e5270192452298bb61a88a52d167486be6e95398bdbb7d1048c"
+    },
+    {
+      "bytes": 1592,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/linear_svr.json",
+      "sha256": "9e7e952a5782f6444ff7a6a0357044d1fc99cd415a52689b13220d1a81c79cf0"
+    },
+    {
+      "bytes": 1567,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/mlp.json",
+      "sha256": "e08410daa4bbc365c43246840c3e8e1c5d9d6455175c768b9de372db780b0e97"
+    },
+    {
+      "bytes": 1579,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/ngboost.json",
+      "sha256": "6fd172017e60828c18f7cb082ec9c1aafa9d7bcbded3b5b4dbabcdac8d44b3af"
+    },
+    {
+      "bytes": 1589,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/nu_svr_rbf.json",
+      "sha256": "efed9517804d759aeb2b570135e425a9afda111208408c330d3d91c5cdc614ed"
+    },
+    {
+      "bytes": 1598,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/nystroem_ridge.json",
+      "sha256": "8241485b467e90ce9ffa89f60a150bfd8447ad5ad3b9b4e76dd60324ee623a25"
+    },
+    {
+      "bytes": 1642,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/orthogonal_matching_pursuit.json",
+      "sha256": "94c628fb8047c6c339882afd8333c6d05e0d14637aef4dd900755908bb852f9d"
+    },
+    {
+      "bytes": 1640,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/passive_aggressive_regressor.json",
+      "sha256": "6c855bdf17e2c8d5eb24dabb6548219b83f171e4f70845e683078d7143a8f602"
+    },
+    {
+      "bytes": 1585,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/pca_lgbm.json",
+      "sha256": "279f29c7ea5c52318bfc66d10391f4d8d815963f3354497a9fc9e8345552dd46"
+    },
+    {
+      "bytes": 1611,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/poisson_regressor.json",
+      "sha256": "76a1b8de4cd4d97fe6c1bb2c0dcfe123b33f67d9aafa0d4c692df18dec3cffce"
+    },
+    {
+      "bytes": 1590,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/poly2_ridge.json",
+      "sha256": "939cd90923b138b87a78a6a045e0be7bbf1538556456671164901a0dce286557"
+    },
+    {
+      "bytes": 1657,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/pytorch_tabular_autoint_regressor.json",
+      "sha256": "609cd32b0dc6941fa2299fdf9b62817b7f5d7771a30133560adebf3b92908c99"
+    },
+    {
+      "bytes": 1645,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/pytorch_tabular_danet_regressor.json",
+      "sha256": "afadba47a672096760304ade10ceefdb5815a9bca2172e119f45392ea9db6adf"
+    },
+    {
+      "bytes": 1635,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/pytorch_tabular_mdn_regressor.json",
+      "sha256": "077ce5da0170c50bab976e91ce36de4a433b1c8dd0cc59bfb3cc651e5598aa67"
+    },
+    {
+      "bytes": 1648,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/pytorch_tabular_node_regressor.json",
+      "sha256": "2726aad01b112ec9fcf2e752170871956a3d0b1782eb84ccbc4028d5c23ac7b1"
+    },
+    {
+      "bytes": 1605,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/quantile_median.json",
+      "sha256": "a1471c5d5705ba794ed2cf4d2a4bdf64c14ede5c18924bbeaf37f2fe11c2aa43"
+    },
+    {
+      "bytes": 1597,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/random_forest.json",
+      "sha256": "53cd91d03005b28a61e31d63e90a782a69992dc2e28fc9532e79b332b4276427"
+    },
+    {
+      "bytes": 1612,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/random_forest_1024.json",
+      "sha256": "85e1e0bfc795aaf8f23d5605dc91973a1ec2a4762977b69f5866d2398aaaf7e9"
+    },
+    {
+      "bytes": 1612,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/random_forest_512.json",
+      "sha256": "bbafe0220de06f73800bfad96510dafec990a4208109e11fed0a5dea44f057e2"
+    },
+    {
+      "bytes": 1613,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/random_forest_mae.json",
+      "sha256": "a658fc1ee22f536bfa1fa662ab3179da26dbe5415150fe13513b794dae569032"
+    },
+    {
+      "bytes": 1578,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/rbf_svr.json",
+      "sha256": "476b8f46827ec1f09d966d43c21fe76905fbcf1327481971902412bea531efcb"
+    },
+    {
+      "bytes": 1605,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/rbfsampler_sgd.json",
+      "sha256": "8e8570d2c424de225eee58979da03a08a69fca42d610bd8a1f4f3fb68ba482d4"
+    },
+    {
+      "bytes": 1573,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/ridge.json",
+      "sha256": "d57290fbc666ea3530b0096b97b860d20931998a5aa06272f08801128bea572e"
+    },
+    {
+      "bytes": 1586,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/ridge_cv.json",
+      "sha256": "3e701d908e1c00b87679f149b188dd4c7f8d13933bbbf0b37826211890f7e7b0"
+    },
+    {
+      "bytes": 1596,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/sgd_regressor.json",
+      "sha256": "0b880ba3782fd3e88b8a7f20731f1eef5582b8ba8f371fe242990f1b0dab5377"
+    },
+    {
+      "bytes": 1617,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/stacking_trees_meta.json",
+      "sha256": "a4a9c62e926dbcd9829414f372f7b031172e6b0a365f89eef6d79cdf6ebe1a22"
+    },
+    {
+      "bytes": 1634,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/tabfm_ensemble_regressor.json",
+      "sha256": "32b079dc4d77731e3354e0732128d12643c81e3adaa1f5553edaccdd058c1cbb"
+    },
+    {
+      "bytes": 1578,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/tabicl.json",
+      "sha256": "cd0c1aa0624250f15ef310c2c2e15b42555a3a95f3017e943b09d125a171d1fb"
+    },
+    {
+      "bytes": 1568,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/tabm.json",
+      "sha256": "027e00ad1e2a9319ac3c33df2f28083dbd85d8e93e9b863bada04942d0b7fd48"
+    },
+    {
+      "bytes": 1627,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/tabm_regressor_epochs10.json",
+      "sha256": "24bc27dcaa9ce06bad8be4c5ec9820d5e2ccbab0a01e37ecd2b5395b45c4da40"
+    },
+    {
+      "bytes": 1578,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/tabnet.json",
+      "sha256": "55ccf3416279ed3500c94acf7e9f26d52262a1bed379a183e25f70e3c75baa60"
+    },
+    {
+      "bytes": 1643,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/tabpfn_v25_regressor_default.json",
+      "sha256": "15c1cea8a529ed64394bba104b8e6b5f84f3bf0bb6dcd173727ba1f96d84aa07"
+    },
+    {
+      "bytes": 1635,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/tabpfn_v25_regressor_real.json",
+      "sha256": "84147025f3aecfd92d5ebfa8377b16715da5967ee4e4f1c64e6d099ff66d04d6"
+    },
+    {
+      "bytes": 1616,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/tabpfn_v3_regressor.json",
+      "sha256": "19331fb0944f7bd5fcc84cc6ab37cdaf79f066c95876e9c75985de715f0bdb87"
+    },
+    {
+      "bytes": 1639,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/tabpfn_v3_regressor_default.json",
+      "sha256": "54bdecfbcb6142b67a67141866ff710d288e2977fe09991aae7593088dbf4489"
+    },
+    {
+      "bytes": 1600,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/tabr_regressor.json",
+      "sha256": "94a86c3c1d7c01a36c7a867e3ef124a5da122348a7e05db6b8b12dfadc9260b2"
+    },
+    {
+      "bytes": 1580,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/theil_sen.json",
+      "sha256": "a75515283f09a33c41a60df14fe843e7499566a3810c898cffb0e002afc3d3cf"
+    },
+    {
+      "bytes": 1664,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/torch_frame_fttransformer_regressor.json",
+      "sha256": "b2d5564aefca089a6c4514de50e3869c1600f5e832cd5b5ec1096c6ff2034c7f"
+    },
+    {
+      "bytes": 1644,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/torch_frame_resnet_regressor.json",
+      "sha256": "ae678f53afcced72e03161ce37536fa1f1525dbce4b70a168bbd1c45593f61b5"
+    },
+    {
+      "bytes": 1643,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/torch_frame_trompt_regressor.json",
+      "sha256": "b0341b41c800406c20768c31bf63f9f540c50e52c3ade98b680f68242eeab272"
+    },
+    {
+      "bytes": 1610,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/tweedie_regressor.json",
+      "sha256": "e225f85b59993b3ef432031ae79eb6c5f95b75a055ae318d8f2579365f8dd88b"
+    },
+    {
+      "bytes": 1608,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/voting_regressor.json",
+      "sha256": "0ae3f9dc0ef21d69146d00aff9a136b132f8f916261aa7617eee691ea6d62177"
+    },
+    {
+      "bytes": 1692,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_absoluteerror_trees300_depth4_lr0p04.json",
+      "sha256": "062cf6c78bb9c375baf1762c513c8751586c3b4529ca0c3541fa1a6755379130"
+    },
+    {
+      "bytes": 1599,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_dart.json",
+      "sha256": "f5461903c2a48777535e3792245998557ec2e4b9d570791bb64d7e7911fe3794"
+    },
+    {
+      "bytes": 1598,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_deep.json",
+      "sha256": "dd85158839f2dd33bbb01a6c1be6cd970da5b8b79958afe715d1d28a9099fa63"
+    },
+    {
+      "bytes": 1606,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_gblinear.json",
+      "sha256": "5d708d508970f7c2267d1eafd6a8a8ac630123124190060645e21415e8808a29"
+    },
+    {
+      "bytes": 1661,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_gblinear_alpha0p001_lambda1.json",
+      "sha256": "69c56f9dbda89512668296c81b3a8fe57212edf0ddb9f5186ba2c63e36d69211"
+    },
+    {
+      "bytes": 1599,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_hist.json",
+      "sha256": "467013e354292fd280ede442f95df2eb9a0290993cdd32162b457c8c3af2a997"
+    },
+    {
+      "bytes": 1608,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_hist_240.json",
+      "sha256": "b8f9731a5a14d6b1af5c272c8494a208a85a0cd22ff5299f3544c3bf5fa4ec44"
+    },
+    {
+      "bytes": 1661,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_hist_trees120_depth3_lr0p08.json",
+      "sha256": "d2dc6458a909b76b1c8f34035a072732905c2751cb530f89bba2b7af3c8ea492"
+    },
+    {
+      "bytes": 1666,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_hist_trees300_depth4_lr0p04.json",
+      "sha256": "a8ea89742162f2c42e8201729b5f7427a17c91316a58db0cd9ab28316d4457ed"
+    },
+    {
+      "bytes": 1644,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_hist_trees500_depth6.json",
+      "sha256": "1df88bb4dd2f19c5fc63c55a0b082cd2490b8a8cfd07c2a72135d45e13925a63"
+    },
+    {
+      "bytes": 1666,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_hist_trees600_depth6_lr0p03.json",
+      "sha256": "e1e169fea851f9595e2e9e099e5ae640e0bb543017dd48f1d4c976e2fec90ac8"
+    },
+    {
+      "bytes": 1666,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_hist_trees900_depth4_lr0p02.json",
+      "sha256": "12c842ad0478c51e356bb369b345fb2cf1346446867faf1984af3b5977d6fdbc"
+    },
+    {
+      "bytes": 1665,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_interaction_depth4_trees400.json",
+      "sha256": "0b0535ca32ef265c71625a2db84ba8271be68df3babaf4e950605b3e5bf46f7d"
+    },
+    {
+      "bytes": 1672,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_monotone_none_trees300_depth6.json",
+      "sha256": "5399c408ccb8b39a076c398e6b5cc906e1275ac654c9677e4325ba3ad8f2300c"
+    },
+    {
+      "bytes": 1686,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_pseudohuber_trees300_depth4_lr0p04.json",
+      "sha256": "a82225a34c50b930aac82b8daba553713d2c1959c905bcfbbef071edaa210c2a"
+    },
+    {
+      "bytes": 1640,
+      "path": "results/tabular-regression-v2/external-references/golden45/6054656956182296/xgboost_rf_trees500_depth8.json",
+      "sha256": "9ff979b70918012d682ab1e40d4fbc7c88c963b010406f14098f85c2f3996281"
+    },
+    {
+      "bytes": 1564,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/ada_boost.json",
+      "sha256": "454d1c91e76017ceebcac0537d82e33b55ecb0d314edd7bb415d4f5374e74b6e"
+    },
+    {
+      "bytes": 1578,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/ada_boost_200.json",
+      "sha256": "85e0f99ef3bba5d2777be426e21a346ac1a0e51f35e3197f68be751c069983fb"
+    },
+    {
+      "bytes": 1579,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/ada_boost_deep.json",
+      "sha256": "bb8ba92ea6eaa7c7b072558e6cb36631581884061c7c55add37303a0719fdbc8"
+    },
+    {
+      "bytes": 1584,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/ard_regression.json",
+      "sha256": "c25072f56e258eb579543c7a3d27cccac772bbc53df4ee2d8ff5663f54e46976"
+    },
+    {
+      "bytes": 1580,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/autogluon_300s.json",
+      "sha256": "4b31a493495935407c9f3ccf096aa92dca10ad0b8105337815848002e07b2b2c"
+    },
+    {
+      "bytes": 1552,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/bagging.json",
+      "sha256": "083695ab3215209f844ec422a1378ba3c9eb55227a10b82c215f6838940bed6c"
+    },
+    {
+      "bytes": 1585,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/bayesian_ridge.json",
+      "sha256": "014f76afcba72deeacdc357527c25b1703c502dc83bff8887f4051f20f0c2f87"
+    },
+    {
+      "bytes": 1562,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/catboost.json",
+      "sha256": "33dc90f57f080c235dc6c37f56370458be11d04ec47c3f932389e3232e80a81a"
+    },
+    {
+      "bytes": 1573,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/catboost_300.json",
+      "sha256": "c08e30383428cf38bce0dd2db5b96d0115faa2da7c2957187c263071eee068e9"
+    },
+    {
+      "bytes": 1578,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/catboost_deep.json",
+      "sha256": "7b9dad77e0272aefd29108106eabd4f6ace8ada6a0791780017287da907244e5"
+    },
+    {
+      "bytes": 1651,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/catboost_huber_delta1_trees300_depth6.json",
+      "sha256": "0499ceafe44ad3037093104bb96a1f9deebbd93dd314acd8161d853a11ec261e"
+    },
+    {
+      "bytes": 1592,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/catboost_lossguide.json",
+      "sha256": "6c8508f096079c276d760a627f7fd3f697c58bd0a001e7708add6db2e43ea2a1"
+    },
+    {
+      "bytes": 1668,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/catboost_lossguide_trees300_leaves32_lr0p04.json",
+      "sha256": "5ebaa68007d3ef3d397a3dd6eddd82a33066590f0357c009ffb03c7e55d96518"
+    },
+    {
+      "bytes": 1634,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/catboost_lq_q1p5_trees300_depth6.json",
+      "sha256": "f9f2a2de231ddd4b9594607a31417b584021d422bb189daa3b71f0b21fcb7a9e"
+    },
+    {
+      "bytes": 1624,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/catboost_mae_trees300_depth6.json",
+      "sha256": "9f5e670933d6498e5404b8ed6d14504ec0fa0c838cb921115f23eb7c1e3bfb0f"
+    },
+    {
+      "bytes": 1655,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/catboost_ordered_trees300_depth6_lr0p04.json",
+      "sha256": "ef268ad20ce96028383766a19e88caeb29201a8ce5b563a4bb6d1a2b5bada394"
+    },
+    {
+      "bytes": 1636,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/catboost_ordered_trees500_depth6.json",
+      "sha256": "9e5133a94211f81a94ef2c91ada59d6f1e3e0a2f2a0912b606e2a49f4abdf29d"
+    },
+    {
+      "bytes": 1647,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/catboost_plain_trees200_depth4_lr0p06.json",
+      "sha256": "3a5cd3fe6b83feef40d7d9ebb5549820b6f356db6dac1a807b789841df68627d"
+    },
+    {
+      "bytes": 1664,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/catboost_quantile_alpha0p5_trees300_depth6.json",
+      "sha256": "eeb1213d26932469bc519c9c8599b0ec7dedb8b564f7afe9b56993649d8b821b"
+    },
+    {
+      "bytes": 1572,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/chimera_regression.json",
+      "sha256": "20ca023485ebfe6b180339f3210ea576e95af2ca5399b00f6dc9dcc767f1ba5b"
+    },
+    {
+      "bytes": 1557,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/decision_tree.json",
+      "sha256": "de5bf5869c869370fc42e5ae52820aa646d82da25f1613e6aa07611e4aff623f"
+    },
+    {
+      "bytes": 1547,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/ebm.json",
+      "sha256": "f300ca109d2b6360c50650dd417b8bd218e34ad31780a68c00b7c7b46eceab17"
+    },
+    {
+      "bytes": 1587,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/ebm_interactions.json",
+      "sha256": "5a7e8d8a888b3d46465f5b480ee23c3b97c601095b18ae44cfb43d9d333abcba"
+    },
+    {
+      "bytes": 1573,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/elastic_net.json",
+      "sha256": "f5c103c7cf747f9d9da02a1972fce96892f949cc84722e9601d766775317274c"
+    },
+    {
+      "bytes": 1581,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/elastic_net_cv.json",
+      "sha256": "ba17abe73c4823eafa08bf4c003f488ad3bcaa4a173e31a27c8fffe7550543ec"
+    },
+    {
+      "bytes": 1569,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/extra_trees.json",
+      "sha256": "caf7469a918dd039d7c1cf87a0e8d6089ce347071000483e22b3cfbe475df2bd"
+    },
+    {
+      "bytes": 1585,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/extra_trees_1024.json",
+      "sha256": "1ef0fa8e1dfe30ca0b78bc4d3b27eb0b2c26201717535ded925b34d3dd895eb1"
+    },
+    {
+      "bytes": 1581,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/extra_trees_512.json",
+      "sha256": "2cd1f674847e15dbfa49ffd39730f7451e7c1563f055d4911e10602d425bc526"
+    },
+    {
+      "bytes": 1585,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/fable5_regressor.json",
+      "sha256": "30e76e641f9ed3b0007cdc2b37be1083a167a9810c344ad290dc71bed40100c0"
+    },
+    {
+      "bytes": 1589,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/gaussian_process.json",
+      "sha256": "14781f8ba70676f4e5099d4faffc178629423c8aa16e0a001fb9d6a6e5d3471c"
+    },
+    {
+      "bytes": 1590,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/gpboost_regressor.json",
+      "sha256": "2548b7778752df0607b5d4b10001b7b867dd550c23d686ec2b023e8f958ce0dc"
+    },
+    {
+      "bytes": 1593,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/gpt5p6sol_regressor.json",
+      "sha256": "493bbe3c9b29a55aa66dc1beea86b1648d3bbf2ce8f417d33701817eae824812"
+    },
+    {
+      "bytes": 1592,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/gradient_boosting.json",
+      "sha256": "34b9b7edb9a7241ed2f32dc61e4455403e1f74cdc4f869fb253283bac9a375a9"
+    },
+    {
+      "bytes": 1627,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/gradient_boosting_stochastic.json",
+      "sha256": "f2689a0e444dbe39f91d3cbeb2f6b9389e25155f076015db071c994b5ce13b58"
+    },
+    {
+      "bytes": 1573,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/grok4p5_regressor.json",
+      "sha256": "81276041da7ee814f81d47ccbc1b0bb58f2fdc0cc60999fb5c6af9e8f1a5cf1b"
+    },
+    {
+      "bytes": 1607,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/hist_gradient_boosting.json",
+      "sha256": "b5a8f52763034aeb5db844ca4719978ca39dcf1be6e37e73e1388e210b7a4fd0"
+    },
+    {
+      "bytes": 1574,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/histgbm_large.json",
+      "sha256": "de4cbb2ab2a80b503d9d3b25ede90c86f5db2ccf7e450ffd54ec86f131c00c3b"
+    },
+    {
+      "bytes": 1597,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/histgbm_regularized.json",
+      "sha256": "1984c7e5ec91bacb7c45b857c6d4b742c7c4ebf8b12070be44e93bac79bbe6b2"
+    },
+    {
+      "bytes": 1555,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/huber.json",
+      "sha256": "40fd9508e860969df9e481b0870d1097a5dda27a24391f811be578d3356eb99a"
+    },
+    {
+      "bytes": 1581,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/huber_robust.json",
+      "sha256": "d6284402dbd64dd1417486e7c0f6cc52490d9e1330ae136a6b472082bbd2214c"
+    },
+    {
+      "bytes": 1587,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/hyp3_chimera_regression.json",
+      "sha256": "a9ce4e01a6d745610ee3be1b17d54b2ab3b77d7ce00640d9217e754359cd2d24"
+    },
+    {
+      "bytes": 1571,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/hyp3_tabicl.json",
+      "sha256": "7a04283b4851929088354fd74cbd9c6b44edd640028393bd2a3090c7cb5fe8a9"
+    },
+    {
+      "bytes": 1566,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/jable_regressor.json",
+      "sha256": "8af3ab6b2a94747df6fadcd07185e4602d7f3f0bf0f704ee77a1b670a7d65396"
+    },
+    {
+      "bytes": 1565,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/jain_prime.json",
+      "sha256": "d06b7e017676f0da5247b729a192652f6197c87abe28b8bc6a21c7aaa3144953"
+    },
+    {
+      "bytes": 1593,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/kernel_ridge_rbf.json",
+      "sha256": "1a3f7beeaf0e9a20150050ac4286847c76faf832438648612a2fe565f15f8388"
+    },
+    {
+      "bytes": 1584,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/kimik3_regressor.json",
+      "sha256": "fe40bf334305a181f2a2013fbe664eb2ae2a056211c32134eb210de671fa8e11"
+    },
+    {
+      "bytes": 1549,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/knn.json",
+      "sha256": "096936b66dd97ebc42bc83a6591d49a50d9327e2fb1a71eeaeddedb39c772c8a"
+    },
+    {
+      "bytes": 1569,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/knn_cosine.json",
+      "sha256": "24f537c415ebc0e082cb46e5563e6f28302f3d584f85ce7abd7d089c1406cf9c"
+    },
+    {
+      "bytes": 1576,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/knn_distance.json",
+      "sha256": "6ea3d25e02fbce91ccc8e912e14fd475e16c58131365ed5f28306b7df9ef2349"
+    },
+    {
+      "bytes": 1565,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/knn_large.json",
+      "sha256": "89be5ad638ad86948b675127d7d96923fe3c3644128f2883840d9a28d61db4ce"
+    },
+    {
+      "bytes": 1555,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/lasso.json",
+      "sha256": "991b25376db27e5ae0c7f9a963158b74efd43211e191b06f3ff2d2bff87ee632"
+    },
+    {
+      "bytes": 1576,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/lightgbm_dart.json",
+      "sha256": "898019d2df595bf443822a6b449618f2e2b5cd734a6d46943ddb3cb5b9af3fbd"
+    },
+    {
+      "bytes": 1575,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/lightgbm_deep.json",
+      "sha256": "54e95ec24db7f666a4b9937eb8dd509317b926abf7db1d6764e60bd792229f4c"
+    },
+    {
+      "bytes": 1599,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/lightgbm_extra_trees.json",
+      "sha256": "55361305c47396b9d5a2fda2fe6180eb6e92eb29f550d26c9b924b853292ec20"
+    },
+    {
+      "bytes": 1674,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/lightgbm_extra_trees_trees300_leaves63_lr0p04.json",
+      "sha256": "2ece2b49f1208908aac428d59a269ebc2e7169eccf65fd83cd7ce33b7bac8f49"
+    },
+    {
+      "bytes": 1579,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/lightgbm_gbdt.json",
+      "sha256": "6505f623987d5882796444eabd4930dfa6d8964aa699a608dc9165ca88344c62"
+    },
+    {
+      "bytes": 1654,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/lightgbm_gbdt_trees150_leaves15_lr0p07.json",
+      "sha256": "a501775ad1a7d3beadd5f899c751ace7efd55c318b802517000176fb0725bb36"
+    },
+    {
+      "bytes": 1655,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/lightgbm_gbdt_trees300_leaves31_lr0p04.json",
+      "sha256": "b9e813d5e2cd547efc65310dfc6b688fe6d1b1e982549317f5fcb47e984ea972"
+    },
+    {
+      "bytes": 1577,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/lightgbm_goss.json",
+      "sha256": "51cc23ec3e3488327d2f9dd7330fb3c7712ca0305b41f7deb1e4da50ce153faf"
+    },
+    {
+      "bytes": 1652,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/lightgbm_goss_trees300_leaves31_lr0p04.json",
+      "sha256": "64c8b6945b53b677f2bcb73c62dc7c3482ab0e508e786d269d22e16694fc1b00"
+    },
+    {
+      "bytes": 1657,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/lightgbm_huber_trees300_leaves31_lr0p04.json",
+      "sha256": "8b3992848602425e0188f530c4626bd6ff86f3e45c16ef6970a72aa72843eecd"
+    },
+    {
+      "bytes": 1601,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/lightgbm_large_leaves.json",
+      "sha256": "68fc10396764e90173daeae9e3a1c19de28c8ea8e8219eab10ebd824f9c513a4"
+    },
+    {
+      "bytes": 1675,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/lightgbm_linear_tree_trees300_leaves31_lr0p04.json",
+      "sha256": "12445509ecce4fae0d60c1957dede6dac6bd206b87cc3cf96ccbd8a8158f2f15"
+    },
+    {
+      "bytes": 1694,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/lightgbm_quantile_alpha0p5_trees300_leaves31_lr0p04.json",
+      "sha256": "4e7e363d3d5bbc6c7acf26acb62050f9199c8358944848c51ebc2892996ed93b"
+    },
+    {
+      "bytes": 1628,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/lightgbm_rf_trees500_leaves63.json",
+      "sha256": "ee4dec586bc6484004c2fbea3caab1359b8c84644a8cca71b6d25bb97bbc0a96"
+    },
+    {
+      "bytes": 1590,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/linear_regression.json",
+      "sha256": "0d9f13987499cb269f15420cddcf8b5ff2ffecd825dd8c13229a6ad98915ec81"
+    },
+    {
+      "bytes": 1569,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/linear_svr.json",
+      "sha256": "729fe70fd08e7a58cd0c94ce105de1ed07fa5c47330354c68a538a4e74814b76"
+    },
+    {
+      "bytes": 1554,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/mlp.json",
+      "sha256": "01de4c24684b9ff15dd170b38c22868a905374bb292cfb6681842ef544cc646d"
+    },
+    {
+      "bytes": 1556,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/ngboost.json",
+      "sha256": "bd68b1876811ac9a37a8e2c5a3428d5e5b84cc30bca976021d507de182e40d19"
+    },
+    {
+      "bytes": 1567,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/nu_svr_rbf.json",
+      "sha256": "f942a14fe64d5685c9a9f9e73b34ba8c211d0037a066c01f5024424b07b43205"
+    },
+    {
+      "bytes": 1583,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/nystroem_ridge.json",
+      "sha256": "17cbc6231f4750bfdec968545560190bd218d5d876ec06d5141b4778bf638575"
+    },
+    {
+      "bytes": 1625,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/orthogonal_matching_pursuit.json",
+      "sha256": "dced78b77e32400d3ab3a45a291977b56434aebc7ba60a646d36ee1782b6c96e"
+    },
+    {
+      "bytes": 1627,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/passive_aggressive_regressor.json",
+      "sha256": "1e59b6923e9d6c951b28b4a5bcd5d231c4cdf19ec777370571c6762ed36f2cd6"
+    },
+    {
+      "bytes": 1560,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/pca_lgbm.json",
+      "sha256": "dff50f5f382818cf4e7a29054a11a98916a8aa0c5e909c42cd571b40096bccf5"
+    },
+    {
+      "bytes": 1590,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/poisson_regressor.json",
+      "sha256": "1dad8e506a028114cc781104f3da8f959eb71a40fb3fb24f1e741406c14c4a43"
+    },
+    {
+      "bytes": 1569,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/poly2_ridge.json",
+      "sha256": "e7228f31f721687898aab6ab2e9ab038b04a53e5f8df09bb29c8bf34e81535ec"
+    },
+    {
+      "bytes": 1636,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/pytorch_tabular_autoint_regressor.json",
+      "sha256": "e0b9f57b3360fe636a54d26e6171b05fa0c89ed6f5ffaf606a1ae0a266ca06ca"
+    },
+    {
+      "bytes": 1621,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/pytorch_tabular_danet_regressor.json",
+      "sha256": "fb01ad491ba0b69cf9a1cfc67d51eb80b3617a14dc2f42e3257a885459919709"
+    },
+    {
+      "bytes": 1617,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/pytorch_tabular_mdn_regressor.json",
+      "sha256": "ef32e037b5104d30fe06801d9c90df7154ad609c7d43f88a03768d35f08d2ef7"
+    },
+    {
+      "bytes": 1629,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/pytorch_tabular_node_regressor.json",
+      "sha256": "2a8dcaea054c5d346f894f2c8e005ecda2115a80329f8e519d9d50b631861413"
+    },
+    {
+      "bytes": 1588,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/quantile_median.json",
+      "sha256": "2901e9007850e588a767aa6d4b4e7025a7490a515c0170d0aa3f67aa04ef1272"
+    },
+    {
+      "bytes": 1575,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/random_forest.json",
+      "sha256": "bd19e14681d45c45c23173026c8dd333d1fd6c298816592718b001f38a2aa075"
+    },
+    {
+      "bytes": 1592,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/random_forest_1024.json",
+      "sha256": "8d35d907b588e9f7c4940d67f82964e475d5fa0acd2610ddc051d8230d7463fb"
+    },
+    {
+      "bytes": 1587,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/random_forest_512.json",
+      "sha256": "9c38f450c8388f215d1a51a45213d3e203c4c652e1240548c4f0e4eec52a9ee1"
+    },
+    {
+      "bytes": 1582,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/random_forest_mae.json",
+      "sha256": "5eef1b0ec6a8e1e571cb5f1c306d3ad62cb7cbef1399c31bcc43141d23a24120"
+    },
+    {
+      "bytes": 1559,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/rbf_svr.json",
+      "sha256": "3a2e422a456951dfdf2a47ec3dd8cedb517a2ccf1e2cb77d77f7f17fc610976d"
+    },
+    {
+      "bytes": 1586,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/rbfsampler_sgd.json",
+      "sha256": "733425008304be5b6628b8a1e1939c01fb328f51f2169fba474fa657a670dd8b"
+    },
+    {
+      "bytes": 1555,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/ridge.json",
+      "sha256": "0292e14ade144560e7b29dd2e4932fe85bacb234297030cd37987cc0c9a4dd26"
+    },
+    {
+      "bytes": 1564,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/ridge_cv.json",
+      "sha256": "624ea2d4775142eb991267af78b2123c8a1dab0d6032e4324efe152738dc8072"
+    },
+    {
+      "bytes": 1580,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/sgd_regressor.json",
+      "sha256": "3ad347655b0ce92622283492eb41b93199728c127538db4e159db4a48608d6d3"
+    },
+    {
+      "bytes": 1593,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/stacking_trees_meta.json",
+      "sha256": "f8dbe57d8db5b1475f684047a295de3a6fb8c0ea91797e7651b1657a68cd22f8"
+    },
+    {
+      "bytes": 1607,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/tabfm_ensemble_regressor.json",
+      "sha256": "b73e91f610e0422f6cdd30e56b636a18f4cadc10f70a0dfadc86c1f6679d6aca"
+    },
+    {
+      "bytes": 1555,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/tabicl.json",
+      "sha256": "3433618843447f5f39189c834f4ca059cd082491f489004674c6a1d4d80ffb48"
+    },
+    {
+      "bytes": 1552,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/tabm.json",
+      "sha256": "3928ae9e355bdc314a0bb9cf4c27425dbf46e40cadc4247e82de240a14d68c87"
+    },
+    {
+      "bytes": 1607,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/tabm_regressor_epochs10.json",
+      "sha256": "d47acd73423319dde2c402d7197447609fb2ed415877a83274d0201f93fb676c"
+    },
+    {
+      "bytes": 1557,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/tabnet.json",
+      "sha256": "467c1845ac5b5f189c5aa89a81700a290b179edd4f999ca1dcb042df4fb9df40"
+    },
+    {
+      "bytes": 1622,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/tabpfn_v25_regressor_default.json",
+      "sha256": "07472f637f5cfdf2a7394c07ae704e8567195102ccc8adee29403c93dc4b9528"
+    },
+    {
+      "bytes": 1612,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/tabpfn_v25_regressor_real.json",
+      "sha256": "ed7a9cfd314b226cd96ed04a0aefe11ca88d45c87daf2c04cf99ddc1ab3432e5"
+    },
+    {
+      "bytes": 1594,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/tabpfn_v3_regressor.json",
+      "sha256": "bc50129764f19d5cf404718f6ec5477d24acac8ed32870e2fb46cf98fbc62359"
+    },
+    {
+      "bytes": 1615,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/tabpfn_v3_regressor_default.json",
+      "sha256": "706c293e6bc1f17748bdec3223120f9d1a8ba1796e656dec56b92748208e68f2"
+    },
+    {
+      "bytes": 1578,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/tabr_regressor.json",
+      "sha256": "3295c3f928141bedb8b0cb9957d46c3af698e82b8f91ed5580fd4b3087c63c26"
+    },
+    {
+      "bytes": 1564,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/theil_sen.json",
+      "sha256": "24a90a935927e5eea0720d42beddf363bf1f69bdf943690920a4519b8587a821"
+    },
+    {
+      "bytes": 1647,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/torch_frame_fttransformer_regressor.json",
+      "sha256": "09f80eb7a1b732f7952c07f60539bf74f813e3866028d500e0dd41822a4669ae"
+    },
+    {
+      "bytes": 1623,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/torch_frame_resnet_regressor.json",
+      "sha256": "473cf58f2236597125eb7ce9145202a7d2ae40f8b3116a17af3dd4bb4920523f"
+    },
+    {
+      "bytes": 1623,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/torch_frame_trompt_regressor.json",
+      "sha256": "366c3486346593471866f7d5f84b4b6e8ec5a4a44c8ff7be455435973be09f62"
+    },
+    {
+      "bytes": 1591,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/tweedie_regressor.json",
+      "sha256": "e954f13d0b5771bc9611cb1f244dc10b62b21d7c33b4898562e809649d00fc95"
+    },
+    {
+      "bytes": 1580,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/voting_regressor.json",
+      "sha256": "ab0d7a730217b167d450785e5659b3a5b0a04c9dadca4572f43ee1881abbbc4d"
+    },
+    {
+      "bytes": 1671,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_absoluteerror_trees300_depth4_lr0p04.json",
+      "sha256": "d8aea4c6c81f1661b846e2d1c18c285d02f2cba6913f12e9771fbda2017b8ebd"
+    },
+    {
+      "bytes": 1575,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_dart.json",
+      "sha256": "0af6bccb7d5ad0e70002cdf9820f06cdd529fd10c688aa2f1a7c6d3e25fff465"
+    },
+    {
+      "bytes": 1576,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_deep.json",
+      "sha256": "868af92324cfaaf8f6da6773d94333edeb0f51c822a86acca9d6dc556dbf6f38"
+    },
+    {
+      "bytes": 1586,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_gblinear.json",
+      "sha256": "ccddf531acf6b0f4057b728c78dd99754d7ab729b727bbc7d40c4a5b61fd6f41"
+    },
+    {
+      "bytes": 1643,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_gblinear_alpha0p001_lambda1.json",
+      "sha256": "2d27c3596ed5b7e439d9f548748db6f703f69f357c5e2f141ed85d46fffd0f08"
+    },
+    {
+      "bytes": 1575,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_hist.json",
+      "sha256": "50f6d0138a16b5a2c377b21df32aca855a095c8ba85cc66b7e63510d51908b8a"
+    },
+    {
+      "bytes": 1586,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_hist_240.json",
+      "sha256": "96bee86059c05104185a9edbaa01a87b9531b8fefe82db08a25cc4dd0989592b"
+    },
+    {
+      "bytes": 1643,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_hist_trees120_depth3_lr0p08.json",
+      "sha256": "0d1d0117822ffc556241c6bcce47fef4174a9fe8de11eff509d7870446487616"
+    },
+    {
+      "bytes": 1644,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_hist_trees300_depth4_lr0p04.json",
+      "sha256": "ab2e0d167d8313be3936834152de920aa42ed1f73f271f3690f68be996b4ded2"
+    },
+    {
+      "bytes": 1621,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_hist_trees500_depth6.json",
+      "sha256": "7e0717e4d3d86b9e29761937f873bc16d55c44eb8768d25b6ad2a9bd42224f9b"
+    },
+    {
+      "bytes": 1646,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_hist_trees600_depth6_lr0p03.json",
+      "sha256": "0778d32afe5234f3b95932c1ac599ef073a08b9db3d0dc621d9325efcd778a17"
+    },
+    {
+      "bytes": 1645,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_hist_trees900_depth4_lr0p02.json",
+      "sha256": "8bffd90a5469520917bf6a292fd8b962f2ab6e039d24a5740eb5d9430e5ce097"
+    },
+    {
+      "bytes": 1641,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_interaction_depth4_trees400.json",
+      "sha256": "b9a882191d8e2339014444b2a1532b4f3f21c4e21cbbfdef219d1043969a8fe8"
+    },
+    {
+      "bytes": 1650,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_monotone_none_trees300_depth6.json",
+      "sha256": "a703351103cd42847fad53fc583c6500de0b6de1f88da2ae44eaddc6ccd87fb9"
+    },
+    {
+      "bytes": 1665,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_pseudohuber_trees300_depth4_lr0p04.json",
+      "sha256": "e083d970e03f92944ec1ad257857a464562c3ce8f3ee645c2e4a3a6c7ea09667"
+    },
+    {
+      "bytes": 1615,
+      "path": "results/tabular-regression-v2/external-references/golden45/ZTS_small/xgboost_rf_trees500_depth8.json",
+      "sha256": "445806f0b04dc52d663628bf78de765d2e21cc248ae4202d0b4bc40f99c298c4"
+    },
+    {
+      "bytes": 1578,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/ada_boost.json",
+      "sha256": "ceb0aa1ab00ce06a910d12404b503578098803bf5eed3146089a5fc0baf83027"
+    },
+    {
+      "bytes": 1592,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/ada_boost_200.json",
+      "sha256": "bbc922f3fa930d2efd5e46e9bcc522456d811245d8477d1a4652bf4171633d89"
+    },
+    {
+      "bytes": 1593,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/ada_boost_deep.json",
+      "sha256": "715866ee81f0a2d19be6b40b3e588b1b68ad7d4bd925595c9d8d30ce150dbbef"
+    },
+    {
+      "bytes": 1602,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/ard_regression.json",
+      "sha256": "3cc46dd8ff30dad4ff1e7da10431e103ba474f5ac787c4334337f359066f2e63"
+    },
+    {
+      "bytes": 1597,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/autogluon_300s.json",
+      "sha256": "3931ffdcf1e5e9fda66473083c5e05f2817dab89c06f83ce38f1fdde1639399a"
+    },
+    {
+      "bytes": 1566,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/bagging.json",
+      "sha256": "f7f3b294ac9f204e14e5d989f24037a0e65c0989a4cea83d2654ec83bf408483"
+    },
+    {
+      "bytes": 1602,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/bayesian_ridge.json",
+      "sha256": "25d952f815051b4864d393db4024c6bd31af2761157ac5c3a29d5932173554dc"
+    },
+    {
+      "bytes": 1580,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/catboost.json",
+      "sha256": "91550a40b38aec2aa33d70a5b62682e21eeaaba620a20bde7aff7a58f890ae9a"
+    },
+    {
+      "bytes": 1591,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/catboost_300.json",
+      "sha256": "6151e65bd92d322b96231105be02904f46add5a04a67bc8b17923e28df8a0dbc"
+    },
+    {
+      "bytes": 1595,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/catboost_deep.json",
+      "sha256": "312460f79cb301895d4b13fe704031c8eb538ca40dfff7eafc7f3111a9e86828"
+    },
+    {
+      "bytes": 1666,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/catboost_huber_delta1_trees300_depth6.json",
+      "sha256": "d6fae027c062b475ae12d0ad5f4be013938eeeeeec9222e827df56ab897b50fb"
+    },
+    {
+      "bytes": 1611,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/catboost_lossguide.json",
+      "sha256": "982811b27c44feac9c547b200bce34f3d76603fd371f947c4a8ab013ff74a1a2"
+    },
+    {
+      "bytes": 1688,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/catboost_lossguide_trees300_leaves32_lr0p04.json",
+      "sha256": "cdedea6a36b17e0790892d1c82075539e75db82e6105c1cff65a370e81c0f20f"
+    },
+    {
+      "bytes": 1653,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/catboost_lq_q1p5_trees300_depth6.json",
+      "sha256": "f7fe6fcff34d9c114eac8089b5c76ea4c318e01b1e2ca010230f3483df30dfda"
+    },
+    {
+      "bytes": 1639,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/catboost_mae_trees300_depth6.json",
+      "sha256": "8d47252f5144866a6cbd9777f721cc14c5b817544c0c32e2f8c0ec34fb4c4f2a"
+    },
+    {
+      "bytes": 1673,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/catboost_ordered_trees300_depth6_lr0p04.json",
+      "sha256": "6a18a998c85b3b18b1bca333e1d729d4bc804b55c96c15bcead9650708e8183f"
+    },
+    {
+      "bytes": 1652,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/catboost_ordered_trees500_depth6.json",
+      "sha256": "7e14b3a50bf25908b989847a87acb24f15aaf23816ac7004e1b6573c2cb584f2"
+    },
+    {
+      "bytes": 1666,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/catboost_plain_trees200_depth4_lr0p06.json",
+      "sha256": "325b5a836a3dea1ef9f3b6463c0797d5998210028cf21e20841c144f5b6f1429"
+    },
+    {
+      "bytes": 1678,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/catboost_quantile_alpha0p5_trees300_depth6.json",
+      "sha256": "cdf86c90e3064623a9b5b42a36b1f8224543da6f688bae283a8a0e979181eb94"
+    },
+    {
+      "bytes": 1592,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/chimera_regression.json",
+      "sha256": "a3649bb588e8c4bfbc5e9070248090e7ba587d39d86f9c95b42b0a80d02ec63f"
+    },
+    {
+      "bytes": 1557,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/decision_tree.json",
+      "sha256": "5f0096ec28f7f89085ed9d9f021c0029e01bf56aaaa52de97cffaec0463a1c2a"
+    },
+    {
+      "bytes": 1565,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/ebm.json",
+      "sha256": "b81c1a397ad53da443ad488058cdce8d0815f1dc26632e549ae52f66b63a82f4"
+    },
+    {
+      "bytes": 1603,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/ebm_interactions.json",
+      "sha256": "b91d42ed7f9bfd38846e2ed3746f2c6ae9fd360b65c041346730190499221dbf"
+    },
+    {
+      "bytes": 1589,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/elastic_net.json",
+      "sha256": "ed0497cd58a016efff1d96c23640d4d3d4fd771c731e158c41b6963c4063a147"
+    },
+    {
+      "bytes": 1599,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/elastic_net_cv.json",
+      "sha256": "b9b1ad1bd0e49100d3b43540f412af6365043bb334c95cfb41265f91f7ab1568"
+    },
+    {
+      "bytes": 1585,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/extra_trees.json",
+      "sha256": "a9bfc19a22dab8d7320d504dd3e7813deb0a7fa4f660c3a95a62f0bf32f26b68"
+    },
+    {
+      "bytes": 1601,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/extra_trees_1024.json",
+      "sha256": "b147b33504dd537493ddd3906cd001b3d5d2429bdc421fb7cde84d2c7dc550ab"
+    },
+    {
+      "bytes": 1602,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/extra_trees_512.json",
+      "sha256": "086e31c4bcaa9736479028632f8f9c4410d585fd3226d77591725bf76ff6b978"
+    },
+    {
+      "bytes": 1604,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/fable5_regressor.json",
+      "sha256": "d60a1af26799d98d01934ae08b3ce479a0f7db4e7333b1a53b4981321ad98cbc"
+    },
+    {
+      "bytes": 1603,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/gaussian_process.json",
+      "sha256": "66afb751ca13ac55fe91b2540390d343d1e36a11afcde60c0d508af0f22ae447"
+    },
+    {
+      "bytes": 1602,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/gpboost_regressor.json",
+      "sha256": "a78848e766ca54c80441c6a5fda8a62c6a654b75114c0e992973f6e1f30794ed"
+    },
+    {
+      "bytes": 1610,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/gpt5p6sol_regressor.json",
+      "sha256": "7ae8129b92070c78d0cf1ecaced417f31d13f6ebba7ab82f8acbf7a6bdb38a11"
+    },
+    {
+      "bytes": 1606,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/gradient_boosting.json",
+      "sha256": "f572e7d01cc6e87e2538daa120f16a65ce6beed626706c0afa73d395285bd4b3"
+    },
+    {
+      "bytes": 1639,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/gradient_boosting_stochastic.json",
+      "sha256": "03adfa072b5fc632136e34baa76470db77b5d12e03eaf45ddc14d65cc94f82cb"
+    },
+    {
+      "bytes": 1589,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/grok4p5_regressor.json",
+      "sha256": "64dcfa7006a25a1f3ad04ee853791e7026c5a94f8d06c08d5403b1876019a971"
+    },
+    {
+      "bytes": 1620,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/hist_gradient_boosting.json",
+      "sha256": "42b0617127c2b9fabec761d3fa2085ac547499f75fcfe99bbb349226a1fecb31"
+    },
+    {
+      "bytes": 1593,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/histgbm_large.json",
+      "sha256": "6aba0ba12aeabbcfafd836b065d4557967636dc0fd82f90d24354fdd7c47fdec"
+    },
+    {
+      "bytes": 1611,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/histgbm_regularized.json",
+      "sha256": "d10b442b0cec8f0df867f1c960bd9e00c74f7a8192567ecac94e4443447fcafa"
+    },
+    {
+      "bytes": 1569,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/huber.json",
+      "sha256": "94c99a455853e3385deeb4a51bec540dde38383846e17fae2381d022c2466689"
+    },
+    {
+      "bytes": 1589,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/huber_robust.json",
+      "sha256": "c55ede3f358f9ae19e661c4be55e839c08fcff5a11c185f570e2b9029d5e5c27"
+    },
+    {
+      "bytes": 1607,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/hyp3_chimera_regression.json",
+      "sha256": "369a4c0bc265aa72b3515e94df2f049ae7cad1b4713ab2a2a31564753e6f8654"
+    },
+    {
+      "bytes": 1583,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/hyp3_tabicl.json",
+      "sha256": "52ef6a8d0927b856efb022a9b8fa2b788c6c6f6046663df42eebe339bc7f49ec"
+    },
+    {
+      "bytes": 1598,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/jable_regressor.json",
+      "sha256": "fe3be92fe5f7efcad324a16c383e5849cbd8642191dd4c0a9592757d659f8f77"
+    },
+    {
+      "bytes": 1582,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/jain_prime.json",
+      "sha256": "d857340f7936a492e258b104cf1706f3c754b702666f2e90511b5cba5e3cddd9"
+    },
+    {
+      "bytes": 1572,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/kernel_ridge_rbf.json",
+      "sha256": "a0950f2341baa1b96dbde2c5b3564b1dbeea0833b675858bc88d008c801ab308"
+    },
+    {
+      "bytes": 1600,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/kimik3_regressor.json",
+      "sha256": "a1d6d3028ca6af09af83b6cd177ff37f1126b21ac83fadfa483bbc1120ad9e6b"
+    },
+    {
+      "bytes": 1552,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/knn.json",
+      "sha256": "e6c7956efe905aeb33ecb4dff2469c5d13945bd2c187ca86bebbcb8344d35d71"
+    },
+    {
+      "bytes": 1583,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/knn_cosine.json",
+      "sha256": "e28ad01ffa23712a02447314fb2272f594187cab9738bd2ecb6c8df0c308e215"
+    },
+    {
+      "bytes": 1590,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/knn_distance.json",
+      "sha256": "e2bf78399bea1dccd23a7ea6361a2f2371653bf7e2828600e165e1a08269e7a1"
+    },
+    {
+      "bytes": 1583,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/knn_large.json",
+      "sha256": "c86bfc1652f418256fa75407ddcaa0e95bec926db5654f5e7197911152175ed4"
+    },
+    {
+      "bytes": 1574,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/lasso.json",
+      "sha256": "3b150ad77eb73fb85a607f378d5aa0a83a0ac622e1aeba3cefb0ee880de9b499"
+    },
+    {
+      "bytes": 1594,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/lightgbm_dart.json",
+      "sha256": "2026be19e082f303891942b3a85b340257beb2dc8944bb97a2e5de3ebde3b1d8"
+    },
+    {
+      "bytes": 1594,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/lightgbm_deep.json",
+      "sha256": "2a86da770d29cfbdf02f6266dbd3f65d2bb5cea717b2e57ebcde892801f44c6d"
+    },
+    {
+      "bytes": 1617,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/lightgbm_extra_trees.json",
+      "sha256": "73d76f4311ab7e66b4fcc095bce6747970f980b77d788fe1e4343349edc89c2d"
+    },
+    {
+      "bytes": 1691,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/lightgbm_extra_trees_trees300_leaves63_lr0p04.json",
+      "sha256": "151ab2997b2769f3668b43aa2995eeef788e1ec6709095b8b38e7f459a451c91"
+    },
+    {
+      "bytes": 1593,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/lightgbm_gbdt.json",
+      "sha256": "50ccec87f4df78cc13004735004b1c892755aafa774d914a6c32759f632d0b2b"
+    },
+    {
+      "bytes": 1672,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/lightgbm_gbdt_trees150_leaves15_lr0p07.json",
+      "sha256": "74b696af444c0eb36eeedf76f14631d589a01020a18d0545ba531f72dc181da0"
+    },
+    {
+      "bytes": 1669,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/lightgbm_gbdt_trees300_leaves31_lr0p04.json",
+      "sha256": "58136cd71d4b1e755a287c3d4a61c67d63bd35416c3a75d914db58dc10e78221"
+    },
+    {
+      "bytes": 1591,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/lightgbm_goss.json",
+      "sha256": "e3f4cf66629ec17f83b6faaf1e5eeef8f4e2a4728b0a2513c3060454d2b3f9a6"
+    },
+    {
+      "bytes": 1667,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/lightgbm_goss_trees300_leaves31_lr0p04.json",
+      "sha256": "beb27d0e53f2f62c507774a16bb7f3af0c390d096fbfc8011be74e24a2d160de"
+    },
+    {
+      "bytes": 1676,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/lightgbm_huber_trees300_leaves31_lr0p04.json",
+      "sha256": "4978b4b0c22b734e46b8477b56e52f616df25009b20898483b1174bb726a32e1"
+    },
+    {
+      "bytes": 1613,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/lightgbm_large_leaves.json",
+      "sha256": "e1858b8ca813836adea2b696a9552e0bb3bcbe938a28cd92fc10077fd6959018"
+    },
+    {
+      "bytes": 1687,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/lightgbm_linear_tree_trees300_leaves31_lr0p04.json",
+      "sha256": "8eacb3b8abaa0472b70f12e1bacb0e4bbf047ba951f145dd6220c817aae109c4"
+    },
+    {
+      "bytes": 1707,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/lightgbm_quantile_alpha0p5_trees300_leaves31_lr0p04.json",
+      "sha256": "86ed2c60a1a9c8d1b69aae50e30a3e926c83416c0cc0722b7b3b37aea58ccc3b"
+    },
+    {
+      "bytes": 1642,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/lightgbm_rf_trees500_leaves63.json",
+      "sha256": "01c1af7eb7f202c8495dac5bf7a630bd1cf1fc6b8d8d6133791e5bae8b9f801d"
+    },
+    {
+      "bytes": 1608,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/linear_regression.json",
+      "sha256": "880c2d2cbab6ce426ab60b203cd86ab2ec7d05089dd34ef7b3df08398d55e77d"
+    },
+    {
+      "bytes": 1586,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/linear_svr.json",
+      "sha256": "81b6c64b0360cdbf703224c1be4cd3d4c8a4bc235c0da903bbc78aa67ca9ab74"
+    },
+    {
+      "bytes": 1561,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/mlp.json",
+      "sha256": "5b2e38fb3e5a49be621aae999c6ba0d065049f0543c82a891a477b90d8d6fc48"
+    },
+    {
+      "bytes": 1575,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/ngboost.json",
+      "sha256": "61a725f773a7bc21be4ffb9300863ef536558a7a04237e7f8a7e2ccb5ce44eeb"
+    },
+    {
+      "bytes": 1583,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/nu_svr_rbf.json",
+      "sha256": "2c1ae21605426058258eff7a84989c476a2b226940a3c25025220457f7aa2be1"
+    },
+    {
+      "bytes": 1596,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/nystroem_ridge.json",
+      "sha256": "a5f735f3b21e1ca726af7c569694dbd33a0d5547215a94daf2717b1648ce99c5"
+    },
+    {
+      "bytes": 1639,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/orthogonal_matching_pursuit.json",
+      "sha256": "6f09bffe2ec32a5c87d0646354b4a05d42c7467f40dcba04b59c89ac588386f5"
+    },
+    {
+      "bytes": 1643,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/passive_aggressive_regressor.json",
+      "sha256": "ee4b2bcbb69e344665f25d6b419e36c6120f97f1a690c322f0242f02df3b6308"
+    },
+    {
+      "bytes": 1581,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/pca_lgbm.json",
+      "sha256": "b0489e7d1ca1d6fbd83afde3e7504a8629965e854b91f4115bd9208e9113d43e"
+    },
+    {
+      "bytes": 1606,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/poisson_regressor.json",
+      "sha256": "d55bcc8c0197a65ba0a14729e40aca2fe2953f1e4864d6d704b674d33ca709b8"
+    },
+    {
+      "bytes": 1582,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/poly2_ridge.json",
+      "sha256": "331f8fde1a7d5611ef2b4103453c9cccfcfd708a25aa778bba42f9aff65d097b"
+    },
+    {
+      "bytes": 1650,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/pytorch_tabular_autoint_regressor.json",
+      "sha256": "4cd258904eaead1c738c7e72ce2e57fdf432153b53f234211c4d99ab21136392"
+    },
+    {
+      "bytes": 1641,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/pytorch_tabular_danet_regressor.json",
+      "sha256": "b20f0f1df23e6fd211d5bbf30d27990044c5fe6324cfa415aac3869ca98d6221"
+    },
+    {
+      "bytes": 1638,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/pytorch_tabular_mdn_regressor.json",
+      "sha256": "e2471a92094068bf78f3227aeed45b887bf145d2f0b5f09440ff7a2de4fc4c9b"
+    },
+    {
+      "bytes": 1639,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/pytorch_tabular_node_regressor.json",
+      "sha256": "6652b193695eca5dd17dc009b51d849230f10906e4eaf2bdd27065dcd5edf400"
+    },
+    {
+      "bytes": 1601,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/quantile_median.json",
+      "sha256": "4b1efb36f4cb10199bda807b82fe5df06b483b4a2a1bf5329f81b869aba340c7"
+    },
+    {
+      "bytes": 1593,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/random_forest.json",
+      "sha256": "2ba564509813bf7eef42ccf7e0489ef60e4fb2abfa945dd89c5e5e568694c676"
+    },
+    {
+      "bytes": 1606,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/random_forest_1024.json",
+      "sha256": "51928f2c8d16e44846a155a846321403bf5693f03d77ec9f8659bed04cb70518"
+    },
+    {
+      "bytes": 1606,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/random_forest_512.json",
+      "sha256": "ac8c5c6e0abc72ab8fc9e1e2511d4e2abe9dc0d587b462b1ad1d7c593d0ef141"
+    },
+    {
+      "bytes": 1606,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/random_forest_mae.json",
+      "sha256": "9129cc81e5fb8a86ad1d381e514a289560b52e9a7d5bfb0b6b7791ac59e0ce46"
+    },
+    {
+      "bytes": 1577,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/rbf_svr.json",
+      "sha256": "91d2f32c82f734ddc4e7b741fe4547d9969d6c4fb4f1181d4fd10eccfe983dda"
+    },
+    {
+      "bytes": 1602,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/rbfsampler_sgd.json",
+      "sha256": "15e457158b79f2da20848dc01da970da0d4916682f795c7df878d4ae8869f3a8"
+    },
+    {
+      "bytes": 1570,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/ridge.json",
+      "sha256": "6fe2c9b19e9178d09611e1fa8297cb41f85ec5c05fc29b5af5f7b9c355e51585"
+    },
+    {
+      "bytes": 1581,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/ridge_cv.json",
+      "sha256": "4e209d9d4625863401013b8fdadaa7545fab8138fca76f2e91bd94f90edc91cc"
+    },
+    {
+      "bytes": 1584,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/sgd_regressor.json",
+      "sha256": "0fbb13f5a63be95ee906f926d22b06952ee30e9dda3e66fb6b872ffd736eea1d"
+    },
+    {
+      "bytes": 1611,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/stacking_trees_meta.json",
+      "sha256": "527c10eaaa53e20c6580261619ccab69da84e1b01e4d0e18e3e34dfc1cd7954b"
+    },
+    {
+      "bytes": 1622,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/tabfm_ensemble_regressor.json",
+      "sha256": "60ae83f29798dfa0900a3f163607ab978277eb77e9475826e03ce0a125ce1959"
+    },
+    {
+      "bytes": 1565,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/tabicl.json",
+      "sha256": "204367a417b3f76047a6c132f82f6733192b9ac5098fb8bec6635aedf0b670e9"
+    },
+    {
+      "bytes": 1567,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/tabm.json",
+      "sha256": "2b6404e9ce258a2728a317aa0dc46794f929212423f50308b44241b4ea434843"
+    },
+    {
+      "bytes": 1625,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/tabm_regressor_epochs10.json",
+      "sha256": "2397d97e07f9464ccd007642987807061c71cbb81eb7bdb9e7b8f21dd4685e1a"
+    },
+    {
+      "bytes": 1570,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/tabnet.json",
+      "sha256": "af5ca159d309326c3fc404a05cfc89e4b523ea5183b790df1dd9f5665e5416d5"
+    },
+    {
+      "bytes": 1637,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/tabpfn_v25_regressor_default.json",
+      "sha256": "58daf98b217ea9f60ebe07e1cc4fb3a50b517f7cdb294b58e74baabaae0d2793"
+    },
+    {
+      "bytes": 1627,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/tabpfn_v25_regressor_real.json",
+      "sha256": "6ced3a3b127c042db60808420a8976388548b7bbe81708ab74bf94c25fb6b360"
+    },
+    {
+      "bytes": 1611,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/tabpfn_v3_regressor.json",
+      "sha256": "2da276111de1e1cc00397e563570239b60e54053b7b60bb4ed23bbccfaeefe56"
+    },
+    {
+      "bytes": 1634,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/tabpfn_v3_regressor_default.json",
+      "sha256": "2826a146601bd5149134a33bfe2d8f9d31b0f24cdc13e6e6f94fb46b4b56067a"
+    },
+    {
+      "bytes": 1598,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/tabr_regressor.json",
+      "sha256": "561eb175d8c3fc0e5a258f4d86824bc3b4401461cc56c1b28e3db51126c29cee"
+    },
+    {
+      "bytes": 1576,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/theil_sen.json",
+      "sha256": "4ec0aecdf99cb4d9c347cdc0e03569846b90a583fd333a510b73112d2e9898ca"
+    },
+    {
+      "bytes": 1656,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/torch_frame_fttransformer_regressor.json",
+      "sha256": "51e82d21c4e41a0ac3eae6d4c03bb2e4fcbdc639ddc4706cb21e47d744aa8818"
+    },
+    {
+      "bytes": 1639,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/torch_frame_resnet_regressor.json",
+      "sha256": "7eec18a320f732d98716caf4a1342f8d06a24b22836e86b01f82355c6d08b6c2"
+    },
+    {
+      "bytes": 1636,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/torch_frame_trompt_regressor.json",
+      "sha256": "e09fdbea7db47fd1a081a2c143d6b20dc44e0d33dace903e704370487ae9154c"
+    },
+    {
+      "bytes": 1606,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/tweedie_regressor.json",
+      "sha256": "c5bd1ed364455c65146588f39ba2cc02ad4640faceb2b43a6b23593a26c9adf9"
+    },
+    {
+      "bytes": 1601,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/voting_regressor.json",
+      "sha256": "2f8b9f1aed978867b0cc8fa4dc3afe5ddbe0d295339044e9a78c1d2b5fbf702b"
+    },
+    {
+      "bytes": 1687,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_absoluteerror_trees300_depth4_lr0p04.json",
+      "sha256": "baa828c02a48011d0110f9ac90ed0822e04678bc20287b72143e21ab840e2c3b"
+    },
+    {
+      "bytes": 1591,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_dart.json",
+      "sha256": "2453b708fe9696b7903c8197aa90814eee219dad98d0f016d2dd1d5afba525df"
+    },
+    {
+      "bytes": 1592,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_deep.json",
+      "sha256": "3da8555ac32b0e48c593906f138218b3cd261e5c192200af5cfad835db55ff6b"
+    },
+    {
+      "bytes": 1603,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_gblinear.json",
+      "sha256": "782ab5fd928f6c8e030651d7a52152dfc4eb795ce7c3ce0266a0c358cd70846d"
+    },
+    {
+      "bytes": 1658,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_gblinear_alpha0p001_lambda1.json",
+      "sha256": "d0dc564b44a2fb7396d33b9fdd92be729444898210ea5c9c172771dbdbccc8ff"
+    },
+    {
+      "bytes": 1592,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_hist.json",
+      "sha256": "5fd0c5d18323a33c51ee177e8b42111e9ddad9dbada554903f185333d3b60743"
+    },
+    {
+      "bytes": 1602,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_hist_240.json",
+      "sha256": "2e6b2c37f23b445ed22de07b5652e90ad3c538761f5c1623c8a06884c861fb82"
+    },
+    {
+      "bytes": 1659,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_hist_trees120_depth3_lr0p08.json",
+      "sha256": "55beb476804af5b90861de6811246bd26cbb9749bc6145a7de710c44de63ddaf"
+    },
+    {
+      "bytes": 1661,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_hist_trees300_depth4_lr0p04.json",
+      "sha256": "5dbbdf190a988f6202f566f6939b9941163e5b9f1ec725c17e56b0871d7cae52"
+    },
+    {
+      "bytes": 1642,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_hist_trees500_depth6.json",
+      "sha256": "86c9149f695df354b11eff2a37d7abe02adbe69668087c94f4631c7fe6d44646"
+    },
+    {
+      "bytes": 1662,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_hist_trees600_depth6_lr0p03.json",
+      "sha256": "62eb007103d6ce82a0bf93af17143d21832497ec50cb4275f57059f8e6c614c3"
+    },
+    {
+      "bytes": 1662,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_hist_trees900_depth4_lr0p02.json",
+      "sha256": "b8744fe803a974de903659eba7b83e09569bc315a5ae7059e55d4a492f4fc8b9"
+    },
+    {
+      "bytes": 1662,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_interaction_depth4_trees400.json",
+      "sha256": "4b33462d0bd17b8b42a23766c12de7fd53c4af2dd506500368535e24582654e0"
+    },
+    {
+      "bytes": 1667,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_monotone_none_trees300_depth6.json",
+      "sha256": "d8e767fe80109cceb28ace84e48ebe6ada6ed9bf2cf28111860569d602b264dd"
+    },
+    {
+      "bytes": 1681,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_pseudohuber_trees300_depth4_lr0p04.json",
+      "sha256": "a9b0a1e004ce430a744d4a7473737f17b8f9ea72ec34384dae5f86ad61281972"
+    },
+    {
+      "bytes": 1633,
+      "path": "results/tabular-regression-v2/external-references/golden45/a3bd0a400ec4d7f9/xgboost_rf_trees500_depth8.json",
+      "sha256": "e76ef3cb0ca46dd18ffda4ecfd2dcdaf406ba7e85ba3a1d952f797a646b391b8"
+    },
+    {
+      "bytes": 8377,
+      "path": "results/tabular-regression-v2/source-audits/indexes/6054656956182296.campaign-metrics.json",
+      "sha256": "3702e445ed42b0709c72597e51d4ba53a74ff5cf39987db76990eaf89641e822"
+    },
+    {
+      "bytes": 50858,
+      "path": "results/tabular-regression-v2/source-audits/indexes/6054656956182296.registered-audit.json",
+      "sha256": "8430b93d53d0c00a3ef7f62df59302877081341d0d1ff4d12585236e09c4b825"
+    },
+    {
+      "bytes": 16945,
+      "path": "results/tabular-regression-v2/source-audits/indexes/6054656956182296.special-audit.json",
+      "sha256": "7b6466e8970fb03942cc70299e5200984fc1854f752251ab5f9229ce44956718"
+    },
+    {
+      "bytes": 2425,
+      "path": "results/tabular-regression-v2/source-audits/indexes/ZTS_small.leakage-audit.json",
+      "sha256": "23388d9b3e44da524aee0b84d1c49fb2b18d89da682abdf54644ff707457ddf9"
+    },
+    {
+      "bytes": 50619,
+      "path": "results/tabular-regression-v2/source-audits/indexes/ZTS_small.registered-audit.json",
+      "sha256": "96cd51e57bfad4cdfa123a69e69852f0eb69fa8b21a7156d4316bff987f7b876"
+    },
+    {
+      "bytes": 16932,
+      "path": "results/tabular-regression-v2/source-audits/indexes/ZTS_small.special-audit.json",
+      "sha256": "9925ef0943574f5907a195fc0b527b007964e614d47f6644993db8d806721204"
+    },
+    {
+      "bytes": 15470,
+      "path": "results/tabular-regression-v2/source-audits/indexes/a3bd0a400ec4d7f9.campaign-metrics.json",
+      "sha256": "9c6bd9919fcba07415a35e1cd848c0c062182a379a6cb2ef59ce71d0230f07c3"
+    },
+    {
+      "bytes": 50747,
+      "path": "results/tabular-regression-v2/source-audits/indexes/a3bd0a400ec4d7f9.registered-audit.json",
+      "sha256": "299a19cef7e60bc6bd3d1d8be37cd08b242b6c9057dce09b9a4251e171e7f408"
+    },
+    {
+      "bytes": 16939,
+      "path": "results/tabular-regression-v2/source-audits/indexes/a3bd0a400ec4d7f9.special-audit.json",
+      "sha256": "2b626c185ecb763baed8b1ffe86f194a07d9c7a551c83c9e7ac630a69b8a99f2"
+    },
+    {
+      "bytes": 121839,
+      "path": "results/tabular-regression-v2/source-audits/indexes/golden46-new3.matrix-audit.json",
+      "sha256": "9343abd2725a53b07f6327405e17b145ae25750aed6a6f4f5ce163845f9503db"
+    },
+    {
+      "bytes": 3452,
+      "path": "results/tabular-regression-v2/source-audits/manifests/campaign-policy.json",
+      "sha256": "0dd0b618512e8472cf7147b9952b17f173af43cc9006f203e366e4a598ef2c74"
+    },
+    {
+      "bytes": 1467139,
+      "path": "results/tabular-regression-v2/source-audits/manifests/cohort.json",
+      "sha256": "e7b77f1080bc9f9c2ba42fa59f140921dd5f895fd01183deffdf135794bcec9a"
+    },
+    {
+      "bytes": 70240,
+      "path": "results/tabular-regression-v2/source-audits/manifests/leaders-new3.json",
+      "sha256": "570eb39cbfca072acfada2817029bab0dbb318d636d2a77905f1bb973ecaf6ac"
+    },
+    {
+      "bytes": 601,
+      "path": "results/tabular-regression-v2/terminal-receipts/6054656956182296/jope-dime-regressor.json",
+      "sha256": "8ce5510df377e143f1741ee0406dfa2b1c4565484194b9c2b171816e753063a6"
+    },
+    {
+      "bytes": 594,
+      "path": "results/tabular-regression-v2/terminal-receipts/ZTS_small/jope-dime-regressor.json",
+      "sha256": "0055168a958c010fd38548379b0b4e336b8102ecadca66e16ab41454ebf6fe49"
+    },
+    {
+      "bytes": 601,
+      "path": "results/tabular-regression-v2/terminal-receipts/a3bd0a400ec4d7f9/jope-dime-regressor.json",
+      "sha256": "3d04eb9b6d2f83b74fccca213b1c2e9c09ab49f5615303024d785ada3b23d681"
+    }
+  ],
+  "golden42_scores": {
+    "bytes": 3246376,
+    "path": "results/tabular-regression-v1/scores.csv",
+    "sha256": "b943def7e3f4ac49047a46ebcbb3ce9f2fbeeb1b623cb1d73aedd90ce94a6167"
+  },
+  "imported_external_scores": 369,
+  "published_artifacts": [
+    {
+      "bytes": 73172,
+      "path": "registry/datasets.tabular-regression-v2.json",
+      "sha256": "5ec3d62df5900c3e91d64fa940775e4761ae8f68a346afc379723c249a3b0804"
+    },
+    {
+      "bytes": 3401605,
+      "path": "results/tabular-regression-v2/scores.csv",
+      "sha256": "5ec868987c2f4286ae44728fde49215ec6e55e7d27e62100d3823744e2957db6"
+    },
+    {
+      "bytes": 161105,
+      "path": "results/tabular-regression-v2/resolution-ledger.jsonl",
+      "sha256": "d28833254eff6787b45c2280f46fc4db0d3dd14a944677c06565a903288d5cd3"
+    },
+    {
+      "bytes": 3984,
+      "path": "results/tabular-regression-v2/aspfm-acceptance-manifest.json",
+      "sha256": "963b6c55988959837a351d86a2d135dcccecda6df1fef9cca85d28e068d4a190"
+    },
+    {
+      "bytes": 610,
+      "path": "results/tabular-regression-v2/aspfm-replay-receipts/6054656956182296.json",
+      "sha256": "d19e41ced77668f4a075380612530f799d01ce2b302620c118b83819a5bb8c55"
+    },
+    {
+      "bytes": 602,
+      "path": "results/tabular-regression-v2/aspfm-replay-receipts/ZTS_small.json",
+      "sha256": "89deb8fcd6dbda01d01d7f7f9c2521335c2ffbe9c30c108336ee8ec0192b2f23"
+    },
+    {
+      "bytes": 636,
+      "path": "results/tabular-regression-v2/aspfm-replay-receipts/a3bd0a400ec4d7f9.json",
+      "sha256": "3d4172928617ef91d9458caa774769b4356565b4eb6b9be61d569733ec9426a6"
+    },
+    {
+      "bytes": 2280,
+      "path": "data/tabular-regression-v2/restricted-bundle.manifest.json",
+      "sha256": "ebb1ab04966625d241b8e4006d1e84639dfbbd73508ad7a970f461cfd928e105"
+    },
+    {
+      "bytes": 12385136,
+      "path": "data/tabular-regression-v2/golden45-restricted.tar.zst.gpg",
+      "sha256": "c33902dd4b338c7da380ceca3c2999c29fe50aef0510fe5868b799cc828a4946"
+    }
+  ],
+  "resolution_cells": {
+    "aspfm_accepted": 3,
+    "aspfm_pending": 0,
+    "historical_terminal": 3,
+    "total": 375,
+    "validated_external": 369
+  },
+  "schema": "sotarena.golden45-evidence-manifest.v1",
+  "source_campaign": "golden46-full42-20260723-v1",
+  "track_id": "tabular-regression-v2"
+}

@@ -1,0 +1,48 @@
+{
+  "algorithm": "extra_trees",
+  "dataset_hash": "ab0239b9ef0ba28e",
+  "ended_at": "2026-06-21T08:07:18+00:00",
+  "environment": {
+    "lightgbm_available": false,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "xgboost_available": true
+  },
+  "inference_rows_per_second": 1343.84007211423,
+  "inference_time_seconds": 0.004464817000553012,
+  "metrics": {
+    "explained_variance": 0.15913098424235939,
+    "mae": 0.0629441719460778,
+    "max_error": 0.16842333338718163,
+    "mean_absolute_percentage_error_eps": 48362.53043667689,
+    "median_absolute_error": 0.04841277215655282,
+    "mse": 0.007797098023433941,
+    "prediction_max": 0.26361730225471547,
+    "prediction_min": 0.002901333310849926,
+    "r2": -0.7095481606874694,
+    "rmse": 0.08830117792778272,
+    "target_max": 0.1857839971780777,
+    "target_min": 0.0
+  },
+  "model_class": "sklearn.ensemble._forest.ExtraTreesRegressor",
+  "n_features": 1040,
+  "run_date": "2026-06-21T08:07:18+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/chang.csv",
+  "started_at": "2026-06-21T08:07:18+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 6,
+  "train_rows": 28,
+  "training_time_seconds": 0.3007048190338537
+}

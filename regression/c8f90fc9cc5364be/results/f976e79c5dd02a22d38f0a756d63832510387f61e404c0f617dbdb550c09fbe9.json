@@ -1,0 +1,44 @@
+{
+  "best_rmse": 0.021275854195555933,
+  "campaign_evaluation_counts": {
+    "all-regression-evolution-20260723-v21": 432,
+    "all-regression-evolution-20260723-v22": 168,
+    "all-regression-evolution-20260723-v23": 432,
+    "all-regression-evolution-20260723-v24": 600
+  },
+  "cohort": "golden42",
+  "dataset": "c8f90fc9cc5364be",
+  "evaluation_csv": "datasets/golden42/c8f90fc9cc5364be/evaluations.csv",
+  "evaluation_ledger": "datasets/golden42/c8f90fc9cc5364be/evaluations.jsonl",
+  "evaluation_ledger_sha256": "c48ac455969f71cfdbadd49a3d82567a69f39188a2e4821db7464a3c088c8109",
+  "first_evolutionary_human_best_beat": {
+    "ancestry": {
+      "operation": "mutation",
+      "parents": [
+        "94f5084326b44e58bc855feac9edef0a5f3cce5e4a93118145589dd5376d202c"
+      ]
+    },
+    "combined_process_evaluation": 1618,
+    "fresh_evaluation": 586,
+    "generation": 24,
+    "logical_evaluation": 586,
+    "rmse": 0.021275854195555933,
+    "semantic_sha256": "fc48d4f948b8f416444e483252c31b7a040cbf7972bbd1d0eea333f856f48b13",
+    "slot": 9,
+    "source_campaign_id": "all-regression-evolution-20260723-v24"
+  },
+  "first_human_best_beat": {
+    "combined_process_evaluation": 1618,
+    "fresh_evaluation": 586,
+    "generation": 24,
+    "logical_evaluation": 586,
+    "rmse": 0.021275854195555933,
+    "semantic_sha256": "fc48d4f948b8f416444e483252c31b7a040cbf7972bbd1d0eea333f856f48b13",
+    "slot": 9,
+    "source_campaign_id": "all-regression-evolution-20260723-v24"
+  },
+  "human_best_rmse": 0.02145249223333034,
+  "schema": "jope-dime.combined-regression-dataset-index.v1",
+  "total_process_evaluations": 1632,
+  "valid_evaluations": 1527
+}

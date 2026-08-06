@@ -1,0 +1,67 @@
+{
+  "algorithm": "torch_frame_fttransformer_regressor",
+  "dataset_hash": "1a803b27c2400dc4",
+  "ended_at": "2026-06-30T15:08:48Z",
+  "environment": {
+    "affinity": [
+      118
+    ],
+    "cuda_visible_devices": "4",
+    "deps": [
+      "torch_frame",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-regression-oss-gpu/bin/python",
+    "host": "super1",
+    "java": "/usr/bin/java",
+    "pid": 2384459,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 48627.771897819526,
+  "inference_time_seconds": 0.020543816033750772,
+  "metrics": {
+    "explained_variance": 0.9794479574276947,
+    "mae": 0.020679835916445087,
+    "max_error": 0.16275389924454153,
+    "mean_absolute_percentage_error_eps": 0.08872819891024321,
+    "median_absolute_error": 0.01750042286456599,
+    "mse": 0.0007014264390452149,
+    "prediction_max": 0.781293786150961,
+    "prediction_min": 0.02260738749006208,
+    "r2": 0.9787883704040441,
+    "rmse": 0.026484456555595302,
+    "target_max": 0.944007277,
+    "target_min": 0.0266918913
+  },
+  "model_class": "models.tools.model_zoo._TorchFrameRegressorWrapper",
+  "model_params": {},
+  "n_features": 4,
+  "run_date": "2026-06-30T15:08:48Z",
+  "started_at": "2026-06-30T15:08:43Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 2.903472131001763
+}

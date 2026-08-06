@@ -1,0 +1,110 @@
+{
+  "algorithm": "jain_regressor_gen40",
+  "dataset_hash": "17a4542ee4fb9e44",
+  "task_type": "regression",
+  "status": "completed",
+  "started_at_unix_ms": 1783148449204,
+  "finished_at_unix_ms": 1783148471408,
+  "rows": {
+    "train": 157,
+    "test": 32
+  },
+  "features": 9,
+  "timings": {
+    "load_secs": 0.000159493,
+    "search_secs": 9.03656472,
+    "gpu_kernel_secs": 1.339865279,
+    "finalist_cv_secs": 12.892118254,
+    "fit_predict_secs": 0.27532524,
+    "total_secs": 22.20426695
+  },
+  "model_class": "feat_math_genome",
+  "model_params": {
+    "gens": 40,
+    "pop": 64,
+    "top_k": 2,
+    "folds": 3,
+    "search_rows": 512,
+    "actual_search_rows": 157,
+    "gpu_kernel_configs": 131072,
+    "gpu_kernel_used": true,
+    "gpu_kernel_candidates": 4,
+    "gpu_kernel_message": "battle-gpu composite GPR kernel search over 5 specs",
+    "seed": 20260616,
+    "evals": 1764,
+    "tokens_total": 16854430.0,
+    "search_engine": "feat_math_evolve_ridge_surrogate+battle_gpu_gpr_mixture_proposals",
+    "final_selection": "honest_feat_math_cv_r2"
+  },
+  "metrics": {
+    "r2": 0.6293745284081715,
+    "rmse": 0.10973129490392797,
+    "mse": 0.012040957081292807,
+    "mae": 0.08762773874148329,
+    "explained_variance": 0.6335960075129236,
+    "prediction_min": 0.3119569161975174,
+    "prediction_max": 0.6138842446491242,
+    "target_min": 0.178696573,
+    "target_max": 0.90726465
+  },
+  "gene": "(pipe X (standardize append=false) (winsor_clip append=true q=0.00991036139348531) (winsor_clip append=true q=0.03262444601518517) (standardize append=true) (pair_prod topk=17) (winsor_clip append=true q=0.04215603294663094) (histgbm2 bags=3 col_subsample=0.8 leaves=31 lr=0.03 min_leaf=5 rounds=500 row_subsample=0.6004547236312968 val_pct=20 val_shuffle=true))",
+  "genome": "(pipe X (standardize append=false) (winsor_clip append=true q=0.00991036139348531) (winsor_clip append=true q=0.03262444601518517) (standardize append=true) (pair_prod topk=17) (winsor_clip append=true q=0.04215603294663094) (histgbm2 bags=3 col_subsample=0.8 leaves=31 lr=0.03 min_leaf=5 rounds=500 row_subsample=0.6004547236312968 val_pct=20 val_shuffle=true))",
+  "genome_hash": "14131d1c87600a0fa6ec9a76a34ed52977cf76fd7b8e443c3cf5f4bd417caf0b",
+  "cv": {
+    "folds": 3,
+    "mean_r2": 0.6018507469904429,
+    "oof_r2": 0.6037770356293943,
+    "fold_r2": [
+      0.5833536091913072,
+      0.5967155355322178,
+      0.625483096247804
+    ]
+  },
+  "finalists": [
+    {
+      "rank": 1,
+      "gene": "(pipe X (standardize append=false) (winsor_clip append=true q=0.00991036139348531) (winsor_clip append=true q=0.03262444601518517) (standardize append=true) (pair_prod topk=17) (winsor_clip append=true q=0.04215603294663094) (histgbm2 bags=3 col_subsample=0.8 leaves=31 lr=0.03 min_leaf=5 rounds=500 row_subsample=0.6004547236312968 val_pct=20 val_shuffle=true))",
+      "genome": "(pipe X (standardize append=false) (winsor_clip append=true q=0.00991036139348531) (winsor_clip append=true q=0.03262444601518517) (standardize append=true) (pair_prod topk=17) (winsor_clip append=true q=0.04215603294663094) (histgbm2 bags=3 col_subsample=0.8 leaves=31 lr=0.03 min_leaf=5 rounds=500 row_subsample=0.6004547236312968 val_pct=20 val_shuffle=true))",
+      "genome_hash": "14131d1c87600a0fa6ec9a76a34ed52977cf76fd7b8e443c3cf5f4bd417caf0b",
+      "search_score": 0.6367852978079199,
+      "search_fold_scores": [
+        0.5897301854610553,
+        0.6511836425031337,
+        0.6694420654595709
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.6018507469904429,
+        "oof_r2": 0.6037770356293943,
+        "fold_r2": [
+          0.5833536091913072,
+          0.5967155355322178,
+          0.625483096247804
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "gene": "(pipe X (winsor_clip append=true q=0.03262444601518517) (standardize append=false) (winsor_clip append=true q=0.011482142244182852) (standardize append=true) (pair_prod topk=17) (winsor_clip append=true q=0.04215603294663094) (histgbm2 bags=3 col_subsample=0.8 leaves=31 lr=0.03 min_leaf=5 rounds=500 row_subsample=0.6004547236312968 val_pct=20 val_shuffle=true))",
+      "genome": "(pipe X (winsor_clip append=true q=0.03262444601518517) (standardize append=false) (winsor_clip append=true q=0.011482142244182852) (standardize append=true) (pair_prod topk=17) (winsor_clip append=true q=0.04215603294663094) (histgbm2 bags=3 col_subsample=0.8 leaves=31 lr=0.03 min_leaf=5 rounds=500 row_subsample=0.6004547236312968 val_pct=20 val_shuffle=true))",
+      "genome_hash": "21e7e36667b7ccb9d376f01a0d6bfb6089b2fedc31b94536d6e0f341388492be",
+      "search_score": 0.6367693985535469,
+      "search_fold_scores": [
+        0.5897301854610553,
+        0.6511359447400145,
+        0.6694420654595709
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.6018443779469755,
+        "oof_r2": 0.6037696709760301,
+        "fold_r2": [
+          0.5833536091913072,
+          0.5967155355322178,
+          0.6254639891174016
+        ]
+      }
+    }
+  ],
+  "predictions_path": "/home/ubuntu/quant/regression/17a4542ee4fb9e44/predictions/jain_regressor_fast30.csv"
+}

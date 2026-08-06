@@ -1,0 +1,67 @@
+{
+  "algorithm": "pytorch_tabular_fttransformer_regressor_epochs5",
+  "dataset_hash": "d2daf53412ab18dc",
+  "ended_at": "2026-06-30T13:58:03Z",
+  "environment": {
+    "affinity": [
+      4
+    ],
+    "cuda_visible_devices": "3",
+    "deps": [
+      "pytorch_tabular",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super2",
+    "java": "/usr/bin/java",
+    "pid": 3126503,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 398.50066242131834,
+  "inference_time_seconds": 0.1279797119786963,
+  "metrics": {
+    "explained_variance": -0.025444547234352966,
+    "mae": 0.3083612599624869,
+    "max_error": 0.7344071271682434,
+    "mean_absolute_percentage_error_eps": 683995.8160722669,
+    "median_absolute_error": 0.2823956902114716,
+    "mse": 0.1343801112520293,
+    "prediction_max": 0.42696094512939453,
+    "prediction_min": 0.2374710738658905,
+    "r2": -0.3411807969990339,
+    "rmse": 0.36657892908898804,
+    "target_max": 0.995525718,
+    "target_min": 0.0
+  },
+  "model_class": "models.tools.model_zoo._PyTorchTabularRegressor",
+  "model_params": {},
+  "n_features": 18,
+  "run_date": "2026-06-30T13:58:03Z",
+  "started_at": "2026-06-30T13:57:41Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 51,
+  "train_rows": 255,
+  "training_time_seconds": 13.758700299076736
+}

@@ -1,0 +1,74 @@
+{
+  "algorithm": "imodels_skope_rules_trees10_depth3",
+  "dataset_hash": "a1c2b79cde5c2f7c",
+  "ended_at": "2026-06-28T19:24:01Z",
+  "environment": {
+    "affinity": [
+      25
+    ],
+    "cuda_visible_devices": "",
+    "deps": [
+      "imodels",
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super5",
+    "java": "/usr/bin/java",
+    "pid": 1991785,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 5.518508091375003,
+  "inference_time_seconds": 4.5302099020336755,
+  "metrics": {
+    "accuracy": 0.6,
+    "average_precision": 0.5715445665445666,
+    "balanced_accuracy": 0.5,
+    "brier_score": 0.25665580106470154,
+    "cohen_kappa": 0.0,
+    "f1": 0.0,
+    "false_negatives": 10,
+    "false_positives": 0,
+    "log_loss": 0.7531448952204609,
+    "matthews_corrcoef": 0.0,
+    "positive_rate": 0.4,
+    "precision": 0.0,
+    "predicted_positive_rate": 0.0,
+    "recall": 0.0,
+    "roc_auc": 0.7166666666666667,
+    "sensitivity": 0.0,
+    "specificity": 1.0,
+    "top_decile_lift": 1.6666666666666665,
+    "top_decile_positive_rate": 0.6666666666666666,
+    "true_negatives": 15,
+    "true_positives": 0
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 86,
+  "run_date": "2026-06-28T19:24:01Z",
+  "started_at": "2026-06-28T19:21:51Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 25,
+  "train_rows": 120,
+  "training_time_seconds": 18.29569810302928
+}

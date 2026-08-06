@@ -1,0 +1,115 @@
+{
+  "algorithm": "jain_regressor_gen10000",
+  "dataset_hash": "b78d323566930bd7",
+  "task_type": "regression",
+  "status": "completed",
+  "started_at_unix_ms": 1783171714079,
+  "finished_at_unix_ms": 1783172827041,
+  "rows": {
+    "train": 833,
+    "test": 167
+  },
+  "features": 50,
+  "timings": {
+    "load_secs": 0.004766706,
+    "search_secs": 301.313479716,
+    "gpu_kernel_secs": 7.141450459,
+    "finalist_cv_secs": 703.675120208,
+    "fit_predict_secs": 107.967826189,
+    "total_secs": 1112.961337611
+  },
+  "model_class": "feat_math_genome",
+  "model_params": {
+    "gens": 10000,
+    "time_budget_secs": 300.0,
+    "pop": 64,
+    "top_k": 2,
+    "folds": 3,
+    "search_rows": 512,
+    "actual_search_rows": 512,
+    "gpu_kernel_configs": 131072,
+    "gpu_kernel_used": true,
+    "gpu_kernel_candidates": 2,
+    "gpu_kernel_message": "battle-gpu composite GPR kernel search over 5 specs",
+    "seed_genomes_file": "/home/ubuntu/quant/regression/reports/jain_regressor_fast30_gen0_seeds.txt",
+    "seed_genomes_requested": 64,
+    "seed_genomes_valid": 64,
+    "seed_genomes_used": 63,
+    "seed": 20260616,
+    "evals": 6065,
+    "tokens_total": 55132460.0,
+    "search_engine": "feat_math_evolve_ridge_surrogate+battle_gpu_gpr_mixture_proposals",
+    "final_selection": "honest_feat_math_cv_r2"
+  },
+  "metrics": {
+    "r2": 0.9480517552605217,
+    "rmse": 0.04828797666452053,
+    "mse": 0.0023317286903532792,
+    "mae": 0.03771267537495588,
+    "explained_variance": 0.9480966160786533,
+    "prediction_min": 0.062210685287172995,
+    "prediction_max": 0.939849754782091,
+    "target_min": 0.00127979368,
+    "target_max": 0.969146311
+  },
+  "gene": "(pipe X (standardize append=true) (pair_prod topk=8) (hinge append=true knots=7) (sigmoid append=false) (cheb append=true degree=8) (sigmoid append=false) (histgbm2 bags=5 col_subsample=1.0 leaves=15 lr=0.05 min_leaf=20 rounds=1000 row_subsample=1.0 val_pct=20 val_shuffle=true))",
+  "genome": "(pipe X (standardize append=true) (pair_prod topk=8) (hinge append=true knots=7) (sigmoid append=false) (cheb append=true degree=8) (sigmoid append=false) (histgbm2 bags=5 col_subsample=1.0 leaves=15 lr=0.05 min_leaf=20 rounds=1000 row_subsample=1.0 val_pct=20 val_shuffle=true))",
+  "genome_hash": "984cd093fd494b39fe0b035253a79050a8667ab5e63346e0a072b2f1b31c352e",
+  "cv": {
+    "folds": 3,
+    "mean_r2": 0.9345120162278705,
+    "oof_r2": 0.934419642573677,
+    "fold_r2": [
+      0.938611715825011,
+      0.9346971799265017,
+      0.930227152932099
+    ]
+  },
+  "finalists": [
+    {
+      "rank": 1,
+      "gene": "(pipe X (standardize append=true) (pair_prod topk=8) (hinge append=true knots=7) (sigmoid append=false) (cheb append=true degree=8) (sigmoid append=false) (histgbm2 bags=5 col_subsample=1.0 leaves=15 lr=0.05 min_leaf=20 rounds=1000 row_subsample=1.0 val_pct=20 val_shuffle=true))",
+      "genome": "(pipe X (standardize append=true) (pair_prod topk=8) (hinge append=true knots=7) (sigmoid append=false) (cheb append=true degree=8) (sigmoid append=false) (histgbm2 bags=5 col_subsample=1.0 leaves=15 lr=0.05 min_leaf=20 rounds=1000 row_subsample=1.0 val_pct=20 val_shuffle=true))",
+      "genome_hash": "984cd093fd494b39fe0b035253a79050a8667ab5e63346e0a072b2f1b31c352e",
+      "search_score": 0.9506056409262008,
+      "search_fold_scores": [
+        0.9498903379633681,
+        0.9522294233374151,
+        0.9496971614778191
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.9345120162278705,
+        "oof_r2": 0.934419642573677,
+        "fold_r2": [
+          0.938611715825011,
+          0.9346971799265017,
+          0.930227152932099
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "gene": "(pipe X (standardize append=true) (pair_prod topk=8) (hinge append=true knots=7) (sigmoid append=false) (cheb append=true degree=8) (sigmoid append=false) (histgbm2 bags=3 col_subsample=0.8 leaves=31 lr=0.03 min_leaf=3 rounds=1000 row_subsample=0.7 val_pct=20))",
+      "genome": "(pipe X (standardize append=true) (pair_prod topk=8) (hinge append=true knots=7) (sigmoid append=false) (cheb append=true degree=8) (sigmoid append=false) (histgbm2 bags=3 col_subsample=0.8 leaves=31 lr=0.03 min_leaf=3 rounds=1000 row_subsample=0.7 val_pct=20))",
+      "genome_hash": "90e0b0fbd4587f511eab1c9a15adf6a0bf72f7ee3524a935b5f455c116b0f207",
+      "search_score": 0.9506056409262008,
+      "search_fold_scores": [
+        0.9498903379633681,
+        0.9522294233374151,
+        0.9496971614778191
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.929696078014468,
+        "oof_r2": 0.9302295782692238,
+        "fold_r2": [
+          0.9175517986649192,
+          0.9351654321512181,
+          0.9363710032272663
+        ]
+      }
+    }
+  ],
+  "predictions_path": "/home/ubuntu/quant/regression/b78d323566930bd7/predictions/jain_regressor_300.csv"
+}

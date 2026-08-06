@@ -1,0 +1,77 @@
+{
+  "algorithm": "jable_regressor",
+  "dataset_hash": "c8f90fc9cc5364be",
+  "ended_at": "2026-07-10T00:17:50Z",
+  "environment": {
+    "affinity": [
+      99
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "xbabe1",
+    "java": "/usr/bin/java",
+    "pid": 889437,
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "cpu",
+    "sklearn": "1.9.0",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "gpu_device": null,
+  "inference_rows_per_second": 1984.4817765985865,
+  "inference_time_seconds": 0.49483951507136226,
+  "max_job_seconds": 1800.0,
+  "metrics": {
+    "explained_variance": 0.9925136901152911,
+    "mae": 0.00794908035397279,
+    "max_error": 0.17100550111705742,
+    "mean_absolute_percentage_error_eps": 14333.756648831324,
+    "median_absolute_error": 0.002401982767986699,
+    "mse": 0.0005220869769617807,
+    "prediction_max": 1.0017154121997978,
+    "prediction_min": -0.007602316698737788,
+    "r2": 0.9925113216813385,
+    "rmse": 0.022849222677408104,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "models.tools.jable_regressor.JableRegressor",
+  "model_metadata": {
+    "seed": 17
+  },
+  "model_name": "jable_regressor",
+  "model_params": {
+    "seed": 17
+  },
+  "n_features": 116,
+  "run_date": "2026-07-10T00:17:50Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/socrata-national-community-based-survey-of-supports-for-healthy-eating-and-active-living-cbs-heal-8hus-y5nc-data-cdc-target-nr-adj-wt.csv",
+  "started_at": "2026-07-10T00:14:58Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 982,
+  "train_rows": 1000,
+  "training_time_seconds": 167.2601041928865,
+  "wall_time_seconds": 167.75494370795786,
+  "xgboost_device": null
+}

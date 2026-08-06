@@ -1,0 +1,93 @@
+{
+  "algorithm": "hyp3_stacking_trees_meta",
+  "dataset_hash": "30ef3eaa6d2971a9",
+  "ended_at": "2026-07-04T04:39:38Z",
+  "environment": {
+    "affinity": [
+      51
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/remote_super/quant/.venv-model-queue/bin/python",
+    "host": "xbabe2",
+    "java": "/usr/bin/java",
+    "pid": 3839773,
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 452.84281447906073,
+  "inference_time_seconds": 0.048581978771835566,
+  "metrics": {
+    "explained_variance": 0.10903154099460766,
+    "mae": 0.1328528716787192,
+    "max_error": 0.33814287684770933,
+    "mean_absolute_percentage_error_eps": 1.2867356472961564,
+    "median_absolute_error": 0.12321277750628369,
+    "mse": 0.02704784702056091,
+    "prediction_max": 0.5266947728730229,
+    "prediction_min": 0.1295790418440536,
+    "r2": -0.001994586496303352,
+    "rmse": 0.16446229665355191,
+    "target_max": 0.604318857,
+    "target_min": 0.0187562574
+  },
+  "model_class": "sklearn.ensemble._stacking.StackingRegressor",
+  "model_metadata": {
+    "display_label": "HYP3_stacking_trees_meta",
+    "feature_augmentation": {
+      "augmented_n_features": 188,
+      "blocks": [
+        {
+          "n_features": 30,
+          "test_file": "test3.vs",
+          "train_file": "train3.vs"
+        },
+        {
+          "n_features": 128,
+          "test_file": "hyperion3test.vs",
+          "train_file": "hyperion3train.vs"
+        }
+      ],
+      "name": "hyp3_vs",
+      "original_n_features": 30,
+      "prepend_order": [
+        "train3.vs",
+        "hyperion3train.vs"
+      ]
+    }
+  },
+  "model_params": {
+    "display_label": "HYP3_stacking_trees_meta",
+    "hyp3_vs": true
+  },
+  "n_features": 188,
+  "run_date": "2026-07-04T04:39:38Z",
+  "started_at": "2026-07-04T04:39:32Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 22,
+  "train_rows": 109,
+  "training_time_seconds": 4.920449147932231
+}

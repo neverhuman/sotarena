@@ -1,0 +1,61 @@
+{
+  "algorithm": "NM_QuantBinary_72ab8ee12463_fea6f7f9440f",
+  "benchmark_pool": {
+    "normalized_elo": 0.0,
+    "pool_best": 0.75913125,
+    "pool_best_algorithm": "tabicl",
+    "pool_median": 0.7169953124999999,
+    "pool_percentile": 39.285714285714285,
+    "pool_size": 140
+  },
+  "core_hash": "72ab8ee12463c1d8c2429f910d6ad6737ee58e5521e5b388f5071f7dcb64e056",
+  "dataset_hash": "9ca13534df43f24d",
+  "dsl_expr": "(pipe X (rfft_mag axis=features) (polar) (rff_cos n=32 seed=2) (cheb degree=4) (quantile_bins bins=6) (rank) (gbm rounds=150 depth=3 lr=0.1))",
+  "ended_at": "2026-06-29T20:07:44Z",
+  "environment": {
+    "created_by_binary_sha": "3f770f17bf4ec8384af11a841a270670fe781caf7d4e48246922cf03351b3369",
+    "host": "xbabe3",
+    "runner": "newmath classify-csv"
+  },
+  "inference_rows_per_second": null,
+  "inference_time_seconds": null,
+  "metrics": {
+    "accuracy": 0.682,
+    "average_precision": 0.4134226494671494,
+    "balanced_accuracy": 0.645625,
+    "brier_score": 0.20463661826882099,
+    "f1": 0.42391304347826086,
+    "false_negatives": 83,
+    "false_positives": 235,
+    "log_loss": 0.5995113963719517,
+    "positive_rate": 0.2,
+    "precision": 0.33238636363636365,
+    "predicted_positive_rate": 0.352,
+    "recall": 0.585,
+    "roc_auc": 0.71169375,
+    "sensitivity": 0.585,
+    "specificity": 0.70625,
+    "top_decile_lift": 2.3,
+    "top_decile_positive_rate": 0.46,
+    "true_negatives": 565,
+    "true_positives": 117
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "model_hash": "fea6f7f9440f4605417c02e40e2ce27001a253b9f5b7fc6bc3b7c41f83fd5674",
+  "n_features": 147,
+  "newmath_receipt_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_QuantBinary_72ab8ee12463_fea6f7f9440f/20260629T200533Z/runs/9ca13534df43f24d/receipt.json",
+  "predictions_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_QuantBinary_72ab8ee12463_fea6f7f9440f/20260629T200533Z/runs/9ca13534df43f24d/predictions.csv",
+  "run_date": "2026-06-29T20:07:44Z",
+  "source_path": "/home/ubuntu/zain_scratch/data/sts_mimo_afib/normalized/sts_mimo_afib_50k10kprime_mt_train.csv",
+  "source_run_dir": "/home/ubuntu/jmath/target/newmath/quant_full/NM_QuantBinary_72ab8ee12463_fea6f7f9440f/20260629T200533Z",
+  "started_at": "2026-06-29T20:07:44Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": null,
+  "wall_time_seconds": 1.247073
+}

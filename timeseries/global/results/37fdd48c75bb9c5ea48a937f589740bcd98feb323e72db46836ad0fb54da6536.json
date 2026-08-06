@@ -1,0 +1,71 @@
+{
+  "artifacts": {
+    "/home/ubuntu/remote_super/quant/models/tools/artifacts/timeseries42_grok_inclusive_residual_losses_20260730.json": "949640a9ad4b7099028545dfd9f9e0169522dec228a0a790755064699e6f9ac7",
+    "/home/ubuntu/remote_super/quant/models/tools/artifacts/timeseries42_grok_wave_receipt_20260730.json": "dcfd869e0d3ccef9248b7e2af65f6389f9ffea64eeae04259b206bbdcb950d80",
+    "/home/ubuntu/sotarena/registry/datasets.timeseries42-v1.json": "a9a64cd12ce9a3a6471d644cd6256b4303d3144e1adeb47ca2062c2b70426aa7",
+    "/home/ubuntu/sotarena/registry/methods.timeseries42-v1.json": "bdceca87f226a5c7af1a6751d0d07c1f0477fbea4e0c440c7965ea5e0c0fdadf",
+    "/home/ubuntu/sotarena/results/timeseries42-v1/aspfm-wins.csv": "d90969bcbb58e23bb50f7fdfc59213421a8d28a0436a6bbde8f8a31318c12dd7",
+    "/home/ubuntu/sotarena/results/timeseries42-v1/dataset-comparisons.csv": "fb4b78f044767c1739cc32943f5fa99e9c7eacc50b719a1976c125c66a6e7f10",
+    "/home/ubuntu/sotarena/results/timeseries42-v1/leaderboard.csv": "6ee46818a11e5781658c5f02a2004a3f7f4381b38d6d9b53a295f319e0976931",
+    "/home/ubuntu/sotarena/results/timeseries42-v1/scores.csv": "5bfc9346134b62227842f77d7fe606a9b199af4f3c85f33e583fb385f61c313d",
+    "/home/ubuntu/sotarena/results/timeseries42-v1/task-summary.csv": "2e50baf8b37915469d97292ad3ace61193fa9cf7bc54dabf579a4118f922d7f8",
+    "/home/ubuntu/sotarena/results/timeseries42-v1/timeseries42-elo.csv": "6ee46818a11e5781658c5f02a2004a3f7f4381b38d6d9b53a295f319e0976931",
+    "/home/ubuntu/sotarena/results/timeseries42-v1/timeseries42-method-scores.csv": "02e4621c3a2679fa251628ba35763b2c973929f1a846a4104a7cf618a36183f9",
+    "/home/ubuntu/sotarena/tracks/timeseries42-v1/track.json": "5239885cf9b205412c5d20592352d01d02ae60017f61ecc27ba522b9cde65e47"
+  },
+  "counts": {
+    "datasets": 42,
+    "ineligible_cells": 5,
+    "methods": 21,
+    "non_aspfm_comparators": 20,
+    "scored_cells": 877,
+    "strict_aspfm_residual_losses": 16,
+    "strict_aspfm_wins": 26,
+    "target_cells": 882
+  },
+  "created_at": "2026-07-30T23:59:46Z",
+  "quant_root": "/home/ubuntu/remote_super/quant",
+  "receipt_sha256": "5bfb6f573b1d8262087a3b0f48bbc30bed5da8db4b104303fb5026a23feebe75",
+  "residual_loss_dataset_ids": [
+    "125d81eedfddbdde",
+    "12e6a127b3744e78",
+    "1e03f1d46632f01e",
+    "50552e66ae0f0641",
+    "83fd99a45218e138",
+    "846dfa21df703bd2",
+    "9347819c723257f0",
+    "a2d7cfc119d52e24",
+    "a56b152da78cb29f",
+    "c28d70ca7ada1282",
+    "c29c644b23045760",
+    "c3a4820f97c3049d",
+    "c400e4876a9046ae",
+    "c51010aade86a150",
+    "d2af612a3c2f2f1e",
+    "f09eadfd5128886b"
+  ],
+  "schema": "sotarena.timeseries42.completion-receipt.v1",
+  "scq": {
+    "executable": "/home/ubuntu/super_cluster/scq",
+    "priority": [
+      {
+        "effective_weight": 10.0,
+        "family": "jope",
+        "held_jobs": 0,
+        "override_weight": 10.0,
+        "queued_jobs": 0,
+        "running_jobs": 0
+      },
+      {
+        "effective_weight": 10.0,
+        "family": "quant-timeseries-model",
+        "held_jobs": 0,
+        "override_weight": 10.0,
+        "queued_jobs": 0,
+        "running_jobs": 0
+      }
+    ]
+  },
+  "sotarena_root": "/home/ubuntu/sotarena",
+  "track_id": "timeseries42-v1"
+}

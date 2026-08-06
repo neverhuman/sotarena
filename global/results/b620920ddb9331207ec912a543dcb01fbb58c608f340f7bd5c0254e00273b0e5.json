@@ -1,0 +1,51 @@
+{
+  "algorithm": "tabpfn_v25_regressor_default",
+  "dataset_hash": "dee1fc8e9afd81c9",
+  "ended_at": "2026-06-21T08:40:43+00:00",
+  "environment": {
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "torch": "2.7.0",
+    "torch_cuda_available": true,
+    "torch_cuda_device_count": 8,
+    "torch_num_threads": 1
+  },
+  "inference_rows_per_second": 8.768832695806466,
+  "inference_time_seconds": 2.965046877041459,
+  "metrics": {
+    "explained_variance": 0.235856960528398,
+    "mae": 0.22341361871132484,
+    "max_error": 0.4883027672767639,
+    "mean_absolute_percentage_error_eps": 8210728.379841562,
+    "median_absolute_error": 0.20090562105178833,
+    "mse": 0.06914070470567069,
+    "prediction_max": 0.5476566553115845,
+    "prediction_min": 0.2547406554222107,
+    "r2": 0.23378500056943952,
+    "rmse": 0.2629462011622733,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "tabpfn.regressor.TabPFNRegressor",
+  "n_features": 8,
+  "run_date": "2026-06-21T08:40:43+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/grub-damage.csv",
+  "started_at": "2026-06-21T08:40:36+00:00",
+  "status": "completed",
+  "tabpfn_checkpoint": "/home/ubuntu/guant/tabpfn/tabpfn-v2.5-regressor-v2.5_default.ckpt",
+  "tabpfn_device": "cuda:2",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 26,
+  "train_rows": 129,
+  "training_time_seconds": 3.717122517991811
+}

@@ -1,0 +1,61 @@
+{
+  "algorithm": "NM_Concept_400f83684598_c4a5fe829a9c",
+  "benchmark_pool": {
+    "normalized_elo": 0.0,
+    "pool_best": 0.9397977941176472,
+    "pool_best_algorithm": "imodels_skope_rules_trees10_depth3",
+    "pool_median": 0.9206495098039216,
+    "pool_percentile": 40.28776978417266,
+    "pool_size": 139
+  },
+  "core_hash": "4f9211d19c3cb2bc71a473a2eaa5a5042d469b16a7cfe421b404e3259807317b",
+  "dataset_hash": "0936cfa7201f9f56",
+  "dsl_expr": "(pipe X (robust_scale) (rff_cos n=32 seed=42) (cheb degree=4) (gbm rounds=150 depth=3 lr=0.1))",
+  "ended_at": "2026-06-29T22:23:21Z",
+  "environment": {
+    "created_by_binary_sha": "b24ddd5e331834fb6b3c90dd823c0200d5b306c2993d745a51534b519e4db6d0",
+    "host": "xbabe3",
+    "runner": "newmath classify-csv"
+  },
+  "inference_rows_per_second": null,
+  "inference_time_seconds": null,
+  "metrics": {
+    "accuracy": 0.8608695652173913,
+    "average_precision": 0.9351376322539776,
+    "balanced_accuracy": 0.8630514705882353,
+    "brier_score": 0.11261184980800498,
+    "f1": 0.870967741935484,
+    "false_negatives": 10,
+    "false_positives": 6,
+    "log_loss": 0.4056849821779788,
+    "positive_rate": 0.5565217391304348,
+    "precision": 0.9,
+    "predicted_positive_rate": 0.5217391304347826,
+    "recall": 0.84375,
+    "roc_auc": 0.914828431372549,
+    "sensitivity": 0.84375,
+    "specificity": 0.8823529411764706,
+    "top_decile_lift": 1.796875,
+    "top_decile_positive_rate": 1.0,
+    "true_negatives": 45,
+    "true_positives": 54
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "model_hash": "c4a5fe829a9ca3762fb3b66ff02fb8982a6a1c87a24599710098df4c53ebf9fe",
+  "n_features": 15,
+  "newmath_receipt_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_400f83684598_c4a5fe829a9c/20260629T222303Z/runs/0936cfa7201f9f56/receipt.json",
+  "predictions_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_400f83684598_c4a5fe829a9c/20260629T222303Z/runs/0936cfa7201f9f56/predictions.csv",
+  "run_date": "2026-06-29T22:23:21Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/credit-approval-reproduced.csv",
+  "source_run_dir": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_400f83684598_c4a5fe829a9c/20260629T222303Z",
+  "started_at": "2026-06-29T22:23:21Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 115,
+  "train_rows": 575,
+  "training_time_seconds": null,
+  "wall_time_seconds": 0.085385
+}

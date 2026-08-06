@@ -1,0 +1,61 @@
+{
+  "algorithm": "tabfm_ensemble_classifier",
+  "dataset_hash": "21a6177fdb3eae79",
+  "ended_at": "2026-07-03T06:31:57+00:00",
+  "environment": {
+    "cuda_visible_devices": "7",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 24.80547893362231,
+  "inference_time_seconds": 40.31367435702123,
+  "metrics": {
+    "accuracy": 0.843,
+    "average_precision": 0.6255210947757539,
+    "balanced_accuracy": 0.6952711640211641,
+    "brier_score": 0.12044648175504145,
+    "cohen_kappa": 0.4572582206366327,
+    "f1": 0.5449275362318841,
+    "false_negatives": 122,
+    "false_positives": 35,
+    "log_loss": 0.39058060721475146,
+    "matthews_corrcoef": 0.47945636123645013,
+    "positive_rate": 0.216,
+    "precision": 0.7286821705426356,
+    "predicted_positive_rate": 0.129,
+    "recall": 0.4351851851851852,
+    "roc_auc": 0.8279419406651549,
+    "sensitivity": 0.4351851851851852,
+    "specificity": 0.9553571428571429,
+    "top_decile_lift": 3.564814814814815,
+    "top_decile_positive_rate": 0.77,
+    "true_negatives": 749,
+    "true_positives": 94
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMClassifier",
+  "n_features": 23,
+  "run_date": "2026-07-03T06:31:57+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/credit-card-clients-default.csv",
+  "started_at": "2026-07-03T06:29:24+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": true,
+  "tabfm_model_type": "classification",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 112.71802986005787
+}

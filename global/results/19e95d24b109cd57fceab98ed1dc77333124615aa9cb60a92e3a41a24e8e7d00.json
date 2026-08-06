@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "18ed8981c941ed33f6cca37b32ad3128ef7e78badc0b79ada01b01c175de7960",
+    "hyperion3test128dim.vs": "3f0f22292f85b64a223fe899fd37e7359e2f6b4cb683e21a2b93321bb14a44b7",
+    "hyperion3train.vs": "5f69d257138737898a2889ebd4df15a26ba9a746dd2140e9314bdf86212b196a",
+    "hyperion3train128dim.vs": "5d3a16246be4123228e0522d8567f612478a52901b2db812334cceff45d0aacb",
+    "test3.vs": "90002a8393f5cdd34b13c48cbdf3f82b7a1cb3ba2139b2b2cec9515cb33ef302",
+    "train3.vs": "99d547daffa76faf4b274d153e491d8aca684f452841154a12ffd3618532ae4d"
+  },
+  "counts": {
+    "augmented_features": 170,
+    "hyperion3_features": 128,
+    "raw_features": 21,
+    "test_rows": 999,
+    "train3_features": 21,
+    "train_rows": 1000
+  },
+  "created_at": "2026-07-10T21:16:13Z",
+  "dataset_hash": "21fbfe8b53dbcd60",
+  "dataset_name": "Parkinsons Telemonitoring",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.030615912637498077,
+    "delta_vs_raw_selected_model": -0.010432829548121192,
+    "prior_best_r2": 0.9999643216749305,
+    "r2": 0.9693484090374325,
+    "raw_selected_model_r2": 0.9797812385855537
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "tabpfn_v25_regressor_default",
+    "path": "/home/ubuntu/remote_super/quant/regression/21fbfe8b53dbcd60/reports/tabpfn_v25_regressor_default.json",
+    "r2": 0.9999643216749305
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 76.55088787991554,
+    "raw_fit_predict_seconds": 10.355567933060229
+  }
+}

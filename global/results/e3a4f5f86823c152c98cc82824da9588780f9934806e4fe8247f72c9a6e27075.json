@@ -1,0 +1,52 @@
+{
+  "algorithm": "tabfm_regressor",
+  "dataset_hash": "047e62b52a3f4ede",
+  "ended_at": "2026-07-03T05:42:05+00:00",
+  "environment": {
+    "cuda_visible_devices": "6",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 6.899928627797684,
+  "inference_time_seconds": 5.797161413938738,
+  "metrics": {
+    "explained_variance": 0.9194812088821932,
+    "mae": 0.04083706110250205,
+    "max_error": 0.15875625610351562,
+    "mean_absolute_percentage_error_eps": 104794.9751116421,
+    "median_absolute_error": 0.02788112871348858,
+    "mse": 0.003006420862904418,
+    "prediction_max": 0.6321793794631958,
+    "prediction_min": 0.0108957439661026,
+    "r2": 0.9159744332798174,
+    "rmse": 0.05483083861208415,
+    "target_max": 0.7284879088401794,
+    "target_min": 0.0
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMRegressor",
+  "n_features": 12,
+  "run_date": "2026-07-03T05:42:05+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/pmlb-695-chatfield-4-target.csv",
+  "started_at": "2026-07-03T05:41:59+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": false,
+  "tabfm_model_type": "regression",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 40,
+  "train_rows": 195,
+  "training_time_seconds": 0.10217725206166506
+}

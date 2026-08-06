@@ -1,0 +1,41 @@
+{
+  "algorithm": "elastic_net_cv",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "ZTS_small",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.0012791380286216736,
+  "metrics": {
+    "explained_variance": 0.53661555882371,
+    "mae": 0.15637802890224448,
+    "max_error": 0.6684429149402618,
+    "median_absolute_error": 0.13152411968955993,
+    "mse": 0.038644507848049285,
+    "prediction_max": 1.299346923828125,
+    "prediction_min": 0.005458801984786987,
+    "r2": 0.5366031639224111,
+    "rmse": 0.19658206390220162,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_name": "elastic_net_cv",
+  "n_features": 147,
+  "provenance": {
+    "canonical_test_sha256": "806d6838aa3dd6f0b0c21adf718de17456d42c5219af4dd0b46eee8b0624726c",
+    "canonical_test_target_sha256": "338ad2fc9525ec03da9a632fa76a9cd3fb65472f6a0ba89861e57f88be7c5434",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "c4a7b0bedbafac3fc8ad517a453e93e36279965709f26130558653be891672ec",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/ZTS_small/elastic_net_cv/worker-receipt.json",
+    "worker_receipt_sha256": "82ec4299616226c81182c277b6930f9275a2446c1400d587ef2932bb02f399b7"
+  },
+  "run_date": "2026-07-23T11:19:49Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 1.9066902550403029
+}

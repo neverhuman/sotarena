@@ -1,0 +1,41 @@
+{
+  "algorithm": "hyperfast_classifier",
+  "dataset_hash": "0832e53e181e9f1b",
+  "ended_at": "2026-06-28T19:43:00Z",
+  "environment": {
+    "affinity": [
+      21
+    ],
+    "cuda_visible_devices": "",
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super2",
+    "java": "/usr/bin/java",
+    "pid": 914089,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "failure_message": "ImportError: could not construct any candidate class: hyperfast.HyperFastClassifier: ConnectionError: Failed to download the model from https://figshare.com/ndownloader/files/43484094; hyperfast.classifier.HyperFastClassifier: ModuleNotFoundError: No module named 'hyperfast.classifier'; hyperfast.sklearn.HyperFastClassifier: ModuleNotFoundError: No module named 'hyperfast.sklearn'",
+  "inference_time_seconds": null,
+  "n_features": 10,
+  "run_date": "2026-06-28T19:43:00Z",
+  "started_at": "2026-06-28T19:42:49Z",
+  "status": "failed",
+  "task_type": "binary",
+  "test_rows": 1000,
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/quant/models/tools/cluster_model_queue.py\", line 785, in execute_job\n    model = spec.factory()\n  File \"/home/ubuntu/quant/models/tools/model_zoo.py\", line 1308, in _hyperfast_classifier\n    _construct_first(\n  File \"/home/ubuntu/quant/models/tools/model_zoo.py\", line 190, in _construct_first\n    raise ImportError(\"could not construct any candidate class: \" + \"; \".join(errors))\nImportError: could not construct any candidate class: hyperfast.HyperFastClassifier: ConnectionError: Failed to download the model from https://figshare.com/ndownloader/files/43484094; hyperfast.classifier.HyperFastClassifier: ModuleNotFoundError: No module named 'hyperfast.classifier'; hyperfast.sklearn.HyperFastClassifier: ModuleNotFoundError: No module named 'hyperfast.sklearn'\n",
+  "train_rows": 1000,
+  "training_time_seconds": 11.35984838398872
+}

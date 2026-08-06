@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "bbaaaed6eb4ae0cc47199eee5872e0be18d785cf6edb01d1574c78d5e05bb0c1",
+    "hyperion3test128dim.vs": "6232eedd4088d202a36e6ec061faf385874bf47e0a8da51b27480ac7c70e8baf",
+    "hyperion3train.vs": "bea598f840f1baf7a892bcd28980976bda74a5b75955aeef841ed37a4657aec9",
+    "hyperion3train128dim.vs": "16c42fac3de91d538d756cdee8eb3d19c1d9db2ba3490145ace16fcbdc27d123",
+    "test3.vs": "00bb3b7f38a1ddf7220b999926e75803ac8d749c4e6728fef14a9b5cb4e202da",
+    "train3.vs": "438f601ee99338e789a1c6845b84bdaaf67b7778978bc5e9c613478fa0631b76"
+  },
+  "counts": {
+    "augmented_features": 136,
+    "hyperion3_features": 128,
+    "raw_features": 4,
+    "test_rows": 999,
+    "train3_features": 4,
+    "train_rows": 1000
+  },
+  "created_at": "2026-07-08T20:46:02Z",
+  "dataset_hash": "55b144de19659467",
+  "dataset_name": "TidyTuesday 2018: Week4 Australian Salary",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.07297271436680686,
+    "delta_vs_raw_selected_model": -0.040125902625271714,
+    "prior_best_r2": 0.9960716417089955,
+    "r2": 0.9230989273421887,
+    "raw_selected_model_r2": 0.9632248299674604
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "tabfm_regressor",
+    "path": "/home/ubuntu/remote_super/quant/regression/55b144de19659467/reports/tabfm_regressor.json",
+    "r2": 0.9960716417089955
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 73.29017964191735,
+    "raw_fit_predict_seconds": 1.146196919027716
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "algorithm": "bayesian_ridge",
+  "dataset_hash": "b253fbfae8460dc1",
+  "ended_at": "2026-06-21T08:07:19+00:00",
+  "environment": {
+    "lightgbm_available": false,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "xgboost_available": true
+  },
+  "inference_rows_per_second": 96740.8815337507,
+  "inference_time_seconds": 9.303202386945486e-05,
+  "metrics": {
+    "explained_variance": 0.1540434268826948,
+    "mae": 0.09917066071032604,
+    "max_error": 0.23495631350760057,
+    "mean_absolute_percentage_error_eps": 2.162924107868214,
+    "median_absolute_error": 0.08342789504045062,
+    "mse": 0.014719492940883603,
+    "prediction_max": 0.28358454168093483,
+    "prediction_min": 0.24914071022157266,
+    "r2": 0.08345463584676494,
+    "rmse": 0.12132391743132763,
+    "target_max": 0.4751773178577423,
+    "target_min": 0.014184396713972092
+  },
+  "model_class": "sklearn.linear_model._bayes.BayesianRidge",
+  "n_features": 7,
+  "run_date": "2026-06-21T08:07:19+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/limesoda-nsw-52-dataset.csv",
+  "started_at": "2026-06-21T08:07:19+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 9,
+  "train_rows": 43,
+  "training_time_seconds": 0.0017163450247608125
+}

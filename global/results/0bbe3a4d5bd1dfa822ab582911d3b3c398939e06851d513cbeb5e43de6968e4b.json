@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "36d39e798f47845ace76297ba3544968a0059c35511bc81ca00fa8bf07f51409",
+    "hyperion3test128dim.vs": "df59b05133e05f51fdf66d604515baee7bb40903196d646ced8db7bacbf4e564",
+    "hyperion3train.vs": "6ed3b93c24346092fbbb7daad208d3d262103c87ea3395a03b05b489fc22b555",
+    "hyperion3train128dim.vs": "8a6576c32a10fb56b67ff183edeeb17fdfda8a79dd2b3293b1b548dda8a57389",
+    "test3.vs": "2efe8a06539739f6ad859492ba3e6a63bab6d1c81f4b9bd26c626b04fb1534f4",
+    "train3.vs": "20f7772ed72db1785b8803ec3613845493efddccbab33c1bd9a464716e2fa8c6"
+  },
+  "counts": {
+    "augmented_features": 144,
+    "hyperion3_features": 128,
+    "raw_features": 8,
+    "test_rows": 999,
+    "train3_features": 8,
+    "train_rows": 1000
+  },
+  "created_at": "2026-07-10T02:51:12Z",
+  "dataset_hash": "5f91a00bd3b66742",
+  "dataset_name": "California Housing (sklearn)",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.1716903241377672,
+    "delta_vs_raw_selected_model": -0.061266802813521704,
+    "prior_best_r2": 0.6553731866757144,
+    "r2": 0.48368286253794723,
+    "raw_selected_model_r2": 0.5449496653514689
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "tabfm_ensemble_regressor",
+    "path": "/home/ubuntu/remote_super/quant/regression/5f91a00bd3b66742/reports/tabfm_ensemble_regressor.json",
+    "r2": 0.6553731866757144
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 65.22965387906879,
+    "raw_fit_predict_seconds": 2.8404830070212483
+  }
+}

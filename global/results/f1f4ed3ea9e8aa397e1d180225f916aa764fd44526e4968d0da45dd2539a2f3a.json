@@ -1,0 +1,208 @@
+{
+ "report_schema_version": 2,
+ "algorithm": "jain_prime",
+ "dataset_hash": "43b4cc3ab0ebbd97",
+ "task_type": "regression",
+ "status": "completed",
+ "started_at_unix_ms": 1783776318754,
+ "finished_at_unix_ms": 1783777289587,
+ "rows": {
+  "train": 482,
+  "test": 97
+ },
+ "features": 39,
+ "timings": {
+  "load_secs": 0.028368,
+  "search_secs": 218.18,
+  "gpu_kernel_secs": 20.442888,
+  "finalist_cv_secs": 220.914381,
+  "fit_predict_secs": 0.827378,
+  "total_secs": 970.833103
+ },
+ "model_class": "jope_pipeline_ensemble",
+ "model_params": {
+  "engine": "featmath",
+  "fitness": "v2",
+  "pop": 192,
+  "top_k": 16,
+  "gpu_kernel_configs": 131072,
+  "seed_battery": {
+   "model_proposals": [
+    {
+     "temperature": 0.7,
+     "samples_per_engine": 48
+    },
+    {
+     "temperature": 1.0,
+     "samples_per_engine": 24
+    }
+   ],
+   "own_train_oof_top_k": 10,
+   "z_neighbors": 5,
+   "z_neighbor_champion": true,
+   "z_neighbor_ledger_top_k": 2,
+   "global_greatest_hits_k": 10,
+   "ywarp_kinds": [
+    "rank_gauss",
+    "log1p"
+   ],
+   "fixed": [
+    "(pipe X (blom) (ridge_gcv))",
+    "(pipe X (cheb degree=3 append=true) (pair_prod topk=12 append=true) (ridge_gcv))",
+    "(pipe X (histgbm2 leaves=31 lr=0.05 rounds=500 loss=huber))",
+    "(pipe X (portfolio preset=core))"
+   ],
+   "fairness_rule": "seeds + all selection decisions use only (a) other datasets' data and (b) X's own TRAIN-side signals (OOF/robust). X's test results and the incumbent identity for X are never read."
+  },
+  "pick_kind": "single",
+  "oof_partitions": "k=3,5,7 seed=20260710",
+  "robust_formula": "min(oof_r2_f3, oof_r2_f5, oof_r2_f7) - 0.25*min(std(fold_r2_f3+f5+f7 pooled), 1.0)",
+  "robust_score": -0.04086140844015834,
+  "oof_r2": {
+   "f3": -0.007438905027108422,
+   "f5": -0.009235100169350696,
+   "f7": -0.011102323779827117
+  },
+  "min_fold_r2": -0.028972891048298477,
+  "selection_rule": "sort by (robust desc [ties within 1e-9], prior_submission first, higher min fold score, fewer genome stages); new blends need +0.005 robust over best single; prior blends exempt",
+  "final_selection": "triple-partition train-side robust CV (never test)",
+  "budget_profile": {
+   "name": "full",
+   "stage_a_secs": 120,
+   "main_secs": 1800,
+   "round_secs": 900,
+   "max_rounds": 3
+  },
+  "genome": "(pipe X (target kind=rank_gauss) (target_bin_encode bins=13) (target_bin_encode bins=5) (bin_onehot append=true bins=6) (poly_interact) (row_stats) (ksmooth gamma=0.5 k=8))",
+  "gpu": {
+   "kernel_configs": 131072,
+   "backend": "fused",
+   "kernel_used": true,
+   "kernel_used_any": true,
+   "kernel_message": "battle-gpu composite GPR kernel search over 5 specs",
+   "kernel_secs": 20.4429,
+   "kernel_secs_by_stage": [
+    5.5161,
+    4.9333,
+    4.9887,
+    5.0049
+   ],
+   "kernel_abi_version": 2,
+   "host": "xbabe1"
+  },
+  "provenance": {
+   "mode": "fresh",
+   "run_dir": "/home/ubuntu/remote_super/quant/models/jain_prime/runs/43b4cc3ab0ebbd97",
+   "seed_sources": {
+    "model_proposal_t0.7": 16,
+    "model_proposal_t1.0": 6,
+    "own_oof": 10,
+    "z_neighbor_champion": 3,
+    "z_neighbor_ledger": 9,
+    "global_top10": 9,
+    "battery_ywarp_rank_gauss": 3,
+    "battery_ywarp_log1p": 3,
+    "battery_fixed_blom_ridge_gcv": 1,
+    "battery_fixed_cheb_pairprod_ridge_gcv": 1,
+    "battery_fixed_histgbm2_huber": 1,
+    "battery_fixed_portfolio_core": 1
+   },
+   "rounds_used": 3,
+   "rounds": [
+    {
+     "round": 1,
+     "budget_s": 1800,
+     "best_robust": -0.009989345596269352,
+     "bar": 0.17674183346018701,
+     "target_beaten_flag": null,
+     "bar_cleared": false,
+     "best_genome": "(pipe X (target kind=rank_gauss) (target_bin_encode bins=14) (row_stats) (row_stats) (row_stats) (ksmooth gamma=0.8542150724520506 k=21))"
+    },
+    {
+     "round": 2,
+     "budget_s": 900,
+     "best_robust": -0.01042407229090785,
+     "bar": 0.17674183346018701,
+     "target_beaten_flag": false,
+     "bar_cleared": false,
+     "best_genome": "(pipe X (target kind=rank_gauss) (target_bin_encode bins=12) (row_stats) (target_bin_encode bins=12) (row_stats) (row_stats append=true) (histgbm depth=6 lr=0.18488404136982148 rounds=289))"
+    },
+    {
+     "round": 3,
+     "budget_s": 900,
+     "best_robust": -0.008289084102300863,
+     "bar": 0.17674183346018701,
+     "target_beaten_flag": false,
+     "bar_cleared": false,
+     "best_genome": "(pipe X (target kind=rank_gauss) (target_bin_encode bins=13) (target_bin_encode bins=5) (bin_onehot append=true bins=6) (poly_interact) (row_stats) (ksmooth gamma=0.8499425758862708 k=8))"
+    }
+   ],
+   "champion_bar_robust": 0.17674183346018701,
+   "fitness": "v2",
+   "checkpoint": "gen36",
+   "checkpoint_path": "/home/ubuntu/jope/runs/self_play_v33/gen36.pt",
+   "degenerate_fallback": {
+    "triggered": true,
+    "options": [
+     {
+      "source": "fallback_portfolio",
+      "genome": "(pipe X (portfolio preset=core))"
+     },
+     {
+      "source": "fallback_champion",
+      "genome": "(pipe X (winsor_clip q=0.08782459754078129) (target_bin_encode append=true bins=5) (rand_proj k=29 seed=5521) (rand_proj k=9 seed=8582) (poly_interact) (poly_interact append=false) (ridge))"
+     }
+    ]
+   },
+   "blend_available": true,
+   "artifact_member_modes": [
+    "rust"
+   ],
+   "crosscheck": {
+    "bridge_test_rmse_diag": 0.10103424741365248,
+    "artifact_test_rmse": 0.10103424741365248
+   }
+  }
+ },
+ "metrics": {
+  "r2": -0.013739667604688144,
+  "rmse": 0.10103424741365248,
+  "mse": 0.010207919150443142,
+  "mae": 0.013014766185941811,
+  "explained_variance": -0.0016272334790630172,
+  "prediction_min": 0.9875123337296667,
+  "prediction_max": 0.9987379460390193,
+  "target_min": 0.000643598323,
+  "target_max": 0.999999225,
+  "n": 97,
+  "target_mean": 0.9825559244981752,
+  "target_std": 0.1003472304138245,
+  "prediction_mean": 0.9935997898877303,
+  "prediction_std": 0.0024433053264604375,
+  "residual_mean": -0.011043865389555233,
+  "residual_std": 0.10042884141371207,
+  "residual_min": -0.9939217854198498,
+  "residual_max": 0.007346039951932282,
+  "pearson_corr": -0.021241212229910506
+ },
+ "gene": "(pipe X (target kind=rank_gauss) (target_bin_encode bins=13) (target_bin_encode bins=5) (bin_onehot append=true bins=6) (poly_interact) (row_stats) (ksmooth gamma=0.5 k=8))",
+ "genome": "(pipe X (target kind=rank_gauss) (target_bin_encode bins=13) (target_bin_encode bins=5) (bin_onehot append=true bins=6) (poly_interact) (row_stats) (ksmooth gamma=0.5 k=8))",
+ "genome_hash": "9267163ef8fd6b0b28590402ddd8f7f6a52a522677145a05f51de1da9e181354",
+ "cv": {
+  "folds": [
+   3,
+   5,
+   7
+  ],
+  "partition_seed": 20260710,
+  "oof_r2": {
+   "f3": -0.007438905027108422,
+   "f5": -0.009235100169350696,
+   "f7": -0.011102323779827117
+  },
+  "robust": -0.04086140844015834,
+  "min_fold_r2": -0.028972891048298477,
+  "robust_formula": "min(oof_r2_f3, oof_r2_f5, oof_r2_f7) - 0.25*min(std(fold_r2_f3+f5+f7 pooled), 1.0)"
+ },
+ "predictions_path": "/home/ubuntu/remote_super/quant/regression/43b4cc3ab0ebbd97/predictions/jain_prime.csv"
+}

@@ -1,0 +1,41 @@
+{
+  "algorithm": "torch_frame_resnet_regressor",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "6054656956182296",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.051004273002035916,
+  "metrics": {
+    "explained_variance": 0.9192496918807781,
+    "mae": 0.01744105415110661,
+    "max_error": 0.27778311348153306,
+    "median_absolute_error": 0.00984851046985196,
+    "mse": 0.0009158138442354992,
+    "prediction_max": 0.494048066584579,
+    "prediction_min": 0.0025690885040319245,
+    "r2": 0.9192494710888992,
+    "rmse": 0.03026241636478322,
+    "target_max": 0.7676,
+    "target_min": 0.0
+  },
+  "model_name": "torch_frame_resnet_regressor",
+  "n_features": 1000,
+  "provenance": {
+    "canonical_test_sha256": "924be0789def76c47dfef6e70f1cbf94ef9d889fa70675c491af89571fb1591d",
+    "canonical_test_target_sha256": "a59abf1d15c6849e9374836faf767c5281ba0c9a932b3ebb61ec49068bbc3125",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "b20483121d4393be9e423f7d97dbe827e5b4105c5c5a08ebcb941fdda5dd914b",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/6054656956182296/torch_frame_resnet_regressor/worker-receipt.json",
+    "worker_receipt_sha256": "a7d73d62e2b498eec4d6b682e247246cc03ca05e01d261cd5b545fc4b77ec66f"
+  },
+  "run_date": "2026-07-23T17:17:41Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 13.635744748055004
+}

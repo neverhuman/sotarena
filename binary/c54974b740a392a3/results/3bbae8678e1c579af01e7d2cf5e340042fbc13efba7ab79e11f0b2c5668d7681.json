@@ -1,0 +1,85 @@
+{
+  "algorithm": "NM_Recon_1ba663517364ab47_inverse_multiquadric_rff",
+  "dataset_hash": "c54974b740a392a3",
+  "dsl_expr": "(pipe X (robust_scale) (inverse_multiquadric_rff) (gbm depth=3 lr=0.1 rounds=150))",
+  "ended_at": "2026-06-30T01:09:28Z",
+  "environment": {
+    "created_by_binary_sha": "7ba20b75c9fbd93da7633ba649038b48eb6824052827752f8c31e2635307ea43",
+    "host": "xbabe2",
+    "newmath_binary": "/home/ubuntu/jmath/target/release/newmath",
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "runner": "complete-new-math-reports-v1",
+    "source_root": "/home/ubuntu/jmath",
+    "thread_limits": {}
+  },
+  "inference_rows_per_second": 1845.0704225352115,
+  "inference_time_seconds": 0.071,
+  "metrics": {
+    "accuracy": 0.9694656488549618,
+    "average_precision": 0.9925922288463818,
+    "balanced_accuracy": 0.9621327254305978,
+    "brier_score": 0.02529272222952993,
+    "cohen_kappa": 0.9330094604960367,
+    "f1": 0.9565217391304347,
+    "false_negatives": 3,
+    "false_positives": 1,
+    "log_loss": 0.09352048010710523,
+    "matthews_corrcoef": 0.9335332884083664,
+    "positive_rate": 0.35877862595419846,
+    "precision": 0.9777777777777777,
+    "predicted_positive_rate": 0.3435114503816794,
+    "recall": 0.9361702127659575,
+    "roc_auc": 0.9951874366767984,
+    "sensitivity": 0.9361702127659575,
+    "specificity": 0.9880952380952381,
+    "top_decile_capture_rate": 0.2978723404255319,
+    "top_decile_lift": 2.7872340425531914,
+    "top_decile_positive_rate": 1.0,
+    "top_decile_precision": 1.0,
+    "true_negatives": 83,
+    "true_positives": 44
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "n_features": 8,
+  "new_math": {
+    "created_by_binary_sha": "7ba20b75c9fbd93da7633ba649038b48eb6824052827752f8c31e2635307ea43",
+    "dsl_expr": "(pipe X (robust_scale) (inverse_multiquadric_rff) (gbm depth=3 lr=0.1 rounds=150))",
+    "receipt_schema": "BinaryClassifierReceipt v1",
+    "reconstruction_provenance": {
+      "algorithm": "NM_Recon_1ba663517364ab47_inverse_multiquadric_rff",
+      "kind": "reconstructed_current_jmath",
+      "operator_name": "inverse_multiquadric_rff",
+      "original_hash": "1ba663517364ab47",
+      "source_root": "/home/ubuntu/jmath"
+    },
+    "runner_version": "complete-new-math-reports-v1",
+    "source_kind": "reconstructed_current_jmath",
+    "source_root": "/home/ubuntu/jmath"
+  },
+  "newmath_receipt_path": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_1ba663517364ab47_inverse_multiquadric_rff/c54974b740a392a3/receipt.json",
+  "predictions_path": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_1ba663517364ab47_inverse_multiquadric_rff/c54974b740a392a3/predictions.csv",
+  "run_date": "2026-06-30T01:09:28Z",
+  "schema": "QuantBinaryReport v1",
+  "source_path": "/home/ubuntu/hyper/data/tabular/kdd-el-nino-small.csv",
+  "source_run_dir": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_1ba663517364ab47_inverse_multiquadric_rff/c54974b740a392a3",
+  "started_at": "2026-06-30T01:09:27Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 131,
+  "timings": {
+    "classify_csv_ms": {
+      "head_fit_predict": 71,
+      "parse": 0,
+      "read": 0,
+      "total": 84,
+      "transform_fit_predict": 2
+    },
+    "elapsed_seconds": 0.4325745105743408
+  },
+  "train_rows": 651,
+  "training_time_seconds": 0.002
+}

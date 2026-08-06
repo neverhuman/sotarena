@@ -1,0 +1,73 @@
+{
+  "algorithm": "tabm_capped_rows20000",
+  "dataset_hash": "4826cc47946dbffe",
+  "ended_at": "2026-06-28T19:47:13Z",
+  "environment": {
+    "affinity": [
+      42
+    ],
+    "cuda_visible_devices": "GPU-9e83373e-eb30-adf4-c998-7872231ae4ca",
+    "deps": [
+      "tabm"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super8",
+    "java": "/usr/bin/java",
+    "pid": 1034115,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 59709.295760612586,
+  "inference_time_seconds": 0.016747810994274914,
+  "metrics": {
+    "accuracy": 0.723,
+    "average_precision": 0.7193362175670367,
+    "balanced_accuracy": 0.5,
+    "brier_score": 0.20063942803588683,
+    "cohen_kappa": 0.0,
+    "f1": 0.0,
+    "false_negatives": 277,
+    "false_positives": 0,
+    "log_loss": 0.5907666545013224,
+    "matthews_corrcoef": 0.0,
+    "positive_rate": 0.277,
+    "precision": 0.0,
+    "predicted_positive_rate": 0.0,
+    "recall": 0.0,
+    "roc_auc": 0.8528044499702903,
+    "sensitivity": 0.0,
+    "specificity": 1.0,
+    "top_decile_lift": 3.3212996389891694,
+    "top_decile_positive_rate": 0.92,
+    "true_negatives": 723,
+    "true_positives": 0
+  },
+  "model_class": "models.tools.model_zoo.TabMSklearnClassifier",
+  "model_params": {},
+  "n_features": 50,
+  "run_date": "2026-06-28T19:47:13Z",
+  "started_at": "2026-06-28T19:47:09Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 2.3723650809843093
+}

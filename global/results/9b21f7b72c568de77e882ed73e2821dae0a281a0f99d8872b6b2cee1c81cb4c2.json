@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "3b5922eac04e65afa463f48c03b92a56759cc91f8bd17a15852dbb2cd90e747d",
+    "hyperion3test128dim.vs": "fa686c0b807fdee9a55411f02cb73eec5bf2bb7022a8296ba8a717c8f10e8d64",
+    "hyperion3train.vs": "dbbe8808159405658fd12f6d86f17b29fe53680f5f58654dd0ea20493409b8f1",
+    "hyperion3train128dim.vs": "6d5e1ad3e87c327d78512a67d670da06cab07e39df2f7dfd53e479cc7b652ff2",
+    "test3.vs": "9ae04518d33c85cd604c19ea5b31eb05eb704060516b6a2728069d95aedd020c",
+    "train3.vs": "13da05f2e45fada579d36c292b2899e44c891a5c0c173b8f07206b241ac17b49"
+  },
+  "counts": {
+    "augmented_features": 142,
+    "hyperion3_features": 128,
+    "raw_features": 7,
+    "test_rows": 999,
+    "train3_features": 7,
+    "train_rows": 1000
+  },
+  "created_at": "2026-07-10T10:31:19Z",
+  "dataset_hash": "f8536dfeef471c2f",
+  "dataset_name": "Fertility and Women's Labor Supply",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.12644446195140524,
+    "delta_vs_raw_selected_model": -0.05494610912640652,
+    "prior_best_r2": 0.07309813727776804,
+    "r2": -0.0533463246736372,
+    "raw_selected_model_r2": 0.001599784452769315
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "stacking_trees_meta",
+    "path": "/home/ubuntu/remote_super/quant/regression/f8536dfeef471c2f/reports/stacking_trees_meta.json",
+    "r2": 0.07309813727776804
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 63.121768173296005,
+    "raw_fit_predict_seconds": 0.1928599150851369
+  }
+}

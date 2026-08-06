@@ -1,0 +1,52 @@
+{
+  "algorithm": "tabfm_regressor",
+  "dataset_hash": "3f781a51af45387e",
+  "ended_at": "2026-07-03T05:45:57+00:00",
+  "environment": {
+    "cuda_visible_devices": "1",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 11.068258482359433,
+  "inference_time_seconds": 4.156028707977384,
+  "metrics": {
+    "explained_variance": 0.9992319287759333,
+    "mae": 0.003891697396402774,
+    "max_error": 0.01683935523033142,
+    "mean_absolute_percentage_error_eps": 0.026493045414414485,
+    "median_absolute_error": 0.0027334094047546387,
+    "mse": 2.783003631237835e-05,
+    "prediction_max": 0.7791818380355835,
+    "prediction_min": 0.01599825918674469,
+    "r2": 0.9991123134965701,
+    "rmse": 0.005275418117303912,
+    "target_max": 0.7866194248199463,
+    "target_min": 0.015315650030970573
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMRegressor",
+  "n_features": 3,
+  "run_date": "2026-07-03T05:45:57+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/seaborn-healthexp-spending-usd.csv",
+  "started_at": "2026-07-03T05:45:52+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": false,
+  "tabfm_model_type": "regression",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 46,
+  "train_rows": 228,
+  "training_time_seconds": 0.025251149898394942
+}

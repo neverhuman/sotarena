@@ -1,0 +1,77 @@
+{
+  "algorithm": "jable_regressor",
+  "dataset_hash": "3305a3ad973fb227",
+  "ended_at": "2026-07-09T23:54:08Z",
+  "environment": {
+    "affinity": [
+      45
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "xbabe1",
+    "java": "/usr/bin/java",
+    "pid": 758730,
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "cpu",
+    "sklearn": "1.9.0",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "gpu_device": null,
+  "inference_rows_per_second": 1385.3964876480197,
+  "inference_time_seconds": 0.02887260098941624,
+  "max_job_seconds": 1800.0,
+  "metrics": {
+    "explained_variance": 0.5680412223322597,
+    "mae": 0.11774797642688432,
+    "max_error": 0.7439764258908872,
+    "mean_absolute_percentage_error_eps": 545054.9074329622,
+    "median_absolute_error": 0.035421076444317676,
+    "mse": 0.04164086270957368,
+    "prediction_max": 0.6831505490504397,
+    "prediction_min": -0.014435630907990327,
+    "r2": 0.5646462367945552,
+    "rmse": 0.20406092891480643,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "models.tools.jable_regressor.JableRegressor",
+  "model_metadata": {
+    "seed": 17
+  },
+  "model_name": "jable_regressor",
+  "model_params": {
+    "seed": 17
+  },
+  "n_features": 2,
+  "run_date": "2026-07-09T23:54:08Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/rdatasets-drc-g-aparine-dose.csv",
+  "started_at": "2026-07-09T23:54:00Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 40,
+  "train_rows": 200,
+  "training_time_seconds": 5.915835262043402,
+  "wall_time_seconds": 5.944707863032818,
+  "xgboost_device": null
+}

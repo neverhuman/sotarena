@@ -1,0 +1,355 @@
+{
+  "benchmark_valid": false,
+  "cohort_sha256": "59c1d77bcf252a7d816ef215ddb1043d27b24a80dbb08ae200a6747c123b50c2",
+  "datasets": [
+    {
+      "dataset_id": "5a0e19c34d002a9a",
+      "predictions": "results/external-references/binary42-test-adaptive/5a0e19c34d002a9a/predictions.csv",
+      "predictions_sha256": "46d03c840045292ce3c9aab39b42b92e54dbe0d3d1cf015a0988705e91b3b13b",
+      "report": "results/external-references/binary42-test-adaptive/5a0e19c34d002a9a/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "7dafefbf536e8f51b8cb106095fdf4a51dacde65639b6afd62a103f4dd9350d4",
+      "selection_kind": "qualified-checkpoint"
+    },
+    {
+      "dataset_id": "865f829ebdf98492",
+      "predictions": "results/external-references/binary42-test-adaptive/865f829ebdf98492/predictions.csv",
+      "predictions_sha256": "969b30a8b72d37fbb7104a8e6d85e8b412e0e10769bc58a712eec5db49be7202",
+      "report": "results/external-references/binary42-test-adaptive/865f829ebdf98492/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "ef625626ba37965efdf2c787fed16f67a407596b0ff6ea54caa0dc6609985274",
+      "selection_kind": "qualified-checkpoint"
+    },
+    {
+      "dataset_id": "32d67bf055ab6e7b",
+      "predictions": "results/external-references/binary42-test-adaptive/32d67bf055ab6e7b/predictions.csv",
+      "predictions_sha256": "03b4607e1fcfbea6ca3325089b605f38f60d92bb427197e17c4a69e99f592636",
+      "report": "results/external-references/binary42-test-adaptive/32d67bf055ab6e7b/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "b0ed55b7688e3ee6f191620a98739664049e5c22c04d7d27c7857ff810ad2c22",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "962a35a53b0803a8",
+      "predictions": "results/external-references/binary42-test-adaptive/962a35a53b0803a8/predictions.csv",
+      "predictions_sha256": "6853a26f6a6ec21f81015070d237877e87cd23570786d0db0e01eddbb5fe649d",
+      "report": "results/external-references/binary42-test-adaptive/962a35a53b0803a8/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "0684e7e705080ca528bf6f34b99a89c424e582ad89bc4b788181dd61ef4e5289",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "63722a5ad9789899",
+      "predictions": "results/external-references/binary42-test-adaptive/63722a5ad9789899/predictions.csv",
+      "predictions_sha256": "b84f8ffc82858a009d7d3f143b92d4221817890a6c1c6c3ea9392e3a6c35971c",
+      "report": "results/external-references/binary42-test-adaptive/63722a5ad9789899/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "9d9d0baf8c45c575faa0b13b4b14540e26e5645320c5533ab568a607efc5e032",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "c816093e547343b5",
+      "predictions": "results/external-references/binary42-test-adaptive/c816093e547343b5/predictions.csv",
+      "predictions_sha256": "2a428c33f5a042615eb5ecd2ad12e71de5536b37d58879b95c8ae7f0ee102de7",
+      "report": "results/external-references/binary42-test-adaptive/c816093e547343b5/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "8444900489f65d859db9c65de182ad27cda11be5a7b912792964664bcafe74f7",
+      "selection_kind": "indexed-strict-win-replay"
+    },
+    {
+      "dataset_id": "127a1b76fe96adad",
+      "predictions": "results/external-references/binary42-test-adaptive/127a1b76fe96adad/predictions.csv",
+      "predictions_sha256": "30d4eaf0702b4cc4955b8ce1f0c92c63f3b565a6d867a606d6a401710a40e7a8",
+      "report": "results/external-references/binary42-test-adaptive/127a1b76fe96adad/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "2efbf7f7f9128970f2448ed88a75da70d9f338368e96fa5cb370f1dc266292cb",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "9ca13534df43f24d",
+      "predictions": "results/external-references/binary42-test-adaptive/9ca13534df43f24d/predictions.csv",
+      "predictions_sha256": "c8d39e6c7b7029d352aac8d74380c619eb1aae4720a082940490d2bf82d065f4",
+      "report": "results/external-references/binary42-test-adaptive/9ca13534df43f24d/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "bbd6f4799bf111754e01f68efb95025a7a5e40b194cfa0497b955d9bbe4b0b6c",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "1b46745dbbcf9494",
+      "predictions": "results/external-references/binary42-test-adaptive/1b46745dbbcf9494/predictions.csv",
+      "predictions_sha256": "54883af51c6f5ff24f014e7619de99f3eee21421691b1494b36549f2359f5e7e",
+      "report": "results/external-references/binary42-test-adaptive/1b46745dbbcf9494/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "c8b5390d238f196225026b719445bc4c859c24207b19947bdca4201249994e3f",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "0936cfa7201f9f56",
+      "predictions": "results/external-references/binary42-test-adaptive/0936cfa7201f9f56/predictions.csv",
+      "predictions_sha256": "0e056609c5d982ec0ac092b0e00a8ecc4e800dfe431ffa9056217eb20637c846",
+      "report": "results/external-references/binary42-test-adaptive/0936cfa7201f9f56/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "e06e073ae910e4d1329aeceb5967af0012b20b00a6950c1d8f1f391b0441c76e",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "21a6177fdb3eae79",
+      "predictions": "results/external-references/binary42-test-adaptive/21a6177fdb3eae79/predictions.csv",
+      "predictions_sha256": "1d9220a0b6b154ea765aa4ea2c710b620c25e96d266bc68acf1385c9304a0bdf",
+      "report": "results/external-references/binary42-test-adaptive/21a6177fdb3eae79/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "b36faf13d9f238b4ed7e602d4f34332fca286ce2d9c644b9df43bb6f2041666e",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "85120759b4e72997",
+      "predictions": "results/external-references/binary42-test-adaptive/85120759b4e72997/predictions.csv",
+      "predictions_sha256": "dfee336fd606a253d191f19c67c154da579cada8749d19bc5521075eecf1d32c",
+      "report": "results/external-references/binary42-test-adaptive/85120759b4e72997/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "c54e795377920077c22846cf33963016566ee3dfac5a4aa3789589ff98e8efe8",
+      "selection_kind": "winner"
+    },
+    {
+      "dataset_id": "a9c29ca0abc484be",
+      "predictions": "results/external-references/binary42-test-adaptive/a9c29ca0abc484be/predictions.csv",
+      "predictions_sha256": "bc16b8066c34344f385ac4e9c5b013079d9249f9c100ea438298182475ea7403",
+      "report": "results/external-references/binary42-test-adaptive/a9c29ca0abc484be/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "e9fe7b64764b0a65f4ed998dd97b6639c626863bac0b91f58e57f205f1f2e991",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "2fd60e8a5f05b7fd",
+      "predictions": "results/external-references/binary42-test-adaptive/2fd60e8a5f05b7fd/predictions.csv",
+      "predictions_sha256": "e4add00d6ff9687fb05a6700e87365bd0d1d441f6081d6056e749c580728aefd",
+      "report": "results/external-references/binary42-test-adaptive/2fd60e8a5f05b7fd/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "cf30f6e117b43055359bc05a9822313759299599eccb903f4148eadf06a8a60f",
+      "selection_kind": "winner"
+    },
+    {
+      "dataset_id": "fcd74a7f31328927",
+      "predictions": "results/external-references/binary42-test-adaptive/fcd74a7f31328927/predictions.csv",
+      "predictions_sha256": "93d844f9bef223c9e4d2add8f9dad484ec43c7f46a8929c938af05817f46a1dd",
+      "report": "results/external-references/binary42-test-adaptive/fcd74a7f31328927/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "e22812fcc3b3b0bac8d7259597ec5103b5880660d4d1bb661ac157af5977d1d9",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "c18dc25530725088",
+      "predictions": "results/external-references/binary42-test-adaptive/c18dc25530725088/predictions.csv",
+      "predictions_sha256": "2e14a996b03bcafa8cf16e5c23a8b53ef19247cac1ca289ca1af4087b352cd96",
+      "report": "results/external-references/binary42-test-adaptive/c18dc25530725088/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "b8a39df4681154f75876c905e15baf0b16bee4f271cb9b930ba111145361eace",
+      "selection_kind": "winner"
+    },
+    {
+      "dataset_id": "9ff9d337d31b02e7",
+      "predictions": "results/external-references/binary42-test-adaptive/9ff9d337d31b02e7/predictions.csv",
+      "predictions_sha256": "d65cdc1e8cda5792cd6b482e811f1a947dd2327266f7fbd64f775fd8f4a6c2be",
+      "report": "results/external-references/binary42-test-adaptive/9ff9d337d31b02e7/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "1e327a633d3846df935f0e7caedb8887ad3ffdc9eefba4259bd8f771c33a8255",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "7bd4c609c8fc6af5",
+      "predictions": "results/external-references/binary42-test-adaptive/7bd4c609c8fc6af5/predictions.csv",
+      "predictions_sha256": "69c01b69fb0816019fb7e723bb6395c523e930c27a3ebb14e161c65c6689f29a",
+      "report": "results/external-references/binary42-test-adaptive/7bd4c609c8fc6af5/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "fcf3712c42295901031e4c53135f3e99014008c4ea2fb006376653b3883a61b6",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "0f8a6dd4ec7cbb5c",
+      "predictions": "results/external-references/binary42-test-adaptive/0f8a6dd4ec7cbb5c/predictions.csv",
+      "predictions_sha256": "d79a47a05bc0b4074e9f96b0d2e9ccf3d09b447a3869e310286851a332cfbaad",
+      "report": "results/external-references/binary42-test-adaptive/0f8a6dd4ec7cbb5c/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "bc407520da174f84403eca7a1f970b058e24bcc5fe4c4b901f20859f9627b41d",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "de602a22ad99eec3",
+      "predictions": "results/external-references/binary42-test-adaptive/de602a22ad99eec3/predictions.csv",
+      "predictions_sha256": "8dda52ab22f3aed95127a353b5278aaba0ca643a9cbc735d224d0ef68aef8cb3",
+      "report": "results/external-references/binary42-test-adaptive/de602a22ad99eec3/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "5f17833fe2efde5e4c227b20f8d65d22f24eeca7fae1edae269b58f86924b858",
+      "selection_kind": "winner"
+    },
+    {
+      "dataset_id": "695124699b412d0f",
+      "predictions": "results/external-references/binary42-test-adaptive/695124699b412d0f/predictions.csv",
+      "predictions_sha256": "b408c75575c8f7774400dbd1da7110b0a841f24f1152f6c2b3c4032c71bffcb4",
+      "report": "results/external-references/binary42-test-adaptive/695124699b412d0f/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "ff55f09b7d5923fe631c86c737daec6303abdc2964ab92e2b649fcf9bed256a3",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "8a13750dca58f373",
+      "predictions": "results/external-references/binary42-test-adaptive/8a13750dca58f373/predictions.csv",
+      "predictions_sha256": "cbcfe6eb082165c663cf2aaded93e8f949ac6dcecc691aece11be00493b86e57",
+      "report": "results/external-references/binary42-test-adaptive/8a13750dca58f373/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "d7cf6f66224b845d288004c0c5a88a22a028a25a91e5e2deb6e8bcb2a612420b",
+      "selection_kind": "winner"
+    },
+    {
+      "dataset_id": "a1c2b79cde5c2f7c",
+      "predictions": "results/external-references/binary42-test-adaptive/a1c2b79cde5c2f7c/predictions.csv",
+      "predictions_sha256": "2ca32a2a7326e3bb2bc65a6a09a373ccccfdd859ca8af796befe3342927ed511",
+      "report": "results/external-references/binary42-test-adaptive/a1c2b79cde5c2f7c/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "cd6cd63cc1ae7a3372d2519e27b3a521796988a23083cbce59e672aa9d731dd2",
+      "selection_kind": "winner"
+    },
+    {
+      "dataset_id": "0832e53e181e9f1b",
+      "predictions": "results/external-references/binary42-test-adaptive/0832e53e181e9f1b/predictions.csv",
+      "predictions_sha256": "be79b5db33c0477db161ad18d03483d9816320fb88f50e0d444ed0bd3abef096",
+      "report": "results/external-references/binary42-test-adaptive/0832e53e181e9f1b/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "e0d54b9eb6e2af104d53a7367b95a01f652a5c7dc5888121a6a7309912cd64a4",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "4826cc47946dbffe",
+      "predictions": "results/external-references/binary42-test-adaptive/4826cc47946dbffe/predictions.csv",
+      "predictions_sha256": "5049f52c38269e051e8cb77c518db8aa6985e72bf2c18d01f4cff8816c23c3d3",
+      "report": "results/external-references/binary42-test-adaptive/4826cc47946dbffe/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "b1a42e149cae5bb591aa2b097ce52cca75cf657ea217e4c9dce8868e8bb60bf7",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "a31b5837cb3a919f",
+      "predictions": "results/external-references/binary42-test-adaptive/a31b5837cb3a919f/predictions.csv",
+      "predictions_sha256": "d7642d8b2c6a7016e6bc00b072a43a8bf0f9b16a4256f28e24074511beaeacfb",
+      "report": "results/external-references/binary42-test-adaptive/a31b5837cb3a919f/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "99b952f0815d5e0351d406eb511e305eb3c245551b5653cdb43fff35954b673d",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "bde2040d63cb1d9b",
+      "predictions": "results/external-references/binary42-test-adaptive/bde2040d63cb1d9b/predictions.csv",
+      "predictions_sha256": "5998736b8f20b93f535418efe06bb1182073a7d0936f3323009abc251caafd79",
+      "report": "results/external-references/binary42-test-adaptive/bde2040d63cb1d9b/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "749693992ba24d74c3d6fa884b0d7317c2de8caa38274bbb04c5378aac1c445d",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "142ed0a36920369a",
+      "predictions": "results/external-references/binary42-test-adaptive/142ed0a36920369a/predictions.csv",
+      "predictions_sha256": "af6c1f10a40685fd848623181805c15c2b96c2010e034dfbb7b555d15e72f12f",
+      "report": "results/external-references/binary42-test-adaptive/142ed0a36920369a/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "9b3d3eb66ecf4bd74ed4f91ba5aeac02ed16c106b6ce965a990f93ec33255dff",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "d9553a9cc619172c",
+      "predictions": "results/external-references/binary42-test-adaptive/d9553a9cc619172c/predictions.csv",
+      "predictions_sha256": "14671d75491e3385cf236bd4db68fc4f99e96a1bcd3ed0e6f4b59c8768c60cf3",
+      "report": "results/external-references/binary42-test-adaptive/d9553a9cc619172c/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "bf554c6ef125bc146852af981e999887d3ff952c8dd4fb47c41042aef94b84f6",
+      "selection_kind": "qualified-checkpoint"
+    },
+    {
+      "dataset_id": "509117eb61621015",
+      "predictions": "results/external-references/binary42-test-adaptive/509117eb61621015/predictions.csv",
+      "predictions_sha256": "13ab26fbc603a2f3aff4994f21f33ac5ac1c18fb6d11a0251d01412e9d7f1d03",
+      "report": "results/external-references/binary42-test-adaptive/509117eb61621015/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "b12b58ab082c602b14f30092e7da758d3ec4a6c8e0b6627d85ecc40076d4bb90",
+      "selection_kind": "indexed-strict-win-replay"
+    },
+    {
+      "dataset_id": "c98cb891d794dfcd",
+      "predictions": "results/external-references/binary42-test-adaptive/c98cb891d794dfcd/predictions.csv",
+      "predictions_sha256": "e4aeef6617bc69050c9e88296d91d119494d408a61a95b23731b7a4caf1875a4",
+      "report": "results/external-references/binary42-test-adaptive/c98cb891d794dfcd/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "819860e9c77d3f6dae75d1087620963b144c3542cd59fbe1eccaa2f23e35a69a",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "bbff0b7733f33315",
+      "predictions": "results/external-references/binary42-test-adaptive/bbff0b7733f33315/predictions.csv",
+      "predictions_sha256": "b74500f0ce70ba94f7c9eb38ed0d5d1f3199cc6aa8f1bec0e3e2caee4251c762",
+      "report": "results/external-references/binary42-test-adaptive/bbff0b7733f33315/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "604e8330d4a4a5a8024e9bd8595f724fb5b07635bd7b9213b417704c5ed82653",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "ae6eaf903e14b30f",
+      "predictions": "results/external-references/binary42-test-adaptive/ae6eaf903e14b30f/predictions.csv",
+      "predictions_sha256": "03d5171c7b4a2d271f2dc321f20feb76931d1a23c8d39a1d30c0b44076a27a24",
+      "report": "results/external-references/binary42-test-adaptive/ae6eaf903e14b30f/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "75c0300cde6109b4d8d9e7e1e3dc176862daea76812e27c40cbdd15af82becd8",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "a5110bc75977b78a",
+      "predictions": "results/external-references/binary42-test-adaptive/a5110bc75977b78a/predictions.csv",
+      "predictions_sha256": "7bafe4bbdf61c7012274158174856da610a4ded6d895f199a7a3cb196b95e1c1",
+      "report": "results/external-references/binary42-test-adaptive/a5110bc75977b78a/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "2f21932bfda7368244774743674f355873b90c8ea970d945a29f1b5df1a01d18",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "e9fd3a8dd326418c",
+      "predictions": "results/external-references/binary42-test-adaptive/e9fd3a8dd326418c/predictions.csv",
+      "predictions_sha256": "4215f391080371a7c0ed59add9567b5c407a0d5a1197872a25d6170e6ca07d53",
+      "report": "results/external-references/binary42-test-adaptive/e9fd3a8dd326418c/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "798c8f1ccaed86ec405720fe101b62a08b326f3986a121706abc13467ea8e532",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "5a4e21c520a20dd3",
+      "predictions": "results/external-references/binary42-test-adaptive/5a4e21c520a20dd3/predictions.csv",
+      "predictions_sha256": "ce366dbada780a787aa15c719309c5c1f3fe1e0960d503597f00d4d31aaf5b27",
+      "report": "results/external-references/binary42-test-adaptive/5a4e21c520a20dd3/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "4b5c34b49f4591eabd4392f7422ae94e18d60a272deca070a58fe1ac839bef95",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "ed9a06689daf9d3d",
+      "predictions": "results/external-references/binary42-test-adaptive/ed9a06689daf9d3d/predictions.csv",
+      "predictions_sha256": "fd60f060d4d9956ed43588a3d9a3ccc6ddaa21853d29f1dddba5d6a1ecce62bd",
+      "report": "results/external-references/binary42-test-adaptive/ed9a06689daf9d3d/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "d24418a95855576ff79c450f0c56d09ed029b7b076e224b2fdf6d25fc9087618",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "c54974b740a392a3",
+      "predictions": "results/external-references/binary42-test-adaptive/c54974b740a392a3/predictions.csv",
+      "predictions_sha256": "d6850245a92770e81907a699efbf6ffa7141d8b0d32a848ad79134bed7fe8612",
+      "report": "results/external-references/binary42-test-adaptive/c54974b740a392a3/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "e691b04d884ac9d604b146b58655d7dde17e660706693bfce27a7d130b6b4f15",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "09c82f5b5cf9016d",
+      "predictions": "results/external-references/binary42-test-adaptive/09c82f5b5cf9016d/predictions.csv",
+      "predictions_sha256": "1dab2ad3dd996ca895df3a4ba704b9e7ade4355066b81f8a18999190e5a95ab6",
+      "report": "results/external-references/binary42-test-adaptive/09c82f5b5cf9016d/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "2d7297ba41e45a0143d286d0c56247377c734c764a07ee65bc5e4a84b650d91f",
+      "selection_kind": "qualified-checkpoint"
+    },
+    {
+      "dataset_id": "e1526748f0c9c8db",
+      "predictions": "results/external-references/binary42-test-adaptive/e1526748f0c9c8db/predictions.csv",
+      "predictions_sha256": "b80b394391518f8e03ca70396665193d221aabe200905b9ed49469fa8604bc87",
+      "report": "results/external-references/binary42-test-adaptive/e1526748f0c9c8db/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "e80d8852499fbb94aaa6d7ce087461f98169fba7f69eebe6e678d231def40797",
+      "selection_kind": "qualified-checkpoint"
+    },
+    {
+      "dataset_id": "afef0e882daa67a8",
+      "predictions": "results/external-references/binary42-test-adaptive/afef0e882daa67a8/predictions.csv",
+      "predictions_sha256": "30e73de0ef3c4e9272002893392e3a707880917137edf4b02a0316cbc19dbaf1",
+      "report": "results/external-references/binary42-test-adaptive/afef0e882daa67a8/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "2cb4ffbe44412645cdc72342dfc527ff839dffa04681afbca4d48b3c488927de",
+      "selection_kind": "best-effort"
+    },
+    {
+      "dataset_id": "131bfb9d9a06f343",
+      "predictions": "results/external-references/binary42-test-adaptive/131bfb9d9a06f343/predictions.csv",
+      "predictions_sha256": "cf3ab20764fc91e4c569ec3e2a772573597f365acc61f8abec57f92d03d03990",
+      "report": "results/external-references/binary42-test-adaptive/131bfb9d9a06f343/aspfm-binary42-test-adaptive-v1.json",
+      "report_sha256": "92f23a294fdf40357c683ba999425416685bb2cb282e2b4c5afa18306a8d44be",
+      "selection_kind": "best-effort"
+    }
+  ],
+  "diagnostic_exclusion_audit": "results/tabular-binary-v1/aspfm-diagnostic-exclusion-audit.json",
+  "diagnostic_exclusion_audit_sha256": "8a9de09b3e52ba82c437fedff956a7e191dc798cf159c19cd2fe6d45bbfba02e",
+  "indexed_replay_datasets": 2,
+  "method_id": "aspfm-binary42-test-adaptive-v1",
+  "pending_datasets": 0,
+  "qualified_checkpoint_datasets": 5,
+  "run_id": "binary42-test-adaptive-all-v1",
+  "schema": "sotarena.binary42-test-adaptive-publication.v1",
+  "selection_datasets": 42,
+  "terminal_datasets": 37,
+  "terminal_selected_datasets": 35,
+  "test_adaptive": true,
+  "track_id": "tabular-binary-v1"
+}

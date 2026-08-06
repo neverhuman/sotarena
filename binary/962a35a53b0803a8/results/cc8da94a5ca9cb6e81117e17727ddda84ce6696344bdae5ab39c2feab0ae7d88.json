@@ -1,0 +1,74 @@
+{
+  "algorithm": "catboost_ordered_trees500_depth6",
+  "dataset_hash": "962a35a53b0803a8",
+  "ended_at": "2026-06-28T17:53:59Z",
+  "environment": {
+    "affinity": [
+      59
+    ],
+    "cuda_visible_devices": "",
+    "deps": [
+      "catboost",
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super10",
+    "java": "/usr/bin/java",
+    "pid": 1072409,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 62370.60484958817,
+  "inference_time_seconds": 0.001571253000292927,
+  "metrics": {
+    "accuracy": 0.6938775510204082,
+    "average_precision": 0.42086204369287233,
+    "balanced_accuracy": 0.5427286356821589,
+    "brier_score": 0.2200717265743047,
+    "cohen_kappa": 0.10420475319926881,
+    "f1": 0.25,
+    "false_negatives": 24,
+    "false_positives": 6,
+    "log_loss": 0.7204983289898281,
+    "matthews_corrcoef": 0.12357101023217273,
+    "positive_rate": 0.29591836734693877,
+    "precision": 0.45454545454545453,
+    "predicted_positive_rate": 0.11224489795918367,
+    "recall": 0.1724137931034483,
+    "roc_auc": 0.687656171914043,
+    "sensitivity": 0.1724137931034483,
+    "specificity": 0.9130434782608695,
+    "top_decile_lift": 1.3517241379310345,
+    "top_decile_positive_rate": 0.4,
+    "true_negatives": 63,
+    "true_positives": 5
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 10,
+  "run_date": "2026-06-28T17:53:59Z",
+  "started_at": "2026-06-28T17:53:51Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 98,
+  "train_rows": 485,
+  "training_time_seconds": 4.090050405007787
+}

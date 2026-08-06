@@ -1,0 +1,52 @@
+{
+  "algorithm": "tabfm_ensemble_regressor",
+  "dataset_hash": "7af85a04de0c7018",
+  "ended_at": "2026-07-03T08:46:15+00:00",
+  "environment": {
+    "cuda_visible_devices": "6",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 10.03283038397627,
+  "inference_time_seconds": 12.160077997017652,
+  "metrics": {
+    "explained_variance": 0.9999786041913533,
+    "mae": 0.0008060972314697353,
+    "max_error": 0.0035388690986222354,
+    "mean_absolute_percentage_error_eps": 0.0025030666069254053,
+    "median_absolute_error": 0.0006600356723721612,
+    "mse": 1.1104882099855585e-06,
+    "prediction_max": 0.9793054879568684,
+    "prediction_min": 0.08608377002100286,
+    "r2": 0.9999775715660103,
+    "rmse": 0.0010537970440201276,
+    "target_max": 0.9817073345184326,
+    "target_min": 0.08962263911962509
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMRegressor",
+  "n_features": 14,
+  "run_date": "2026-07-03T08:46:15+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/uci-bike-sharing-day-bike-sharing-day-day-target-cnt.csv",
+  "started_at": "2026-07-03T08:45:01+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": true,
+  "tabfm_model_type": "regression",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 122,
+  "train_rows": 609,
+  "training_time_seconds": 61.2694134489866
+}

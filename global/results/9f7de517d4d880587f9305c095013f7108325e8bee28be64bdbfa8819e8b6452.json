@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "6f9b501764738e990cd55556b75a53e10f93cc455c462501c1481295b07477c9",
+    "hyperion3test128dim.vs": "12071f650ad2bdbfc697199ca48333b3afedc0a7cc2d37bebc6583fbdddabbaa",
+    "hyperion3train.vs": "87256b3d9582c2af35e0f5f38aa544151d30910f5c243f16a3568ce47f1c8795",
+    "hyperion3train128dim.vs": "f2aa712d64e40f873a574acc70cb41f44870cfa3de99382109d9c8f980cdd3be",
+    "test3.vs": "fa2b2be8d6894f1c4a2fe220bfdf78ee49b20eb09ca8baf78315aa7084bf96fe",
+    "train3.vs": "754a3d622dbe9c0553aec41af16e71a9898124708ade966f1b6cfecd770485ac"
+  },
+  "counts": {
+    "augmented_features": 142,
+    "hyperion3_features": 128,
+    "raw_features": 7,
+    "test_rows": 999,
+    "train3_features": 7,
+    "train_rows": 1000
+  },
+  "created_at": "2026-07-09T18:31:53Z",
+  "dataset_hash": "c7d815714ca52bce",
+  "dataset_name": "Voting Intentions in the 1988 Chilean Plebiscite",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.0366142896227698,
+    "delta_vs_raw_selected_model": -0.006033777666085149,
+    "prior_best_r2": 0.515035545486147,
+    "r2": 0.47842125586337725,
+    "raw_selected_model_r2": 0.4844550335294624
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "tabicl",
+    "path": "/home/ubuntu/remote_super/quant/regression/c7d815714ca52bce/reports/tabicl.json",
+    "r2": 0.515035545486147
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 79.8334722421132,
+    "raw_fit_predict_seconds": 0.32445625169202685
+  }
+}

@@ -1,0 +1,1360 @@
+{
+  "accepted_binary42_fast_lane": 2,
+  "all_catalog_winners_added": 0,
+  "diagnostics": 67,
+  "excluded_binary42": 65,
+  "records": [
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "0004ff1bec07b7a0",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-49ae7b1bab345bd040e7f40b/0004ff1bec07b7a0.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6933343358772887,
+      "semantic_sha256": "f3ff5925e8366ee9743d5a1781015b9ad3be8c71362bd63f7322789923150436",
+      "task": "binary",
+      "test_sha256": "284411b3b4e9d71c4c330f5ce58065bdf69c31f8074423a876f5d1b8f1fc4d8c",
+      "train_sha256": "2813782af8f6bd74456b98f572aee767175c7a1c65d95b292d7f0be86c05a4bf"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "0014a84d6c5b8693",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-5763dbf5ef0e5ee19dbea6a9/0014a84d6c5b8693.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6216565656565657,
+      "semantic_sha256": "690bc7f4624b77f6e1c362b7b86ad15adaa10fc604ada8771c95ac0e1f38187d",
+      "task": "binary",
+      "test_sha256": "88b728c2a74639e9a80e2726bd2565d8d6dd2d998782f976288623f9eddf250a",
+      "train_sha256": "e3f91982a0b7189ba9dfd8ea368bc8977240ce4617e6a4785c63e6747f8bec7f"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "0028441ffefbb055",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-ae0f9f17010b2c9cfd8ac401/0028441ffefbb055.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6034103985772571,
+      "semantic_sha256": "91d8b505838250303fa5710a3ff3ee5b2e2920fb53e3c5afea622ed820a2328d",
+      "task": "binary",
+      "test_sha256": "9a543362dbcbd426a1e9c37812d2458f154d99495b218dc20ed85f04265616be",
+      "train_sha256": "63bd25e1acf90da9da52358f7b553e8b517fc28b0978ba5c8f16713b19d4576a"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "005567e48c9a8163",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-730e0f20fe5ff995ce5fef88/005567e48c9a8163.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6201425744808604,
+      "semantic_sha256": "bfea3c6e21969a89706f2bd10892255831bbba10950fdf64a1e46cd76b91b402",
+      "task": "binary",
+      "test_sha256": "dee4fc8be8dc2cb03d4da03bc38919efc79f840749840fb8d02a0d77c8002cf4",
+      "train_sha256": "87d35f9a89f3d17a7f68d262cf8943f7cbe395e7d588a47999933ee23967318b"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "corrected",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "005d1229af72c215",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "predictions": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-69c7697660929cf7becbab78/predictions/614c6ef1b6c7af403fc060991bd2ed3ebad6b0e9fcf6de0552113c50a5a1dafd.f64le",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-69c7697660929cf7becbab78/005d1229af72c215.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6521227690058858,
+      "semantic_sha256": "614c6ef1b6c7af403fc060991bd2ed3ebad6b0e9fcf6de0552113c50a5a1dafd",
+      "task": "binary",
+      "test_sha256": "480596c2a1438cb5b6ed4be54e8f5d92afd684ec49689315bc40f32b50728819",
+      "train_sha256": "ed2a84d4e5e9812195cb41e7b7ccd1999aaca87d332d3c95f4166b400e27095a"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "008b0e07ace50d23",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-ae48aeb45c7676d1d89c4106/008b0e07ace50d23.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6359087604261219,
+      "semantic_sha256": "3e10a0072f7503f1aa2e2ebf98f59d4f7c24ef9b8bbfa710fce8614840f14de8",
+      "task": "binary",
+      "test_sha256": "26fc8b13b0c4826d3caaa092af0dc94ca7a1750aa1ac511006dc43dc9b9f599a",
+      "train_sha256": "6df76033c51b1992b7dbca42912133806fb3b9e466af06f3b7390e36b420f856"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "00aa1f29538e4cfd",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-3e7aecb6307e3fb98df47999/00aa1f29538e4cfd.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.5908555856553147,
+      "semantic_sha256": "208fe886d45f160d09b2a4f982fb085301c35ba386fe1494618d3ccc35fc5762",
+      "task": "binary",
+      "test_sha256": "37aaa633c16d37eb4ec1d8be51ca523763507b5d0f2f484ce6b0c972c90bdb8e",
+      "train_sha256": "52bf11fa82f68b0f90ab89051daedfa9f33b7ebabae2d53776b987c2366786ac"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "00b18840a3014654",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-49180a34a232e4db6094a9b2/00b18840a3014654.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.7787217172146235,
+      "semantic_sha256": "4108ddf94980fc845069b72a550fa56f54b8197531671e8d713420777f1d4840",
+      "task": "binary",
+      "test_sha256": "7f8ec9fc910960ba5145c20631d6374a54042e4f619e086cbfb6149087be6092",
+      "train_sha256": "7f9de5425aeea82f49242ca66103e9eca9ac51d22f1f91ef712fa71946e4bd85"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "00cc51be9f4c601e",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-69e8101b5ddcdffb9e21923d/00cc51be9f4c601e.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6590464353712714,
+      "semantic_sha256": "907b7c6cbaeb7fd998ecb46573abc9adc61561611d9626c18af7c149032b72ba",
+      "task": "binary",
+      "test_sha256": "6b2489b67b3bcf8db956aae5b94e6d8669ba6fe58b4d99596c14bdbe330e4f68",
+      "train_sha256": "702033e577acd5e7d4659ff6394c1bab134a43f88e47c93b52f544f0eb4d671d"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "00d5bbbe6dc15c19",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-1397ff650e7b2f68d7b04f54/00d5bbbe6dc15c19.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 1.0,
+      "semantic_sha256": "b5a8b88449ecbb444cd88e868180d224eddc76a3dedddcfad7dd2f5ac7447e57",
+      "task": "binary",
+      "test_sha256": "97d4f5b9270215d7f7633eda6ccabb0fb3bb9c4bbb052dcb8ae3ae2e6aa574d0",
+      "train_sha256": "440ae688858a3928083365246ff57d8b5ec5b79cf4a47fe7e16bb0396bed8de1"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "00e7544cd5451d04",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-bb7b72465fe1429032a048da/00e7544cd5451d04.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.7394111570247934,
+      "semantic_sha256": "2a28afd0ed53283802b1d82e70a3648b35012b76a1cc97d65551b82360d55e2a",
+      "task": "binary",
+      "test_sha256": "cbd1450c282153b03ee66a0b2ec2ff0eea610c50f4bebfa89ed34ffe545e0e78",
+      "train_sha256": "5e41692aa3d195c8f89fa6be60647be2e227631e99e07f20af1d3b322d25cdc8"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "00ee40b8f18fa573",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-5c42554012b149440aaba4b3/00ee40b8f18fa573.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6449302658686422,
+      "semantic_sha256": "a7c4782ac147a9c1cb373bafc2b73c5cea1d33f572df09d59a1e1799ff7725ce",
+      "task": "binary",
+      "test_sha256": "5f00578df670fb702afdbaa9b0e1693b26f33df10a03398581aff878e1542952",
+      "train_sha256": "df46d2c548298f71783a5ceebd7f88f3f7f96b63018a1cbace471e242206c7be"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "00f2bd1a867fd7cc",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-429b1573107d39aeff1f3980/00f2bd1a867fd7cc.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6537065235557371,
+      "semantic_sha256": "153d42bc309e4e764d32e585fad8823b46ef0170ad39f185e6c52a1814c5a0a4",
+      "task": "binary",
+      "test_sha256": "d8b521798caf2e653b3b32b043c1c0b8d97c7f4901b036797e54259acb8dc61f",
+      "train_sha256": "d50b1a0dd201e5f1a8ab5f2d5bde606b4d289364bb2f3016df0349ad862f40da"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "010399fed7d85e2c",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-59ad58d6f1cf39a5c4032a56/010399fed7d85e2c.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6276278552658177,
+      "semantic_sha256": "58bf55faadbee979625c044273b24839cb6b4cb85a38f21c5dbc10ae14bc5074",
+      "task": "binary",
+      "test_sha256": "0cfcee9d1480aff66ea95ffbcf9b94f74382f5d1e441652f18fbe76733dadef6",
+      "train_sha256": "91ec48221b123237fe28151b2070279c3c2ae90adfcbcec6bc064419b8d45c13"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "01123c9e38f8f9dd",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-30c479c846029992bfc15120/01123c9e38f8f9dd.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.5448965375479627,
+      "semantic_sha256": "1b6f9bac3f9b43d5c2e31b69b16469014da04cff94d48dd92d401f3bb9874c18",
+      "task": "binary",
+      "test_sha256": "09201b6d4dcc5c53840f6ffa66446f2d1aab7e52bd25e1a5a5e0e8268a5b6b21",
+      "train_sha256": "3177e015658b5231f20a3200a3066f433dc446aaa88d1b301b89f51b95dcf165"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "013381c7b1835470",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-b2b505f5c7f806b8733dfcfe/013381c7b1835470.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.9676508901432913,
+      "semantic_sha256": "0d6d398d5bcd063f12ee865cda65d2a0bb35dba85368964f6fca765eb187cf3d",
+      "task": "binary",
+      "test_sha256": "0f36da742c06e9cb05f90889503709973d0daddeec72ee68240af1274b2ad1c1",
+      "train_sha256": "e31dfa767ce48e6512ce3c86adfa4d568c9d2dab7e6b467c4e474f6c6c063159"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "0139a71fcebb05b9",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-58063549772452f819720f4b/0139a71fcebb05b9.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6571393265369169,
+      "semantic_sha256": "25efd90cdb1969f5c7c82ad02234c9f2146cff29c630864c1a03d1db438fcf4a",
+      "task": "binary",
+      "test_sha256": "e4565fef99db2b5a07a50bdc956e0ebe5102d3cfeeaabc439ab4ba5525c1f843",
+      "train_sha256": "7fb3f0ccb0338c436ec28fdba9240ca3ee7c381158d4097c76cdca62f96ef815"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "0153cf3ba6559bbe",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-5b1a01e86a36f5a897e51f2e/0153cf3ba6559bbe.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6085253075191126,
+      "semantic_sha256": "99868abf4eb2c7910ef024dd5b49b67e6b0c24da3c4c9ee71cacd19023280809",
+      "task": "binary",
+      "test_sha256": "065673b01393a64d7b09b4ae911349998a37175ce11f0c31661cf8fcc9618437",
+      "train_sha256": "109d308e40e03cada579f9826d3af628b858f1f79e5843065cd989be49c36a34"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "0175b101f01ef4e5",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-5df08b969a1fb0b45adc7794/0175b101f01ef4e5.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.641997746356003,
+      "semantic_sha256": "db6129ff34a0e60e0e969498be59f464301a633250645f5319862fd620bbca9b",
+      "task": "binary",
+      "test_sha256": "499cc20511cb34546f8b22aff9790ae89c1f8a33137a76e909ffdd96c2fda6e3",
+      "train_sha256": "d1b62512a135f35cd69f71075e2d43408c1f91fa3a9108765fbb688d96c6579d"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "01888f58df42e293",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-43202b7c1f4d80a9341eb115/01888f58df42e293.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.7264071498999201,
+      "semantic_sha256": "1a8a705bcaf911838c328f969cbb737ae327c220a4768c62c17c1ccd12957bb2",
+      "task": "binary",
+      "test_sha256": "31ec7e7b79b9b9c0c9051ef832cb2e8c513c767bba0f318885d13247f4a90b35",
+      "train_sha256": "fca77d4f9c3a88968ab644a1b6a430389734ea4b9a1569a9c7c23cca4d98a32f"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "corrected",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "0195cae59bcb643e",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "predictions": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-6d4ac24688a3b2fac34a5a26/predictions/8de1674c1c308557a2de35dce7c69421e83feaaa59ff4b043267ef9e2a3149b0.f64le",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-6d4ac24688a3b2fac34a5a26/0195cae59bcb643e.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6287376703514134,
+      "semantic_sha256": "8de1674c1c308557a2de35dce7c69421e83feaaa59ff4b043267ef9e2a3149b0",
+      "task": "binary",
+      "test_sha256": "7bacb0912852735e073947ef5aecafba2e20cf47875413ce72ae45d5f39f8643",
+      "train_sha256": "9eab8ae06607bba58e252237211e130441801cfed04e3a48bd0d457815c1ebbc"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "019f38834bb2c955",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-27cb11db25c218ec51b74173/019f38834bb2c955.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.5403314519322696,
+      "semantic_sha256": "66f1604b2a74e1960dce012e3d9ca0ffe4102279941fa4f0d4467871b8703359",
+      "task": "binary",
+      "test_sha256": "20a8505e544d7cc3a0da2289cc308c30df3433bd0b65423753b3cec98f2e07ff",
+      "train_sha256": "9e3402628839d94f650a68e7c76a71055556227ac016e03d3cc9603b50119610"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "corrected",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "01a871b4c31d7f91",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "predictions": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-48d4f0d6eb69f4508d32d152/predictions/bb8c38270031a90f320c7d0b770e83b525e60fe360713d46ae03002783254050.f64le",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-48d4f0d6eb69f4508d32d152/01a871b4c31d7f91.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6453732226457126,
+      "semantic_sha256": "bb8c38270031a90f320c7d0b770e83b525e60fe360713d46ae03002783254050",
+      "task": "binary",
+      "test_sha256": "586aa00ee98e0c72d02dc3c83858c7d7f1855d1ecfb278a68c0e22084aa6f2df",
+      "train_sha256": "c941e316dd982e013b8ce6d94a7d8d113284d694b3a04f6bc588bcf2ba463afe"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "01af4fa6c10604f7",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-55804d569485aacdca0e6b1a/01af4fa6c10604f7.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6930061658896643,
+      "semantic_sha256": "2e381a55714321d02adb7f1ab8eaedac9dba37a0e8c275db36547f9e82da0630",
+      "task": "binary",
+      "test_sha256": "e36cca9ad4f636da6f15295523fe3fd40f4f4627d962826d75dcf1fdec91327c",
+      "train_sha256": "86935f8b4adc969a6c316a3bbe3b8a5837dff79aec20851fa142178c67db2404"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "01cd62f050377f76",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-69242bff3001beb638f70a1d/01cd62f050377f76.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6203640856958875,
+      "semantic_sha256": "e3b4ed53a287383c21e9e9c6dcfe6bf328bb12c4a9864dedb38ec3fa4a44370a",
+      "task": "binary",
+      "test_sha256": "4614f90ee6c10467d4de8956bfa511d2a589baebd4ea3ced1ec8fb82dcd7ae45",
+      "train_sha256": "b9176fe586a2fedb01d2b63b9c349916f10765ef7c87b7d1149974c4e553903b"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "01ce29f93ec27448",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-157b463fa07df8c4d8c3c787/01ce29f93ec27448.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6242077100515834,
+      "semantic_sha256": "321f562d6d62be18178f47d078d888aaefb4d11c003e6db61a55c1f9aa3f143f",
+      "task": "binary",
+      "test_sha256": "0bf6eb12e8e23d7b6e612944332f6e48a7dfe6ede5d3bf8d01867215592c2820",
+      "train_sha256": "432912f917a74d1e29b1e75a53bec61ed0d4b5903a4ddf4a0aa0b5c78750d556"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "01ce8a95fb88c556",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-62cb02f5abb13d452659e943/01ce8a95fb88c556.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.5977039331404366,
+      "semantic_sha256": "63670be8e4df75f4cf4444035e8c68576423e3e4bedad49cc9f9c5ef52abe604",
+      "task": "binary",
+      "test_sha256": "db673e32b9028a0b886048d21f25f2509a800689e2afb94b0142c4817a2148d0",
+      "train_sha256": "a9cc4c574831a865c4b2032073a638853124ada5410c7528c381e447d7e993d3"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "corrected",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "01e68e757432e961",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "predictions": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-a2ce55f15498c3324abff178/predictions/4ab02ece7c84355d596db0bd51afd7f1cb5c907c07e572a779feef17c916dc28.f64le",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-a2ce55f15498c3324abff178/01e68e757432e961.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6212386186986454,
+      "semantic_sha256": "4ab02ece7c84355d596db0bd51afd7f1cb5c907c07e572a779feef17c916dc28",
+      "task": "binary",
+      "test_sha256": "90d764968ca153251a4a9ef49651ce46cdda78241b8cb496737a2f1d3f9ee0bb",
+      "train_sha256": "330b8b4cde94fdb376c066ebe1019f39c20889e39fb220a0aec00e5475255859"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "01eb22d3bbaf399c",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-1fd52b418fe948780f8508d8/01eb22d3bbaf399c.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6809087180082121,
+      "semantic_sha256": "e0c3bec30dffe1907964ab606f06c27dbb546003f8ff22404df719658331f34d",
+      "task": "binary",
+      "test_sha256": "1e3f5688f6e8d2e80af036d79fbc9cd4a9a1939dbb941c916b3b84e96075ba5f",
+      "train_sha256": "f7e0c3c3fbd114f1f5bd9d83f6799164bf22e3401a7c08272ce33ebac0e96c7a"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "020681c4f0b0dac4",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-62ed4c2579b1dd6a39404901/020681c4f0b0dac4.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6362917925382076,
+      "semantic_sha256": "17c58409e22ca056c35a212b2250ba5704edbd18bf617a8518fbaa3658dde890",
+      "task": "binary",
+      "test_sha256": "0c93672e97d70617daf8927a79e4cfe4da6f2e5696bf9862580a23577edd42db",
+      "train_sha256": "b497adeff8935c207334224836ee859b48eebfd4b7cf509645a5666c9f96d44c"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "corrected",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "0257dc8027e96c4d",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "predictions": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-5df8d73680be3d27c417241a/predictions/9c6a4ca2bdc8d516691abfb12045539b5be711c645d91e596fbf9fb704ab7b7c.f64le",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-5df8d73680be3d27c417241a/0257dc8027e96c4d.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6396984562112249,
+      "semantic_sha256": "9c6a4ca2bdc8d516691abfb12045539b5be711c645d91e596fbf9fb704ab7b7c",
+      "task": "binary",
+      "test_sha256": "7aed88707ade869193c6106e2ba0bf4186fef28366f09cb1248d26eb8bbdee58",
+      "train_sha256": "927e2b66ab5b62837c593247d18e190798c0b39957bc7421ef973ce55e8d5c9c"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "corrected",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "0280595b7116fc06",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "predictions": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-153b5d932f67ca983ef5dae9/predictions/c3a93484f97137f899c0750a16107c3c7d75adce150a45ffb66dfa7ad696ab5b.f64le",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-153b5d932f67ca983ef5dae9/0280595b7116fc06.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.9947916666666666,
+      "semantic_sha256": "c3a93484f97137f899c0750a16107c3c7d75adce150a45ffb66dfa7ad696ab5b",
+      "task": "binary",
+      "test_sha256": "c58053ca61cb5a2cdce2383307abf6da405f219ccdcf61acfbbc7700f5991d62",
+      "train_sha256": "584266411a595394e426c9de862e3c5f8cbe268ecba3c3e534cba3097f28e7cd"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "029bd5d6c2cef053",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-7f752735c4176225fb8820cf/029bd5d6c2cef053.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6516706448733638,
+      "semantic_sha256": "b9463828852ae6fc32a2c6eaba5e52799a88fdf8e892ce2d81f3c2c9b5434f3c",
+      "task": "binary",
+      "test_sha256": "de64b3efd0ebd814e1bdf2e7256405dc18316a673d655aee6c31a53865ae6f0d",
+      "train_sha256": "68dec78a92f79bbafcebcc85064d117d7aec3f6e89fe86fc09cf02bb969a1e53"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "02d78c9a82b6be56",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-c0f04bf1944b73203bef8164/02d78c9a82b6be56.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6356200092251313,
+      "semantic_sha256": "4906d5ba05e05596daa800730cf1292abebbeadce761ba8f06e739ed1e9491a2",
+      "task": "binary",
+      "test_sha256": "c18e8bd502e8c9f28f47e615ca060de208c801d3d55ecf027e96a49ead8cc14f",
+      "train_sha256": "7d528b68145655a6bd3188aec20c58bba14cd51ee074bdd414888e49fb7db7fc"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "02d90fc3637dc463",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-c27d2b2ade40a6118ef2bc6e/02d90fc3637dc463.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6160417675068985,
+      "semantic_sha256": "4e2c58f97c5d33b004a5213f6b86998627857fb14dbe8bf5fa5a83956a07394f",
+      "task": "binary",
+      "test_sha256": "d13593b0fe63dc9c4ba31c6e6b652cc73d565d76fa9d40276482bb4048969afa",
+      "train_sha256": "2fec51e0210c8c3f053f2badca76b1a6c2c948f6c96969171213c0a0754e6756"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "02fe0fc29b1ff22a",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-0cdde3b43d8ef97f38ffd59a/02fe0fc29b1ff22a.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.5903808517639724,
+      "semantic_sha256": "f8b02d7c55fe6fd1881891770c98cf2e8bba28e5a5f5d8a35def1b246d69bc06",
+      "task": "binary",
+      "test_sha256": "7ec60006f4ffd43435edc604d5196fc1a9fcf3e999dd222c1e4518881fc2d35c",
+      "train_sha256": "1ed5cee33b9c9948bd6ce92823a994f62dfdb06a506452b4a2ef13a8dbef38bf"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "03124bcf7f8791c1",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-0f7e91b63820644c9feb867e/03124bcf7f8791c1.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6626011362064272,
+      "semantic_sha256": "7e4f932a57993cfc781f9e98841d336ffc27a42d4d5999f9c2d722b15e726619",
+      "task": "binary",
+      "test_sha256": "92a5dc4993bfdc93be63ba23621d01808ea4f0e827726d84a4cbc27b131f5c25",
+      "train_sha256": "a0700f3e50818d97e35679206b3670a9421b48cdbb78e6bbbca8a50abaf55588"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "03374cb3135aaad7",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-b28befa4c8c391e4fc8c3cc1/03374cb3135aaad7.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.5993003264276332,
+      "semantic_sha256": "1c13dda06baad951aaef65886f935b021ce224b276207118ae2c78e36937d0e3",
+      "task": "binary",
+      "test_sha256": "5b976ae9b45635a621843b5ac4c53ad3b649e078b616267d6a01176116b6aaf7",
+      "train_sha256": "35c073246c7910e67a2fc610095fef0d76dfa2bd2de1c6be4cde9afb1ba9204a"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "0353bb877d892005",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-805a3a10bf1e754c67e4a160/0353bb877d892005.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.5377766044256708,
+      "semantic_sha256": "78bb64baba69974bb410f5d2b04286a3fd6f75201f40177667d707994b34e656",
+      "task": "binary",
+      "test_sha256": "02101880c4a33bdda337b6ba7c933ee1919d4c2e39bcbecda9af844122047c27",
+      "train_sha256": "40c8da4ec8ec00d229c34ea34bc248dc0bf6867c9a8cabe6e5471fa1fa047823"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "036cc16f87449541",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-d327a69225a7030f60e945a7/036cc16f87449541.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6511824435846989,
+      "semantic_sha256": "85451105c5767815900eec9d6b6dc5b18fb24423081a593aa9fa629217e0b3ef",
+      "task": "binary",
+      "test_sha256": "eff727c840e03559b4b0cca59ba4f57c65891265654dd5f5d0c6c46f7430254c",
+      "train_sha256": "2daf4e36f9ee41e4e6725c783128a2f38b8628b00cc25b7ce31a53ee103b4b38"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "037b532374e94234",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-fea611ea686b6051ed379d1d/037b532374e94234.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6186372589674477,
+      "semantic_sha256": "62fd04aec732d1055e3c69d731662df12fe6089f070199c305c24646de66b90c",
+      "task": "binary",
+      "test_sha256": "dcc067abadfac803171c5727e08b6c7b7b2ae5ce6f66d7d8e48a2822dd0e2e63",
+      "train_sha256": "bdac2b1e8a058eecff462ad7269ae5377048d85380622eb4abaf05332ee01dfb"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "0392e28d37ee1b2b",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-2128ac29ee27109e2c9e162b/0392e28d37ee1b2b.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6903047405893705,
+      "semantic_sha256": "3e7901c0102e4aacc8287304a9bb8bf193e2688a7f055581bc97732ba4dd4ac3",
+      "task": "binary",
+      "test_sha256": "31fb4309eddb6455cb6c0ebd42b75c92385c3b847081002d071384f6fc3723c5",
+      "train_sha256": "06f5a4ea00765a90c5cb09965cc226f832eaf003e98f7b6052e32604caaa53ac"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "0396e8c5f50c7e96",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-c0dfd8c49350090590d1b143/0396e8c5f50c7e96.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.5943828184394222,
+      "semantic_sha256": "af53d9cf5b9591a74bd9be2716c6514f5543e2f21bcf06482fe89885cb702192",
+      "task": "binary",
+      "test_sha256": "8780219bfe1708376692196b1147132efa583a84643ca0c9702a774b3ec381c6",
+      "train_sha256": "343c000cefd6dc5e8c021fe313d698641e446e3b2c96d0da05e757c2e6c076f9"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "039e4833fff5135d",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-b37027e1897cee0c50af8102/039e4833fff5135d.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6124961526623577,
+      "semantic_sha256": "c58aa522df3e66d2962b1ea4c6799df78dcae5ed8e73fd13700061efbc576ef3",
+      "task": "binary",
+      "test_sha256": "7fa7a6829c92cc172a40a13b3c3dd7400bd5bfe1913e99ef92bf0dfb5d5a88a9",
+      "train_sha256": "7ee6d8bc1db34c4520c59a2a3a8bc3033565f407450cfa68a82d15788355c659"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "03b6f4ababba0dc6",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-f4784b72fb68284f03680333/03b6f4ababba0dc6.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.5663557498432709,
+      "semantic_sha256": "7f9a1f7053b9aa280c60fad9575b7f46592df69574e2d4eae2b877e896e9bcb8",
+      "task": "binary",
+      "test_sha256": "a5302424148c81701fbbfd7257126c962ffc9bd1e821347cc6efb486a7dbaed9",
+      "train_sha256": "70ab9577034a18e19e01af1acde259d921ba107f2889e1c3cd324792b84d296c"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "03c356afdb629e88",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-726e8c27ea25279071fc44e2/03c356afdb629e88.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6346481933583665,
+      "semantic_sha256": "f95226ae9aa09efe646d4e7300c3b40c5dda79afa62016d3e83a0f068cba40de",
+      "task": "binary",
+      "test_sha256": "23b0c9259e0ea63f46bf0a9def6ba40c312df93bfdb2e041b89cba96e74d075b",
+      "train_sha256": "b939f9feb6ff8b8f1db9dce40dd4cf5f036d7d86ac2636b5731d29e3765d10a3"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "corrected",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "03c6f5d1e550d1ab",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "predictions": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-6f1e656f428be06008e132d9/predictions/61a548f57c00c2d5090600f103e3f3d09cad076dffc7e8140f2448eb9e4a257c.f64le",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-6f1e656f428be06008e132d9/03c6f5d1e550d1ab.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.5914128605094826,
+      "semantic_sha256": "61a548f57c00c2d5090600f103e3f3d09cad076dffc7e8140f2448eb9e4a257c",
+      "task": "binary",
+      "test_sha256": "cd4c8f24fb157e5bbf137f7210a9a784fa87d3bda4b97e51f7d0fc518a73f9d2",
+      "train_sha256": "eea796485ccbf10382d245a5bbe45759bd943c7e44b85ec19b55938b67abed92"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "03c9c80720ad0189",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-2aff80e08450dd059c0eae76/03c9c80720ad0189.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.624136328563412,
+      "semantic_sha256": "11d4aba362c1d2be0e6ab3ee32ebc858f77fbeddf1008b5227fa0f3d5eb62cc5",
+      "task": "binary",
+      "test_sha256": "f81a17c7630e3dd4131c0cfa88b75c434e9fc554d1c585a554ae851024909595",
+      "train_sha256": "cef8781b5c27e2280bbede59136cad6a3b3eeccce94f88422f5780fca20817b4"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "corrected",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "03d6892edd9ca433",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "predictions": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-542e5b3ee6ac4e905f29ed12/predictions/edca40a50d07b41b7f3e7e2a53bdcc72d138e8d36bd5c2823266221618d6c63b.f64le",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-542e5b3ee6ac4e905f29ed12/03d6892edd9ca433.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.9880952380952381,
+      "semantic_sha256": "edca40a50d07b41b7f3e7e2a53bdcc72d138e8d36bd5c2823266221618d6c63b",
+      "task": "binary",
+      "test_sha256": "e83b5203e12fa2c575bf97967d70433dd2f4e96f1b651e7b5691b3b201935092",
+      "train_sha256": "f69426e067c29eaf70aa99fecaf687b4944d84c8090d783e9ca8abecb71f4d11"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "corrected",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "03e5713bafec004d",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "predictions": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-7abb40c0305263f928344add/predictions/c441bce5fd91a813d53ff2cd07223f21c8fca4ab7c104902ab52fba2c367d67d.f64le",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-7abb40c0305263f928344add/03e5713bafec004d.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6510150176091435,
+      "semantic_sha256": "c441bce5fd91a813d53ff2cd07223f21c8fca4ab7c104902ab52fba2c367d67d",
+      "task": "binary",
+      "test_sha256": "75a09f31a68b5df17bc1a1e19761eb4c138b2a02dacb635b36660dbfddbaa454",
+      "train_sha256": "57caa4391f2c24e25ec9c0d9c9716b08b7b9b6594e37c2b52b30ab50bdee8968"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "0408ecc7575ce1b2",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-386269db83ce9067d55d2f26/0408ecc7575ce1b2.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6373741435057211,
+      "semantic_sha256": "a5d26dd257187199f9befcadef611e7dd88147b6244b06162ad67cc4f54b89fc",
+      "task": "binary",
+      "test_sha256": "76f596d4605116cfc1b836a85c96b92c0b8a6b7d80d27a068aa81a655310835e",
+      "train_sha256": "68ae070a3be4ace24223fdd064e8d661b5de400b6c99224a133d0b1bb5846a5c"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "041767969e99f176",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-04de38ff39312573d674afc8/041767969e99f176.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.66005291005291,
+      "semantic_sha256": "3c41ea55c55e936ba1bd702b984cb479d963d43620033d2951368812113e9c41",
+      "task": "binary",
+      "test_sha256": "db39a48ab8079d929ef2fa35a25bca80368dcc3fd572a47307830dd8cfaa4178",
+      "train_sha256": "b291dc9011ce07f602634cd9c34f44bed713fd70cb1b4a2185f13ac6d7a37827"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "0448b3e7336799dc",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-a0ba72c4cc01c4b159e43085/0448b3e7336799dc.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.7398787878787879,
+      "semantic_sha256": "8ad950077e474b06048ec9d3cc181ed8168cd4cb8e0116cba9af0df228d8a358",
+      "task": "binary",
+      "test_sha256": "7fdca61b32097f2a5e6eb40ebfc05a8fd6f8d30bb9a70445fc1eddd4de82d2c5",
+      "train_sha256": "38eb321d713a9c2dee821ccf2af75564a41d4eb09d620d8da3108814afb70c01"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "045ce5c0ed818b7e",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-28e5372ae415144624cb27e1/045ce5c0ed818b7e.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 1.0,
+      "semantic_sha256": "8065b306c2ea02d08253bd5452b65a1c3882fccbdc0151c8035357267153193b",
+      "task": "binary",
+      "test_sha256": "bcefea43446adb91b0ee12b8eb62baa0debd1061f938ee98fb5792d0b20cdd4b",
+      "train_sha256": "ad4fe83b6fcc10260f0873315058bcdbac859efeeab515a641df93bcce587e6e"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "04653397477ef975",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-acf3cd9ae64eff0b99762999/04653397477ef975.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6703488,
+      "semantic_sha256": "8a4ce429d379fcb9b90f4ca570c1b65e3c8c7b0b8b1c0ca670aff5793b5662df",
+      "task": "binary",
+      "test_sha256": "6cbdc8d24436e04fd433af418bd2ae48bfc003ba5e6c3031d594b580d76f6659",
+      "train_sha256": "9fa5d700dd3b8d2bb690d797d983c371f0ad325ca1ae0dbb61a165b9d2cfebd2"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "04997b6030b6fc07",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-4ecd9d5cd4fe79a9122b8629/04997b6030b6fc07.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6245150997150997,
+      "semantic_sha256": "47eae83adcaf1de9adc536ca150aa861581aa7287301bd06fd1ba4025dbf4358",
+      "task": "binary",
+      "test_sha256": "0fe128f016360c0cdc060c237963b2fc5f5045c65ded5f87f58261981ee42ef5",
+      "train_sha256": "666c3148e6c0cf0cc1d923fa9edebd4ab44e3218246fd20e0b6f8f2b3ff818d3"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "04bbc6f11ecf7a27",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-56dc630b323ed9a0e4ef1541/04bbc6f11ecf7a27.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6692618069997689,
+      "semantic_sha256": "04a088f810b0e4ade127bea40a5010b548d3218e727ddf6c35689876ea6643a5",
+      "task": "binary",
+      "test_sha256": "49edafcd7105fd7b41c7a127cd31a47f919c0ea30e2f73160af9f3890f7708cc",
+      "train_sha256": "0147481f89debf85fa009a50aceeeb9fbd51740a8c5f874b9ef1e71d9076bb2e"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "04d8ab05a51a06eb",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-58e36b1a89642110d3f08871/04d8ab05a51a06eb.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.5907062100001844,
+      "semantic_sha256": "007d7edc8d2fb0fe784f007b41fba5424b482d6e165c89808c45e31668403752",
+      "task": "binary",
+      "test_sha256": "a82493a49cb072b6673b11fe87dade732f5acc8efd58b7fd32115d32c3032c34",
+      "train_sha256": "a496c7e7dc26af53e1a03f3f0c5685233f113b3bed9d5f42085cc5dca8607daa"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "04f022d19b408549",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-594dc258119cfc25bfce0308/04f022d19b408549.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.8001035434882651,
+      "semantic_sha256": "99868abf4eb2c7910ef024dd5b49b67e6b0c24da3c4c9ee71cacd19023280809",
+      "task": "binary",
+      "test_sha256": "aeb3a66ce2e2c22f02afcee7ef3c945e6a777aa360c2d6db7057c7a1124166c6",
+      "train_sha256": "b931a8ad8e88d565f6438d7ad87a1346593fd7b0c53424e7fc61e33add5d8a25"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "corrected",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "04f8ff677227ac97",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "predictions": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-4ebe17a746373fe1b61331de/predictions/b02a329faff7d4c9a0a280d95de27eb5ce60cb68fc8b6bce3f6ecf7a5b30a9b1.f64le",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-4ebe17a746373fe1b61331de/04f8ff677227ac97.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.67619812583668,
+      "semantic_sha256": "b02a329faff7d4c9a0a280d95de27eb5ce60cb68fc8b6bce3f6ecf7a5b30a9b1",
+      "task": "binary",
+      "test_sha256": "84c38c78000fd7dd0d38038bf98c919efb1cb532cfc4c9a5e909f4adc44c1532",
+      "train_sha256": "da59090a3edfa8b3cc3c92cbc6d82e7619b52e03438c65227e89abe70516df99"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "050ae503a655c5a8",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-908d48839d2c3a8421073cd7/050ae503a655c5a8.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6787600082464164,
+      "semantic_sha256": "ccf833dc2905cbf0dabb96aedc9fa5628c0879c2351c89441f7586ed745bd860",
+      "task": "binary",
+      "test_sha256": "3821dc69b5a72f51de7689e5f2d0f836706170ff87109fb546ae3cd4e88d2228",
+      "train_sha256": "d4782223072631fef43793e9d4378a0cdd15586ff5776d38eb435b8af282f72d"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "not-binary42-frozen-cohort",
+      "dataset_id": "053262c99e6b386b",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-1ab6b78a0d3cf027f79ff376/053262c99e6b386b.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.6793085072023771,
+      "semantic_sha256": "0e20e74c5cc07cde43c37057b636b10d2560ef9696cd5bb3b2cb44a6514348ca",
+      "task": "binary",
+      "test_sha256": "26155b0ea9a97b21c47f5bc2e6600f918b8b8d1f298905560daf25655049fc30",
+      "train_sha256": "c37d842b63d850820e6ec885c038768cbdb07df2e953f7cbec051ff99a26a647"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "binary42-content-hash-mismatch",
+      "dataset_id": "0f8a6dd4ec7cbb5c",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-48687e0755ecd97d4db97bb2/0f8a6dd4ec7cbb5c.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.8469408761528326,
+      "semantic_sha256": "e9bdbbc3ecbfd2acdb4f9d518b48a0b87a5ca56dfdb6ba18eb5fe30c59183882",
+      "task": "binary",
+      "test_sha256": "b40b116e93698ccbf0b04a63da634420490ee8d24086674aaf4c74fce1716335",
+      "train_sha256": "abb457360ad3e62ba0e7609977e48e6bdc9a622ec43f98256867a9a1dd6fb469"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "binary42-content-hash-mismatch",
+      "dataset_id": "32d67bf055ab6e7b",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-53d25cd1cd84d3ca84c68ad8/32d67bf055ab6e7b.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.8564771668219944,
+      "semantic_sha256": "b365c300be78db4ae7a364965cb0f51ba67a3b211d398fc504f87528506e375d",
+      "task": "binary",
+      "test_sha256": "22caa837c4e103bed0b0317aa5945a0234ce592e4095d9516de5938abc5c236a",
+      "train_sha256": "638bef411c56f99d2f0922ab6f5609a8b1e6c9a08135cccff9943f1825d73c3f"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "accepted-binary42-fast-lane",
+      "dataset_id": "509117eb61621015",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-a0cddc5709b559529397ff1e/509117eb61621015.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.9431034482758621,
+      "semantic_sha256": "75ef70d6ab4ad8e068d31b60ac540091b1715bd41e77e9eedaa81183af8510fc",
+      "task": "binary",
+      "test_sha256": "6d42bb865dead78b82bc7d5a6074682f5427ce7143bdadbab64cfec26e0e27cd",
+      "train_sha256": "773fcc456f4c27863bb64153d3f07c5293f58e83d16af3f54ac35c8023b9044c"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "binary42-content-hash-mismatch",
+      "dataset_id": "a1c2b79cde5c2f7c",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-b502aec7b72b1613fb41cd1f/a1c2b79cde5c2f7c.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 0.94,
+      "semantic_sha256": "6af40fe0fbf02278aff2f38f723d266af5cfa36a407f3218652a908f95facf01",
+      "task": "binary",
+      "test_sha256": "6fc2c28e4507b863510ad809eef0922eeffec154fb98b4f37593582770dcd709",
+      "train_sha256": "de1474638e0edc315dec215a81e323f5ed66ae334c29ea64820206bcc154e5f7"
+    },
+    {
+      "all_catalog_exclusion_reason": "missing-required-all-catalog-comparator-coverage",
+      "authority": {
+        "corpus": "legacy-superseded",
+        "requires_fitted_cpp_confirmation": true,
+        "strict_win_sealed": false
+      },
+      "binary42_disposition": "accepted-binary42-fast-lane",
+      "dataset_id": "c816093e547343b5",
+      "evidence_paths": {
+        "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite",
+        "receipt": "/home/ubuntu/jope-flywheel/test_exact_gen0/receipts/jte-3017e5357c5da9cf560def26/c816093e547343b5.receipts.jsonl",
+        "strict_wins": "/home/ubuntu/jope-flywheel/test_exact_gen0/indexes/strict-wins.json"
+      },
+      "score": 1.0,
+      "semantic_sha256": "59c3f51e91604944e156528571dc9d43ecc90bce8c25ab62fe861c12028d577f",
+      "task": "binary",
+      "test_sha256": "dd55eb2a5e6cbbe6c70851de65d7790c2a7e365f373f6fadd106dced46b7a5f5",
+      "train_sha256": "892e72cee01f00a1399d43f5f1f63d0da40c873de75e3d49ca7d0f045c14d01b"
+    }
+  ],
+  "schema": "sotarena.binary42-indexed-diagnostic-exclusion-audit.v1",
+  "task": "binary"
+}

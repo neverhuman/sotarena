@@ -1,0 +1,41 @@
+{
+  "algorithm": "hyp3_chimera_regression",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "a3bd0a400ec4d7f9",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 309.0822938930942,
+  "metrics": {
+    "explained_variance": 0.9591146804814495,
+    "mae": 0.13393491708119712,
+    "max_error": 1.768263102722168,
+    "median_absolute_error": 0.07122683162689203,
+    "mse": 0.04881181904920682,
+    "prediction_max": 5.847019195556641,
+    "prediction_min": 0.17033861577510834,
+    "r2": 0.9560122883702363,
+    "rmse": 0.22093396988513744,
+    "target_max": 5.8397,
+    "target_min": 0.0077
+  },
+  "model_name": "hyp3_chimera_regression",
+  "n_features": 665,
+  "provenance": {
+    "canonical_test_sha256": "398556c974e2fae1eefc40d5e5ed5030eb22fafb192fadae582b9a62e0c93a89",
+    "canonical_test_target_sha256": "764d725105dae1f1d0f03aa62a05fe66b1d3ca39d5eb8592c7ac8d02155ac1da",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "ac935e8fef25472b1bbd3dd673d507aee809193c553f218e2042a10758caadbb",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/a3bd0a400ec4d7f9/hyp3_chimera_regression/worker-receipt.json",
+    "worker_receipt_sha256": "49c355787eb0fdc7b94c707229c951311500e148acdbd700b61f1d73e48b7c5f"
+  },
+  "run_date": "2026-07-23T12:33:39Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 0.0
+}

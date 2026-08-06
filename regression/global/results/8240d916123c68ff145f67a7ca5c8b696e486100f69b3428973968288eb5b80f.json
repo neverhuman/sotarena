@@ -1,0 +1,59 @@
+{
+  "authority": {
+    "corpus_watermark": 1668,
+    "corrected_observations": 183,
+    "legacy_published": 0,
+    "legacy_superseded_observations": 1485
+  },
+  "benchmark_valid": false,
+  "candidate_policy": {
+    "excluded": [
+      "probes",
+      "validation experiments",
+      "NM_*",
+      "Jain",
+      "Jable",
+      "Chimera",
+      "generic GPBoost"
+    ],
+    "included": [
+      "jope_gp_v1",
+      "jope_prime",
+      "jope-lime",
+      "jope-dime",
+      "corrected-aspfm-flywheel"
+    ]
+  },
+  "catalog_datasets": 2322,
+  "diagnostic_strict_wins": {
+    "included_in_winner_count": false,
+    "publication_authority": false,
+    "unsealed_or_pending_fitted_cpp": 1601
+  },
+  "exclusions": {
+    "dataset_hash_mismatch": 0,
+    "excluded_candidate_family": 135114,
+    "incomplete_report": 2310,
+    "invalid_authority": 0,
+    "legacy_superseded": 1485,
+    "metric_mismatch": 50,
+    "missing_predictions": 1836,
+    "missing_replay_evidence": 21,
+    "missing_required_comparator_coverage": 26,
+    "no_comparable_incumbent": 9,
+    "nonfinite_metric": 1419,
+    "pending_parity": 2,
+    "prediction_hash_mismatch": 0,
+    "strict_tie_or_loss": 1,
+    "synthetic_or_non_catalog_dataset": 0,
+    "unsealed_strict_wins": 1668,
+    "unsealed_strict_wins_binary": 67,
+    "unsealed_strict_wins_regression": 1601
+  },
+  "published_winners": 12,
+  "schema": "sotarena.winner-exclusion-audit.v1",
+  "selection_bias": "test-selected",
+  "task": "regression",
+  "test_adaptive": true,
+  "track_id": "tabular-regression-aspfm-winners-v1"
+}

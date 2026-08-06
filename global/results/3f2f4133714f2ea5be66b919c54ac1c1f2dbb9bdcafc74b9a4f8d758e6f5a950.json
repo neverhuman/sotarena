@@ -1,0 +1,174 @@
+{
+ "report_schema_version": 2,
+ "algorithm": "jope-lime",
+ "dataset_hash": "d2daf53412ab18dc",
+ "task_type": "regression",
+ "status": "completed",
+ "started_at_unix_ms": 1783940221293,
+ "finished_at_unix_ms": 1783940236314,
+ "rows": {
+  "train": 255,
+  "test": 51
+ },
+ "features": 18,
+ "timings": {
+  "load_secs": 0.025605,
+  "search_secs": 5.016032,
+  "gpu_kernel_secs": 7.227856,
+  "finalist_cv_secs": 5.629068,
+  "fit_predict_secs": 1.373457,
+  "total_secs": 15.021268
+ },
+ "model_class": "jope_lime_genome",
+ "model_params": {
+  "engine": "featmath",
+  "fitness": "v2",
+  "pop": 96,
+  "top_k": 2,
+  "gens": 40,
+  "folds": 3,
+  "search_rows": 768,
+  "actual_search_rows": 255,
+  "gpu_kernel_configs": 131072,
+  "evals": 4544,
+  "search_engine": "feat_math_evolve_lite_race+battle_gpu_gpr_mixture_proposals",
+  "seed_battery": {
+   "kind": "lite",
+   "note": "cheap train-side seed battery: no gen36 neural proposals (droppable, ~34s CPU, gave 2/31 seeds and never the winner in the floor test). Sources are cache-only reads.",
+   "sources": [
+    "own_champion (X's own champions.json champion, train-side OOF robust)",
+    "z_neighbor_champion (champions of the 5 cosine-nearest TRAIN datasets)",
+    "global_top10 (greatest-hits: most frequent featmath champion across TRAIN datasets)",
+    "fixed battery (4 static seeds) + rank_gauss/log1p y-warp variants of the top seeds"
+   ],
+   "z_neighbors": 5,
+   "global_greatest_hits_k": 10,
+   "ywarp_kinds": [
+    "rank_gauss",
+    "log1p"
+   ],
+   "fixed": [
+    "(pipe X (blom) (ridge_gcv))",
+    "(pipe X (cheb degree=3 append=true) (pair_prod topk=12 append=true) (ridge_gcv))",
+    "(pipe X (histgbm2 leaves=31 lr=0.05 rounds=500 loss=huber))",
+    "(pipe X (portfolio preset=core))"
+   ],
+   "fairness_rule": "seeds use only (a) other datasets' data and (b) X's own TRAIN-side signals (champion OOF robust). X's test results and the incumbent identity for X are never read.",
+   "included_counts": {
+    "own_champion": 1,
+    "global_top10": 10,
+    "battery_fixed": 1
+   }
+  },
+  "pick_kind": "single",
+  "oof_partitions": "k=3 (jain-internal honest_feat_math_cv; single partition, not the triple 3/5/7 of jain_prime)",
+  "robust_formula": "max(oof_r2, -1) - 0.25*min(pstd(fold_r2), 1)  [jain/active_v3 train-side mirror]",
+  "robust_score": -0.020688198212802753,
+  "oof_r2": -0.0020561092960171834,
+  "fold_r2": [
+   -0.1178053723784509,
+   0.034849513022860545,
+   0.04522562022271703
+  ],
+  "selection_rule": "single best genome by jain's honest_feat_math_cv_r2 (train-side); no Python triple-partition re-CV, no blends (that is the ~15s+147s cost jope-lime drops)",
+  "final_selection": "jain-internal honest_feat_math_cv_r2 over the GPU+seeded finalist pool (train-side only, never test)",
+  "budget_profile": {
+   "name": "lime",
+   "time_budget_secs": 18,
+   "top_k": 2,
+   "pop": 96,
+   "gens": 40,
+   "folds": 3,
+   "search_rows": 768,
+   "gpu_kernel_configs": 131072,
+   "threads": 32
+  },
+  "genome": "(pipe X (cheb degree=8) (row_stats) (row_stats) (standardize) (winsor_clip q=0.19789746113198894) (gpr kernel=linear m=299 steps=60))",
+  "gpu": {
+   "kernel_configs": 131072,
+   "backend": "fused",
+   "kernel_used": true,
+   "kernel_used_any": true,
+   "kernel_message": "battle-gpu composite GPR kernel search over 5 specs",
+   "kernel_secs": 7.2279,
+   "kernel_secs_by_stage": [
+    7.2279
+   ],
+   "kernel_candidates": 4,
+   "kernel_abi_version": 2,
+   "host": "local"
+  },
+  "provenance": {
+   "mode": "lime_fresh",
+   "run_dir": "/home/ubuntu/jope-lime/runs/d2daf53412ab18dc",
+   "seed_sources": {
+    "own_champion": 1,
+    "global_top10": 10,
+    "battery_fixed": 1
+   },
+   "checkpoint": "gen36",
+   "checkpoint_path": "/home/ubuntu/jope/runs/self_play_v33/gen36.pt",
+   "fitness": "v2",
+   "jain_search_timings": {
+    "load_secs": 0.000279798,
+    "search_secs": 5.016032045,
+    "gpu_kernel_secs": 7.227855854,
+    "finalist_cv_secs": 5.629067635,
+    "fit_predict_secs": 0.552998288,
+    "total_secs": 13.410633521
+   },
+   "jain_reported_test_rmse": 0.3133021784555548,
+   "artifact_member_modes": [
+    "rust"
+   ],
+   "crosscheck": {
+    "artifact_test_rmse": 0.3133021784555548,
+    "jain_reported_rmse": 0.3133021784555548
+   },
+   "note": "lime = cheap seed battery + 1 GPU-heavy seeded jain call + honest full-train artifact fit; drops the neural proposals, multi-stage rounds, and Python triple-partition re-CV of jain_prime."
+  }
+ },
+ "metrics": {
+  "r2": 0.020331465126161463,
+  "rmse": 0.3133021784555548,
+  "mse": 0.0981582550249963,
+  "mae": 0.2697372089358967,
+  "explained_variance": 0.02450929499260912,
+  "prediction_min": 0.36285299253034115,
+  "prediction_max": 0.6274281071026729,
+  "target_min": 0.0,
+  "target_max": 0.995525718,
+  "n": 51,
+  "target_mean": 0.503224107892353,
+  "target_std": 0.31653652833860707,
+  "prediction_mean": 0.4827644103132757,
+  "prediction_std": 0.06675308124649343,
+  "residual_mean": 0.020459697579077212,
+  "residual_std": 0.3126334207981754,
+  "residual_min": -0.5470767775594088,
+  "residual_max": 0.5407476111444676,
+  "pearson_corr": 0.16355326504923817
+ },
+ "gene": "(pipe X (cheb degree=8) (row_stats) (row_stats) (standardize) (winsor_clip q=0.19789746113198894) (gpr kernel=linear m=299 steps=60))",
+ "genome": "(pipe X (cheb degree=8) (row_stats) (row_stats) (standardize) (winsor_clip q=0.19789746113198894) (gpr kernel=linear m=299 steps=60))",
+ "genome_hash": "e7bf6df53f032cc62f8cc99f9e630e0d706fd9617ec6d90decd979cc6a87a2f0",
+ "cv": {
+  "folds": [
+   3
+  ],
+  "partition_seed": 20260710,
+  "oof_r2": {
+   "f3": -0.0020561092960171834
+  },
+  "fold_r2": {
+   "f3": [
+    -0.1178053723784509,
+    0.034849513022860545,
+    0.04522562022271703
+   ]
+  },
+  "robust": -0.020688198212802753,
+  "robust_formula": "max(oof_r2, -1) - 0.25*min(pstd(fold_r2), 1)  [jain/active_v3 train-side mirror]"
+ },
+ "predictions_path": "/home/ubuntu/remote_super/quant/regression/d2daf53412ab18dc/predictions/jope-lime.csv"
+}

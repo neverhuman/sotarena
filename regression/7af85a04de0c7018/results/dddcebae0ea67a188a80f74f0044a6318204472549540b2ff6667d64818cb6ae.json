@@ -1,0 +1,102 @@
+{
+  "algorithm": "hyp3_chimera_regression",
+  "checkpoint": "/home/ubuntu/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_stackfusionreg.pt",
+  "dataset_hash": "7af85a04de0c7018",
+  "ended_at": "2026-07-04T05:54:54+00:00",
+  "environment": {
+    "checkpoint": "/home/ubuntu/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_stackfusionreg.pt",
+    "cuda_device_count_visible": 1,
+    "cuda_device_name": "NVIDIA A100-SXM4-40GB",
+    "cuda_max_memory_allocated_bytes": 10331316736,
+    "cuda_memory_allocated_bytes": 365626368,
+    "cuda_visible_devices": "GPU-e0d88948-6f5a-3eed-7b3a-bfaccb26d911",
+    "gpu_device": "GPU-e0d88948-6f5a-3eed-7b3a-bfaccb26d911",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "repo_root": "/home/ubuntu/fable_god/chimera_regression",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "torch": "2.7.0",
+    "torch_cuda_available": true,
+    "torch_num_threads": 1
+  },
+  "gpu_device": "GPU-e0d88948-6f5a-3eed-7b3a-bfaccb26d911",
+  "inference_rows_per_second": 132.63131881635678,
+  "inference_time_seconds": 0.9198430739343166,
+  "metrics": {
+    "explained_variance": 0.9997626306316771,
+    "mae": 0.002304225488275778,
+    "max_error": 0.020908832550048828,
+    "mean_absolute_percentage_error_eps": 0.005391611789898576,
+    "median_absolute_error": 0.0017714202404022217,
+    "mse": 1.1755074113971696e-05,
+    "prediction_max": 0.9832364916801453,
+    "prediction_min": 0.09076881408691406,
+    "r2": 0.999762583788429,
+    "rmse": 0.0034285673559041677,
+    "target_max": 0.9817073345184326,
+    "target_min": 0.08962263911962509
+  },
+  "model_class": "chimera.Chimera",
+  "model_metadata": {
+    "feature_augmentation": {
+      "augmented_feature_count": 156,
+      "block_columns": {
+        "hyperion3": 128,
+        "train3": 14
+      },
+      "block_names": [
+        "train3",
+        "hyperion3"
+      ],
+      "feature_order": [
+        "train3",
+        "hyperion3",
+        "original_csv_features"
+      ],
+      "mode": "prepend_feature_blocks",
+      "name": "hyp3_chimera_regression",
+      "original_feature_count": 14,
+      "payload_dir": "/home/ubuntu/~quant/regression/7af85a04de0c7018",
+      "payload_roots": [
+        "/tmp/hyp3_chimera_regression_payloads",
+        "/home/ubuntu/~quant/regression"
+      ],
+      "source_paths": {
+        "hyperion3test.vs": "/home/ubuntu/~quant/regression/7af85a04de0c7018/hyperion3test.vs",
+        "hyperion3train.vs": "/home/ubuntu/~quant/regression/7af85a04de0c7018/hyperion3train.vs",
+        "test3.vs": "/home/ubuntu/~quant/regression/7af85a04de0c7018/test3.vs",
+        "test_csv": "/home/ubuntu/quant/regression/7af85a04de0c7018/test.csv",
+        "train3.vs": "/home/ubuntu/~quant/regression/7af85a04de0c7018/train3.vs",
+        "train_csv": "/home/ubuntu/quant/regression/7af85a04de0c7018/train.csv"
+      },
+      "split_rows": {
+        "test": 122,
+        "train": 609
+      }
+    }
+  },
+  "model_name": "hyp3_chimera_regression",
+  "n_features": 156,
+  "run_date": "2026-07-04T05:54:54+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/uci-bike-sharing-day-bike-sharing-day-day-target-cnt.csv",
+  "started_at": "2026-07-04T05:54:53+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 122,
+  "train_rows": 609,
+  "training_time_seconds": 0.0,
+  "wall_time_seconds": 0.943740830058232
+}

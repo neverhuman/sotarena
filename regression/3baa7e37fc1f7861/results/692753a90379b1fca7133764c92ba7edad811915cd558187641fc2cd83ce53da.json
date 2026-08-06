@@ -1,0 +1,102 @@
+{
+  "algorithm": "hyp3_chimera_regression",
+  "checkpoint": "/home/ubuntu/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_stackfusionreg.pt",
+  "dataset_hash": "3baa7e37fc1f7861",
+  "ended_at": "2026-07-04T05:52:32+00:00",
+  "environment": {
+    "checkpoint": "/home/ubuntu/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_stackfusionreg.pt",
+    "cuda_device_count_visible": 1,
+    "cuda_device_name": "NVIDIA A100-SXM4-40GB",
+    "cuda_max_memory_allocated_bytes": 1601170432,
+    "cuda_memory_allocated_bytes": 364790784,
+    "cuda_visible_devices": "GPU-87e5e9eb-fcf1-f326-c0b3-d2b7d27be478",
+    "gpu_device": "GPU-87e5e9eb-fcf1-f326-c0b3-d2b7d27be478",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "repo_root": "/home/ubuntu/fable_god/chimera_regression",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "torch": "2.7.0",
+    "torch_cuda_available": true,
+    "torch_num_threads": 1
+  },
+  "gpu_device": "GPU-87e5e9eb-fcf1-f326-c0b3-d2b7d27be478",
+  "inference_rows_per_second": 69.41740388073953,
+  "inference_time_seconds": 0.7779029030352831,
+  "metrics": {
+    "explained_variance": 0.9815324144799147,
+    "mae": 0.023729722429480817,
+    "max_error": 0.1416773498058319,
+    "mean_absolute_percentage_error_eps": 0.12341120296057247,
+    "median_absolute_error": 0.019053995609283447,
+    "mse": 0.001214155679221821,
+    "prediction_max": 0.9478408694267273,
+    "prediction_min": 0.08437519520521164,
+    "r2": 0.9814869417653831,
+    "rmse": 0.03484473675064601,
+    "target_max": 0.9726775884628296,
+    "target_min": 0.0191256832331419
+  },
+  "model_class": "chimera.Chimera",
+  "model_metadata": {
+    "feature_augmentation": {
+      "augmented_feature_count": 136,
+      "block_columns": {
+        "hyperion3": 128,
+        "train3": 4
+      },
+      "block_names": [
+        "train3",
+        "hyperion3"
+      ],
+      "feature_order": [
+        "train3",
+        "hyperion3",
+        "original_csv_features"
+      ],
+      "mode": "prepend_feature_blocks",
+      "name": "hyp3_chimera_regression",
+      "original_feature_count": 4,
+      "payload_dir": "/home/ubuntu/~quant/regression/3baa7e37fc1f7861",
+      "payload_roots": [
+        "/tmp/hyp3_chimera_regression_payloads",
+        "/home/ubuntu/~quant/regression"
+      ],
+      "source_paths": {
+        "hyperion3test.vs": "/home/ubuntu/~quant/regression/3baa7e37fc1f7861/hyperion3test.vs",
+        "hyperion3train.vs": "/home/ubuntu/~quant/regression/3baa7e37fc1f7861/hyperion3train.vs",
+        "test3.vs": "/home/ubuntu/~quant/regression/3baa7e37fc1f7861/test3.vs",
+        "test_csv": "/home/ubuntu/quant/regression/3baa7e37fc1f7861/test.csv",
+        "train3.vs": "/home/ubuntu/~quant/regression/3baa7e37fc1f7861/train3.vs",
+        "train_csv": "/home/ubuntu/quant/regression/3baa7e37fc1f7861/train.csv"
+      },
+      "split_rows": {
+        "test": 54,
+        "train": 269
+      }
+    }
+  },
+  "model_name": "hyp3_chimera_regression",
+  "n_features": 136,
+  "run_date": "2026-07-04T05:52:32+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/visualizing-galaxy.csv",
+  "started_at": "2026-07-04T05:52:31+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 54,
+  "train_rows": 269,
+  "training_time_seconds": 0.0,
+  "wall_time_seconds": 0.8001758640166372
+}

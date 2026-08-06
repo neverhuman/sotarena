@@ -1,0 +1,67 @@
+{
+  "algorithm": "pytorch_tabular_category_embedding_regressor_epochs5",
+  "dataset_hash": "019de5d76a718163",
+  "ended_at": "2026-06-30T19:00:21Z",
+  "environment": {
+    "affinity": [
+      92
+    ],
+    "cuda_visible_devices": "2",
+    "deps": [
+      "pytorch_tabular",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super1",
+    "java": "/usr/bin/java",
+    "pid": 724024,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 1588.3690054918338,
+  "inference_time_seconds": 0.01510983903426677,
+  "metrics": {
+    "explained_variance": -7.043357934973654,
+    "mae": 0.5401344747736064,
+    "max_error": 1.252679750633545,
+    "mean_absolute_percentage_error_eps": 4.02161094557916,
+    "median_absolute_error": 0.4924208400683411,
+    "mse": 0.39582830347033204,
+    "prediction_max": 1.430285930633545,
+    "prediction_min": -0.590486466884613,
+    "r2": -7.0439317737330835,
+    "rmse": 0.6291488722634191,
+    "target_max": 0.878378391,
+    "target_min": 0.0193050187
+  },
+  "model_class": "models.tools.model_zoo._PyTorchTabularRegressor",
+  "model_params": {},
+  "n_features": 2,
+  "run_date": "2026-06-30T19:00:21Z",
+  "started_at": "2026-06-30T19:00:16Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 24,
+  "train_rows": 120,
+  "training_time_seconds": 3.8317505290033296
+}

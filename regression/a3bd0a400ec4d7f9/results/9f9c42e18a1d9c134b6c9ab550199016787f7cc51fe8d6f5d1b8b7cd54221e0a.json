@@ -1,0 +1,41 @@
+{
+  "algorithm": "lightgbm_gbdt_trees150_leaves15_lr0p07",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "a3bd0a400ec4d7f9",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.021399358985945582,
+  "metrics": {
+    "explained_variance": 0.9679838293074235,
+    "mae": 0.10764599820568439,
+    "max_error": 1.6190812450735923,
+    "median_absolute_error": 0.056286321552879715,
+    "mse": 0.03555751136874119,
+    "prediction_max": 5.215448925792499,
+    "prediction_min": 0.20842203398580053,
+    "r2": 0.9679566632256937,
+    "rmse": 0.18856699437796953,
+    "target_max": 5.8397,
+    "target_min": 0.0077
+  },
+  "model_name": "lightgbm_gbdt_trees150_leaves15_lr0p07",
+  "n_features": 665,
+  "provenance": {
+    "canonical_test_sha256": "398556c974e2fae1eefc40d5e5ed5030eb22fafb192fadae582b9a62e0c93a89",
+    "canonical_test_target_sha256": "764d725105dae1f1d0f03aa62a05fe66b1d3ca39d5eb8592c7ac8d02155ac1da",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "ab922f10fc82a4d62992ffd2200d6b93c223b21174ad0cc3ae0032d6019ecb5d",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/a3bd0a400ec4d7f9/lightgbm_gbdt_trees150_leaves15_lr0p07/worker-receipt.json",
+    "worker_receipt_sha256": "6a68d40070e2809c1360ffa812c40fdc88ea83af6c89a67b766e6d81657ac138"
+  },
+  "run_date": "2026-07-23T13:14:51Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 18.258521643001586
+}

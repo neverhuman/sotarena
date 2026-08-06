@@ -1,0 +1,48 @@
+{
+  "algorithm": "elastic_net",
+  "dataset_hash": "ab0239b9ef0ba28e",
+  "ended_at": "2026-06-21T08:07:18+00:00",
+  "environment": {
+    "lightgbm_available": false,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "xgboost_available": true
+  },
+  "inference_rows_per_second": 30518.199028845956,
+  "inference_time_seconds": 0.00019660399993881583,
+  "metrics": {
+    "explained_variance": -0.21441415173090528,
+    "mae": 0.06772831629496068,
+    "max_error": 0.15368634462356567,
+    "mean_absolute_percentage_error_eps": 709740.3703895236,
+    "median_absolute_error": 0.0563279134221375,
+    "mse": 0.0065860538922911235,
+    "prediction_max": 0.09992396086454391,
+    "prediction_min": -0.0661948174238205,
+    "r2": -0.44402138897263144,
+    "rmse": 0.08115450629688485,
+    "target_max": 0.1857839971780777,
+    "target_min": 0.0
+  },
+  "model_class": "sklearn.linear_model._coordinate_descent.ElasticNet",
+  "n_features": 1040,
+  "run_date": "2026-06-21T08:07:18+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/chang.csv",
+  "started_at": "2026-06-21T08:07:18+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 6,
+  "train_rows": 28,
+  "training_time_seconds": 0.050565366982482374
+}

@@ -1,0 +1,41 @@
+{
+  "algorithm": "huber",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "a3bd0a400ec4d7f9",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.006482431082986295,
+  "metrics": {
+    "explained_variance": 0.8826118294900633,
+    "mae": 0.11754260707126306,
+    "max_error": 7.779117754468935,
+    "median_absolute_error": 0.06050319701807816,
+    "mse": 0.1304625267513157,
+    "prediction_max": 8.318817754468935,
+    "prediction_min": -0.10463220331963097,
+    "r2": 0.8824311792305464,
+    "rmse": 0.3611959672412134,
+    "target_max": 5.8397,
+    "target_min": 0.0077
+  },
+  "model_name": "huber",
+  "n_features": 665,
+  "provenance": {
+    "canonical_test_sha256": "398556c974e2fae1eefc40d5e5ed5030eb22fafb192fadae582b9a62e0c93a89",
+    "canonical_test_target_sha256": "764d725105dae1f1d0f03aa62a05fe66b1d3ca39d5eb8592c7ac8d02155ac1da",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "ebeea3d7dfb5fc563ba55a77380a48f566008272cff48f8b7f4c2869ca83296d",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/a3bd0a400ec4d7f9/huber/worker-receipt.json",
+    "worker_receipt_sha256": "df3e4d2d5e93e7b63392ce3008069eda21d8083631e22a819beb39879167ca97"
+  },
+  "run_date": "2026-07-23T13:14:45Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 73.53163006494287
+}

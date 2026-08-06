@@ -1,0 +1,41 @@
+{
+  "algorithm": "xgboost_absoluteerror_trees300_depth4_lr0p04",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "a3bd0a400ec4d7f9",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.006378998979926109,
+  "metrics": {
+    "explained_variance": 0.9625757092617824,
+    "mae": 0.11468368688686688,
+    "max_error": 1.7269612562179566,
+    "median_absolute_error": 0.056152389240264805,
+    "mse": 0.041550360417795,
+    "prediction_max": 5.048825740814209,
+    "prediction_min": 0.3715766668319702,
+    "r2": 0.9625560917873555,
+    "rmse": 0.20383905518274706,
+    "target_max": 5.8397,
+    "target_min": 0.0077
+  },
+  "model_name": "xgboost_absoluteerror_trees300_depth4_lr0p04",
+  "n_features": 665,
+  "provenance": {
+    "canonical_test_sha256": "398556c974e2fae1eefc40d5e5ed5030eb22fafb192fadae582b9a62e0c93a89",
+    "canonical_test_target_sha256": "764d725105dae1f1d0f03aa62a05fe66b1d3ca39d5eb8592c7ac8d02155ac1da",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "ee440db2a09caa46c6f65332fd37401b64ea182706abdb339c4fecf40bd7fb85",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/a3bd0a400ec4d7f9/xgboost_absoluteerror_trees300_depth4_lr0p04/worker-receipt.json",
+    "worker_receipt_sha256": "53c0521d74f82d8140da0b13a5911863403f8c2c3854ec36bc690a86dfee1210"
+  },
+  "run_date": "2026-07-23T13:15:09Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 10.824513904983178
+}

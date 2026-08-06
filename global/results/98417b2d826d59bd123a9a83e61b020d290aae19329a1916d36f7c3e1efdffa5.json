@@ -1,0 +1,52 @@
+{
+  "algorithm": "tabfm_regressor",
+  "dataset_hash": "fe3cc716a05d036f",
+  "ended_at": "2026-07-03T05:57:26+00:00",
+  "environment": {
+    "cuda_visible_devices": "1",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 14.535480753333381,
+  "inference_time_seconds": 2.7518869639607146,
+  "metrics": {
+    "explained_variance": 0.2926682973768102,
+    "mae": 0.15409717657603322,
+    "max_error": 0.3405299261212349,
+    "mean_absolute_percentage_error_eps": 0.754594262835105,
+    "median_absolute_error": 0.14797216653823853,
+    "mse": 0.03269037228673767,
+    "prediction_max": 0.6713829040527344,
+    "prediction_min": 0.2368108332157135,
+    "r2": 0.2873575807409585,
+    "rmse": 0.18080479055251183,
+    "target_max": 0.8581235408782959,
+    "target_min": 0.02745995484292507
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMRegressor",
+  "n_features": 2,
+  "run_date": "2026-07-03T05:57:26+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/rdatasets-agridat-batchelor-valencia-uniformity-yield.csv",
+  "started_at": "2026-07-03T05:57:23+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": false,
+  "tabfm_model_type": "regression",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 40,
+  "train_rows": 200,
+  "training_time_seconds": 0.012362061999738216
+}

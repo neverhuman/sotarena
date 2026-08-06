@@ -1,0 +1,48 @@
+{
+  "algorithm": "knn",
+  "dataset_hash": "ab0239b9ef0ba28e",
+  "ended_at": "2026-06-21T08:07:18+00:00",
+  "environment": {
+    "lightgbm_available": false,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "xgboost_available": true
+  },
+  "inference_rows_per_second": 7024.2229942021095,
+  "inference_time_seconds": 0.0008541870047338307,
+  "metrics": {
+    "explained_variance": -0.2570123176453507,
+    "mae": 0.042810933742051326,
+    "max_error": 0.2094990000128746,
+    "mean_absolute_percentage_error_eps": 164783.08016128026,
+    "median_absolute_error": 0.006494399881921709,
+    "mse": 0.00750553209099709,
+    "prediction_max": 0.22177699990570546,
+    "prediction_min": 0.0030371999833732843,
+    "r2": -0.6456210429292364,
+    "rmse": 0.08663447403313007,
+    "target_max": 0.1857839971780777,
+    "target_min": 0.0
+  },
+  "model_class": "sklearn.neighbors._regression.KNeighborsRegressor",
+  "n_features": 1040,
+  "run_date": "2026-06-21T08:07:18+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/chang.csv",
+  "started_at": "2026-06-21T08:07:18+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 6,
+  "train_rows": 28,
+  "training_time_seconds": 0.0005966119933873415
+}

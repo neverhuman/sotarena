@@ -1,0 +1,138 @@
+{
+  "algorithm": "hyp3_tabicl",
+  "dataset_hash": "7af85a04de0c7018",
+  "ended_at": "2026-07-05T20:00:29Z",
+  "environment": {
+    "affinity": [
+      6,
+      7
+    ],
+    "cuda_visible_devices": "GPU-784030c4-b1f9-d5a3-f0eb-9337f133f503",
+    "deps": [
+      "tabicl"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "xbabe1",
+    "java": "/usr/bin/java",
+    "pid": 3477832,
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "gpu_heavy",
+    "sklearn": "1.9.0",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 169.6009455953128,
+  "inference_time_seconds": 0.7193356120260432,
+  "metrics": {
+    "explained_variance": 0.999812151582121,
+    "mae": 0.0022557763654524887,
+    "max_error": 0.014576375406524678,
+    "mean_absolute_percentage_error_eps": 0.005274547433168656,
+    "median_absolute_error": 0.0018354353327713346,
+    "mse": 9.726295355948196e-06,
+    "prediction_max": 0.9741804599761963,
+    "prediction_min": 0.08999986946582794,
+    "r2": 0.9998035588569557,
+    "rmse": 0.003118700908382879,
+    "target_max": 0.981707335,
+    "target_min": 0.0896226391
+  },
+  "model_class": "tabicl._sklearn.regressor.TabICLRegressor",
+  "model_metadata": {
+    "feature_augmentation": {
+      "augmented_n_features": 156,
+      "block_columns": {
+        "hyperion3": 128,
+        "train3": 14
+      },
+      "blocks": [
+        {
+          "n_columns": 14,
+          "name": "train3",
+          "test_path": "/home/ubuntu/quant/regression/7af85a04de0c7018/test3.vs",
+          "train_path": "/home/ubuntu/quant/regression/7af85a04de0c7018/train3.vs"
+        },
+        {
+          "n_columns": 128,
+          "name": "hyperion3",
+          "test_path": "/home/ubuntu/quant/regression/7af85a04de0c7018/hyperion3test.vs",
+          "train_path": "/home/ubuntu/quant/regression/7af85a04de0c7018/hyperion3train.vs"
+        }
+      ],
+      "excluded_sidecars": [
+        "train_target.vs",
+        "test_target.vs"
+      ],
+      "feature_order": [
+        "train3",
+        "hyperion3",
+        "original_csv_features"
+      ],
+      "kind": "hyp3_vs",
+      "original_n_features": 14,
+      "prepended_n_features": 142,
+      "source_paths": {
+        "hyperion3": {
+          "test": "/home/ubuntu/quant/regression/7af85a04de0c7018/hyperion3test.vs",
+          "train": "/home/ubuntu/quant/regression/7af85a04de0c7018/hyperion3train.vs"
+        },
+        "train3": {
+          "test": "/home/ubuntu/quant/regression/7af85a04de0c7018/test3.vs",
+          "train": "/home/ubuntu/quant/regression/7af85a04de0c7018/train3.vs"
+        }
+      }
+    }
+  },
+  "model_name": "hyp3_tabicl",
+  "model_params": {
+    "feature_augmentation": {
+      "blocks": [
+        {
+          "name": "train3",
+          "test": "test3.vs",
+          "train": "train3.vs"
+        },
+        {
+          "name": "hyperion3",
+          "test": "hyperion3test.vs",
+          "train": "hyperion3train.vs"
+        }
+      ],
+      "excluded_sidecars": [
+        "train_target.vs",
+        "test_target.vs"
+      ],
+      "feature_order": [
+        "train3",
+        "hyperion3",
+        "original_csv_features"
+      ],
+      "kind": "hyp3_vs"
+    }
+  },
+  "n_features": 156,
+  "run_date": "2026-07-05T20:00:29Z",
+  "started_at": "2026-07-05T20:00:26Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 122,
+  "train_rows": 609,
+  "training_time_seconds": 1.3249121609842405
+}

@@ -1,0 +1,52 @@
+{
+  "algorithm": "tabfm_regressor",
+  "dataset_hash": "55b144de19659467",
+  "ended_at": "2026-07-03T05:51:13+00:00",
+  "environment": {
+    "cuda_visible_devices": "2",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 46.198180081112596,
+  "inference_time_seconds": 21.624228448956273,
+  "metrics": {
+    "explained_variance": 0.9960796497786633,
+    "mae": 0.0011119828737751992,
+    "max_error": 0.12056690454483032,
+    "mean_absolute_percentage_error_eps": 0.016132810982671022,
+    "median_absolute_error": 0.0002943873405456543,
+    "mse": 3.216679803896683e-05,
+    "prediction_max": 0.8794330954551697,
+    "prediction_min": 0.00722137838602066,
+    "r2": 0.9960716417089955,
+    "rmse": 0.005671578090705164,
+    "target_max": 1.0,
+    "target_min": 0.0009036673000082374
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMRegressor",
+  "n_features": 4,
+  "run_date": "2026-07-03T05:51:13+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/tidytuesday-data-2018-2018-04-23-week4-australian-salary-csv-average-taxable-income.csv",
+  "started_at": "2026-07-03T05:50:51+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": false,
+  "tabfm_model_type": "regression",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 0.034172681043855846
+}

@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "56e9d512dbc782f2bfdbd5fccb6251e35d6f886ee62e88a27c67fe4f7cdd31fa",
+    "hyperion3test128dim.vs": "4daf1dfff2dd5005eb658fc10e254fc887dccc0327ccd0d54d85e34c72595e7d",
+    "hyperion3train.vs": "712dc1920d2cecdb1468d7627185c97bfbac5d4a85dd0fb5d77e2742fb9e1a49",
+    "hyperion3train128dim.vs": "9743e4a2554ce466d0b41bec79bd93efef56a8289c6ca345a94717e5fe01fc7a",
+    "test3.vs": "3db94edbf40cc1540077e969144e9dff019a4a8e22b4aa55751040167b68e3f4",
+    "train3.vs": "c9456ffa4fc7ee53b124fdffaea60755374bb66838d74bd277c527616b7eaac3"
+  },
+  "counts": {
+    "augmented_features": 156,
+    "hyperion3_features": 128,
+    "raw_features": 14,
+    "test_rows": 122,
+    "train3_features": 14,
+    "train_rows": 609
+  },
+  "created_at": "2026-07-10T08:52:35Z",
+  "dataset_hash": "7af85a04de0c7018",
+  "dataset_name": "Bike Sharing Day",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.013403227878796109,
+    "delta_vs_raw_selected_model": -0.007565954188910595,
+    "prior_best_r2": 0.9999999999999922,
+    "r2": 0.9865967721211961,
+    "raw_selected_model_r2": 0.9941627263101067
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "huber_robust",
+    "path": "/home/ubuntu/remote_super/quant/regression/7af85a04de0c7018/reports/huber_robust.json",
+    "r2": 0.9999999999999922
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 69.12410192284733,
+    "raw_fit_predict_seconds": 2.5891918749548495
+  }
+}

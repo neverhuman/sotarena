@@ -1,0 +1,77 @@
+{
+  "algorithm": "jable_regressor",
+  "dataset_hash": "21fbfe8b53dbcd60",
+  "ended_at": "2026-07-10T00:11:12Z",
+  "environment": {
+    "affinity": [
+      107
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/remote_super/quant/.venv-model-queue/bin/python",
+    "host": "xbabe2",
+    "java": "/usr/bin/java",
+    "pid": 1817355,
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "cpu",
+    "sklearn": "1.9.0",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "gpu_device": null,
+  "inference_rows_per_second": 2676.5776450950584,
+  "inference_time_seconds": 0.3732378180138767,
+  "max_job_seconds": 1800.0,
+  "metrics": {
+    "explained_variance": 0.9980122341961569,
+    "mae": 0.00580703386302677,
+    "max_error": 0.1272090533902741,
+    "mean_absolute_percentage_error_eps": 6982.167639075402,
+    "median_absolute_error": 0.0038220229810960182,
+    "mse": 9.78260816294652e-05,
+    "prediction_max": 1.00368754524582,
+    "prediction_min": -0.01754771826670526,
+    "r2": 0.9980106509313655,
+    "rmse": 0.00989070683164076,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "models.tools.jable_regressor.JableRegressor",
+  "model_metadata": {
+    "seed": 17
+  },
+  "model_name": "jable_regressor",
+  "model_params": {
+    "seed": 17
+  },
+  "n_features": 21,
+  "run_date": "2026-07-10T00:11:12Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/uci-parkinsons-telemonitoring-parkinsons-telemonitoring-parkinsons-telemonitoring-target-total-updrs.csv",
+  "started_at": "2026-07-10T00:10:19Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 50.49966445378959,
+  "wall_time_seconds": 50.87290227180347,
+  "xgboost_device": null
+}

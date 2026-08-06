@@ -1,0 +1,84 @@
+{
+  "algorithm": "nm_cc9e5ec332c4dc5c_append_diffusion_curvature_per_row_histgbm",
+  "dataset_hash": "d2daf53412ab18dc",
+  "ended_at": "2026-06-30T23:57:26Z",
+  "environment": {
+    "affinity": [
+      48
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super9",
+    "java": "/usr/bin/java",
+    "pid": 1366215,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 8916.607806484548,
+  "inference_time_seconds": 0.005719663924537599,
+  "metrics": {
+    "explained_variance": -0.27494773157569186,
+    "mae": 0.3079294798831273,
+    "max_error": 0.6892985904410985,
+    "mean_absolute_percentage_error_eps": 961568.7171528897,
+    "median_absolute_error": 0.28935536227266,
+    "mse": 0.12868935728443123,
+    "prediction_max": 0.7863390100397046,
+    "prediction_min": 0.18822528449741846,
+    "r2": -0.2843842229325475,
+    "rmse": 0.35873298884327776,
+    "target_max": 0.995525718,
+    "target_min": 0.0
+  },
+  "model_class": "models.tools.new_math_regression.NewMathAppendRegressor",
+  "model_params": {
+    "append_features": true,
+    "binary_head": "gbm",
+    "candidate": "diffusion_curvature_per_row",
+    "candidate_spec_hash": "e92c98e6a22f931aa57df2fe9c77e2c9eeb6b574e813100fe6c954424f024e6c",
+    "diagnostic_only": false,
+    "model_hash": "cc9e5ec332c4dc5c",
+    "raw_col_cap": 128,
+    "regression_head": "histgbm",
+    "row_cap": 2000,
+    "seed": 20260630,
+    "source_artifact": "nm_repair_20260630T000000Z",
+    "source_mean_delta_vs_raw_best": -0.04649705917844913,
+    "source_median_delta": -0.052438513845816215,
+    "source_nm_algorithm": "NM_cc9e5ec332c4dc5c_append_diffusion_curvature_per_row_gbm",
+    "source_win_rate": 0.2,
+    "source_wins": 1,
+    "transformed_col_cap": 512
+  },
+  "n_features": 18,
+  "run_date": "2026-06-30T23:57:26Z",
+  "started_at": "2026-06-30T23:57:24Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 51,
+  "train_rows": 255,
+  "training_time_seconds": 0.13427956600207835
+}

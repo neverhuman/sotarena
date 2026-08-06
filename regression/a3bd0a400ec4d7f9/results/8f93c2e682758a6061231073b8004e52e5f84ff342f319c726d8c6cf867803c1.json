@@ -1,0 +1,41 @@
+{
+  "algorithm": "knn",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "a3bd0a400ec4d7f9",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.11476261599455029,
+  "metrics": {
+    "explained_variance": 0.9298851395122986,
+    "mae": 0.18491572222222222,
+    "max_error": 2.070353333333333,
+    "median_absolute_error": 0.11902333333333337,
+    "mse": 0.07786606935488888,
+    "prediction_max": 4.95824,
+    "prediction_min": 0.2974399999999999,
+    "r2": 0.9298294906593594,
+    "rmse": 0.2790449235425882,
+    "target_max": 5.8397,
+    "target_min": 0.0077
+  },
+  "model_name": "knn",
+  "n_features": 665,
+  "provenance": {
+    "canonical_test_sha256": "398556c974e2fae1eefc40d5e5ed5030eb22fafb192fadae582b9a62e0c93a89",
+    "canonical_test_target_sha256": "764d725105dae1f1d0f03aa62a05fe66b1d3ca39d5eb8592c7ac8d02155ac1da",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "b75f096839381969e738f18e0225d975cd0c038b85373e9acc210598198f761f",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/a3bd0a400ec4d7f9/knn/worker-receipt.json",
+    "worker_receipt_sha256": "5371e3c54d0ef65b7c30aca0e8dadf52f6651263c868792707046e7e42ea1da0"
+  },
+  "run_date": "2026-07-23T13:14:47Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 0.3599744529929012
+}

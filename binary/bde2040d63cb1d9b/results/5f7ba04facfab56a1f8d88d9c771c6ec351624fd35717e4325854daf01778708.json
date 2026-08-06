@@ -1,0 +1,61 @@
+{
+  "algorithm": "NM_QuantBinary_8f05d2cc978f_457d356fe2e8",
+  "benchmark_pool": {
+    "normalized_elo": 0.0,
+    "pool_best": 1.0,
+    "pool_best_algorithm": "tabicl",
+    "pool_median": 0.9937258687258687,
+    "pool_percentile": 49.629629629629626,
+    "pool_size": 135
+  },
+  "core_hash": "8f05d2cc978f19d00637bb4e21435229590c5374bb82afe0d26954d48eb2f85f",
+  "dataset_hash": "bde2040d63cb1d9b",
+  "dsl_expr": "(pipe X (rfft_mag axis=features) (polar) (map expr=x*x) (rff_cos n=32 seed=2) (cheb degree=4) (gbm rounds=150 depth=3 lr=0.1))",
+  "ended_at": "2026-06-29T20:05:07Z",
+  "environment": {
+    "created_by_binary_sha": "3f770f17bf4ec8384af11a841a270670fe781caf7d4e48246922cf03351b3369",
+    "host": "xbabe3",
+    "runner": "newmath classify-csv"
+  },
+  "inference_rows_per_second": null,
+  "inference_time_seconds": null,
+  "metrics": {
+    "accuracy": 0.983,
+    "average_precision": 0.9756920781140075,
+    "balanced_accuracy": 0.9280083655083655,
+    "brier_score": 0.013203571219102254,
+    "f1": 0.9186602870813396,
+    "false_negatives": 16,
+    "false_positives": 1,
+    "log_loss": 0.05099098428340522,
+    "positive_rate": 0.112,
+    "precision": 0.9896907216494846,
+    "predicted_positive_rate": 0.097,
+    "recall": 0.8571428571428571,
+    "roc_auc": 0.9934644465894465,
+    "sensitivity": 0.8571428571428571,
+    "specificity": 0.9988738738738738,
+    "top_decile_lift": 8.660714285714285,
+    "top_decile_positive_rate": 0.97,
+    "true_negatives": 887,
+    "true_positives": 96
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "model_hash": "457d356fe2e85c9c99950f29d017ff924b476985b93d165bf89f134a21ad72c0",
+  "n_features": 21,
+  "newmath_receipt_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_QuantBinary_8f05d2cc978f_457d356fe2e8/20260629T200254Z/runs/bde2040d63cb1d9b/receipt.json",
+  "predictions_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_QuantBinary_8f05d2cc978f_457d356fe2e8/20260629T200254Z/runs/bde2040d63cb1d9b/predictions.csv",
+  "run_date": "2026-06-29T20:05:07Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/aztrees4.csv",
+  "source_run_dir": "/home/ubuntu/jmath/target/newmath/quant_full/NM_QuantBinary_8f05d2cc978f_457d356fe2e8/20260629T200254Z",
+  "started_at": "2026-06-29T20:05:07Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": null,
+  "wall_time_seconds": 0.203741
+}

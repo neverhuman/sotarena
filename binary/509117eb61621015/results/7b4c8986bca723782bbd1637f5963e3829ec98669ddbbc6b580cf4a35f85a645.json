@@ -1,0 +1,31 @@
+{
+  "benchmark_valid": true,
+  "dataset_id": "509117eb61621015",
+  "method_id": "gpt5p6sol_classifier",
+  "metrics": {
+    "balanced_accuracy_at_0_5": 0.8800287356321839,
+    "log_loss": 0.5866940975813814,
+    "roc_auc_probability": 0.9445402298850575,
+    "roc_auc_raw_score": 0.9445402298850575
+  },
+  "protocol": "frozen-regressor-classifier",
+  "provenance": {
+    "host": "xbabe3",
+    "job_id": "b42c-o56-29-509117eb",
+    "manifest_sha256": "a5a0aa630b2ce75cb3589df3ab57459e094c8d19467b9bbd4181bd535dfcde51",
+    "platform": "linux-x86_64",
+    "prediction_lock_sha256": "79103ec908f2460a840ba66efb1779ee9b25f779f3f12a2be9baf3f59996e54a",
+    "prediction_locked_before_test_labels": true,
+    "predictions_sha256": "2b7c921148f04cbeef128a02376247b08dd2f674579733ebd6c75c933bc4f1be",
+    "runtime_tree_sha256": "1bb7184a2596594ff81b2c6137d9f83dbad2f7698c74fec397deb3caecc8d5df",
+    "source_sha256": "35884855a4150bab78b2f1f75fcfbe36c7f474785fd0f7d5e3b9044627bef55d",
+    "test_full_sha256": "6d42bb865dead78b82bc7d5a6074682f5427ce7143bdadbab64cfec26e0e27cd",
+    "test_predictors_sha256": "e717ab424af8f41c9137d8c423bf42d2f211897a620f7845ac0c81369340b7ae",
+    "train_sha256": "773fcc456f4c27863bb64153d3f07c5293f58e83d16af3f54ac35c8023b9044c",
+    "worker_receipt_sha256": "4c6b63d9f6b689a08edb3151f24bc399f1720c3fd0d5ebf383c58bed58ac1713"
+  },
+  "run_id": "binary42-frozen-regressor-classifiers-v1",
+  "schema": "sotarena.binary42-frozen-classifier-report.v1",
+  "test_adaptive": false,
+  "track_id": "tabular-binary-v1"
+}

@@ -1,0 +1,72 @@
+{
+  "algorithm": "svc_poly",
+  "dataset_hash": "4826cc47946dbffe",
+  "ended_at": "2026-06-26T12:31:03Z",
+  "environment": {
+    "affinity": [
+      28
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super3",
+    "pid": 2838165,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 11534.644548221571,
+  "inference_time_seconds": 0.08669534599175677,
+  "metrics": {
+    "accuracy": 0.752,
+    "average_precision": 0.792066086378332,
+    "balanced_accuracy": 0.5523465703971119,
+    "brier_score": 0.1974351504513226,
+    "cohen_kappa": 0.14463291645684873,
+    "f1": 0.1895424836601307,
+    "false_negatives": 248,
+    "false_positives": 0,
+    "log_loss": 0.5834947192839639,
+    "matthews_corrcoef": 0.27920207918981804,
+    "positive_rate": 0.277,
+    "precision": 1.0,
+    "predicted_positive_rate": 0.029,
+    "recall": 0.10469314079422383,
+    "roc_auc": 0.8596701469508817,
+    "sensitivity": 0.10469314079422383,
+    "specificity": 1.0,
+    "top_decile_lift": 3.537906137184115,
+    "top_decile_positive_rate": 0.98,
+    "true_negatives": 723,
+    "true_positives": 29
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 50,
+  "run_date": "2026-06-26T12:31:03Z",
+  "started_at": "2026-06-26T12:31:00Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 0.29479134001303464
+}

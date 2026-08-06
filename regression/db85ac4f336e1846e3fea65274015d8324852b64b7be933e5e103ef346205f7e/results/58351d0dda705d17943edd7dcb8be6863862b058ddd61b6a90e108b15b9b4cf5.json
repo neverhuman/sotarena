@@ -1,0 +1,41 @@
+{
+  "algorithm": "decision_tree",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "ZTS_small",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.0016104578971862793,
+  "metrics": {
+    "explained_variance": -0.0005633479874631586,
+    "mae": 0.22025788236256,
+    "max_error": 0.8676310350000002,
+    "median_absolute_error": 0.16934356,
+    "mse": 0.08377716811506172,
+    "prediction_max": 1.0,
+    "prediction_min": 0.0027200543999998,
+    "r2": -0.00459487782089929,
+    "rmse": 0.2894428581172141,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_name": "decision_tree",
+  "n_features": 147,
+  "provenance": {
+    "canonical_test_sha256": "806d6838aa3dd6f0b0c21adf718de17456d42c5219af4dd0b46eee8b0624726c",
+    "canonical_test_target_sha256": "338ad2fc9525ec03da9a632fa76a9cd3fb65472f6a0ba89861e57f88be7c5434",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "80d4d3036e467c5f338a2c9169326d1b99dd9fa86b74b8c1bfa583e2608afcfb",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/ZTS_small/decision_tree/worker-receipt.json",
+    "worker_receipt_sha256": "b672533e1050b9723b5a442d601b8a8cd5422721a09337b809cce4e4990f119b"
+  },
+  "run_date": "2026-07-23T11:19:48Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 0.03747227694839239
+}

@@ -1,0 +1,76 @@
+{
+  "algorithm": "zyal_small_band_phase_histgbm",
+  "dataset_hash": "21a6177fdb3eae79",
+  "ended_at": "2026-06-30T01:14:30Z",
+  "environment": {
+    "affinity": [
+      60
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "xbabe1",
+    "java": "/usr/bin/java",
+    "pid": 3830401,
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "cpu",
+    "sklearn": "1.9.0",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 12631.181607195565,
+  "inference_time_seconds": 0.07916915701935068,
+  "metrics": {
+    "accuracy": 0.815,
+    "average_precision": 0.5532989826380323,
+    "balanced_accuracy": 0.6623204837490552,
+    "brier_score": 0.14368309161541287,
+    "cohen_kappa": 0.3727792996826602,
+    "f1": 0.4788732394366197,
+    "false_negatives": 131,
+    "false_positives": 54,
+    "log_loss": 0.5417205200463279,
+    "matthews_corrcoef": 0.38617064278473523,
+    "positive_rate": 0.216,
+    "precision": 0.6115107913669064,
+    "predicted_positive_rate": 0.139,
+    "recall": 0.39351851851851855,
+    "roc_auc": 0.7792127267573696,
+    "sensitivity": 0.39351851851851855,
+    "specificity": 0.9311224489795918,
+    "top_decile_lift": 3.1481481481481484,
+    "top_decile_positive_rate": 0.68,
+    "true_negatives": 730,
+    "true_positives": 85
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 23,
+  "run_date": "2026-06-30T01:14:30Z",
+  "started_at": "2026-06-30T01:14:23Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 2.9295023839804344
+}

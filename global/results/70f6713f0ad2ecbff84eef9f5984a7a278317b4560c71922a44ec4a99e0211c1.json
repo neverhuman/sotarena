@@ -1,0 +1,52 @@
+{
+  "algorithm": "tabfm_ensemble_regressor",
+  "dataset_hash": "542e75bc0cfdd1bf",
+  "ended_at": "2026-07-03T08:12:06+00:00",
+  "environment": {
+    "cuda_visible_devices": "0",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 1.6911173071491723,
+  "inference_time_seconds": 4.7306002760306,
+  "metrics": {
+    "explained_variance": -0.008411269167985624,
+    "mae": 0.2691752526860173,
+    "max_error": 0.43950891593621183,
+    "mean_absolute_percentage_error_eps": 1.5717850199563577,
+    "median_absolute_error": 0.26565802321225007,
+    "mse": 0.08626761389252723,
+    "prediction_max": 0.6024649105387245,
+    "prediction_min": 0.47544691162193375,
+    "r2": -0.16040714323077498,
+    "rmse": 0.2937134894629922,
+    "target_max": 0.8859819769859314,
+    "target_min": 0.06042071431875229
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMRegressor",
+  "n_features": 17,
+  "run_date": "2026-07-03T08:12:06+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/climate-change-dataset2020-2024.csv",
+  "started_at": "2026-07-03T08:11:36+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": true,
+  "tabfm_model_type": "regression",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 8,
+  "train_rows": 37,
+  "training_time_seconds": 25.17450215399731
+}

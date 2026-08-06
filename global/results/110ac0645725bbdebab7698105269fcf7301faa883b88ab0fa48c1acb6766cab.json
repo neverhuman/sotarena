@@ -1,0 +1,52 @@
+{
+  "algorithm": "tabfm_regressor",
+  "dataset_hash": "43b4cc3ab0ebbd97",
+  "ended_at": "2026-07-03T05:50:15+00:00",
+  "environment": {
+    "cuda_visible_devices": "7",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 7.807702688012453,
+  "inference_time_seconds": 12.423628802993335,
+  "metrics": {
+    "explained_variance": 0.15858212718098563,
+    "mae": 0.01943712886578893,
+    "max_error": 0.8607542045065202,
+    "mean_absolute_percentage_error_eps": 13.798356376024818,
+    "median_absolute_error": 0.004062652587890625,
+    "mse": 0.008472739697639635,
+    "prediction_max": 0.9978518486022949,
+    "prediction_min": 0.7824865579605103,
+    "r2": 0.15857951083766297,
+    "rmse": 0.0920474861016836,
+    "target_max": 0.9999992251396179,
+    "target_min": 0.0006435983232222497
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMRegressor",
+  "n_features": 39,
+  "run_date": "2026-07-03T05:50:15+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/socrata-development-of-an-empirically-derived-measure-of-food-safety-culture-in-restaurants-37nu-tuw8-data-cdc-target-observation.csv",
+  "started_at": "2026-07-03T05:50:03+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": false,
+  "tabfm_model_type": "regression",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 97,
+  "train_rows": 482,
+  "training_time_seconds": 0.20943512802477926
+}

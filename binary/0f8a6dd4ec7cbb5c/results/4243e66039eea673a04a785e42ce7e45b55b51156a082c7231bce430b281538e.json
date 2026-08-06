@@ -1,0 +1,85 @@
+{
+  "algorithm": "NM_Recon_ad7ec9ef40a07b51_phase_gradient_entropy",
+  "dataset_hash": "0f8a6dd4ec7cbb5c",
+  "dsl_expr": "(pipe X (robust_scale) (phase_gradient_entropy) (gbm depth=3 lr=0.1 rounds=150))",
+  "ended_at": "2026-06-30T01:08:28Z",
+  "environment": {
+    "created_by_binary_sha": "7ba20b75c9fbd93da7633ba649038b48eb6824052827752f8c31e2635307ea43",
+    "host": "xbabe2",
+    "newmath_binary": "/home/ubuntu/jmath/target/release/newmath",
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "runner": "complete-new-math-reports-v1",
+    "source_root": "/home/ubuntu/jmath",
+    "thread_limits": {}
+  },
+  "inference_rows_per_second": 13698.630136986303,
+  "inference_time_seconds": 0.073,
+  "metrics": {
+    "accuracy": 0.785,
+    "average_precision": 0.6240327660903835,
+    "balanced_accuracy": 0.7069746376811594,
+    "brier_score": 0.14435554363672748,
+    "cohen_kappa": 0.4279845901709131,
+    "f1": 0.5708582834331337,
+    "false_negatives": 121,
+    "false_positives": 94,
+    "log_loss": 0.44296527510283124,
+    "matthews_corrcoef": 0.42909312405783673,
+    "positive_rate": 0.264,
+    "precision": 0.6033755274261603,
+    "predicted_positive_rate": 0.237,
+    "recall": 0.5416666666666666,
+    "roc_auc": 0.8256392045454546,
+    "sensitivity": 0.5416666666666666,
+    "specificity": 0.8722826086956522,
+    "top_decile_capture_rate": 0.26515151515151514,
+    "top_decile_lift": 2.6515151515151514,
+    "top_decile_positive_rate": 0.7,
+    "top_decile_precision": 0.7,
+    "true_negatives": 642,
+    "true_positives": 143
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "n_features": 19,
+  "new_math": {
+    "created_by_binary_sha": "7ba20b75c9fbd93da7633ba649038b48eb6824052827752f8c31e2635307ea43",
+    "dsl_expr": "(pipe X (robust_scale) (phase_gradient_entropy) (gbm depth=3 lr=0.1 rounds=150))",
+    "receipt_schema": "BinaryClassifierReceipt v1",
+    "reconstruction_provenance": {
+      "algorithm": "NM_Recon_ad7ec9ef40a07b51_phase_gradient_entropy",
+      "kind": "reconstructed_current_jmath",
+      "operator_name": "phase_gradient_entropy",
+      "original_hash": "ad7ec9ef40a07b51",
+      "source_root": "/home/ubuntu/jmath"
+    },
+    "runner_version": "complete-new-math-reports-v1",
+    "source_kind": "reconstructed_current_jmath",
+    "source_root": "/home/ubuntu/jmath"
+  },
+  "newmath_receipt_path": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_ad7ec9ef40a07b51_phase_gradient_entropy/0f8a6dd4ec7cbb5c/receipt.json",
+  "predictions_path": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_ad7ec9ef40a07b51_phase_gradient_entropy/0f8a6dd4ec7cbb5c/predictions.csv",
+  "run_date": "2026-06-30T01:08:28Z",
+  "schema": "QuantBinaryReport v1",
+  "source_path": "/home/ubuntu/hyper/data/tabular/blastchar.csv",
+  "source_run_dir": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_ad7ec9ef40a07b51_phase_gradient_entropy/0f8a6dd4ec7cbb5c",
+  "started_at": "2026-06-30T01:08:28Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "timings": {
+    "classify_csv_ms": {
+      "head_fit_predict": 73,
+      "parse": 0,
+      "read": 2,
+      "total": 107,
+      "transform_fit_predict": 15
+    },
+    "elapsed_seconds": 0.6129884719848633
+  },
+  "train_rows": 1000,
+  "training_time_seconds": 0.015
+}

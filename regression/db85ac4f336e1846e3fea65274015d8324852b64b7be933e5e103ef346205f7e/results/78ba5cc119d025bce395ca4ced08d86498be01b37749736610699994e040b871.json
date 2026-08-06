@@ -1,0 +1,41 @@
+{
+  "algorithm": "torch_frame_trompt_regressor",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "ZTS_small",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.021864125970751047,
+  "metrics": {
+    "explained_variance": 0.26450207313151997,
+    "mae": 0.2047114568910756,
+    "max_error": 0.7279929138543539,
+    "median_absolute_error": 0.18382991726961725,
+    "mse": 0.061794420876841914,
+    "prediction_max": 0.9736844824938942,
+    "prediction_min": 0.1370880650530779,
+    "r2": 0.25900624134818917,
+    "rmse": 0.2485848363775271,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_name": "torch_frame_trompt_regressor",
+  "n_features": 147,
+  "provenance": {
+    "canonical_test_sha256": "806d6838aa3dd6f0b0c21adf718de17456d42c5219af4dd0b46eee8b0624726c",
+    "canonical_test_target_sha256": "338ad2fc9525ec03da9a632fa76a9cd3fb65472f6a0ba89861e57f88be7c5434",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "9f94912e54bb49c2f57e1bd7a4ddc20fb44233a5a347cf0e72db865547f7b538",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/ZTS_small/torch_frame_trompt_regressor/worker-receipt.json",
+    "worker_receipt_sha256": "9585877bf2b023132c59e99d2a38f7d722d09368a2c10395e487b4f5971362e6"
+  },
+  "run_date": "2026-07-23T11:19:58Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 2.8741566819371656
+}

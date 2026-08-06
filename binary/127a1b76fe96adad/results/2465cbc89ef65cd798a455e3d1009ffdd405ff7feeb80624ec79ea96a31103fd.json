@@ -1,0 +1,61 @@
+{
+  "algorithm": "NM_Concept_2eb39523270c_294d6507c7f3",
+  "benchmark_pool": {
+    "normalized_elo": 0.0,
+    "pool_best": 0.9202279202279203,
+    "pool_best_algorithm": "catboost_300",
+    "pool_median": 0.8584995251661918,
+    "pool_percentile": 36.496350364963504,
+    "pool_size": 137
+  },
+  "core_hash": "255f870c18d80c9ecab9cec67e5d1348e3dbf1e3a4e6596407e527233a32d795",
+  "dataset_hash": "127a1b76fe96adad",
+  "dsl_expr": "(pipe X (robust_scale) (fft_mag axis=features) (polar) (rff_cos n=32 seed=42) (cheb degree=4) (gbm rounds=150 depth=3 lr=0.1))",
+  "ended_at": "2026-06-29T22:22:23Z",
+  "environment": {
+    "created_by_binary_sha": "b24ddd5e331834fb6b3c90dd823c0200d5b306c2993d745a51534b519e4db6d0",
+    "host": "xbabe1",
+    "runner": "newmath classify-csv"
+  },
+  "inference_rows_per_second": null,
+  "inference_time_seconds": null,
+  "metrics": {
+    "accuracy": 0.8617021276595744,
+    "average_precision": 0.9581711827210567,
+    "balanced_accuracy": 0.5968660968660968,
+    "brier_score": 0.09471365995063519,
+    "f1": 0.923076923076923,
+    "false_negatives": 3,
+    "false_positives": 10,
+    "log_loss": 0.3252158177404569,
+    "positive_rate": 0.8617021276595744,
+    "precision": 0.8863636363636364,
+    "predicted_positive_rate": 0.9361702127659575,
+    "recall": 0.9629629629629629,
+    "roc_auc": 0.8205128205128205,
+    "sensitivity": 0.9629629629629629,
+    "specificity": 0.23076923076923078,
+    "top_decile_lift": 1.1604938271604939,
+    "top_decile_positive_rate": 1.0,
+    "true_negatives": 3,
+    "true_positives": 78
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "model_hash": "294d6507c7f3f0bd5bf8cb85887707d9e4fb1002ea9dddb8ed3c8f4435f4d18b",
+  "n_features": 4,
+  "newmath_receipt_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_2eb39523270c_294d6507c7f3/20260629T222011Z/runs/127a1b76fe96adad/receipt.json",
+  "predictions_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_2eb39523270c_294d6507c7f3/20260629T222011Z/runs/127a1b76fe96adad/predictions.csv",
+  "run_date": "2026-06-29T22:22:23Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/arsenic-female-bladder.csv",
+  "source_run_dir": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_2eb39523270c_294d6507c7f3/20260629T222011Z",
+  "started_at": "2026-06-29T22:22:23Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 94,
+  "train_rows": 465,
+  "training_time_seconds": null,
+  "wall_time_seconds": 0.082468
+}

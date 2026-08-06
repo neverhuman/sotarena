@@ -1,0 +1,113 @@
+{
+  "algorithm": "jain_regressor_gen10000",
+  "dataset_hash": "3baa7e37fc1f7861",
+  "task_type": "regression",
+  "status": "completed",
+  "started_at_unix_ms": 1783167574234,
+  "finished_at_unix_ms": 1783167932379,
+  "rows": {
+    "train": 269,
+    "test": 54
+  },
+  "features": 4,
+  "timings": {
+    "load_secs": 0.000266215,
+    "search_secs": 300.096547055,
+    "gpu_kernel_secs": 8.708790389,
+    "finalist_cv_secs": 56.240159955,
+    "fit_predict_secs": 1.801022729,
+    "total_secs": 358.144198161
+  },
+  "model_class": "feat_math_genome",
+  "model_params": {
+    "gens": 10000,
+    "time_budget_secs": 300.0,
+    "pop": 64,
+    "top_k": 2,
+    "folds": 3,
+    "search_rows": 512,
+    "actual_search_rows": 269,
+    "gpu_kernel_configs": 131072,
+    "gpu_kernel_used": true,
+    "gpu_kernel_candidates": 8,
+    "gpu_kernel_message": "battle-gpu composite GPR kernel search over 5 specs",
+    "seed_genomes_file": "/home/ubuntu/quant/regression/reports/jain_regressor_fast30_gen0_seeds.txt",
+    "seed_genomes_requested": 64,
+    "seed_genomes_valid": 64,
+    "seed_genomes_used": 63,
+    "seed": 20260616,
+    "evals": 23881,
+    "tokens_total": 229993767.0,
+    "search_engine": "feat_math_evolve_ridge_surrogate+battle_gpu_gpr_mixture_proposals",
+    "final_selection": "honest_feat_math_cv_r2"
+  },
+  "metrics": {
+    "r2": 0.9819338765739621,
+    "rmse": 0.0344215633019505,
+    "mse": 0.0011848440201501856,
+    "mae": 0.023333844616406956,
+    "explained_variance": 0.9820262820153717,
+    "prediction_min": 0.08721344645071108,
+    "prediction_max": 0.9427954808506362,
+    "target_min": 0.0191256832,
+    "target_max": 0.972677588
+  },
+  "gene": "(pipe X (gpr kernel=rq+linear m=300 steps=40))",
+  "genome": "(pipe X (gpr kernel=rq+linear m=300 steps=40))",
+  "genome_hash": "359ea21c895bf77605a39f910037bf98f20d9551b22b6d20032a149dd78e9ece",
+  "cv": {
+    "folds": 3,
+    "mean_r2": 0.9752283129876526,
+    "oof_r2": 0.9754781661846984,
+    "fold_r2": [
+      0.9743653699590612,
+      0.9714713666229396,
+      0.9798482023809569
+    ]
+  },
+  "finalists": [
+    {
+      "rank": 1,
+      "gene": "(pipe X (gpr kernel=rq+linear m=300 steps=40))",
+      "genome": "(pipe X (gpr kernel=rq+linear m=300 steps=40))",
+      "genome_hash": "359ea21c895bf77605a39f910037bf98f20d9551b22b6d20032a149dd78e9ece",
+      "search_score": 434.39884797836805,
+      "search_fold_scores": [
+        434.39884797836805
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.9752283129876526,
+        "oof_r2": 0.9754781661846984,
+        "fold_r2": [
+          0.9743653699590612,
+          0.9714713666229396,
+          0.9798482023809569
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "gene": "(pipe X (rff_sin gamma=1.2235881942729836 n=93 seed=4740) (oblique_hinge append=true gamma=0.9665131800650099 n=76 seed=2896) (rand_proj append=true k=32 seed=6160) (standardize) (rand_proj append=true k=30 seed=6161) (rand_proj append=true k=32 seed=6160) (gpr kernel=rbf+linear m=500 steps=40))",
+      "genome": "(pipe X (rff_sin gamma=1.2235881942729836 n=93 seed=4740) (oblique_hinge append=true gamma=0.9665131800650099 n=76 seed=2896) (rand_proj append=true k=32 seed=6160) (standardize) (rand_proj append=true k=30 seed=6161) (rand_proj append=true k=32 seed=6160) (gpr kernel=rbf+linear m=500 steps=40))",
+      "genome_hash": "2649922c8e8470d53fe07106872f42b428db142f1a0824848bdaf8171d73fc29",
+      "search_score": 0.9765238653450702,
+      "search_fold_scores": [
+        0.9765655824212153,
+        0.9727892126117139,
+        0.9802168010022816
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.9744647587570942,
+        "oof_r2": 0.9746164517777972,
+        "fold_r2": [
+          0.9726455091502023,
+          0.971656361304062,
+          0.9790924058170178
+        ]
+      }
+    }
+  ],
+  "predictions_path": "/home/ubuntu/quant/regression/3baa7e37fc1f7861/predictions/jain_regressor_300.csv"
+}

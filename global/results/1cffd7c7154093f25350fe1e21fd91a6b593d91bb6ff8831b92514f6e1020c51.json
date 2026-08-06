@@ -1,0 +1,60 @@
+{
+  "algorithm": "passive_aggressive_regressor",
+  "dataset_hash": "cf5e74b4e9594944",
+  "ended_at": "2026-06-21T09:35:14+00:00",
+  "environment": {
+    "catboost_available": true,
+    "interpret_available": true,
+    "lightgbm_available": true,
+    "ngboost_available": true,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "pytorch_tabnet_available": true,
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1"
+    },
+    "xgboost_available": true
+  },
+  "inference_rows_per_second": 25933.156730243805,
+  "inference_time_seconds": 0.00011568202171474695,
+  "metrics": {
+    "explained_variance": -0.0014121535483890835,
+    "mae": 0.33540413918415773,
+    "max_error": 0.9950525291573795,
+    "mean_absolute_percentage_error_eps": 170834.51490662692,
+    "median_absolute_error": 0.0060352762734909695,
+    "mse": 0.3300640739971973,
+    "prediction_max": 0.006181276279261444,
+    "prediction_min": 0.004947470842620466,
+    "r2": -0.48550518508795126,
+    "rmse": 0.5745120312031744,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "sklearn.linear_model._passive_aggressive.PassiveAggressiveRegressor",
+  "n_features": 569,
+  "run_date": "2026-06-21T09:35:14+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/tsutumi.csv",
+  "started_at": "2026-06-21T09:35:14+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 3,
+  "train_rows": 10,
+  "training_time_seconds": 0.0011192520032636821,
+  "xgboost_device": null
+}

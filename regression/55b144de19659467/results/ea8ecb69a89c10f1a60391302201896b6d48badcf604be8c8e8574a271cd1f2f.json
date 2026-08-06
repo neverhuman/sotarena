@@ -1,0 +1,102 @@
+{
+  "algorithm": "hyp3_chimera_regression",
+  "checkpoint": "/home/ubuntu/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_stackfusionreg.pt",
+  "dataset_hash": "55b144de19659467",
+  "ended_at": "2026-07-04T05:53:46+00:00",
+  "environment": {
+    "checkpoint": "/home/ubuntu/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_stackfusionreg.pt",
+    "cuda_device_count_visible": 1,
+    "cuda_device_name": "NVIDIA A100-SXM4-40GB",
+    "cuda_max_memory_allocated_bytes": 5871520256,
+    "cuda_memory_allocated_bytes": 368223232,
+    "cuda_visible_devices": "GPU-142d5953-3845-376c-58a4-e9377c09371a",
+    "gpu_device": "GPU-142d5953-3845-376c-58a4-e9377c09371a",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "repo_root": "/home/ubuntu/fable_god/chimera_regression",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "torch": "2.7.0",
+    "torch_cuda_available": true,
+    "torch_num_threads": 1
+  },
+  "gpu_device": "GPU-142d5953-3845-376c-58a4-e9377c09371a",
+  "inference_rows_per_second": 88.53126240077017,
+  "inference_time_seconds": 11.284149496001191,
+  "metrics": {
+    "explained_variance": 0.9914852124544805,
+    "mae": 0.0013029569235804665,
+    "max_error": 0.23091214895248413,
+    "mean_absolute_percentage_error_eps": 0.014917747697252437,
+    "median_absolute_error": 0.00035855919122695923,
+    "mse": 6.973198818435531e-05,
+    "prediction_max": 0.7690878510475159,
+    "prediction_min": -0.0032545700669288635,
+    "r2": 0.9914840067823849,
+    "rmse": 0.0083505681354238,
+    "target_max": 1.0,
+    "target_min": 0.0009036673000082374
+  },
+  "model_class": "chimera.Chimera",
+  "model_metadata": {
+    "feature_augmentation": {
+      "augmented_feature_count": 136,
+      "block_columns": {
+        "hyperion3": 128,
+        "train3": 4
+      },
+      "block_names": [
+        "train3",
+        "hyperion3"
+      ],
+      "feature_order": [
+        "train3",
+        "hyperion3",
+        "original_csv_features"
+      ],
+      "mode": "prepend_feature_blocks",
+      "name": "hyp3_chimera_regression",
+      "original_feature_count": 4,
+      "payload_dir": "/home/ubuntu/~quant/regression/55b144de19659467",
+      "payload_roots": [
+        "/tmp/hyp3_chimera_regression_payloads",
+        "/home/ubuntu/~quant/regression"
+      ],
+      "source_paths": {
+        "hyperion3test.vs": "/home/ubuntu/~quant/regression/55b144de19659467/hyperion3test.vs",
+        "hyperion3train.vs": "/home/ubuntu/~quant/regression/55b144de19659467/hyperion3train.vs",
+        "test3.vs": "/home/ubuntu/~quant/regression/55b144de19659467/test3.vs",
+        "test_csv": "/home/ubuntu/quant/regression/55b144de19659467/test.csv",
+        "train3.vs": "/home/ubuntu/~quant/regression/55b144de19659467/train3.vs",
+        "train_csv": "/home/ubuntu/quant/regression/55b144de19659467/train.csv"
+      },
+      "split_rows": {
+        "test": 999,
+        "train": 1000
+      }
+    }
+  },
+  "model_name": "hyp3_chimera_regression",
+  "n_features": 136,
+  "run_date": "2026-07-04T05:53:46+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/tidytuesday-data-2018-2018-04-23-week4-australian-salary-csv-average-taxable-income.csv",
+  "started_at": "2026-07-04T05:53:34+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 0.0,
+  "wall_time_seconds": 11.332978609018028
+}

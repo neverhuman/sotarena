@@ -1,0 +1,67 @@
+{
+  "algorithm": "pytorch_tabular_category_embedding_regressor_epochs40",
+  "dataset_hash": "3baa7e37fc1f7861",
+  "ended_at": "2026-06-30T13:12:19Z",
+  "environment": {
+    "affinity": [
+      63
+    ],
+    "cuda_visible_devices": "0",
+    "deps": [
+      "pytorch_tabular",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super2",
+    "java": "/usr/bin/java",
+    "pid": 2921249,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 5388.132088927787,
+  "inference_time_seconds": 0.010022026021033525,
+  "metrics": {
+    "explained_variance": 0.842102126912945,
+    "mae": 0.07806187672716464,
+    "max_error": 0.30922913520678713,
+    "mean_absolute_percentage_error_eps": 0.2683811116782897,
+    "median_absolute_error": 0.06266520079560241,
+    "mse": 0.01035919266665698,
+    "prediction_max": 0.9162672162055969,
+    "prediction_min": -0.038818538188934326,
+    "r2": 0.8420463367944344,
+    "rmse": 0.10178011921125353,
+    "target_max": 0.972677588,
+    "target_min": 0.0191256832
+  },
+  "model_class": "models.tools.model_zoo._PyTorchTabularRegressor",
+  "model_params": {},
+  "n_features": 4,
+  "run_date": "2026-06-30T13:12:19Z",
+  "started_at": "2026-06-30T13:12:16Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 54,
+  "train_rows": 269,
+  "training_time_seconds": 2.523401489946991
+}

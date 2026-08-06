@@ -1,0 +1,65 @@
+{
+  "algorithm": "fable5_regressor",
+  "dataset_hash": "b78d323566930bd7",
+  "ended_at": "2026-07-11T01:31:48Z",
+  "environment": {
+    "affinity": [
+      15
+    ],
+    "cuda_visible_devices": "",
+    "deps": [],
+    "executable": "/home/ubuntu/remote_super/quant/.venv-model-queue/bin/python",
+    "host": "xbabe2",
+    "java": "/usr/bin/java",
+    "pid": 84557,
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "cpu_light",
+    "sklearn": "1.9.0",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 381.3872457095606,
+  "inference_time_seconds": 0.43787515675649047,
+  "metrics": {
+    "explained_variance": 0.9356597196493279,
+    "mae": 0.04171302245109592,
+    "max_error": 0.20366212069875822,
+    "mean_absolute_percentage_error_eps": 0.3995384821843841,
+    "median_absolute_error": 0.03754460698105455,
+    "mse": 0.0028885001500781986,
+    "prediction_max": 0.9025801692519878,
+    "prediction_min": 0.0649818121708878,
+    "r2": 0.9356475247969146,
+    "rmse": 0.05374476858335329,
+    "target_max": 0.969146311,
+    "target_min": 0.00127979368
+  },
+  "model_class": "models.fable5_regressor.Fable5Regressor",
+  "model_name": "fable5_regressor",
+  "model_params": {},
+  "n_features": 50,
+  "run_date": "2026-07-11T01:31:48Z",
+  "started_at": "2026-07-11T01:26:25Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 167,
+  "train_rows": 833,
+  "training_time_seconds": 316.44116596737877
+}

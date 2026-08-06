@@ -1,0 +1,84 @@
+{
+  "algorithm": "nm_c8ae9658ac9de190_append_manifold_isometry_defect_ridge",
+  "dataset_hash": "3baa7e37fc1f7861",
+  "ended_at": "2026-06-30T20:32:12Z",
+  "environment": {
+    "affinity": [
+      37
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super2",
+    "java": "/usr/bin/java",
+    "pid": 3943938,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 16519.31324091479,
+  "inference_time_seconds": 0.003268901025876403,
+  "metrics": {
+    "explained_variance": 0.9682036117497361,
+    "mae": 0.034850286051454654,
+    "max_error": 0.15277706888949216,
+    "mean_absolute_percentage_error_eps": 0.19032096486791564,
+    "median_absolute_error": 0.034819592561968885,
+    "mse": 0.00208705052352964,
+    "prediction_max": 0.9280581018387076,
+    "prediction_min": 0.09398983300202524,
+    "r2": 0.9681773197878958,
+    "rmse": 0.04568424808979173,
+    "target_max": 0.972677588,
+    "target_min": 0.0191256832
+  },
+  "model_class": "models.tools.new_math_regression.NewMathAppendRegressor",
+  "model_params": {
+    "append_features": true,
+    "binary_head": "ridge",
+    "candidate": "manifold_isometry_defect",
+    "candidate_spec_hash": "37c3fee7a91ce28a8e85acfc034b86b7804a24dd8bb98ed0f1863a9525b745a9",
+    "diagnostic_only": false,
+    "model_hash": "c8ae9658ac9de190",
+    "raw_col_cap": 128,
+    "regression_head": "ridge",
+    "row_cap": 2000,
+    "seed": 20260630,
+    "source_artifact": "nm_repair_20260630T000000Z",
+    "source_mean_delta_vs_raw_best": -0.01860483538676827,
+    "source_median_delta": -4.5896823939739484e-05,
+    "source_nm_algorithm": "NM_c8ae9658ac9de190_append_manifold_isometry_defect_ridge",
+    "source_win_rate": 0.4,
+    "source_wins": 2,
+    "transformed_col_cap": 512
+  },
+  "n_features": 4,
+  "run_date": "2026-06-30T20:32:12Z",
+  "started_at": "2026-06-30T20:32:11Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 54,
+  "train_rows": 269,
+  "training_time_seconds": 0.007104704971425235
+}

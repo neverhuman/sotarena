@@ -1,0 +1,85 @@
+{
+  "algorithm": "NM_Recon_a4c997414e1ab2b2_snake_case_manifold_perturbation",
+  "dataset_hash": "131bfb9d9a06f343",
+  "dsl_expr": "(pipe X (robust_scale) (snake_case_manifold_perturbation) (gbm depth=3 lr=0.1 rounds=150))",
+  "ended_at": "2026-06-30T01:08:30Z",
+  "environment": {
+    "created_by_binary_sha": "7ba20b75c9fbd93da7633ba649038b48eb6824052827752f8c31e2635307ea43",
+    "host": "xbabe2",
+    "newmath_binary": "/home/ubuntu/jmath/target/release/newmath",
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "runner": "complete-new-math-reports-v1",
+    "source_root": "/home/ubuntu/jmath",
+    "thread_limits": {}
+  },
+  "inference_rows_per_second": 9142.857142857143,
+  "inference_time_seconds": 0.007,
+  "metrics": {
+    "accuracy": 0.671875,
+    "average_precision": 0.722382549134028,
+    "balanced_accuracy": 0.6488095238095238,
+    "brier_score": 0.20826404756972225,
+    "cohen_kappa": 0.30864197530864196,
+    "f1": 0.5531914893617021,
+    "false_negatives": 15,
+    "false_positives": 6,
+    "log_loss": 0.6049082435323525,
+    "matthews_corrcoef": 0.3231528059706172,
+    "positive_rate": 0.4375,
+    "precision": 0.6842105263157895,
+    "predicted_positive_rate": 0.296875,
+    "recall": 0.4642857142857143,
+    "roc_auc": 0.7088293650793651,
+    "sensitivity": 0.4642857142857143,
+    "specificity": 0.8333333333333334,
+    "top_decile_capture_rate": 0.21428571428571427,
+    "top_decile_lift": 1.9591836734693877,
+    "top_decile_positive_rate": 0.8571428571428571,
+    "top_decile_precision": 0.8571428571428571,
+    "true_negatives": 30,
+    "true_positives": 13
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "n_features": 6,
+  "new_math": {
+    "created_by_binary_sha": "7ba20b75c9fbd93da7633ba649038b48eb6824052827752f8c31e2635307ea43",
+    "dsl_expr": "(pipe X (robust_scale) (snake_case_manifold_perturbation) (gbm depth=3 lr=0.1 rounds=150))",
+    "receipt_schema": "BinaryClassifierReceipt v1",
+    "reconstruction_provenance": {
+      "algorithm": "NM_Recon_a4c997414e1ab2b2_snake_case_manifold_perturbation",
+      "kind": "reconstructed_current_jmath",
+      "operator_name": "snake_case_manifold_perturbation",
+      "original_hash": "a4c997414e1ab2b2",
+      "source_root": "/home/ubuntu/jmath"
+    },
+    "runner_version": "complete-new-math-reports-v1",
+    "source_kind": "reconstructed_current_jmath",
+    "source_root": "/home/ubuntu/jmath"
+  },
+  "newmath_receipt_path": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_a4c997414e1ab2b2_snake_case_manifold_perturbation/131bfb9d9a06f343/receipt.json",
+  "predictions_path": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_a4c997414e1ab2b2_snake_case_manifold_perturbation/131bfb9d9a06f343/predictions.csv",
+  "run_date": "2026-06-30T01:08:30Z",
+  "schema": "QuantBinaryReport v1",
+  "source_path": "/home/ubuntu/hyper/data/tabular/analcatdata-reviewer.csv",
+  "source_run_dir": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_a4c997414e1ab2b2_snake_case_manifold_perturbation/131bfb9d9a06f343",
+  "started_at": "2026-06-30T01:08:29Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 64,
+  "timings": {
+    "classify_csv_ms": {
+      "head_fit_predict": 7,
+      "parse": 0,
+      "read": 0,
+      "total": 15,
+      "transform_fit_predict": 0
+    },
+    "elapsed_seconds": 0.464740514755249
+  },
+  "train_rows": 315,
+  "training_time_seconds": 0.0
+}

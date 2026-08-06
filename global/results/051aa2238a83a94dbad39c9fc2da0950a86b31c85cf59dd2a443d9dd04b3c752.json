@@ -1,0 +1,48 @@
+{
+  "algorithm": "xgboost_hist",
+  "dataset_hash": "dee1fc8e9afd81c9",
+  "ended_at": "2026-06-21T08:48:04+00:00",
+  "environment": {
+    "lightgbm_available": false,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "xgboost_available": true
+  },
+  "inference_rows_per_second": 26259.735190411866,
+  "inference_time_seconds": 0.0009901089943014085,
+  "metrics": {
+    "explained_variance": -0.19001920213980572,
+    "mae": 0.2665760617416639,
+    "max_error": 0.7083325982093811,
+    "mean_absolute_percentage_error_eps": 9831466.073085407,
+    "median_absolute_error": 0.2161565013229847,
+    "mse": 0.10828986309290091,
+    "prediction_max": 0.9454734325408936,
+    "prediction_min": 0.09575151652097702,
+    "r2": -0.20006467595719135,
+    "rmse": 0.3290742516407215,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "xgboost.sklearn.XGBRegressor",
+  "n_features": 8,
+  "run_date": "2026-06-21T08:48:04+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/grub-damage.csv",
+  "started_at": "2026-06-21T08:48:04+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 26,
+  "train_rows": 129,
+  "training_time_seconds": 0.020784691034350544
+}

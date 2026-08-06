@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="568" height="482" viewBox="0 0 568 482" role="img" aria-labelledby="title">
+  <title id="title">Binary Elo leaderboard</title>
+  <defs>
+    <clipPath id="frame-clip"><rect width="568" height="482" rx="6"/></clipPath>
+    <linearGradient id="elo-gradient-0" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#329440"/>
+      <stop offset="100%" stop-color="#3fb950"/>
+    </linearGradient>
+    <linearGradient id="elo-gradient-1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ad7724"/>
+      <stop offset="100%" stop-color="#d8952d"/>
+    </linearGradient>
+    <linearGradient id="elo-gradient-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ae7725"/>
+      <stop offset="100%" stop-color="#d9952e"/>
+    </linearGradient>
+    <linearGradient id="elo-gradient-3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b2742c"/>
+      <stop offset="100%" stop-color="#de9137"/>
+    </linearGradient>
+    <linearGradient id="elo-gradient-4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b2742c"/>
+      <stop offset="100%" stop-color="#de9137"/>
+    </linearGradient>
+    <linearGradient id="elo-gradient-5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b67233"/>
+      <stop offset="100%" stop-color="#e38e40"/>
+    </linearGradient>
+    <linearGradient id="elo-gradient-6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b77036"/>
+      <stop offset="100%" stop-color="#e58c44"/>
+    </linearGradient>
+    <linearGradient id="elo-gradient-7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ba6f3a"/>
+      <stop offset="100%" stop-color="#e88b48"/>
+    </linearGradient>
+    <linearGradient id="elo-gradient-8" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#bb6e3e"/>
+      <stop offset="100%" stop-color="#ea894d"/>
+    </linearGradient>
+    <linearGradient id="elo-gradient-9" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#be6c41"/>
+      <stop offset="100%" stop-color="#ed8751"/>
+    </linearGradient>
+    <linearGradient id="elo-gradient-10" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c4684d"/>
+      <stop offset="100%" stop-color="#f58260"/>
+    </linearGradient>
+    <linearGradient id="elo-gradient-11" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c5674e"/>
+      <stop offset="100%" stop-color="#f68162"/>
+    </linearGradient>
+    <linearGradient id="elo-gradient-12" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#cc625b"/>
+      <stop offset="100%" stop-color="#ff7b72"/>
+    </linearGradient>
+  </defs>
+  <rect width="568" height="482" rx="6" fill="#0d1117"/>
+  <g clip-path="url(#frame-clip)">
+    <rect class="elo-bar" x="328" y="40" width="240.000" height="34" fill="url(#elo-gradient-0)"/>
+    <rect class="elo-bar" x="328" y="74" width="117.662" height="34" fill="url(#elo-gradient-1)"/>
+    <rect class="elo-bar" x="328" y="108" width="116.923" height="34" fill="url(#elo-gradient-2)"/>
+    <rect class="elo-bar" x="328" y="142" width="104.850" height="34" fill="url(#elo-gradient-3)"/>
+    <rect class="elo-bar" x="328" y="176" width="104.644" height="34" fill="url(#elo-gradient-4)"/>
+    <rect class="elo-bar" x="328" y="210" width="92.759" height="34" fill="url(#elo-gradient-5)"/>
+    <rect class="elo-bar" x="328" y="244" width="86.918" height="34" fill="url(#elo-gradient-6)"/>
+    <rect class="elo-bar" x="328" y="278" width="81.728" height="34" fill="url(#elo-gradient-7)"/>
+    <rect class="elo-bar" x="328" y="312" width="75.034" height="34" fill="url(#elo-gradient-8)"/>
+    <rect class="elo-bar" x="328" y="346" width="69.515" height="34" fill="url(#elo-gradient-9)"/>
+    <rect class="elo-bar" x="328" y="380" width="49.900" height="34" fill="url(#elo-gradient-10)"/>
+    <rect class="elo-bar" x="328" y="414" width="47.157" height="34" fill="url(#elo-gradient-11)"/>
+    <rect class="elo-bar" x="328" y="448" width="25.882" height="34" fill="url(#elo-gradient-12)"/>
+  </g>
+  <path d="M 1 6 Q 1 1 6 1 H 562 Q 567 1 567 6 V 40 H 1 Z" fill="#161b22"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14">
+    <g fill="#8b949e" font-weight="600">
+      <text x="48" y="25" text-anchor="end">Rank</text>
+      <text x="80" y="25">Method</text>
+      <text x="312" y="25" text-anchor="end">Elo</text>
+      <text x="344" y="25">Relative Elo (95% min)</text>
+    </g>
+    <text x="48" y="62" text-anchor="end" fill="#8b949e">1</text>
+    <text x="80" y="62" fill="#3fb950" font-weight="700">ASPFM</text>
+    <text x="312" y="62" text-anchor="end" fill="#3fb950" font-weight="700">2062.9</text>
+    <text x="48" y="96" text-anchor="end" fill="#8b949e">2</text>
+    <text x="80" y="96" fill="#d8952d" font-weight="700">TabFM Ensemble</text>
+    <text x="312" y="96" text-anchor="end" fill="#d8952d" font-weight="700">1718.0</text>
+    <text x="48" y="130" text-anchor="end" fill="#8b949e">3</text>
+    <text x="80" y="130" fill="#d9952e" font-weight="700">TabICL</text>
+    <text x="312" y="130" text-anchor="end" fill="#d9952e" font-weight="700">1715.9</text>
+    <text x="48" y="164" text-anchor="end" fill="#8b949e">4</text>
+    <text x="80" y="164" fill="#de9137" font-weight="700">TabPFN v3</text>
+    <text x="312" y="164" text-anchor="end" fill="#de9137" font-weight="700">1681.9</text>
+    <text x="48" y="198" text-anchor="end" fill="#8b949e">5</text>
+    <text x="80" y="198" fill="#de9137" font-weight="700">catboost</text>
+    <text x="312" y="198" text-anchor="end" fill="#de9137" font-weight="700">1681.3</text>
+    <text x="48" y="232" text-anchor="end" fill="#8b949e">6</text>
+    <text x="80" y="232" fill="#e38e40" font-weight="700">ebm</text>
+    <text x="312" y="232" text-anchor="end" fill="#e38e40" font-weight="700">1647.8</text>
+    <text x="48" y="266" text-anchor="end" fill="#8b949e">7</text>
+    <text x="80" y="266" fill="#e58c44" font-weight="700">Fable 5</text>
+    <text x="312" y="266" text-anchor="end" fill="#e58c44" font-weight="700">1631.4</text>
+    <text x="48" y="300" text-anchor="end" fill="#8b949e">8</text>
+    <text x="80" y="300" fill="#e88b48" font-weight="700">ada_boost</text>
+    <text x="312" y="300" text-anchor="end" fill="#e88b48" font-weight="700">1616.7</text>
+    <text x="48" y="334" text-anchor="end" fill="#8b949e">9</text>
+    <text x="80" y="334" fill="#ea894d" font-weight="700">gradient_boosting</text>
+    <text x="312" y="334" text-anchor="end" fill="#ea894d" font-weight="700">1597.9</text>
+    <text x="48" y="368" text-anchor="end" fill="#8b949e">10</text>
+    <text x="80" y="368" fill="#ed8751" font-weight="700">voting_soft</text>
+    <text x="312" y="368" text-anchor="end" fill="#ed8751" font-weight="700">1582.3</text>
+    <text x="48" y="402" text-anchor="end" fill="#8b949e">17</text>
+    <text x="80" y="402" fill="#f58260" font-weight="700">OpenAI *sol</text>
+    <text x="312" y="402" text-anchor="end" fill="#f58260" font-weight="700">1527.0</text>
+    <text x="48" y="436" text-anchor="end" fill="#8b949e">18</text>
+    <text x="80" y="436" fill="#f68162" font-weight="700">Grok 4.5</text>
+    <text x="312" y="436" text-anchor="end" fill="#f68162" font-weight="700">1519.3</text>
+    <text x="48" y="470" text-anchor="end" fill="#8b949e">26</text>
+    <text x="80" y="470" fill="#ff7b72" font-weight="700">Kimi K3</text>
+    <text x="312" y="470" text-anchor="end" fill="#ff7b72" font-weight="700">1459.3</text>
+  </g>
+  <path d="M 1 40 H 567" stroke="#30363d"/>
+  <path d="M 1 74 H 567" stroke="#30363d"/>
+  <path d="M 1 108 H 567" stroke="#30363d"/>
+  <path d="M 1 142 H 567" stroke="#30363d"/>
+  <path d="M 1 176 H 567" stroke="#30363d"/>
+  <path d="M 1 210 H 567" stroke="#30363d"/>
+  <path d="M 1 244 H 567" stroke="#30363d"/>
+  <path d="M 1 278 H 567" stroke="#30363d"/>
+  <path d="M 1 312 H 567" stroke="#30363d"/>
+  <path d="M 1 346 H 567" stroke="#30363d"/>
+  <path d="M 1 380 H 567" stroke="#30363d"/>
+  <path d="M 1 414 H 567" stroke="#30363d"/>
+  <path d="M 1 448 H 567" stroke="#30363d"/>
+  <rect width="568" height="482" rx="6" fill="none" stroke="#30363d"/>
+</svg>

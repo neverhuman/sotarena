@@ -1,0 +1,70 @@
+{
+  "algorithm": "ridge_classifier",
+  "dataset_hash": "8a13750dca58f373",
+  "ended_at": "2026-06-26T12:08:00Z",
+  "environment": {
+    "affinity": [
+      77
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super7",
+    "pid": 3235791,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 64300.45841994447,
+  "inference_time_seconds": 0.0013685750018339604,
+  "metrics": {
+    "accuracy": 0.7727272727272727,
+    "average_precision": 0.50236248834647,
+    "balanced_accuracy": 0.7235772357723578,
+    "cohen_kappa": 0.19999999999999996,
+    "f1": 0.2857142857142857,
+    "false_negatives": 2,
+    "false_positives": 18,
+    "matthews_corrcoef": 0.2602896031476768,
+    "positive_rate": 0.06818181818181818,
+    "precision": 0.18181818181818182,
+    "predicted_positive_rate": 0.25,
+    "recall": 0.6666666666666666,
+    "roc_auc": 0.8658536585365854,
+    "sensitivity": 0.6666666666666666,
+    "specificity": 0.7804878048780488,
+    "top_decile_lift": 4.888888888888889,
+    "top_decile_positive_rate": 0.3333333333333333,
+    "true_negatives": 64,
+    "true_positives": 4
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 36,
+  "run_date": "2026-06-26T12:08:00Z",
+  "started_at": "2026-06-26T12:07:57Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 88,
+  "train_rows": 439,
+  "training_time_seconds": 0.006738188996678218
+}

@@ -1,0 +1,19 @@
+{
+  "dataset_hash": "6c5a3db8f3c1d92d",
+  "dataset_id": "6c5a3db8f3c1d92d",
+  "metric": "rmse",
+  "schema": "sotarena.dataset",
+  "task": "regression",
+  "test": {
+    "bytes": 2968,
+    "rows": 167,
+    "sha256": "716dbf298d9faa97fdefecf2e28f7ff45b1895cdc42cb9f384c3e16e5bde10d8",
+    "url": "https://data.neverhuman.org/regression/6c5a3db8f3c1d92d/test.csv"
+  },
+  "train": {
+    "bytes": 14872,
+    "rows": 833,
+    "sha256": "c0835bf0bc554023a98ec74cc6e32adeefc426714069117ee95abf9cf6537ce0",
+    "url": "https://data.neverhuman.org/regression/6c5a3db8f3c1d92d/train.csv"
+  }
+}

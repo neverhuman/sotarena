@@ -1,0 +1,41 @@
+{
+  "algorithm": "ada_boost",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "a3bd0a400ec4d7f9",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.027200110955163836,
+  "metrics": {
+    "explained_variance": 0.93244093905633,
+    "mae": 0.21292125935694833,
+    "max_error": 1.845867640449436,
+    "median_absolute_error": 0.17302640028947958,
+    "mse": 0.08047575717756772,
+    "prediction_max": 4.838975862068966,
+    "prediction_min": 0.5560197604790418,
+    "r2": 0.9274777201737731,
+    "rmse": 0.2836824936043247,
+    "target_max": 5.8397,
+    "target_min": 0.0077
+  },
+  "model_name": "ada_boost",
+  "n_features": 665,
+  "provenance": {
+    "canonical_test_sha256": "398556c974e2fae1eefc40d5e5ed5030eb22fafb192fadae582b9a62e0c93a89",
+    "canonical_test_target_sha256": "764d725105dae1f1d0f03aa62a05fe66b1d3ca39d5eb8592c7ac8d02155ac1da",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "b23ffd416f86e27135585701a6a4ad11e754791d3a08625c6651a4f94ba1933c",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/a3bd0a400ec4d7f9/ada_boost/worker-receipt.json",
+    "worker_receipt_sha256": "c6f1204c3b4c0266c58ebaeb4594beaebb5380b9f06d9655e384b54066df2494"
+  },
+  "run_date": "2026-07-23T13:14:33Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 17.33057024993468
+}

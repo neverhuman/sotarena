@@ -1,0 +1,85 @@
+{
+  "algorithm": "NM_Recon_a4c997414e1ab2b2_snake_case_manifold_perturbation",
+  "dataset_hash": "d9553a9cc619172c",
+  "dsl_expr": "(pipe X (robust_scale) (snake_case_manifold_perturbation) (gbm depth=3 lr=0.1 rounds=150))",
+  "ended_at": "2026-06-30T01:09:36Z",
+  "environment": {
+    "created_by_binary_sha": "7ba20b75c9fbd93da7633ba649038b48eb6824052827752f8c31e2635307ea43",
+    "host": "xbabe2",
+    "newmath_binary": "/home/ubuntu/jmath/target/release/newmath",
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "runner": "complete-new-math-reports-v1",
+    "source_root": "/home/ubuntu/jmath",
+    "thread_limits": {}
+  },
+  "inference_rows_per_second": 17241.379310344826,
+  "inference_time_seconds": 0.058,
+  "metrics": {
+    "accuracy": 0.526,
+    "average_precision": 0.5389827138707205,
+    "balanced_accuracy": 0.5260741042964172,
+    "brier_score": 0.2638652518653215,
+    "cohen_kappa": 0.05214028323808084,
+    "f1": 0.5082987551867221,
+    "false_negatives": 256,
+    "false_positives": 218,
+    "log_loss": 0.7253857482570475,
+    "matthews_corrcoef": 0.05229147489837668,
+    "positive_rate": 0.501,
+    "precision": 0.5291576673866091,
+    "predicted_positive_rate": 0.463,
+    "recall": 0.48902195608782434,
+    "roc_auc": 0.5342481369925479,
+    "sensitivity": 0.48902195608782434,
+    "specificity": 0.56312625250501,
+    "top_decile_capture_rate": 0.11776447105788423,
+    "top_decile_lift": 1.1776447105788423,
+    "top_decile_positive_rate": 0.59,
+    "top_decile_precision": 0.59,
+    "true_negatives": 281,
+    "true_positives": 245
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "n_features": 5,
+  "new_math": {
+    "created_by_binary_sha": "7ba20b75c9fbd93da7633ba649038b48eb6824052827752f8c31e2635307ea43",
+    "dsl_expr": "(pipe X (robust_scale) (snake_case_manifold_perturbation) (gbm depth=3 lr=0.1 rounds=150))",
+    "receipt_schema": "BinaryClassifierReceipt v1",
+    "reconstruction_provenance": {
+      "algorithm": "NM_Recon_a4c997414e1ab2b2_snake_case_manifold_perturbation",
+      "kind": "reconstructed_current_jmath",
+      "operator_name": "snake_case_manifold_perturbation",
+      "original_hash": "a4c997414e1ab2b2",
+      "source_root": "/home/ubuntu/jmath"
+    },
+    "runner_version": "complete-new-math-reports-v1",
+    "source_kind": "reconstructed_current_jmath",
+    "source_root": "/home/ubuntu/jmath"
+  },
+  "newmath_receipt_path": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_a4c997414e1ab2b2_snake_case_manifold_perturbation/d9553a9cc619172c/receipt.json",
+  "predictions_path": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_a4c997414e1ab2b2_snake_case_manifold_perturbation/d9553a9cc619172c/predictions.csv",
+  "run_date": "2026-06-30T01:09:36Z",
+  "schema": "QuantBinaryReport v1",
+  "source_path": "/home/ubuntu/hyper/data/tabular/sf-police-incidents.csv",
+  "source_run_dir": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_a4c997414e1ab2b2_snake_case_manifold_perturbation/d9553a9cc619172c",
+  "started_at": "2026-06-30T01:09:36Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "timings": {
+    "classify_csv_ms": {
+      "head_fit_predict": 58,
+      "parse": 0,
+      "read": 1,
+      "total": 83,
+      "transform_fit_predict": 3
+    },
+    "elapsed_seconds": 0.47335219383239746
+  },
+  "train_rows": 1000,
+  "training_time_seconds": 0.003
+}

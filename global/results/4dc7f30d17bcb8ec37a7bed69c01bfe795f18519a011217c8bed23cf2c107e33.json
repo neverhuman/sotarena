@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "2a572ddadd68c4a3f1f01a6e449dacc8c0e8d3ec5ead334ebb120d281686f176",
+    "hyperion3test128dim.vs": "ef54185404e66f0e8e9f1294bec93efb0196199ce97c204385d03862e4e2aca1",
+    "hyperion3train.vs": "15eea254782c5c17d8ef0be8ff6e8578fe3c7d14ea5126a6548358c819d96631",
+    "hyperion3train128dim.vs": "3ac7530f777e7fa80df7a3b38e5b8781c925dd7727854b6c61cfd203c0587b66",
+    "test3.vs": "04fd15e511f1eca0971c9e53dcc430fcdb5e108985b23346e0fc5944937472f0",
+    "train3.vs": "7b2aa3aea082e1e6a12532b0a5a59dee1f92b14c8ba85c7caf483fb29781a518"
+  },
+  "counts": {
+    "augmented_features": 134,
+    "hyperion3_features": 128,
+    "raw_features": 3,
+    "test_rows": 36,
+    "train3_features": 3,
+    "train_rows": 180
+  },
+  "created_at": "2026-07-08T22:26:40Z",
+  "dataset_hash": "79e600bc5fcd5da7",
+  "dataset_name": "Uniformity trial of peanuts",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.21183684130694025,
+    "delta_vs_raw_selected_model": -0.04596670938897207,
+    "prior_best_r2": 0.5463832816825347,
+    "r2": 0.33454644037559444,
+    "raw_selected_model_r2": 0.3805131497645665
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "tabfm_ensemble_regressor",
+    "path": "/home/ubuntu/remote_super/quant/regression/79e600bc5fcd5da7/reports/tabfm_ensemble_regressor.json",
+    "r2": 0.5463832816825347
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 60.09170344378799,
+    "raw_fit_predict_seconds": 0.1127697266638279
+  }
+}

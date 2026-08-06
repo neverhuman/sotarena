@@ -1,0 +1,73 @@
+{
+  "algorithm": "tabm_epochs10",
+  "dataset_hash": "127a1b76fe96adad",
+  "ended_at": "2026-06-28T20:41:45Z",
+  "environment": {
+    "affinity": [
+      15
+    ],
+    "cuda_visible_devices": "",
+    "deps": [
+      "tabm"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super2",
+    "java": "/usr/bin/java",
+    "pid": 1113911,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 50097.23617438123,
+  "inference_time_seconds": 0.0018763510161079466,
+  "metrics": {
+    "accuracy": 0.8617021276595744,
+    "average_precision": 0.7979811485403128,
+    "balanced_accuracy": 0.5,
+    "brier_score": 0.18500595512870854,
+    "cohen_kappa": 0.0,
+    "f1": 0.9257142857142857,
+    "false_negatives": 0,
+    "false_positives": 13,
+    "log_loss": 0.5612306208057231,
+    "matthews_corrcoef": 0.0,
+    "positive_rate": 0.8617021276595744,
+    "precision": 0.8617021276595744,
+    "predicted_positive_rate": 1.0,
+    "recall": 1.0,
+    "roc_auc": 0.3570750237416904,
+    "sensitivity": 1.0,
+    "specificity": 0.0,
+    "top_decile_lift": 0.8123456790123457,
+    "top_decile_positive_rate": 0.7,
+    "true_negatives": 0,
+    "true_positives": 81
+  },
+  "model_class": "models.tools.model_zoo.TabMSklearnClassifier",
+  "model_params": {},
+  "n_features": 4,
+  "run_date": "2026-06-28T20:41:45Z",
+  "started_at": "2026-06-28T20:41:42Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 94,
+  "train_rows": 465,
+  "training_time_seconds": 1.7607357410015538
+}

@@ -1,0 +1,61 @@
+{
+  "algorithm": "NM_QuantBinary_8f05d2cc978f_457d356fe2e8",
+  "benchmark_pool": {
+    "normalized_elo": 0.9999999999999454,
+    "pool_best": 1.0000000000000002,
+    "pool_best_algorithm": "bagging",
+    "pool_median": 0.9959349593495935,
+    "pool_percentile": 99.27007299270073,
+    "pool_size": 137
+  },
+  "core_hash": "8f05d2cc978f19d00637bb4e21435229590c5374bb82afe0d26954d48eb2f85f",
+  "dataset_hash": "8a13750dca58f373",
+  "dsl_expr": "(pipe X (rfft_mag axis=features) (polar) (map expr=x*x) (rff_cos n=32 seed=2) (cheb degree=4) (gbm rounds=150 depth=3 lr=0.1))",
+  "ended_at": "2026-06-29T20:05:07Z",
+  "environment": {
+    "created_by_binary_sha": "3f770f17bf4ec8384af11a841a270670fe781caf7d4e48246922cf03351b3369",
+    "host": "xbabe3",
+    "runner": "newmath classify-csv"
+  },
+  "inference_rows_per_second": null,
+  "inference_time_seconds": null,
+  "metrics": {
+    "accuracy": 1.0,
+    "average_precision": 1.0,
+    "balanced_accuracy": 1.0,
+    "brier_score": 0.0003143162345764826,
+    "f1": 1.0,
+    "false_negatives": 0,
+    "false_positives": 0,
+    "log_loss": 0.006828712750549282,
+    "positive_rate": 0.06818181818181818,
+    "precision": 1.0,
+    "predicted_positive_rate": 0.06818181818181818,
+    "recall": 1.0,
+    "roc_auc": 1.0,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "top_decile_lift": 9.777777777777779,
+    "top_decile_positive_rate": 0.6666666666666666,
+    "true_negatives": 82,
+    "true_positives": 6
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "model_hash": "457d356fe2e85c9c99950f29d017ff924b476985b93d165bf89f134a21ad72c0",
+  "n_features": 36,
+  "newmath_receipt_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_QuantBinary_8f05d2cc978f_457d356fe2e8/20260629T200254Z/runs/8a13750dca58f373/receipt.json",
+  "predictions_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_QuantBinary_8f05d2cc978f_457d356fe2e8/20260629T200254Z/runs/8a13750dca58f373/predictions.csv",
+  "run_date": "2026-06-29T20:05:07Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/water-treatment.csv",
+  "source_run_dir": "/home/ubuntu/jmath/target/newmath/quant_full/NM_QuantBinary_8f05d2cc978f_457d356fe2e8/20260629T200254Z",
+  "started_at": "2026-06-29T20:05:07Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 88,
+  "train_rows": 439,
+  "training_time_seconds": null,
+  "wall_time_seconds": 0.194516
+}

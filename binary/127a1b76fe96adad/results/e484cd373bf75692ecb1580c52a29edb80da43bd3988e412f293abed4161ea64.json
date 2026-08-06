@@ -1,0 +1,70 @@
+{
+  "algorithm": "ridge_classifier",
+  "dataset_hash": "127a1b76fe96adad",
+  "ended_at": "2026-06-26T12:04:43Z",
+  "environment": {
+    "affinity": [
+      109
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super6",
+    "pid": 2674319,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 82184.2819555267,
+  "inference_time_seconds": 0.0011437710199970752,
+  "metrics": {
+    "accuracy": 0.7021276595744681,
+    "average_precision": 0.9626666188772344,
+    "balanced_accuracy": 0.698005698005698,
+    "cohen_kappa": 0.24062319676860944,
+    "f1": 0.8028169014084507,
+    "false_negatives": 24,
+    "false_positives": 4,
+    "matthews_corrcoef": 0.286417785077879,
+    "positive_rate": 0.8617021276595744,
+    "precision": 0.9344262295081968,
+    "predicted_positive_rate": 0.648936170212766,
+    "recall": 0.7037037037037037,
+    "roc_auc": 0.7996201329534662,
+    "sensitivity": 0.7037037037037037,
+    "specificity": 0.6923076923076923,
+    "top_decile_lift": 1.1604938271604939,
+    "top_decile_positive_rate": 1.0,
+    "true_negatives": 9,
+    "true_positives": 57
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 4,
+  "run_date": "2026-06-26T12:04:43Z",
+  "started_at": "2026-06-26T12:04:39Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 94,
+  "train_rows": 465,
+  "training_time_seconds": 0.005277319985907525
+}

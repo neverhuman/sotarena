@@ -1,0 +1,73 @@
+{
+  "algorithm": "xgboost_hist_240",
+  "dataset_hash": "bde2040d63cb1d9b",
+  "ended_at": "2026-06-26T12:17:07Z",
+  "environment": {
+    "affinity": [
+      77
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "xgboost",
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super3",
+    "pid": 2761462,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 122261.107042688,
+  "inference_time_seconds": 0.008179215976269916,
+  "metrics": {
+    "accuracy": 0.987,
+    "average_precision": 0.9836589865785897,
+    "balanced_accuracy": 0.9419642857142857,
+    "brier_score": 0.010369948952423087,
+    "cohen_kappa": 0.931152819556836,
+    "f1": 0.9383886255924171,
+    "false_negatives": 13,
+    "false_positives": 0,
+    "log_loss": 0.0405877362554397,
+    "matthews_corrcoef": 0.9333674973172994,
+    "positive_rate": 0.112,
+    "precision": 1.0,
+    "predicted_positive_rate": 0.099,
+    "recall": 0.8839285714285714,
+    "roc_auc": 0.996279761904762,
+    "sensitivity": 0.8839285714285714,
+    "specificity": 1.0,
+    "top_decile_lift": 8.839285714285714,
+    "top_decile_positive_rate": 0.99,
+    "true_negatives": 888,
+    "true_positives": 99
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 21,
+  "run_date": "2026-06-26T12:17:07Z",
+  "started_at": "2026-06-26T12:16:29Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 35.542605035007
+}

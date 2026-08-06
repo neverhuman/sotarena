@@ -1,0 +1,67 @@
+{
+  "algorithm": "torch_frame_trompt_regressor",
+  "dataset_hash": "7af85a04de0c7018",
+  "ended_at": "2026-06-30T14:39:31Z",
+  "environment": {
+    "affinity": [
+      84
+    ],
+    "cuda_visible_devices": "4",
+    "deps": [
+      "torch_frame",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-regression-oss-gpu/bin/python",
+    "host": "super7",
+    "java": "/usr/bin/java",
+    "pid": 1049219,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 18907.461619832135,
+  "inference_time_seconds": 0.0064524790504947305,
+  "metrics": {
+    "explained_variance": 0.9820931937989235,
+    "mae": 0.024373885973961253,
+    "max_error": 0.10744056341143604,
+    "mean_absolute_percentage_error_eps": 0.06289407876968732,
+    "median_absolute_error": 0.02126087676442684,
+    "mse": 0.0009523437128574341,
+    "prediction_max": 0.9333180952727425,
+    "prediction_min": 0.12574274878683056,
+    "r2": 0.9807655966965548,
+    "rmse": 0.030860066637281167,
+    "target_max": 0.981707335,
+    "target_min": 0.0896226391
+  },
+  "model_class": "models.tools.model_zoo._TorchFrameRegressorWrapper",
+  "model_params": {},
+  "n_features": 14,
+  "run_date": "2026-06-30T14:39:31Z",
+  "started_at": "2026-06-30T14:39:26Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 122,
+  "train_rows": 609,
+  "training_time_seconds": 3.119079397059977
+}

@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "c608a54baf8b5ae6d0eee96748ccd1006323fd0f226976be120e8e9abc49e0c8",
+    "hyperion3test128dim.vs": "3c508524c069e17647e4b0698cbe87fa0863b0fb903c7ebb6603c9d88cff2b95",
+    "hyperion3train.vs": "4fdb5a80ee7e4f574946fa334aed0038bb9fde850bad7f9e45555b036218d79e",
+    "hyperion3train128dim.vs": "c214f5dc54b20a6650003e794d7782308330dce26310d68f69e6edd02535b79e",
+    "test3.vs": "b38bb28ca39bde70d8439c11480d924b8854bcdaf15e35fffba6206bf77fa39f",
+    "train3.vs": "382edbcd533eb5edea537ea9e079eeaec0cc57fee2d70b472fff1b3967b385f3"
+  },
+  "counts": {
+    "augmented_features": 134,
+    "hyperion3_features": 128,
+    "raw_features": 3,
+    "test_rows": 80,
+    "train3_features": 3,
+    "train_rows": 395
+  },
+  "created_at": "2026-07-08T18:37:29Z",
+  "dataset_hash": "e5a3a7b3668a1cc2",
+  "dataset_name": "556_analcatdata_apnea2",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.729262689336917,
+    "delta_vs_raw_selected_model": -0.656263043397453,
+    "prior_best_r2": 0.9553566615039993,
+    "r2": 0.22609397216708238,
+    "raw_selected_model_r2": 0.8823570155645354
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "tabm",
+    "path": "/home/ubuntu/remote_super/quant/regression/e5a3a7b3668a1cc2/reports/tabm.json",
+    "r2": 0.9553566615039993
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 104.02066504582763,
+    "raw_fit_predict_seconds": 0.11278342269361019
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "algorithm": "NM_Concept_cec156877d6a_4a2f7d10c052",
+  "benchmark_pool": {
+    "normalized_elo": 0.8057983372415272,
+    "pool_best": 0.9950977656229651,
+    "pool_best_algorithm": "tabpfn_v25_classifier_real",
+    "pool_median": 0.9514613681605923,
+    "pool_percentile": 71.85185185185185,
+    "pool_size": 135
+  },
+  "core_hash": "5d5f84c8c7adda532d82bbcfe7889c8ca0863920ac0f746987e238dcfeea7ba3",
+  "dataset_hash": "63722a5ad9789899",
+  "dsl_expr": "(pipe X (robust_scale) (poincare) (gbm rounds=150 depth=3 lr=0.1))",
+  "ended_at": "2026-06-29T22:26:45Z",
+  "environment": {
+    "created_by_binary_sha": "b24ddd5e331834fb6b3c90dd823c0200d5b306c2993d745a51534b519e4db6d0",
+    "host": "xbabe3",
+    "runner": "newmath classify-csv"
+  },
+  "inference_rows_per_second": null,
+  "inference_time_seconds": null,
+  "metrics": {
+    "accuracy": 0.966,
+    "average_precision": 0.8188757626685539,
+    "balanced_accuracy": 0.8006548715372737,
+    "brier_score": 0.02471587994727374,
+    "f1": 0.673076923076923,
+    "false_negatives": 22,
+    "false_positives": 12,
+    "log_loss": 0.07967838360919738,
+    "positive_rate": 0.057,
+    "precision": 0.7446808510638298,
+    "predicted_positive_rate": 0.047,
+    "recall": 0.6140350877192983,
+    "roc_auc": 0.9866235046789827,
+    "sensitivity": 0.6140350877192983,
+    "specificity": 0.9872746553552492,
+    "top_decile_lift": 9.473684210526317,
+    "top_decile_positive_rate": 0.54,
+    "true_negatives": 931,
+    "true_positives": 35
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "model_hash": "4a2f7d10c052d91a6671b8ed1b5b586136b1682dfb6dd5e361459e33218c2fcd",
+  "n_features": 27,
+  "newmath_receipt_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_cec156877d6a_4a2f7d10c052/20260629T222628Z/runs/63722a5ad9789899/receipt.json",
+  "predictions_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_cec156877d6a_4a2f7d10c052/20260629T222628Z/runs/63722a5ad9789899/predictions.csv",
+  "run_date": "2026-06-29T22:26:45Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/sick-numeric.csv",
+  "source_run_dir": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_cec156877d6a_4a2f7d10c052/20260629T222628Z",
+  "started_at": "2026-06-29T22:26:45Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": null,
+  "wall_time_seconds": 0.341713
+}

@@ -1,0 +1,41 @@
+{
+  "algorithm": "catboost_deep",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "a3bd0a400ec4d7f9",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.011615324998274446,
+  "metrics": {
+    "explained_variance": 0.9656076517469188,
+    "mae": 0.10617888068925854,
+    "max_error": 1.8739096186164736,
+    "median_absolute_error": 0.05220099193218941,
+    "mse": 0.03820720314209381,
+    "prediction_max": 5.230850681451187,
+    "prediction_min": 0.19705772690638756,
+    "r2": 0.9655688424088442,
+    "rmse": 0.19546662922886304,
+    "target_max": 5.8397,
+    "target_min": 0.0077
+  },
+  "model_name": "catboost_deep",
+  "n_features": 665,
+  "provenance": {
+    "canonical_test_sha256": "398556c974e2fae1eefc40d5e5ed5030eb22fafb192fadae582b9a62e0c93a89",
+    "canonical_test_target_sha256": "764d725105dae1f1d0f03aa62a05fe66b1d3ca39d5eb8592c7ac8d02155ac1da",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "69325dc410f3dbacc83b859a7ed50728184aa19adf1001b0500de98d259345e9",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/a3bd0a400ec4d7f9/catboost_deep/worker-receipt.json",
+    "worker_receipt_sha256": "da774888ab917da82b6bd71b05381dc545b537b1c9c642a7ca1745c6086f1321"
+  },
+  "run_date": "2026-07-23T13:14:35Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 438.7722874999745
+}

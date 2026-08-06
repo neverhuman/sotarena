@@ -1,0 +1,110 @@
+{
+  "algorithm": "jain_regressor_gen40",
+  "dataset_hash": "24713c7f7bfa7807",
+  "task_type": "regression",
+  "status": "completed",
+  "started_at_unix_ms": 1783153131541,
+  "finished_at_unix_ms": 1783153303399,
+  "rows": {
+    "train": 1000,
+    "test": 338
+  },
+  "features": 6,
+  "timings": {
+    "load_secs": 0.000559611,
+    "search_secs": 21.385842669,
+    "gpu_kernel_secs": 5.813214758,
+    "finalist_cv_secs": 149.480833766,
+    "fit_predict_secs": 0.990603192,
+    "total_secs": 171.85794205
+  },
+  "model_class": "feat_math_genome",
+  "model_params": {
+    "gens": 40,
+    "pop": 64,
+    "top_k": 2,
+    "folds": 3,
+    "search_rows": 512,
+    "actual_search_rows": 512,
+    "gpu_kernel_configs": 131072,
+    "gpu_kernel_used": true,
+    "gpu_kernel_candidates": 4,
+    "gpu_kernel_message": "battle-gpu composite GPR kernel search over 5 specs",
+    "seed": 20260616,
+    "evals": 1604,
+    "tokens_total": 14288430.0,
+    "search_engine": "feat_math_evolve_ridge_surrogate+battle_gpu_gpr_mixture_proposals",
+    "final_selection": "honest_feat_math_cv_r2"
+  },
+  "metrics": {
+    "r2": 0.8722479413595348,
+    "rmse": 0.0668070041580271,
+    "mse": 0.0044631758045706495,
+    "mae": 0.03647875800830243,
+    "explained_variance": 0.8728350885752312,
+    "prediction_min": -0.0029847620524435293,
+    "prediction_max": 0.7845696451043181,
+    "target_min": 0.000241619302,
+    "target_max": 0.762400091
+  },
+  "gene": "(pipe X (sigmoid) (sigmoid) (poly_interact append=true) (rank append=true) (sigmoid append=true) (rank append=true) (histgbm depth=2 lr=0.0855759133442188 rounds=278))",
+  "genome": "(pipe X (sigmoid) (sigmoid) (poly_interact append=true) (rank append=true) (sigmoid append=true) (rank append=true) (histgbm depth=2 lr=0.0855759133442188 rounds=278))",
+  "genome_hash": "a4c007b47d418c4134ff9af767f82448a908c7a2e4c00fb51faa5ddcb441ac9e",
+  "cv": {
+    "folds": 3,
+    "mean_r2": 0.8462599554997571,
+    "oof_r2": 0.84809956122899,
+    "fold_r2": [
+      0.8199488305928081,
+      0.8767691898993335,
+      0.8420618460071299
+    ]
+  },
+  "finalists": [
+    {
+      "rank": 1,
+      "gene": "(pipe X (sigmoid) (sigmoid) (poly_interact append=true) (rank append=true) (sigmoid append=true) (rank append=true) (histgbm depth=2 lr=0.0855759133442188 rounds=278))",
+      "genome": "(pipe X (sigmoid) (sigmoid) (poly_interact append=true) (rank append=true) (sigmoid append=true) (rank append=true) (histgbm depth=2 lr=0.0855759133442188 rounds=278))",
+      "genome_hash": "a4c007b47d418c4134ff9af767f82448a908c7a2e4c00fb51faa5ddcb441ac9e",
+      "search_score": 0.8257736805358559,
+      "search_fold_scores": [
+        0.7903933178418578,
+        0.8622298023698811,
+        0.8246979213958286
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.8462599554997571,
+        "oof_r2": 0.84809956122899,
+        "fold_r2": [
+          0.8199488305928081,
+          0.8767691898993335,
+          0.8420618460071299
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "gene": "(pipe X (sigmoid) (sigmoid) (poly_interact append=true) (rank append=true) (sigmoid append=true) (rank append=true) (histgbm depth=6 lr=0.03500152156339991 rounds=162))",
+      "genome": "(pipe X (sigmoid) (sigmoid) (poly_interact append=true) (rank append=true) (sigmoid append=true) (rank append=true) (histgbm depth=6 lr=0.03500152156339991 rounds=162))",
+      "genome_hash": "8f58f5781adeae5e56b3d9e02dcac5a6191aed1c937da8ed4f9f12c3851058c7",
+      "search_score": 0.8257736805358559,
+      "search_fold_scores": [
+        0.7903933178418578,
+        0.8622298023698811,
+        0.8246979213958286
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.8460409866210702,
+        "oof_r2": 0.8477378779298282,
+        "fold_r2": [
+          0.8172909350177457,
+          0.8711473377622785,
+          0.8496846870831863
+        ]
+      }
+    }
+  ],
+  "predictions_path": "/home/ubuntu/quant/regression/24713c7f7bfa7807/predictions/jain_regressor_fast30.csv"
+}

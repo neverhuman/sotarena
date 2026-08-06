@@ -1,0 +1,37 @@
+{
+  "benchmark_valid": false,
+  "catalog": {
+    "datasets": 2864,
+    "path": "/home/ubuntu/jope-flywheel/test_exact_gen0/catalog/c57fb6059dee6196f6c41a9c003342007d97fb66eac5170adca51b12985dfdd1.catalog.json",
+    "sha256": "bfd55f93b11c015f3c77b6d43093c14a68fce51a63b4ffb23f2e86e1eaa7c09e"
+  },
+  "corpus": {
+    "available": true,
+    "corrected": 183,
+    "latest_created_at_ms": 1785113529359,
+    "legacy_superseded": 1485,
+    "other_authority": 0,
+    "row_merkle_sha256": "fa5061ddd762f73fb0ec8d3266a1158e49b57f000644dd5cfb594c78c48e8d9f",
+    "sha256": "fa5061ddd762f73fb0ec8d3266a1158e49b57f000644dd5cfb594c78c48e8d9f",
+    "watermark": 1668
+  },
+  "schema": "sotarena.winner-source-snapshot.v1",
+  "selection_bias": "test-selected",
+  "sources": {
+    "binary42_replay_manifest": "/home/ubuntu/sotarena/private/jope-dime/replay/binary42-test-adaptive-v1/manifest.json#sha256=8d0972c9082a308cef1ac8937f9f64ee89350b0e5bf74a237ddd37dc51f273e7",
+    "catalog": "/home/ubuntu/jope-flywheel/test_exact_gen0/catalog/c57fb6059dee6196f6c41a9c003342007d97fb66eac5170adca51b12985dfdd1.catalog.json#sha256=bfd55f93b11c015f3c77b6d43093c14a68fce51a63b4ffb23f2e86e1eaa7c09e",
+    "checkpoint_proposal_pointer": "/home/ubuntu/jope-flywheel/test_exact_gen0/proposals/current.json#sha256=49f0c79c8511c758de007c84c84ca0c10b8fc435ed2aad4a69b20ab373e3c878",
+    "corpus": "/home/ubuntu/jope-flywheel/test_exact_gen0/corpus/strict-test-exact.sqlite#sha256=fa5061ddd762f73fb0ec8d3266a1158e49b57f000644dd5cfb594c78c48e8d9f",
+    "evaluator_pointer": "/home/ubuntu/jope-flywheel/test_exact_gen0/evaluator/active.json#sha256=aced5d1ce303e56fed11154b67f78a5be91bc62554afb0f8bc26b360bdb23d06",
+    "protocol_pointer": "/home/ubuntu/jope-flywheel/test_exact_gen0/protocols/active.json#sha256=25a8e5b9163d7fedc1a81d50657f61d03162b38d7ce8bcc3487109a8aaf095d6",
+    "runtime_bundle_pointer": "/home/ubuntu/jope-flywheel/test_exact_gen0/runtime-bundles/active.json#sha256=7d3a01f692cde803dd655f6e73727703034254f9e8211975a9e05fd75816124c"
+  },
+  "task": "binary",
+  "test_adaptive": true,
+  "track_id": "tabular-binary-aspfm-winners-v1",
+  "winning_cohort": {
+    "comparable_evidence_merkle_sha256": "27359cc1b92461731879ba8a26f41b46bddeb9d3f7b93140e7780778574a86ea",
+    "dataset_identity_merkle_sha256": "a2ebe0d26c09918639a16d1362bacb01b8c2f8752467464b5859b7ed9921190d",
+    "datasets": 5
+  }
+}

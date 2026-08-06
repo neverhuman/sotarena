@@ -1,0 +1,48 @@
+{
+  "algorithm": "decision_tree",
+  "dataset_hash": "b253fbfae8460dc1",
+  "ended_at": "2026-06-21T08:07:19+00:00",
+  "environment": {
+    "lightgbm_available": false,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "xgboost_available": true
+  },
+  "inference_rows_per_second": 130527.49367575886,
+  "inference_time_seconds": 6.895099068060517e-05,
+  "metrics": {
+    "explained_variance": -6.507268857298532,
+    "mae": 0.28447596283836496,
+    "max_error": 0.6453900635242462,
+    "mean_absolute_percentage_error_eps": 2.1427620974859263,
+    "median_absolute_error": 0.1524822674691677,
+    "mse": 0.14666152090634313,
+    "prediction_max": 0.8723404109477997,
+    "prediction_min": 0.003546099178493023,
+    "r2": -8.132239651612773,
+    "rmse": 0.3829641248293933,
+    "target_max": 0.4751773178577423,
+    "target_min": 0.014184396713972092
+  },
+  "model_class": "sklearn.tree._classes.DecisionTreeRegressor",
+  "n_features": 7,
+  "run_date": "2026-06-21T08:07:19+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/limesoda-nsw-52-dataset.csv",
+  "started_at": "2026-06-21T08:07:19+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 9,
+  "train_rows": 43,
+  "training_time_seconds": 0.0006280119996517897
+}

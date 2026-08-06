@@ -1,0 +1,15 @@
+{
+  "algorithm": "flaml_automl_300s",
+  "dataset_hash": "7af85a04de0c7018",
+  "ended_at": "2026-06-30T02:06:37+00:00",
+  "error": "job exceeded max-job-seconds=300",
+  "failure_message": "job exceeded max-job-seconds=300",
+  "gpu_device": null,
+  "max_job_seconds": 300.0,
+  "run_date": "2026-06-30T02:06:37+00:00",
+  "started_at": "2026-06-30T02:01:37+00:00",
+  "status": "failed",
+  "task_type": "regression",
+  "traceback": "TimeoutError: job exceeded max-job-seconds=300\n",
+  "xgboost_device": null
+}

@@ -1,0 +1,61 @@
+{
+  "algorithm": "NM_Concept_400f83684598_c4a5fe829a9c",
+  "benchmark_pool": {
+    "normalized_elo": 0.0,
+    "pool_best": 0.7681159420289855,
+    "pool_best_algorithm": "pytorch_tabular_fttransformer_epochs5",
+    "pool_median": 0.7026486756621688,
+    "pool_percentile": 12.857142857142858,
+    "pool_size": 140
+  },
+  "core_hash": "4f9211d19c3cb2bc71a473a2eaa5a5042d469b16a7cfe421b404e3259807317b",
+  "dataset_hash": "962a35a53b0803a8",
+  "dsl_expr": "(pipe X (robust_scale) (rff_cos n=32 seed=42) (cheb degree=4) (gbm rounds=150 depth=3 lr=0.1))",
+  "ended_at": "2026-06-29T22:23:21Z",
+  "environment": {
+    "created_by_binary_sha": "b24ddd5e331834fb6b3c90dd823c0200d5b306c2993d745a51534b519e4db6d0",
+    "host": "xbabe3",
+    "runner": "newmath classify-csv"
+  },
+  "inference_rows_per_second": null,
+  "inference_time_seconds": null,
+  "metrics": {
+    "accuracy": 0.673469387755102,
+    "average_precision": 0.38811490143875416,
+    "balanced_accuracy": 0.5382308845577212,
+    "brier_score": 0.22163864266316663,
+    "f1": 0.2727272727272727,
+    "false_negatives": 23,
+    "false_positives": 9,
+    "log_loss": 0.7042801146343313,
+    "positive_rate": 0.29591836734693877,
+    "precision": 0.4,
+    "predicted_positive_rate": 0.15306122448979592,
+    "recall": 0.20689655172413793,
+    "roc_auc": 0.6486756621689156,
+    "sensitivity": 0.20689655172413793,
+    "specificity": 0.8695652173913043,
+    "top_decile_lift": 1.3517241379310345,
+    "top_decile_positive_rate": 0.4,
+    "true_negatives": 60,
+    "true_positives": 6
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "model_hash": "c4a5fe829a9ca3762fb3b66ff02fb8982a6a1c87a24599710098df4c53ebf9fe",
+  "n_features": 10,
+  "newmath_receipt_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_400f83684598_c4a5fe829a9c/20260629T222303Z/runs/962a35a53b0803a8/receipt.json",
+  "predictions_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_400f83684598_c4a5fe829a9c/20260629T222303Z/runs/962a35a53b0803a8/predictions.csv",
+  "run_date": "2026-06-29T22:23:21Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/ilpd-numeric.csv",
+  "source_run_dir": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_400f83684598_c4a5fe829a9c/20260629T222303Z",
+  "started_at": "2026-06-29T22:23:21Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 98,
+  "train_rows": 485,
+  "training_time_seconds": null,
+  "wall_time_seconds": 0.104453
+}

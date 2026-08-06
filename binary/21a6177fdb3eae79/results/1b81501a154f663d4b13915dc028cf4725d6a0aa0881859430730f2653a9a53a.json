@@ -1,0 +1,72 @@
+{
+  "algorithm": "ada_boost_deep",
+  "dataset_hash": "21a6177fdb3eae79",
+  "ended_at": "2026-06-26T12:11:20Z",
+  "environment": {
+    "affinity": [
+      104
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super1",
+    "pid": 1089312,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 20649.838012284938,
+  "inference_time_seconds": 0.04842653000014252,
+  "metrics": {
+    "accuracy": 0.784,
+    "average_precision": 0.4365668475625226,
+    "balanced_accuracy": 0.6542894935752079,
+    "brier_score": 0.1954738739919347,
+    "cohen_kappa": 0.3260782747603834,
+    "f1": 0.46,
+    "false_negatives": 124,
+    "false_positives": 92,
+    "log_loss": 0.5778195352276574,
+    "matthews_corrcoef": 0.32771571318002995,
+    "positive_rate": 0.216,
+    "precision": 0.5,
+    "predicted_positive_rate": 0.184,
+    "recall": 0.42592592592592593,
+    "roc_auc": 0.7171260865457294,
+    "sensitivity": 0.42592592592592593,
+    "specificity": 0.8826530612244898,
+    "top_decile_lift": 2.7777777777777777,
+    "top_decile_positive_rate": 0.6,
+    "true_negatives": 692,
+    "true_positives": 92
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 23,
+  "run_date": "2026-06-26T12:11:20Z",
+  "started_at": "2026-06-26T12:11:16Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 0.5900743909996891
+}

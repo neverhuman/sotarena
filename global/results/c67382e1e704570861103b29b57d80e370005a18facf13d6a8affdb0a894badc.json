@@ -1,0 +1,52 @@
+{
+  "algorithm": "tabfm_regressor",
+  "dataset_hash": "e5a3a7b3668a1cc2",
+  "ended_at": "2026-07-03T05:57:20+00:00",
+  "environment": {
+    "cuda_visible_devices": "5",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 17.190919851958782,
+  "inference_time_seconds": 4.65361950895749,
+  "metrics": {
+    "explained_variance": 0.904381012095715,
+    "mae": 0.011647559506855032,
+    "max_error": 0.2406318485736847,
+    "mean_absolute_percentage_error_eps": 72010.39194246479,
+    "median_absolute_error": 0.0011436082422733307,
+    "mse": 0.0016258580667490856,
+    "prediction_max": 0.7838883996009827,
+    "prediction_min": -0.002307482063770294,
+    "r2": 0.8987283505162607,
+    "rmse": 0.040321930345025465,
+    "target_max": 0.7901039123535156,
+    "target_min": 0.0
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMRegressor",
+  "n_features": 3,
+  "run_date": "2026-07-03T05:57:20+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/pmlb-556-analcatdata-apnea2-target.csv",
+  "started_at": "2026-07-03T05:57:16+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": false,
+  "tabfm_model_type": "regression",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 80,
+  "train_rows": 395,
+  "training_time_seconds": 0.02940094703808427
+}

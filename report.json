@@ -1,0 +1,432 @@
+{
+  "schema": "sotarena.report",
+  "datasets_total": 2677,
+  "result_jsons_total": 26731,
+  "score_rows": 217359,
+  "global": [
+    {
+      "rank": 1,
+      "family_id": "aspfm",
+      "display_name": "ASPFM",
+      "elo": 1904.2095633615404
+    },
+    {
+      "rank": 2,
+      "family_id": "tabfm-ensemble",
+      "display_name": "TabFM Ensemble",
+      "elo": 1590.5702072367112
+    },
+    {
+      "rank": 3,
+      "family_id": "tabicl",
+      "display_name": "TabICL",
+      "elo": 1583.8084263727596
+    },
+    {
+      "rank": 4,
+      "family_id": "tabpfn-v3",
+      "display_name": "TabPFN v3",
+      "elo": 1571.24934872079
+    },
+    {
+      "rank": 5,
+      "family_id": "fable-5",
+      "display_name": "Fable 5",
+      "elo": 1429.5161382741271
+    },
+    {
+      "rank": 6,
+      "family_id": "openai-sol",
+      "display_name": "OpenAI *sol",
+      "elo": 1350.9887453238757
+    },
+    {
+      "rank": 7,
+      "family_id": "grok-4-5",
+      "display_name": "Grok 4.5",
+      "elo": 1318.6206612575054
+    },
+    {
+      "rank": 8,
+      "family_id": "kimi-k3",
+      "display_name": "Kimi K3",
+      "elo": 1251.0369094526898
+    }
+  ],
+  "tasks": [
+    {
+      "task": "binary",
+      "metric": "roc_auc",
+      "metric_direction": "maximize",
+      "weight": 0.25,
+      "datasets": 799,
+      "analysis_datasets": 799,
+      "blacklisted_datasets": 0,
+      "result_jsons": 15924,
+      "score_rows": 86585,
+      "methods": 1053,
+      "rows": [
+        {
+          "rank": 1,
+          "method_id": "ASPFM",
+          "elo": 2062.9090489985365,
+          "datasets_scored": 799
+        },
+        {
+          "rank": 2,
+          "method_id": "TabFM Ensemble",
+          "elo": 1718.0275233616137,
+          "datasets_scored": 799
+        },
+        {
+          "rank": 3,
+          "method_id": "TabICL",
+          "elo": 1715.9434188929865,
+          "datasets_scored": 799
+        },
+        {
+          "rank": 4,
+          "method_id": "TabPFN v3",
+          "elo": 1681.9085963395983,
+          "datasets_scored": 799
+        },
+        {
+          "rank": 5,
+          "method_id": "catboost",
+          "elo": 1681.3270516766217,
+          "datasets_scored": 799
+        },
+        {
+          "rank": 6,
+          "method_id": "ebm",
+          "elo": 1647.8241873120244,
+          "datasets_scored": 799
+        },
+        {
+          "rank": 7,
+          "method_id": "Fable 5",
+          "elo": 1631.3554942986,
+          "datasets_scored": 799
+        },
+        {
+          "rank": 8,
+          "method_id": "ada_boost",
+          "elo": 1616.7255124500562,
+          "datasets_scored": 799
+        },
+        {
+          "rank": 9,
+          "method_id": "gradient_boosting",
+          "elo": 1597.8539416733552,
+          "datasets_scored": 799
+        },
+        {
+          "rank": 10,
+          "method_id": "voting_soft",
+          "elo": 1582.2960570842702,
+          "datasets_scored": 799
+        },
+        {
+          "rank": 17,
+          "method_id": "OpenAI *sol",
+          "elo": 1526.999509045372,
+          "datasets_scored": 799
+        },
+        {
+          "rank": 18,
+          "method_id": "Grok 4.5",
+          "elo": 1519.266309221379,
+          "datasets_scored": 799
+        },
+        {
+          "rank": 26,
+          "method_id": "Kimi K3",
+          "elo": 1459.2916110623335,
+          "datasets_scored": 799
+        }
+      ]
+    },
+    {
+      "task": "regression",
+      "metric": "rmse",
+      "metric_direction": "minimize",
+      "weight": 0.25,
+      "datasets": 1564,
+      "analysis_datasets": 1564,
+      "blacklisted_datasets": 0,
+      "result_jsons": 2216,
+      "score_rows": 119247,
+      "methods": 1071,
+      "rows": [
+        {
+          "rank": 1,
+          "method_id": "ASPFM",
+          "elo": 2385.3873921431214,
+          "datasets_scored": 1564
+        },
+        {
+          "rank": 2,
+          "method_id": "TabFM Ensemble",
+          "elo": 1897.8677687084569,
+          "datasets_scored": 1564
+        },
+        {
+          "rank": 3,
+          "method_id": "TabPFN v3",
+          "elo": 1883.3007525075343,
+          "datasets_scored": 1564
+        },
+        {
+          "rank": 4,
+          "method_id": "TabICL",
+          "elo": 1866.5275180602466,
+          "datasets_scored": 1564
+        },
+        {
+          "rank": 5,
+          "method_id": "catboost",
+          "elo": 1793.1072317182525,
+          "datasets_scored": 1564
+        },
+        {
+          "rank": 6,
+          "method_id": "Fable 5",
+          "elo": 1757.8948277050692,
+          "datasets_scored": 1564
+        },
+        {
+          "rank": 7,
+          "method_id": "stacking_trees_meta",
+          "elo": 1721.1170711388781,
+          "datasets_scored": 1564
+        },
+        {
+          "rank": 8,
+          "method_id": "gaussian_process",
+          "elo": 1688.1692498452185,
+          "datasets_scored": 1564
+        },
+        {
+          "rank": 9,
+          "method_id": "gradient_boosting",
+          "elo": 1677.3759534997246,
+          "datasets_scored": 1564
+        },
+        {
+          "rank": 10,
+          "method_id": "Grok 4.5",
+          "elo": 1655.8407960032646,
+          "datasets_scored": 1564
+        },
+        {
+          "rank": 15,
+          "method_id": "OpenAI *sol",
+          "elo": 1614.594606910106,
+          "datasets_scored": 1564
+        },
+        {
+          "rank": 42,
+          "method_id": "Kimi K3",
+          "elo": 1410.3239451694537,
+          "datasets_scored": 1564
+        }
+      ]
+    },
+    {
+      "task": "multiclass",
+      "metric": "macro_f1",
+      "metric_direction": "maximize",
+      "weight": 0.25,
+      "datasets": 272,
+      "analysis_datasets": 272,
+      "blacklisted_datasets": 0,
+      "result_jsons": 280,
+      "score_rows": 10608,
+      "methods": 39,
+      "rows": [
+        {
+          "rank": 1,
+          "method_id": "ASPFM",
+          "elo": 1753.0455602421712,
+          "datasets_scored": 272
+        },
+        {
+          "rank": 2,
+          "method_id": "TabFM Ensemble",
+          "elo": 1713.688129256646,
+          "datasets_scored": 272
+        },
+        {
+          "rank": 3,
+          "method_id": "TabICL",
+          "elo": 1686.0552472609747,
+          "datasets_scored": 272
+        },
+        {
+          "rank": 4,
+          "method_id": "TabPFN v3",
+          "elo": 1642.6151996294866,
+          "datasets_scored": 272
+        },
+        {
+          "rank": 5,
+          "method_id": "CatBoost",
+          "elo": 1635.8188180151478,
+          "datasets_scored": 272
+        },
+        {
+          "rank": 6,
+          "method_id": "mc20_tabdpt",
+          "elo": 1602.4367360907142,
+          "datasets_scored": 272
+        },
+        {
+          "rank": 7,
+          "method_id": "mitra_classifier_default",
+          "elo": 1601.0272201733533,
+          "datasets_scored": 272
+        },
+        {
+          "rank": 8,
+          "method_id": "limix_2m_classifier_default",
+          "elo": 1598.8604407277473,
+          "datasets_scored": 272
+        },
+        {
+          "rank": 9,
+          "method_id": "mc20_xgboost_tuned",
+          "elo": 1572.171037228193,
+          "datasets_scored": 272
+        },
+        {
+          "rank": 10,
+          "method_id": "mc20_xgboost_hist_240",
+          "elo": 1560.3223987894503,
+          "datasets_scored": 272
+        },
+        {
+          "rank": 20,
+          "method_id": "Fable 5",
+          "elo": 1515.2991863460065,
+          "datasets_scored": 272
+        },
+        {
+          "rank": 31,
+          "method_id": "OpenAI *sol",
+          "elo": 1430.508641810208,
+          "datasets_scored": 272
+        },
+        {
+          "rank": 36,
+          "method_id": "Kimi K3",
+          "elo": 1333.6853371210104,
+          "datasets_scored": 272
+        },
+        {
+          "rank": 37,
+          "method_id": "Grok 4.5",
+          "elo": 1324.7201380971,
+          "datasets_scored": 272
+        }
+      ]
+    },
+    {
+      "task": "timeseries",
+      "metric": "mase",
+      "metric_direction": "minimize",
+      "weight": 0.25,
+      "datasets": 42,
+      "analysis_datasets": 42,
+      "blacklisted_datasets": 0,
+      "result_jsons": 50,
+      "score_rows": 919,
+      "methods": 22,
+      "rows": [
+        {
+          "rank": 1,
+          "method_id": "ASPFM",
+          "elo": 2005.4596276953023,
+          "datasets_scored": 42
+        },
+        {
+          "rank": 2,
+          "method_id": "chronos_2_small",
+          "elo": 1666.5140504173203,
+          "datasets_scored": 42
+        },
+        {
+          "rank": 3,
+          "method_id": "TabPFN v3",
+          "elo": 1661.3791217032249,
+          "datasets_scored": 42
+        },
+        {
+          "rank": 4,
+          "method_id": "TimesFM",
+          "elo": 1655.2842836299737,
+          "datasets_scored": 42
+        },
+        {
+          "rank": 5,
+          "method_id": "TabICL",
+          "elo": 1625.7811857198124,
+          "datasets_scored": 42
+        },
+        {
+          "rank": 6,
+          "method_id": "moirai_2_small",
+          "elo": 1621.9555752211738,
+          "datasets_scored": 42
+        },
+        {
+          "rank": 7,
+          "method_id": "TabFM Ensemble",
+          "elo": 1532.5969386980867,
+          "datasets_scored": 42
+        },
+        {
+          "rank": 8,
+          "method_id": "seasonal_naive",
+          "elo": 1496.8147209502076,
+          "datasets_scored": 42
+        },
+        {
+          "rank": 9,
+          "method_id": "auto_arima",
+          "elo": 1475.3500543581529,
+          "datasets_scored": 42
+        },
+        {
+          "rank": 10,
+          "method_id": "neuralforecast_nbeats",
+          "elo": 1474.0607844388173,
+          "datasets_scored": 42
+        },
+        {
+          "rank": 12,
+          "method_id": "OpenAI *sol",
+          "elo": 1435.9818476430494,
+          "datasets_scored": 42
+        },
+        {
+          "rank": 14,
+          "method_id": "Fable 5",
+          "elo": 1418.3877982725683,
+          "datasets_scored": 42
+        },
+        {
+          "rank": 18,
+          "method_id": "Grok 4.5",
+          "elo": 1389.6189746901503,
+          "datasets_scored": 42
+        },
+        {
+          "rank": 19,
+          "method_id": "Kimi K3",
+          "elo": 1381.351338278744,
+          "datasets_scored": 42
+        }
+      ]
+    }
+  ]
+}

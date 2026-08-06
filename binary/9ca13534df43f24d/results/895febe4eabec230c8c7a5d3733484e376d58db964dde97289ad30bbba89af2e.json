@@ -1,0 +1,72 @@
+{
+  "algorithm": "gaussian_process",
+  "dataset_hash": "9ca13534df43f24d",
+  "ended_at": "2026-06-26T12:20:58Z",
+  "environment": {
+    "affinity": [
+      25
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super1",
+    "pid": 1210466,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 1960.2723789843717,
+  "inference_time_seconds": 0.5101331890000438,
+  "metrics": {
+    "accuracy": 0.661,
+    "average_precision": 0.21382166742970654,
+    "balanced_accuracy": 0.596875,
+    "brier_score": 0.24999999699903142,
+    "cohen_kappa": 0.15461346633416462,
+    "f1": 0.3663551401869159,
+    "false_negatives": 102,
+    "false_positives": 237,
+    "log_loss": 0.6931471745580082,
+    "matthews_corrcoef": 0.16419823191749047,
+    "positive_rate": 0.2,
+    "precision": 0.29253731343283584,
+    "predicted_positive_rate": 0.335,
+    "recall": 0.49,
+    "roc_auc": 0.5345187499999999,
+    "sensitivity": 0.49,
+    "specificity": 0.70375,
+    "top_decile_lift": 0.8999999999999999,
+    "top_decile_positive_rate": 0.18,
+    "true_negatives": 563,
+    "true_positives": 98
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 147,
+  "run_date": "2026-06-26T12:20:58Z",
+  "started_at": "2026-06-26T12:20:52Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 1.2663511230002769
+}

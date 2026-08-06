@@ -1,0 +1,61 @@
+{
+  "algorithm": "NM_QuantBinary_72ab8ee12463_fea6f7f9440f",
+  "benchmark_pool": {
+    "normalized_elo": 0.9148936170212773,
+    "pool_best": 1.0,
+    "pool_best_algorithm": "mljar_automl_seconds60",
+    "pool_median": 0.9535573122529644,
+    "pool_percentile": 82.3529411764706,
+    "pool_size": 136
+  },
+  "core_hash": "72ab8ee12463c1d8c2429f910d6ad6737ee58e5521e5b388f5071f7dcb64e056",
+  "dataset_hash": "c816093e547343b5",
+  "dsl_expr": "(pipe X (rfft_mag axis=features) (polar) (rff_cos n=32 seed=2) (cheb degree=4) (quantile_bins bins=6) (rank) (gbm rounds=150 depth=3 lr=0.1))",
+  "ended_at": "2026-06-29T20:07:44Z",
+  "environment": {
+    "created_by_binary_sha": "3f770f17bf4ec8384af11a841a270670fe781caf7d4e48246922cf03351b3369",
+    "host": "xbabe1",
+    "runner": "newmath classify-csv"
+  },
+  "inference_rows_per_second": null,
+  "inference_time_seconds": null,
+  "metrics": {
+    "accuracy": 0.95,
+    "average_precision": 0.9993697920251907,
+    "balanced_accuracy": 0.8181818181818181,
+    "brier_score": 0.029610440003922017,
+    "f1": 0.971830985915493,
+    "false_negatives": 0,
+    "false_positives": 4,
+    "log_loss": 0.10059696837664203,
+    "positive_rate": 0.8625,
+    "precision": 0.9452054794520548,
+    "predicted_positive_rate": 0.9125,
+    "recall": 1.0,
+    "roc_auc": 0.9960474308300395,
+    "sensitivity": 1.0,
+    "specificity": 0.6363636363636364,
+    "top_decile_lift": 1.1594202898550725,
+    "top_decile_positive_rate": 1.0,
+    "true_negatives": 7,
+    "true_positives": 69
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "model_hash": "fea6f7f9440f4605417c02e40e2ce27001a253b9f5b7fc6bc3b7c41f83fd5674",
+  "n_features": 3,
+  "newmath_receipt_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_QuantBinary_72ab8ee12463_fea6f7f9440f/20260629T200533Z/runs/c816093e547343b5/receipt.json",
+  "predictions_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_QuantBinary_72ab8ee12463_fea6f7f9440f/20260629T200533Z/runs/c816093e547343b5/predictions.csv",
+  "run_date": "2026-06-29T20:07:44Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/analcatdata-apnea1.csv",
+  "source_run_dir": "/home/ubuntu/jmath/target/newmath/quant_full/NM_QuantBinary_72ab8ee12463_fea6f7f9440f/20260629T200533Z",
+  "started_at": "2026-06-29T20:07:44Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 80,
+  "train_rows": 395,
+  "training_time_seconds": null,
+  "wall_time_seconds": 0.099888
+}

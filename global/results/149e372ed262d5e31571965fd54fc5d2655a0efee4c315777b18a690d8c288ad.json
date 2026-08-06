@@ -1,0 +1,71 @@
+{
+  "algorithm": "grok4p5_regressor",
+  "dataset_hash": "c8f90fc9cc5364be",
+  "ended_at": "2026-07-20T04:20:49Z",
+  "environment": {
+    "affinity": [
+      16
+    ],
+    "cuda_visible_devices": "",
+    "executable": "/usr/bin/python3",
+    "host": "xbabe2",
+    "numpy": "1.26.4",
+    "pid": 1709252,
+    "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "cpu_light",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 0.0,
+  "inference_time_seconds": 0.0,
+  "metrics": {
+    "explained_variance": 0.9911202513920232,
+    "mae": 0.007916255705108894,
+    "max_error": 0.19245537143939684,
+    "mean_absolute_percentage_error_eps": 1506104111589.7566,
+    "median_absolute_error": 0.0016553073282106756,
+    "mse": 0.0006192149905736156,
+    "prediction_max": 1.0037513500754587,
+    "prediction_min": -0.009014960697769428,
+    "r2": 0.9911181429931775,
+    "rmse": 0.024884030834525495,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "cursor_grok4p5hf.run",
+  "model_name": "grok4p5_regressor",
+  "model_params": {},
+  "n_features": 116,
+  "run_date": "2026-07-20T04:20:49Z",
+  "source_path": "/home/ubuntu/super_cluster/grok4p5_run/cursor_grok4p5hf.py",
+  "source_provenance": {
+    "harness_sha256": "13bdf302baaf03b7ab59fb77c040cc5711cca0981772c9a0f2488f139c1d8d79",
+    "test_csv_sha256": "6bf87a9a0b1658fa288391169ccb3f8d68379d39a4b1fddf02d4c72093ed25c2",
+    "train_csv_sha256": "0a245c858b39996820977306c9b0ab2443c45677b5a32514f83009be6cfce197"
+  },
+  "source_sha256": "14ca62e456388c171b4da837ba88e6aa77df3ae6a36c9833126d0425a827dcad",
+  "started_at": "2026-07-20T04:19:27Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 982,
+  "timing_scope": "candidate run combines fitting and prediction",
+  "train_rows": 1000,
+  "training_time_seconds": 81.40641047700774
+}

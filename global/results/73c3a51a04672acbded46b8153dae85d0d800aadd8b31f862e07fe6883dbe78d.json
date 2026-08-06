@@ -1,0 +1,48 @@
+{
+  "algorithm": "hist_gradient_boosting",
+  "dataset_hash": "ab0239b9ef0ba28e",
+  "ended_at": "2026-06-21T08:07:18+00:00",
+  "environment": {
+    "lightgbm_available": false,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "xgboost_available": true
+  },
+  "inference_rows_per_second": 8036.496567895542,
+  "inference_time_seconds": 0.0007465939852409065,
+  "metrics": {
+    "explained_variance": 0.0,
+    "mae": 0.07880614208018717,
+    "max_error": 0.10796253343869466,
+    "mean_absolute_percentage_error_eps": 1297035.19660201,
+    "median_absolute_error": 0.07442896375141572,
+    "mse": 0.006394346747217515,
+    "prediction_max": 0.07782146373938303,
+    "prediction_min": 0.07782146373938303,
+    "r2": -0.4019887511545299,
+    "rmse": 0.07996465936410606,
+    "target_max": 0.1857839971780777,
+    "target_min": 0.0
+  },
+  "model_class": "sklearn.ensemble._hist_gradient_boosting.gradient_boosting.HistGradientBoostingRegressor",
+  "n_features": 1040,
+  "run_date": "2026-06-21T08:07:18+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/chang.csv",
+  "started_at": "2026-06-21T08:07:18+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 6,
+  "train_rows": 28,
+  "training_time_seconds": 0.04902739601675421
+}

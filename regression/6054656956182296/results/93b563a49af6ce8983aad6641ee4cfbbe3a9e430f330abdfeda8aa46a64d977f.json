@@ -1,0 +1,41 @@
+{
+  "algorithm": "tabicl",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "6054656956182296",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 6.378859665011987,
+  "metrics": {
+    "explained_variance": 0.9301884087088115,
+    "mae": 0.013209661135679033,
+    "max_error": 0.27534322762489316,
+    "median_absolute_error": 0.005330097305774689,
+    "mse": 0.0007917616974901612,
+    "prediction_max": 0.5171008110046387,
+    "prediction_min": 0.0002683217462617904,
+    "r2": 0.9301875853413712,
+    "rmse": 0.028138260384930714,
+    "target_max": 0.7676,
+    "target_min": 0.0
+  },
+  "model_name": "tabicl",
+  "n_features": 1000,
+  "provenance": {
+    "canonical_test_sha256": "924be0789def76c47dfef6e70f1cbf94ef9d889fa70675c491af89571fb1591d",
+    "canonical_test_target_sha256": "a59abf1d15c6849e9374836faf767c5281ba0c9a932b3ebb61ec49068bbc3125",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "132cf2bd96b5fc9cf81b136253f91fd585b56c29ab351fc31dfa81b8e653307b",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/6054656956182296/tabicl/worker-receipt.json",
+    "worker_receipt_sha256": "3e13d7e77e3d224af77b6fc103b781691f7d1c74eb5643f9a92f91c820230e9c"
+  },
+  "run_date": "2026-07-23T17:17:36Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 7.351562476949766
+}

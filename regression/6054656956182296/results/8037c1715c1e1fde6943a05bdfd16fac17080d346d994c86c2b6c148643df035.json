@@ -1,0 +1,41 @@
+{
+  "algorithm": "tabr_regressor",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "6054656956182296",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.17539639899041504,
+  "metrics": {
+    "explained_variance": 0.04724020119989225,
+    "mae": 0.08232984046980159,
+    "max_error": 0.574083617758901,
+    "median_absolute_error": 0.06893192063682832,
+    "mse": 0.010805708595101866,
+    "prediction_max": 0.19359227468330897,
+    "prediction_min": 0.10903342891500634,
+    "r2": 0.047222653592770114,
+    "rmse": 0.10395051031669765,
+    "target_max": 0.7676,
+    "target_min": 0.0
+  },
+  "model_name": "tabr_regressor",
+  "n_features": 1000,
+  "provenance": {
+    "canonical_test_sha256": "924be0789def76c47dfef6e70f1cbf94ef9d889fa70675c491af89571fb1591d",
+    "canonical_test_target_sha256": "a59abf1d15c6849e9374836faf767c5281ba0c9a932b3ebb61ec49068bbc3125",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "d6ead53dbf52f9642879b8307644ccf6e2d619c9ca2935a701e850354aab7c3b",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/6054656956182296/tabr_regressor/worker-receipt.json",
+    "worker_receipt_sha256": "ada2794bda675eda96dfbea1989b46242c55a9be8f32f2451eebe67b4602c82f"
+  },
+  "run_date": "2026-07-23T17:17:40Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 30.93052293092478
+}

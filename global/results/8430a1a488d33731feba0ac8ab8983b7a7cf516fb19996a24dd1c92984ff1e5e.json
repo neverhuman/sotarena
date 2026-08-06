@@ -1,0 +1,67 @@
+{
+  "algorithm": "torch_frame_fttransformer_regressor",
+  "dataset_hash": "55b144de19659467",
+  "ended_at": "2026-06-30T15:12:37Z",
+  "environment": {
+    "affinity": [
+      111
+    ],
+    "cuda_visible_devices": "5",
+    "deps": [
+      "torch_frame",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-regression-oss-gpu/bin/python",
+    "host": "super8",
+    "java": "/usr/bin/java",
+    "pid": 1037732,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 53062.84126509842,
+  "inference_time_seconds": 0.018826734041795135,
+  "metrics": {
+    "explained_variance": 0.8516682374568971,
+    "mae": 0.011407282301069311,
+    "max_error": 0.5706960172243782,
+    "mean_absolute_percentage_error_eps": 0.13909761080268654,
+    "median_absolute_error": 0.005540977407552279,
+    "mse": 0.0012227106899502262,
+    "prediction_max": 0.42930398277562176,
+    "prediction_min": 0.017517550457526454,
+    "r2": 0.850676910052125,
+    "rmse": 0.03496728027671334,
+    "target_max": 1.0,
+    "target_min": 0.0009036673
+  },
+  "model_class": "models.tools.model_zoo._TorchFrameRegressorWrapper",
+  "model_params": {},
+  "n_features": 4,
+  "run_date": "2026-06-30T15:12:37Z",
+  "started_at": "2026-06-30T15:12:31Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 3.7949482339899987
+}

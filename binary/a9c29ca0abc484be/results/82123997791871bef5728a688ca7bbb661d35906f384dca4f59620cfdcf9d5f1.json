@@ -1,0 +1,40 @@
+{
+  "algorithm": "tabpfn_capped_rows10000",
+  "dataset_hash": "a9c29ca0abc484be",
+  "ended_at": "2026-06-28T21:01:15Z",
+  "environment": {
+    "affinity": [
+      121
+    ],
+    "cuda_visible_devices": "GPU-a5ada316-8d63-fa68-2dd5-ddebe47f4c83",
+    "executable": "/usr/bin/python3",
+    "host": "super6",
+    "java": "/usr/bin/java",
+    "pid": 2090685,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "failure_message": "missing external dependencies: TABPFN_TOKEN or cached TabPFN weights",
+  "inference_time_seconds": null,
+  "n_features": 20,
+  "run_date": "2026-06-28T21:01:15Z",
+  "started_at": "2026-06-28T21:01:14Z",
+  "status": "dependency-failed",
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 1.3274243979831226
+}

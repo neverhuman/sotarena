@@ -1,0 +1,84 @@
+{
+  "algorithm": "nm_b6c265e586f6f8f8_append_phase_entropy_quantile_elasticnet",
+  "dataset_hash": "019de5d76a718163",
+  "ended_at": "2026-07-01T05:24:46Z",
+  "environment": {
+    "affinity": [
+      17
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super2",
+    "java": "/usr/bin/java",
+    "pid": 814379,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 14419.947676790667,
+  "inference_time_seconds": 0.0016643611015751958,
+  "metrics": {
+    "explained_variance": 0.8515484488718208,
+    "mae": 0.07179775699280254,
+    "max_error": 0.23927436431770843,
+    "mean_absolute_percentage_error_eps": 0.5526564731335409,
+    "median_absolute_error": 0.06523361772661228,
+    "mse": 0.007306187810381431,
+    "prediction_max": 0.668110209436062,
+    "prediction_min": -0.04899092540515432,
+    "r2": 0.8515253311662351,
+    "rmse": 0.0854762412040997,
+    "target_max": 0.878378391,
+    "target_min": 0.0193050187
+  },
+  "model_class": "models.tools.new_math_regression.NewMathAppendRegressor",
+  "model_params": {
+    "append_features": true,
+    "binary_head": "logreg",
+    "candidate": "phase_entropy_quantile",
+    "candidate_spec_hash": "7272e7f94cb0c749a661cc78446415d8d9b7f4a97adf2c7c527e33abae4e2ddd",
+    "diagnostic_only": false,
+    "model_hash": "b6c265e586f6f8f8",
+    "raw_col_cap": 128,
+    "regression_head": "elasticnet",
+    "row_cap": 2000,
+    "seed": 20260630,
+    "source_artifact": "nm_repair_20260630T000000Z",
+    "source_mean_delta_vs_raw_best": -0.02921581280152501,
+    "source_median_delta": -0.010831968329194308,
+    "source_nm_algorithm": "NM_b6c265e586f6f8f8_append_phase_entropy_quantile_logreg",
+    "source_win_rate": 0.2,
+    "source_wins": 1,
+    "transformed_col_cap": 512
+  },
+  "n_features": 2,
+  "run_date": "2026-07-01T05:24:46Z",
+  "started_at": "2026-07-01T05:24:45Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 24,
+  "train_rows": 120,
+  "training_time_seconds": 0.003408582997508347
+}

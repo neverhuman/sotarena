@@ -1,0 +1,67 @@
+{
+  "algorithm": "pytorch_tabular_node_regressor",
+  "dataset_hash": "1cb97b1d7314d43d",
+  "ended_at": "2026-06-30T14:19:01Z",
+  "environment": {
+    "affinity": [
+      14
+    ],
+    "cuda_visible_devices": "2",
+    "deps": [
+      "pytorch_tabular",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super1",
+    "java": "/usr/bin/java",
+    "pid": 1621614,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 993.0834071214953,
+  "inference_time_seconds": 0.03423680202104151,
+  "metrics": {
+    "explained_variance": 0.03142983680269884,
+    "mae": 0.36140178172293036,
+    "max_error": 0.8524976559954395,
+    "mean_absolute_percentage_error_eps": 146373.12108969796,
+    "median_absolute_error": 0.3690833190765934,
+    "mse": 0.17852061372721328,
+    "prediction_max": 0.07224778831005096,
+    "prediction_min": 0.02540980651974678,
+    "r2": -2.4503154918802617,
+    "rmse": 0.42251699815180604,
+    "target_max": 0.899126649,
+    "target_min": 0.0
+  },
+  "model_class": "models.tools.model_zoo._PyTorchTabularRegressor",
+  "model_params": {},
+  "n_features": 10,
+  "run_date": "2026-06-30T14:19:01Z",
+  "started_at": "2026-06-30T14:18:55Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 34,
+  "train_rows": 166,
+  "training_time_seconds": 4.984381444053724
+}

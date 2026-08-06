@@ -1,0 +1,115 @@
+{
+  "algorithm": "jain_regressor_gen30000",
+  "dataset_hash": "5f91a00bd3b66742",
+  "task_type": "regression",
+  "status": "completed",
+  "started_at_unix_ms": 1783181325172,
+  "finished_at_unix_ms": 1783182456588,
+  "rows": {
+    "train": 1000,
+    "test": 999
+  },
+  "features": 8,
+  "timings": {
+    "load_secs": 0.002220226,
+    "search_secs": 1000.318623972,
+    "gpu_kernel_secs": 15.893496416,
+    "finalist_cv_secs": 126.684383142,
+    "fit_predict_secs": 4.410664606,
+    "total_secs": 1131.41600424
+  },
+  "model_class": "feat_math_genome",
+  "model_params": {
+    "gens": 30000,
+    "time_budget_secs": 1000.0,
+    "pop": 64,
+    "top_k": 2,
+    "folds": 3,
+    "search_rows": 512,
+    "actual_search_rows": 512,
+    "gpu_kernel_configs": 131072,
+    "gpu_kernel_used": true,
+    "gpu_kernel_candidates": 4,
+    "gpu_kernel_message": "battle-gpu composite GPR kernel search over 5 specs",
+    "seed_genomes_file": "/home/ubuntu/quant/regression/reports/jain_regressor_fast30_gen0_seeds.txt",
+    "seed_genomes_requested": 64,
+    "seed_genomes_valid": 64,
+    "seed_genomes_used": 63,
+    "seed": 20260616,
+    "evals": 360763,
+    "tokens_total": 3350630744.0,
+    "search_engine": "feat_math_evolve_ridge_surrogate+battle_gpu_gpr_mixture_proposals",
+    "final_selection": "honest_feat_math_cv_r2"
+  },
+  "metrics": {
+    "r2": 0.5174562434607566,
+    "rmse": 0.16672133152024898,
+    "mse": 0.027796002383884768,
+    "mae": 0.11753158883832984,
+    "explained_variance": 0.5202441180294073,
+    "prediction_min": 0.09916425841532833,
+    "prediction_max": 0.9917847161437969,
+    "target_min": 0.0,
+    "target_max": 1.0
+  },
+  "gene": "(pipe X (winsor_clip q=0.009953752839967378) (pair_prod append=true topk=15) (winsor_clip q=0.009992579686533306) (winsor_clip q=0.010588806925760131) (pair_prod append=true topk=8) (rank append=true) (histgbm2 bags=3 col_subsample=0.8 leaves=15 lr=0.036512305397470454 min_leaf=19 rounds=500 row_subsample=1.0 val_pct=15))",
+  "genome": "(pipe X (winsor_clip q=0.009953752839967378) (pair_prod append=true topk=15) (winsor_clip q=0.009992579686533306) (winsor_clip q=0.010588806925760131) (pair_prod append=true topk=8) (rank append=true) (histgbm2 bags=3 col_subsample=0.8 leaves=15 lr=0.036512305397470454 min_leaf=19 rounds=500 row_subsample=1.0 val_pct=15))",
+  "genome_hash": "2c047538c74cccb5567cc49690225fd6c860b0789f8b5548482d929fea2d8e47",
+  "cv": {
+    "folds": 3,
+    "mean_r2": 0.5516856216065196,
+    "oof_r2": 0.5529094159342947,
+    "fold_r2": [
+      0.5765749011262891,
+      0.5790241739415162,
+      0.49945778975175326
+    ]
+  },
+  "finalists": [
+    {
+      "rank": 1,
+      "gene": "(pipe X (winsor_clip q=0.009953752839967378) (pair_prod append=true topk=15) (winsor_clip q=0.009992579686533306) (winsor_clip q=0.010588806925760131) (pair_prod append=true topk=8) (rank append=true) (histgbm2 bags=3 col_subsample=0.8 leaves=15 lr=0.036512305397470454 min_leaf=19 rounds=500 row_subsample=1.0 val_pct=15))",
+      "genome": "(pipe X (winsor_clip q=0.009953752839967378) (pair_prod append=true topk=15) (winsor_clip q=0.009992579686533306) (winsor_clip q=0.010588806925760131) (pair_prod append=true topk=8) (rank append=true) (histgbm2 bags=3 col_subsample=0.8 leaves=15 lr=0.036512305397470454 min_leaf=19 rounds=500 row_subsample=1.0 val_pct=15))",
+      "genome_hash": "2c047538c74cccb5567cc49690225fd6c860b0789f8b5548482d929fea2d8e47",
+      "search_score": 0.5020631802343754,
+      "search_fold_scores": [
+        0.5543632912764765,
+        0.5808593793787913,
+        0.3709668700478581
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.5516856216065196,
+        "oof_r2": 0.5529094159342947,
+        "fold_r2": [
+          0.5765749011262891,
+          0.5790241739415162,
+          0.49945778975175326
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "gene": "(pipe X (winsor_clip q=0.009953752839967378) (pair_prod append=true topk=15) (winsor_clip q=0.009992579686533306) (winsor_clip q=0.010588806925760131) (pair_prod append=true topk=8) (rank append=true) (histgbm depth=4 lr=0.05242252049755165 rounds=121))",
+      "genome": "(pipe X (winsor_clip q=0.009953752839967378) (pair_prod append=true topk=15) (winsor_clip q=0.009992579686533306) (winsor_clip q=0.010588806925760131) (pair_prod append=true topk=8) (rank append=true) (histgbm depth=4 lr=0.05242252049755165 rounds=121))",
+      "genome_hash": "ee9cb1a9d00769909b189964110ca75b600d5f924a394f579235116017f9cd3f",
+      "search_score": 0.5020631802343754,
+      "search_fold_scores": [
+        0.5543632912764765,
+        0.5808593793787913,
+        0.3709668700478581
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.5526967437577737,
+        "oof_r2": 0.5527430868827531,
+        "fold_r2": [
+          0.5730023964243672,
+          0.595511475246026,
+          0.489576359602928
+        ]
+      }
+    }
+  ],
+  "predictions_path": "/home/ubuntu/quant/regression/5f91a00bd3b66742/predictions/jain_regressor_1000.csv"
+}

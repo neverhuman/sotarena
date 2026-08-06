@@ -1,0 +1,102 @@
+{
+  "algorithm": "hyp3_chimera_regression",
+  "checkpoint": "/home/ubuntu/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_stackfusionreg.pt",
+  "dataset_hash": "5f91a00bd3b66742",
+  "ended_at": "2026-07-04T05:54:09+00:00",
+  "environment": {
+    "checkpoint": "/home/ubuntu/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_stackfusionreg.pt",
+    "cuda_device_count_visible": 1,
+    "cuda_device_name": "NVIDIA A100-SXM4-40GB",
+    "cuda_max_memory_allocated_bytes": 9695315456,
+    "cuda_memory_allocated_bytes": 368393216,
+    "cuda_visible_devices": "GPU-98d06bb5-2537-b750-447a-76b24e55ea65",
+    "gpu_device": "GPU-98d06bb5-2537-b750-447a-76b24e55ea65",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "repo_root": "/home/ubuntu/fable_god/chimera_regression",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "torch": "2.7.0",
+    "torch_cuda_available": true,
+    "torch_num_threads": 1
+  },
+  "gpu_device": "GPU-98d06bb5-2537-b750-447a-76b24e55ea65",
+  "inference_rows_per_second": 92.33577166458191,
+  "inference_time_seconds": 10.819208872038871,
+  "metrics": {
+    "explained_variance": 0.5457729046737979,
+    "mae": 0.11688121889267598,
+    "max_error": 0.7863635420799255,
+    "mean_absolute_percentage_error_eps": 57512.78952547044,
+    "median_absolute_error": 0.08243346214294434,
+    "mse": 0.026549664566445856,
+    "prediction_max": 0.9978245496749878,
+    "prediction_min": 0.11352018266916275,
+    "r2": 0.5390928991468691,
+    "rmse": 0.16294067805936568,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "chimera.Chimera",
+  "model_metadata": {
+    "feature_augmentation": {
+      "augmented_feature_count": 144,
+      "block_columns": {
+        "hyperion3": 128,
+        "train3": 8
+      },
+      "block_names": [
+        "train3",
+        "hyperion3"
+      ],
+      "feature_order": [
+        "train3",
+        "hyperion3",
+        "original_csv_features"
+      ],
+      "mode": "prepend_feature_blocks",
+      "name": "hyp3_chimera_regression",
+      "original_feature_count": 8,
+      "payload_dir": "/home/ubuntu/~quant/regression/5f91a00bd3b66742",
+      "payload_roots": [
+        "/tmp/hyp3_chimera_regression_payloads",
+        "/home/ubuntu/~quant/regression"
+      ],
+      "source_paths": {
+        "hyperion3test.vs": "/home/ubuntu/~quant/regression/5f91a00bd3b66742/hyperion3test.vs",
+        "hyperion3train.vs": "/home/ubuntu/~quant/regression/5f91a00bd3b66742/hyperion3train.vs",
+        "test3.vs": "/home/ubuntu/~quant/regression/5f91a00bd3b66742/test3.vs",
+        "test_csv": "/home/ubuntu/quant/regression/5f91a00bd3b66742/test.csv",
+        "train3.vs": "/home/ubuntu/~quant/regression/5f91a00bd3b66742/train3.vs",
+        "train_csv": "/home/ubuntu/quant/regression/5f91a00bd3b66742/train.csv"
+      },
+      "split_rows": {
+        "test": 999,
+        "train": 1000
+      }
+    }
+  },
+  "model_name": "hyp3_chimera_regression",
+  "n_features": 144,
+  "run_date": "2026-07-04T05:54:09+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/sklearn-fetch-california-housing-target.csv",
+  "started_at": "2026-07-04T05:53:58+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 0.0,
+  "wall_time_seconds": 10.869082155986689
+}

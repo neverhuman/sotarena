@@ -1,0 +1,70 @@
+{
+  "algorithm": "passive_aggressive",
+  "dataset_hash": "962a35a53b0803a8",
+  "ended_at": "2026-06-26T12:11:31Z",
+  "environment": {
+    "affinity": [
+      123
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super3",
+    "pid": 2752914,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 86150.21005718387,
+  "inference_time_seconds": 0.001137548009864986,
+  "metrics": {
+    "accuracy": 0.6632653061224489,
+    "average_precision": 0.46952618489008763,
+    "balanced_accuracy": 0.5809595202398801,
+    "cohen_kappa": 0.16692426584234932,
+    "f1": 0.4,
+    "false_negatives": 18,
+    "false_positives": 15,
+    "matthews_corrcoef": 0.16740504566411563,
+    "positive_rate": 0.29591836734693877,
+    "precision": 0.4230769230769231,
+    "predicted_positive_rate": 0.2653061224489796,
+    "recall": 0.3793103448275862,
+    "roc_auc": 0.7016491754122939,
+    "sensitivity": 0.3793103448275862,
+    "specificity": 0.782608695652174,
+    "top_decile_lift": 1.6896551724137931,
+    "top_decile_positive_rate": 0.5,
+    "true_negatives": 54,
+    "true_positives": 11
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 10,
+  "run_date": "2026-06-26T12:11:31Z",
+  "started_at": "2026-06-26T12:11:29Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 98,
+  "train_rows": 485,
+  "training_time_seconds": 0.0038796429871581495
+}

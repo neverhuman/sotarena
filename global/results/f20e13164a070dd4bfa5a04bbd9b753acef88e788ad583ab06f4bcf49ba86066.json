@@ -1,0 +1,77 @@
+{
+  "algorithm": "jable_regressor",
+  "dataset_hash": "bd49e740a79bcb6c",
+  "ended_at": "2026-07-10T00:19:09Z",
+  "environment": {
+    "affinity": [
+      7
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "xbabe1",
+    "java": "/usr/bin/java",
+    "pid": 871591,
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "cpu",
+    "sklearn": "1.9.0",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "gpu_device": null,
+  "inference_rows_per_second": 721.2066803509402,
+  "inference_time_seconds": 1.3851785170845687,
+  "max_job_seconds": 1800.0,
+  "metrics": {
+    "explained_variance": 0.9999997610118236,
+    "mae": 4.706537035505369e-05,
+    "max_error": 0.0013084955070265525,
+    "mean_absolute_percentage_error_eps": 208.0461821512753,
+    "median_absolute_error": 1.820290477294595e-05,
+    "mse": 1.4552108392455545e-08,
+    "prediction_max": 1.0000228015909531,
+    "prediction_min": -3.6580494548466014e-05,
+    "r2": 0.9999997604599032,
+    "rmse": 0.00012063212006947215,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "models.tools.jable_regressor.JableRegressor",
+  "model_metadata": {
+    "seed": 17
+  },
+  "model_name": "jable_regressor",
+  "model_params": {
+    "seed": 17
+  },
+  "n_features": 12,
+  "run_date": "2026-07-10T00:19:09Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/socrata-beach-lab-data-2ivx-z93u-data-cityofchicago-target-longitude.csv",
+  "started_at": "2026-07-10T00:11:38Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 423.29619028419256,
+  "wall_time_seconds": 424.68136880127713,
+  "xgboost_device": null
+}

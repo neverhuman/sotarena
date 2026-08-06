@@ -1,0 +1,48 @@
+{
+  "algorithm": "decision_tree",
+  "dataset_hash": "dee1fc8e9afd81c9",
+  "ended_at": "2026-06-21T08:48:04+00:00",
+  "environment": {
+    "lightgbm_available": false,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "xgboost_available": true
+  },
+  "inference_rows_per_second": 379168.9752597745,
+  "inference_time_seconds": 6.857101107016206e-05,
+  "metrics": {
+    "explained_variance": -1.0599574850670832,
+    "mae": 0.33974359356440037,
+    "max_error": 0.8333333432674408,
+    "mean_absolute_percentage_error_eps": 9615385.236419179,
+    "median_absolute_error": 0.3333333432674408,
+    "mse": 0.1862535655413598,
+    "prediction_max": 1.0,
+    "prediction_min": 0.0,
+    "r2": -1.0640558441329895,
+    "rmse": 0.4315710434463367,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "sklearn.tree._classes.DecisionTreeRegressor",
+  "n_features": 8,
+  "run_date": "2026-06-21T08:48:04+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/grub-damage.csv",
+  "started_at": "2026-06-21T08:48:04+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 26,
+  "train_rows": 129,
+  "training_time_seconds": 0.0007694149971939623
+}

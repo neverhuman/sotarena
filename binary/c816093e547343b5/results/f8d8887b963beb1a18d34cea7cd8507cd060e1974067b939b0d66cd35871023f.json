@@ -1,0 +1,73 @@
+{
+  "algorithm": "ngboost",
+  "dataset_hash": "c816093e547343b5",
+  "ended_at": "2026-06-26T13:16:53Z",
+  "environment": {
+    "affinity": [
+      39
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "ngboost",
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super10",
+    "pid": 2254788,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 1283.8206296666815,
+  "inference_time_seconds": 0.06231400099932216,
+  "metrics": {
+    "accuracy": 0.925,
+    "average_precision": 0.9997929606625257,
+    "balanced_accuracy": 0.7272727272727273,
+    "brier_score": 0.048672800436781696,
+    "cohen_kappa": 0.5897435897435898,
+    "f1": 0.9583333333333334,
+    "false_negatives": 0,
+    "false_positives": 6,
+    "log_loss": 0.14394092566753847,
+    "matthews_corrcoef": 0.6466697906828632,
+    "positive_rate": 0.8625,
+    "precision": 0.92,
+    "predicted_positive_rate": 0.9375,
+    "recall": 1.0,
+    "roc_auc": 0.9986824769433464,
+    "sensitivity": 1.0,
+    "specificity": 0.45454545454545453,
+    "top_decile_lift": 1.1594202898550725,
+    "top_decile_positive_rate": 1.0,
+    "true_negatives": 5,
+    "true_positives": 69
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 3,
+  "run_date": "2026-06-26T13:16:53Z",
+  "started_at": "2026-06-26T13:16:49Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 80,
+  "train_rows": 395,
+  "training_time_seconds": 0.46161593799479306
+}

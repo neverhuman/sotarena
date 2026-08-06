@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "bc2868df8159734e6fd9a10d5e6d98301463d79fb5509a5bcbbd980d062fe270",
+    "hyperion3test128dim.vs": "1dabe61040d60abd9a9d515b1619d07875d50a07cfb563b014c1d371977c98b5",
+    "hyperion3train.vs": "74366d489e266507bcdc54aa4d3d12d1e370d170c8eb0d7a2d333812d8fc6248",
+    "hyperion3train128dim.vs": "716e6fabdcf57bcf62a27cf826729856085973c3af39ae0e3bea7be6cd809d69",
+    "test3.vs": "06ca21d3542cc1ec387dd43cf6e3f40a4efab25c5076f2d9c6f7be851549c397",
+    "train3.vs": "06868dd13871a0f4e1a88324336dc815cc54a34c11a31a08ceee937c56016416"
+  },
+  "counts": {
+    "augmented_features": 144,
+    "hyperion3_features": 128,
+    "raw_features": 8,
+    "test_rows": 128,
+    "train3_features": 8,
+    "train_rows": 640
+  },
+  "created_at": "2026-07-09T23:39:19Z",
+  "dataset_hash": "f0e7eb3d790df37d",
+  "dataset_name": "diabetes",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.24985467385524263,
+    "delta_vs_raw_selected_model": -0.1772475819310927,
+    "prior_best_r2": 0.19227564188161306,
+    "r2": -0.05757903197362957,
+    "raw_selected_model_r2": 0.11966854995746312
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "nm_0cb1fdafe6ed45e5_append_random_power_sphere_map_elasticnet",
+    "path": "/home/ubuntu/remote_super/quant/regression/f0e7eb3d790df37d/reports/nm_0cb1fdafe6ed45e5_append_random_power_sphere_map_elasticnet.json",
+    "r2": 0.19227564188161306
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 91.53186841495335,
+    "raw_fit_predict_seconds": 1.7945142448879778
+  }
+}

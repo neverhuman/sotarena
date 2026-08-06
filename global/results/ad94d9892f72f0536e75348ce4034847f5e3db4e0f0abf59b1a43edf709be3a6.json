@@ -1,0 +1,51 @@
+{
+  "algorithm": "tabpfn_v25_regressor_default",
+  "dataset_hash": "b253fbfae8460dc1",
+  "ended_at": "2026-06-21T08:39:47+00:00",
+  "environment": {
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "torch": "2.7.0",
+    "torch_cuda_available": true,
+    "torch_cuda_device_count": 8,
+    "torch_num_threads": 1
+  },
+  "inference_rows_per_second": 7.936356298865416,
+  "inference_time_seconds": 1.1340216670068912,
+  "metrics": {
+    "explained_variance": 0.4676755291708802,
+    "mae": 0.07508737718065579,
+    "max_error": 0.1840091049671173,
+    "mean_absolute_percentage_error_eps": 1.409333935926879,
+    "median_absolute_error": 0.04480952024459839,
+    "mse": 0.009124466085879383,
+    "prediction_max": 0.353305846452713,
+    "prediction_min": 0.16690875589847565,
+    "r2": 0.43184271870141355,
+    "rmse": 0.0955220711976001,
+    "target_max": 0.4751773178577423,
+    "target_min": 0.014184396713972092
+  },
+  "model_class": "tabpfn.regressor.TabPFNRegressor",
+  "n_features": 7,
+  "run_date": "2026-06-21T08:39:47+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/limesoda-nsw-52-dataset.csv",
+  "started_at": "2026-06-21T08:39:45+00:00",
+  "status": "completed",
+  "tabpfn_checkpoint": "/home/ubuntu/guant/tabpfn/tabpfn-v2.5-regressor-v2.5_default.ckpt",
+  "tabpfn_device": "cuda:2",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 9,
+  "train_rows": 43,
+  "training_time_seconds": 1.657437988964375
+}

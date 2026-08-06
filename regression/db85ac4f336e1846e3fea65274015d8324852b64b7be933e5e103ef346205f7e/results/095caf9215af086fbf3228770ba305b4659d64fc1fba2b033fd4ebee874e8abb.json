@@ -1,0 +1,41 @@
+{
+  "algorithm": "knn",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "ZTS_small",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.017944540944881737,
+  "metrics": {
+    "explained_variance": 0.2896430364449556,
+    "mae": 0.20934561622607334,
+    "max_error": 0.7142664153333333,
+    "median_absolute_error": 0.1801583531333333,
+    "mse": 0.0662053769268847,
+    "prediction_max": 0.7532003973333332,
+    "prediction_min": 0.16499263591333324,
+    "r2": 0.20611326401479269,
+    "rmse": 0.25730405540310614,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_name": "knn",
+  "n_features": 147,
+  "provenance": {
+    "canonical_test_sha256": "806d6838aa3dd6f0b0c21adf718de17456d42c5219af4dd0b46eee8b0624726c",
+    "canonical_test_target_sha256": "338ad2fc9525ec03da9a632fa76a9cd3fb65472f6a0ba89861e57f88be7c5434",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "9e2da441d53c5984fdea2d416b421c0f575850f3e95bc09837a88be62907c865",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/ZTS_small/knn/worker-receipt.json",
+    "worker_receipt_sha256": "0cd3bdea8eb78b3d839da40f31d00879aabd26f5dc1f351cfc14f70c3706305e"
+  },
+  "run_date": "2026-07-23T11:19:51Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 0.008067707996815443
+}

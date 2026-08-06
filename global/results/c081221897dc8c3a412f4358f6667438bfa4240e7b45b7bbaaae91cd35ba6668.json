@@ -1,0 +1,77 @@
+{
+  "algorithm": "jable_regressor",
+  "dataset_hash": "3f781a51af45387e",
+  "ended_at": "2026-07-10T00:02:41Z",
+  "environment": {
+    "affinity": [
+      76
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/remote_super/quant/.venv-model-queue/bin/python",
+    "host": "xbabe2",
+    "java": "/usr/bin/java",
+    "pid": 3501532,
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "cpu",
+    "sklearn": "1.9.0",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "gpu_device": null,
+  "inference_rows_per_second": 8170.379900373292,
+  "inference_time_seconds": 0.005630093161016703,
+  "max_job_seconds": 1800.0,
+  "metrics": {
+    "explained_variance": 0.99802178321996,
+    "mae": 0.005483104523282443,
+    "max_error": 0.028263116635486193,
+    "mean_absolute_percentage_error_eps": 0.07420483909505773,
+    "median_absolute_error": 0.003135983868190459,
+    "mse": 6.908810059141732e-05,
+    "prediction_max": 0.7844192708761569,
+    "prediction_min": -0.012123790035486193,
+    "r2": 0.9977963171244083,
+    "rmse": 0.008311925203670767,
+    "target_max": 0.786619425,
+    "target_min": 0.01531565
+  },
+  "model_class": "models.tools.jable_regressor.JableRegressor",
+  "model_metadata": {
+    "seed": 17
+  },
+  "model_name": "jable_regressor",
+  "model_params": {
+    "seed": 17
+  },
+  "n_features": 3,
+  "run_date": "2026-07-10T00:02:41Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/seaborn-healthexp-spending-usd.csv",
+  "started_at": "2026-07-10T00:02:19Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 46,
+  "train_rows": 228,
+  "training_time_seconds": 19.80282550584525,
+  "wall_time_seconds": 19.808455599006265,
+  "xgboost_device": null
+}

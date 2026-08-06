@@ -1,0 +1,48 @@
+{
+  "algorithm": "xgboost_hist",
+  "dataset_hash": "cf5e74b4e9594944",
+  "ended_at": "2026-06-21T08:07:25+00:00",
+  "environment": {
+    "lightgbm_available": false,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "xgboost_available": true
+  },
+  "inference_rows_per_second": 3854.871981374409,
+  "inference_time_seconds": 0.0007782359607517719,
+  "metrics": {
+    "explained_variance": 0.1425089863604584,
+    "mae": 0.3098537913016723,
+    "max_error": 0.9222775846719742,
+    "mean_absolute_percentage_error_eps": 1295.9573624666289,
+    "median_absolute_error": 0.007245415996294469,
+    "mse": 0.2835494802379451,
+    "prediction_max": 0.07772241532802582,
+    "prediction_min": 3.837323674815707e-05,
+    "r2": -0.27615895308266025,
+    "rmse": 0.5324936433779703,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "xgboost.sklearn.XGBRegressor",
+  "n_features": 569,
+  "run_date": "2026-06-21T08:07:25+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/tsutumi.csv",
+  "started_at": "2026-06-21T08:07:25+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 3,
+  "train_rows": 10,
+  "training_time_seconds": 0.0392455940018408
+}

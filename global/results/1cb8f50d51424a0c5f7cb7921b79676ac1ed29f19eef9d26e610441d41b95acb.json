@@ -1,0 +1,138 @@
+{
+  "algorithm": "hyp3_tabicl",
+  "dataset_hash": "c8f90fc9cc5364be",
+  "ended_at": "2026-07-05T20:57:38Z",
+  "environment": {
+    "affinity": [
+      8,
+      9
+    ],
+    "cuda_visible_devices": "GPU-784030c4-b1f9-d5a3-f0eb-9337f133f503",
+    "deps": [
+      "tabicl"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "xbabe1",
+    "java": "/usr/bin/java",
+    "pid": 3545795,
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "gpu_heavy",
+    "sklearn": "1.9.0",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 696.4038865779053,
+  "inference_time_seconds": 1.4101012629689649,
+  "metrics": {
+    "explained_variance": 0.9926261836073811,
+    "mae": 0.004412762042997867,
+    "max_error": 0.17560819563855362,
+    "mean_absolute_percentage_error_eps": 830.7797460317341,
+    "median_absolute_error": 0.0001825098037109285,
+    "mse": 0.0005169577173748708,
+    "prediction_max": 1.00072181224823,
+    "prediction_min": -0.000993296504020691,
+    "r2": 0.9925848944321526,
+    "rmse": 0.022736704188929206,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "tabicl._sklearn.regressor.TabICLRegressor",
+  "model_metadata": {
+    "feature_augmentation": {
+      "augmented_n_features": 360,
+      "block_columns": {
+        "hyperion3": 128,
+        "train3": 116
+      },
+      "blocks": [
+        {
+          "n_columns": 116,
+          "name": "train3",
+          "test_path": "/home/ubuntu/quant/regression/c8f90fc9cc5364be/test3.vs",
+          "train_path": "/home/ubuntu/quant/regression/c8f90fc9cc5364be/train3.vs"
+        },
+        {
+          "n_columns": 128,
+          "name": "hyperion3",
+          "test_path": "/home/ubuntu/quant/regression/c8f90fc9cc5364be/hyperion3test.vs",
+          "train_path": "/home/ubuntu/quant/regression/c8f90fc9cc5364be/hyperion3train.vs"
+        }
+      ],
+      "excluded_sidecars": [
+        "train_target.vs",
+        "test_target.vs"
+      ],
+      "feature_order": [
+        "train3",
+        "hyperion3",
+        "original_csv_features"
+      ],
+      "kind": "hyp3_vs",
+      "original_n_features": 116,
+      "prepended_n_features": 244,
+      "source_paths": {
+        "hyperion3": {
+          "test": "/home/ubuntu/quant/regression/c8f90fc9cc5364be/hyperion3test.vs",
+          "train": "/home/ubuntu/quant/regression/c8f90fc9cc5364be/hyperion3train.vs"
+        },
+        "train3": {
+          "test": "/home/ubuntu/quant/regression/c8f90fc9cc5364be/test3.vs",
+          "train": "/home/ubuntu/quant/regression/c8f90fc9cc5364be/train3.vs"
+        }
+      }
+    }
+  },
+  "model_name": "hyp3_tabicl",
+  "model_params": {
+    "feature_augmentation": {
+      "blocks": [
+        {
+          "name": "train3",
+          "test": "test3.vs",
+          "train": "train3.vs"
+        },
+        {
+          "name": "hyperion3",
+          "test": "hyperion3test.vs",
+          "train": "hyperion3train.vs"
+        }
+      ],
+      "excluded_sidecars": [
+        "train_target.vs",
+        "test_target.vs"
+      ],
+      "feature_order": [
+        "train3",
+        "hyperion3",
+        "original_csv_features"
+      ],
+      "kind": "hyp3_vs"
+    }
+  },
+  "n_features": 360,
+  "run_date": "2026-07-05T20:57:38Z",
+  "started_at": "2026-07-05T20:57:32Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 982,
+  "train_rows": 1000,
+  "training_time_seconds": 2.2661064700223505
+}

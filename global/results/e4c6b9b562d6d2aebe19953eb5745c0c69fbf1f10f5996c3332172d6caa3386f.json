@@ -1,0 +1,65 @@
+{
+  "algorithm": "kimik3_regressor",
+  "dataset_hash": "f8536dfeef471c2f",
+  "ended_at": "2026-07-19T23:23:05Z",
+  "environment": {
+    "affinity": [
+      11
+    ],
+    "cuda_visible_devices": "",
+    "deps": [],
+    "executable": "/home/ubuntu/remote_super/quant/.venv-model-queue/bin/python",
+    "host": "xbabe1",
+    "java": "/usr/bin/java",
+    "pid": 967348,
+    "platform": "Linux-6.8.0-134-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "cpu_light",
+    "sklearn": "1.9.0",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 26231.393230783222,
+  "inference_time_seconds": 0.03808413801016286,
+  "metrics": {
+    "explained_variance": -0.0030644748664534482,
+    "mae": 0.3898098288781441,
+    "max_error": 0.7644569900694609,
+    "mean_absolute_percentage_error_eps": 15433716.109276192,
+    "median_absolute_error": 0.4095997762837465,
+    "mse": 0.17809693505202626,
+    "prediction_max": 0.7274322606502392,
+    "prediction_min": 0.23493803536924046,
+    "r2": -0.003589173525378797,
+    "rmse": 0.42201532561273913,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "models.kimik3_regressor.Kimik3Regressor",
+  "model_name": "kimik3_regressor",
+  "model_params": {},
+  "n_features": 7,
+  "run_date": "2026-07-19T23:23:05Z",
+  "started_at": "2026-07-19T23:23:03Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 0.31812834896845743
+}

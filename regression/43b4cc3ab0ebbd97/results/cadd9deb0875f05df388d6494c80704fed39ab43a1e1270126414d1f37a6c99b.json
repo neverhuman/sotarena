@@ -1,0 +1,102 @@
+{
+  "algorithm": "hyp3_chimera_regression",
+  "checkpoint": "/home/ubuntu/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_stackfusionreg.pt",
+  "dataset_hash": "43b4cc3ab0ebbd97",
+  "ended_at": "2026-07-04T05:52:52+00:00",
+  "environment": {
+    "checkpoint": "/home/ubuntu/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_stackfusionreg.pt",
+    "cuda_device_count_visible": 1,
+    "cuda_device_name": "NVIDIA A100-SXM4-40GB",
+    "cuda_max_memory_allocated_bytes": 5154667008,
+    "cuda_memory_allocated_bytes": 365315072,
+    "cuda_visible_devices": "GPU-a5e6a20b-7bb0-ddf8-1f7b-c36533398a23",
+    "gpu_device": "GPU-a5e6a20b-7bb0-ddf8-1f7b-c36533398a23",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "repo_root": "/home/ubuntu/fable_god/chimera_regression",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "torch": "2.7.0",
+    "torch_cuda_available": true,
+    "torch_num_threads": 1
+  },
+  "gpu_device": "GPU-a5e6a20b-7bb0-ddf8-1f7b-c36533398a23",
+  "inference_rows_per_second": 97.2252049777459,
+  "inference_time_seconds": 0.9976836770074442,
+  "metrics": {
+    "explained_variance": -0.029738951663448976,
+    "mae": 0.017228489814292564,
+    "max_error": 0.9686823613592423,
+    "mean_absolute_percentage_error_eps": 15.523831582776092,
+    "median_absolute_error": 0.0031329989433288574,
+    "mse": 0.010395731071750066,
+    "prediction_max": 0.9957305788993835,
+    "prediction_min": 0.7419382333755493,
+    "r2": -0.03239110792331612,
+    "rmse": 0.10195945798085662,
+    "target_max": 0.9999992251396179,
+    "target_min": 0.0006435983232222497
+  },
+  "model_class": "chimera.Chimera",
+  "model_metadata": {
+    "feature_augmentation": {
+      "augmented_feature_count": 206,
+      "block_columns": {
+        "hyperion3": 128,
+        "train3": 39
+      },
+      "block_names": [
+        "train3",
+        "hyperion3"
+      ],
+      "feature_order": [
+        "train3",
+        "hyperion3",
+        "original_csv_features"
+      ],
+      "mode": "prepend_feature_blocks",
+      "name": "hyp3_chimera_regression",
+      "original_feature_count": 39,
+      "payload_dir": "/home/ubuntu/~quant/regression/43b4cc3ab0ebbd97",
+      "payload_roots": [
+        "/tmp/hyp3_chimera_regression_payloads",
+        "/home/ubuntu/~quant/regression"
+      ],
+      "source_paths": {
+        "hyperion3test.vs": "/home/ubuntu/~quant/regression/43b4cc3ab0ebbd97/hyperion3test.vs",
+        "hyperion3train.vs": "/home/ubuntu/~quant/regression/43b4cc3ab0ebbd97/hyperion3train.vs",
+        "test3.vs": "/home/ubuntu/~quant/regression/43b4cc3ab0ebbd97/test3.vs",
+        "test_csv": "/home/ubuntu/quant/regression/43b4cc3ab0ebbd97/test.csv",
+        "train3.vs": "/home/ubuntu/~quant/regression/43b4cc3ab0ebbd97/train3.vs",
+        "train_csv": "/home/ubuntu/quant/regression/43b4cc3ab0ebbd97/train.csv"
+      },
+      "split_rows": {
+        "test": 97,
+        "train": 482
+      }
+    }
+  },
+  "model_name": "hyp3_chimera_regression",
+  "n_features": 206,
+  "run_date": "2026-07-04T05:52:52+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/socrata-development-of-an-empirically-derived-measure-of-food-safety-culture-in-restaurants-37nu-tuw8-data-cdc-target-observation.csv",
+  "started_at": "2026-07-04T05:52:51+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 97,
+  "train_rows": 482,
+  "training_time_seconds": 0.0,
+  "wall_time_seconds": 1.0225341159384698
+}

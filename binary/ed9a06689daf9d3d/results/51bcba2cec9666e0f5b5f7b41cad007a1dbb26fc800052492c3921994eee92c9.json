@@ -1,0 +1,74 @@
+{
+  "algorithm": "imodels_skope_rules_trees10_depth3",
+  "dataset_hash": "ed9a06689daf9d3d",
+  "ended_at": "2026-06-28T18:18:01Z",
+  "environment": {
+    "affinity": [
+      67
+    ],
+    "cuda_visible_devices": "",
+    "deps": [
+      "imodels",
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super1",
+    "java": "/usr/bin/java",
+    "pid": 1607533,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 4601.851384981515,
+  "inference_time_seconds": 0.2173038449836895,
+  "metrics": {
+    "accuracy": 0.498,
+    "average_precision": 0.7546727491749691,
+    "balanced_accuracy": 0.5,
+    "brier_score": 0.3275192714060671,
+    "cohen_kappa": 0.0,
+    "f1": 0.0,
+    "false_negatives": 502,
+    "false_positives": 0,
+    "log_loss": 0.8933880500901835,
+    "matthews_corrcoef": 0.0,
+    "positive_rate": 0.502,
+    "precision": 0.0,
+    "predicted_positive_rate": 0.0,
+    "recall": 0.0,
+    "roc_auc": 0.7639702235235762,
+    "sensitivity": 0.0,
+    "specificity": 1.0,
+    "top_decile_lift": 1.852589641434263,
+    "top_decile_positive_rate": 0.93,
+    "true_negatives": 498,
+    "true_positives": 0
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 11,
+  "run_date": "2026-06-28T18:18:01Z",
+  "started_at": "2026-06-28T18:17:57Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 0.2713533639907837
+}

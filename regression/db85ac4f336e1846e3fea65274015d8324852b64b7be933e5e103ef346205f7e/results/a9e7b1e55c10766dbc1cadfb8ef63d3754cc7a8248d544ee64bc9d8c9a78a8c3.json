@@ -1,0 +1,41 @@
+{
+  "algorithm": "catboost_quantile_alpha0p5_trees300_depth6",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "ZTS_small",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.00669089297298342,
+  "metrics": {
+    "explained_variance": 0.5814579319852278,
+    "mae": 0.1386661892273724,
+    "max_error": 0.7097764439387124,
+    "median_absolute_error": 0.08998257342509162,
+    "mse": 0.03793914013758706,
+    "prediction_max": 1.0365531651237974,
+    "prediction_min": -0.035889185415293734,
+    "r2": 0.5450614205674362,
+    "rmse": 0.19477972209033226,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_name": "catboost_quantile_alpha0p5_trees300_depth6",
+  "n_features": 147,
+  "provenance": {
+    "canonical_test_sha256": "806d6838aa3dd6f0b0c21adf718de17456d42c5219af4dd0b46eee8b0624726c",
+    "canonical_test_target_sha256": "338ad2fc9525ec03da9a632fa76a9cd3fb65472f6a0ba89861e57f88be7c5434",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "1718b32dc5abb124f09cfe5be511f159f992c471c9242cb1a3b4bc447f238531",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/ZTS_small/catboost_quantile_alpha0p5_trees300_depth6/worker-receipt.json",
+    "worker_receipt_sha256": "2fae8e4314e4db55f2f18773d5c1ceb011dd616c6eb8bb1664bca77f74c5a48e"
+  },
+  "run_date": "2026-07-23T11:19:48Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 1.271264948998578
+}

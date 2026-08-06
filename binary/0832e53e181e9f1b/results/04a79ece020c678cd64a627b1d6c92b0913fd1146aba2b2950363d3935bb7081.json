@@ -1,0 +1,1150 @@
+{
+  "artifacts": [
+    {
+      "dataset_id": "5a0e19c34d002a9a",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/5a0e19c34d002a9a/fable5_classifier.predictions.csv",
+      "predictions_sha256": "fc9bf3e2f9f7a205f69649142f644854f69f3901ca67243a87c90f1262ada124",
+      "report": "results/external-references/binary42-frozen-classifiers/5a0e19c34d002a9a/fable5_classifier.json",
+      "report_sha256": "10caf5b6e6fa3abaa5a653f38a02b721636e193fd9ab0424375b7dd3f49bdb2d",
+      "roc_auc": 0.9691358024691358
+    },
+    {
+      "dataset_id": "5a0e19c34d002a9a",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/5a0e19c34d002a9a/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "342111be204be54164a67727ece6b2d8ad7b41edec0b8694bd54167f03a2d3bb",
+      "report": "results/external-references/binary42-frozen-classifiers/5a0e19c34d002a9a/grok4p5_classifier.json",
+      "report_sha256": "15d41b4eb265318375ea1fd94b992c3e035667ab179e352a83b56866a3dd38a2",
+      "roc_auc": 0.9614197530864198
+    },
+    {
+      "dataset_id": "5a0e19c34d002a9a",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/5a0e19c34d002a9a/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "4b938584c0de0bd20ca13fb81344e7fc058c5eba1619748b8895e1e6fac494b5",
+      "report": "results/external-references/binary42-frozen-classifiers/5a0e19c34d002a9a/gpt5p6sol_classifier.json",
+      "report_sha256": "5fe046f27882d25b2b12b36db0e399b71d6bb789539d4e5dd8942b55edd67005",
+      "roc_auc": 0.9537037037037037
+    },
+    {
+      "dataset_id": "865f829ebdf98492",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/865f829ebdf98492/fable5_classifier.predictions.csv",
+      "predictions_sha256": "97617222de75d56b3d9f3dbb7b9bdbd7982a149e6e2295cda524aa8601e5a60a",
+      "report": "results/external-references/binary42-frozen-classifiers/865f829ebdf98492/fable5_classifier.json",
+      "report_sha256": "3124157446a5edc1bad453a7c954189d94c2ecb08ffd310a8e1093e4b7106fd3",
+      "roc_auc": 0.9375
+    },
+    {
+      "dataset_id": "865f829ebdf98492",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/865f829ebdf98492/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "e9a9dcaced791c50280552f4adb29aa821041f099c68874b1bf3ddd1ae5f4879",
+      "report": "results/external-references/binary42-frozen-classifiers/865f829ebdf98492/grok4p5_classifier.json",
+      "report_sha256": "66cdcbbb0db2a252b9d607cf1c99f22a8e60cd8ad05173dce4e8aeb7e3ac15e0",
+      "roc_auc": 0.9375
+    },
+    {
+      "dataset_id": "865f829ebdf98492",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/865f829ebdf98492/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "41acf39ab6adf2ede9c684ccc7d85c9b7dd456fa5e51c6b59565b2d306939479",
+      "report": "results/external-references/binary42-frozen-classifiers/865f829ebdf98492/gpt5p6sol_classifier.json",
+      "report_sha256": "0478d91ee539da824b5d9677792639fbf846bca2b3b6020c23b8202eee7b54eb",
+      "roc_auc": 0.9375
+    },
+    {
+      "dataset_id": "32d67bf055ab6e7b",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/32d67bf055ab6e7b/fable5_classifier.predictions.csv",
+      "predictions_sha256": "0b2f9e9c33151b0f4db7b8de7f07a5c19c7c90867765657cf94d7703dc93adcf",
+      "report": "results/external-references/binary42-frozen-classifiers/32d67bf055ab6e7b/fable5_classifier.json",
+      "report_sha256": "8734b85def451f5538398150825cd3678d7f3c21accacb40b30f421ab265d422",
+      "roc_auc": 0.8418763591177384
+    },
+    {
+      "dataset_id": "32d67bf055ab6e7b",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/32d67bf055ab6e7b/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "12fab3fd5184868d50c674aebda5973b0382ff8b46f8bc651f6991a0028571d7",
+      "report": "results/external-references/binary42-frozen-classifiers/32d67bf055ab6e7b/grok4p5_classifier.json",
+      "report_sha256": "7d5c62df50cfae4323aa9bb0e8ed5650b9599156ec4a4bb85e71634140a4a601",
+      "roc_auc": 0.8384591488039764
+    },
+    {
+      "dataset_id": "32d67bf055ab6e7b",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/32d67bf055ab6e7b/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "bc076b47f4c9a05c21e834f91ab127ecc7dbe2e3edddf504b924679fb446cf2a",
+      "report": "results/external-references/binary42-frozen-classifiers/32d67bf055ab6e7b/gpt5p6sol_classifier.json",
+      "report_sha256": "de9d1b3ccf201548cf38988b99300ee8e99d1ba0647fea7dcc742e321ca3fbaa",
+      "roc_auc": 0.8418763591177384
+    },
+    {
+      "dataset_id": "962a35a53b0803a8",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/962a35a53b0803a8/fable5_classifier.predictions.csv",
+      "predictions_sha256": "4387feecd963bed8551f4a95a51a511650e64fee462730acfcce7874242e6ab8",
+      "report": "results/external-references/binary42-frozen-classifiers/962a35a53b0803a8/fable5_classifier.json",
+      "report_sha256": "13d5af90f0116bd94ae0c1b2777155e52b85076c5d810ebd03310cc4a9ddad4c",
+      "roc_auc": 0.7256371814092953
+    },
+    {
+      "dataset_id": "962a35a53b0803a8",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/962a35a53b0803a8/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "df9779c868aee3ea7b827f10836253efab4ad38b47ead7a6771513eb3eb04012",
+      "report": "results/external-references/binary42-frozen-classifiers/962a35a53b0803a8/grok4p5_classifier.json",
+      "report_sha256": "80d58afcd722fd57c7334e1c3b27d6a1f5d5ee3dcbb95bc522e077d0ac0b6365",
+      "roc_auc": 0.696151924037981
+    },
+    {
+      "dataset_id": "962a35a53b0803a8",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/962a35a53b0803a8/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "900192d8d7e8d8566b2bad1505c6a295af5632a19bbf08e78bda956f8c813fc9",
+      "report": "results/external-references/binary42-frozen-classifiers/962a35a53b0803a8/gpt5p6sol_classifier.json",
+      "report_sha256": "a2dd85afe78cf1129deb7b1f29d46281b74947b5fc213c99a3c775bdd7a379d8",
+      "roc_auc": 0.7171414292853573
+    },
+    {
+      "dataset_id": "63722a5ad9789899",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/63722a5ad9789899/fable5_classifier.predictions.csv",
+      "predictions_sha256": "8e48acbfe3b2e75969c8718225cc953088f29da6edef0877ea88f5847dbe88c8",
+      "report": "results/external-references/binary42-frozen-classifiers/63722a5ad9789899/fable5_classifier.json",
+      "report_sha256": "e43111e4d38b4e856767d4c6f451e672b0118f518e400a2b6a89a10ecb383c2f",
+      "roc_auc": 0.9599077226470205
+    },
+    {
+      "dataset_id": "63722a5ad9789899",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/63722a5ad9789899/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "0dfbb101306467e3dcd45f86711f1145312a3db0868a4ea8f92b26e6d4a478aa",
+      "report": "results/external-references/binary42-frozen-classifiers/63722a5ad9789899/grok4p5_classifier.json",
+      "report_sha256": "ab6cbab4ae8fec5a5f2d93db74cb6d6579db73aedd9dba3a8d15d37da7faaaf3",
+      "roc_auc": 0.9915164369034994
+    },
+    {
+      "dataset_id": "63722a5ad9789899",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/63722a5ad9789899/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "62a0c2e3d98031bf0b150301966d320c20056e36ef666a1ab5053f6dc39c87e0",
+      "report": "results/external-references/binary42-frozen-classifiers/63722a5ad9789899/gpt5p6sol_classifier.json",
+      "report_sha256": "37a89f6046b6d9c2c9925f6e469c19ff5ef8918bae3b8ec203c84b66e7b51eeb",
+      "roc_auc": 0.9706238023478633
+    },
+    {
+      "dataset_id": "c816093e547343b5",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/c816093e547343b5/fable5_classifier.predictions.csv",
+      "predictions_sha256": "1d2b59023ca161d2cb690208319b46664cb162c7fcf13bdf2b8350dbffc42e5b",
+      "report": "results/external-references/binary42-frozen-classifiers/c816093e547343b5/fable5_classifier.json",
+      "report_sha256": "2a8caa205d63b7c9557685dce9f296e5d3f5c279787d927a4f6c66331526285d",
+      "roc_auc": 0.9907773386034255
+    },
+    {
+      "dataset_id": "c816093e547343b5",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/c816093e547343b5/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "879d89e2be315801be98ecadd701713834a56f0b092e95a4b7300bfcd08c0c99",
+      "report": "results/external-references/binary42-frozen-classifiers/c816093e547343b5/grok4p5_classifier.json",
+      "report_sha256": "786f09c157c1cec05beb6e5c33b0891bc53c3dd23d3ff95c81c33310a1e0ad4c",
+      "roc_auc": 0.994729907773386
+    },
+    {
+      "dataset_id": "c816093e547343b5",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/c816093e547343b5/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "43a91ffb9d0cffa8ddeecd476edc2f08c81c9a9ba360ca3e98269352879a3864",
+      "report": "results/external-references/binary42-frozen-classifiers/c816093e547343b5/gpt5p6sol_classifier.json",
+      "report_sha256": "42cb231094a9942f48395e45f885c04ccb5e89c8549dbff2316ebcf8a259d255",
+      "roc_auc": 0.997364953886693
+    },
+    {
+      "dataset_id": "127a1b76fe96adad",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/127a1b76fe96adad/fable5_classifier.predictions.csv",
+      "predictions_sha256": "761bd9fb8e26f8694cd65bfc8ac3ba6e9522cb03e03e7eb5ea81d987206aaada",
+      "report": "results/external-references/binary42-frozen-classifiers/127a1b76fe96adad/fable5_classifier.json",
+      "report_sha256": "f1d7f3814de7f2452d634539d937a9d627b20d2377a4162a7627852307de473a",
+      "roc_auc": 0.8670465337132004
+    },
+    {
+      "dataset_id": "127a1b76fe96adad",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/127a1b76fe96adad/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "e340b57c90955c645cdd0903e0b0604953a9213a475a415b413394f8f60f4f0b",
+      "report": "results/external-references/binary42-frozen-classifiers/127a1b76fe96adad/grok4p5_classifier.json",
+      "report_sha256": "f8830e695333804cf5d00ad85ce7caa15ee04d0310b034a87afeb0211997579a",
+      "roc_auc": 0.8717948717948718
+    },
+    {
+      "dataset_id": "127a1b76fe96adad",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/127a1b76fe96adad/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "05ee533e4a2f44b1881ffee3e9cea960f247ba3af7dd9eb3f71044cd1b942f5d",
+      "report": "results/external-references/binary42-frozen-classifiers/127a1b76fe96adad/gpt5p6sol_classifier.json",
+      "report_sha256": "2a135f83c43547fd01fe33f2e0878b57934470076ac849a401c2f8157ca18763",
+      "roc_auc": 0.8803418803418803
+    },
+    {
+      "dataset_id": "9ca13534df43f24d",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/9ca13534df43f24d/fable5_classifier.predictions.csv",
+      "predictions_sha256": "7ee5939ab09bb094219cd51e627214a1fc5cd2f380a0f358378ef66bc1264ee4",
+      "report": "results/external-references/binary42-frozen-classifiers/9ca13534df43f24d/fable5_classifier.json",
+      "report_sha256": "2af1f8b2dcb045ae881932248362becba035bc7717f96e5947ed5d360e4a8921",
+      "roc_auc": 0.75398125
+    },
+    {
+      "dataset_id": "9ca13534df43f24d",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/9ca13534df43f24d/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "32b6ebaf7fcd90eed4e7427939dd3279839fff21eca79dfca0ce7998a22a16e0",
+      "report": "results/external-references/binary42-frozen-classifiers/9ca13534df43f24d/grok4p5_classifier.json",
+      "report_sha256": "ebf406acd6315f5832268bb5fddbc9f6f432ca412dffde37c5e7fa35d2af6b93",
+      "roc_auc": 0.7437375
+    },
+    {
+      "dataset_id": "9ca13534df43f24d",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/9ca13534df43f24d/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "d431b002b2ea0a4e3b99400a11f3a3ea373dab78605a6a858c6b5ac6e676f7fc",
+      "report": "results/external-references/binary42-frozen-classifiers/9ca13534df43f24d/gpt5p6sol_classifier.json",
+      "report_sha256": "dc3aa4a0e36b3b8276c10cc940a2439437ae5eff68285e2cf40d4219490913de",
+      "roc_auc": 0.6822
+    },
+    {
+      "dataset_id": "1b46745dbbcf9494",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/1b46745dbbcf9494/fable5_classifier.predictions.csv",
+      "predictions_sha256": "fa9b02ee2ea18f92bdd1fec045ea6357ab8942a7ef4923a8b5fd23526fab1713",
+      "report": "results/external-references/binary42-frozen-classifiers/1b46745dbbcf9494/fable5_classifier.json",
+      "report_sha256": "a14f1d89ed4d5875c670d50241c1304360e3666898f044d95f8d8f5975e0b288",
+      "roc_auc": 0.8274171737660582
+    },
+    {
+      "dataset_id": "1b46745dbbcf9494",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/1b46745dbbcf9494/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "77a125bbe2d76ed0474ad4812e5bdb82f6979ba9f00ba8ff8e05c8da46aabf15",
+      "report": "results/external-references/binary42-frozen-classifiers/1b46745dbbcf9494/grok4p5_classifier.json",
+      "report_sha256": "3a029e8934195a65516b80697fbdd77ce25d71838684dede98146d785dd2c918",
+      "roc_auc": 0.835868830290737
+    },
+    {
+      "dataset_id": "1b46745dbbcf9494",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/1b46745dbbcf9494/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "4887fa184d2ac4f1ad5729b3de34675276e547e32a3625799366f621c32e6176",
+      "report": "results/external-references/binary42-frozen-classifiers/1b46745dbbcf9494/gpt5p6sol_classifier.json",
+      "report_sha256": "a030457aede4b1d37c637e1665d3056965549d14897048c910b37be64b3261aa",
+      "roc_auc": 0.8054428668018931
+    },
+    {
+      "dataset_id": "0936cfa7201f9f56",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/0936cfa7201f9f56/fable5_classifier.predictions.csv",
+      "predictions_sha256": "655a13890892099e027035bab31e1fa7fb2539fe069d81d390728a2ef9120976",
+      "report": "results/external-references/binary42-frozen-classifiers/0936cfa7201f9f56/fable5_classifier.json",
+      "report_sha256": "cd202ab9ef5291115539ec42f7664a16087ddf6eeb8234785ea745d8a88d5e4f",
+      "roc_auc": 0.9160539215686274
+    },
+    {
+      "dataset_id": "0936cfa7201f9f56",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/0936cfa7201f9f56/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "6488b84b226ee96ec38009e4b08732057514b366627d6276bacdc986d9c46025",
+      "report": "results/external-references/binary42-frozen-classifiers/0936cfa7201f9f56/grok4p5_classifier.json",
+      "report_sha256": "41af4e2f52db6cb7dc6c972cd43200d18d5a41034ff1f10ce6c9bae11f45d7a0",
+      "roc_auc": 0.930453431372549
+    },
+    {
+      "dataset_id": "0936cfa7201f9f56",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/0936cfa7201f9f56/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "3bb5457f781e5bbbee86162b162e49ecc4da501e01aba0f6e4aaf90f1af9c2e8",
+      "report": "results/external-references/binary42-frozen-classifiers/0936cfa7201f9f56/gpt5p6sol_classifier.json",
+      "report_sha256": "fabfb35af47ae16a76f27f17bc5156e63edf57dfb49fda6c7c8efe4c5817c39a",
+      "roc_auc": 0.9273897058823529
+    },
+    {
+      "dataset_id": "21a6177fdb3eae79",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/21a6177fdb3eae79/fable5_classifier.predictions.csv",
+      "predictions_sha256": "2c865f54f2384afebde848aba036737157eab13d31bb8895049b162ac0f29a93",
+      "report": "results/external-references/binary42-frozen-classifiers/21a6177fdb3eae79/fable5_classifier.json",
+      "report_sha256": "78b35be8fa59816f937f800925b17c92270eda91f7c93dca80a3aa30c7681906",
+      "roc_auc": 0.8062464569160998
+    },
+    {
+      "dataset_id": "21a6177fdb3eae79",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/21a6177fdb3eae79/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "c7a961b86d4a6e97fedef5f9563add5e246070757fdd0c69cb655c7ce916e081",
+      "report": "results/external-references/binary42-frozen-classifiers/21a6177fdb3eae79/grok4p5_classifier.json",
+      "report_sha256": "fb7f2d0924bb5ceb8fb0760a7576253c3ea43f911e36a5ed9a16552ac562fb9f",
+      "roc_auc": 0.7989536092214664
+    },
+    {
+      "dataset_id": "21a6177fdb3eae79",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/21a6177fdb3eae79/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "1cc13e1cf57462f1f754b6f8d8860e9a7a10e2ad0e095f7782d27d7ab2054a83",
+      "report": "results/external-references/binary42-frozen-classifiers/21a6177fdb3eae79/gpt5p6sol_classifier.json",
+      "report_sha256": "a5ae4fd760a2935a8f92c2b53aa00cdc72c8bedfef7503ac5354f9e7dad56316",
+      "roc_auc": 0.809901738473167
+    },
+    {
+      "dataset_id": "85120759b4e72997",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/85120759b4e72997/fable5_classifier.predictions.csv",
+      "predictions_sha256": "5744eeff5d18119832a5a86ecf89502d0ac46bcf21ff2d2db357c246e5ff8ee5",
+      "report": "results/external-references/binary42-frozen-classifiers/85120759b4e72997/fable5_classifier.json",
+      "report_sha256": "c4730fa8af304fef99cb5be3c66b0209318920464819fde246917d11f90b5e7b",
+      "roc_auc": 0.8468093035862513
+    },
+    {
+      "dataset_id": "85120759b4e72997",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/85120759b4e72997/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "4ad83da6abc5f11ed89a74bc38b381f3a645fdfc741ce2bdcb943419396e190d",
+      "report": "results/external-references/binary42-frozen-classifiers/85120759b4e72997/grok4p5_classifier.json",
+      "report_sha256": "3bd194d869519d77a69c099959b02090f4da160485a4b2ba4f81477666f435a2",
+      "roc_auc": 0.805000762311328
+    },
+    {
+      "dataset_id": "85120759b4e72997",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/85120759b4e72997/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "d06b37766322896c80c86e2df41c0881484d2c3a6c9449a63e0fc8026a646205",
+      "report": "results/external-references/binary42-frozen-classifiers/85120759b4e72997/gpt5p6sol_classifier.json",
+      "report_sha256": "4f30b96faa2d15f9af91dc9d754f8f21044e4b0a6075f36bc22ba3d4729c3792",
+      "roc_auc": 0.7748301739763853
+    },
+    {
+      "dataset_id": "a9c29ca0abc484be",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/a9c29ca0abc484be/fable5_classifier.predictions.csv",
+      "predictions_sha256": "4f2ebbcce753977f98cd7d7da65255026d2c057dd7d6955956ef9e1ab92cfffe",
+      "report": "results/external-references/binary42-frozen-classifiers/a9c29ca0abc484be/fable5_classifier.json",
+      "report_sha256": "3f5fe3708485eb39c6865b56a5c7cae538d7cdad7fccb21538454178258a7fda",
+      "roc_auc": 0.909378352436339
+    },
+    {
+      "dataset_id": "a9c29ca0abc484be",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/a9c29ca0abc484be/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "4bcf21b988633e938ff56a27aef7dfd7044fe3d9da668fc85d84951838b36b4b",
+      "report": "results/external-references/binary42-frozen-classifiers/a9c29ca0abc484be/grok4p5_classifier.json",
+      "report_sha256": "5ff58d9f632cba2317b0b408d7efcf606e0dc8d76d9d1edf2445d813c0505420",
+      "roc_auc": 0.8996856943895507
+    },
+    {
+      "dataset_id": "a9c29ca0abc484be",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/a9c29ca0abc484be/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "7047da7a90c3010b311b07b7847adc87d83ef2acb23daeacb0f88a9eab56c26c",
+      "report": "results/external-references/binary42-frozen-classifiers/a9c29ca0abc484be/gpt5p6sol_classifier.json",
+      "report_sha256": "241a24e7aa637d304f48b62dca2803c835c57cbe6ff38380a7b0f6c28b1516d9",
+      "roc_auc": 0.8914296827458139
+    },
+    {
+      "dataset_id": "2fd60e8a5f05b7fd",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/2fd60e8a5f05b7fd/fable5_classifier.predictions.csv",
+      "predictions_sha256": "180bbedafa1656141409d67bded56499c878780f13dac946cff4bce1a9f6647c",
+      "report": "results/external-references/binary42-frozen-classifiers/2fd60e8a5f05b7fd/fable5_classifier.json",
+      "report_sha256": "d755212563703105e303de135923723df536ff268b7efee3215decd9840606ae",
+      "roc_auc": 0.6460726232216983
+    },
+    {
+      "dataset_id": "2fd60e8a5f05b7fd",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/2fd60e8a5f05b7fd/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "ce7d7bd0a444c2343c8c9a8349298c442fae5f9ef9081b8027d70dcb965903ec",
+      "report": "results/external-references/binary42-frozen-classifiers/2fd60e8a5f05b7fd/grok4p5_classifier.json",
+      "report_sha256": "d0157a87dc34f60377bc1bad4bb55ee36c5d2b2d58f6ebd14de3df97f5ad9855",
+      "roc_auc": 0.6605274117062293
+    },
+    {
+      "dataset_id": "2fd60e8a5f05b7fd",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/2fd60e8a5f05b7fd/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "6f4147663b37d3ed17aafe14b0aa8414666f6966596a40b01c137b9bbb76b174",
+      "report": "results/external-references/binary42-frozen-classifiers/2fd60e8a5f05b7fd/gpt5p6sol_classifier.json",
+      "report_sha256": "9d13f42797e8267dcceec564c0095d04138f4c3cb0b7a2fa0b3e206ca45293d1",
+      "roc_auc": 0.6076519029003614
+    },
+    {
+      "dataset_id": "fcd74a7f31328927",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/fcd74a7f31328927/fable5_classifier.predictions.csv",
+      "predictions_sha256": "abd7294295cdfa996441b97ca92cacb7a5b5a6e94dab4d47ec62dcbed0ca9788",
+      "report": "results/external-references/binary42-frozen-classifiers/fcd74a7f31328927/fable5_classifier.json",
+      "report_sha256": "8d36958bcdf12ab4e84df7335880b56878a1d26ceab9b654abd74e49f2c90126",
+      "roc_auc": 0.9062904546775514
+    },
+    {
+      "dataset_id": "fcd74a7f31328927",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/fcd74a7f31328927/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "c98cddbcc0b16ff63e9ce94991bbadf388f86c9b268f0d8e8b8b3119966e6fff",
+      "report": "results/external-references/binary42-frozen-classifiers/fcd74a7f31328927/grok4p5_classifier.json",
+      "report_sha256": "e3a72f9e80b8d49ccd603b583ccc855e80c41ec18b9e589566781236b4882d53",
+      "roc_auc": 0.9072613669387863
+    },
+    {
+      "dataset_id": "fcd74a7f31328927",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/fcd74a7f31328927/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "3d1d274eff48a86fb9a6ba27c2de3470d89457efe2809e7923edbfe915c7db0a",
+      "report": "results/external-references/binary42-frozen-classifiers/fcd74a7f31328927/gpt5p6sol_classifier.json",
+      "report_sha256": "3210bb38ff82cfb5763cb76267cff9721a0e71b4f11fb22379b702c0d444816c",
+      "roc_auc": 0.751010541333122
+    },
+    {
+      "dataset_id": "c18dc25530725088",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/c18dc25530725088/fable5_classifier.predictions.csv",
+      "predictions_sha256": "2c6a221c32a85f92ac927811a2678d89aa9f1ca67bd835842969405ce6cf46fd",
+      "report": "results/external-references/binary42-frozen-classifiers/c18dc25530725088/fable5_classifier.json",
+      "report_sha256": "86d47d07a3070fda90cdb4dae62ea267e8d47195a8f1b21c1dd6f16f89aa1f7b",
+      "roc_auc": 0.5533126293995859
+    },
+    {
+      "dataset_id": "c18dc25530725088",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/c18dc25530725088/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "b85da29330cb6c0dedcc9ec475ea740ec5ea9c81404452b6567fa8851d89298b",
+      "report": "results/external-references/binary42-frozen-classifiers/c18dc25530725088/grok4p5_classifier.json",
+      "report_sha256": "eefd03e53cf8cff0788c8690806cb137f3f7ad6ddc7fe01777afa0335d57bcfe",
+      "roc_auc": 0.5787967360857387
+    },
+    {
+      "dataset_id": "c18dc25530725088",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/c18dc25530725088/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "fc1b08687422b09b83108b493685712721b03390f00ff8bb1f3ac05a6a5c3cb1",
+      "report": "results/external-references/binary42-frozen-classifiers/c18dc25530725088/gpt5p6sol_classifier.json",
+      "report_sha256": "ccbf811ae0cda3b0df1f1222e183b4bef693229270a05ec4ece8ee7d2450719e",
+      "roc_auc": 0.5125441480940203
+    },
+    {
+      "dataset_id": "9ff9d337d31b02e7",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/9ff9d337d31b02e7/fable5_classifier.predictions.csv",
+      "predictions_sha256": "3085242acdbacf30af4d84b8ff0ae1607964bba03ab5232ae384a1bcea75da84",
+      "report": "results/external-references/binary42-frozen-classifiers/9ff9d337d31b02e7/fable5_classifier.json",
+      "report_sha256": "d0d54510ecf23caf27c117f84f5b1dccce1e3807b0ccc0d20cd883febf74db6b",
+      "roc_auc": 0.672665916760405
+    },
+    {
+      "dataset_id": "9ff9d337d31b02e7",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/9ff9d337d31b02e7/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "0212ebe17e219771a1794e55e99a7e1401afcef6d9ce4ce793326b56e222a389",
+      "report": "results/external-references/binary42-frozen-classifiers/9ff9d337d31b02e7/grok4p5_classifier.json",
+      "report_sha256": "68ae745ef670c19154b1b231d2e812e20900639d415f110a1a667dac33616d72",
+      "roc_auc": 0.6799319004043414
+    },
+    {
+      "dataset_id": "9ff9d337d31b02e7",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/9ff9d337d31b02e7/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "e9587d7cde049a2e613371a66266af011446e9db42240d224fa7c3be86e76625",
+      "report": "results/external-references/binary42-frozen-classifiers/9ff9d337d31b02e7/gpt5p6sol_classifier.json",
+      "report_sha256": "4f8097d34d1a6d98b4754e7c13c4b0fbe0d10b43a22253eebbbac44d60c9fa52",
+      "roc_auc": 0.6436323837898641
+    },
+    {
+      "dataset_id": "7bd4c609c8fc6af5",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/7bd4c609c8fc6af5/fable5_classifier.predictions.csv",
+      "predictions_sha256": "e3ce4230a76cb7b0b9417affa3bfdaefa4d318e3948bc41e63aea7eb75e185d3",
+      "report": "results/external-references/binary42-frozen-classifiers/7bd4c609c8fc6af5/fable5_classifier.json",
+      "report_sha256": "d0df159df1723755108823b89832d64c9e428c7d74c2947a5d1e4068d6eb5fb9",
+      "roc_auc": 0.8114407305392194
+    },
+    {
+      "dataset_id": "7bd4c609c8fc6af5",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/7bd4c609c8fc6af5/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "a10de2676507f50661341f6e80f21ea1dcc2e4351dc589e1fc667d4ed3ea4368",
+      "report": "results/external-references/binary42-frozen-classifiers/7bd4c609c8fc6af5/grok4p5_classifier.json",
+      "report_sha256": "9aca7086f7431489493aa70a6451a9a96e18c6fa3ba19689d88399543967137f",
+      "roc_auc": 0.8044430382887913
+    },
+    {
+      "dataset_id": "7bd4c609c8fc6af5",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/7bd4c609c8fc6af5/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "83f5f159b18698ffadc699eea86dacdd24cc340ef8e845dde98a573adba1abb4",
+      "report": "results/external-references/binary42-frozen-classifiers/7bd4c609c8fc6af5/gpt5p6sol_classifier.json",
+      "report_sha256": "2f10c2cdf5471946da0ec7e65584f4fbfe277981791cfd8a90fa19cb59600f4b",
+      "roc_auc": 0.8128799722077471
+    },
+    {
+      "dataset_id": "0f8a6dd4ec7cbb5c",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/0f8a6dd4ec7cbb5c/fable5_classifier.predictions.csv",
+      "predictions_sha256": "bdeec9c6e2a549f6c3e0d7fe64e70d5f3d70e7397661435b5ed6650269d3e59d",
+      "report": "results/external-references/binary42-frozen-classifiers/0f8a6dd4ec7cbb5c/fable5_classifier.json",
+      "report_sha256": "0023ca9913e4ae1fcb7fccf30a6583b10175015b1db3c56a33fe50a775b26f3d",
+      "roc_auc": 0.8373888339920948
+    },
+    {
+      "dataset_id": "0f8a6dd4ec7cbb5c",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/0f8a6dd4ec7cbb5c/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "27e2999e952c03a48944abd9f7170941283940109029102acc2b6bc9c3c3adf3",
+      "report": "results/external-references/binary42-frozen-classifiers/0f8a6dd4ec7cbb5c/grok4p5_classifier.json",
+      "report_sha256": "64b9eac7dc9d3f029b148078717d86a3f9b2331386fde28660e6ca9230c04044",
+      "roc_auc": 0.8329936594202898
+    },
+    {
+      "dataset_id": "0f8a6dd4ec7cbb5c",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/0f8a6dd4ec7cbb5c/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "987a46fdea0af7ba1c957de99d0e1afc9dcf31b8d274e3bacd43af2c87114f84",
+      "report": "results/external-references/binary42-frozen-classifiers/0f8a6dd4ec7cbb5c/gpt5p6sol_classifier.json",
+      "report_sha256": "a761f0bcaedcbec70926816a8af29ba849c811bd5926f8b8d1ea2caa2cb07901",
+      "roc_auc": 0.8358294219367589
+    },
+    {
+      "dataset_id": "de602a22ad99eec3",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/de602a22ad99eec3/fable5_classifier.predictions.csv",
+      "predictions_sha256": "dfe6dfbf203efd819d7f778347baf105e3566c3430da4434083cbb0c6bdff00b",
+      "report": "results/external-references/binary42-frozen-classifiers/de602a22ad99eec3/fable5_classifier.json",
+      "report_sha256": "dae6187cd6151591966b53cd90750e82650381a940d24ea93d7b0b247d94cc56",
+      "roc_auc": 0.9250791335650447
+    },
+    {
+      "dataset_id": "de602a22ad99eec3",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/de602a22ad99eec3/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "40ecbda07bd6f87491242fe27c057af4c4b35a22956742692e76256f34de3036",
+      "report": "results/external-references/binary42-frozen-classifiers/de602a22ad99eec3/grok4p5_classifier.json",
+      "report_sha256": "344d51bfbad9dcfb4a3654de76b599d3833818537721d55aee69b839c32f38cd",
+      "roc_auc": 0.9305098684210527
+    },
+    {
+      "dataset_id": "de602a22ad99eec3",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/de602a22ad99eec3/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "a559cb2be235de59f52a1e520b11206a6a5d49f0ec2198524be68da4523f651d",
+      "report": "results/external-references/binary42-frozen-classifiers/de602a22ad99eec3/gpt5p6sol_classifier.json",
+      "report_sha256": "87f00fec15b7164b50f6d8de297d12cffc08acea63f60105fb7f7d10191fe12a",
+      "roc_auc": 0.9257851290963257
+    },
+    {
+      "dataset_id": "695124699b412d0f",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/695124699b412d0f/fable5_classifier.predictions.csv",
+      "predictions_sha256": "c4a48cc53ef835db78f9a9a4fcf89c2d6e2050e9a5e5f091a842bbbac3605f85",
+      "report": "results/external-references/binary42-frozen-classifiers/695124699b412d0f/fable5_classifier.json",
+      "report_sha256": "876442e77ab695b5c1c12bd0705ff3dfbe632cd1c6d6fb6c2a5388df3f38e82b",
+      "roc_auc": 0.9588295134941057
+    },
+    {
+      "dataset_id": "695124699b412d0f",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/695124699b412d0f/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "3794f359a0d99c3c99cc1836e5ac63bb8ac37ca31bcd5cadcb4a37578d616315",
+      "report": "results/external-references/binary42-frozen-classifiers/695124699b412d0f/grok4p5_classifier.json",
+      "report_sha256": "d4f200831ac115a69efb31d41d64a5d6552f185fb7d905ea56ed7891ede0194a",
+      "roc_auc": 0.9611633056070852
+    },
+    {
+      "dataset_id": "695124699b412d0f",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/695124699b412d0f/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "fa88b7ec9cfeace7158739e04867d3cecd9b66d02b93c7f968bb3b490e7045c5",
+      "report": "results/external-references/binary42-frozen-classifiers/695124699b412d0f/gpt5p6sol_classifier.json",
+      "report_sha256": "d822f75bc1d7d57eb2930b1fbf1077d167826216a758d6d7a20f05c1124cc878",
+      "roc_auc": 0.9140685775836276
+    },
+    {
+      "dataset_id": "8a13750dca58f373",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/8a13750dca58f373/fable5_classifier.predictions.csv",
+      "predictions_sha256": "030f12423a713f12918ca1c23829a5ec74646a866f8a11af0e6fe2e804d00489",
+      "report": "results/external-references/binary42-frozen-classifiers/8a13750dca58f373/fable5_classifier.json",
+      "report_sha256": "6439b99c3a3870ee9dcf64d5cfc7585fcb92a4fd95fc1b92722b3ba60683c799",
+      "roc_auc": 1.0
+    },
+    {
+      "dataset_id": "8a13750dca58f373",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/8a13750dca58f373/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "b381a5fc1fe5e8657dd6eabcacc579a0fde21a4c02cd7558e6a8ac942ad769aa",
+      "report": "results/external-references/binary42-frozen-classifiers/8a13750dca58f373/grok4p5_classifier.json",
+      "report_sha256": "ccbaa0b696bc6a98c6623d39024f4385b2b3f8e11322eab4b9622e905b961e1f",
+      "roc_auc": 1.0
+    },
+    {
+      "dataset_id": "8a13750dca58f373",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/8a13750dca58f373/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "3b0169af886bd85cf80b66638f793646684db933e299d0cbe118142f8960af0e",
+      "report": "results/external-references/binary42-frozen-classifiers/8a13750dca58f373/gpt5p6sol_classifier.json",
+      "report_sha256": "e69b2804a887e2ad3ee3ec12ce8b89a30abd0fe88358816a01c3f102ed871551",
+      "roc_auc": 0.9939024390243902
+    },
+    {
+      "dataset_id": "a1c2b79cde5c2f7c",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/a1c2b79cde5c2f7c/fable5_classifier.predictions.csv",
+      "predictions_sha256": "b08dea98690d373e9ef03f3beb3658d0cc8fe5433042ad8fed341e045ca0a8b5",
+      "report": "results/external-references/binary42-frozen-classifiers/a1c2b79cde5c2f7c/fable5_classifier.json",
+      "report_sha256": "8388d8878c5c2196690e13b4e815d25e7f62a6f59da624cbea2606e3acf39190",
+      "roc_auc": 0.92
+    },
+    {
+      "dataset_id": "a1c2b79cde5c2f7c",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/a1c2b79cde5c2f7c/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "98cdb494adffb51990d3ce6b1d3c91563b862fbb4cbcec469f4f228e757d5685",
+      "report": "results/external-references/binary42-frozen-classifiers/a1c2b79cde5c2f7c/grok4p5_classifier.json",
+      "report_sha256": "79b9ac0130ef5cd8811eaf0d7aaae6281e52006f6719844838bad727a18d4035",
+      "roc_auc": 0.9333333333333333
+    },
+    {
+      "dataset_id": "a1c2b79cde5c2f7c",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/a1c2b79cde5c2f7c/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "27509722c24a0d4c32e78c3d4ffb4ce65d50ecdc323846237bda55718f863976",
+      "report": "results/external-references/binary42-frozen-classifiers/a1c2b79cde5c2f7c/gpt5p6sol_classifier.json",
+      "report_sha256": "183b0737a0e1d5275d245697586e14c86e9e87099911ad1a9b4551c374605d38",
+      "roc_auc": 0.9066666666666666
+    },
+    {
+      "dataset_id": "0832e53e181e9f1b",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/0832e53e181e9f1b/fable5_classifier.predictions.csv",
+      "predictions_sha256": "24559e1604bedc68793bfe00b0819a8f494410233fe20f250035f3f72a9dda9d",
+      "report": "results/external-references/binary42-frozen-classifiers/0832e53e181e9f1b/fable5_classifier.json",
+      "report_sha256": "6f6113351d98eb3dee00f73fe2cb299a4d1c3aad6e75d6ada7684385755aeeff",
+      "roc_auc": 0.9197318681318681
+    },
+    {
+      "dataset_id": "0832e53e181e9f1b",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/0832e53e181e9f1b/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "9d69ca0c8ea644c65e602a1fc950d8c7ce062bcab0dce4401d23817c7f796acb",
+      "report": "results/external-references/binary42-frozen-classifiers/0832e53e181e9f1b/grok4p5_classifier.json",
+      "report_sha256": "6007b32f65772bfee989ba6e7416ad4e0bd362422db86bb350161b2a093af8ee",
+      "roc_auc": 0.9162373626373627
+    },
+    {
+      "dataset_id": "0832e53e181e9f1b",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/0832e53e181e9f1b/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "ad0d3783e930352324ca6d4c76026f6af60c0fca9fbabf9bfc293ca1d4608543",
+      "report": "results/external-references/binary42-frozen-classifiers/0832e53e181e9f1b/gpt5p6sol_classifier.json",
+      "report_sha256": "5e05cfbe046cbaa7eb870f1d34d6e3682bfd4a02b5edd21569db2c227561d695",
+      "roc_auc": 0.9147516483516483
+    },
+    {
+      "dataset_id": "4826cc47946dbffe",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/4826cc47946dbffe/fable5_classifier.predictions.csv",
+      "predictions_sha256": "0bbb4ad0a88f1412e86c0123bf3c5be63c6c4cdf710a5e65a2ba4bd61b1bb701",
+      "report": "results/external-references/binary42-frozen-classifiers/4826cc47946dbffe/fable5_classifier.json",
+      "report_sha256": "3f59c052ed8918486ce212c08ce6b345af335d914ac041de290052471b8632b1",
+      "roc_auc": 0.9659511362104348
+    },
+    {
+      "dataset_id": "4826cc47946dbffe",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/4826cc47946dbffe/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "90b11f68e95e9a1568219051632e41d614d92ed6bed747159e216db5b1519249",
+      "report": "results/external-references/binary42-frozen-classifiers/4826cc47946dbffe/grok4p5_classifier.json",
+      "report_sha256": "0871b030a41e3b180f6b47f2a8b7d628865cf73ba61035608a4a3134d1b9394d",
+      "roc_auc": 0.9634095800190742
+    },
+    {
+      "dataset_id": "4826cc47946dbffe",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/4826cc47946dbffe/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "1d9a77f360d12ff86ba2ad5be1bd7d2b824be4136682c069d0618bec9bf35efd",
+      "report": "results/external-references/binary42-frozen-classifiers/4826cc47946dbffe/gpt5p6sol_classifier.json",
+      "report_sha256": "97246a1203e9a8f7426513788114a5f105fc43fbcc3292258d90b1031256a23d",
+      "roc_auc": 0.9649974284844036
+    },
+    {
+      "dataset_id": "a31b5837cb3a919f",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/a31b5837cb3a919f/fable5_classifier.predictions.csv",
+      "predictions_sha256": "3584bc58d764f980e3c025161f25146bf075961e50a95e6a4c74062326002d6b",
+      "report": "results/external-references/binary42-frozen-classifiers/a31b5837cb3a919f/fable5_classifier.json",
+      "report_sha256": "33cd437e4d1ff032940fcf6d9aa56900ba3bbc1ad00612309e64769d6bb227e0",
+      "roc_auc": 0.8754545454545455
+    },
+    {
+      "dataset_id": "a31b5837cb3a919f",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/a31b5837cb3a919f/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "31ddab653d6e8a337a858d8edd6533a68d8ddeae4894c48dabc1fc19ab7f4a7d",
+      "report": "results/external-references/binary42-frozen-classifiers/a31b5837cb3a919f/grok4p5_classifier.json",
+      "report_sha256": "64b91e4b9e6b5189c3238877bd23545fd629f6bc3bad6c76e81a5d0761120f6c",
+      "roc_auc": 0.8682397504456328
+    },
+    {
+      "dataset_id": "a31b5837cb3a919f",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/a31b5837cb3a919f/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "5c63fbe68a169d05c2ed8700a61415974493c762c439435ac2c169163fdf9d92",
+      "report": "results/external-references/binary42-frozen-classifiers/a31b5837cb3a919f/gpt5p6sol_classifier.json",
+      "report_sha256": "c8ba5340267b4b85b3014acce1a2a6ba8e53d50d5ea3b9cd5eb44781d41b60c0",
+      "roc_auc": 0.8791399286987522
+    },
+    {
+      "dataset_id": "bde2040d63cb1d9b",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/bde2040d63cb1d9b/fable5_classifier.predictions.csv",
+      "predictions_sha256": "e1f002da0c3d3d984a24b72cdc1a4cdd16fc583ba0f9be6b5da1fccdd85e9ad7",
+      "report": "results/external-references/binary42-frozen-classifiers/bde2040d63cb1d9b/fable5_classifier.json",
+      "report_sha256": "c1c0ee42585f236261d2c1cd5a89d0959678f62466d6992ad5597c90875df9b0",
+      "roc_auc": 0.9977477477477478
+    },
+    {
+      "dataset_id": "bde2040d63cb1d9b",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/bde2040d63cb1d9b/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "2c85323b4f2250af63bcfe56fd5a8d9aaf5d7ad18a8cb3f61479e08325f2bb6e",
+      "report": "results/external-references/binary42-frozen-classifiers/bde2040d63cb1d9b/grok4p5_classifier.json",
+      "report_sha256": "27ee6d03553cff354e48b135bc100037c13d3f6b2dc2e63e212fd49a1453207c",
+      "roc_auc": 0.999467101029601
+    },
+    {
+      "dataset_id": "bde2040d63cb1d9b",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/bde2040d63cb1d9b/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "7d2828b259e35ddb52ec77268267690b7ab2738bf7714ddb2653aae865d42951",
+      "report": "results/external-references/binary42-frozen-classifiers/bde2040d63cb1d9b/gpt5p6sol_classifier.json",
+      "report_sha256": "0889e7075de24a25647c3fcf53c6ede7a2679a07a727552dc1603868d9bc1b77",
+      "roc_auc": 0.9967221685971686
+    },
+    {
+      "dataset_id": "142ed0a36920369a",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/142ed0a36920369a/fable5_classifier.predictions.csv",
+      "predictions_sha256": "745d43aff3bbdb4c942a859793e475e915f0818906221b5a827cc307a9215df3",
+      "report": "results/external-references/binary42-frozen-classifiers/142ed0a36920369a/fable5_classifier.json",
+      "report_sha256": "792402a544da2a0afb61a3b9c0d0af0646b5179afbf691478245c23334463921",
+      "roc_auc": 0.793288
+    },
+    {
+      "dataset_id": "142ed0a36920369a",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/142ed0a36920369a/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "084cb5234fbaef0ddcb159f1036cadb5120f50c3a8d164436b00cbf0dff00046",
+      "report": "results/external-references/binary42-frozen-classifiers/142ed0a36920369a/grok4p5_classifier.json",
+      "report_sha256": "a669ae736c5d49a5bc41cf6f9035da95b02c6d35f1fe7a0662750f249be05b52",
+      "roc_auc": 0.7856
+    },
+    {
+      "dataset_id": "142ed0a36920369a",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/142ed0a36920369a/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "ca8afdfe58b98e67172163cebb9d76284df6b6d5b0dd3296ea21857e61785c92",
+      "report": "results/external-references/binary42-frozen-classifiers/142ed0a36920369a/gpt5p6sol_classifier.json",
+      "report_sha256": "562001b9eb0e4b0ba4370c3a0a81fa1ee8313b4be733d765480bb6e9121a796a",
+      "roc_auc": 0.776844
+    },
+    {
+      "dataset_id": "d9553a9cc619172c",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/d9553a9cc619172c/fable5_classifier.predictions.csv",
+      "predictions_sha256": "be08c33ed9b45b7b00b1f06b7603a505aed3112e2d9afee401bb2238f006067f",
+      "report": "results/external-references/binary42-frozen-classifiers/d9553a9cc619172c/fable5_classifier.json",
+      "report_sha256": "3d4b1a6863d78ad1184b6ecafc7b21ccf06b8d8f841ee26a71bda60a6e64c716",
+      "roc_auc": 0.5218300873203493
+    },
+    {
+      "dataset_id": "d9553a9cc619172c",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/d9553a9cc619172c/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "b222a255fb7f059201daad1fe40f71c9e68ca41879dcb44e527725cf2397b00f",
+      "report": "results/external-references/binary42-frozen-classifiers/d9553a9cc619172c/grok4p5_classifier.json",
+      "report_sha256": "1a329c79f3852d8630e49f79429064cf1fc74396639b5d58d3dd0841406d78a6",
+      "roc_auc": 0.5779863119452477
+    },
+    {
+      "dataset_id": "d9553a9cc619172c",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/d9553a9cc619172c/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "5d3e08f8172152d98d721f4e7db3b4a94ed68c0cbb49429693ca8830223bd6cb",
+      "report": "results/external-references/binary42-frozen-classifiers/d9553a9cc619172c/gpt5p6sol_classifier.json",
+      "report_sha256": "8772da4c996bc628a9311b4cf7b59f2817281b0fe70e55493bcbdbb7ccf4c49c",
+      "roc_auc": 0.5671622686490746
+    },
+    {
+      "dataset_id": "509117eb61621015",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/509117eb61621015/fable5_classifier.predictions.csv",
+      "predictions_sha256": "7b760eed46cebc16f11d22e860408b85a40cc7ae1dd9f70f1f01dd0c54c3a18c",
+      "report": "results/external-references/binary42-frozen-classifiers/509117eb61621015/fable5_classifier.json",
+      "report_sha256": "6293e90a8ed41120afb447e1b9733074ec3b0a633905e4d176911da7195a9292",
+      "roc_auc": 0.9389367816091954
+    },
+    {
+      "dataset_id": "509117eb61621015",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/509117eb61621015/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "94e2bcd1dfd16dff908f082e583eb2d1e4c922f338a3d5a04ab7502f27b3f206",
+      "report": "results/external-references/binary42-frozen-classifiers/509117eb61621015/grok4p5_classifier.json",
+      "report_sha256": "e3462c448a52f03e5ddc5298228a104137a55bdc8d3e595ef430dd520e0c0783",
+      "roc_auc": 0.9418103448275862
+    },
+    {
+      "dataset_id": "509117eb61621015",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/509117eb61621015/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "2b7c921148f04cbeef128a02376247b08dd2f674579733ebd6c75c933bc4f1be",
+      "report": "results/external-references/binary42-frozen-classifiers/509117eb61621015/gpt5p6sol_classifier.json",
+      "report_sha256": "cbbd6f713cca115f8de68db2d8b8df08869a63199092a6753955387c7f987053",
+      "roc_auc": 0.9445402298850575
+    },
+    {
+      "dataset_id": "c98cb891d794dfcd",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/c98cb891d794dfcd/fable5_classifier.predictions.csv",
+      "predictions_sha256": "aeeefb67123eff11b66e4682cd0b1af47c5b8908d53fd35f18c77f5ef9140444",
+      "report": "results/external-references/binary42-frozen-classifiers/c98cb891d794dfcd/fable5_classifier.json",
+      "report_sha256": "ed3ab3a665c396823de96b8db4253c3fdadce560581576c775a10e75e9982bcd",
+      "roc_auc": 0.8045020043169905
+    },
+    {
+      "dataset_id": "c98cb891d794dfcd",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/c98cb891d794dfcd/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "b9def3e1f194bc54db2dbdd3621d2249d30216f725cf15bf2109bfdb72b19a2f",
+      "report": "results/external-references/binary42-frozen-classifiers/c98cb891d794dfcd/grok4p5_classifier.json",
+      "report_sha256": "3e4a8ed38e70042b468c4c4c9faf7b5ffc8b268184e8f3a9243984f6d29caf97",
+      "roc_auc": 0.8050306153913924
+    },
+    {
+      "dataset_id": "c98cb891d794dfcd",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/c98cb891d794dfcd/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "e75bdf94de750f52de947bd7f45e57a37402a167d7f7f80010bf88deeff1326b",
+      "report": "results/external-references/binary42-frozen-classifiers/c98cb891d794dfcd/gpt5p6sol_classifier.json",
+      "report_sha256": "6529a5a9ca19e6313b770f0afb29a507bcb56879a667ccf998587b0f1fbab1ff",
+      "roc_auc": 0.7920355931456764
+    },
+    {
+      "dataset_id": "bbff0b7733f33315",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/bbff0b7733f33315/fable5_classifier.predictions.csv",
+      "predictions_sha256": "46f4b6cc2d327c1e88cba981082de39bab764b19d62c98d409986ba2173fbdee",
+      "report": "results/external-references/binary42-frozen-classifiers/bbff0b7733f33315/fable5_classifier.json",
+      "report_sha256": "1ac80cf7612c4026802930140ef61299510a3fea920c34d611508069125099b6",
+      "roc_auc": 0.7684045157283256
+    },
+    {
+      "dataset_id": "bbff0b7733f33315",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/bbff0b7733f33315/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "e3cd5e03d23a409397c32839f81c688bc841461e367bab4d9d4f972d9c314d2c",
+      "report": "results/external-references/binary42-frozen-classifiers/bbff0b7733f33315/grok4p5_classifier.json",
+      "report_sha256": "edc80d25a0e2e93f0234d178053f817b751e34f04fab66c5c1539e3cb96f5645",
+      "roc_auc": 0.7708706294983741
+    },
+    {
+      "dataset_id": "bbff0b7733f33315",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/bbff0b7733f33315/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "1026c9d2d350f434f75e78bdaa58253edf5a50697ef1b1e7b1d1b432486f59a6",
+      "report": "results/external-references/binary42-frozen-classifiers/bbff0b7733f33315/gpt5p6sol_classifier.json",
+      "report_sha256": "f0b5a4e106755481fedce5d9337c2f0ffec9f7e4c7638a175cdd31adb31684f5",
+      "roc_auc": 0.7646779438091411
+    },
+    {
+      "dataset_id": "ae6eaf903e14b30f",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/ae6eaf903e14b30f/fable5_classifier.predictions.csv",
+      "predictions_sha256": "19a21cd188002afd7dfb73399fcbc5e43beff1ca36f81946eea427ea798d3d00",
+      "report": "results/external-references/binary42-frozen-classifiers/ae6eaf903e14b30f/fable5_classifier.json",
+      "report_sha256": "dfc15299643afcfb3221c49917bd2e83ff6117da001bb81bb030c485d3073489",
+      "roc_auc": 0.6191107835912553
+    },
+    {
+      "dataset_id": "ae6eaf903e14b30f",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/ae6eaf903e14b30f/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "e6f00187aeb5363696191d863c560626fc82828ebfd4e4362f08c874cc14b296",
+      "report": "results/external-references/binary42-frozen-classifiers/ae6eaf903e14b30f/grok4p5_classifier.json",
+      "report_sha256": "3c96bed6fc44d546e536ef8d7713e68f5667c411267534ebd268a74fc29c6b8e",
+      "roc_auc": 0.5628690739376074
+    },
+    {
+      "dataset_id": "ae6eaf903e14b30f",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/ae6eaf903e14b30f/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "2b714ac9d39f28aa00028e14aa56410800d4e5961e0197f60e40d3f523a56732",
+      "report": "results/external-references/binary42-frozen-classifiers/ae6eaf903e14b30f/gpt5p6sol_classifier.json",
+      "report_sha256": "6ce9d23a868fd47ed947717c15ef65bdd04788a81a256c5a024f348a09a061ca",
+      "roc_auc": 0.5821468926553672
+    },
+    {
+      "dataset_id": "a5110bc75977b78a",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/a5110bc75977b78a/fable5_classifier.predictions.csv",
+      "predictions_sha256": "06052ef4fec662d134f77cb1075f3b0f29009c954de1721093051e4489bd5340",
+      "report": "results/external-references/binary42-frozen-classifiers/a5110bc75977b78a/fable5_classifier.json",
+      "report_sha256": "7bf149738186e747c65f3fdf1a9461d2bb0508132ed1ee70252f887418bb1c38",
+      "roc_auc": 0.9774756493506493
+    },
+    {
+      "dataset_id": "a5110bc75977b78a",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/a5110bc75977b78a/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "9dd14b59dfcdb55614452c5f0617d2a386ba555cb8adb253eda8a38de8a00c35",
+      "report": "results/external-references/binary42-frozen-classifiers/a5110bc75977b78a/grok4p5_classifier.json",
+      "report_sha256": "18761dad6e7b359977d3f0f60b81ae1acc1f27445745f6c0c7db44beedf0f3af",
+      "roc_auc": 0.9775771103896104
+    },
+    {
+      "dataset_id": "a5110bc75977b78a",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/a5110bc75977b78a/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "c7780c5e21dd8256a13fa55fcfb47bff9055babeed1dab48d5d86e37f0a5ab20",
+      "report": "results/external-references/binary42-frozen-classifiers/a5110bc75977b78a/gpt5p6sol_classifier.json",
+      "report_sha256": "7d1c6fad7a5cd35353079830ddb6b3ad65041c02f1cf3598054b8f4ed7f7970b",
+      "roc_auc": 0.968648538961039
+    },
+    {
+      "dataset_id": "e9fd3a8dd326418c",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/e9fd3a8dd326418c/fable5_classifier.predictions.csv",
+      "predictions_sha256": "951ee3d8ba36a8002312573e1a401e9352e171d4e1ce877b7746ffe6755a9a00",
+      "report": "results/external-references/binary42-frozen-classifiers/e9fd3a8dd326418c/fable5_classifier.json",
+      "report_sha256": "9bf4b48871594d3204401d1deec22aa8a27d9627e3db78245895c0f07f6a9d82",
+      "roc_auc": 0.9729617566055058
+    },
+    {
+      "dataset_id": "e9fd3a8dd326418c",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/e9fd3a8dd326418c/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "c2c6f9a41ab42b869c8d828b7f86c4cde95489df7ea78f32ab7a9972c8921116",
+      "report": "results/external-references/binary42-frozen-classifiers/e9fd3a8dd326418c/grok4p5_classifier.json",
+      "report_sha256": "6f6d821e51416f861907c8de245aea0c2aeeda09020ac444e908cd9296b1293c",
+      "roc_auc": 0.9752631512758279
+    },
+    {
+      "dataset_id": "e9fd3a8dd326418c",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/e9fd3a8dd326418c/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "eedcc37df4e909be6926b6403dab755f07cc7981b65b53629d8503c92d2e702e",
+      "report": "results/external-references/binary42-frozen-classifiers/e9fd3a8dd326418c/gpt5p6sol_classifier.json",
+      "report_sha256": "a0a957d2dd25d7a3387ab23d6429b29c9507f34015e33590cc3d2426fe19c21e",
+      "roc_auc": 0.9688536203998307
+    },
+    {
+      "dataset_id": "5a4e21c520a20dd3",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/5a4e21c520a20dd3/fable5_classifier.predictions.csv",
+      "predictions_sha256": "4247b370108759fb96cf0ee5227804e807b0ad8fd8e957abe7ce8cb922f78734",
+      "report": "results/external-references/binary42-frozen-classifiers/5a4e21c520a20dd3/fable5_classifier.json",
+      "report_sha256": "1dc493404d4e5504e417faa09b6b5d6dac6507006216389f787af9fe83278538",
+      "roc_auc": 0.9787225529735613
+    },
+    {
+      "dataset_id": "5a4e21c520a20dd3",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/5a4e21c520a20dd3/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "25964664842043abd2c99aa3deb185149e578c0e5c65c9281ee4332848252a46",
+      "report": "results/external-references/binary42-frozen-classifiers/5a4e21c520a20dd3/grok4p5_classifier.json",
+      "report_sha256": "1a06bb3137130d49c8fea1398ea6a1a502c0d17fac79011473a44856a8020b7f",
+      "roc_auc": 0.9755977530247744
+    },
+    {
+      "dataset_id": "5a4e21c520a20dd3",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/5a4e21c520a20dd3/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "89d143c42dc2a52617c582662f5305d05e99427dbac678ff2a897fe17cab51ca",
+      "report": "results/external-references/binary42-frozen-classifiers/5a4e21c520a20dd3/gpt5p6sol_classifier.json",
+      "report_sha256": "4f4ae4098f181c5b0024cd3ccaf473ad52d0121c3ae4cb299ca9f01c4e788e20",
+      "roc_auc": 0.9071882401894885
+    },
+    {
+      "dataset_id": "ed9a06689daf9d3d",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/ed9a06689daf9d3d/fable5_classifier.predictions.csv",
+      "predictions_sha256": "986a4d88986d0105f59d2d22858306ff31804619cb6b512a74f649dadce520ef",
+      "report": "results/external-references/binary42-frozen-classifiers/ed9a06689daf9d3d/fable5_classifier.json",
+      "report_sha256": "6c49241faacdac5b0f17c31fd01cafc909db4757adb1a2732387223dab5f7bf6",
+      "roc_auc": 0.8244111905790492
+    },
+    {
+      "dataset_id": "ed9a06689daf9d3d",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/ed9a06689daf9d3d/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "5b9e45f99316064825617d7d22757b08e4a39d530dd50966e7f4e68672b9dfd8",
+      "report": "results/external-references/binary42-frozen-classifiers/ed9a06689daf9d3d/grok4p5_classifier.json",
+      "report_sha256": "f35294c0b3dea6666bd8ad81748d922963324e6f0079e3a843f83b80e196fcf7",
+      "roc_auc": 0.823375174002784
+    },
+    {
+      "dataset_id": "ed9a06689daf9d3d",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/ed9a06689daf9d3d/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "bdb60636d6458c08053698c142bb446b7e785210846a63fb79edeac982c91177",
+      "report": "results/external-references/binary42-frozen-classifiers/ed9a06689daf9d3d/gpt5p6sol_classifier.json",
+      "report_sha256": "39f544bfb543310aa2fa33bb71528a323670c4308aae0d238fd7a3812679e147",
+      "roc_auc": 0.8197231155698491
+    },
+    {
+      "dataset_id": "c54974b740a392a3",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/c54974b740a392a3/fable5_classifier.predictions.csv",
+      "predictions_sha256": "afcd8aefded42a076e38bcadd20e5797564d153faed54e07880be5786bbc1ffb",
+      "report": "results/external-references/binary42-frozen-classifiers/c54974b740a392a3/fable5_classifier.json",
+      "report_sha256": "0ad5970bb4cf57013dec026f9aa7a30146170bc69189420e5a0899feac884e3a",
+      "roc_auc": 0.9946808510638298
+    },
+    {
+      "dataset_id": "c54974b740a392a3",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/c54974b740a392a3/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "7c2f3f2daeb7805a74903adccf302d66df70ce7c8e965e1463beef3d56a83df8",
+      "report": "results/external-references/binary42-frozen-classifiers/c54974b740a392a3/grok4p5_classifier.json",
+      "report_sha256": "b4ba9ed4eb07c004c3452bc9d26562056e39998b77e25d1227bf9afa74ec2e8f",
+      "roc_auc": 0.9962006079027356
+    },
+    {
+      "dataset_id": "c54974b740a392a3",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/c54974b740a392a3/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "e6ec2254a7dfe477e48e25386c635ffce10b52a31a3f9e9f8cd08d84a2b8b955",
+      "report": "results/external-references/binary42-frozen-classifiers/c54974b740a392a3/gpt5p6sol_classifier.json",
+      "report_sha256": "8cee39d9a1013f7a8369a717c36b5515db6eacf99e22253176adb3bdbfe9b863",
+      "roc_auc": 0.9941742654508612
+    },
+    {
+      "dataset_id": "09c82f5b5cf9016d",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/09c82f5b5cf9016d/fable5_classifier.predictions.csv",
+      "predictions_sha256": "b22d83e9fbdc0b13d75b5b72246faf1eba122d35f1577e3c6a903cccdc49b8f1",
+      "report": "results/external-references/binary42-frozen-classifiers/09c82f5b5cf9016d/fable5_classifier.json",
+      "report_sha256": "b77f4b2e2eccd7e93a5e10f21cfcdcf4c6938a34afe2efce827b2b9a8466fc04",
+      "roc_auc": 1.0
+    },
+    {
+      "dataset_id": "09c82f5b5cf9016d",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/09c82f5b5cf9016d/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "ab6b719f4343b6eaa55b2b9e96219a59dcc2e9deafdcfd1aaecc009aa496da61",
+      "report": "results/external-references/binary42-frozen-classifiers/09c82f5b5cf9016d/grok4p5_classifier.json",
+      "report_sha256": "8d7e85ff1c5ba81ac0567c1537bf560c0b8097c2aa9a00f6f33a972419ca52a9",
+      "roc_auc": 1.0
+    },
+    {
+      "dataset_id": "09c82f5b5cf9016d",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/09c82f5b5cf9016d/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "0b5c25081541f9398deeb9c14efeffb4c0c5d20712f55701d6f0be37e10310f1",
+      "report": "results/external-references/binary42-frozen-classifiers/09c82f5b5cf9016d/gpt5p6sol_classifier.json",
+      "report_sha256": "1e8bb86e5912f3a473f4a3cdc288a1b180ea9e14365cc641cd9e375ca706dc95",
+      "roc_auc": 1.0
+    },
+    {
+      "dataset_id": "e1526748f0c9c8db",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/e1526748f0c9c8db/fable5_classifier.predictions.csv",
+      "predictions_sha256": "52c3597aa8fd170c7c932d2ef0b7fafdd0b8c3cfae3a0dac48957d2ba5002818",
+      "report": "results/external-references/binary42-frozen-classifiers/e1526748f0c9c8db/fable5_classifier.json",
+      "report_sha256": "f85e39d05cddf3034c046d012a07f5711e8a439e49afb8bdea8fd0b634a37497",
+      "roc_auc": 1.0
+    },
+    {
+      "dataset_id": "e1526748f0c9c8db",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/e1526748f0c9c8db/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "acfbd982e0295327ae8a984cc596873f60fe1a6750a4fd50fdbe4b42fdef5958",
+      "report": "results/external-references/binary42-frozen-classifiers/e1526748f0c9c8db/grok4p5_classifier.json",
+      "report_sha256": "46719847ff3e73e0d38239dea20c6ba72f3400c5f15cb252ec0a2e7efef211b2",
+      "roc_auc": 1.0
+    },
+    {
+      "dataset_id": "e1526748f0c9c8db",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/e1526748f0c9c8db/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "4b53e18fabb31ffcd41bf4b24f3292e549a5d4f117d482f37a948fb3c31f06e9",
+      "report": "results/external-references/binary42-frozen-classifiers/e1526748f0c9c8db/gpt5p6sol_classifier.json",
+      "report_sha256": "09be0e8ae2ca6827bf6dd4141e3d1e01a057b78ca4ac2d36b1be5bcc0e84f1fe",
+      "roc_auc": 1.0
+    },
+    {
+      "dataset_id": "afef0e882daa67a8",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/afef0e882daa67a8/fable5_classifier.predictions.csv",
+      "predictions_sha256": "74703bda52241524edc8f87bba75f175847d9a0c50218fd2e59327445495c445",
+      "report": "results/external-references/binary42-frozen-classifiers/afef0e882daa67a8/fable5_classifier.json",
+      "report_sha256": "1ed4072de580e87d73eca0cf0a01645e677518dae9941a67ea0ceb03765580aa",
+      "roc_auc": 0.8161368534482759
+    },
+    {
+      "dataset_id": "afef0e882daa67a8",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/afef0e882daa67a8/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "f90300dff500b18dd85b3bd1b01bd01fda62e8246384a1876382d341c938d644",
+      "report": "results/external-references/binary42-frozen-classifiers/afef0e882daa67a8/grok4p5_classifier.json",
+      "report_sha256": "de7d989774c9fd57326db55268cb8a83c952450bc85db2855984e155b42faf9c",
+      "roc_auc": 0.8048670977011494
+    },
+    {
+      "dataset_id": "afef0e882daa67a8",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/afef0e882daa67a8/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "82d253a3cb8efef0dac5c1e06794bb0b519ffea6a778f4c0ffe7758c7a5a8f9e",
+      "report": "results/external-references/binary42-frozen-classifiers/afef0e882daa67a8/gpt5p6sol_classifier.json",
+      "report_sha256": "126089b4fc5ca69b24f1396e31994eb3599e2724e4b27928da5e1642c3540341",
+      "roc_auc": 0.8317019875478927
+    },
+    {
+      "dataset_id": "131bfb9d9a06f343",
+      "method_id": "fable5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/131bfb9d9a06f343/fable5_classifier.predictions.csv",
+      "predictions_sha256": "037153b854e684153b9e2fc10132db981c2606d0bd408a316d99fdce81db5cda",
+      "report": "results/external-references/binary42-frozen-classifiers/131bfb9d9a06f343/fable5_classifier.json",
+      "report_sha256": "6ef8182c1431706750e0d5faf1bf513357493052e3167d9f81b77d533b2326e6",
+      "roc_auc": 0.7440476190476191
+    },
+    {
+      "dataset_id": "131bfb9d9a06f343",
+      "method_id": "grok4p5_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/131bfb9d9a06f343/grok4p5_classifier.predictions.csv",
+      "predictions_sha256": "7424a1ec44ad20588309b736d95b0c7a2ead3e82fb542dc05ab9a32ac38a231d",
+      "report": "results/external-references/binary42-frozen-classifiers/131bfb9d9a06f343/grok4p5_classifier.json",
+      "report_sha256": "ae2f7b158d0050db61a8421007eb0303cd36504b0e86ff23e342cd7bed0b7c0c",
+      "roc_auc": 0.7132936507936508
+    },
+    {
+      "dataset_id": "131bfb9d9a06f343",
+      "method_id": "gpt5p6sol_classifier",
+      "predictions": "results/external-references/binary42-frozen-classifiers/131bfb9d9a06f343/gpt5p6sol_classifier.predictions.csv",
+      "predictions_sha256": "5ec4925f36426eb6db6136ed044f4ff1f2fa8010dae8c53a76bcf54b5ff9ac7a",
+      "report": "results/external-references/binary42-frozen-classifiers/131bfb9d9a06f343/gpt5p6sol_classifier.json",
+      "report_sha256": "32bc1cfb40bec41249b54ae5faa392ab7cb2fd305376cf532f01ebda749f2e46",
+      "roc_auc": 0.6785714285714286
+    }
+  ],
+  "benchmark_valid": true,
+  "campaign_manifest_sha256": "a5a0aa630b2ce75cb3589df3ab57459e094c8d19467b9bbd4181bd535dfcde51",
+  "coverage": {
+    "fable5_classifier": 42,
+    "gpt5p6sol_classifier": 42,
+    "grok4p5_classifier": 42
+  },
+  "receipts": 126,
+  "run_id": "binary42-frozen-regressor-classifiers-v1",
+  "schema": "sotarena.binary42-frozen-classifier-publication.v1",
+  "test_adaptive": false,
+  "track_id": "tabular-binary-v1"
+}

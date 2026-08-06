@@ -1,0 +1,70 @@
+{
+  "algorithm": "perceptron",
+  "dataset_hash": "1b46745dbbcf9494",
+  "ended_at": "2026-06-26T12:14:23Z",
+  "environment": {
+    "affinity": [
+      11
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super9",
+    "pid": 3079031,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 174342.79693402612,
+  "inference_time_seconds": 0.0009578829922247678,
+  "metrics": {
+    "accuracy": 0.5808383233532934,
+    "average_precision": 0.8425982222724185,
+    "balanced_accuracy": 0.6378465179175118,
+    "cohen_kappa": 0.21816479400749078,
+    "f1": 0.6195652173913043,
+    "false_negatives": 59,
+    "false_positives": 11,
+    "matthews_corrcoef": 0.2584448156458995,
+    "positive_rate": 0.6946107784431138,
+    "precision": 0.8382352941176471,
+    "predicted_positive_rate": 0.40718562874251496,
+    "recall": 0.49137931034482757,
+    "roc_auc": 0.7158553076402976,
+    "sensitivity": 0.49137931034482757,
+    "specificity": 0.7843137254901961,
+    "top_decile_lift": 1.354969574036511,
+    "top_decile_positive_rate": 0.9411764705882353,
+    "true_negatives": 40,
+    "true_positives": 57
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 20,
+  "run_date": "2026-06-26T12:14:23Z",
+  "started_at": "2026-06-26T12:14:18Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 167,
+  "train_rows": 833,
+  "training_time_seconds": 0.01003185601439327
+}

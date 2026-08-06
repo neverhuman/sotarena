@@ -1,0 +1,70 @@
+{
+  "algorithm": "passive_aggressive",
+  "dataset_hash": "0936cfa7201f9f56",
+  "ended_at": "2026-06-26T12:10:48Z",
+  "environment": {
+    "affinity": [
+      93
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super6",
+    "pid": 2684042,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 105443.54546627728,
+  "inference_time_seconds": 0.0010906310053542256,
+  "metrics": {
+    "accuracy": 0.7913043478260869,
+    "average_precision": 0.8351543376023901,
+    "balanced_accuracy": 0.7945772058823529,
+    "cohen_kappa": 0.5821980018165305,
+    "f1": 0.8032786885245902,
+    "false_negatives": 15,
+    "false_positives": 9,
+    "matthews_corrcoef": 0.585400089613418,
+    "positive_rate": 0.5565217391304348,
+    "precision": 0.8448275862068966,
+    "predicted_positive_rate": 0.5043478260869565,
+    "recall": 0.765625,
+    "roc_auc": 0.8302696078431372,
+    "sensitivity": 0.765625,
+    "specificity": 0.8235294117647058,
+    "top_decile_lift": 1.6471354166666665,
+    "top_decile_positive_rate": 0.9166666666666666,
+    "true_negatives": 42,
+    "true_positives": 49
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 15,
+  "run_date": "2026-06-26T12:10:48Z",
+  "started_at": "2026-06-26T12:10:46Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 115,
+  "train_rows": 575,
+  "training_time_seconds": 0.004383261984912679
+}

@@ -1,0 +1,103 @@
+{
+  "algorithm": "hyp3_stacking_trees_meta",
+  "dataset_hash": "21a6177fdb3eae79",
+  "ended_at": "2026-07-04T05:09:44Z",
+  "environment": {
+    "affinity": [
+      125
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "xbabe1",
+    "java": "/usr/bin/java",
+    "pid": 2769906,
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "cpu",
+    "sklearn": "1.9.0",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 4113.3003641961595,
+  "inference_time_seconds": 0.24311378004495054,
+  "metrics": {
+    "accuracy": 0.757,
+    "average_precision": 0.5419449618229277,
+    "balanced_accuracy": 0.7091836734693877,
+    "brier_score": 0.19581698237211623,
+    "cohen_kappa": 0.3683323975294779,
+    "f1": 0.5263157894736842,
+    "false_negatives": 81,
+    "false_positives": 162,
+    "log_loss": 0.5826161400291292,
+    "matthews_corrcoef": 0.3767790968553716,
+    "positive_rate": 0.216,
+    "precision": 0.45454545454545453,
+    "predicted_positive_rate": 0.297,
+    "recall": 0.625,
+    "roc_auc": 0.7686986252834467,
+    "sensitivity": 0.625,
+    "specificity": 0.7933673469387755,
+    "top_decile_lift": 3.055555555555556,
+    "top_decile_positive_rate": 0.66,
+    "true_negatives": 622,
+    "true_positives": 135
+  },
+  "model_class": "sklearn.ensemble._stacking.StackingClassifier",
+  "model_metadata": {
+    "display_label": "HYP3_stacking_trees_meta",
+    "feature_augmentation": {
+      "augmented_n_features": 174,
+      "blocks": [
+        {
+          "n_features": 23,
+          "test_file": "test3.vs",
+          "train_file": "train3.vs"
+        },
+        {
+          "n_features": 128,
+          "test_file": "hyperion3test.vs",
+          "train_file": "hyperion3train.vs"
+        }
+      ],
+      "name": "hyp3_vs",
+      "original_n_features": 23,
+      "prepend_order": [
+        "train3.vs",
+        "hyperion3train.vs"
+      ]
+    }
+  },
+  "model_params": {
+    "display_label": "HYP3_stacking_trees_meta",
+    "hyp3_vs": true
+  },
+  "n_features": 174,
+  "run_date": "2026-07-04T05:09:44Z",
+  "started_at": "2026-07-04T05:09:40Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 3.434270206023939
+}

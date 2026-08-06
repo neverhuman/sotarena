@@ -1,0 +1,102 @@
+{
+  "algorithm": "hyp3_chimera_regression",
+  "checkpoint": "/home/ubuntu/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_stackfusionreg.pt",
+  "dataset_hash": "047e62b52a3f4ede",
+  "ended_at": "2026-07-04T05:50:47+00:00",
+  "environment": {
+    "checkpoint": "/home/ubuntu/fable_god/chimeria_regression_shuffle/run_FINAL_e10_trunk/FINAL_stackfusionreg.pt",
+    "cuda_device_count_visible": 1,
+    "cuda_device_name": "NVIDIA A100-SXM4-40GB",
+    "cuda_max_memory_allocated_bytes": 566556672,
+    "cuda_memory_allocated_bytes": 364610560,
+    "cuda_visible_devices": "GPU-42e7dd9e-031c-37d4-e896-dd8f713f3bd6",
+    "gpu_device": "GPU-42e7dd9e-031c-37d4-e896-dd8f713f3bd6",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "repo_root": "/home/ubuntu/fable_god/chimera_regression",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "torch": "2.7.0",
+    "torch_cuda_available": true,
+    "torch_num_threads": 1
+  },
+  "gpu_device": "GPU-42e7dd9e-031c-37d4-e896-dd8f713f3bd6",
+  "inference_rows_per_second": 19.480099349496754,
+  "inference_time_seconds": 2.0533776179654524,
+  "metrics": {
+    "explained_variance": 0.9320797067357269,
+    "mae": 0.03955644306261093,
+    "max_error": 0.13617825508117676,
+    "mean_absolute_percentage_error_eps": 110834.2365858539,
+    "median_absolute_error": 0.02817720267921686,
+    "mse": 0.0026047477321979157,
+    "prediction_max": 0.6405872106552124,
+    "prediction_min": 0.015859011560678482,
+    "r2": 0.9272006767044583,
+    "rmse": 0.051036729246670146,
+    "target_max": 0.7284879088401794,
+    "target_min": 0.0
+  },
+  "model_class": "chimera.Chimera",
+  "model_metadata": {
+    "feature_augmentation": {
+      "augmented_feature_count": 152,
+      "block_columns": {
+        "hyperion3": 128,
+        "train3": 12
+      },
+      "block_names": [
+        "train3",
+        "hyperion3"
+      ],
+      "feature_order": [
+        "train3",
+        "hyperion3",
+        "original_csv_features"
+      ],
+      "mode": "prepend_feature_blocks",
+      "name": "hyp3_chimera_regression",
+      "original_feature_count": 12,
+      "payload_dir": "/home/ubuntu/~quant/regression/047e62b52a3f4ede",
+      "payload_roots": [
+        "/tmp/hyp3_chimera_regression_payloads",
+        "/home/ubuntu/~quant/regression"
+      ],
+      "source_paths": {
+        "hyperion3test.vs": "/home/ubuntu/~quant/regression/047e62b52a3f4ede/hyperion3test.vs",
+        "hyperion3train.vs": "/home/ubuntu/~quant/regression/047e62b52a3f4ede/hyperion3train.vs",
+        "test3.vs": "/home/ubuntu/~quant/regression/047e62b52a3f4ede/test3.vs",
+        "test_csv": "/home/ubuntu/quant/regression/047e62b52a3f4ede/test.csv",
+        "train3.vs": "/home/ubuntu/~quant/regression/047e62b52a3f4ede/train3.vs",
+        "train_csv": "/home/ubuntu/quant/regression/047e62b52a3f4ede/train.csv"
+      },
+      "split_rows": {
+        "test": 40,
+        "train": 195
+      }
+    }
+  },
+  "model_name": "hyp3_chimera_regression",
+  "n_features": 152,
+  "run_date": "2026-07-04T05:50:47+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/pmlb-695-chatfield-4-target.csv",
+  "started_at": "2026-07-04T05:50:45+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 40,
+  "train_rows": 195,
+  "training_time_seconds": 0.0,
+  "wall_time_seconds": 2.0775744860293344
+}

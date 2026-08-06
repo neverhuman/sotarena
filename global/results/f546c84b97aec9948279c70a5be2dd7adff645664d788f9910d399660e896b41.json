@@ -1,0 +1,138 @@
+{
+  "algorithm": "hyp3_tabicl",
+  "dataset_hash": "471f11cc2d38853a",
+  "ended_at": "2026-07-05T20:06:42Z",
+  "environment": {
+    "affinity": [
+      10,
+      11
+    ],
+    "cuda_visible_devices": "GPU-2857566c-23c5-293a-df02-7c66a7571ac4",
+    "deps": [
+      "tabicl"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "xbabe3",
+    "java": "/usr/bin/java",
+    "pid": 20041,
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "gpu_heavy",
+    "sklearn": "1.9.0",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 749.4553479665806,
+  "inference_time_seconds": 1.3329680049791932,
+  "metrics": {
+    "explained_variance": 0.9984163925725223,
+    "mae": 0.003934167209848942,
+    "max_error": 0.023682892263519273,
+    "mean_absolute_percentage_error_eps": 0.022842086689496048,
+    "median_absolute_error": 0.00303664758672334,
+    "mse": 2.874756654467465e-05,
+    "prediction_max": 0.8520451784133911,
+    "prediction_min": 0.006969008594751358,
+    "r2": 0.9982623477467413,
+    "rmse": 0.005361675721700693,
+    "target_max": 0.857672751,
+    "target_min": 0.00700455438
+  },
+  "model_class": "tabicl._sklearn.regressor.TabICLRegressor",
+  "model_metadata": {
+    "feature_augmentation": {
+      "augmented_n_features": 136,
+      "block_columns": {
+        "hyperion3": 128,
+        "train3": 4
+      },
+      "blocks": [
+        {
+          "n_columns": 4,
+          "name": "train3",
+          "test_path": "/home/ubuntu/quant/regression/471f11cc2d38853a/test3.vs",
+          "train_path": "/home/ubuntu/quant/regression/471f11cc2d38853a/train3.vs"
+        },
+        {
+          "n_columns": 128,
+          "name": "hyperion3",
+          "test_path": "/home/ubuntu/quant/regression/471f11cc2d38853a/hyperion3test.vs",
+          "train_path": "/home/ubuntu/quant/regression/471f11cc2d38853a/hyperion3train.vs"
+        }
+      ],
+      "excluded_sidecars": [
+        "train_target.vs",
+        "test_target.vs"
+      ],
+      "feature_order": [
+        "train3",
+        "hyperion3",
+        "original_csv_features"
+      ],
+      "kind": "hyp3_vs",
+      "original_n_features": 4,
+      "prepended_n_features": 132,
+      "source_paths": {
+        "hyperion3": {
+          "test": "/home/ubuntu/quant/regression/471f11cc2d38853a/hyperion3test.vs",
+          "train": "/home/ubuntu/quant/regression/471f11cc2d38853a/hyperion3train.vs"
+        },
+        "train3": {
+          "test": "/home/ubuntu/quant/regression/471f11cc2d38853a/test3.vs",
+          "train": "/home/ubuntu/quant/regression/471f11cc2d38853a/train3.vs"
+        }
+      }
+    }
+  },
+  "model_name": "hyp3_tabicl",
+  "model_params": {
+    "feature_augmentation": {
+      "blocks": [
+        {
+          "name": "train3",
+          "test": "test3.vs",
+          "train": "train3.vs"
+        },
+        {
+          "name": "hyperion3",
+          "test": "hyperion3test.vs",
+          "train": "hyperion3train.vs"
+        }
+      ],
+      "excluded_sidecars": [
+        "train_target.vs",
+        "test_target.vs"
+      ],
+      "feature_order": [
+        "train3",
+        "hyperion3",
+        "original_csv_features"
+      ],
+      "kind": "hyp3_vs"
+    }
+  },
+  "n_features": 136,
+  "run_date": "2026-07-05T20:06:42Z",
+  "started_at": "2026-07-05T20:06:38Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 1.2768703256733716
+}

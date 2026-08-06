@@ -1,0 +1,113 @@
+{
+  "algorithm": "jain_regressor_gen10000",
+  "dataset_hash": "30ef3eaa6d2971a9",
+  "task_type": "regression",
+  "status": "completed",
+  "started_at_unix_ms": 1783163878436,
+  "finished_at_unix_ms": 1783164198195,
+  "rows": {
+    "train": 109,
+    "test": 22
+  },
+  "features": 30,
+  "timings": {
+    "load_secs": 0.000205157,
+    "search_secs": 300.120284683,
+    "gpu_kernel_secs": 8.737790512,
+    "finalist_cv_secs": 19.620087227,
+    "fit_predict_secs": 0.018481232,
+    "total_secs": 319.759143219
+  },
+  "model_class": "feat_math_genome",
+  "model_params": {
+    "gens": 10000,
+    "time_budget_secs": 300.0,
+    "pop": 64,
+    "top_k": 2,
+    "folds": 3,
+    "search_rows": 512,
+    "actual_search_rows": 109,
+    "gpu_kernel_configs": 131072,
+    "gpu_kernel_used": true,
+    "gpu_kernel_candidates": 4,
+    "gpu_kernel_message": "battle-gpu composite GPR kernel search over 5 specs",
+    "seed_genomes_file": "/home/ubuntu/quant/regression/reports/jain_regressor_fast30_gen0_seeds.txt",
+    "seed_genomes_requested": 64,
+    "seed_genomes_valid": 64,
+    "seed_genomes_used": 63,
+    "seed": 20260616,
+    "evals": 52469,
+    "tokens_total": 449124648.0,
+    "search_engine": "feat_math_evolve_ridge_surrogate+battle_gpu_gpr_mixture_proposals",
+    "final_selection": "honest_feat_math_cv_r2"
+  },
+  "metrics": {
+    "r2": 0.6819367015423248,
+    "rmse": 0.09265960454363278,
+    "mse": 0.008585802314182413,
+    "mae": 0.04592818149978828,
+    "explained_variance": 0.685823048819231,
+    "prediction_min": 0.056743714442214425,
+    "prediction_max": 0.5709141727347559,
+    "target_min": 0.0187562574,
+    "target_max": 0.604318857
+  },
+  "gene": "(pipe X (pair_prod append=false topk=10) (pair_prod append=true topk=11) (cheb degree=3) (pair_prod append=true topk=13) (pair_prod append=true topk=9) (pair_prod append=true topk=10) (ridge))",
+  "genome": "(pipe X (pair_prod append=false topk=10) (pair_prod append=true topk=11) (cheb degree=3) (pair_prod append=true topk=13) (pair_prod append=true topk=9) (pair_prod append=true topk=10) (ridge))",
+  "genome_hash": "a0e1bac9baf7e99f84000c003f009eda54b35dd2efb73ef09d9429a10c382822",
+  "cv": {
+    "folds": 3,
+    "mean_r2": 0.9316450406895087,
+    "oof_r2": 0.9328195680429722,
+    "fold_r2": [
+      0.9716980547886577,
+      0.9094661727712834,
+      0.913770894508585
+    ]
+  },
+  "finalists": [
+    {
+      "rank": 1,
+      "gene": "(pipe X (pair_prod append=false topk=10) (pair_prod append=true topk=11) (cheb degree=3) (pair_prod append=true topk=13) (pair_prod append=true topk=9) (pair_prod append=true topk=10) (ridge))",
+      "genome": "(pipe X (pair_prod append=false topk=10) (pair_prod append=true topk=11) (cheb degree=3) (pair_prod append=true topk=13) (pair_prod append=true topk=9) (pair_prod append=true topk=10) (ridge))",
+      "genome_hash": "a0e1bac9baf7e99f84000c003f009eda54b35dd2efb73ef09d9429a10c382822",
+      "search_score": 0.9614215246552305,
+      "search_fold_scores": [
+        0.9612743034981505,
+        0.97151720820248,
+        0.9514730622650608
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.9316450406895087,
+        "oof_r2": 0.9328195680429722,
+        "fold_r2": [
+          0.9716980547886577,
+          0.9094661727712834,
+          0.913770894508585
+        ]
+      }
+    },
+    {
+      "rank": 2,
+      "gene": "(pipe X (gpr kernel=rq+linear m=300 steps=40))",
+      "genome": "(pipe X (gpr kernel=rq+linear m=300 steps=40))",
+      "genome_hash": "359ea21c895bf77605a39f910037bf98f20d9551b22b6d20032a149dd78e9ece",
+      "search_score": 73.92414378125066,
+      "search_fold_scores": [
+        73.92414378125066
+      ],
+      "cv": {
+        "folds": 3,
+        "mean_r2": 0.7548319172992853,
+        "oof_r2": 0.7602711558730058,
+        "fold_r2": [
+          0.7672322521734767,
+          0.6942278343593544,
+          0.803035665365025
+        ]
+      }
+    }
+  ],
+  "predictions_path": "/home/ubuntu/quant/regression/30ef3eaa6d2971a9/predictions/jain_regressor_300.csv"
+}

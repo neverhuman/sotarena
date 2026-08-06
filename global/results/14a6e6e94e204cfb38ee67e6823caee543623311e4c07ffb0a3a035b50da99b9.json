@@ -1,0 +1,48 @@
+{
+  "algorithm": "ridge",
+  "dataset_hash": "e1c1db5260d0894e",
+  "ended_at": "2026-06-21T08:07:28+00:00",
+  "environment": {
+    "lightgbm_available": false,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "xgboost_available": true
+  },
+  "inference_rows_per_second": 199760.3187106244,
+  "inference_time_seconds": 8.51019867695868e-05,
+  "metrics": {
+    "explained_variance": 0.3211436339867907,
+    "mae": 0.1639536128324621,
+    "max_error": 0.2833729386329651,
+    "mean_absolute_percentage_error_eps": 0.5013576392132194,
+    "median_absolute_error": 0.16727814078330994,
+    "mse": 0.03226190080319843,
+    "prediction_max": 0.6664255261421204,
+    "prediction_min": 0.28909772634506226,
+    "r2": 0.3014797336927154,
+    "rmse": 0.17961598148048638,
+    "target_max": 0.8205323219299316,
+    "target_min": 0.11834786832332611
+  },
+  "model_class": "sklearn.linear_model._ridge.Ridge",
+  "n_features": 10,
+  "run_date": "2026-06-21T08:07:28+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/fri-c4-100-10.csv",
+  "started_at": "2026-06-21T08:07:28+00:00",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 17,
+  "train_rows": 83,
+  "training_time_seconds": 0.0007431040285155177
+}

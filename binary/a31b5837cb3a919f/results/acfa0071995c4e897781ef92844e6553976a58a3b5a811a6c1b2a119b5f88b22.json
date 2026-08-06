@@ -1,0 +1,61 @@
+{
+  "algorithm": "tabfm_ensemble_classifier",
+  "dataset_hash": "a31b5837cb3a919f",
+  "ended_at": "2026-07-03T07:20:58+00:00",
+  "environment": {
+    "cuda_visible_devices": "7",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 20.78144911407258,
+  "inference_time_seconds": 48.11983969504945,
+  "metrics": {
+    "accuracy": 0.821,
+    "average_precision": 0.8216203046717137,
+    "balanced_accuracy": 0.8030748663101605,
+    "brier_score": 0.12298993391000446,
+    "cohen_kappa": 0.6031394111387016,
+    "f1": 0.7394468704512372,
+    "false_negatives": 86,
+    "false_positives": 93,
+    "log_loss": 0.3875085218144852,
+    "matthews_corrcoef": 0.6032120605562825,
+    "positive_rate": 0.34,
+    "precision": 0.7319884726224783,
+    "predicted_positive_rate": 0.347,
+    "recall": 0.7470588235294118,
+    "roc_auc": 0.8933912655971479,
+    "sensitivity": 0.7470588235294118,
+    "specificity": 0.8590909090909091,
+    "top_decile_lift": 2.705882352941176,
+    "top_decile_positive_rate": 0.92,
+    "true_negatives": 567,
+    "true_positives": 254
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMClassifier",
+  "n_features": 30,
+  "run_date": "2026-07-03T07:20:58+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/atlas-higgs-boson-machine-learning-challenge-2014.csv",
+  "started_at": "2026-07-03T07:17:58+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": true,
+  "tabfm_model_type": "classification",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 131.54590364499018
+}

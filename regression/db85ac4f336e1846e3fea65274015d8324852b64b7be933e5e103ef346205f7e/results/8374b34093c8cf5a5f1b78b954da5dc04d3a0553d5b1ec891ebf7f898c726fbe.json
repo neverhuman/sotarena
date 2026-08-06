@@ -1,0 +1,41 @@
+{
+  "algorithm": "hyp3_tabicl",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "ZTS_small",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 2.1294673630036414,
+  "metrics": {
+    "explained_variance": 0.5654214407218248,
+    "mae": 0.15901133513847707,
+    "max_error": 0.5783887745376588,
+    "median_absolute_error": 0.13922080379058843,
+    "mse": 0.036367426432937125,
+    "prediction_max": 0.9752742052078247,
+    "prediction_min": 0.09542607516050339,
+    "r2": 0.5639082683735556,
+    "rmse": 0.19070245523573398,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_name": "hyp3_tabicl",
+  "n_features": 422,
+  "provenance": {
+    "canonical_test_sha256": "806d6838aa3dd6f0b0c21adf718de17456d42c5219af4dd0b46eee8b0624726c",
+    "canonical_test_target_sha256": "338ad2fc9525ec03da9a632fa76a9cd3fb65472f6a0ba89861e57f88be7c5434",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "16fae17dc03db462c410eaa1106b67defd57b94732c20fcf909b6da4e96ce17b",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/ZTS_small/hyp3_tabicl/worker-receipt.json",
+    "worker_receipt_sha256": "6ce6e7d2bf04e39826652438ca7dc1970ee4cc161f347d84e0524723e4cdd952"
+  },
+  "run_date": "2026-07-23T11:19:51Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 2.5882715380284935
+}

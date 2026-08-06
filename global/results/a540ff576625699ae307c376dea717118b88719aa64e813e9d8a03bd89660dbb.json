@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "50a9099ba4403cab27fa4b1dd8bf97f6622e9db254a7abbbed23af7a1a69f82d",
+    "hyperion3test128dim.vs": "151f02e0beb39408b12fdd15fea7256eada4d53ae66e43860173516ac4369b8d",
+    "hyperion3train.vs": "44147fa6f4c18b7fff60b83727109f2573b09629de1048f4d8d0f39ea9dba58f",
+    "hyperion3train128dim.vs": "66e81f2f3357e6caf0a18471622ff64f1679ce5db26c0c95dfc948530e13e501",
+    "test3.vs": "751c1571ee429be74e384654b1c82925b44b673af0e2cabbed3de28881dd1cfe",
+    "train3.vs": "f51ad80145871926fdfcd6eba8bdb6eff9f5a6d69aeb79a30e00fa9f67341e20"
+  },
+  "counts": {
+    "augmented_features": 136,
+    "hyperion3_features": 128,
+    "raw_features": 4,
+    "test_rows": 999,
+    "train3_features": 4,
+    "train_rows": 1000
+  },
+  "created_at": "2026-07-09T08:07:02Z",
+  "dataset_hash": "4f68d277d770477f",
+  "dataset_name": "Well Switching in Bangladesh",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.08358585447489597,
+    "delta_vs_raw_selected_model": -0.052072323021302824,
+    "prior_best_r2": 0.06719158105143475,
+    "r2": -0.016394273423461225,
+    "raw_selected_model_r2": 0.0356780495978416
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "nm_d22288bcd5864509_append_grassmann_subspace_angles_ridge",
+    "path": "/home/ubuntu/remote_super/quant/regression/4f68d277d770477f/reports/nm_d22288bcd5864509_append_grassmann_subspace_angles_ridge.json",
+    "r2": 0.06719158105143475
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 59.57375632086769,
+    "raw_fit_predict_seconds": 0.44630256900563836
+  }
+}

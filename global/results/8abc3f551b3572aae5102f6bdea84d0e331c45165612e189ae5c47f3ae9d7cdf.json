@@ -1,0 +1,40 @@
+{
+  "catalog": {
+    "signed": false,
+    "trust_root": "committed-registry-sha256"
+  },
+  "fixed_corpus": {
+    "current_aspfm_score_rows": 0,
+    "current_snapshot_id": null,
+    "datasets_total": 2266,
+    "mirror_files_total": 4532,
+    "tasks": {
+      "binary": {
+        "comparator_methods": 96,
+        "datasets": 708,
+        "frozen_score_rows": 68676,
+        "metric": "roc_auc",
+        "mirror_files": 1416
+      },
+      "regression": {
+        "comparator_methods": 71,
+        "datasets": 1558,
+        "frozen_score_rows": 112176,
+        "metric": "rmse",
+        "mirror_files": 3116
+      }
+    }
+  },
+  "official_regression": {
+    "comparator_methods": 304,
+    "methods_scored": 305,
+    "rating_eligible_datasets": 43,
+    "rating_eligible_score_rows": 8378,
+    "replay_artifacts": 45,
+    "score_rows_total": 8763
+  },
+  "release_timestamp": "2026-07-29T17:11:11+00:00",
+  "result_version": "fixed-corpus-v1",
+  "schema": "sotarena.release-summary.v1",
+  "source_commit": "f90b4d2450bf80ac11a38ec9db5102daece088b2"
+}

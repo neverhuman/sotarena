@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "789b75bdebdedf515b2eede97dfb7175cc3a414b623ccaffbf0932c63e9500af",
+    "hyperion3test128dim.vs": "15094e13be287b2b6e20fcc68d4546629d719f9be906c2410cb25d5eed4c0192",
+    "hyperion3train.vs": "df996d240d484817e5ade78bef3a1a181ec07e63d6fe0786fe4a670c8ebc7f5f",
+    "hyperion3train128dim.vs": "bf34567ff5394f8584da8a9ffc73b94235a099ed1cf7e675a7489bef12e0eca6",
+    "test3.vs": "6a14b60dd60c62113b18ea45f10ddff3feecab949318ce6a6552cdcde96cbeab",
+    "train3.vs": "48771c83e5cf7aa37431e2e78d34d593a4f85cdb4b6b6850ed2c10b2a56f4de6"
+  },
+  "counts": {
+    "augmented_features": 136,
+    "hyperion3_features": 128,
+    "raw_features": 4,
+    "test_rows": 21,
+    "train3_features": 4,
+    "train_rows": 104
+  },
+  "created_at": "2026-07-08T19:58:23Z",
+  "dataset_hash": "ee56a1015e344c11",
+  "dataset_name": "fruitfly",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.3549712931004354,
+    "delta_vs_raw_selected_model": -0.10256967080342039,
+    "prior_best_r2": 0.40743110826366824,
+    "r2": 0.05245981516323284,
+    "raw_selected_model_r2": 0.15502948596665322
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "lightgbm_dart",
+    "path": "/home/ubuntu/remote_super/quant/regression/ee56a1015e344c11/reports/lightgbm_dart.json",
+    "r2": 0.40743110826366824
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 35.84587351791561,
+    "raw_fit_predict_seconds": 0.30702151311561465
+  }
+}

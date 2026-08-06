@@ -1,0 +1,67 @@
+{
+  "algorithm": "pytorch_tabular_category_embedding_regressor_epochs5",
+  "dataset_hash": "c32fa09b48fb2f27",
+  "ended_at": "2026-06-30T15:39:03Z",
+  "environment": {
+    "affinity": [
+      42
+    ],
+    "cuda_visible_devices": "0",
+    "deps": [
+      "pytorch_tabular",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super9",
+    "java": "/usr/bin/java",
+    "pid": 384412,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 36749.301317893434,
+  "inference_time_seconds": 0.012870992999523878,
+  "metrics": {
+    "explained_variance": -1.5081330130337287,
+    "mae": 0.29770295493181537,
+    "max_error": 1.8282295463630067,
+    "mean_absolute_percentage_error_eps": 0.8468827617079139,
+    "median_absolute_error": 0.23244524003301392,
+    "mse": 0.15745900064547294,
+    "prediction_max": 2.3058838844299316,
+    "prediction_min": -1.0530372858047485,
+    "r2": -1.5372383330984745,
+    "rmse": 0.3968110389662477,
+    "target_max": 1.0,
+    "target_min": 0.0303030312
+  },
+  "model_class": "models.tools.model_zoo._PyTorchTabularRegressor",
+  "model_params": {},
+  "n_features": 9,
+  "run_date": "2026-06-30T15:39:03Z",
+  "started_at": "2026-06-30T15:39:00Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 473,
+  "train_rows": 1000,
+  "training_time_seconds": 1.9805382339982316
+}

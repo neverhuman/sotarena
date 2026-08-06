@@ -1,0 +1,67 @@
+{
+  "algorithm": "pygam_linear_gam_regressor",
+  "dataset_hash": "e1c1db5260d0894e",
+  "ended_at": "2026-06-30T12:53:50Z",
+  "environment": {
+    "affinity": [
+      15
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "pygam",
+      "sklearn"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-regression-oss-cpu/bin/python",
+    "host": "super4",
+    "java": "/usr/bin/java",
+    "pid": 3616829,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 4262.6857262488975,
+  "inference_time_seconds": 0.00398809602484107,
+  "metrics": {
+    "explained_variance": 0.3068913987081132,
+    "mae": 0.14762937370417012,
+    "max_error": 0.32428320675740285,
+    "mean_absolute_percentage_error_eps": 0.5116713985297152,
+    "median_absolute_error": 0.12594859579424084,
+    "mse": 0.0340690379155012,
+    "prediction_max": 0.6873229660639574,
+    "prediction_min": 0.27851047142964486,
+    "r2": 0.2623524078448729,
+    "rmse": 0.18457799954355664,
+    "target_max": 0.820532322,
+    "target_min": 0.118347868
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 10,
+  "run_date": "2026-06-30T12:53:50Z",
+  "started_at": "2026-06-30T12:53:49Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 17,
+  "train_rows": 83,
+  "training_time_seconds": 0.05065418407320976
+}

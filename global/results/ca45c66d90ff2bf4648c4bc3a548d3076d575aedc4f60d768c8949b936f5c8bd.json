@@ -1,0 +1,67 @@
+{
+  "algorithm": "pytorch_tabular_fttransformer_regressor_epochs5",
+  "dataset_hash": "693890aae9dc860b",
+  "ended_at": "2026-06-30T13:56:39Z",
+  "environment": {
+    "affinity": [
+      86
+    ],
+    "cuda_visible_devices": "3",
+    "deps": [
+      "pytorch_tabular",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super2",
+    "java": "/usr/bin/java",
+    "pid": 3124098,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 3289.1467126195002,
+  "inference_time_seconds": 0.01246523903682828,
+  "metrics": {
+    "explained_variance": 0.4493947235683543,
+    "mae": 0.944590621472575,
+    "max_error": 1.3214114311953735,
+    "mean_absolute_percentage_error_eps": 36.334490498995216,
+    "median_absolute_error": 0.9767004502975647,
+    "mse": 0.9316695599330251,
+    "prediction_max": -0.14218328893184662,
+    "prediction_min": -1.0067588090896606,
+    "r2": -12.013867854502251,
+    "rmse": 0.9652303144498856,
+    "target_max": 0.958651245,
+    "target_min": 0.00228623184
+  },
+  "model_class": "models.tools.model_zoo._PyTorchTabularRegressor",
+  "model_params": {},
+  "n_features": 1,
+  "run_date": "2026-06-30T13:56:39Z",
+  "started_at": "2026-06-30T13:56:36Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 41,
+  "train_rows": 202,
+  "training_time_seconds": 2.2568611659808084
+}

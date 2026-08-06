@@ -1,0 +1,67 @@
+{
+  "algorithm": "xgboost_hist_trees900_depth4_lr0p02",
+  "dataset_hash": "f0e7eb3d790df37d",
+  "ended_at": "2026-07-01T06:13:13Z",
+  "environment": {
+    "affinity": [
+      45
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "xgboost",
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "xbabe2",
+    "java": "/usr/bin/java",
+    "pid": 2213754,
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 17994.246022650874,
+  "inference_time_seconds": 0.007113385014235973,
+  "metrics": {
+    "explained_variance": 0.021341180212938737,
+    "mae": 0.1027485211019386,
+    "max_error": 0.6342223882675171,
+    "mean_absolute_percentage_error_eps": 3007684.935810934,
+    "median_absolute_error": 0.06878107782385257,
+    "mse": 0.025533150525542298,
+    "prediction_max": 0.7461518049240112,
+    "prediction_min": 0.3163810074329376,
+    "r2": 0.01477429168132538,
+    "rmse": 0.15979095883541816,
+    "target_max": 0.868852437,
+    "target_min": 0.0
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 8,
+  "run_date": "2026-07-01T06:13:13Z",
+  "started_at": "2026-07-01T06:13:09Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 128,
+  "train_rows": 640,
+  "training_time_seconds": 0.7745951409451663
+}

@@ -1,0 +1,19 @@
+{
+  "dataset_hash": "e566dfebe2612695",
+  "dataset_id": "e566dfebe2612695",
+  "metric": "macro_f1",
+  "schema": "sotarena.dataset",
+  "task": "multiclass",
+  "test": {
+    "bytes": 112917,
+    "rows": 1000,
+    "sha256": "50668f04e683a2e60ba2b40f8e617a48b24fa8d1eb6a0343d8631b933688b04d",
+    "url": "https://data.neverhuman.org/multiclass/e566dfebe2612695/test.csv"
+  },
+  "train": {
+    "bytes": 112837,
+    "rows": 1000,
+    "sha256": "82bd79df1fff07ae9d5b2c390ea6b646aa211d23a05cd8cb998e0b3149dbb4ca",
+    "url": "https://data.neverhuman.org/multiclass/e566dfebe2612695/train.csv"
+  }
+}

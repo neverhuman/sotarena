@@ -1,0 +1,67 @@
+{
+  "algorithm": "torch_frame_trompt_regressor",
+  "dataset_hash": "1a803b27c2400dc4",
+  "ended_at": "2026-06-30T14:45:11Z",
+  "environment": {
+    "affinity": [
+      21
+    ],
+    "cuda_visible_devices": "5",
+    "deps": [
+      "torch_frame",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-regression-oss-gpu/bin/python",
+    "host": "super1",
+    "java": "/usr/bin/java",
+    "pid": 2123951,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 47697.581937041454,
+  "inference_time_seconds": 0.020944457966834307,
+  "metrics": {
+    "explained_variance": 0.9935310069089234,
+    "mae": 0.011038627070045015,
+    "max_error": 0.08021226766051648,
+    "mean_absolute_percentage_error_eps": 0.043465176457442335,
+    "median_absolute_error": 0.008839856226433296,
+    "mse": 0.00021933516333154406,
+    "prediction_max": 0.8804528494781607,
+    "prediction_min": 0.010622061976036434,
+    "r2": 0.9933671501629021,
+    "rmse": 0.014809968377128429,
+    "target_max": 0.944007277,
+    "target_min": 0.0266918913
+  },
+  "model_class": "models.tools.model_zoo._TorchFrameRegressorWrapper",
+  "model_params": {},
+  "n_features": 4,
+  "run_date": "2026-06-30T14:45:11Z",
+  "started_at": "2026-06-30T14:45:03Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 5.362909034010954
+}

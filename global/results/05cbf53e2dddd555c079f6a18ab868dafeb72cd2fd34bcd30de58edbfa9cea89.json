@@ -1,0 +1,67 @@
+{
+  "algorithm": "pytorch_tabular_category_embedding_regressor_epochs40",
+  "dataset_hash": "047e62b52a3f4ede",
+  "ended_at": "2026-06-30T13:10:54Z",
+  "environment": {
+    "affinity": [
+      28
+    ],
+    "cuda_visible_devices": "2",
+    "deps": [
+      "pytorch_tabular",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super2",
+    "java": "/usr/bin/java",
+    "pid": 2918077,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 4022.6806418341203,
+  "inference_time_seconds": 0.00994361808989197,
+  "metrics": {
+    "explained_variance": -0.15518401146380456,
+    "mae": 0.1434030455804668,
+    "max_error": 0.7291496990067139,
+    "mean_absolute_percentage_error_eps": 230658.6192524555,
+    "median_absolute_error": 0.09789747008170702,
+    "mse": 0.041513729155870815,
+    "prediction_max": 1.1969859600067139,
+    "prediction_min": -0.18243663012981415,
+    "r2": -0.16025492701278243,
+    "rmse": 0.20374918197595498,
+    "target_max": 0.728487909,
+    "target_min": 0.0
+  },
+  "model_class": "models.tools.model_zoo._PyTorchTabularRegressor",
+  "model_params": {},
+  "n_features": 12,
+  "run_date": "2026-06-30T13:10:54Z",
+  "started_at": "2026-06-30T13:10:50Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 40,
+  "train_rows": 195,
+  "training_time_seconds": 2.6435345609206706
+}

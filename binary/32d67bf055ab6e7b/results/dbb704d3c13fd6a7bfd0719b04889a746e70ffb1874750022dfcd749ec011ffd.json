@@ -1,0 +1,70 @@
+{
+  "algorithm": "voting_hard",
+  "dataset_hash": "32d67bf055ab6e7b",
+  "ended_at": "2026-06-26T12:27:31Z",
+  "environment": {
+    "affinity": [
+      112
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super6",
+    "pid": 2740808,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 8183.0535867867375,
+  "inference_time_seconds": 0.019674807001138106,
+  "metrics": {
+    "accuracy": 0.7639751552795031,
+    "average_precision": 0.6676221252308209,
+    "balanced_accuracy": 0.7654551102826965,
+    "cohen_kappa": 0.5277134475837579,
+    "f1": 0.7532467532467533,
+    "false_negatives": 16,
+    "false_positives": 22,
+    "matthews_corrcoef": 0.5291868811963559,
+    "positive_rate": 0.45962732919254656,
+    "precision": 0.725,
+    "predicted_positive_rate": 0.4968944099378882,
+    "recall": 0.7837837837837838,
+    "roc_auc": 0.7654551102826964,
+    "sensitivity": 0.7837837837837838,
+    "specificity": 0.7471264367816092,
+    "top_decile_lift": 1.4077901430842608,
+    "top_decile_positive_rate": 0.6470588235294118,
+    "true_negatives": 65,
+    "true_positives": 58
+  },
+  "model_class": "sklearn.ensemble._voting.VotingClassifier",
+  "model_params": {},
+  "n_features": 4,
+  "run_date": "2026-06-26T12:27:31Z",
+  "started_at": "2026-06-26T12:27:28Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 161,
+  "train_rows": 800,
+  "training_time_seconds": 0.3917782650096342
+}

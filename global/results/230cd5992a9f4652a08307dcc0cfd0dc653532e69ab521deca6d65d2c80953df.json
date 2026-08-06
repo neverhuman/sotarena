@@ -1,0 +1,67 @@
+{
+  "algorithm": "torch_frame_resnet_regressor",
+  "dataset_hash": "24713c7f7bfa7807",
+  "ended_at": "2026-06-30T14:19:34Z",
+  "environment": {
+    "affinity": [
+      31
+    ],
+    "cuda_visible_devices": "4",
+    "deps": [
+      "torch_frame",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-regression-oss-gpu/bin/python",
+    "host": "super1",
+    "java": "/usr/bin/java",
+    "pid": 1636989,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 24645.861526735152,
+  "inference_time_seconds": 0.013714270025957376,
+  "metrics": {
+    "explained_variance": 0.8534461848820136,
+    "mae": 0.041164058362592404,
+    "max_error": 0.3332492621256464,
+    "mean_absolute_percentage_error_eps": 1.5230906294250033,
+    "median_absolute_error": 0.022756896358245904,
+    "mse": 0.005164797435737537,
+    "prediction_max": 0.7509107477819725,
+    "prediction_min": 0.035324362036959656,
+    "r2": 0.852165020208085,
+    "rmse": 0.07186652514027332,
+    "target_max": 0.762400091,
+    "target_min": 0.000241619302
+  },
+  "model_class": "models.tools.model_zoo._TorchFrameRegressorWrapper",
+  "model_params": {},
+  "n_features": 6,
+  "run_date": "2026-06-30T14:19:34Z",
+  "started_at": "2026-06-30T14:19:29Z",
+  "status": "completed",
+  "target_names": [
+    "charges"
+  ],
+  "task_type": "regression",
+  "test_rows": 338,
+  "train_rows": 1000,
+  "training_time_seconds": 2.9363303470308892
+}

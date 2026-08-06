@@ -1,0 +1,73 @@
+{
+  "algorithm": "flaml_automl_seconds15",
+  "dataset_hash": "c18dc25530725088",
+  "ended_at": "2026-06-28T21:54:40Z",
+  "environment": {
+    "affinity": [
+      12
+    ],
+    "cuda_visible_devices": "",
+    "deps": [
+      "flaml"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super6",
+    "java": "/usr/bin/java",
+    "pid": 3060127,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu_automl",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 296037.0126970518,
+  "inference_time_seconds": 0.0033779559889808297,
+  "metrics": {
+    "accuracy": 0.966,
+    "average_precision": 0.0426625016165153,
+    "balanced_accuracy": 0.5,
+    "brier_score": 0.03330595443565648,
+    "cohen_kappa": 0.0,
+    "f1": 0.0,
+    "false_negatives": 34,
+    "false_positives": 0,
+    "log_loss": 0.1517051008460793,
+    "matthews_corrcoef": 0.0,
+    "positive_rate": 0.034,
+    "precision": 0.0,
+    "predicted_positive_rate": 0.0,
+    "recall": 0.0,
+    "roc_auc": 0.5546218487394958,
+    "sensitivity": 0.0,
+    "specificity": 1.0,
+    "top_decile_lift": 0.5882352941176471,
+    "top_decile_positive_rate": 0.02,
+    "true_negatives": 966,
+    "true_positives": 0
+  },
+  "model_class": "models.tools.model_zoo.FLAMLClassifier",
+  "model_params": {},
+  "n_features": 37,
+  "run_date": "2026-06-28T21:54:40Z",
+  "started_at": "2026-06-28T21:54:20Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 15.032594927994069
+}

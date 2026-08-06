@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "bd3490b0aeac79de23007eb1567b270f5c979137dde5ccad3f7464a16ad1a6ce",
+    "hyperion3test128dim.vs": "70897f2caed9cd58f6a819b5d29ecb47affd2b078babd29fe7204620ce04b500",
+    "hyperion3train.vs": "8b34505d89d42ee02d1b9b4a9509691716ef5cac141cb061f75eea4caccd901b",
+    "hyperion3train128dim.vs": "70652de07d2fdee6c5df241d53099318c24b89f8f6368c9ba2b4e0c5734e606e",
+    "test3.vs": "5f122074af46c3c9b678c54d04f966e3449f3327d06eb9f473acfca14daf860a",
+    "train3.vs": "6be15acb8abb9f45d5aaa9ce43faf05e39f07a40f9c0a532f377be8dc966f23b"
+  },
+  "counts": {
+    "augmented_features": 136,
+    "hyperion3_features": 128,
+    "raw_features": 4,
+    "test_rows": 999,
+    "train3_features": 4,
+    "train_rows": 1000
+  },
+  "created_at": "2026-07-08T18:48:29Z",
+  "dataset_hash": "1a803b27c2400dc4",
+  "dataset_name": "feynman_III_10_19",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.03368782371194645,
+    "delta_vs_raw_selected_model": -0.02858204152485677,
+    "prior_best_r2": 0.9999987816371912,
+    "r2": 0.9663109579252448,
+    "raw_selected_model_r2": 0.9948929994501016
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "gaussian_process",
+    "path": "/home/ubuntu/remote_super/quant/regression/1a803b27c2400dc4/reports/gaussian_process.json",
+    "r2": 0.9999987816371912
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 66.5797127103433,
+    "raw_fit_predict_seconds": 1.9026232240721583
+  }
+}

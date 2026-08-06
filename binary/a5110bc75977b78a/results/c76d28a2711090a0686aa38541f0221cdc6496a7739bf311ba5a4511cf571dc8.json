@@ -1,0 +1,36 @@
+{
+  "benchmark_valid": false,
+  "dataset_id": "a5110bc75977b78a",
+  "method_id": "aspfm-binary42-test-adaptive-v1",
+  "metrics": {
+    "balanced_accuracy_at_0_5": 0.7607548701298701,
+    "log_loss": 0.22379970146852415,
+    "roc_auc": 0.981635551948052
+  },
+  "protocol": "test-adaptive-exploratory-replay",
+  "provenance": {
+    "cohort_sha256": "59c1d77bcf252a7d816ef215ddb1043d27b24a80dbb08ae200a6747c123b50c2",
+    "fitted_cpp17_codec_sha256": "a9c96fbaccd3ae4a2e9c4c794bc01025f21b9778adb234276b37dd7a6a743b12",
+    "fitted_cpp17_source_sha256": "9b2e9dcab86bbf657f81395876b7f0945c32cde62e00f110a387f888c1c810f3",
+    "genome_sha256": "4c5296b7e5bcb0cb642b7aad76385f3a988d969d4c72efca17939091c70a3c9e",
+    "predictions_sha256": "7bafe4bbdf61c7012274158174856da610a4ded6d895f199a7a3cb196b95e1c1",
+    "release_binary_sha256": "1d647dd7e8f483b9c94c37e676e7449a1f764528abfb06a816004f457a44e7ac",
+    "snapshot_name": "binary42-test-adaptive-all-v1",
+    "source_candidate_receipt_sha256": "dcc1187128343a145ba2f42c3317801ec7ea7f059aaa1d7f6b7f8baf9dd7c10a",
+    "terminal_marker_sha256": "6b403e89130ec4571f16ec70341ffbe43c5078fdc0b979bd93c288614c8ef6c0",
+    "terminal_receipt_sha256": "4305cbedfed9059d1c2e7d0cc56340b13205fe10b2bd3c0e54a010139fede548",
+    "test_sha256": "63209d4ed52ba307b20960f50afbfaf7c17a45a957fc68ffb14d56b6ac36f9a9",
+    "train_sha256": "b1ffce70f7c136ef868f69606d457bce59ca92b87a9bcdabd4e5969892c74c92"
+  },
+  "schema": "sotarena.aspfm-binary42-test-adaptive-report.v1",
+  "selection": {
+    "generation": 8,
+    "kind": "best-effort",
+    "run_id": "binary42-test-adaptive-all-v1",
+    "semantic_sha256": "4541a550395a96022fe3f5217bbac07c0752a93ddee46d99f0f4d38534b8cfda",
+    "slot": 48
+  },
+  "test_adaptive": true,
+  "track_id": "tabular-binary-v1",
+  "validity_warning": "Exploratory replay only: held-out test ROC-AUC was used directly to select this genome."
+}

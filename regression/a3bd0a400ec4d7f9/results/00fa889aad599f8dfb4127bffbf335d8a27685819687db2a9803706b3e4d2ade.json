@@ -1,0 +1,41 @@
+{
+  "algorithm": "lasso",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "a3bd0a400ec4d7f9",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.01660705404356122,
+  "metrics": {
+    "explained_variance": 0.9650423136871551,
+    "mae": 0.11422682951927186,
+    "max_error": 2.1351454570770265,
+    "median_absolute_error": 0.06478014564514156,
+    "mse": 0.038800423435038596,
+    "prediction_max": 5.3656792640686035,
+    "prediction_min": -0.030315637588500977,
+    "r2": 0.9650342505069798,
+    "rmse": 0.19697823086584618,
+    "target_max": 5.8397,
+    "target_min": 0.0077
+  },
+  "model_name": "lasso",
+  "n_features": 665,
+  "provenance": {
+    "canonical_test_sha256": "398556c974e2fae1eefc40d5e5ed5030eb22fafb192fadae582b9a62e0c93a89",
+    "canonical_test_target_sha256": "764d725105dae1f1d0f03aa62a05fe66b1d3ca39d5eb8592c7ac8d02155ac1da",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "95862647ddbf013edebe2ce0757534e9daa7ac046acd444d3a0637d5789bc6e8",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/a3bd0a400ec4d7f9/lasso/worker-receipt.json",
+    "worker_receipt_sha256": "1add2fa25b1123560eb17260b4552ead314ffa2ab6239e9c2c647ba81b9ee8fd"
+  },
+  "run_date": "2026-07-23T13:14:49Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 1.223431266960688
+}

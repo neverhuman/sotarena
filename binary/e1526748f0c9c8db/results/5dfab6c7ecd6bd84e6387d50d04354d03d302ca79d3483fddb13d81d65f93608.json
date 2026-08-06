@@ -1,0 +1,85 @@
+{
+  "algorithm": "NM_Recon_7c758980a5ce40f8_seeded_surprise_density",
+  "dataset_hash": "e1526748f0c9c8db",
+  "dsl_expr": "(pipe X (robust_scale) (seeded_surprise_density) (gbm depth=3 lr=0.1 rounds=150))",
+  "ended_at": "2026-06-30T01:09:38Z",
+  "environment": {
+    "created_by_binary_sha": "7ba20b75c9fbd93da7633ba649038b48eb6824052827752f8c31e2635307ea43",
+    "host": "xbabe2",
+    "newmath_binary": "/home/ubuntu/jmath/target/release/newmath",
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "runner": "complete-new-math-reports-v1",
+    "source_root": "/home/ubuntu/jmath",
+    "thread_limits": {}
+  },
+  "inference_rows_per_second": 1578.9473684210527,
+  "inference_time_seconds": 0.019,
+  "metrics": {
+    "accuracy": 0.9333333333333333,
+    "average_precision": 0.9861111111111112,
+    "balanced_accuracy": 0.9545454545454546,
+    "brier_score": 0.052019412359238265,
+    "cohen_kappa": 0.8421052631578948,
+    "f1": 0.888888888888889,
+    "false_negatives": 0,
+    "false_positives": 2,
+    "log_loss": 0.1587565340517785,
+    "matthews_corrcoef": 0.8528028654224417,
+    "positive_rate": 0.26666666666666666,
+    "precision": 0.8,
+    "predicted_positive_rate": 0.3333333333333333,
+    "recall": 1.0,
+    "roc_auc": 0.9943181818181818,
+    "sensitivity": 1.0,
+    "specificity": 0.9090909090909091,
+    "top_decile_capture_rate": 0.375,
+    "top_decile_lift": 3.75,
+    "top_decile_positive_rate": 1.0,
+    "top_decile_precision": 1.0,
+    "true_negatives": 20,
+    "true_positives": 8
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "n_features": 13,
+  "new_math": {
+    "created_by_binary_sha": "7ba20b75c9fbd93da7633ba649038b48eb6824052827752f8c31e2635307ea43",
+    "dsl_expr": "(pipe X (robust_scale) (seeded_surprise_density) (gbm depth=3 lr=0.1 rounds=150))",
+    "receipt_schema": "BinaryClassifierReceipt v1",
+    "reconstruction_provenance": {
+      "algorithm": "NM_Recon_7c758980a5ce40f8_seeded_surprise_density",
+      "kind": "reconstructed_current_jmath",
+      "operator_name": "seeded_surprise_density",
+      "original_hash": "7c758980a5ce40f8",
+      "source_root": "/home/ubuntu/jmath"
+    },
+    "runner_version": "complete-new-math-reports-v1",
+    "source_kind": "reconstructed_current_jmath",
+    "source_root": "/home/ubuntu/jmath"
+  },
+  "newmath_receipt_path": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_7c758980a5ce40f8_seeded_surprise_density/e1526748f0c9c8db/receipt.json",
+  "predictions_path": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_7c758980a5ce40f8_seeded_surprise_density/e1526748f0c9c8db/predictions.csv",
+  "run_date": "2026-06-30T01:09:38Z",
+  "schema": "QuantBinaryReport v1",
+  "source_path": "/home/ubuntu/hyper/data/tabular/wine.csv",
+  "source_run_dir": "/home/ubuntu/remote_super/quant/models/tools/artifacts/new_math_completion/reconstructed_dense_local/work/xbabe2/missing_cells/NM_Recon_7c758980a5ce40f8_seeded_surprise_density/e1526748f0c9c8db",
+  "started_at": "2026-06-30T01:09:38Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 30,
+  "timings": {
+    "classify_csv_ms": {
+      "head_fit_predict": 19,
+      "parse": 0,
+      "read": 3,
+      "total": 34,
+      "transform_fit_predict": 0
+    },
+    "elapsed_seconds": 0.14956378936767578
+  },
+  "train_rows": 148,
+  "training_time_seconds": 0.0
+}

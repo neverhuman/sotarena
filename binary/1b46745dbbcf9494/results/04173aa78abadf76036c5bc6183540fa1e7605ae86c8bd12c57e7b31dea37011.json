@@ -1,0 +1,41 @@
+{
+  "algorithm": "hyperfast_classifier",
+  "dataset_hash": "1b46745dbbcf9494",
+  "ended_at": "2026-06-28T19:33:54Z",
+  "environment": {
+    "affinity": [
+      26
+    ],
+    "cuda_visible_devices": "GPU-992f40ea-5415-84d4-0d3f-8f49e9772659",
+    "executable": "/home/ubuntu/quant/.venv-model-queue/bin/python",
+    "host": "super6",
+    "java": "/usr/bin/java",
+    "pid": 615344,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "1.4.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "failure_message": "ImportError: could not construct any candidate class: hyperfast.HyperFastClassifier: OutOfMemoryError: CUDA out of memory. Tried to allocate 2.35 GiB. GPU 0 has a total capacity of 39.49 GiB of which 2.06 GiB is free. Process 444515 has 34.59 GiB memory in use. Including non-PyTorch memory, this process has 2.82 GiB memory in use. Of the allocated memory 2.39 GiB is allocated by PyTorch, and 23.99 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf); hyperfast.classifier.HyperFastClassifier: ModuleNotFoundError: No module named 'hyperfast.classifier'; hyperfast.sklearn.HyperFastClassifier: ModuleNotFoundError: No module named 'hyperfast.sklearn'",
+  "inference_time_seconds": null,
+  "n_features": 20,
+  "run_date": "2026-06-28T19:33:54Z",
+  "started_at": "2026-06-28T19:30:46Z",
+  "status": "failed",
+  "task_type": "binary",
+  "test_rows": 167,
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/quant/models/tools/cluster_model_queue.py\", line 785, in execute_job\n    model = spec.factory()\n  File \"/home/ubuntu/quant/models/tools/model_zoo.py\", line 1308, in _hyperfast_classifier\n    _construct_first(\n  File \"/home/ubuntu/quant/models/tools/model_zoo.py\", line 190, in _construct_first\n    raise ImportError(\"could not construct any candidate class: \" + \"; \".join(errors))\nImportError: could not construct any candidate class: hyperfast.HyperFastClassifier: OutOfMemoryError: CUDA out of memory. Tried to allocate 2.35 GiB. GPU 0 has a total capacity of 39.49 GiB of which 2.06 GiB is free. Process 444515 has 34.59 GiB memory in use. Including non-PyTorch memory, this process has 2.82 GiB memory in use. Of the allocated memory 2.39 GiB is allocated by PyTorch, and 23.99 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf); hyperfast.classifier.HyperFastClassifier: ModuleNotFoundError: No module named 'hyperfast.classifier'; hyperfast.sklearn.HyperFastClassifier: ModuleNotFoundError: No module named 'hyperfast.sklearn'\n",
+  "train_rows": 833,
+  "training_time_seconds": 188.31866628903663
+}

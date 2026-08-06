@@ -1,0 +1,19 @@
+{
+  "dataset_hash": "8eacb21e566e2c4c",
+  "dataset_id": "8eacb21e566e2c4c",
+  "metric": "roc_auc",
+  "schema": "sotarena.dataset",
+  "task": "binary",
+  "test": {
+    "bytes": 137761,
+    "rows": 1000,
+    "sha256": "d4fd8252f921877d5389e318a8acbad1851790b1816597d5eaf611ff706c1f5e",
+    "url": "https://data.neverhuman.org/binary/8eacb21e566e2c4c/test.csv"
+  },
+  "train": {
+    "bytes": 137854,
+    "rows": 1000,
+    "sha256": "7d24c009ad7118603deffe612d958d552e5e4e25f8bc2c0b95fe823153e51d5f",
+    "url": "https://data.neverhuman.org/binary/8eacb21e566e2c4c/train.csv"
+  }
+}

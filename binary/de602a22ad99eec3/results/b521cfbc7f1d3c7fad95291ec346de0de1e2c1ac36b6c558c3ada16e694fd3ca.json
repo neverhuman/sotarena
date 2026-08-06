@@ -1,0 +1,72 @@
+{
+  "algorithm": "multinomial_naive_bayes",
+  "dataset_hash": "de602a22ad99eec3",
+  "ended_at": "2026-06-26T12:07:20Z",
+  "environment": {
+    "affinity": [
+      8
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super7",
+    "pid": 3234796,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 532279.2714001753,
+  "inference_time_seconds": 0.0018787130247801542,
+  "metrics": {
+    "accuracy": 0.851,
+    "average_precision": 0.5709211183413312,
+    "balanced_accuracy": 0.5098684210526315,
+    "brier_score": 0.1070635509304419,
+    "cohen_kappa": 0.033020092414724145,
+    "f1": 0.03870967741935484,
+    "false_negatives": 149,
+    "false_positives": 0,
+    "log_loss": 0.3518233367296125,
+    "matthews_corrcoef": 0.129565441829264,
+    "positive_rate": 0.152,
+    "precision": 1.0,
+    "predicted_positive_rate": 0.003,
+    "recall": 0.019736842105263157,
+    "roc_auc": 0.8557984731876862,
+    "sensitivity": 0.019736842105263157,
+    "specificity": 1.0,
+    "top_decile_lift": 4.144736842105264,
+    "top_decile_positive_rate": 0.63,
+    "true_negatives": 848,
+    "true_positives": 3
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 17,
+  "run_date": "2026-06-26T12:07:20Z",
+  "started_at": "2026-06-26T12:07:18Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 0.004421246994752437
+}

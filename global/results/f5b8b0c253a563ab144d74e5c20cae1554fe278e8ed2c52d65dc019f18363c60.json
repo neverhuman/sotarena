@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "98004a0286d37aaf591f546790dc47effd0c29d200c3785cd22946093186fdd5",
+    "hyperion3test128dim.vs": "da02b9b51cf32fdf29f380e8cccd3eeb29e39871a9779bab6eaab8f1094aeedc",
+    "hyperion3train.vs": "ff18a7f9b981719df45de7f87eebeab441116c2233d2c40cfb6a1d7cf1dc1f69",
+    "hyperion3train128dim.vs": "5fa0b471fb6beb0d9002645ff4bbcf4a0825a1d2b3ffa9082118329fe9d88e3f",
+    "test3.vs": "de131ff4eb3a0bd2ab7644b5e6de02024a4955803896a803533ad721922d1d8f",
+    "train3.vs": "f5d9525d45a37131dd5697b7e825d4d24c6ec422dbe9b61439258f99a6f991e3"
+  },
+  "counts": {
+    "augmented_features": 726,
+    "hyperion3_features": 128,
+    "raw_features": 299,
+    "test_rows": 999,
+    "train3_features": 299,
+    "train_rows": 1000
+  },
+  "created_at": "2026-07-10T05:21:05Z",
+  "dataset_hash": "b1f909fcfceeef4b",
+  "dataset_name": "scene",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.08371856012156143,
+    "delta_vs_raw_selected_model": -0.009355763118195304,
+    "prior_best_r2": 0.9055851653886552,
+    "r2": 0.8218666052670938,
+    "raw_selected_model_r2": 0.8312223683852891
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "tabpfn_v25_regressor_default",
+    "path": "/home/ubuntu/remote_super/quant/regression/b1f909fcfceeef4b/reports/tabpfn_v25_regressor_default.json",
+    "r2": 0.9055851653886552
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 586.149212859571,
+    "raw_fit_predict_seconds": 150.1720054158941
+  }
+}

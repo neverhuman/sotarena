@@ -1,0 +1,67 @@
+{
+  "algorithm": "torch_frame_fttransformer_regressor",
+  "dataset_hash": "24713c7f7bfa7807",
+  "ended_at": "2026-06-30T14:51:55Z",
+  "environment": {
+    "affinity": [
+      83
+    ],
+    "cuda_visible_devices": "4",
+    "deps": [
+      "torch_frame",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-regression-oss-gpu/bin/python",
+    "host": "super6",
+    "java": "/usr/bin/java",
+    "pid": 4140170,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 27488.804104134262,
+  "inference_time_seconds": 0.012295915046706796,
+  "metrics": {
+    "explained_variance": 0.8533675233074346,
+    "mae": 0.03658475709114667,
+    "max_error": 0.3721808974493363,
+    "mean_absolute_percentage_error_eps": 0.9221139149358001,
+    "median_absolute_error": 0.017477187639160577,
+    "mse": 0.005216826047236256,
+    "prediction_max": 0.7525811260976525,
+    "prediction_min": -0.02372187740212439,
+    "r2": 0.8506757752134425,
+    "rmse": 0.07222759893029987,
+    "target_max": 0.762400091,
+    "target_min": 0.000241619302
+  },
+  "model_class": "models.tools.model_zoo._TorchFrameRegressorWrapper",
+  "model_params": {},
+  "n_features": 6,
+  "run_date": "2026-06-30T14:51:55Z",
+  "started_at": "2026-06-30T14:51:51Z",
+  "status": "completed",
+  "target_names": [
+    "charges"
+  ],
+  "task_type": "regression",
+  "test_rows": 338,
+  "train_rows": 1000,
+  "training_time_seconds": 2.684942767955363
+}

@@ -1,0 +1,75 @@
+{
+  "algorithm": "xhyp3_catboost_ordered_trees500_depth6",
+  "artifact_hashes": {
+    "hyperion3test.vs": "4fd712d9b8677f880cbeef000f2f4fea41846ded55ec4e466b21eed44cd3af9a",
+    "hyperion3test128dim.vs": "1f9715f407156242f65751b573ea9769e25aebd03ad4f784067630d9461b67b4",
+    "hyperion3train.vs": "60527ac4047be2e329dfbb6e3ea78bfc2ac792913abc1d8e9083b093ed8638c2",
+    "hyperion3train128dim.vs": "6896e179be3438940fea70a933dc1633665348775629bf843cb1d57ccc8915bc",
+    "test3.vs": "1244ca68e88a66f95b72628a7f33bdb94f3f802d8cb903508b88f708b9601882",
+    "train3.vs": "65c2e053e719d69c337ee7c915b94981103b9d95c39a6a81c13f873f11090841"
+  },
+  "counts": {
+    "augmented_features": 206,
+    "hyperion3_features": 128,
+    "raw_features": 39,
+    "test_rows": 97,
+    "train3_features": 39,
+    "train_rows": 482
+  },
+  "created_at": "2026-07-09T13:14:11Z",
+  "dataset_hash": "43b4cc3ab0ebbd97",
+  "dataset_name": "Development of an Empirically Derived Measure of Food Safety Culture in Restaurants",
+  "feature_policy": {
+    "excluded": [
+      "train_target.vs",
+      "test_target.vs"
+    ],
+    "included": [
+      "train3.vs",
+      "test3.vs",
+      "hyperion3train.vs",
+      "hyperion3test.vs"
+    ],
+    "order": [
+      "original_csv_features",
+      "train3_test3",
+      "hyperion3train_hyperion3test"
+    ]
+  },
+  "hyperion_config": {
+    "model_variant": "v7_compact_v5_armB",
+    "row_dim": 128,
+    "scales": [
+      4,
+      7,
+      11,
+      15
+    ],
+    "seed": 42,
+    "sweeps": 10,
+    "v7_bin": "/home/ubuntu/jain_small/target/release/hyperion_vs",
+    "weights": "/home/ubuntu/hyperion/weights/v5_armB/model.safetensors",
+    "weights_id": "v5_armB",
+    "weights_manifest": "/home/ubuntu/hyperion/weights/v5_armB/manifest.json"
+  },
+  "metrics": {
+    "delta_vs_prior_best_report": -0.31710170940157234,
+    "delta_vs_raw_selected_model": -0.05676548104779444,
+    "prior_best_r2": 0.31442127459322966,
+    "r2": -0.00268043480834268,
+    "raw_selected_model_r2": 0.05408504623945176
+  },
+  "model_elo": 1832.052869,
+  "model_name": "catboost_ordered_trees500_depth6",
+  "prior_best_report": {
+    "algorithm": "tabfm_ensemble_regressor",
+    "path": "/home/ubuntu/remote_super/quant/regression/43b4cc3ab0ebbd97/reports/tabfm_ensemble_regressor.json",
+    "r2": 0.31442127459322966
+  },
+  "status": "completed",
+  "task_type": "regression",
+  "timing": {
+    "augmented_fit_predict_seconds": 129.9757783249952,
+    "raw_fit_predict_seconds": 0.6577201406471431
+  }
+}

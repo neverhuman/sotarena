@@ -1,0 +1,127 @@
+{
+  "schema": "sotarena.config",
+  "tasks": [
+    {
+      "id": "binary",
+      "metric": "roc_auc",
+      "direction": "maximize",
+      "weight": 0.25,
+      "analysis_blacklist": "binary/analysis-blacklist.json"
+    },
+    {
+      "id": "regression",
+      "metric": "rmse",
+      "direction": "minimize",
+      "weight": 0.25,
+      "analysis_blacklist": "regression/analysis-blacklist.json"
+    },
+    {
+      "id": "multiclass",
+      "metric": "macro_f1",
+      "direction": "maximize",
+      "weight": 0.25,
+      "analysis_blacklist": "multiclass/analysis-blacklist.json"
+    },
+    {
+      "id": "timeseries",
+      "metric": "mase",
+      "direction": "minimize",
+      "weight": 0.25,
+      "analysis_blacklist": "timeseries/analysis-blacklist.json"
+    }
+  ],
+  "elo": {
+    "initial_rating": 1500.0,
+    "k_factor": 40.0,
+    "tie_tolerance": 1e-12,
+    "iterations": 250,
+    "regularization": 0.0001,
+    "convergence_tolerance": 1e-8
+  },
+  "families": [
+    {
+      "id": "aspfm",
+      "display_name": "ASPFM",
+      "patterns": [
+        "jope-*",
+        "aspfm*"
+      ]
+    },
+    {
+      "id": "tabicl",
+      "display_name": "TabICL",
+      "patterns": [
+        "tabicl*",
+        "mc20_tabicl*"
+      ]
+    },
+    {
+      "id": "tabfm",
+      "display_name": "TabFM",
+      "patterns": [
+        "tabfm",
+        "tabfm_classifier*",
+        "tabfm_regressor*"
+      ]
+    },
+    {
+      "id": "tabfm-ensemble",
+      "display_name": "TabFM Ensemble",
+      "patterns": [
+        "tabfm_ensemble*",
+        "mc20_tabfm_ensemble*"
+      ]
+    },
+    {
+      "id": "tabpfn-v3",
+      "display_name": "TabPFN v3",
+      "patterns": [
+        "tabpfn_v3*",
+        "mc20_tabpfn_v3*",
+        "tabpfn_ts_3"
+      ]
+    },
+    {
+      "id": "fable-5",
+      "display_name": "Fable 5",
+      "patterns": [
+        "fable5*"
+      ]
+    },
+    {
+      "id": "grok-4-5",
+      "display_name": "Grok 4.5",
+      "patterns": [
+        "grok4p5*"
+      ]
+    },
+    {
+      "id": "openai-sol",
+      "display_name": "OpenAI *sol",
+      "patterns": [
+        "gpt5p6sol_*"
+      ]
+    },
+    {
+      "id": "kimi-k3",
+      "display_name": "Kimi K3",
+      "patterns": [
+        "kimik3*"
+      ]
+    },
+    {
+      "id": "catboost",
+      "display_name": "CatBoost",
+      "patterns": [
+        "mc20_catboost*"
+      ]
+    },
+    {
+      "id": "timesfm",
+      "display_name": "TimesFM",
+      "patterns": [
+        "timesfm*"
+      ]
+    }
+  ]
+}

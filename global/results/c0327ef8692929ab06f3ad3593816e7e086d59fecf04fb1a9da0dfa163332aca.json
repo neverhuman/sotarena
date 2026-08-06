@@ -1,0 +1,178 @@
+{
+ "report_schema_version": 2,
+ "algorithm": "jain_prime",
+ "dataset_hash": "019de5d76a718163",
+ "task_type": "regression",
+ "status": "completed",
+ "started_at_unix_ms": 1783758895987,
+ "finished_at_unix_ms": 1783759203719,
+ "rows": {
+  "train": 120,
+  "test": 24
+ },
+ "features": 2,
+ "timings": {
+  "load_secs": 0.024598,
+  "search_secs": 105.03,
+  "gpu_kernel_secs": 1.714174,
+  "finalist_cv_secs": 3.029655,
+  "fit_predict_secs": 0.826377,
+  "total_secs": 307.731443
+ },
+ "model_class": "jope_pipeline_ensemble",
+ "model_params": {
+  "engine": "featmath",
+  "fitness": "v2",
+  "pop": 192,
+  "top_k": 16,
+  "gpu_kernel_configs": 131072,
+  "seed_battery": {
+   "model_proposals": [
+    {
+     "temperature": 0.7,
+     "samples_per_engine": 48
+    },
+    {
+     "temperature": 1.0,
+     "samples_per_engine": 24
+    }
+   ],
+   "own_train_oof_top_k": 10,
+   "z_neighbors": 5,
+   "z_neighbor_champion": true,
+   "z_neighbor_ledger_top_k": 2,
+   "global_greatest_hits_k": 10,
+   "ywarp_kinds": [
+    "rank_gauss",
+    "log1p"
+   ],
+   "fixed": [
+    "(pipe X (blom) (ridge_gcv))",
+    "(pipe X (cheb degree=3 append=true) (pair_prod topk=12 append=true) (ridge_gcv))",
+    "(pipe X (histgbm2 leaves=31 lr=0.05 rounds=500 loss=huber))",
+    "(pipe X (portfolio preset=core))"
+   ],
+   "fairness_rule": "seeds + all selection decisions use only (a) other datasets' data and (b) X's own TRAIN-side signals (OOF/robust). X's test results and the incumbent identity for X are never read."
+  },
+  "pick_kind": "single",
+  "oof_partitions": "k=3,5,7 seed=20260710",
+  "robust_formula": "min(oof_r2_f3, oof_r2_f5, oof_r2_f7) - 0.25*min(std(fold_r2_f3+f5+f7 pooled), 1.0)",
+  "robust_score": 0.9931648269525319,
+  "oof_r2": {
+   "f3": 0.9941716553584312,
+   "f5": 0.993601011402046,
+   "f7": 0.9938834059314698
+  },
+  "min_fold_r2": 0.9896382374470835,
+  "selection_rule": "sort by (robust desc [ties within 1e-9], prior_submission first, higher min fold score, fewer genome stages); new blends need +0.005 robust over best single; prior blends exempt",
+  "final_selection": "triple-partition train-side robust CV (never test)",
+  "budget_profile": {
+   "name": "full",
+   "stage_a_secs": 120,
+   "main_secs": 1800,
+   "round_secs": 900,
+   "max_rounds": 3
+  },
+  "genome": "(pipe X (cheb degree=3) (hinge knots=11) (quantile_bins append=true bins=28) (poly_interact append=true) (ensemble_ridge_gbm depth=4 lr=0.13556770279958524 rounds=221))",
+  "gpu": {
+   "kernel_configs": 131072,
+   "backend": "fused",
+   "kernel_used": true,
+   "kernel_used_any": true,
+   "kernel_message": "battle-gpu composite GPR kernel search over 5 specs",
+   "kernel_secs": 1.7142,
+   "kernel_secs_by_stage": [
+    0.8718,
+    0.8424
+   ],
+   "kernel_abi_version": 2,
+   "host": "xbabe3"
+  },
+  "provenance": {
+   "mode": "fresh",
+   "run_dir": "/home/ubuntu/remote_super/quant/models/jain_prime/runs/019de5d76a718163",
+   "seed_sources": {
+    "model_proposal_t0.7": 9,
+    "model_proposal_t1.0": 6,
+    "own_oof": 9,
+    "z_neighbor_ledger": 9,
+    "z_neighbor_champion": 4,
+    "global_top10": 5,
+    "battery_ywarp_rank_gauss": 3,
+    "battery_ywarp_log1p": 3,
+    "battery_fixed_blom_ridge_gcv": 1,
+    "battery_fixed_cheb_pairprod_ridge_gcv": 1,
+    "battery_fixed_histgbm2_huber": 1,
+    "battery_fixed_portfolio_core": 1
+   },
+   "rounds_used": 1,
+   "rounds": [
+    {
+     "round": 1,
+     "budget_s": 1800,
+     "best_robust": 0.9941679193116427,
+     "bar": 0.99412139794849,
+     "target_beaten_flag": null,
+     "bar_cleared": true,
+     "best_genome": "(pipe X (cheb degree=4) (hinge knots=8) (quantile_bins append=true bins=30) (poly_interact append=true) (robust_scale) (quantile_bins append=true bins=34) (ridge_gcv))"
+    }
+   ],
+   "champion_bar_robust": 0.99412139794849,
+   "fitness": "v2",
+   "checkpoint": "gen36",
+   "checkpoint_path": "/home/ubuntu/jope/runs/self_play_v33/gen36.pt",
+   "degenerate_fallback": {
+    "triggered": false
+   },
+   "blend_available": true,
+   "artifact_member_modes": [
+    "rust"
+   ],
+   "crosscheck": {
+    "bridge_test_rmse_diag": 0.014844618789025587,
+    "artifact_test_rmse": 0.014844618789025588
+   }
+  }
+ },
+ "metrics": {
+  "r2": 0.9955218397346173,
+  "rmse": 0.014844618789025588,
+  "mse": 0.00022036270699149152,
+  "mae": 0.011918724646242398,
+  "explained_variance": 0.9955219589909095,
+  "prediction_min": 0.01844505850120176,
+  "prediction_max": 0.8535958737016088,
+  "target_min": 0.0193050187,
+  "target_max": 0.878378391,
+  "n": 24,
+  "target_mean": 0.31515444027083334,
+  "target_std": 0.2218294657633974,
+  "prediction_mean": 0.3150778347826631,
+  "prediction_std": 0.21974048032239837,
+  "residual_mean": 7.660548817024886e-05,
+  "residual_std": 0.014844421126829894,
+  "residual_min": -0.030911871523232826,
+  "residual_max": 0.029634382453185948,
+  "pearson_corr": 0.9977844562278917
+ },
+ "gene": "(pipe X (cheb degree=3) (hinge knots=11) (quantile_bins append=true bins=28) (poly_interact append=true) (ensemble_ridge_gbm depth=4 lr=0.13556770279958524 rounds=221))",
+ "genome": "(pipe X (cheb degree=3) (hinge knots=11) (quantile_bins append=true bins=28) (poly_interact append=true) (ensemble_ridge_gbm depth=4 lr=0.13556770279958524 rounds=221))",
+ "genome_hash": "21e12890cab4e33f7cdee8434ffdf109e39dfe5badcfb69f211e50b4728ba6de",
+ "cv": {
+  "folds": [
+   3,
+   5,
+   7
+  ],
+  "partition_seed": 20260710,
+  "oof_r2": {
+   "f3": 0.9941716553584312,
+   "f5": 0.993601011402046,
+   "f7": 0.9938834059314698
+  },
+  "robust": 0.9931648269525319,
+  "min_fold_r2": 0.9896382374470835,
+  "robust_formula": "min(oof_r2_f3, oof_r2_f5, oof_r2_f7) - 0.25*min(std(fold_r2_f3+f5+f7 pooled), 1.0)"
+ },
+ "predictions_path": "/home/ubuntu/remote_super/quant/regression/019de5d76a718163/predictions/jain_prime.csv"
+}

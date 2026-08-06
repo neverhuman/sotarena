@@ -1,0 +1,41 @@
+{
+  "algorithm": "tweedie_regressor",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "ZTS_small",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.001552959089167416,
+  "metrics": {
+    "explained_variance": 0.4377339028121844,
+    "mae": 0.1784199951320439,
+    "max_error": 0.5761963466192195,
+    "median_absolute_error": 0.16036040983039795,
+    "mse": 0.04702692064207478,
+    "prediction_max": 1.410276719367085,
+    "prediction_min": 0.22126933886529743,
+    "r2": 0.43608736533283765,
+    "rmse": 0.21685691282980762,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_name": "tweedie_regressor",
+  "n_features": 147,
+  "provenance": {
+    "canonical_test_sha256": "806d6838aa3dd6f0b0c21adf718de17456d42c5219af4dd0b46eee8b0624726c",
+    "canonical_test_target_sha256": "338ad2fc9525ec03da9a632fa76a9cd3fb65472f6a0ba89861e57f88be7c5434",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "612ff2f00bdeb510e89435d85d999e02c50f0c400db9f536eeb2e1bc149e2881",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/ZTS_small/tweedie_regressor/worker-receipt.json",
+    "worker_receipt_sha256": "8e90bcc4ce084f2e2ac27f0e8d7434f50bfca3c3df34265378efbd7bae29f3bc"
+  },
+  "run_date": "2026-07-23T11:19:58Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 0.014074545935727656
+}

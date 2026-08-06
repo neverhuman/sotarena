@@ -1,0 +1,41 @@
+{
+  "algorithm": "gaussian_process",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "6054656956182296",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 4.62341021199245,
+  "metrics": {
+    "explained_variance": 0.9308992249054862,
+    "mae": 0.015045268315211677,
+    "max_error": 0.2926216884421663,
+    "median_absolute_error": 0.007243869481343628,
+    "mse": 0.000784196293503585,
+    "prediction_max": 0.573315258708013,
+    "prediction_min": -0.006682660133465468,
+    "r2": 0.9308546536295256,
+    "rmse": 0.028003505021757275,
+    "target_max": 0.7676,
+    "target_min": 0.0
+  },
+  "model_name": "gaussian_process",
+  "n_features": 1000,
+  "provenance": {
+    "canonical_test_sha256": "924be0789def76c47dfef6e70f1cbf94ef9d889fa70675c491af89571fb1591d",
+    "canonical_test_target_sha256": "a59abf1d15c6849e9374836faf767c5281ba0c9a932b3ebb61ec49068bbc3125",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "eac32e2e781fd302a86cddac786ede2830f914ba2873e22a772bf41b73bbab71",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/6054656956182296/gaussian_process/worker-receipt.json",
+    "worker_receipt_sha256": "315a869e1cd9b8ffee4f25cf5498140a956243721cfde56114de9ad5cb6b7a3a"
+  },
+  "run_date": "2026-07-23T17:17:03Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 280.8903429430211
+}

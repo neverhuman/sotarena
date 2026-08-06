@@ -1,0 +1,72 @@
+{
+  "algorithm": "stacking_trees_meta",
+  "dataset_hash": "962a35a53b0803a8",
+  "ended_at": "2026-06-26T12:35:59Z",
+  "environment": {
+    "affinity": [
+      40
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super10",
+    "pid": 2227920,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 2902.533142632951,
+  "inference_time_seconds": 0.03376361101982184,
+  "metrics": {
+    "accuracy": 0.7040816326530612,
+    "average_precision": 0.4685329188041576,
+    "balanced_accuracy": 0.6899050474762618,
+    "brier_score": 0.20040704691248612,
+    "cohen_kappa": 0.3484640073360843,
+    "f1": 0.5671641791044776,
+    "false_negatives": 10,
+    "false_positives": 19,
+    "log_loss": 0.5865003354448859,
+    "matthews_corrcoef": 0.35581366610091664,
+    "positive_rate": 0.29591836734693877,
+    "precision": 0.5,
+    "predicted_positive_rate": 0.3877551020408163,
+    "recall": 0.6551724137931034,
+    "roc_auc": 0.7373813093453273,
+    "sensitivity": 0.6551724137931034,
+    "specificity": 0.7246376811594203,
+    "top_decile_lift": 1.3517241379310345,
+    "top_decile_positive_rate": 0.4,
+    "true_negatives": 50,
+    "true_positives": 19
+  },
+  "model_class": "sklearn.ensemble._stacking.StackingClassifier",
+  "model_params": {},
+  "n_features": 10,
+  "run_date": "2026-06-26T12:35:59Z",
+  "started_at": "2026-06-26T12:35:55Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 98,
+  "train_rows": 485,
+  "training_time_seconds": 1.752383518993156
+}

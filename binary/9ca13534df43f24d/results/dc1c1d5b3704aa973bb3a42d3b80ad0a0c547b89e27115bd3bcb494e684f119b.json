@@ -1,0 +1,72 @@
+{
+  "algorithm": "histgbm_regularized",
+  "dataset_hash": "9ca13534df43f24d",
+  "ended_at": "2026-06-26T01:40:27Z",
+  "environment": {
+    "affinity": [
+      64
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super1",
+    "pid": 4130639,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "0.23.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 47850.23970840878,
+  "inference_time_seconds": 0.020898536895401776,
+  "metrics": {
+    "accuracy": 0.709,
+    "average_precision": 0.4069759798036835,
+    "balanced_accuracy": 0.6737500000000001,
+    "brier_score": 0.2003831987613273,
+    "cohen_kappa": 0.276479363500746,
+    "f1": 0.4581005586592179,
+    "false_negatives": 77,
+    "false_positives": 214,
+    "log_loss": 0.592709027432992,
+    "matthews_corrcoef": 0.29406482959117786,
+    "positive_rate": 0.2,
+    "precision": 0.3649851632047478,
+    "predicted_positive_rate": 0.337,
+    "recall": 0.615,
+    "roc_auc": 0.73248125,
+    "sensitivity": 0.615,
+    "specificity": 0.7325,
+    "top_decile_lift": 2.3,
+    "top_decile_positive_rate": 0.46,
+    "true_negatives": 586,
+    "true_positives": 123
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 147,
+  "run_date": "2026-06-26T01:40:27Z",
+  "started_at": "2026-06-26T01:40:22Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 2.0275493619265035
+}

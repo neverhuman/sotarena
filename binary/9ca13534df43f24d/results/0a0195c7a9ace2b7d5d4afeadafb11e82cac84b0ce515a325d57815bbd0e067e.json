@@ -1,0 +1,73 @@
+{
+  "algorithm": "tabpfn_capped_rows10000",
+  "dataset_hash": "9ca13534df43f24d",
+  "ended_at": "2026-06-29T03:44:32Z",
+  "environment": {
+    "affinity": [
+      111
+    ],
+    "cuda_visible_devices": "",
+    "deps": [
+      "tabpfn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super3",
+    "java": "/usr/bin/java",
+    "pid": 3726817,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu_heavy",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 0.7995208487307481,
+  "inference_time_seconds": 1250.749122536974,
+  "metrics": {
+    "accuracy": 0.69,
+    "average_precision": 0.45508708844921186,
+    "balanced_accuracy": 0.68625,
+    "brier_score": 0.19687508898020137,
+    "cohen_kappa": 0.2777260018639329,
+    "f1": 0.46735395189003437,
+    "false_negatives": 64,
+    "false_positives": 246,
+    "log_loss": 0.5751471679445883,
+    "matthews_corrcoef": 0.3066622723244337,
+    "positive_rate": 0.2,
+    "precision": 0.35602094240837695,
+    "predicted_positive_rate": 0.382,
+    "recall": 0.68,
+    "roc_auc": 0.74519375,
+    "sensitivity": 0.68,
+    "specificity": 0.6925,
+    "top_decile_lift": 2.5,
+    "top_decile_positive_rate": 0.5,
+    "true_negatives": 554,
+    "true_positives": 136
+  },
+  "model_class": "tabpfn.classifier.TabPFNClassifier",
+  "model_params": {},
+  "n_features": 147,
+  "run_date": "2026-06-29T03:44:32Z",
+  "started_at": "2026-06-29T03:23:37Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 0.9815168879576959
+}

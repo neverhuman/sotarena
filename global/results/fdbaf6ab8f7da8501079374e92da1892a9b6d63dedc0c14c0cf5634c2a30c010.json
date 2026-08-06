@@ -1,0 +1,52 @@
+{
+  "algorithm": "tabfm_ensemble_regressor",
+  "dataset_hash": "5f91a00bd3b66742",
+  "ended_at": "2026-07-03T08:19:10+00:00",
+  "environment": {
+    "cuda_visible_devices": "7",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 51.06848293127137,
+  "inference_time_seconds": 19.561967433895916,
+  "metrics": {
+    "explained_variance": 0.6560269489495862,
+    "mae": 0.09309323673176152,
+    "max_error": 0.834198726039722,
+    "mean_absolute_percentage_error_eps": 49645.569464826905,
+    "median_absolute_error": 0.05704712137893808,
+    "mse": 0.019851562879866575,
+    "prediction_max": 1.0153156795939513,
+    "prediction_min": 0.07521433731688153,
+    "r2": 0.6553731866757144,
+    "rmse": 0.14089557437998745,
+    "target_max": 1.0,
+    "target_min": 0.0
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMRegressor",
+  "n_features": 8,
+  "run_date": "2026-07-03T08:19:10+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/real_regression_sources/sklearn-fetch-california-housing-target.csv",
+  "started_at": "2026-07-03T08:17:52+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": true,
+  "tabfm_model_type": "regression",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 58.08961887296755
+}

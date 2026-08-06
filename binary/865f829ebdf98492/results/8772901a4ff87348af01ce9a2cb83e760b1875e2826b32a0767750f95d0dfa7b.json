@@ -1,0 +1,73 @@
+{
+  "algorithm": "logistic_regression",
+  "dataset_hash": "865f829ebdf98492",
+  "ended_at": "2026-06-28T16:02:29Z",
+  "environment": {
+    "affinity": [
+      5
+    ],
+    "cuda_visible_devices": "",
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super7",
+    "java": "/usr/bin/java",
+    "pid": 3164749,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 10607.203400779548,
+  "inference_time_seconds": 0.0016969600110314786,
+  "metrics": {
+    "accuracy": 0.8333333333333334,
+    "average_precision": 0.5833333333333333,
+    "balanced_accuracy": 0.90625,
+    "brier_score": 0.16830278028433268,
+    "cohen_kappa": 0.49056603773584906,
+    "f1": 0.5714285714285714,
+    "false_negatives": 0,
+    "false_positives": 3,
+    "log_loss": 0.5959402833615057,
+    "matthews_corrcoef": 0.570087712549569,
+    "positive_rate": 0.1111111111111111,
+    "precision": 0.4,
+    "predicted_positive_rate": 0.2777777777777778,
+    "recall": 1.0,
+    "roc_auc": 0.9375,
+    "sensitivity": 1.0,
+    "specificity": 0.8125,
+    "top_decile_lift": 4.5,
+    "top_decile_positive_rate": 0.5,
+    "true_negatives": 13,
+    "true_positives": 2
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 7,
+  "run_date": "2026-06-28T16:02:29Z",
+  "started_at": "2026-06-28T16:02:26Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 18,
+  "train_rows": 88,
+  "training_time_seconds": 0.008296318992506713
+}

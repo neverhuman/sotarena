@@ -1,0 +1,61 @@
+{
+  "algorithm": "tabfm_ensemble_classifier",
+  "dataset_hash": "32d67bf055ab6e7b",
+  "ended_at": "2026-07-03T06:27:17+00:00",
+  "environment": {
+    "cuda_visible_devices": "1",
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.12.13",
+    "thread_limits": {
+      "MKL_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3",
+      "OMP_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "VECLIB_MAXIMUM_THREADS": "3"
+    },
+    "torch": "2.6.0+cu124",
+    "torch_cuda_available": true,
+    "torch_num_threads": 3
+  },
+  "inference_rows_per_second": 15.321683899536831,
+  "inference_time_seconds": 10.50798339501489,
+  "metrics": {
+    "accuracy": 0.8074534161490683,
+    "average_precision": 0.8268968375372311,
+    "balanced_accuracy": 0.8077042559801181,
+    "brier_score": 0.15540815182571685,
+    "cohen_kappa": 0.6135501355013551,
+    "f1": 0.7947019867549668,
+    "false_negatives": 14,
+    "false_positives": 17,
+    "log_loss": 0.4788116802722466,
+    "matthews_corrcoef": 0.6139796534919129,
+    "positive_rate": 0.45962732919254656,
+    "precision": 0.7792207792207793,
+    "predicted_positive_rate": 0.4782608695652174,
+    "recall": 0.8108108108108109,
+    "roc_auc": 0.8497980739360049,
+    "sensitivity": 0.8108108108108109,
+    "specificity": 0.8045977011494253,
+    "top_decile_lift": 2.0476947535771064,
+    "top_decile_positive_rate": 0.9411764705882353,
+    "true_negatives": 70,
+    "true_positives": 60
+  },
+  "model_class": "tabfm.src.classifier_and_regressor.TabFMClassifier",
+  "n_features": 4,
+  "run_date": "2026-07-03T06:27:17+00:00",
+  "source_path": "/home/ubuntu/hyper/data/tabular/mammographic-mass-data-set.csv",
+  "started_at": "2026-07-03T06:26:14+00:00",
+  "status": "completed",
+  "tabfm_device": "cuda",
+  "tabfm_ensemble": true,
+  "tabfm_model_type": "classification",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 161,
+  "train_rows": 800,
+  "training_time_seconds": 52.65559627802577
+}

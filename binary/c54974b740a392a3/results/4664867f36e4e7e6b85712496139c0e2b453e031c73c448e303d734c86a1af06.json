@@ -1,0 +1,73 @@
+{
+  "algorithm": "tabm_epochs10",
+  "dataset_hash": "c54974b740a392a3",
+  "ended_at": "2026-06-28T21:27:43Z",
+  "environment": {
+    "affinity": [
+      8
+    ],
+    "cuda_visible_devices": "",
+    "deps": [
+      "tabm"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super4",
+    "java": "/usr/bin/java",
+    "pid": 2240839,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 67511.8191310942,
+  "inference_time_seconds": 0.0019404009799472988,
+  "metrics": {
+    "accuracy": 0.6412213740458015,
+    "average_precision": 0.6941375750533031,
+    "balanced_accuracy": 0.5,
+    "brier_score": 0.22191531052798036,
+    "cohen_kappa": 0.0,
+    "f1": 0.0,
+    "false_negatives": 47,
+    "false_positives": 0,
+    "log_loss": 0.6355384951943037,
+    "matthews_corrcoef": 0.0,
+    "positive_rate": 0.35877862595419846,
+    "precision": 0.0,
+    "predicted_positive_rate": 0.0,
+    "recall": 0.0,
+    "roc_auc": 0.8178824721377913,
+    "sensitivity": 0.0,
+    "specificity": 1.0,
+    "top_decile_lift": 2.189969604863222,
+    "top_decile_positive_rate": 0.7857142857142857,
+    "true_negatives": 84,
+    "true_positives": 0
+  },
+  "model_class": "models.tools.model_zoo.TabMSklearnClassifier",
+  "model_params": {},
+  "n_features": 8,
+  "run_date": "2026-06-28T21:27:43Z",
+  "started_at": "2026-06-28T21:27:40Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 131,
+  "train_rows": 651,
+  "training_time_seconds": 1.4278013380244374
+}

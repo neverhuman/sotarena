@@ -1,0 +1,22 @@
+{
+  "schema": "sotarena.source-snapshot.v1",
+  "sources": {
+    "golden42_data": {
+      "datasets": 42,
+      "manifest": "/home/ubuntu/jope-dime/manifests/input-manifest.v1.json",
+      "manifest_sha256": "9e47eb9a10f6d92cab839093f3817eb1e0a17c1ac83f63a2ed3633af585bc6c0",
+      "path": "/home/ubuntu/remote_super/quant/regression"
+    },
+    "jope_dime": {
+      "path": "/home/ubuntu/sotarena/results/tabular-regression-v1/jope-dime-evolution/index.v1.json",
+      "sha256": "e6e654eb014afc08ce779b6c325627f16a06ae600ed20d6cd98d277a141eeeb8"
+    },
+    "model_reports": {
+      "methods_with_scores": 304,
+      "primary_path": "/home/ubuntu/remote_super/quant/regression",
+      "rankable_reports": 8349,
+      "reports": 8413,
+      "supplementary_path": "/home/ubuntu/super_cluster/quant/regression"
+    }
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "best_score": 0.022501939118372012,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "content_sha256": "c9f47243435edec1576d472d5c39ea2b54fdb7499bc7a18f857de4c2515f148c",
+  "dataset_id": "6054656956182296",
+  "pressure": {
+    "mean_cpu_percent": 6.052411575562701,
+    "minimum_available_memory_gib": 30.50271987915039,
+    "peak_children_rss_bytes": 23659048960,
+    "peak_cpu_percent": 48.5,
+    "peak_io_pressure_avg10": 70.16,
+    "peak_swap_used_gib": 7.999996185302734,
+    "swap_activity_observed": true,
+    "telemetry_samples": 311
+  },
+  "registered_attempts": {
+    "aggregate_single_thread_worker_elapsed_seconds": 2425.79191222426,
+    "failed_attempt_count": 9,
+    "failed_unique_method_count": 8,
+    "failures": [
+      {
+        "method_id": "pytorch_tabular_autoint_regressor",
+        "node": "xbabe3",
+        "phase": "gpu-gpu_heavy",
+        "return_code": 1,
+        "seconds": 10.360350258997642,
+        "ts_unix": 1784809851.9910805
+      },
+      {
+        "method_id": "pytorch_tabular_danet_regressor",
+        "node": "xbabe1",
+        "phase": "gpu-gpu_heavy",
+        "return_code": 1,
+        "seconds": 2.0850915330229327,
+        "ts_unix": 1784809914.766783
+      },
+      {
+        "method_id": "pytorch_tabular_node_regressor",
+        "node": "xbabe1",
+        "phase": "gpu-gpu_heavy",
+        "return_code": 1,
+        "seconds": 2.0748230130411685,
+        "ts_unix": 1784809917.866323
+      },
+      {
+        "method_id": "tabm",
+        "node": "xbabe1",
+        "phase": "gpu-gpu_heavy",
+        "return_code": 1,
+        "seconds": 2.0777547530597076,
+        "ts_unix": 1784809920.9686804
+      },
+      {
+        "method_id": "tabnet",
+        "node": "xbabe1",
+        "phase": "gpu-gpu_heavy",
+        "return_code": 1,
+        "seconds": 2.0759165780618787,
+        "ts_unix": 1784809924.0693655
+      },
+      {
+        "method_id": "tabpfn_v25_regressor_real",
+        "node": "xbabe1",
+        "phase": "gpu-gpu_heavy",
+        "return_code": 1,
+        "seconds": 2.079259154968895,
+        "ts_unix": 1784809927.1785026
+      },
+      {
+        "method_id": "tabr_regressor",
+        "node": "xbabe1",
+        "phase": "gpu-gpu_heavy",
+        "return_code": 1,
+        "seconds": 2.0760247909929603,
+        "ts_unix": 1784809930.2788067
+      },
+      {
+        "method_id": "torch_frame_resnet_regressor",
+        "node": "xbabe1",
+        "phase": "gpu-gpu_heavy",
+        "return_code": 1,
+        "seconds": 2.0768751580035314,
+        "ts_unix": 1784809933.37959
+      },
+      {
+        "method_id": "pytorch_tabular_autoint_regressor",
+        "node": "xbabe1",
+        "phase": "gpu-gpu_heavy",
+        "return_code": 1,
+        "seconds": 2.063467715983279,
+        "ts_unix": 1784810208.8086014
+      }
+    ],
+    "finished_attempt_count": 55,
+    "process_cpu_time": {
+      "note": "Workers were thread-limited to one; aggregate worker elapsed time is reported separately and is not mislabeled as process CPU time.",
+      "status": "not-recorded-by-frozen-node-runner"
+    },
+    "recoveries": [
+      {
+        "failed_at": 1784809851.9910805,
+        "failed_node": "xbabe3",
+        "method_id": "pytorch_tabular_autoint_regressor",
+        "recovered_on_different_node": false,
+        "recovery_at": null,
+        "recovery_node": null,
+        "return_code": 1
+      },
+      {
+        "failed_at": 1784809914.766783,
+        "failed_node": "xbabe1",
+        "method_id": "pytorch_tabular_danet_regressor",
+        "recovered_on_different_node": true,
+        "recovery_at": 1784810078.7830062,
+        "recovery_node": "xbabe3",
+        "return_code": 1
+      },
+      {
+        "failed_at": 1784809917.866323,
+        "failed_node": "xbabe1",
+        "method_id": "pytorch_tabular_node_regressor",
+        "recovered_on_different_node": true,
+        "recovery_at": 1784810094.95229,
+        "recovery_node": "xbabe3",
+        "return_code": 1
+      },
+      {
+        "failed_at": 1784809920.9686804,
+        "failed_node": "xbabe1",
+        "method_id": "tabm",
+        "recovered_on_different_node": true,
+        "recovery_at": 1784810103.9409218,
+        "recovery_node": "xbabe3",
+        "return_code": 1
+      },
+      {
+        "failed_at": 1784809924.0693655,
+        "failed_node": "xbabe1",
+        "method_id": "tabnet",
+        "recovered_on_different_node": true,
+        "recovery_at": 1784810123.2590194,
+        "recovery_node": "xbabe3",
+        "return_code": 1
+      },
+      {
+        "failed_at": 1784809927.1785026,
+        "failed_node": "xbabe1",
+        "method_id": "tabpfn_v25_regressor_real",
+        "recovered_on_different_node": true,
+        "recovery_at": 1784810143.6124508,
+        "recovery_node": "xbabe3",
+        "return_code": 1
+      },
+      {
+        "failed_at": 1784809930.2788067,
+        "failed_node": "xbabe1",
+        "method_id": "tabr_regressor",
+        "recovered_on_different_node": true,
+        "recovery_at": 1784810182.5095036,
+        "recovery_node": "xbabe3",
+        "return_code": 1
+      },
+      {
+        "failed_at": 1784809933.37959,
+        "failed_node": "xbabe1",
+        "method_id": "torch_frame_resnet_regressor",
+        "recovered_on_different_node": true,
+        "recovery_at": 1784810203.8358727,
+        "recovery_node": "xbabe3",
+        "return_code": 1
+      },
+      {
+        "failed_at": 1784810208.8086014,
+        "failed_node": "xbabe1",
+        "method_id": "pytorch_tabular_autoint_regressor",
+        "recovered_on_different_node": false,
+        "recovery_at": null,
+        "recovery_node": null,
+        "return_code": 1
+      }
+    ],
+    "successful_method_count": 46
+  },
+  "registered_throughput_successes_per_hour": 75.72312685217328,
+  "registered_wall_time_seconds": 2186.914445877075,
+  "schema": "golden46.campaign-metrics.v1",
+  "scores": {
+    "autogluon_300s": 0.027454688572395913,
+    "chimera_regression": 0.03117576754475544,
+    "grok4p5_regressor": 0.032294199230757915,
+    "hyp3_chimera_regression": 0.0330146633130339,
+    "tabfm_ensemble_regressor": 0.022501939118372012,
+    "tabpfn_v3_regressor": 0.026206731569078115,
+    "xgboost_hist_trees900_depth4_lr0p02": 0.02691059561752433
+  },
+  "sources": {
+    "events": [
+      {
+        "path": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/nodes/xbabe1/6054656956182296/gpu-gpu_heavy/events.jsonl",
+        "sha256": "82833de03cb7005454d8156db21413a4fc0b018bdb72edbbad15030bfbaf74e2"
+      },
+      {
+        "path": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/nodes/xbabe2/6054656956182296/cpu-cpu_light/events.jsonl",
+        "sha256": "65ffeb80e30ef07570ade6fe384b11bb5095803b922c4c8cf15dfa52346fcd64"
+      },
+      {
+        "path": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/nodes/xbabe3/6054656956182296/gpu-gpu_heavy/events.jsonl",
+        "sha256": "65a389ddad7d5e3796f6c162ad5a58e4b1dfd69cff8082604cf13acb20bea9f7"
+      }
+    ],
+    "special_indexes": [
+      {
+        "path": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/indexes/6054656956182296.cpu.special-run.json",
+        "sha256": "626584d7dbba3165a3e026c5ee885a31497d4bb9f64d9d0b3f77a44ae171a5f0"
+      },
+      {
+        "path": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/indexes/6054656956182296.gpu.special-run.json",
+        "sha256": "7681d5d6b5912247944998ff8fefd7b425e5242bce8fae17a02943639f246a26"
+      }
+    ],
+    "telemetry": [
+      {
+        "path": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/nodes/xbabe1/6054656956182296/gpu-gpu_heavy/telemetry.jsonl",
+        "sha256": "d2da08b1d322d47d41779c2fff88e8b02439a30c17fc2a444ff59a75fd1b3776"
+      },
+      {
+        "path": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/nodes/xbabe2/6054656956182296/cpu-cpu_light/telemetry.jsonl",
+        "sha256": "b863be7038c40ab18d65f98438ad70794cef22e5dd0a03de2dcc8b467c6d6a0a"
+      },
+      {
+        "path": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/nodes/xbabe3/6054656956182296/gpu-gpu_heavy/telemetry.jsonl",
+        "sha256": "d7b937c40d2c7f1bb228c9e17321351887e5135dda741f75b10266fc392f810d"
+      }
+    ]
+  },
+  "special_wall_time_seconds_sum": 1928.1620710880961,
+  "status": "in-progress",
+  "validated_score_count": 7
+}

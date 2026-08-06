@@ -1,0 +1,67 @@
+{
+  "algorithm": "torch_frame_resnet_regressor",
+  "dataset_hash": "471f11cc2d38853a",
+  "ended_at": "2026-06-30T14:07:27Z",
+  "environment": {
+    "affinity": [
+      113
+    ],
+    "cuda_visible_devices": "4",
+    "deps": [
+      "torch_frame",
+      "torch"
+    ],
+    "executable": "/home/ubuntu/quant/.venv-regression-oss-gpu/bin/python",
+    "host": "super6",
+    "java": "/usr/bin/java",
+    "pid": 4053583,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 61229.878237051045,
+  "inference_time_seconds": 0.016315564047545195,
+  "metrics": {
+    "explained_variance": 0.9561228191081376,
+    "mae": 0.01935015301844645,
+    "max_error": 0.24172567682433854,
+    "mean_absolute_percentage_error_eps": 0.12176430708839298,
+    "median_absolute_error": 0.014230950941519882,
+    "mse": 0.0007262973088416821,
+    "prediction_max": 0.6181700685026037,
+    "prediction_min": 0.013123075516766392,
+    "r2": 0.9560988178500878,
+    "rmse": 0.026949903688912917,
+    "target_max": 0.857672751,
+    "target_min": 0.00700455438
+  },
+  "model_class": "models.tools.model_zoo._TorchFrameRegressorWrapper",
+  "model_params": {},
+  "n_features": 4,
+  "run_date": "2026-06-30T14:07:27Z",
+  "started_at": "2026-06-30T14:07:19Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 5.504712260095403
+}

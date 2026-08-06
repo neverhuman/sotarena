@@ -1,0 +1,181 @@
+{
+  "algorithm": "jope_prime",
+  "cv": {
+    "fold_r2": {
+      "f3": [
+        0.9954167798345231,
+        0.991031391850896,
+        0.9919753090078043
+      ]
+    },
+    "folds": [
+      3
+    ],
+    "oof_r2": {
+      "f3": 0.99321548145883
+    },
+    "partition_seed": 20260710,
+    "robust": 0.9927443250149985,
+    "robust_formula": "max(oof_r2, -1) - 0.25*min(pstd(fold_r2), 1)  [jain/active_v3 train-side mirror]"
+  },
+  "dataset_hash": "55b144de19659467",
+  "features": 4,
+  "finished_at_unix_ms": 1783930915481,
+  "gene": "(pipe X (target kind=log1p) (cheb append=false degree=5) (poly_interact append=true) (rank append=true) (pair_prod append=true topk=13) (elasticnet alpha=0.0008290619280399646 l1_ratio=0.11158811652095571))",
+  "genome": "(pipe X (target kind=log1p) (cheb append=false degree=5) (poly_interact append=true) (rank append=true) (pair_prod append=true topk=13) (elasticnet alpha=0.0008290619280399646 l1_ratio=0.11158811652095571))",
+  "genome_hash": "c3b0a64cf76b26c01643dfad7341c91ecaccebad859f782f300cbfa33376865a",
+  "metrics": {
+    "explained_variance": 0.9920327394046192,
+    "mae": 0.0034491875011719076,
+    "mse": 6.531301918766288e-05,
+    "n": 999,
+    "pearson_corr": 0.9960219221779166,
+    "prediction_max": 0.8397160062510682,
+    "prediction_mean": 0.09282114175348358,
+    "prediction_min": 0.013886011327457037,
+    "prediction_std": 0.08965997549415054,
+    "r2": 0.9920236717327435,
+    "residual_max": 0.16028399374893176,
+    "residual_mean": -0.0002724873018819764,
+    "residual_min": -0.06317664943223461,
+    "residual_std": 0.008077052052449333,
+    "rmse": 0.008081647059087824,
+    "target_max": 1.0,
+    "target_mean": 0.0925486544516016,
+    "target_min": 0.0009036673,
+    "target_std": 0.09048953791300253
+  },
+  "model_class": "jope_lime_genome",
+  "model_params": {
+    "actual_search_rows": 768,
+    "budget_profile": {
+      "folds": 3,
+      "gens": 40,
+      "gpu_kernel_configs": 131072,
+      "name": "lime",
+      "pop": 96,
+      "search_rows": 768,
+      "threads": 32,
+      "time_budget_secs": 18,
+      "top_k": 2
+    },
+    "engine": "featmath",
+    "evals": 3248,
+    "final_selection": "jain-internal honest_feat_math_cv_r2 over the GPU+seeded finalist pool (train-side only, never test)",
+    "fitness": "v2",
+    "fold_r2": [
+      0.9954167798345231,
+      0.991031391850896,
+      0.9919753090078043
+    ],
+    "folds": 3,
+    "genome": "(pipe X (target kind=log1p) (cheb append=false degree=5) (poly_interact append=true) (rank append=true) (pair_prod append=true topk=13) (elasticnet alpha=0.0008290619280399646 l1_ratio=0.11158811652095571))",
+    "gens": 40,
+    "gpu": {
+      "backend": "fused",
+      "host": "local",
+      "kernel_abi_version": 2,
+      "kernel_candidates": 10,
+      "kernel_configs": 131072,
+      "kernel_message": "battle-gpu composite GPR kernel search over 5 specs",
+      "kernel_secs": 4.5669,
+      "kernel_secs_by_stage": [
+        4.5669
+      ],
+      "kernel_used": true,
+      "kernel_used_any": true
+    },
+    "gpu_kernel_configs": 131072,
+    "oof_partitions": "k=3 (jain-internal honest_feat_math_cv; single partition, not the triple 3/5/7 of jain_prime)",
+    "oof_r2": 0.99321548145883,
+    "pick_kind": "single",
+    "pop": 96,
+    "provenance": {
+      "artifact_member_modes": [
+        "rust"
+      ],
+      "checkpoint": "gen36",
+      "checkpoint_path": "/home/ubuntu/jope/runs/self_play_v33/gen36.pt",
+      "crosscheck": {
+        "artifact_test_rmse": 0.008081647059087824,
+        "jain_reported_rmse": 0.00808164705908783
+      },
+      "fitness": "v2",
+      "jain_reported_test_rmse": 0.00808164705908783,
+      "jain_search_timings": {
+        "finalist_cv_secs": 6.590054167,
+        "fit_predict_secs": 0.108583747,
+        "gpu_kernel_secs": 4.566900603,
+        "load_secs": 0.000680415,
+        "search_secs": 18.088462029,
+        "total_secs": 24.787986677
+      },
+      "mode": "lime_fresh",
+      "note": "lime = cheap seed battery + 1 GPU-heavy seeded jain call + honest full-train artifact fit; drops the neural proposals, multi-stage rounds, and Python triple-partition re-CV of jain_prime.",
+      "run_dir": "/home/ubuntu/jope-lime/runs/55b144de19659467",
+      "seed_sources": {
+        "battery_fixed": 4,
+        "battery_ywarp_log1p": 3,
+        "battery_ywarp_rank_gauss": 3,
+        "global_top10": 10,
+        "own_champion": 1,
+        "z_neighbor_champion": 5
+      }
+    },
+    "robust_formula": "max(oof_r2, -1) - 0.25*min(pstd(fold_r2), 1)  [jain/active_v3 train-side mirror]",
+    "robust_score": 0.9927443250149985,
+    "search_engine": "feat_math_evolve_lite_race+battle_gpu_gpr_mixture_proposals",
+    "search_rows": 768,
+    "seed_battery": {
+      "fairness_rule": "seeds use only (a) other datasets' data and (b) X's own TRAIN-side signals (champion OOF robust). X's test results and the incumbent identity for X are never read.",
+      "fixed": [
+        "(pipe X (blom) (ridge_gcv))",
+        "(pipe X (cheb degree=3 append=true) (pair_prod topk=12 append=true) (ridge_gcv))",
+        "(pipe X (histgbm2 leaves=31 lr=0.05 rounds=500 loss=huber))",
+        "(pipe X (portfolio preset=core))"
+      ],
+      "global_greatest_hits_k": 10,
+      "included_counts": {
+        "battery_fixed": 4,
+        "battery_ywarp_log1p": 3,
+        "battery_ywarp_rank_gauss": 3,
+        "global_top10": 10,
+        "own_champion": 1,
+        "z_neighbor_champion": 5
+      },
+      "kind": "lite",
+      "note": "cheap train-side seed battery: no gen36 neural proposals (droppable, ~34s CPU, gave 2/31 seeds and never the winner in the floor test). Sources are cache-only reads.",
+      "sources": [
+        "own_champion (X's own champions.json champion, train-side OOF robust)",
+        "z_neighbor_champion (champions of the 5 cosine-nearest TRAIN datasets)",
+        "global_top10 (greatest-hits: most frequent featmath champion across TRAIN datasets)",
+        "fixed battery (4 static seeds) + rank_gauss/log1p y-warp variants of the top seeds"
+      ],
+      "ywarp_kinds": [
+        "rank_gauss",
+        "log1p"
+      ],
+      "z_neighbors": 5
+    },
+    "selection_rule": "single best genome by jain's honest_feat_math_cv_r2 (train-side); no Python triple-partition re-CV, no blends (that is the ~15s+147s cost jope-lime drops)",
+    "top_k": 2
+  },
+  "predictions_path": "/home/ubuntu/remote_super/quant/regression/55b144de19659467/predictions/jope-lime.csv",
+  "report_schema_version": 2,
+  "rows": {
+    "test": 999,
+    "train": 1000
+  },
+  "source_algorithm": "jope-lime",
+  "started_at_unix_ms": 1783930889610,
+  "status": "completed",
+  "task_type": "regression",
+  "timings": {
+    "finalist_cv_secs": 6.590054,
+    "fit_predict_secs": 0.691296,
+    "gpu_kernel_secs": 4.566901,
+    "load_secs": 0.127577,
+    "search_secs": 18.088462,
+    "total_secs": 25.871176
+  }
+}

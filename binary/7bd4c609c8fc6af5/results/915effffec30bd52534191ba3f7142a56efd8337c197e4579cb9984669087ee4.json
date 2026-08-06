@@ -1,0 +1,61 @@
+{
+  "algorithm": "NM_Concept_d934d8f0251c_5a816510a987",
+  "benchmark_pool": {
+    "normalized_elo": 0.0,
+    "pool_best": 0.8411561080920122,
+    "pool_best_algorithm": "tabpfn_v3_classifier",
+    "pool_median": 0.789151095560684,
+    "pool_percentile": 49.64028776978417,
+    "pool_size": 139
+  },
+  "core_hash": "e35d804a68887b104d457469f76ab7976565d3aedbb8b8acba6dc1b419431462",
+  "dataset_hash": "7bd4c609c8fc6af5",
+  "dsl_expr": "(pipe X (quantile_bins bins=8) (entropy) (residual_boost rounds=4) (gbm rounds=150 depth=3 lr=0.1))",
+  "ended_at": "2026-06-29T22:28:09Z",
+  "environment": {
+    "created_by_binary_sha": "b24ddd5e331834fb6b3c90dd823c0200d5b306c2993d745a51534b519e4db6d0",
+    "host": "xbabe1",
+    "runner": "newmath classify-csv"
+  },
+  "inference_rows_per_second": null,
+  "inference_time_seconds": null,
+  "metrics": {
+    "accuracy": 0.835,
+    "average_precision": 0.559239089977361,
+    "balanced_accuracy": 0.6636827216556243,
+    "brier_score": 0.12786468459370393,
+    "f1": 0.4794952681388012,
+    "false_negatives": 126,
+    "false_positives": 39,
+    "log_loss": 0.4218857034153134,
+    "positive_rate": 0.202,
+    "precision": 0.6608695652173913,
+    "predicted_positive_rate": 0.115,
+    "recall": 0.37623762376237624,
+    "roc_auc": 0.7888036923993151,
+    "sensitivity": 0.37623762376237624,
+    "specificity": 0.9511278195488722,
+    "top_decile_lift": 3.465346534653465,
+    "top_decile_positive_rate": 0.7,
+    "true_negatives": 759,
+    "true_positives": 76
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "model_hash": "5a816510a987bb70d08c9bdfe1a7ba98218283493a504a99425b52fefe7c81b7",
+  "n_features": 10,
+  "newmath_receipt_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_d934d8f0251c_5a816510a987/20260629T222751Z/runs/7bd4c609c8fc6af5/receipt.json",
+  "predictions_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_d934d8f0251c_5a816510a987/20260629T222751Z/runs/7bd4c609c8fc6af5/predictions.csv",
+  "run_date": "2026-06-29T22:28:09Z",
+  "source_path": "/home/ubuntu/hyper/data/tabular/bank-customer-churn.csv",
+  "source_run_dir": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_d934d8f0251c_5a816510a987/20260629T222751Z",
+  "started_at": "2026-06-29T22:28:09Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": null,
+  "wall_time_seconds": 0.166389
+}

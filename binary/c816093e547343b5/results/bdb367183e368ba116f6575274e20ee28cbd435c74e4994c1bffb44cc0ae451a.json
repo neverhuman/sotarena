@@ -1,0 +1,72 @@
+{
+  "algorithm": "tabpfn_v3_classifier",
+  "dataset_hash": "c816093e547343b5",
+  "ended_at": "2026-06-26T21:35:00Z",
+  "environment": {
+    "affinity": [
+      111
+    ],
+    "cuda_visible_devices": "7",
+    "deps": [
+      "tabpfn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super6",
+    "pid": 3219294,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "gpu_heavy",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 29.35157009573336,
+  "inference_time_seconds": 2.725578214012785,
+  "metrics": {
+    "accuracy": 0.9875,
+    "average_precision": 0.9989338950935118,
+    "balanced_accuracy": 0.9545454545454546,
+    "brier_score": 0.025514414054598415,
+    "cohen_kappa": 0.9452054794520548,
+    "f1": 0.9928057553956835,
+    "false_negatives": 0,
+    "false_positives": 1,
+    "log_loss": 0.09819251631757052,
+    "matthews_corrcoef": 0.9466276438515284,
+    "positive_rate": 0.8625,
+    "precision": 0.9857142857142858,
+    "predicted_positive_rate": 0.875,
+    "recall": 1.0,
+    "roc_auc": 0.9934123847167325,
+    "sensitivity": 1.0,
+    "specificity": 0.9090909090909091,
+    "top_decile_lift": 1.1594202898550725,
+    "top_decile_positive_rate": 1.0,
+    "true_negatives": 10,
+    "true_positives": 69
+  },
+  "model_class": "tabpfn.classifier.TabPFNClassifier",
+  "model_params": {},
+  "n_features": 3,
+  "run_date": "2026-06-26T21:35:00Z",
+  "started_at": "2026-06-26T21:34:51Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 80,
+  "train_rows": 395,
+  "training_time_seconds": 2.074292311008321
+}

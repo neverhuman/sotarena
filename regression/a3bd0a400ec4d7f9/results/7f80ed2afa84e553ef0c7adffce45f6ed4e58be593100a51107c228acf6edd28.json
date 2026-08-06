@@ -1,0 +1,41 @@
+{
+  "algorithm": "chimera_regression",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "a3bd0a400ec4d7f9",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 111.42145296698436,
+  "metrics": {
+    "explained_variance": 0.9680168791265971,
+    "mae": 0.11387710373580456,
+    "max_error": 1.8913834106445313,
+    "median_absolute_error": 0.06706547374725347,
+    "mse": 0.0362153389185208,
+    "prediction_max": 5.771471977233887,
+    "prediction_min": 0.11009274423122406,
+    "r2": 0.9673638492489672,
+    "rmse": 0.1903032814181637,
+    "target_max": 5.8397,
+    "target_min": 0.0077
+  },
+  "model_name": "chimera_regression",
+  "n_features": 665,
+  "provenance": {
+    "canonical_test_sha256": "398556c974e2fae1eefc40d5e5ed5030eb22fafb192fadae582b9a62e0c93a89",
+    "canonical_test_target_sha256": "764d725105dae1f1d0f03aa62a05fe66b1d3ca39d5eb8592c7ac8d02155ac1da",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "096319708e493afc9ed157f254a041290d51eb0160bf5ec54ff1b8e4af38d4be",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/a3bd0a400ec4d7f9/chimera_regression/worker-receipt.json",
+    "worker_receipt_sha256": "379911970b8e14f823a50329d1fa9533598c214cb8feac3f0de6c5943fd91653"
+  },
+  "run_date": "2026-07-23T12:28:18Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 0.0
+}

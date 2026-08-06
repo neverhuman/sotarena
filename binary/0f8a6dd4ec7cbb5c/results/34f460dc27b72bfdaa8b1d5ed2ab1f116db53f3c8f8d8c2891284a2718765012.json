@@ -1,0 +1,72 @@
+{
+  "algorithm": "ada_boost_deep",
+  "dataset_hash": "0f8a6dd4ec7cbb5c",
+  "ended_at": "2026-06-26T12:21:41Z",
+  "environment": {
+    "affinity": [
+      108
+    ],
+    "cuda_visible_devices": null,
+    "deps": [
+      "sklearn"
+    ],
+    "executable": "/usr/bin/python3",
+    "host": "super7",
+    "pid": 3286354,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "resource": "cpu",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "inference_rows_per_second": 36395.38637510859,
+  "inference_time_seconds": 0.02747601000010036,
+  "metrics": {
+    "accuracy": 0.795,
+    "average_precision": 0.5980397941131474,
+    "balanced_accuracy": 0.7344161725955205,
+    "brier_score": 0.16963343375671677,
+    "cohen_kappa": 0.47054691212628363,
+    "f1": 0.6095238095238096,
+    "false_negatives": 104,
+    "false_positives": 101,
+    "log_loss": 0.5202249259183769,
+    "matthews_corrcoef": 0.4705610369242642,
+    "positive_rate": 0.264,
+    "precision": 0.6130268199233716,
+    "predicted_positive_rate": 0.261,
+    "recall": 0.6060606060606061,
+    "roc_auc": 0.8230170248682478,
+    "sensitivity": 0.6060606060606061,
+    "specificity": 0.8627717391304348,
+    "top_decile_lift": 2.5,
+    "top_decile_positive_rate": 0.66,
+    "true_negatives": 635,
+    "true_positives": 160
+  },
+  "model_class": "sklearn.pipeline.Pipeline",
+  "model_params": {},
+  "n_features": 19,
+  "run_date": "2026-06-26T12:21:41Z",
+  "started_at": "2026-06-26T12:21:36Z",
+  "status": "completed",
+  "target_names": [
+    0.0,
+    1.0
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": 0.27660202397964895
+}

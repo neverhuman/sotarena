@@ -1,0 +1,43 @@
+{
+  "algorithm": "pygam_linear_gam_regressor",
+  "dataset_hash": "b1f909fcfceeef4b",
+  "ended_at": "2026-06-30T12:59:01Z",
+  "environment": {
+    "affinity": [
+      82
+    ],
+    "cuda_visible_devices": null,
+    "executable": "/home/ubuntu/quant/.venv-regression-oss-cpu/bin/python",
+    "host": "super8",
+    "java": "/usr/bin/java",
+    "pid": 628028,
+    "platform": "Linux-6.8.0-1046-nvidia-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "sklearn": "1.7.2",
+    "thread_limits": {
+      "BLIS_NUM_THREADS": "1",
+      "LIGHTGBM_NUM_THREADS": "1",
+      "MKL_DYNAMIC": "FALSE",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_DYNAMIC": "FALSE",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "TBB_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "XGBOOST_NTHREADS": "1",
+      "XGBOOST_NUM_THREADS": "1"
+    }
+  },
+  "failure_message": "n_features=299 exceeds encoded limit 128",
+  "inference_time_seconds": null,
+  "n_features": 299,
+  "run_date": "2026-06-30T12:59:01Z",
+  "started_at": "2026-06-30T12:58:59Z",
+  "status": "skipped-ineligible",
+  "task_type": "regression",
+  "test_rows": 999,
+  "train_rows": 1000,
+  "training_time_seconds": 2.2159163339529186
+}

@@ -1,0 +1,41 @@
+{
+  "algorithm": "ngboost",
+  "benchmark_valid": true,
+  "campaign_id": "golden46-full42-20260723-v1",
+  "dataset_hash": "6054656956182296",
+  "environment": {
+    "controller_host": "xbabe2"
+  },
+  "inference_time_seconds": 0.09534535591956228,
+  "metrics": {
+    "explained_variance": 0.9289044013451534,
+    "mae": 0.018676663519457536,
+    "max_error": 0.24771321941056698,
+    "median_absolute_error": 0.013469120691255472,
+    "mse": 0.000806455650585531,
+    "prediction_max": 0.584676987112731,
+    "prediction_min": 0.027097278572441198,
+    "r2": 0.9288919677966982,
+    "rmse": 0.02839816280299715,
+    "target_max": 0.7676,
+    "target_min": 0.0
+  },
+  "model_name": "ngboost",
+  "n_features": 1000,
+  "provenance": {
+    "canonical_test_sha256": "924be0789def76c47dfef6e70f1cbf94ef9d889fa70675c491af89571fb1591d",
+    "canonical_test_target_sha256": "a59abf1d15c6849e9374836faf767c5281ba0c9a932b3ebb61ec49068bbc3125",
+    "controller_computed_metrics": true,
+    "predictions_sha256": "363aa98f997af7aca0d7fc74cfc5032da04098a70e9749b97be83f2497ee6eee",
+    "worker_had_test_labels": false,
+    "worker_receipt": "/home/ubuntu/remote_super/quant/campaigns/golden46-full42-20260723-v1/artifacts/6054656956182296/ngboost/worker-receipt.json",
+    "worker_receipt_sha256": "29d631af7844aa1aa6097cb5d55e3eb61619360ec44c4b65e0ce9a2702fd3b0a"
+  },
+  "run_date": "2026-07-23T17:17:23Z",
+  "schema": "golden46.validated-report.v1",
+  "status": "completed",
+  "task_type": "regression",
+  "test_rows": 600,
+  "train_rows": 2400,
+  "training_time_seconds": 86.44198949099518
+}

@@ -1,0 +1,15 @@
+{
+  "algorithm": "ransac",
+  "dataset_hash": "e5a3a7b3668a1cc2",
+  "ended_at": "2026-06-30T04:44:29+00:00",
+  "error": "RANSAC could not find a valid consensus set. All `max_trials` iterations were skipped because each randomly chosen sub-sample failed the passing criteria. See estimator attributes for diagnostics (n_skips*).",
+  "failure_message": "RANSAC could not find a valid consensus set. All `max_trials` iterations were skipped because each randomly chosen sub-sample failed the passing criteria. See estimator attributes for diagnostics (n_skips*).",
+  "gpu_device": null,
+  "max_job_seconds": 600.0,
+  "run_date": "2026-06-30T04:44:29+00:00",
+  "started_at": "2026-06-30T04:44:29+00:00",
+  "status": "failed",
+  "task_type": "regression",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/guant/benchmark_quant_models.py\", line 1977, in run_job\n    model.fit(x_train, fit_y_train)\n  File \"/home/ubuntu/guant/.venv-modelzoo/lib/python3.10/site-packages/sklearn/base.py\", line 1365, in wrapper\n    return fit_method(estimator, *args, **kwargs)\n  File \"/home/ubuntu/guant/.venv-modelzoo/lib/python3.10/site-packages/sklearn/pipeline.py\", line 663, in fit\n    self._final_estimator.fit(Xt, y, **last_step_params[\"fit\"])\n  File \"/home/ubuntu/guant/.venv-modelzoo/lib/python3.10/site-packages/sklearn/base.py\", line 1365, in wrapper\n    return fit_method(estimator, *args, **kwargs)\n  File \"/home/ubuntu/guant/.venv-modelzoo/lib/python3.10/site-packages/sklearn/linear_model/_ransac.py\", line 571, in fit\n    raise ValueError(\nValueError: RANSAC could not find a valid consensus set. All `max_trials` iterations were skipped because each randomly chosen sub-sample failed the passing criteria. See estimator attributes for diagnostics (n_skips*).\n",
+  "xgboost_device": null
+}

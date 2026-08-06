@@ -1,0 +1,61 @@
+{
+  "algorithm": "NM_Concept_b6a80615a63e_8a747716c91c",
+  "benchmark_pool": {
+    "normalized_elo": 0.3120480587384586,
+    "pool_best": 0.75913125,
+    "pool_best_algorithm": "tabicl",
+    "pool_median": 0.7169953124999999,
+    "pool_percentile": 60.714285714285715,
+    "pool_size": 140
+  },
+  "core_hash": "aead5ddcd7ed190431fdf9d4f157cb0e53322f643fdd0337c51ae834c6b25bc4",
+  "dataset_hash": "9ca13534df43f24d",
+  "dsl_expr": "(pipe X (robust_scale) (eigen_ground_state iters=16) (gbm rounds=150 depth=3 lr=0.1))",
+  "ended_at": "2026-06-29T22:25:31Z",
+  "environment": {
+    "created_by_binary_sha": "b24ddd5e331834fb6b3c90dd823c0200d5b306c2993d745a51534b519e4db6d0",
+    "host": "xbabe3",
+    "runner": "newmath classify-csv"
+  },
+  "inference_rows_per_second": null,
+  "inference_time_seconds": null,
+  "metrics": {
+    "accuracy": 0.705,
+    "average_precision": 0.42240309509663027,
+    "balanced_accuracy": 0.684375,
+    "brier_score": 0.20210748688101718,
+    "f1": 0.46846846846846846,
+    "false_negatives": 70,
+    "false_positives": 225,
+    "log_loss": 0.5947703801666886,
+    "positive_rate": 0.2,
+    "precision": 0.36619718309859156,
+    "predicted_positive_rate": 0.355,
+    "recall": 0.65,
+    "roc_auc": 0.73014375,
+    "sensitivity": 0.65,
+    "specificity": 0.71875,
+    "top_decile_lift": 2.4,
+    "top_decile_positive_rate": 0.48,
+    "true_negatives": 575,
+    "true_positives": 130
+  },
+  "model_class": "newmath.classify_csv.gbm",
+  "model_hash": "8a747716c91cf1c3321425d98cf76df6cd111af3101aac59d6f027a987ddbcb2",
+  "n_features": 147,
+  "newmath_receipt_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_b6a80615a63e_8a747716c91c/20260629T222514Z/runs/9ca13534df43f24d/receipt.json",
+  "predictions_path": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_b6a80615a63e_8a747716c91c/20260629T222514Z/runs/9ca13534df43f24d/predictions.csv",
+  "run_date": "2026-06-29T22:25:31Z",
+  "source_path": "/home/ubuntu/zain_scratch/data/sts_mimo_afib/normalized/sts_mimo_afib_50k10kprime_mt_train.csv",
+  "source_run_dir": "/home/ubuntu/jmath/target/newmath/quant_full/NM_Concept_b6a80615a63e_8a747716c91c/20260629T222514Z",
+  "started_at": "2026-06-29T22:25:31Z",
+  "status": "completed",
+  "target_names": [
+    "target"
+  ],
+  "task_type": "binary",
+  "test_rows": 1000,
+  "train_rows": 1000,
+  "training_time_seconds": null,
+  "wall_time_seconds": 0.506804
+}
